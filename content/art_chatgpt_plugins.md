@@ -1,0 +1,4 @@
+---
+title: "Art ChatGPT Plugins"
+slug: "art_chatgpt_plugins"
+---*See also: [ChatGPT Plugins](/wiki/chatgpt_plugins), [ChatGPT Plugin Categories](/wiki/chatgpt_plugin_categories) and [Art](/wiki/art)*

@@ -1,0 +1,6 @@
+---
+title: "Machine learning fundamentals"
+slug: "machine_learning_fundamentals"
+---Redirect to:
+
+- [Machine learning terms/Fundamentals](/wiki/machine_learning_terms_fundamentals)

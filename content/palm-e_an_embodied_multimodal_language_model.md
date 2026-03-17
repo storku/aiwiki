@@ -1,0 +1,21 @@
+---
+title: "PaLM-E: An Embodied Multimodal Language Model"
+slug: "palm-e_an_embodied_multimodal_language_model"
+categories:
+  - "Papers"
+---*See also: [PaLM-E](/index.php?title=PaLM-E&action=edit&redlink=1) and [Papers](/wiki/papers)*
+## Explain Like I'm 5 (ELI5) Summary
+
+The paper talks about a new type of computer program called an embodied language model that can help robots understand language better and interact with the real world. Large language models (LLMs) are computer programs that are really good at understanding and using language, but they have trouble using that language to control robots and interact with the real world. The article proposes an embodied language model that incorporates real-world sensor data, like pictures and sensor readings, into the language model. This helps the program understand how to use language to control a robot and interact with the real world.
+
+The approach the article describes is to take the pre-trained language model, PaLM (Pre-trained autoregressive Language Model), and add sensor data to it to create PaLM-E (PaLM-Embodied). The sensor data is encoded into a sequence of vectors that are the same dimension as the language model's tokens. This allows the program to understand the sensor data in a similar way to how it understands language. The program is designed to work with a variety of different tasks, like robot manipulation planning, visual question answering, and captioning. The authors of the paper trained PaLM-E using a variety of joint training methods and tested it on a variety of tasks to see how well it performed.
+
+The results of the study show that PaLM-E is a powerful program that can help robots understand and use language to interact with the real world. The authors show examples of PaLM-E controlling a robot to perform different tasks, like bringing them a specific object or sorting blocks by color. The program is also able to generalize to new tasks that it hasn't seen before, like pushing blocks to a new location. The authors also mention that PaLM-E is a competent vision-language model, which means it can understand both pictures and words. This makes it a versatile program that can be used for a variety of different tasks.
+
+Overall, the authors of the paper propose a new type of computer program called an embodied language model that incorporates real-world sensor data into a pre-trained language model. The program is designed to help robots understand language better and interact with the real world. The results of the study show that the program is powerful and can perform a variety of different tasks. The authors suggest that PaLM-E can be used to unlock new capabilities in robot planning and vision-language modeling.
+
+## Abstract
+
+Large language models have been demonstrated to perform complex tasks. However, enabling general inference in the real world, e.g. for robotics problems, raises the challenge of grounding. We propose embodied language models to directly incorporate real-world continuous sensor modalities into language models and thereby establish the link between words and percepts. Input to our embodied language model are multi-modal sentences that interleave visual, continuous state estimation, and textual input encodings. We train these encodings end-to-end, in conjunction with a pre-trained large language model, for multiple embodied tasks, including sequential robotic manipulation planning, visual question answering, and captioning. Our evaluations show that PaLM-E, a single large embodied multimodal model, can address a variety of embodied reasoning tasks, from a variety of observation modalities, on multiple embodiments, and further, exhibits positive transfer: the model benefits from diverse joint training across internet-scale language, vision, and visual-language domains. Our largest model, PaLM-E-562B with 562B parameters, in addition to being trained on robotics tasks, is a visual-language generalist with state-of-the-art performance on OK-VQA, and retains generalist language capabilities with increasing scale.
+
+## Discussion

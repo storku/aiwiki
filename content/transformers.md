@@ -1,0 +1,4 @@
+---
+title: "Transformers"
+slug: "transformers"
+---Transformers are [deep learning](/index.php?title=Deep_learning&action=edit&redlink=1) [models](/wiki/models) that have certain architectural characteristics. They were introduced by Google researchers in 2017, in the famous [Attention is All you Need](/index.php?title=Attention_is_All_you_Need&action=edit&redlink=1) [paper](/wiki/paper). The Transformer architecture is an example of the [encoder-decoder models](/index.php?title=Encoder-decoder_models&action=edit&redlink=1), which had been popular for a few years. Until then, however, [attention](/wiki/attention) was only one of the mechanisms that these models used. They were based mainly on [LSTM](/wiki/lstm) and other [RNNs](/wiki/rnn). The Transformers paper revealed that attention could be used as the sole determinant between inputs and outputs.

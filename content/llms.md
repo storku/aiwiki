@@ -1,0 +1,11 @@
+---
+title: "LLMs"
+slug: "llms"
+---| Model | Code | Images | Files | Web | Personality | Description | What to use it |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ChatGPT/GPT-3.5 | N | Neutral | - | - | This is the free version of ChatGPT that came out in November. It is very bland, fast and pretty solid at writing and coding tasks. | It is fast and cheap and capable, but other models are now better. Also, it is not connected to the internet, so don't use it like a search engine. |
+| ChatGPT/Soon GPT-4 | - | Helpful, a little preachy | - | - | Currently available to paying customers. The most powerful LLM for most purposes. Does a lot. | Better at everything (writing, coding, summarizing) than GPT-3.5 Still not connected to the internet. |
+| ChatGPT/Code Interpreter/Plugins | Yes | Helpful, witty | Yes | Limited | Adds new capabilities to ChatGPT. Code Interpreter is great for working with data of all sorts, and is the most generally impressive AI implementation so far. Plugins and web browsing still have rough edges. Code Interpreter lets the AI run Python code & work with files. The web browsing is being updated. | Plugins are generally not that useful, yet. |
+| Bing (Uses GPT-4 in creative & precise modes) | Yes | Friendly, somewhat insane | Yes | Yes | Connected to the internet. It is GPT-4. Does a remarkably wide range of stuff, with a grab-bag of powerful features. The weirdest model. Creative mode lets you use GPT-4 and is free. Has a strong, weird personality. | From working as a browser companion to creating art. Is connected to the internet. |
+| Bard | Yes | None | Yes | Yes | Bard is a name for a variety of models used by Google. Current offerings are weak, but improving over time. High levels of hallucination. | This should be your last choice of AIs for now, but recent updates show promise. |
+| Claude | Yes | Pleasant, no scolding | - | - | Almost as powerful at GPT-4, but built to be "safer" and more pleasant to use. Has 100k context window - enough "memory" to hold a book. | Terrific on working with large documents, due to its extended context window and ability to upload content. It is very new so it is unclear how it stacks up. |
