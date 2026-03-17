@@ -4,23 +4,70 @@ import matter from "gray-matter";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
+const INTERNAL_CATEGORIES = new Set([
+  "Not_updated",
+  "Not_Edited",
+  "Updated",
+  "Not_edited",
+  "Pages_with_broken_file_links",
+]);
+
 export interface WikiPage {
   title: string;
   slug: string;
   categories: string[];
   content: string;
+  excerpt: string;
+  readingTime: number;
 }
 
 export interface WikiPageMeta {
   title: string;
   slug: string;
   categories: string[];
+  excerpt?: string;
 }
 
+function filterCategories(cats: string[]): string[] {
+  return cats.filter((c) => !INTERNAL_CATEGORIES.has(c));
+}
+
+function generateExcerpt(content: string, maxLen = 160): string {
+  const text = content
+    .replace(/^---[\s\S]*?---/, "")
+    .replace(/#{1,6}\s+.*/g, "")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_`~]/g, "")
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+    .replace(/\|[^|]*\|/g, "")
+    .replace(/&#\d+;/g, "")
+    .replace(/\n+/g, " ")
+    .trim();
+  if (text.length <= maxLen) return text;
+  return text.slice(0, maxLen).replace(/\s\S*$/, "") + "...";
+}
+
+function calcReadingTime(content: string): number {
+  const words = content.split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+let cachedPages: WikiPageMeta[] | null = null;
+
 export function getAllPages(): WikiPageMeta[] {
+  if (cachedPages) return cachedPages;
   const indexPath = path.join(CONTENT_DIR, "_index.json");
   if (fs.existsSync(indexPath)) {
-    return JSON.parse(fs.readFileSync(indexPath, "utf-8"));
+    const raw = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as {
+      title: string;
+      slug: string;
+      categories: string[];
+    }[];
+    cachedPages = raw.map((p) => ({
+      ...p,
+      categories: filterCategories(p.categories),
+    }));
+    return cachedPages;
   }
   return [];
 }
@@ -33,12 +80,15 @@ export function getPageBySlug(slug: string): WikiPage | null {
 
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
+  const categories = filterCategories(data.categories || []);
 
   return {
     title: data.title || slug,
     slug: data.slug || slug,
-    categories: data.categories || [],
+    categories,
     content,
+    excerpt: generateExcerpt(content),
+    readingTime: calcReadingTime(content),
   };
 }
 
@@ -67,9 +117,29 @@ export function getAllCategories(): { name: string; count: number }[] {
 export function searchPages(query: string): WikiPageMeta[] {
   const pages = getAllPages();
   const q = query.toLowerCase();
-  return pages.filter(
-    (p) =>
-      p.title.toLowerCase().includes(q) ||
-      p.categories.some((c) => c.toLowerCase().includes(q))
-  );
+  return pages
+    .filter(
+      (p) =>
+        p.title.toLowerCase().includes(q) ||
+        p.categories.some((c) => c.toLowerCase().includes(q))
+    )
+    .slice(0, 100);
+}
+
+export function getRelatedPages(
+  slug: string,
+  categories: string[],
+  limit = 6
+): WikiPageMeta[] {
+  const pages = getAllPages();
+  const catSet = new Set(categories);
+
+  return pages
+    .filter((p) => p.slug !== slug && p.categories.some((c) => catSet.has(c)))
+    .sort((a, b) => {
+      const aScore = a.categories.filter((c) => catSet.has(c)).length;
+      const bScore = b.categories.filter((c) => catSet.has(c)).length;
+      return bScore - aScore;
+    })
+    .slice(0, limit);
 }

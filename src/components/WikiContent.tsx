@@ -1,118 +1,47 @@
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import rehypeSlug from "rehype-slug";
+
 interface WikiContentProps {
   content: string;
 }
 
 export default function WikiContent({ content }: WikiContentProps) {
-  // Convert markdown to simple HTML for rendering
-  let html = content;
+  // Clean up common MediaWiki artifacts
+  let cleaned = content;
 
-  // Headings
-  html = html.replace(/^###### (.+)$/gm, "<h6>$1</h6>");
-  html = html.replace(/^##### (.+)$/gm, "<h5>$1</h5>");
-  html = html.replace(/^#### (.+)$/gm, "<h4>$1</h4>");
-  html = html.replace(/^### (.+)$/gm, "<h3>$1</h3>");
-  html = html.replace(/^## (.+)$/gm, "<h2>$1</h2>");
-  html = html.replace(/^# (.+)$/gm, "<h1>$1</h1>");
-
-  // Bold and italic
-  html = html.replace(/\*\*\*(.+?)\*\*\*/g, "<strong><em>$1</em></strong>");
-  html = html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-  html = html.replace(/\*(.+?)\*/g, "<em>$1</em>");
-
-  // Code blocks
-  html = html.replace(/```(\w*)\n([\s\S]*?)```/g, "<pre><code>$2</code></pre>");
-  html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
-
-  // Links
-  html = html.replace(
-    /\[([^\]]+)\]\(([^)]+)\)/g,
-    '<a href="$2">$1</a>'
+  // Fix broken image refs that point to old wiki
+  cleaned = cleaned.replace(
+    /!\[([^\]]*)\]\(\/images\//g,
+    "![$1](https://aiwiki.ai/images/"
   );
 
-  // Images
-  html = html.replace(
-    /!\[([^\]]*)\]\(([^)]+)\)/g,
-    '<img src="$2" alt="$1" loading="lazy" />'
+  // Remove red link edit URLs, keeping the text
+  cleaned = cleaned.replace(
+    /\[([^\]]+)\]\(\/index\.php\?title=[^)]+&action=edit&redlink=1\)/g,
+    "$1"
   );
 
-  // Horizontal rules
-  html = html.replace(/^---$/gm, "<hr />");
-
-  // Tables
-  html = html.replace(
-    /(?:^\|.+\|$\n?)+/gm,
-    (tableBlock) => {
-      const rows = tableBlock.trim().split("\n");
-      if (rows.length < 2) return tableBlock;
-
-      let tableHtml = "<table>";
-      rows.forEach((row, idx) => {
-        // Skip separator row
-        if (/^\|[\s\-:|]+\|$/.test(row)) return;
-        const cells = row
-          .split("|")
-          .filter((c) => c.trim() !== "")
-          .map((c) => c.trim());
-        const tag = idx === 0 ? "th" : "td";
-        const rowHtml = cells.map((c) => `<${tag}>${c}</${tag}>`).join("");
-        tableHtml += `<tr>${rowHtml}</tr>`;
-      });
-      tableHtml += "</table>";
-      return tableHtml;
-    }
+  // Clean up citation references like [&#91;1&#93;](#cite_note-...)
+  cleaned = cleaned.replace(
+    /\[&#91;(\d+)&#93;\]\(#cite_note[^)]*\)/g,
+    '<sup class="text-xs text-muted">[$1]</sup>'
   );
 
-  // Unordered lists
-  html = html.replace(
-    /(?:^- .+$\n?)+/gm,
-    (listBlock) => {
-      const items = listBlock
-        .trim()
-        .split("\n")
-        .map((line) => `<li>${line.replace(/^- /, "")}</li>`)
-        .join("");
-      return `<ul>${items}</ul>`;
-    }
-  );
-
-  // Ordered lists
-  html = html.replace(
-    /(?:^\d+\. .+$\n?)+/gm,
-    (listBlock) => {
-      const items = listBlock
-        .trim()
-        .split("\n")
-        .map((line) => `<li>${line.replace(/^\d+\. /, "")}</li>`)
-        .join("");
-      return `<ol>${items}</ol>`;
-    }
-  );
-
-  // Blockquotes
-  html = html.replace(
-    /(?:^> .+$\n?)+/gm,
-    (block) => {
-      const text = block
-        .split("\n")
-        .map((line) => line.replace(/^> /, ""))
-        .join("\n");
-      return `<blockquote>${text}</blockquote>`;
-    }
-  );
-
-  // Paragraphs: wrap remaining bare text lines
-  html = html.replace(
-    /^(?!<[a-z/])[^\n]+$/gm,
-    (line) => `<p>${line}</p>`
-  );
-
-  // Clean up empty paragraphs
-  html = html.replace(/<p>\s*<\/p>/g, "");
+  // Clean up HTML entities that didn't get decoded
+  cleaned = cleaned.replace(/&#160;/g, " ");
+  cleaned = cleaned.replace(/&#91;/g, "[");
+  cleaned = cleaned.replace(/&#93;/g, "]");
 
   return (
-    <div
-      className="wiki-content"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+    <div className="wiki-content">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw, rehypeSlug]}
+      >
+        {cleaned}
+      </ReactMarkdown>
+    </div>
   );
 }
