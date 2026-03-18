@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Color Palette (ChatGPT Plugin) |
 | --- |
-| [![Color Palette.jpeg](/images/8/8e/Color_Palette.jpeg)](/wiki/file_color_palette_jpeg) |
+| ![Color Palette.jpeg](/images/8/8e/Color_Palette.jpeg) |
 | Information |
 | **Name** | Color Palette |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Simpsonize Me (GPT) |
 | --- |
-| [![Simpsonize Me (GPT).png](/images/thumb/e/ef/Simpsonize_Me_%28GPT%29.png/300px-Simpsonize_Me_%28GPT%29.png)](/wiki/file_simpsonize_me_gpt_png) |
+| ![Simpsonize Me (GPT).png](/images/thumb/e/ef/Simpsonize_Me_%28GPT%29.png/300px-Simpsonize_Me_%28GPT%29.png) |
 | Information |
 | **Name** | Simpsonize Me |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

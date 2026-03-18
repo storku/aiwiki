@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Language Coach (GPT) |
 | --- |
-| [![Language Coach (GPT).png](/images/thumb/1/1a/Language_Coach_%28GPT%29.png/300px-Language_Coach_%28GPT%29.png)](/wiki/file_language_coach_gpt_png) |
+| ![Language Coach (GPT).png](/images/thumb/1/1a/Language_Coach_%28GPT%29.png/300px-Language_Coach_%28GPT%29.png) |
 | Information |
 | **Name** | Language Coach |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

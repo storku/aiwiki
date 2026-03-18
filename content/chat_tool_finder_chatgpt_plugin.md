@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat Tool Finder (ChatGPT Plugin) |
 | --- |
-| [![Chat Tool Finder.jpeg](/images/7/7d/Chat_Tool_Finder.jpeg)](/wiki/file_chat_tool_finder_jpeg) |
+| ![Chat Tool Finder.jpeg](/images/7/7d/Chat_Tool_Finder.jpeg) |
 | Information |
 | **Name** | Chat Tool Finder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

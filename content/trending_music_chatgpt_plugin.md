@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Trending Music (ChatGPT Plugin) |
 | --- |
-| [![Trending Music.png](/images/thumb/4/44/Trending_Music.png/300px-Trending_Music.png)](/wiki/file_trending_music_png) |
+| ![Trending Music.png](/images/thumb/4/44/Trending_Music.png/300px-Trending_Music.png) |
 | Information |
 | **Name** | Trending Music |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

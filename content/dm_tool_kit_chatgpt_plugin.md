@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| DM Tool Kit (ChatGPT Plugin) |
 | --- |
-| [![DM Tool Kit.png](/images/thumb/8/87/DM_Tool_Kit.png/300px-DM_Tool_Kit.png)](/wiki/file_dm_tool_kit_png) |
+| ![DM Tool Kit.png](/images/thumb/8/87/DM_Tool_Kit.png/300px-DM_Tool_Kit.png) |
 | Information |
 | **Name** | DM Tool Kit |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

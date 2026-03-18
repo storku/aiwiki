@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Xweather (ChatGPT Plugin) |
 | --- |
-| [![Xweather.jpg](/images/thumb/b/ba/Xweather.jpg/300px-Xweather.jpg)](/wiki/file_xweather_jpg) |
+| ![Xweather.jpg](/images/thumb/b/ba/Xweather.jpg/300px-Xweather.jpg) |
 | Information |
 | **Name** | Xweather |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

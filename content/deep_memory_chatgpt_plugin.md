@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Deep Memory (ChatGPT Plugin) |
 | --- |
-| [![Deep Memory.jpg](/images/d/db/Deep_Memory.jpg)](/wiki/file_deep_memory_jpg) |
+| ![Deep Memory.jpg](/images/d/db/Deep_Memory.jpg) |
 | Information |
 | **Name** | Deep Memory |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

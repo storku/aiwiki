@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tabechoku (ChatGPT Plugin) |
 | --- |
-| [![Tabechoku.jpeg](/images/2/21/Tabechoku.jpeg)](/wiki/file_tabechoku_jpeg) |
+| ![Tabechoku.jpeg](/images/2/21/Tabechoku.jpeg) |
 | Information |
 | **Name** | Tabechoku |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

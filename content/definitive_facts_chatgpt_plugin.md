@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Definitive Facts (ChatGPT Plugin) |
 | --- |
-| [![Definitive Facts.jpg](/images/b/bf/Definitive_Facts.jpg)](/wiki/file_definitive_facts_jpg) |
+| ![Definitive Facts.jpg](/images/b/bf/Definitive_Facts.jpg) |
 | Information |
 | **Name** | Definitive Facts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

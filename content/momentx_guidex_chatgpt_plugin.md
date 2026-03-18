@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MomentX GuideX (ChatGPT Plugin) |
 | --- |
-| [![MomentX GuideX.jpeg](/images/8/85/MomentX_GuideX.jpeg)](/wiki/file_momentx_guidex_jpeg) |
+| ![MomentX GuideX.jpeg](/images/8/85/MomentX_GuideX.jpeg) |
 | Information |
 | **Name** | MomentX GuideX |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

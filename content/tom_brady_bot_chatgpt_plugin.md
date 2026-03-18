@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tom Brady Bot (ChatGPT Plugin) |
 | --- |
-| [![Tom Brady Bot.jpeg](/images/b/b5/Tom_Brady_Bot.jpeg)](/wiki/file_tom_brady_bot_jpeg) |
+| ![Tom Brady Bot.jpeg](/images/b/b5/Tom_Brady_Bot.jpeg) |
 | Information |
 | **Name** | Tom Brady Bot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Keyword Explorer (ChatGPT Plugin) |
 | --- |
-| [![Keyword Explorer.png](/images/thumb/7/7b/Keyword_Explorer.png/300px-Keyword_Explorer.png)](/wiki/file_keyword_explorer_png) |
+| ![Keyword Explorer.png](/images/thumb/7/7b/Keyword_Explorer.png/300px-Keyword_Explorer.png) |
 | Information |
 | **Name** | Keyword Explorer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

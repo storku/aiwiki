@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QuickCreator Marketing Tools (ChatGPT Plugin) |
 | --- |
-| [![QuickCreator Marketing Tools.jpeg](/images/c/c9/QuickCreator_Marketing_Tools.jpeg)](/wiki/file_quickcreator_marketing_tools_jpeg) |
+| ![QuickCreator Marketing Tools.jpeg](/images/c/c9/QuickCreator_Marketing_Tools.jpeg) |
 | Information |
 | **Name** | QuickCreator Marketing Tools |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

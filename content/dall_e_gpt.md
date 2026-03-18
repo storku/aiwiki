@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| DALL·E (GPT) |
 | --- |
-| [![DALL·E (GPT).png](/images/thumb/3/34/DALL%C2%B7E_%28GPT%29.png/300px-DALL%C2%B7E_%28GPT%29.png)](/wiki/file_dall_e_gpt_png) |
+| ![DALL·E (GPT).png](/images/thumb/3/34/DALL%C2%B7E_%28GPT%29.png/300px-DALL%C2%B7E_%28GPT%29.png) |
 | Information |
 | **Name** | DALL·E |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

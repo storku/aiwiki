@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| VideoMaker - by invideo AI (GPT) |
 | --- |
-| [![VideoMaker - by invideo AI (GPT).png](/images/thumb/a/a5/VideoMaker_-_by_invideo_AI_%28GPT%29.png/300px-VideoMaker_-_by_invideo_AI_%28GPT%29.png)](/wiki/file_videomaker_-_by_invideo_ai_gpt_png) |
+| ![VideoMaker - by invideo AI (GPT).png](/images/thumb/a/a5/VideoMaker_-_by_invideo_AI_%28GPT%29.png/300px-VideoMaker_-_by_invideo_AI_%28GPT%29.png) |
 | Information |
 | **Name** | VideoMaker - by invideo AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

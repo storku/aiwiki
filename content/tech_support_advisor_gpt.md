@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Tech Support Advisor (GPT) |
 | --- |
-| [![Tech Support Advisor (GPT).png](/images/thumb/d/d6/Tech_Support_Advisor_%28GPT%29.png/300px-Tech_Support_Advisor_%28GPT%29.png)](/wiki/file_tech_support_advisor_gpt_png) |
+| ![Tech Support Advisor (GPT).png](/images/thumb/d/d6/Tech_Support_Advisor_%28GPT%29.png/300px-Tech_Support_Advisor_%28GPT%29.png) |
 | Information |
 | **Name** | Tech Support Advisor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

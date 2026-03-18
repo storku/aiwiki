@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Creature Generator (ChatGPT Plugin) |
 | --- |
-| [![Creature Generator.png](/images/thumb/c/c5/Creature_Generator.png/300px-Creature_Generator.png)](/wiki/file_creature_generator_png) |
+| ![Creature Generator.png](/images/thumb/c/c5/Creature_Generator.png/300px-Creature_Generator.png) |
 | Information |
 | **Name** | Creature Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

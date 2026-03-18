@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Playlist Follow (ChatGPT Plugin) |
 | --- |
-| [![Playlist Follow.png](/images/thumb/d/d4/Playlist_Follow.png/300px-Playlist_Follow.png)](/wiki/file_playlist_follow_png) |
+| ![Playlist Follow.png](/images/thumb/d/d4/Playlist_Follow.png/300px-Playlist_Follow.png) |
 | Information |
 | **Name** | Playlist Follow |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Lighthouse (ChatGPT Plugin) |
 | --- |
-| [![Lighthouse.jpeg](/images/a/af/Lighthouse.jpeg)](/wiki/file_lighthouse_jpeg) |
+| ![Lighthouse.jpeg](/images/a/af/Lighthouse.jpeg) |
 | Information |
 | **Name** | Lighthouse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

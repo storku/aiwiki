@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Converter App (ChatGPT Plugin) |
 | --- |
-| [![Converter App.jpeg](/images/5/5e/Converter_App.jpeg)](/wiki/file_converter_app_jpeg) |
+| ![Converter App.jpeg](/images/5/5e/Converter_App.jpeg) |
 | Information |
 | **Name** | Converter App |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

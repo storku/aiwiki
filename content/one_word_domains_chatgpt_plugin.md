@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| One Word Domains (ChatGPT Plugin) |
 | --- |
-| [![One Word Domains.png](/images/thumb/b/b7/One_Word_Domains.png/300px-One_Word_Domains.png)](/wiki/file_one_word_domains_png) |
+| ![One Word Domains.png](/images/thumb/b/b7/One_Word_Domains.png/300px-One_Word_Domains.png) |
 | Information |
 | **Name** | One Word Domains |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

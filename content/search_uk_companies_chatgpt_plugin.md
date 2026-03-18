@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Search UK Companies (ChatGPT Plugin) |
 | --- |
-| [![Search UK Companies.png](/images/e/e4/Search_UK_Companies.png)](/wiki/file_search_uk_companies_png) |
+| ![Search UK Companies.png](/images/e/e4/Search_UK_Companies.png) |
 | Information |
 | **Name** | Search UK Companies |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

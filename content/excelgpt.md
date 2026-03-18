@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ExcelGPT |
 | --- |
-| [![ExcelGPT.png](/images/thumb/0/09/ExcelGPT.png/300px-ExcelGPT.png)](/wiki/file_excelgpt_png) |
+| ![ExcelGPT.png](/images/thumb/0/09/ExcelGPT.png/300px-ExcelGPT.png) |
 | Information |
 | **Name** | ExcelGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

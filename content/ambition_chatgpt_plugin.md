@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ambition (ChatGPT Plugin) |
 | --- |
-| [![Ambition.png](/images/thumb/5/5f/Ambition.png/300px-Ambition.png)](/wiki/file_ambition_png) |
+| ![Ambition.png](/images/thumb/5/5f/Ambition.png/300px-Ambition.png) |
 | Information |
 | **Name** | Ambition |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

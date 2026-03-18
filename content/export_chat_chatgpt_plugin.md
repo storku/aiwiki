@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Export Chat (ChatGPT Plugin) |
 | --- |
-| [![Export Chat.png](/images/d/d0/Export_Chat.png)](/wiki/file_export_chat_png) |
+| ![Export Chat.png](/images/d/d0/Export_Chat.png) |
 | Information |
 | **Name** | Export Chat |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

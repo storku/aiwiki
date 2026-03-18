@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bohita (ChatGPT Plugin) |
 | --- |
-| [![Bohita.png](/images/thumb/e/e7/Bohita.png/300px-Bohita.png)](/wiki/file_bohita_png) |
+| ![Bohita.png](/images/thumb/e/e7/Bohita.png/300px-Bohita.png) |
 | Information |
 | **Name** | Bohita |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

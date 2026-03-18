@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Sous Chef (GPT) |
 | --- |
-| [![Sous Chef (GPT).png](/images/thumb/1/1f/Sous_Chef_%28GPT%29.png/300px-Sous_Chef_%28GPT%29.png)](/wiki/file_sous_chef_gpt_png) |
+| ![Sous Chef (GPT).png](/images/thumb/1/1f/Sous_Chef_%28GPT%29.png/300px-Sous_Chef_%28GPT%29.png) |
 | Information |
 | **Name** | Sous Chef |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

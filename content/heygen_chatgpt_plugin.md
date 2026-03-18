@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HeyGen (ChatGPT Plugin) |
 | --- |
-| [![HeyGen.png](/images/0/00/HeyGen.png)](/wiki/file_heygen_png) |
+| ![HeyGen.png](/images/0/00/HeyGen.png) |
 | Information |
 | **Name** | HeyGen |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

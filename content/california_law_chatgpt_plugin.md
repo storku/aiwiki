@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| California Law (ChatGPT Plugin) |
 | --- |
-| [![California Law.png](/images/thumb/1/15/California_Law.png/300px-California_Law.png)](/wiki/file_california_law_png) |
+| ![California Law.png](/images/thumb/1/15/California_Law.png/300px-California_Law.png) |
 | Information |
 | **Name** | California Law |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

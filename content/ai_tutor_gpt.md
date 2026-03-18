@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Tutor (GPT) |
 | --- |
-| [![AI Tutor (GPT).png](/images/thumb/c/c7/AI_Tutor_%28GPT%29.png/300px-AI_Tutor_%28GPT%29.png)](/wiki/file_ai_tutor_gpt_png) |
+| ![AI Tutor (GPT).png](/images/thumb/c/c7/AI_Tutor_%28GPT%29.png/300px-AI_Tutor_%28GPT%29.png) |
 | Information |
 | **Name** | AI Tutor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Father&#39;s Day Deals (ChatGPT Plugin) |
 | --- |
-| [![Father&#39;s Day Deals.jpg](/images/thumb/6/64/Father%27s_Day_Deals.jpg/300px-Father%27s_Day_Deals.jpg)](/wiki/file_father_s_day_deals_jpg) |
+| ![Father&#39;s Day Deals.jpg](/images/thumb/6/64/Father%27s_Day_Deals.jpg/300px-Father%27s_Day_Deals.jpg) |
 | Information |
 | **Name** | Father's Day Deals |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

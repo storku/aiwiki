@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crypto Pulse (ChatGPT Plugin) |
 | --- |
-| [![Crypto Pulse.jpeg](/images/1/1d/Crypto_Pulse.jpeg)](/wiki/file_crypto_pulse_jpeg) |
+| ![Crypto Pulse.jpeg](/images/1/1d/Crypto_Pulse.jpeg) |
 | Information |
 | **Name** | Crypto Pulse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Secretary Kim (ChatGPT Plugin) |
 | --- |
-| [![Secretary Kim.jpeg](/images/9/96/Secretary_Kim.jpeg)](/wiki/file_secretary_kim_jpeg) |
+| ![Secretary Kim.jpeg](/images/9/96/Secretary_Kim.jpeg) |
 | Information |
 | **Name** | Secretary Kim |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

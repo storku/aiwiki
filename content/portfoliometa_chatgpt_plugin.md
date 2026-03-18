@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PortfolioMeta (ChatGPT Plugin) |
 | --- |
-| [![PortfolioMeta.png](/images/thumb/4/41/PortfolioMeta.png/300px-PortfolioMeta.png)](/wiki/file_portfoliometa_png) |
+| ![PortfolioMeta.png](/images/thumb/4/41/PortfolioMeta.png/300px-PortfolioMeta.png) |
 | Information |
 | **Name** | PortfolioMeta |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

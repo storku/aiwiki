@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Comparison (ChatGPT Plugin) |
 | --- |
-| [![Comparison.png](/images/2/23/Comparison.png)](/wiki/file_comparison_png) |
+| ![Comparison.png](/images/2/23/Comparison.png) |
 | Information |
 | **Name** | Comparison |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

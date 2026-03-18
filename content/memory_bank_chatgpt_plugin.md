@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Memory Bank (ChatGPT Plugin) |
 | --- |
-| [![Memory Bank.png](/images/thumb/3/3c/Memory_Bank.png/300px-Memory_Bank.png)](/wiki/file_memory_bank_png) |
+| ![Memory Bank.png](/images/thumb/3/3c/Memory_Bank.png/300px-Memory_Bank.png) |
 | Information |
 | **Name** | Memory Bank |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

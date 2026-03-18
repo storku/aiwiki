@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GIF Search (ChatGPT Plugin) |
 | --- |
-| [![GIF Search.png](/images/thumb/0/0d/GIF_Search.png/300px-GIF_Search.png)](/wiki/file_gif_search_png) |
+| ![GIF Search.png](/images/thumb/0/0d/GIF_Search.png/300px-GIF_Search.png) |
 | Information |
 | **Name** | GIF Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

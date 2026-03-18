@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chi Data Buddy (ChatGPT Plugin) |
 | --- |
-| [![Chi Data Buddy.jpeg](/images/b/b2/Chi_Data_Buddy.jpeg)](/wiki/file_chi_data_buddy_jpeg) |
+| ![Chi Data Buddy.jpeg](/images/b/b2/Chi_Data_Buddy.jpeg) |
 | Information |
 | **Name** | Chi Data Buddy |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

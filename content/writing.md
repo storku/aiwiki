@@ -3,7 +3,7 @@ title: "Writing"
 slug: "writing"
 ---## Writing Custom GPTs
 
-*See also: [Writing Custom GPTs](/wiki/writing_custom_gpts)*
+*See also: Writing Custom GPTs*
 
 ## Writing ChatGPT Plugins
 

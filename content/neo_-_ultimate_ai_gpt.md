@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| NEO - Ultimate AI (GPT) |
 | --- |
-| [![NEO - Ultimate AI (GPT).jpg](/images/thumb/b/b9/NEO_-_Ultimate_AI_%28GPT%29.jpg/300px-NEO_-_Ultimate_AI_%28GPT%29.jpg)](/wiki/file_neo_-_ultimate_ai_gpt_jpg) |
+| ![NEO - Ultimate AI (GPT).jpg](/images/thumb/b/b9/NEO_-_Ultimate_AI_%28GPT%29.jpg/300px-NEO_-_Ultimate_AI_%28GPT%29.jpg) |
 | Information |
 | **Name** | NEO - Ultimate AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

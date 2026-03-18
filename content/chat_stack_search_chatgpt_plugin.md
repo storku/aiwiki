@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat Stack Search (ChatGPT Plugin) |
 | --- |
-| [![Chat Stack Search.jpg](/images/thumb/a/ab/Chat_Stack_Search.jpg/300px-Chat_Stack_Search.jpg)](/wiki/file_chat_stack_search_jpg) |
+| ![Chat Stack Search.jpg](/images/thumb/a/ab/Chat_Stack_Search.jpg/300px-Chat_Stack_Search.jpg) |
 | Information |
 | **Name** | Chat Stack Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

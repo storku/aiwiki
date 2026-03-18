@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Speedy Marketing (ChatGPT Plugin) |
 | --- |
-| [![Speedy Marketing.png](/images/thumb/d/d4/Speedy_Marketing.png/300px-Speedy_Marketing.png)](/wiki/file_speedy_marketing_png) |
+| ![Speedy Marketing.png](/images/thumb/d/d4/Speedy_Marketing.png/300px-Speedy_Marketing.png) |
 | Information |
 | **Name** | Speedy Marketing |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

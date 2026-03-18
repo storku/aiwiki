@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT-Builders&#39; Assistant |
 | --- |
-| [![GPT-Builders&#39; Assistant.png](/images/thumb/f/fe/GPT-Builders%27_Assistant.png/300px-GPT-Builders%27_Assistant.png)](/wiki/file_gpt-builders_assistant_png) |
+| ![GPT-Builders&#39; Assistant.png](/images/thumb/f/fe/GPT-Builders%27_Assistant.png/300px-GPT-Builders%27_Assistant.png) |
 | Information |
 | **Name** | GPT-Builders' Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

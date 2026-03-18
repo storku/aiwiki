@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Search |
 | --- |
-| [![GPT Search.png](/images/thumb/f/f8/GPT_Search.png/300px-GPT_Search.png)](/wiki/file_gpt_search_png) |
+| ![GPT Search.png](/images/thumb/f/f8/GPT_Search.png/300px-GPT_Search.png) |
 | Information |
 | **Name** | GPT Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

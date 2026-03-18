@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Open Trivia (ChatGPT Plugin) |
 | --- |
-| [![Open Trivia.png](/images/thumb/0/0b/Open_Trivia.png/300px-Open_Trivia.png)](/wiki/file_open_trivia_png) |
+| ![Open Trivia.png](/images/thumb/0/0b/Open_Trivia.png/300px-Open_Trivia.png) |
 | Information |
 | **Name** | Open Trivia |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

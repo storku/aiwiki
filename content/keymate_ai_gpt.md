@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Keymate.AI GPT |
 | --- |
-| [![Keymate.AI GPT.png](/images/thumb/4/4b/Keymate.AI_GPT.png/300px-Keymate.AI_GPT.png)](/wiki/file_keymate_ai_gpt_png) |
+| ![Keymate.AI GPT.png](/images/thumb/4/4b/Keymate.AI_GPT.png/300px-Keymate.AI_GPT.png) |
 | Information |
 | **Name** | Keymate.AI GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

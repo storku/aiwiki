@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 提示精灵小富贵（Prompt Pet） (GPT) |
 | --- |
-| [![提示精灵小富贵（Prompt Pet） (GPT).png](/images/thumb/9/91/%E6%8F%90%E7%A4%BA%E7%B2%BE%E7%81%B5%E5%B0%8F%E5%AF%8C%E8%B4%B5%EF%BC%88Prompt_Pet%EF%BC%89_%28GPT%29.png/300px-%E6%8F%90%E7%A4%BA%E7%B2%BE%E7%81%B5%E5%B0%8F%E5%AF%8C%E8%B4%B5%EF%BC%88Prompt_Pet%EF%BC%89_%28GPT%29.png)](/wiki/file_提示精灵小富贵_prompt_pet_gpt_png) |
+| ![提示精灵小富贵（Prompt Pet） (GPT).png](/images/thumb/9/91/%E6%8F%90%E7%A4%BA%E7%B2%BE%E7%81%B5%E5%B0%8F%E5%AF%8C%E8%B4%B5%EF%BC%88Prompt_Pet%EF%BC%89_%28GPT%29.png/300px-%E6%8F%90%E7%A4%BA%E7%B2%BE%E7%81%B5%E5%B0%8F%E5%AF%8C%E8%B4%B5%EF%BC%88Prompt_Pet%EF%BC%89_%28GPT%29.png) |
 | Information |
 | **Name** | 提示精灵小富贵（Prompt Pet） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Owler (ChatGPT Plugin) |
 | --- |
-| [![Owler.jpeg](/images/e/ee/Owler.jpeg)](/wiki/file_owler_jpeg) |
+| ![Owler.jpeg](/images/e/ee/Owler.jpeg) |
 | Information |
 | **Name** | Owler |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

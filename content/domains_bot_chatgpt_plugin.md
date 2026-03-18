@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Domains Bot (ChatGPT Plugin) |
 | --- |
-| [![Domains Bot.png](/images/b/ba/Domains_Bot.png)](/wiki/file_domains_bot_png) |
+| ![Domains Bot.png](/images/b/ba/Domains_Bot.png) |
 | Information |
 | **Name** | Domains Bot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

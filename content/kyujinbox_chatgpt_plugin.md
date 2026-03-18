@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Kyujinbox (ChatGPT Plugin) |
 | --- |
-| [![Kyujinbox.png](/images/1/1b/Kyujinbox.png)](/wiki/file_kyujinbox_png) |
+| ![Kyujinbox.png](/images/1/1b/Kyujinbox.png) |
 | Information |
 | **Name** | Kyujinbox |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

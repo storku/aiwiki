@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Stories (ChatGPT Plugin) |
 | --- |
-| [![Stories.png](/images/thumb/6/64/Stories.png/300px-Stories.png)](/wiki/file_stories_png) |
+| ![Stories.png](/images/thumb/6/64/Stories.png/300px-Stories.png) |
 | Information |
 | **Name** | Stories |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Midpage caselaw (ChatGPT Plugin) |
 | --- |
-| [![Midpage caselaw.png](/images/b/b6/Midpage_caselaw.png)](/wiki/file_midpage_caselaw_png) |
+| ![Midpage caselaw.png](/images/b/b6/Midpage_caselaw.png) |
 | Information |
 | **Name** | midpage caselaw |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

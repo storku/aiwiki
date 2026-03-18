@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Paxi AI (ChatGPT Plugin) |
 | --- |
-| [![Paxi AI.png](/images/thumb/7/79/Paxi_AI.png/300px-Paxi_AI.png)](/wiki/file_paxi_ai_png) |
+| ![Paxi AI.png](/images/thumb/7/79/Paxi_AI.png/300px-Paxi_AI.png) |
 | Information |
 | **Name** | Paxi AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

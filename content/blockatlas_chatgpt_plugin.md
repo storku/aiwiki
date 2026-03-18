@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BlockAtlas (ChatGPT Plugin) |
 | --- |
-| [![BlockAtlas.png](/images/thumb/9/95/BlockAtlas.png/300px-BlockAtlas.png)](/wiki/file_blockatlas_png) |
+| ![BlockAtlas.png](/images/thumb/9/95/BlockAtlas.png/300px-BlockAtlas.png) |
 | Information |
 | **Name** | BlockAtlas |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

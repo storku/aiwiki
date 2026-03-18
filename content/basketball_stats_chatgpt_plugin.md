@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Basketball Stats (ChatGPT Plugin) |
 | --- |
-| [![Basketball Stats.jpeg](/images/c/c2/Basketball_Stats.jpeg)](/wiki/file_basketball_stats_jpeg) |
+| ![Basketball Stats.jpeg](/images/c/c2/Basketball_Stats.jpeg) |
 | Information |
 | **Name** | Basketball Stats |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

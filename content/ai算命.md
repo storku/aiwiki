@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI算命 |
 | --- |
-| [![AI算命 (GPT).png](/images/thumb/7/7a/AI%E7%AE%97%E5%91%BD_%28GPT%29.png/300px-AI%E7%AE%97%E5%91%BD_%28GPT%29.png)](/wiki/file_ai算命_gpt_png) |
+| ![AI算命 (GPT).png](/images/thumb/7/7a/AI%E7%AE%97%E5%91%BD_%28GPT%29.png/300px-AI%E7%AE%97%E5%91%BD_%28GPT%29.png) |
 | Information |
 | **Name** | AI算命 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

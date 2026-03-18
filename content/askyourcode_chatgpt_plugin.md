@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AskYourCode (ChatGPT Plugin) |
 | --- |
-| [![AskYourCode.png](/images/thumb/9/98/AskYourCode.png/300px-AskYourCode.png)](/wiki/file_askyourcode_png) |
+| ![AskYourCode.png](/images/thumb/9/98/AskYourCode.png/300px-AskYourCode.png) |
 | Information |
 | **Name** | AskYourCode |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

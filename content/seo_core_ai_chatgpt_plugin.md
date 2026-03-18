@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SEO CORE AI (ChatGPT Plugin) |
 | --- |
-| [![SEO CORE AI.jpg](/images/1/1f/SEO_CORE_AI.jpg)](/wiki/file_seo_core_ai_jpg) |
+| ![SEO CORE AI.jpg](/images/1/1f/SEO_CORE_AI.jpg) |
 | Information |
 | **Name** | SEO CORE AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

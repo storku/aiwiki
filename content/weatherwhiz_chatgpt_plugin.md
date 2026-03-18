@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WeatherWhiz (ChatGPT Plugin) |
 | --- |
-| [![WeatherWhiz.jpg](/images/thumb/f/f5/WeatherWhiz.jpg/300px-WeatherWhiz.jpg)](/wiki/file_weatherwhiz_jpg) |
+| ![WeatherWhiz.jpg](/images/thumb/f/f5/WeatherWhiz.jpg/300px-WeatherWhiz.jpg) |
 | Information |
 | **Name** | WeatherWhiz |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

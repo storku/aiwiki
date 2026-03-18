@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Planty (GPT) |
 | --- |
-| [![Planty (GPT).png](/images/thumb/c/cd/Planty_%28GPT%29.png/300px-Planty_%28GPT%29.png)](/wiki/file_planty_gpt_png) |
+| ![Planty (GPT).png](/images/thumb/c/cd/Planty_%28GPT%29.png/300px-Planty_%28GPT%29.png) |
 | Information |
 | **Name** | Planty |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

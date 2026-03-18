@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BOXIL SaaS (ChatGPT Plugin) |
 | --- |
-| [![BOXIL SaaS.jpeg](/images/d/dc/BOXIL_SaaS.jpeg)](/wiki/file_boxil_saas_jpeg) |
+| ![BOXIL SaaS.jpeg](/images/d/dc/BOXIL_SaaS.jpeg) |
 | Information |
 | **Name** | BOXIL SaaS |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tomorrow.io Weather (ChatGPT Plugin) |
 | --- |
-| [![Tomorrow.io Weather.png](/images/thumb/e/ee/Tomorrow.io_Weather.png/300px-Tomorrow.io_Weather.png)](/wiki/file_tomorrow_io_weather_png) |
+| ![Tomorrow.io Weather.png](/images/thumb/e/ee/Tomorrow.io_Weather.png/300px-Tomorrow.io_Weather.png) |
 | Information |
 | **Name** | Tomorrow.io Weather |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

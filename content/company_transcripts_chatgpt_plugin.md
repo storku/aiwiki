@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Company Transcripts (ChatGPT Plugin) |
 | --- |
-| [![Company Transcripts.jpeg](/images/d/d9/Company_Transcripts.jpeg)](/wiki/file_company_transcripts_jpeg) |
+| ![Company Transcripts.jpeg](/images/d/d9/Company_Transcripts.jpeg) |
 | Information |
 | **Name** | Company Transcripts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

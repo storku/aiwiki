@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chess (ChatGPT Plugin) |
 | --- |
-| [![Chess.png](/images/6/6f/Chess.png)](/wiki/file_chess_png) |
+| ![Chess.png](/images/6/6f/Chess.png) |
 | Information |
 | **Name** | Chess |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

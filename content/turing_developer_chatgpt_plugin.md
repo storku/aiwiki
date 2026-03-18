@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Turing Developer (ChatGPT Plugin) |
 | --- |
-| [![Turing Developer.jpeg](/images/7/73/Turing_Developer.jpeg)](/wiki/file_turing_developer_jpeg) |
+| ![Turing Developer.jpeg](/images/7/73/Turing_Developer.jpeg) |
 | Information |
 | **Name** | Turing Developer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

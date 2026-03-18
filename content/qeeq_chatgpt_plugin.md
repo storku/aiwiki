@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QEEQ (ChatGPT Plugin) |
 | --- |
-| [![QEEQ.png](/images/7/77/QEEQ.png)](/wiki/file_qeeq_png) |
+| ![QEEQ.png](/images/7/77/QEEQ.png) |
 | Information |
 | **Name** | QEEQ |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

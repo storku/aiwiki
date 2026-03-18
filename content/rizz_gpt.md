@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Rizz GPT |
 | --- |
-| [![Rizz GPT.png](/images/thumb/8/81/Rizz_GPT.png/300px-Rizz_GPT.png)](/wiki/file_rizz_gpt_png) |
+| ![Rizz GPT.png](/images/thumb/8/81/Rizz_GPT.png/300px-Rizz_GPT.png) |
 | Information |
 | **Name** | Rizz GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Sembot (ChatGPT Plugin) |
 | --- |
-| [![Sembot.png](/images/a/a6/Sembot.png)](/wiki/file_sembot_png) |
+| ![Sembot.png](/images/a/a6/Sembot.png) |
 | Information |
 | **Name** | Sembot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

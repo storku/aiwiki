@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PlaylistAI (ChatGPT Plugin) |
 | --- |
-| [![PlaylistAI.png](/images/thumb/3/3b/PlaylistAI.png/300px-PlaylistAI.png)](/wiki/file_playlistai_png) |
+| ![PlaylistAI.png](/images/thumb/3/3b/PlaylistAI.png/300px-PlaylistAI.png) |
 | Information |
 | **Name** | PlaylistAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

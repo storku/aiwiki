@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Currency Today (ChatGPT Plugin) |
 | --- |
-| [![Currency Today.jpeg](/images/c/cf/Currency_Today.jpeg)](/wiki/file_currency_today_jpeg) |
+| ![Currency Today.jpeg](/images/c/cf/Currency_Today.jpeg) |
 | Information |
 | **Name** | Currency Today |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

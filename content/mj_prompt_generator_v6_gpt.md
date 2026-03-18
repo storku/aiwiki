@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MJ Prompt Generator (V6) (GPT) |
 | --- |
-| [![MJ Prompt Generator (V6) (GPT).png](/images/thumb/c/cd/MJ_Prompt_Generator_%28V6%29_%28GPT%29.png/300px-MJ_Prompt_Generator_%28V6%29_%28GPT%29.png)](/wiki/file_mj_prompt_generator_v6_gpt_png) |
+| ![MJ Prompt Generator (V6) (GPT).png](/images/thumb/c/cd/MJ_Prompt_Generator_%28V6%29_%28GPT%29.png/300px-MJ_Prompt_Generator_%28V6%29_%28GPT%29.png) |
 | Information |
 | **Name** | MJ Prompt Generator (V6) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

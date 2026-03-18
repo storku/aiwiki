@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Tattoo GPT |
 | --- |
-| [![Tattoo GPT.png](/images/thumb/5/5b/Tattoo_GPT.png/300px-Tattoo_GPT.png)](/wiki/file_tattoo_gpt_png) |
+| ![Tattoo GPT.png](/images/thumb/5/5b/Tattoo_GPT.png/300px-Tattoo_GPT.png) |
 | Information |
 | **Name** | Tattoo GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

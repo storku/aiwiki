@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ArtCollection (ChatGPT Plugin) |
 | --- |
-| [![ArtCollection.png](/images/thumb/3/35/ArtCollection.png/300px-ArtCollection.png)](/wiki/file_artcollection_png) |
+| ![ArtCollection.png](/images/thumb/3/35/ArtCollection.png/300px-ArtCollection.png) |
 | Information |
 | **Name** | ArtCollection |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

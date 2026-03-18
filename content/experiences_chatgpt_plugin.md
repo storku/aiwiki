@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Experiences (ChatGPT Plugin) |
 | --- |
-| [![Experiences.jpg](/images/8/82/Experiences.jpg)](/wiki/file_experiences_jpg) |
+| ![Experiences.jpg](/images/8/82/Experiences.jpg) |
 | Information |
 | **Name** | Experiences |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

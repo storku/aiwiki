@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Mia AI (GPT) |
 | --- |
-| [![Mia AI (GPT).png](/images/thumb/2/23/Mia_AI_%28GPT%29.png/300px-Mia_AI_%28GPT%29.png)](/wiki/file_mia_ai_gpt_png) |
+| ![Mia AI (GPT).png](/images/thumb/2/23/Mia_AI_%28GPT%29.png/300px-Mia_AI_%28GPT%29.png) |
 | Information |
 | **Name** | Mia AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

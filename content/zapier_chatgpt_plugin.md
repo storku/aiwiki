@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Zapier (ChatGPT Plugin) |
 | --- |
-| [![Zapier.png](/images/1/19/Zapier.png)](/wiki/file_zapier_png) |
+| ![Zapier.png](/images/1/19/Zapier.png) |
 | Information |
 | **Name** | Zapier |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

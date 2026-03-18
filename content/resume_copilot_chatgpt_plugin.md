@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Resume Copilot (ChatGPT Plugin) |
 | --- |
-| [![Resume Copilot.jpg](/images/thumb/f/f4/Resume_Copilot.jpg/300px-Resume_Copilot.jpg)](/wiki/file_resume_copilot_jpg) |
+| ![Resume Copilot.jpg](/images/thumb/f/f4/Resume_Copilot.jpg/300px-Resume_Copilot.jpg) |
 | Information |
 | **Name** | Resume Copilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

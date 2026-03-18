@@ -12,7 +12,7 @@ categories:
   - "2023_software"
 ---[Template:Infobox LLM](/index.php?title=Template:Infobox_LLM&action=edit&redlink=1)
 
-[![Qwen logo1.png](/images/thumb/1/17/Qwen_logo1.png/300px-Qwen_logo1.png)](/wiki/file_qwen_logo1_png)
+![Qwen logo1.png](/images/thumb/1/17/Qwen_logo1.png/300px-Qwen_logo1.png)
 
 **Qwen** (also called **Tongyi Qianwen**, [Chinese](/index.php?title=Chinese_language&action=edit&redlink=1): 通义千问; [pinyin](/index.php?title=Pinyin&action=edit&redlink=1): Tōngyì Qiānwèn; literally "to comprehend the meaning, [and to answer] a thousand kinds of questions") is a family of [large language models](/wiki/large_language_model) (LLMs) and [multimodal models](/wiki/multimodal_model) developed by [Alibaba Cloud](/wiki/alibaba_cloud), the cloud computing division of Chinese technology company [Alibaba Group](/index.php?title=Alibaba_Group&action=edit&redlink=1).[&#91;1&#93;](#cite_note-wikipedia-1) The name "Qwen" is derived from the Chinese brand Tongyi Qianwen and refers to the large language model family built by [Alibaba Cloud](/wiki/alibaba_cloud)'s Qwen Team.[&#91;2&#93;](#cite_note-huggingface-2) As of February 2025, Qwen models have become one of the most widely adopted [open-source](/index.php?title=Open-source&action=edit&redlink=1) models globally, with more than 78,000 derivative models developed on [Hugging Face](/wiki/hugging_face) based on the Qwen family since it was first open-sourced in 2023, and over 40 million downloads.[&#91;3&#93;](#cite_note-qvq-alibaba-3) All top 10 open-source LLMs on Hugging Face's Open LLM Leaderboard were trained and developed on updated open-source versions of Qwen.[&#91;4&#93;](#cite_note-scmp-4)
 

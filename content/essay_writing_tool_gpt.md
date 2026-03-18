@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Essay Writing Tool (GPT) |
 | --- |
-| [![Academic Writing Tool by Litero.ai (GPT).png](/images/thumb/d/d5/Academic_Writing_Tool_by_Litero.ai_%28GPT%29.png/300px-Academic_Writing_Tool_by_Litero.ai_%28GPT%29.png)](/wiki/file_academic_writing_tool_by_litero_ai_gpt_png) |
+| ![Academic Writing Tool by Litero.ai (GPT).png](/images/thumb/d/d5/Academic_Writing_Tool_by_Litero.ai_%28GPT%29.png/300px-Academic_Writing_Tool_by_Litero.ai_%28GPT%29.png) |
 | Information |
 | **Name** | Academic Writing Tool by Litero.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

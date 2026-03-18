@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Language Teacher - Ms. Smith (GPT) |
 | --- |
-| [![Language Teacher - Ms. Smith (GPT).png](/images/thumb/4/44/Language_Teacher_-_Ms._Smith_%28GPT%29.png/300px-Language_Teacher_-_Ms._Smith_%28GPT%29.png)](/wiki/file_language_teacher_-_ms_smith_gpt_png) |
+| ![Language Teacher - Ms. Smith (GPT).png](/images/thumb/4/44/Language_Teacher_-_Ms._Smith_%28GPT%29.png/300px-Language_Teacher_-_Ms._Smith_%28GPT%29.png) |
 | Information |
 | **Name** | Language Teacher - Ms. Smith |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

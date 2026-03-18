@@ -8,7 +8,7 @@ categories:
 
 ## Basic prompt structure
 
-[![](/images/thumb/f/f3/Prompt_writing_elements.png/300px-Prompt_writing_elements.png)](/wiki/file_prompt_writing_elements_png)  [](/wiki/file_prompt_writing_elements_png)
+![](/images/thumb/f/f3/Prompt_writing_elements.png/300px-Prompt_writing_elements.png)  
 Figure 1. Prompt writing elements. Source: Oppenlaender (2022)
 A [prompt](/wiki/prompt) usually includes a subject term, while any other parts of the prompt are optional (figure 1). However, [modifiers](/index.php?title=Modifiers&action=edit&redlink=1) are often added to improve the resulting images and provide more control over the creation process. These modifiers are applied through experimentation or based on best practices learned from experience or online resources. [&#91;1&#93;](#cite_note-”2”-1) Modifiers can either alter the style of the generated image, for example, or boost its quality. There can be overlapping effects between style modifiers and quality boosters. Once a style modifier has been added, solidifiers (using repetition) can be applied to any of the other types of modifiers. The textual prompt can be divided into two main components: the physical and factual content of the image, and the stylistic considerations in the way the physical content is displayed. [&#91;1&#93;](#cite_note-”2”-1)[&#91;2&#93;](#cite_note-”7”-2)
 
@@ -26,17 +26,17 @@ According to Oppenlaender (2022), there are several opportunities for future res
 
 ## Text-to-Image
 
-[![](/images/thumb/2/29/11a._Without_Unbundling.png/300px-11a._Without_Unbundling.png)](/wiki/file_11a_without_unbundling_png)  [](/wiki/file_11a_without_unbundling_png)
+![](/images/thumb/2/29/11a._Without_Unbundling.png/300px-11a._Without_Unbundling.png)  
 Figure 3a. Without unbundling. Prompt: Kobe Bryant shooting free throws, in the style of The Old Guitarist by Pablo Picasso, digital art. Source: DecentralizedCreator.
-[![](/images/thumb/7/76/11b._With_Unbundling.png/300px-11b._With_Unbundling.png)](/wiki/file_11b_with_unbundling_png)  [](/wiki/file_11b_with_unbundling_png)
+![](/images/thumb/7/76/11b._With_Unbundling.png/300px-11b._With_Unbundling.png)  
 Figure 3b. With unbundling. Prompt: Kobe Bryant shooting free throws, The painting has a simple composition, with just three primary colors: red, blue and yellow. However, it is also packed with hidden meanings and visual complexities, digital art. Source: DecentralizedCreator.
-[![](/images/thumb/7/73/4._Styles_in_Midjourney.png/300px-4._Styles_in_Midjourney.png)](/wiki/file_4_styles_in_midjourney_png)  [](/wiki/file_4_styles_in_midjourney_png)
+![](/images/thumb/7/73/4._Styles_in_Midjourney.png/300px-4._Styles_in_Midjourney.png)  
 Figure 4. Midjourney elements. Source: Mlearning.ai.
-[![](/images/thumb/1/19/5._Midjourney_Styles_words.png/300px-5._Midjourney_Styles_words.png)](/wiki/file_5_midjourney_styles_words_png)  [](/wiki/file_5_midjourney_styles_words_png)
+![](/images/thumb/1/19/5._Midjourney_Styles_words.png/300px-5._Midjourney_Styles_words.png)  
 Figure 5. Different keywords for styles result in different outputs. Source: Mlearning.ai.
-[![](/images/thumb/8/8e/6._Rendering_and_lighting_properties_as_style.png/300px-6._Rendering_and_lighting_properties_as_style.png)](/wiki/file_6_rendering_and_lighting_properties_as_style_png)  [](/wiki/file_6_rendering_and_lighting_properties_as_style_png)
+![](/images/thumb/8/8e/6._Rendering_and_lighting_properties_as_style.png/300px-6._Rendering_and_lighting_properties_as_style.png)  
 Figure 6. Different lighting options. Source: Mlearning.ai.
-[![](/images/thumb/7/70/7._Midjourney_Chaos.png/300px-7._Midjourney_Chaos.png)](/wiki/file_7_midjourney_chaos_png)  [](/wiki/file_7_midjourney_chaos_png)
+![](/images/thumb/7/70/7._Midjourney_Chaos.png/300px-7._Midjourney_Chaos.png)  
 Figure 7. Chaos option. Source. MLearning.ai.
 Text prompts can be used to generate images using a text-to-image model, where words are used to describe an image and the model creates it accordingly. Emojis or single lines of text can also be used as prompts to get optimal results. However, the subject term is important to control the generation of digital images. [&#91;4&#93;](#cite_note-”1”-4)[&#91;5&#93;](#cite_note-”12”-5) In the online community for AI-generated art, templates for writing input prompts have emerged, such as the "Traveler's Guide to the Latent Space," which recommends specific prompt templates such as [Medium][Subject][Artist(s)][Details][Image repository support]. [&#91;1&#93;](#cite_note-”2”-1)
 
@@ -121,9 +121,9 @@ There has been some experimentation with narrative prompts, an alternative to th
 
 ## Research on Prompt engineering
 
-[![](/images/thumb/b/b8/Promptist_training_overview.png/300px-Promptist_training_overview.png)](/wiki/file_promptist_training_overview_png)  [](/wiki/file_promptist_training_overview_png)
+![](/images/thumb/b/b8/Promptist_training_overview.png/300px-Promptist_training_overview.png)  
 Figure 8. PROMPTIST training overview. Source: Hao et al. (2022)
-[![](/images/thumb/b/be/Comparison_between_the_results_of_the_original_user_prompt-Hao_et_al.png/300px-Comparison_between_the_results_of_the_original_user_prompt-Hao_et_al.png)](/wiki/file_comparison_between_the_results_of_the_original_user_prompt-hao_et_al_png)  [](/wiki/file_comparison_between_the_results_of_the_original_user_prompt-hao_et_al_png)
+![](/images/thumb/b/be/Comparison_between_the_results_of_the_original_user_prompt-Hao_et_al.png/300px-Comparison_between_the_results_of_the_original_user_prompt-Hao_et_al.png)  
 Figure 9. Comparison between the results of the original user prompt and the optimized prompt. Source: Hao et al. (2022)
 ### Automatic prompt engineering
 
@@ -135,7 +135,7 @@ Jian et al. (2020) proposed two automatic methods to improve the quality and sco
 
 Their paper examined the importance of prompts for retrieving factual knowledge from language models and proposed the use of automated techniques to generate diverse and semantically similar prompts. By combining the different prompts, the research shows that factual knowledge retrieval accuracy can be improved by up to 8% compared to manually designed prompts. The proposed methods outperform the traditional manual prompt design approach and the use of the ensemble approach allows for greater flexibility and improved accuracy for different subject-object pairs. [&#91;13&#93;](#cite_note-”18”-13)
 
-[![](/images/thumb/5/53/List_of_styles_used_in_one_of_the_experiments_in_Liu_and_Chilton_%282021%29._Source-_Liu_and_Chilton_%282021%29..png/300px-List_of_styles_used_in_one_of_the_experiments_in_Liu_and_Chilton_%282021%29._Source-_Liu_and_Chilton_%282021%29..png)](/wiki/file_list_of_styles_used_in_one_of_the_experiments_in_liu_and_chilton_2021_source-_liu_and_chilton_2021_png)  [](/wiki/file_list_of_styles_used_in_one_of_the_experiments_in_liu_and_chilton_2021_source-_liu_and_chilton_2021_png)
+![](/images/thumb/5/53/List_of_styles_used_in_one_of_the_experiments_in_Liu_and_Chilton_%282021%29._Source-_Liu_and_Chilton_%282021%29..png/300px-List_of_styles_used_in_one_of_the_experiments_in_Liu_and_Chilton_%282021%29._Source-_Liu_and_Chilton_%282021%29..png)  
 Figure 10. List of styles used in one of the experiments in Liu and Chilton (2021). Source: Liu and Chilton (2021).
 ### Prompt variables
 
@@ -157,7 +157,7 @@ The guidelines provided suggest:
 
 - Considering the interaction between levels of abstraction for the subject and style, as they can lead to incompatible representations. [&#91;14&#93;](#cite_note-”3”-14)
 
-[![](/images/thumb/0/01/Ranking_of_top-15_most_important_keywords.png/300px-Ranking_of_top-15_most_important_keywords.png)](/wiki/file_ranking_of_top-15_most_important_keywords_png)  [](/wiki/file_ranking_of_top-15_most_important_keywords_png)
+![](/images/thumb/0/01/Ranking_of_top-15_most_important_keywords.png/300px-Ranking_of_top-15_most_important_keywords.png)  
 Figure 11. Ranking of top-15 most important keywords. Source: Pavlichenko et al. (2022)
 ### Prompt keyword combinations
 
@@ -165,13 +165,13 @@ Pavlichenko et al. (2022) aimed to improve the aesthetic appeal of computer-gene
 
 The study showed that adding prompt keywords can significantly enhance the quality of computer-generated images. However, the most commonly used keywords do not necessarily lead to the best-looking images. To determine the importance of different keywords, the authors trained a random forest regressor on sets of keywords and their metrics. They found that the most important keywords for generating aesthetically pleasing images were different from the most widely used ones (figure 11). The approach presented in this paper can be applied to evaluate an arbitrary prompt template in various settings. [&#91;3&#93;](#cite_note-”8”-3)
 
-[![](/images/thumb/8/89/Effect_of_different_image_modifiers.png/300px-Effect_of_different_image_modifiers.png)](/wiki/file_effect_of_different_image_modifiers_png)  [](/wiki/file_effect_of_different_image_modifiers_png)
+![](/images/thumb/8/89/Effect_of_different_image_modifiers.png/300px-Effect_of_different_image_modifiers.png)  
 Figure 12. Effect of different image modifiers. Source: Witteveen and Andrews (2022).
-[![](/images/thumb/4/46/Repeating_words.png/300px-Repeating_words.png)](/wiki/file_repeating_words_png)  [](/wiki/file_repeating_words_png)
+![](/images/thumb/4/46/Repeating_words.png/300px-Repeating_words.png)  
 Figure 13. Repeating words. Source: Witteveen and Andrews (2022).
-[![](/images/thumb/5/56/Light_modifiers.png/300px-Light_modifiers.png)](/wiki/file_light_modifiers_png)  [](/wiki/file_light_modifiers_png)
+![](/images/thumb/5/56/Light_modifiers.png/300px-Light_modifiers.png)  
 Figure 14. Light modifiers. Source: Witteveen and Andrews (2022).
-[![](/images/thumb/5/59/Effect_of_styled_by_artist.png/300px-Effect_of_styled_by_artist.png)](/wiki/file_effect_of_styled_by_artist_png)  [](/wiki/file_effect_of_styled_by_artist_png)
+![](/images/thumb/5/59/Effect_of_styled_by_artist.png/300px-Effect_of_styled_by_artist.png)  
 Figure 15. Effect of styled by artist. Source: Witteveen and Andrews (2022).
 ### Prompt Modifiers
 

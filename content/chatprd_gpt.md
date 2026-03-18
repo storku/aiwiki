@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ChatPRD (GPT) |
 | --- |
-| [![ChatPRD (GPT).png](/images/thumb/2/23/ChatPRD_%28GPT%29.png/300px-ChatPRD_%28GPT%29.png)](/wiki/file_chatprd_gpt_png) |
+| ![ChatPRD (GPT).png](/images/thumb/2/23/ChatPRD_%28GPT%29.png/300px-ChatPRD_%28GPT%29.png) |
 | Information |
 | **Name** | ChatPRD |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

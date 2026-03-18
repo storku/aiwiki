@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CreditYelp (ChatGPT Plugin) |
 | --- |
-| [![CreditYelp.png](/images/thumb/7/79/CreditYelp.png/300px-CreditYelp.png)](/wiki/file_credityelp_png) |
+| ![CreditYelp.png](/images/thumb/7/79/CreditYelp.png/300px-CreditYelp.png) |
 | Information |
 | **Name** | CreditYelp |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

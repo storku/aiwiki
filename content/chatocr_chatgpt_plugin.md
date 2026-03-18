@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatOCR (ChatGPT Plugin) |
 | --- |
-| [![ChatOCR.png](/images/8/89/ChatOCR.png)](/wiki/file_chatocr_png) |
+| ![ChatOCR.png](/images/8/89/ChatOCR.png) |
 | Information |
 | **Name** | ChatOCR |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

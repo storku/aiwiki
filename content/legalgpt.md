@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| LegalGPT |
 | --- |
-| [![LegalGPT.png](/images/thumb/7/76/LegalGPT.png/300px-LegalGPT.png)](/wiki/file_legalgpt_png) |
+| ![LegalGPT.png](/images/thumb/7/76/LegalGPT.png/300px-LegalGPT.png) |
 | Information |
 | **Name** | LegalGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

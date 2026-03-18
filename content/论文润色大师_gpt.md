@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 论文润色大师 (GPT) |
 | --- |
-| [![论文润色大师 (GPT).png](/images/thumb/0/08/%E8%AE%BA%E6%96%87%E6%B6%A6%E8%89%B2%E5%A4%A7%E5%B8%88_%28GPT%29.png/300px-%E8%AE%BA%E6%96%87%E6%B6%A6%E8%89%B2%E5%A4%A7%E5%B8%88_%28GPT%29.png)](/wiki/file_论文润色大师_gpt_png) |
+| ![论文润色大师 (GPT).png](/images/thumb/0/08/%E8%AE%BA%E6%96%87%E6%B6%A6%E8%89%B2%E5%A4%A7%E5%B8%88_%28GPT%29.png/300px-%E8%AE%BA%E6%96%87%E6%B6%A6%E8%89%B2%E5%A4%A7%E5%B8%88_%28GPT%29.png) |
 | Information |
 | **Name** | 论文润色大师 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

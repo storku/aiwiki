@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Creatuity Stores (ChatGPT Plugin) |
 | --- |
-| [![Creatuity Stores.png](/images/thumb/1/1e/Creatuity_Stores.png/300px-Creatuity_Stores.png)](/wiki/file_creatuity_stores_png) |
+| ![Creatuity Stores.png](/images/thumb/1/1e/Creatuity_Stores.png/300px-Creatuity_Stores.png) |
 | Information |
 | **Name** | Creatuity Stores |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

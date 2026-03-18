@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Questmate Forms (ChatGPT Plugin) |
 | --- |
-| [![Questmate Forms.png](/images/thumb/b/b4/Questmate_Forms.png/300px-Questmate_Forms.png)](/wiki/file_questmate_forms_png) |
+| ![Questmate Forms.png](/images/thumb/b/b4/Questmate_Forms.png/300px-Questmate_Forms.png) |
 | Information |
 | **Name** | Questmate Forms |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

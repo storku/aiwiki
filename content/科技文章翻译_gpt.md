@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 科技文章翻译 (GPT) |
 | --- |
-| [![科技文章翻译 (GPT).png](/images/thumb/b/bd/%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91_%28GPT%29.png/300px-%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91_%28GPT%29.png)](/wiki/file_科技文章翻译_gpt_png) |
+| ![科技文章翻译 (GPT).png](/images/thumb/b/bd/%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91_%28GPT%29.png/300px-%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91_%28GPT%29.png) |
 | Information |
 | **Name** | 科技文章翻译 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

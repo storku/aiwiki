@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Zumper Rentals (ChatGPT Plugin) |
 | --- |
-| [![Zumper Rentals.png](/images/thumb/b/b5/Zumper_Rentals.png/300px-Zumper_Rentals.png)](/wiki/file_zumper_rentals_png) |
+| ![Zumper Rentals.png](/images/thumb/b/b5/Zumper_Rentals.png/300px-Zumper_Rentals.png) |
 | Information |
 | **Name** | Zumper Rentals |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

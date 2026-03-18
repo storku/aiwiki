@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| UK Politics (ChatGPT Plugin) |
 | --- |
-| [![UK Politics.png](/images/d/d3/UK_Politics.png)](/wiki/file_uk_politics_png) |
+| ![UK Politics.png](/images/d/d3/UK_Politics.png) |
 | Information |
 | **Name** | UK Politics |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

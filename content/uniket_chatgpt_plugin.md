@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Uniket (ChatGPT Plugin) |
 | --- |
-| [![Uniket.png](/images/thumb/7/7f/Uniket.png/300px-Uniket.png)](/wiki/file_uniket_png) |
+| ![Uniket.png](/images/thumb/7/7f/Uniket.png/300px-Uniket.png) |
 | Information |
 | **Name** | Uniket |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

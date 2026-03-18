@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 超级写作大师（Super Writing Master） (GPT) |
 | --- |
-| [![超级写作大师（Super Writing Master） (GPT).png](/images/thumb/f/fe/%E8%B6%85%E7%BA%A7%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88%EF%BC%88Super_Writing_Master%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88%EF%BC%88Super_Writing_Master%EF%BC%89_%28GPT%29.png)](/wiki/file_超级写作大师_super_writing_master_gpt_png) |
+| ![超级写作大师（Super Writing Master） (GPT).png](/images/thumb/f/fe/%E8%B6%85%E7%BA%A7%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88%EF%BC%88Super_Writing_Master%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88%EF%BC%88Super_Writing_Master%EF%BC%89_%28GPT%29.png) |
 | Information |
 | **Name** | 超级写作大师（Super Writing Master） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

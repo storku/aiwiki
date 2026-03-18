@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mermaid Chart (ChatGPT Plugin) |
 | --- |
-| [![Mermaid Chart.jpeg](/images/thumb/7/7d/Mermaid_Chart.jpeg/300px-Mermaid_Chart.jpeg)](/wiki/file_mermaid_chart_jpeg) |
+| ![Mermaid Chart.jpeg](/images/thumb/7/7d/Mermaid_Chart.jpeg/300px-Mermaid_Chart.jpeg) |
 | Information |
 | **Name** | Mermaid Chart |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

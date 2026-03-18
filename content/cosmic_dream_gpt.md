@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Cosmic Dream (GPT) |
 | --- |
-| [![Cosmic Dream (GPT).png](/images/thumb/7/70/Cosmic_Dream_%28GPT%29.png/300px-Cosmic_Dream_%28GPT%29.png)](/wiki/file_cosmic_dream_gpt_png) |
+| ![Cosmic Dream (GPT).png](/images/thumb/7/70/Cosmic_Dream_%28GPT%29.png/300px-Cosmic_Dream_%28GPT%29.png) |
 | Information |
 | **Name** | Cosmic Dream |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

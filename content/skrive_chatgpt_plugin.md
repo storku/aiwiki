@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Skrive (ChatGPT Plugin) |
 | --- |
-| [![Skrive.png](/images/thumb/c/c3/Skrive.png/300px-Skrive.png)](/wiki/file_skrive_png) |
+| ![Skrive.png](/images/thumb/c/c3/Skrive.png/300px-Skrive.png) |
 | Information |
 | **Name** | Skrive |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

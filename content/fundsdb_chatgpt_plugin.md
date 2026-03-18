@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| FundsDB (ChatGPT Plugin) |
 | --- |
-| [![FundsDB.png](/images/thumb/b/b9/FundsDB.png/300px-FundsDB.png)](/wiki/file_fundsdb_png) |
+| ![FundsDB.png](/images/thumb/b/b9/FundsDB.png/300px-FundsDB.png) |
 | Information |
 | **Name** | FundsDB |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

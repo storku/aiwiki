@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Easy Resume (ChatGPT Plugin) |
 | --- |
-| [![Easy Resume.png](/images/b/b4/Easy_Resume.png)](/wiki/file_easy_resume_png) |
+| ![Easy Resume.png](/images/b/b4/Easy_Resume.png) |
 | Information |
 | **Name** | Easy Resume |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

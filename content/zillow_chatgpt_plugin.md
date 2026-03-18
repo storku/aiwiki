@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Zillow (ChatGPT Plugin) |
 | --- |
-| [![Zillow.png](/images/b/b1/Zillow.png)](/wiki/file_zillow_png) |
+| ![Zillow.png](/images/b/b1/Zillow.png) |
 | Information |
 | **Name** | Zillow |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

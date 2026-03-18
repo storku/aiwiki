@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Math Mentor (GPT) |
 | --- |
-| [![Math Mentor (GPT).png](/images/thumb/f/f1/Math_Mentor_%28GPT%29.png/300px-Math_Mentor_%28GPT%29.png)](/wiki/file_math_mentor_gpt_png) |
+| ![Math Mentor (GPT).png](/images/thumb/f/f1/Math_Mentor_%28GPT%29.png/300px-Math_Mentor_%28GPT%29.png) |
 | Information |
 | **Name** | Math Mentor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

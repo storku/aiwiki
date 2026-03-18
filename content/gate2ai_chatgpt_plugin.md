@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Gate2AI (ChatGPT Plugin) |
 | --- |
-| [![Gate2AI.png](/images/thumb/a/ab/Gate2AI.png/300px-Gate2AI.png)](/wiki/file_gate2ai_png) |
+| ![Gate2AI.png](/images/thumb/a/ab/Gate2AI.png/300px-Gate2AI.png) |
 | Information |
 | **Name** | Gate2AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

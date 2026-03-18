@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AutoExpert (Dev) (GPT) |
 | --- |
-| [![AutoExpert (Dev) (GPT).png](/images/thumb/a/ae/AutoExpert_%28Dev%29_%28GPT%29.png/300px-AutoExpert_%28Dev%29_%28GPT%29.png)](/wiki/file_autoexpert_dev_gpt_png) |
+| ![AutoExpert (Dev) (GPT).png](/images/thumb/a/ae/AutoExpert_%28Dev%29_%28GPT%29.png/300px-AutoExpert_%28Dev%29_%28GPT%29.png) |
 | Information |
 | **Name** | AutoExpert (Dev) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

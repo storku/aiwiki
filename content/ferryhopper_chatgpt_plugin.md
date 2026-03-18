@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ferryhopper (ChatGPT Plugin) |
 | --- |
-| [![Ferryhopper.png](/images/a/aa/Ferryhopper.png)](/wiki/file_ferryhopper_png) |
+| ![Ferryhopper.png](/images/a/aa/Ferryhopper.png) |
 | Information |
 | **Name** | Ferryhopper |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

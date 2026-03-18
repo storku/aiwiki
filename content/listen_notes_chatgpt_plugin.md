@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Listen Notes (ChatGPT Plugin) |
 | --- |
-| [![Listen Notes.png](/images/thumb/f/f7/Listen_Notes.png/300px-Listen_Notes.png)](/wiki/file_listen_notes_png) |
+| ![Listen Notes.png](/images/thumb/f/f7/Listen_Notes.png/300px-Listen_Notes.png) |
 | Information |
 | **Name** | Listen Notes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

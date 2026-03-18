@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat with Bible (ChatGPT Plugin) |
 | --- |
-| [![Chat with Bible.png](/images/thumb/9/91/Chat_with_Bible.png/300px-Chat_with_Bible.png)](/wiki/file_chat_with_bible_png) |
+| ![Chat with Bible.png](/images/thumb/9/91/Chat_with_Bible.png/300px-Chat_with_Bible.png) |
 | Information |
 | **Name** | Chat with Bible |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Defillama (ChatGPT Plugin) |
 | --- |
-| [![Defillama.png](/images/thumb/1/15/Defillama.png/300px-Defillama.png)](/wiki/file_defillama_png) |
+| ![Defillama.png](/images/thumb/1/15/Defillama.png/300px-Defillama.png) |
 | Information |
 | **Name** | Defillama |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

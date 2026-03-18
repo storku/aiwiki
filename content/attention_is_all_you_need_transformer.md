@@ -11,7 +11,7 @@ As an important paper, its main contribution was the demonstration of the effect
 
 ## Model Architecture
 
-[![](/images/thumb/4/4e/Transformer-model_architecture.png/300px-Transformer-model_architecture.png)](/wiki/file_transformer-model_architecture_png)  [](/wiki/file_transformer-model_architecture_png)
+![](/images/thumb/4/4e/Transformer-model_architecture.png/300px-Transformer-model_architecture.png)  
 Figure 1. Transformer model architecture. Source: Google
 The  [Transformer](/wiki/transformer) consists of an encoder and a decoder, both consisting of various layers that contain two sub-layers, a self-attention and a feed-forward neural network layer (figure 1). [&#91;1&#93;](#cite_note-”1”-1) [&#91;3&#93;](#cite_note-”3”-3) This architecture relies only on attention mechanisms to process input sequences. [&#91;1&#93;](#cite_note-”1”-1)
 
@@ -30,11 +30,11 @@ Since the model doesn't contain recurrence or convolution, positional encoding w
 
 ## Training and Inference
 
-[![](/images/thumb/e/e1/Transformer_achieves_better_BLEU_scores.png/300px-Transformer_achieves_better_BLEU_scores.png)](/wiki/file_transformer_achieves_better_bleu_scores_png)  [](/wiki/file_transformer_achieves_better_bleu_scores_png)
+![](/images/thumb/e/e1/Transformer_achieves_better_BLEU_scores.png/300px-Transformer_achieves_better_BLEU_scores.png)  
 Figure 2. Transformer BLEU scores. Source: Google.
-[![](/images/thumb/4/44/English_to_German_translation.png/300px-English_to_German_translation.png)](/wiki/file_english_to_german_translation_png)  [](/wiki/file_english_to_german_translation_png)
+![](/images/thumb/4/44/English_to_German_translation.png/300px-English_to_German_translation.png)  
 Figure 3. English to German translation scores. Source: Google.
-[![](/images/thumb/3/34/English_to_French_translation.png/300px-English_to_French_translation.png)](/wiki/file_english_to_french_translation_png)  [](/wiki/file_english_to_french_translation_png)
+![](/images/thumb/3/34/English_to_French_translation.png/300px-English_to_French_translation.png)  
 Figure 3. English to French translation scores. Source: Google.
 The training was made on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs, and the sentences encoded using byte-pair. In the case of English-French, a WMT 2014 English-French dataset was used. It consisted of 36 million sentences and split tokens into a 32,000 word-piece vocabulary. [&#91;3&#93;](#cite_note-”3”-3)
 

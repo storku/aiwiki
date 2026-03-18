@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Job (GPT) |
 | --- |
-| [![Jobright - All In One Job Search Co-Pilot (GPT).png](/images/thumb/3/36/Jobright_-_All_In_One_Job_Search_Co-Pilot_%28GPT%29.png/300px-Jobright_-_All_In_One_Job_Search_Co-Pilot_%28GPT%29.png)](/wiki/file_jobright_-_all_in_one_job_search_co-pilot_gpt_png) |
+| ![Jobright - All In One Job Search Co-Pilot (GPT).png](/images/thumb/3/36/Jobright_-_All_In_One_Job_Search_Co-Pilot_%28GPT%29.png/300px-Jobright_-_All_In_One_Job_Search_Co-Pilot_%28GPT%29.png) |
 | Information |
 | **Name** | Job |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

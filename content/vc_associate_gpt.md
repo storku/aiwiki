@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| VC Associate (GPT) |
 | --- |
-| [![VC Associate (GPT).png](/images/thumb/c/c6/VC_Associate_%28GPT%29.png/300px-VC_Associate_%28GPT%29.png)](/wiki/file_vc_associate_gpt_png) |
+| ![VC Associate (GPT).png](/images/thumb/c/c6/VC_Associate_%28GPT%29.png/300px-VC_Associate_%28GPT%29.png) |
 | Information |
 | **Name** | VC Associate |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

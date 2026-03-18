@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Top Resume Writer - Boost Your Interviews (GPT) |
 | --- |
-| [![Top Resume Writer - Boost Your Interviews (GPT).png](/images/thumb/3/39/Top_Resume_Writer_-_Boost_Your_Interviews_%28GPT%29.png/300px-Top_Resume_Writer_-_Boost_Your_Interviews_%28GPT%29.png)](/wiki/file_top_resume_writer_-_boost_your_interviews_gpt_png) |
+| ![Top Resume Writer - Boost Your Interviews (GPT).png](/images/thumb/3/39/Top_Resume_Writer_-_Boost_Your_Interviews_%28GPT%29.png/300px-Top_Resume_Writer_-_Boost_Your_Interviews_%28GPT%29.png) |
 | Information |
 | **Name** | Top Resume Writer - Boost Your Interviews |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

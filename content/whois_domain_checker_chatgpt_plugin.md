@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Whois Domain Checker (ChatGPT Plugin) |
 | --- |
-| [![Whois Domain Checker.png](/images/9/9d/Whois_Domain_Checker.png)](/wiki/file_whois_domain_checker_png) |
+| ![Whois Domain Checker.png](/images/9/9d/Whois_Domain_Checker.png) |
 | Information |
 | **Name** | Whois Domain Checker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

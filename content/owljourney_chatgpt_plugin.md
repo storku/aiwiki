@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| OwlJourney (ChatGPT Plugin) |
 | --- |
-| [![OwlJourney.jpg](/images/thumb/a/ab/OwlJourney.jpg/300px-OwlJourney.jpg)](/wiki/file_owljourney_jpg) |
+| ![OwlJourney.jpg](/images/thumb/a/ab/OwlJourney.jpg/300px-OwlJourney.jpg) |
 | Information |
 | **Name** | OwlJourney |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

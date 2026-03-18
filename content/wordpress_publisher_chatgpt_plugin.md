@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Wordpress Publisher (ChatGPT Plugin) |
 | --- |
-| [![Wordpress Publisher.png](/images/thumb/c/c3/Wordpress_Publisher.png/300px-Wordpress_Publisher.png)](/wiki/file_wordpress_publisher_png) |
+| ![Wordpress Publisher.png](/images/thumb/c/c3/Wordpress_Publisher.png/300px-Wordpress_Publisher.png) |
 | Information |
 | **Name** | Wordpress Publisher |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

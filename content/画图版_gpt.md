@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 画图版 (GPT) |
 | --- |
-| [![画图版 (GPT).png](/images/thumb/3/3d/%E7%94%BB%E5%9B%BE%E7%89%88_%28GPT%29.png/300px-%E7%94%BB%E5%9B%BE%E7%89%88_%28GPT%29.png)](/wiki/file_画图版_gpt_png) |
+| ![画图版 (GPT).png](/images/thumb/3/3d/%E7%94%BB%E5%9B%BE%E7%89%88_%28GPT%29.png/300px-%E7%94%BB%E5%9B%BE%E7%89%88_%28GPT%29.png) |
 | Information |
 | **Name** | 画图版 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

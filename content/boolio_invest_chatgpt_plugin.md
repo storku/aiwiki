@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Boolio Invest (ChatGPT Plugin) |
 | --- |
-| [![Boolio Invest.png](/images/e/e1/Boolio_Invest.png)](/wiki/file_boolio_invest_png) |
+| ![Boolio Invest.png](/images/e/e1/Boolio_Invest.png) |
 | Information |
 | **Name** | Boolio Invest |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

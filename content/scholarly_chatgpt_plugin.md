@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Scholarly (ChatGPT Plugin) |
 | --- |
-| [![Scholarly.png](/images/6/61/Scholarly.png)](/wiki/file_scholarly_png) |
+| ![Scholarly.png](/images/6/61/Scholarly.png) |
 | Information |
 | **Name** | Scholarly |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

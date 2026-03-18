@@ -11,7 +11,7 @@ categories:
 ---| ByteDance Seed |
 | --- |
 | 字节跳动种子团队 |
-| [![ByteDance Seed logo](/images/thumb/d/d7/Bytedance_seed_logo1.jpg/200px-Bytedance_seed_logo1.jpg)](/wiki/file_bytedance_seed_logo1_jpg) |
+| ![ByteDance Seed logo](/images/thumb/d/d7/Bytedance_seed_logo1.jpg/200px-Bytedance_seed_logo1.jpg) |
 | Type | Research division |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | Early 2023

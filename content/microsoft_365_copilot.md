@@ -13,7 +13,7 @@ Microsoft 365 Copilot, introduced on March 16, 2023, is a groundbreaking [AI ass
 
 ## Overview
 
-[![Microsoft 365 copilot1.jpg](/images/thumb/9/92/Microsoft_365_copilot1.jpg/400px-Microsoft_365_copilot1.jpg)](/wiki/file_microsoft_365_copilot1_jpg)
+![Microsoft 365 copilot1.jpg](/images/thumb/9/92/Microsoft_365_copilot1.jpg/400px-Microsoft_365_copilot1.jpg)
 
 Microsoft 365 Copilot is an AI-driven tool that works alongside users, integrating seamlessly into various Microsoft 365 applications, such as [Word](/index.php?title=Word&action=edit&redlink=1), [Excel](/index.php?title=Excel&action=edit&redlink=1), [PowerPoint](/index.php?title=PowerPoint&action=edit&redlink=1), [Outlook](/index.php?title=Outlook&action=edit&redlink=1), and [Teams](/index.php?title=Teams&action=edit&redlink=1). It also introduces a new feature called [Business Chat](/index.php?title=Business_Chat&action=edit&redlink=1), which utilizes LLMs and Microsoft 365 data to provide users with the ability to give natural language prompts and generate relevant responses based on information from their calendars, emails, chats, documents, and contacts.
 
@@ -40,7 +40,7 @@ Microsoft 365 Copilot enables users to access the full range of Microsoft 365 co
 
 ## Enterprise-Ready AI
 
-[![Microsoft 365 copilot1.jpg](/images/thumb/9/92/Microsoft_365_copilot1.jpg/400px-Microsoft_365_copilot1.jpg)](/wiki/file_microsoft_365_copilot1_jpg)
+![Microsoft 365 copilot1.jpg](/images/thumb/9/92/Microsoft_365_copilot1.jpg/400px-Microsoft_365_copilot1.jpg)
 
 Microsoft 365 Copilot is a unique AI solution, offering security, compliance, and privacy features that organizations can trust. It connects LLMs, including GPT-4, with Microsoft 365 apps and business data in the Microsoft Graph, making it accessible to users through natural language prompts.
 

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GoDaddy Name Search (ChatGPT Plugin) |
 | --- |
-| [![GoDaddy Name Search.jpeg](/images/4/45/GoDaddy_Name_Search.jpeg)](/wiki/file_godaddy_name_search_jpeg) |
+| ![GoDaddy Name Search.jpeg](/images/4/45/GoDaddy_Name_Search.jpeg) |
 | Information |
 | **Name** | GoDaddy Name Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

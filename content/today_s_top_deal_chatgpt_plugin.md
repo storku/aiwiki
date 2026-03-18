@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Today&#39;s Top Deal (ChatGPT Plugin) |
 | --- |
-| [![Today&#39;s Top Deal.jpeg](/images/3/37/Today%27s_Top_Deal.jpeg)](/wiki/file_today_s_top_deal_jpeg) |
+| ![Today&#39;s Top Deal.jpeg](/images/3/37/Today%27s_Top_Deal.jpeg) |
 | Information |
 | **Name** | Today's Top Deal |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

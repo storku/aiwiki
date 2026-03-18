@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Supercharger (ChatGPT Plugin) |
 | --- |
-| [![Supercharger.jpeg](/images/1/13/Supercharger.jpeg)](/wiki/file_supercharger_jpeg) |
+| ![Supercharger.jpeg](/images/1/13/Supercharger.jpeg) |
 | Information |
 | **Name** | Supercharger |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

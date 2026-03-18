@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Perfect Chirp (ChatGPT Plugin) |
 | --- |
-| [![Perfect Chirp.jpeg](/images/8/81/Perfect_Chirp.jpeg)](/wiki/file_perfect_chirp_jpeg) |
+| ![Perfect Chirp.jpeg](/images/8/81/Perfect_Chirp.jpeg) |
 | Information |
 | **Name** | Perfect Chirp |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

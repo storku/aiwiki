@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Image Edit, Copying &#38; Merge (GPT) |
 | --- |
-| [![Image Edit, Copying & Merge (GPT).png](/images/thumb/b/b6/Image_Edit%2C_Copying_%26_Merge_%28GPT%29.png/300px-Image_Edit%2C_Copying_%26_Merge_%28GPT%29.png)](/wiki/file_image_edit_copying_merge_gpt_png) |
+| ![Image Edit, Copying & Merge (GPT).png](/images/thumb/b/b6/Image_Edit%2C_Copying_%26_Merge_%28GPT%29.png/300px-Image_Edit%2C_Copying_%26_Merge_%28GPT%29.png) |
 | Information |
 | **Name** | Image Edit, Copying & Merge |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

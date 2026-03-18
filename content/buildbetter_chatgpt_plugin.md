@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BuildBetter (ChatGPT Plugin) |
 | --- |
-| [![BuildBetter.png](/images/1/17/BuildBetter.png)](/wiki/file_buildbetter_png) |
+| ![BuildBetter.png](/images/1/17/BuildBetter.png) |
 | Information |
 | **Name** | BuildBetter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

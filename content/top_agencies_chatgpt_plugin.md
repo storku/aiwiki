@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Top Agencies (ChatGPT Plugin) |
 | --- |
-| [![Top Agencies.png](/images/thumb/b/b1/Top_Agencies.png/300px-Top_Agencies.png)](/wiki/file_top_agencies_png) |
+| ![Top Agencies.png](/images/thumb/b/b1/Top_Agencies.png/300px-Top_Agencies.png) |
 | Information |
 | **Name** | Top Agencies |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

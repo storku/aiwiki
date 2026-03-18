@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| A.I. Trader (GPT) |
 | --- |
-| [![A.I. Trader (GPT).png](/images/thumb/9/90/A.I._Trader_%28GPT%29.png/300px-A.I._Trader_%28GPT%29.png)](/wiki/file_a_i_trader_gpt_png) |
+| ![A.I. Trader (GPT).png](/images/thumb/9/90/A.I._Trader_%28GPT%29.png/300px-A.I._Trader_%28GPT%29.png) |
 | Information |
 | **Name** | A.I. Trader |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

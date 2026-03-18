@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Practice Exam-Quiz-Test Creator For School (GPT) |
 | --- |
-| [![Practice Exam-Quiz-Test Creator For School (GPT).jpeg](/images/thumb/d/d5/Practice_Exam-Quiz-Test_Creator_For_School_%28GPT%29.jpeg/300px-Practice_Exam-Quiz-Test_Creator_For_School_%28GPT%29.jpeg)](/wiki/file_practice_exam-quiz-test_creator_for_school_gpt_jpeg) |
+| ![Practice Exam-Quiz-Test Creator For School (GPT).jpeg](/images/thumb/d/d5/Practice_Exam-Quiz-Test_Creator_For_School_%28GPT%29.jpeg/300px-Practice_Exam-Quiz-Test_Creator_For_School_%28GPT%29.jpeg) |
 | Information |
 | **Name** | Practice Exam/Quiz/Test Creator For School |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

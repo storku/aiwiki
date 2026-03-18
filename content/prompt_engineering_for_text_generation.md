@@ -359,7 +359,7 @@ Several techniques have been proposed to improve the accuracy and effectiveness 
 
 ## Prompt Engineering for Code Generation Models
 
-[*](/wiki/file_coding_model_diagram1_png)  [](/wiki/file_coding_model_diagram1_png)
+*  
 Figure 2. From prompt to completion.
 Genearte [code](/index.php?title=Code&action=edit&redlink=1) using [models](/wiki/models) like the [OpenAI Codex](/index.php?title=OpenAI_Codex&action=edit&redlink=1).
 

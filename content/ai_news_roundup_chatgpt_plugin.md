@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AI News Roundup (ChatGPT Plugin) |
 | --- |
-| [![AI News Roundup.png](/images/thumb/0/08/AI_News_Roundup.png/300px-AI_News_Roundup.png)](/wiki/file_ai_news_roundup_png) |
+| ![AI News Roundup.png](/images/thumb/0/08/AI_News_Roundup.png/300px-AI_News_Roundup.png) |
 | Information |
 | **Name** | AI News Roundup |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

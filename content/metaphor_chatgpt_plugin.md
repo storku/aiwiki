@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Metaphor (ChatGPT Plugin) |
 | --- |
-| [![Metaphor.png](/images/thumb/6/6c/Metaphor.png/300px-Metaphor.png)](/wiki/file_metaphor_png) |
+| ![Metaphor.png](/images/thumb/6/6c/Metaphor.png/300px-Metaphor.png) |
 | Information |
 | **Name** | Metaphor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AmazingTalker (ChatGPT Plugin) |
 | --- |
-| [![AmazingTalker.jpg](/images/b/b0/AmazingTalker.jpg)](/wiki/file_amazingtalker_jpg) |
+| ![AmazingTalker.jpg](/images/b/b0/AmazingTalker.jpg) |
 | Information |
 | **Name** | AmazingTalker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

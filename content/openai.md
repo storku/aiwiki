@@ -13,7 +13,7 @@ categories:
   - "Computer_vision"
 ---| OpenAI |
 | --- |
-| [*](/wiki/file_openai_logo1_png) |
+| * |
 | [File:OpenAI Pioneer Building.jpg](/index.php?title=Special:Upload&wpDestFile=OpenAI_Pioneer_Building.jpg) |
 | OpenAI headquarters in Pioneer Building, San Francisco |
 | Type | [Non-profit organization](/index.php?title=Non-profit_organization&action=edit&redlink=1) (OpenAI Inc.)**[For-profit corporation](/index.php?title=For-profit_corporation&action=edit&redlink=1) (OpenAI Global LLC) |

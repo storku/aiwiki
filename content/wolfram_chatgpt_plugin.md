@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Wolfram (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_wolfram_png) |
+| * |
 | Information |
 | **Name** | Wolfram |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

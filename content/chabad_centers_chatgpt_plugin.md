@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chabad Centers (ChatGPT Plugin) |
 | --- |
-| [![Chabad Centers.jpeg](/images/2/2d/Chabad_Centers.jpeg)](/wiki/file_chabad_centers_jpeg) |
+| ![Chabad Centers.jpeg](/images/2/2d/Chabad_Centers.jpeg) |
 | Information |
 | **Name** | Chabad Centers |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

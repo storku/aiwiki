@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Timeport (ChatGPT Plugin) |
 | --- |
-| [![Timeport.png](/images/thumb/f/f8/Timeport.png/300px-Timeport.png)](/wiki/file_timeport_png) |
+| ![Timeport.png](/images/thumb/f/f8/Timeport.png/300px-Timeport.png) |
 | Information |
 | **Name** | Timeport |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

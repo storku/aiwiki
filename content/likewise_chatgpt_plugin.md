@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Likewise (ChatGPT Plugin) |
 | --- |
-| [![Likewise.png](/images/d/dd/Likewise.png)](/wiki/file_likewise_png) |
+| ![Likewise.png](/images/d/dd/Likewise.png) |
 | Information |
 | **Name** | Likewise |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PPC - StoreYa.com (ChatGPT Plugin) |
 | --- |
-| [![PPC - StoreYacom.png](/images/thumb/8/85/PPC_-_StoreYacom.png/300px-PPC_-_StoreYacom.png)](/wiki/file_ppc_-_storeyacom_png) |
+| ![PPC - StoreYacom.png](/images/thumb/8/85/PPC_-_StoreYacom.png/300px-PPC_-_StoreYacom.png) |
 | Information |
 | **Name** | PPC – StoreYa.com |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

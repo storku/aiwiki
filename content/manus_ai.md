@@ -8,8 +8,8 @@ categories:
 ---*Certain elements of this article are incomplete. You can help the AI Wiki by [**expanding it**](https://aiwiki.ai/index.php?title=Manus_AI&action=edit).* 
 
 *See also: [artificial intelligence terms](/wiki/artificial_intelligence_terms)*
-[*](/wiki/file_manus_ai_logo1_jpeg)
-[![Manus ai logo1.jpeg](/images/c/c0/Manus_ai_logo1.jpeg)](/wiki/file_manus_ai_logo1_jpeg)
+*
+![Manus ai logo1.jpeg](/images/c/c0/Manus_ai_logo1.jpeg)
 
 Manus AI is an autonomous [artificial intelligence agent](/wiki/artificial_intelligence_agent) that was publicly unveiled in March 2025. Named after the Latin word for "hand," Manus is designed to bridge the gap between human thought and action, independently executing complex tasks with minimal supervision. Developed by the Chinese startup [Butterfly Effect](/index.php?title=Butterfly_Effect&action=edit&redlink=1), Manus operates as a general [AI agent](/wiki/ai_agent) that doesn't just generate ideas but delivers tangible results. The system attracted significant attention upon its release for its ability to autonomously navigate digital environments, complete multi-step workflows, and function asynchronously in the cloud without continuous human guidance.
 

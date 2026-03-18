@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TimeMachine (ChatGPT Plugin) |
 | --- |
-| [![TimeMachine.png](/images/thumb/5/5f/TimeMachine.png/300px-TimeMachine.png)](/wiki/file_timemachine_png) |
+| ![TimeMachine.png](/images/thumb/5/5f/TimeMachine.png/300px-TimeMachine.png) |
 | Information |
 | **Name** | TimeMachine |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

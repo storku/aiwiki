@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Convert Anything (GPT) |
 | --- |
-| [![Convert Anything (GPT).png](/images/thumb/7/78/Convert_Anything_%28GPT%29.png/300px-Convert_Anything_%28GPT%29.png)](/wiki/file_convert_anything_gpt_png) |
+| ![Convert Anything (GPT).png](/images/thumb/7/78/Convert_Anything_%28GPT%29.png/300px-Convert_Anything_%28GPT%29.png) |
 | Information |
 | **Name** | Convert Anything |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

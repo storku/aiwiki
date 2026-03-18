@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Content Rewriter (ChatGPT Plugin) |
 | --- |
-| [![Content Rewriter.jpeg](/images/f/f4/Content_Rewriter.jpeg)](/wiki/file_content_rewriter_jpeg) |
+| ![Content Rewriter.jpeg](/images/f/f4/Content_Rewriter.jpeg) |
 | Information |
 | **Name** | Content Rewriter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

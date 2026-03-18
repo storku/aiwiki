@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ChatGPT Classic |
 | --- |
-| [![ChatGPT Classic.png](/images/thumb/5/5c/ChatGPT_Classic.png/300px-ChatGPT_Classic.png)](/wiki/file_chatgpt_classic_png) |
+| ![ChatGPT Classic.png](/images/thumb/5/5c/ChatGPT_Classic.png/300px-ChatGPT_Classic.png) |
 | Information |
 | **Name** | ChatGPT Classic |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Ai PDF (GPT) |
 | --- |
-| [![Ai PDF (GPT).png](/images/thumb/2/28/Ai_PDF_%28GPT%29.png/300px-Ai_PDF_%28GPT%29.png)](/wiki/file_ai_pdf_gpt_png) |
+| ![Ai PDF (GPT).png](/images/thumb/2/28/Ai_PDF_%28GPT%29.png/300px-Ai_PDF_%28GPT%29.png) |
 | Information |
 | **Name** | Ai PDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Web Browser (GPT) |
 | --- |
-| [![Web Browser (GPT).png](/images/thumb/6/60/Web_Browser_%28GPT%29.png/300px-Web_Browser_%28GPT%29.png)](/wiki/file_web_browser_gpt_png) |
+| ![Web Browser (GPT).png](/images/thumb/6/60/Web_Browser_%28GPT%29.png/300px-Web_Browser_%28GPT%29.png) |
 | Information |
 | **Name** | Web Browser |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

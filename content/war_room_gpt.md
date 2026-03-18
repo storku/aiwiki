@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| War Room (GPT) |
 | --- |
-| [![War Room (GPT).png](/images/thumb/8/85/War_Room_%28GPT%29.png/300px-War_Room_%28GPT%29.png)](/wiki/file_war_room_gpt_png) |
+| ![War Room (GPT).png](/images/thumb/8/85/War_Room_%28GPT%29.png/300px-War_Room_%28GPT%29.png) |
 | Information |
 | **Name** | War Room |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

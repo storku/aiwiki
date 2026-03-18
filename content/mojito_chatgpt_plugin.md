@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mojito (ChatGPT Plugin) |
 | --- |
-| [![Mojito.jpeg](/images/7/7c/Mojito.jpeg)](/wiki/file_mojito_jpeg) |
+| ![Mojito.jpeg](/images/7/7c/Mojito.jpeg) |
 | Information |
 | **Name** | Mojito |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

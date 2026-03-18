@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Mr. Ranedeer (GPT) |
 | --- |
-| [![Mr. Ranedeer (GPT).png](/images/thumb/3/35/Mr._Ranedeer_%28GPT%29.png/300px-Mr._Ranedeer_%28GPT%29.png)](/wiki/file_mr_ranedeer_gpt_png) |
+| ![Mr. Ranedeer (GPT).png](/images/thumb/3/35/Mr._Ranedeer_%28GPT%29.png/300px-Mr._Ranedeer_%28GPT%29.png) |
 | Information |
 | **Name** | Mr. Ranedeer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

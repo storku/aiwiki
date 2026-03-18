@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ProApp Learn Design (ChatGPT Plugin) |
 | --- |
-| [![ProApp Learn Design.png](/images/thumb/1/15/ProApp_Learn_Design.png/300px-ProApp_Learn_Design.png)](/wiki/file_proapp_learn_design_png) |
+| ![ProApp Learn Design.png](/images/thumb/1/15/ProApp_Learn_Design.png/300px-ProApp_Learn_Design.png) |
 | Information |
 | **Name** | ProApp Learn Design |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

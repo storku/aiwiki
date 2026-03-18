@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Humanize (ChatGPT Plugin) |
 | --- |
-| [![Humanize.jpeg](/images/2/29/Humanize.jpeg)](/wiki/file_humanize_jpeg) |
+| ![Humanize.jpeg](/images/2/29/Humanize.jpeg) |
 | Information |
 | **Name** | Humanize |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

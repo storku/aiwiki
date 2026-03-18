@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPTavern |
 | --- |
-| [![GPTavern.jpeg](/images/thumb/b/b0/GPTavern.jpeg/300px-GPTavern.jpeg)](/wiki/file_gptavern_jpeg) |
+| ![GPTavern.jpeg](/images/thumb/b/b0/GPTavern.jpeg/300px-GPTavern.jpeg) |
 | Information |
 | **Name** | GPTavern |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

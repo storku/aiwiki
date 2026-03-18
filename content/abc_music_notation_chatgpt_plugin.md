@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ABC Music Notation (ChatGPT Plugin) |
 | --- |
-| [![ABC Music Notation.png](/images/thumb/5/5e/ABC_Music_Notation.png/300px-ABC_Music_Notation.png)](/wiki/file_abc_music_notation_png) |
+| ![ABC Music Notation.png](/images/thumb/5/5e/ABC_Music_Notation.png/300px-ABC_Music_Notation.png) |
 | Information |
 | **Name** | ABC Music Notation |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

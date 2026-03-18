@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AutoExpert (Academic) (GPT) |
 | --- |
-| [![AutoExpert (Academic) (GPT).png](/images/thumb/4/43/AutoExpert_%28Academic%29_%28GPT%29.png/300px-AutoExpert_%28Academic%29_%28GPT%29.png)](/wiki/file_autoexpert_academic_gpt_png) |
+| ![AutoExpert (Academic) (GPT).png](/images/thumb/4/43/AutoExpert_%28Academic%29_%28GPT%29.png/300px-AutoExpert_%28Academic%29_%28GPT%29.png) |
 | Information |
 | **Name** | AutoExpert (Academic) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

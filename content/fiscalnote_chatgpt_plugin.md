@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| FiscalNote (ChatGPT Plugin) |
 | --- |
-| [![FiscalNote.png](/images/thumb/b/bc/FiscalNote.png/300px-FiscalNote.png)](/wiki/file_fiscalnote_png) |
+| ![FiscalNote.png](/images/thumb/b/bc/FiscalNote.png/300px-FiscalNote.png) |
 | Information |
 | **Name** | FiscalNote |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

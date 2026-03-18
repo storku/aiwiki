@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Ask Dr. Andrew Huberman (GPT) |
 | --- |
-| [![Ask Dr. Andrew Huberman (GPT).png](/images/thumb/5/54/Ask_Dr._Andrew_Huberman_%28GPT%29.png/300px-Ask_Dr._Andrew_Huberman_%28GPT%29.png)](/wiki/file_ask_dr_andrew_huberman_gpt_png) |
+| ![Ask Dr. Andrew Huberman (GPT).png](/images/thumb/5/54/Ask_Dr._Andrew_Huberman_%28GPT%29.png/300px-Ask_Dr._Andrew_Huberman_%28GPT%29.png) |
 | Information |
 | **Name** | Ask Dr. Andrew Huberman |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

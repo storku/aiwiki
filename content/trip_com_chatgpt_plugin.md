@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Trip.com (ChatGPT Plugin) |
 | --- |
-| [![Tripcom.png](/images/c/cc/Tripcom.png)](/wiki/file_tripcom_png) |
+| ![Tripcom.png](/images/c/cc/Tripcom.png) |
 | Information |
 | **Name** | Trip.com |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

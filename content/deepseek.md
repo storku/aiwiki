@@ -12,7 +12,7 @@ categories:
 ---| DeepSeek |
 | --- |
 | 杭州深度求索人工智能基础技术研究有限公司 |
-| [*](/wiki/file_deepseek_logo1_png) |
+| * |
 | Type | Private |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | July 17, 2023 |

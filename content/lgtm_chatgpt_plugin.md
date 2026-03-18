@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| LGTM (ChatGPT Plugin) |
 | --- |
-| [![LGTM.png](/images/thumb/b/be/LGTM.png/300px-LGTM.png)](/wiki/file_lgtm_png) |
+| ![LGTM.png](/images/thumb/b/be/LGTM.png/300px-LGTM.png) |
 | Information |
 | **Name** | LGTM |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -9,7 +9,7 @@ categories:
 ---*Certain elements of this article are incomplete. You can help the AI Wiki by [**expanding it**](https://aiwiki.ai/index.php?title=LangChain&action=edit).* 
 
 *See also: [Prompt engineering](/wiki/prompt_engineering) and [Prompt engineering for text generation](/wiki/prompt_engineering_for_text_generation)*
-[![Langchain1.png](/images/thumb/3/33/Langchain1.png/300px-Langchain1.png)](/wiki/file_langchain1_png)
+![Langchain1.png](/images/thumb/3/33/Langchain1.png/300px-Langchain1.png)
 
 ## Introduction
 

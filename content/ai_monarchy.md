@@ -8,8 +8,8 @@ categories:
 ---*Certain elements of this article are incomplete. You can help the AI Wiki by [**expanding it**](https://aiwiki.ai/index.php?title=AI_Monarchy&action=edit).* 
 
 *See also: [artificial intelligence terms](/wiki/artificial_intelligence_terms)*
-[*](/wiki/file_ai_monarch2_jpg)
-[![Ai monarch2.jpg](/images/thumb/c/c3/Ai_monarch2.jpg/350px-Ai_monarch2.jpg)](/wiki/file_ai_monarch2_jpg)
+*
+![Ai monarch2.jpg](/images/thumb/c/c3/Ai_monarch2.jpg/350px-Ai_monarch2.jpg)
 
 AI Monarchy is a speculative governance model in which an advanced [artificial intelligence](/wiki/artificial_intelligence) (AI) system assumes the role of a monarch or supreme authority over a society. Unlike traditional monarchies rooted in hereditary succession or divine right, an AI Monarchy would derive its legitimacy from technological capability, data-driven decision-making, and the promise of efficiency. The concept blends elements of [technocracy](/index.php?title=Technocracy&action=edit&redlink=1) with monarchical symbolism, emerging from discussions within [neo-reactionary (NRx)](/index.php?title=Neo-reactionary_movement&action=edit&redlink=1), [accelerationist](/index.php?title=Accelerationism&action=edit&redlink=1), and [techno-libertarian](/index.php?title=Techno-libertarian&action=edit&redlink=1) circles. Proponents argue that human-led democratic systems are too slow, fractious, or corrupt to address modern challenges, while critics warn of risks like entrenched biases, reduced freedoms, and a dystopian concentration of power.
 
@@ -29,8 +29,8 @@ The term "AI Monarchy" has surfaced in online forums like [Hacker News](/index.p
 
 ## Conceptual Framework
 
-[*](/wiki/file_ai_city2_jpg)
-[![Ai city2.jpg](/images/thumb/8/82/Ai_city2.jpg/350px-Ai_city2.jpg)](/wiki/file_ai_city2_jpg)
+*
+![Ai city2.jpg](/images/thumb/8/82/Ai_city2.jpg/350px-Ai_city2.jpg)
 
 In an AI Monarchy, the AI ruler would function as a centralized decision-maker, leveraging vast computational power, [predictive analytics](/index.php?title=Predictive_analytics&action=edit&redlink=1), and real-time data to govern. Proponents envision it eliminating human biases, political gridlock, and corruption, offering:
 
@@ -56,8 +56,8 @@ Advocates highlight several potential benefits:
 
 ## Proposed Implementation
 
-[![Ai city1.jpg](/images/thumb/5/52/Ai_city1.jpg/350px-Ai_city1.jpg)](/wiki/file_ai_city1_jpg)
-[![Ai city1.jpg](/images/thumb/5/52/Ai_city1.jpg/350px-Ai_city1.jpg)](/wiki/file_ai_city1_jpg)
+![Ai city1.jpg](/images/thumb/5/52/Ai_city1.jpg/350px-Ai_city1.jpg)
+![Ai city1.jpg](/images/thumb/5/52/Ai_city1.jpg/350px-Ai_city1.jpg)
 
 The transition to an AI Monarchy might occur gradually, with several speculative pathways:
 
@@ -101,8 +101,8 @@ Philosophically, the [Iron Law of Oligarchy](/index.php?title=Iron_Law_of_Oligar
 
 ## Possible Pathways and Future Outlook
 
-[*](/wiki/file_ai_city3_jpg)
-[![Ai city3.jpg](/images/thumb/a/ad/Ai_city3.jpg/350px-Ai_city3.jpg)](/wiki/file_ai_city3_jpg)
+*
+![Ai city3.jpg](/images/thumb/a/ad/Ai_city3.jpg/350px-Ai_city3.jpg)
 
 While fully hypothetical, AI Monarchy could evolve through:
 

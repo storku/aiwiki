@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Weather Report (ChatGPT Plugin) |
 | --- |
-| [![Weather Report.png](/images/thumb/3/38/Weather_Report.png/300px-Weather_Report.png)](/wiki/file_weather_report_png) |
+| ![Weather Report.png](/images/thumb/3/38/Weather_Report.png/300px-Weather_Report.png) |
 | Information |
 | **Name** | Weather Report |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

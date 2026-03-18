@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Coursera (ChatGPT Plugin) |
 | --- |
-| [![Coursera.png](/images/6/69/Coursera.png)](/wiki/file_coursera_png) |
+| ![Coursera.png](/images/6/69/Coursera.png) |
 | Information |
 | **Name** | Coursera |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

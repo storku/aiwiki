@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Meta path (ChatGPT Plugin) |
 | --- |
-| [![Meta path.png](/images/thumb/e/ea/Meta_path.png/300px-Meta_path.png)](/wiki/file_meta_path_png) |
+| ![Meta path.png](/images/thumb/e/ea/Meta_path.png/300px-Meta_path.png) |
 | Information |
 | **Name** | meta_path |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

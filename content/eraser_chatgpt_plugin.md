@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Eraser (ChatGPT Plugin) |
 | --- |
-| [![Eraser.png](/images/thumb/9/94/Eraser.png/300px-Eraser.png)](/wiki/file_eraser_png) |
+| ![Eraser.png](/images/thumb/9/94/Eraser.png/300px-Eraser.png) |
 | Information |
 | **Name** | Eraser |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

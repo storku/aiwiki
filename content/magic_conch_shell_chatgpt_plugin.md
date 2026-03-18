@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Magic Conch Shell (ChatGPT Plugin) |
 | --- |
-| [![Magic Conch Shell.jpeg](/images/f/fe/Magic_Conch_Shell.jpeg)](/wiki/file_magic_conch_shell_jpeg) |
+| ![Magic Conch Shell.jpeg](/images/f/fe/Magic_Conch_Shell.jpeg) |
 | Information |
 | **Name** | Magic Conch Shell |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

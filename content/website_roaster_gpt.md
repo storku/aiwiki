@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Website Roaster GPT |
 | --- |
-| [![Website Roaster GPT.png](/images/thumb/b/be/Website_Roaster_GPT.png/300px-Website_Roaster_GPT.png)](/wiki/file_website_roaster_gpt_png) |
+| ![Website Roaster GPT.png](/images/thumb/b/be/Website_Roaster_GPT.png/300px-Website_Roaster_GPT.png) |
 | Information |
 | **Name** | Website Roaster GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

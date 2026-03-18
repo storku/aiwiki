@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Modern Next.js Assistant (GPT) |
 | --- |
-| [![Modern Next.js Assistant (GPT).png](/images/thumb/3/37/Modern_Next.js_Assistant_%28GPT%29.png/300px-Modern_Next.js_Assistant_%28GPT%29.png)](/wiki/file_modern_next_js_assistant_gpt_png) |
+| ![Modern Next.js Assistant (GPT).png](/images/thumb/3/37/Modern_Next.js_Assistant_%28GPT%29.png/300px-Modern_Next.js_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | Modern Next.js Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

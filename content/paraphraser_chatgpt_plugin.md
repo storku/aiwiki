@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Paraphraser (ChatGPT Plugin) |
 | --- |
-| [![Paraphraser.png](/images/thumb/b/b9/Paraphraser.png/300px-Paraphraser.png)](/wiki/file_paraphraser_png) |
+| ![Paraphraser.png](/images/thumb/b/b9/Paraphraser.png/300px-Paraphraser.png) |
 | Information |
 | **Name** | Paraphraser |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

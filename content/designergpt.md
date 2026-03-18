@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| DesignerGPT |
 | --- |
-| [![DesignerGPT.png](/images/thumb/4/4f/DesignerGPT.png/300px-DesignerGPT.png)](/wiki/file_designergpt_png) |
+| ![DesignerGPT.png](/images/thumb/4/4f/DesignerGPT.png/300px-DesignerGPT.png) |
 | Information |
 | **Name** | DesignerGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

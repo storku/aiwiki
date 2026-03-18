@@ -11,7 +11,7 @@ categories:
 ---| Reflection AI |
 | --- |
 | Reflection AI, Inc. |
-| [![](/images/thumb/0/01/Reflection_ai_logo1.png/200px-Reflection_ai_logo1.png)](/wiki/file_reflection_ai_logo1_png) |
+| ![](/images/thumb/0/01/Reflection_ai_logo1.png/200px-Reflection_ai_logo1.png) |
 | Type | [Private company](/index.php?title=Private_company&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence), [Software development](/index.php?title=Software_development&action=edit&redlink=1) |
 | Founded | March 2024 |

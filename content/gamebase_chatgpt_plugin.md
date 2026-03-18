@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GameBase (ChatGPT Plugin) |
 | --- |
-| [![GameBase.png](/images/thumb/5/58/GameBase.png/300px-GameBase.png)](/wiki/file_gamebase_png) |
+| ![GameBase.png](/images/thumb/5/58/GameBase.png/300px-GameBase.png) |
 | Information |
 | **Name** | GameBase |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

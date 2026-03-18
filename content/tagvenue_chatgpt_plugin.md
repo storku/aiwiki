@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tagvenue (ChatGPT Plugin) |
 | --- |
-| [![Tagvenue.png](/images/thumb/1/18/Tagvenue.png/300px-Tagvenue.png)](/wiki/file_tagvenue_png) |
+| ![Tagvenue.png](/images/thumb/1/18/Tagvenue.png/300px-Tagvenue.png) |
 | Information |
 | **Name** | Tagvenue |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

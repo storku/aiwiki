@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Supercharge My EV (ChatGPT Plugin) |
 | --- |
-| [![Supercharge My EV.png](/images/1/11/Supercharge_My_EV.png)](/wiki/file_supercharge_my_ev_png) |
+| ![Supercharge My EV.png](/images/1/11/Supercharge_My_EV.png) |
 | Information |
 | **Name** | Supercharge My EV |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

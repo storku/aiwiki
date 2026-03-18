@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Video Summarizer AI (GPT) |
 | --- |
-| [![Video Summarizer AI (GPT).png](/images/thumb/1/1d/Video_Summarizer_AI_%28GPT%29.png/300px-Video_Summarizer_AI_%28GPT%29.png)](/wiki/file_video_summarizer_ai_gpt_png) |
+| ![Video Summarizer AI (GPT).png](/images/thumb/1/1d/Video_Summarizer_AI_%28GPT%29.png/300px-Video_Summarizer_AI_%28GPT%29.png) |
 | Information |
 | **Name** | Video Summarizer AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -12,7 +12,7 @@ categories:
 ---| Moonshot AI |
 | --- |
 | 北京月之暗面科技有限公司 |
-| [*](/wiki/file_moonshot_ai_logo1_jpg) |
+| * |
 | [File:Moonshot AI Headquarters.jpg](/index.php?title=Special:Upload&wpDestFile=Moonshot_AI_Headquarters.jpg) |
 | Moonshot AI headquarters in Beijing |
 | Type | [Private company](/index.php?title=Private_company&action=edit&redlink=1) |

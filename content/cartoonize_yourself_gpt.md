@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Cartoonize Yourself (GPT) |
 | --- |
-| [![Cartoonize Yourself (GPT).png](/images/thumb/c/ca/Cartoonize_Yourself_%28GPT%29.png/300px-Cartoonize_Yourself_%28GPT%29.png)](/wiki/file_cartoonize_yourself_gpt_png) |
+| ![Cartoonize Yourself (GPT).png](/images/thumb/c/ca/Cartoonize_Yourself_%28GPT%29.png/300px-Cartoonize_Yourself_%28GPT%29.png) |
 | Information |
 | **Name** | Cartoonize Yourself |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

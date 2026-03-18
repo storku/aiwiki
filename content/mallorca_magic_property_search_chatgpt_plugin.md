@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mallorca Magic Property Search (ChatGPT Plugin) |
 | --- |
-| [![Mallorca Magic Property Search.png](/images/0/04/Mallorca_Magic_Property_Search.png)](/wiki/file_mallorca_magic_property_search_png) |
+| ![Mallorca Magic Property Search.png](/images/0/04/Mallorca_Magic_Property_Search.png) |
 | Information |
 | **Name** | Mallorca Magic Property Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WP Interact (ChatGPT Plugin) |
 | --- |
-| [![WP Interact.png](/images/thumb/3/39/WP_Interact.png/300px-WP_Interact.png)](/wiki/file_wp_interact_png) |
+| ![WP Interact.png](/images/thumb/3/39/WP_Interact.png/300px-WP_Interact.png) |
 | Information |
 | **Name** | WP Interact |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Docs GPT |
 | --- |
-| [![Docs GPT.jpg](/images/thumb/d/d2/Docs_GPT.jpg/300px-Docs_GPT.jpg)](/wiki/file_docs_gpt_jpg) |
+| ![Docs GPT.jpg](/images/thumb/d/d2/Docs_GPT.jpg/300px-Docs_GPT.jpg) |
 | Information |
 | **Name** | Docs GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

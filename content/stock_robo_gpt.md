@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Stock Robo (GPT) |
 | --- |
-| [![Stock Robo (GPT).png](/images/thumb/4/4d/Stock_Robo_%28GPT%29.png/300px-Stock_Robo_%28GPT%29.png)](/wiki/file_stock_robo_gpt_png) |
+| ![Stock Robo (GPT).png](/images/thumb/4/4d/Stock_Robo_%28GPT%29.png/300px-Stock_Robo_%28GPT%29.png) |
 | Information |
 | **Name** | Stock Robo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Diagrams: Show Me (GPT) |
 | --- |
-| [![Diagrams Show Me (GPT).jpeg](/images/thumb/9/9b/Diagrams_Show_Me_%28GPT%29.jpeg/300px-Diagrams_Show_Me_%28GPT%29.jpeg)](/wiki/file_diagrams_show_me_gpt_jpeg) |
+| ![Diagrams Show Me (GPT).jpeg](/images/thumb/9/9b/Diagrams_Show_Me_%28GPT%29.jpeg/300px-Diagrams_Show_Me_%28GPT%29.jpeg) |
 | Information |
 | **Name** | Diagrams: Show Me |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

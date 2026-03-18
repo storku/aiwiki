@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CranePumps Manuals (ChatGPT Plugin) |
 | --- |
-| [![CranePumps Manuals.png](/images/e/e6/CranePumps_Manuals.png)](/wiki/file_cranepumps_manuals_png) |
+| ![CranePumps Manuals.png](/images/e/e6/CranePumps_Manuals.png) |
 | Information |
 | **Name** | CranePumps Manuals |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

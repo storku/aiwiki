@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Show Me (ChatGPT Plugin) |
 | --- |
-| [![Show Me.jpg](/images/thumb/f/fb/Show_Me.jpg/300px-Show_Me.jpg)](/wiki/file_show_me_jpg) |
+| ![Show Me.jpg](/images/thumb/f/fb/Show_Me.jpg/300px-Show_Me.jpg) |
 | Information |
 | **Name** | Show Me |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

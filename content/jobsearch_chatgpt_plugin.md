@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Jobsearch (ChatGPT Plugin) |
 | --- |
-| [![Jobsearch.png](/images/7/7c/Jobsearch.png)](/wiki/file_jobsearch_png) |
+| ![Jobsearch.png](/images/7/7c/Jobsearch.png) |
 | Information |
 | **Name** | Jobsearch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

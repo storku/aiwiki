@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Essay Writer 😎 (GPT) |
 | --- |
-| [![Essay Writer 😎 (GPT).png](/images/thumb/5/5c/Essay_Writer_%F0%9F%98%8E_%28GPT%29.png/300px-Essay_Writer_%F0%9F%98%8E_%28GPT%29.png)](/wiki/file_essay_writer_gpt_png) |
+| ![Essay Writer 😎 (GPT).png](/images/thumb/5/5c/Essay_Writer_%F0%9F%98%8E_%28GPT%29.png/300px-Essay_Writer_%F0%9F%98%8E_%28GPT%29.png) |
 | Information |
 | **Name** | Essay Writer 😎 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

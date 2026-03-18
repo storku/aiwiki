@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bookworm (ChatGPT Plugin) |
 | --- |
-| [![Bookworm.png](/images/thumb/7/79/Bookworm.png/300px-Bookworm.png)](/wiki/file_bookworm_png) |
+| ![Bookworm.png](/images/thumb/7/79/Bookworm.png/300px-Bookworm.png) |
 | Information |
 | **Name** | Bookworm |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

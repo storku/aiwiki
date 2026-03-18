@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CoderPad (ChatGPT Plugin) |
 | --- |
-| [![CoderPad.jpeg](/images/c/cc/CoderPad.jpeg)](/wiki/file_coderpad_jpeg) |
+| ![CoderPad.jpeg](/images/c/cc/CoderPad.jpeg) |
 | Information |
 | **Name** | CoderPad |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

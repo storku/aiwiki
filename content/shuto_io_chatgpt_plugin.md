@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shuto.IO (ChatGPT Plugin) |
 | --- |
-| [![Shuto.IO.png](/images/thumb/4/4d/Shuto.IO.png/300px-Shuto.IO.png)](/wiki/file_shuto_io_png) |
+| ![Shuto.IO.png](/images/thumb/4/4d/Shuto.IO.png/300px-Shuto.IO.png) |
 | Information |
 | **Name** | Shuto.IO |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MightyOwl K-8 (ChatGPT Plugin) |
 | --- |
-| [![MightyOwl K-8.jpeg](/images/3/3c/MightyOwl_K-8.jpeg)](/wiki/file_mightyowl_k-8_jpeg) |
+| ![MightyOwl K-8.jpeg](/images/3/3c/MightyOwl_K-8.jpeg) |
 | Information |
 | **Name** | MightyOwl K-8 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

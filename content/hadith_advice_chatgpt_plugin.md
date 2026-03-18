@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Hadith Advice (ChatGPT Plugin) |
 | --- |
-| [![Hadith Advice.png](/images/thumb/4/4e/Hadith_Advice.png/300px-Hadith_Advice.png)](/wiki/file_hadith_advice_png) |
+| ![Hadith Advice.png](/images/thumb/4/4e/Hadith_Advice.png/300px-Hadith_Advice.png) |
 | Information |
 | **Name** | Hadith Advice |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

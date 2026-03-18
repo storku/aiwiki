@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChampDex (ChatGPT Plugin) |
 | --- |
-| [![ChampDex.png](/images/thumb/6/66/ChampDex.png/300px-ChampDex.png)](/wiki/file_champdex_png) |
+| ![ChampDex.png](/images/thumb/6/66/ChampDex.png/300px-ChampDex.png) |
 | Information |
 | **Name** | ChampDex |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

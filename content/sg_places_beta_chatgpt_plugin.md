@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SG Places Beta (ChatGPT Plugin) |
 | --- |
-| [![SG Places Beta.png](/images/thumb/0/0f/SG_Places_Beta.png/300px-SG_Places_Beta.png)](/wiki/file_sg_places_beta_png) |
+| ![SG Places Beta.png](/images/thumb/0/0f/SG_Places_Beta.png/300px-SG_Places_Beta.png) |
 | Information |
 | **Name** | SG Places Beta |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

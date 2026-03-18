@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Summarizer V2 (GPT) |
 | --- |
-| [![Summarizer V2 (GPT).png](/images/thumb/e/e4/Summarizer_V2_%28GPT%29.png/300px-Summarizer_V2_%28GPT%29.png)](/wiki/file_summarizer_v2_gpt_png) |
+| ![Summarizer V2 (GPT).png](/images/thumb/e/e4/Summarizer_V2_%28GPT%29.png/300px-Summarizer_V2_%28GPT%29.png) |
 | Information |
 | **Name** | Summarizer V2 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

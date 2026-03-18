@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AllTrails (GPT) |
 | --- |
-| [![AllTrails (GPT).png](/images/thumb/4/4c/AllTrails_%28GPT%29.png/300px-AllTrails_%28GPT%29.png)](/wiki/file_alltrails_gpt_png) |
+| ![AllTrails (GPT).png](/images/thumb/4/4c/AllTrails_%28GPT%29.png/300px-AllTrails_%28GPT%29.png) |
 | Information |
 | **Name** | AllTrails |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

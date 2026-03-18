@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Code Tutor (GPT) |
 | --- |
-| [![Code Tutor (GPT).png](/images/thumb/e/e3/Code_Tutor_%28GPT%29.png/300px-Code_Tutor_%28GPT%29.png)](/wiki/file_code_tutor_gpt_png) |
+| ![Code Tutor (GPT).png](/images/thumb/e/e3/Code_Tutor_%28GPT%29.png/300px-Code_Tutor_%28GPT%29.png) |
 | Information |
 | **Name** | Code Tutor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

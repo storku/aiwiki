@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WhizList (ChatGPT Plugin) |
 | --- |
-| [![WhizList.png](/images/thumb/3/35/WhizList.png/300px-WhizList.png)](/wiki/file_whizlist_png) |
+| ![WhizList.png](/images/thumb/3/35/WhizList.png/300px-WhizList.png) |
 | Information |
 | **Name** | WhizList |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Science (ChatGPT Plugin) |
 | --- |
-| [![Science.jpeg](/images/7/7a/Science.jpeg)](/wiki/file_science_jpeg) |
+| ![Science.jpeg](/images/7/7a/Science.jpeg) |
 | Information |
 | **Name** | Science |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

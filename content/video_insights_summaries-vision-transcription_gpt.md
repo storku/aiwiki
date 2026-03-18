@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Video Insights: Summaries-Vision-Transcription (GPT) |
 | --- |
-| [![Video Insights Summaries-Vision-Transcription (GPT).png](/images/thumb/2/28/Video_Insights_Summaries-Vision-Transcription_%28GPT%29.png/300px-Video_Insights_Summaries-Vision-Transcription_%28GPT%29.png)](/wiki/file_video_insights_summaries-vision-transcription_gpt_png) |
+| ![Video Insights Summaries-Vision-Transcription (GPT).png](/images/thumb/2/28/Video_Insights_Summaries-Vision-Transcription_%28GPT%29.png/300px-Video_Insights_Summaries-Vision-Transcription_%28GPT%29.png) |
 | Information |
 | **Name** | Video Insights: Summaries/Vision/Transcription |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

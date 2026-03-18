@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Urban New Apartments (ChatGPT Plugin) |
 | --- |
-| [![Urban New Apartments.png](/images/thumb/a/ac/Urban_New_Apartments.png/300px-Urban_New_Apartments.png)](/wiki/file_urban_new_apartments_png) |
+| ![Urban New Apartments.png](/images/thumb/a/ac/Urban_New_Apartments.png/300px-Urban_New_Apartments.png) |
 | Information |
 | **Name** | Urban New Apartments |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CarGurus (ChatGPT Plugin) |
 | --- |
-| [![CarGurus.jpeg](/images/b/b3/CarGurus.jpeg)](/wiki/file_cargurus_jpeg) |
+| ![CarGurus.jpeg](/images/b/b3/CarGurus.jpeg) |
 | Information |
 | **Name** | CarGurus |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

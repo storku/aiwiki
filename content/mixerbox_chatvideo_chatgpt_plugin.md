@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox ChatVideo (ChatGPT Plugin) |
 | --- |
-| [![MixerBox ChatVideo.jpeg](/images/a/ab/MixerBox_ChatVideo.jpeg)](/wiki/file_mixerbox_chatvideo_jpeg) |
+| ![MixerBox ChatVideo.jpeg](/images/a/ab/MixerBox_ChatVideo.jpeg) |
 | Information |
 | **Name** | MixerBox ChatVideo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

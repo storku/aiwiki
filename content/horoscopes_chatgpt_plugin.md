@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Horoscopes (ChatGPT Plugin) |
 | --- |
-| [![Horoscopes.jpg](/images/thumb/1/16/Horoscopes.jpg/300px-Horoscopes.jpg)](/wiki/file_horoscopes_jpg) |
+| ![Horoscopes.jpg](/images/thumb/1/16/Horoscopes.jpg/300px-Horoscopes.jpg) |
 | Information |
 | **Name** | Horoscopes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

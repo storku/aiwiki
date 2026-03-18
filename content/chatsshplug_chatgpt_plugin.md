@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatSSHPlug (ChatGPT Plugin) |
 | --- |
-| [![ChatSSHPlug.png](/images/thumb/6/6f/ChatSSHPlug.png/300px-ChatSSHPlug.png)](/wiki/file_chatsshplug_png) |
+| ![ChatSSHPlug.png](/images/thumb/6/6f/ChatSSHPlug.png/300px-ChatSSHPlug.png) |
 | Information |
 | **Name** | ChatSSHPlug |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ShopMate AI (ChatGPT Plugin) |
 | --- |
-| [![ShopMate AI.jpeg](/images/2/26/ShopMate_AI.jpeg)](/wiki/file_shopmate_ai_jpeg) |
+| ![ShopMate AI.jpeg](/images/2/26/ShopMate_AI.jpeg) |
 | Information |
 | **Name** | ShopMate AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

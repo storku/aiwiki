@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AldenBot (ChatGPT Plugin) |
 | --- |
-| [![AldenBot.jpeg](/images/b/b2/AldenBot.jpeg)](/wiki/file_aldenbot_jpeg) |
+| ![AldenBot.jpeg](/images/b/b2/AldenBot.jpeg) |
 | Information |
 | **Name** | AldenBot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

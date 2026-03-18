@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| PDF Translator (GPT) |
 | --- |
-| [![PDF Translator (GPT).png](/images/thumb/a/a4/PDF_Translator_%28GPT%29.png/300px-PDF_Translator_%28GPT%29.png)](/wiki/file_pdf_translator_gpt_png) |
+| ![PDF Translator (GPT).png](/images/thumb/a/a4/PDF_Translator_%28GPT%29.png/300px-PDF_Translator_%28GPT%29.png) |
 | Information |
 | **Name** | PDF Translator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

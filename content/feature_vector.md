@@ -21,13 +21,13 @@ Once features have been identified, they are transformed into a vector of numeri
 
 ## Example
 
-[![Mnist example1.png](/images/thumb/a/ac/Mnist_example1.png/400px-Mnist_example1.png)](/wiki/file_mnist_example1_png)
+![Mnist example1.png](/images/thumb/a/ac/Mnist_example1.png/400px-Mnist_example1.png)
 
 Let us assume we have a [dataset](/wiki/dataset) of images of handwritten digits (0-9), and want to use machine learning algorithms to [classify](/index.php?title=Classify&action=edit&redlink=1) these images into their corresponding digits. In order to do this, we need to extract features from the images which can be utilized as features vectors for use by machine learning algorithms; one way of doing this is by converting the images into feature vectors.
 
 Take for instance this grayscale image of the numeral "5":
 
-[![Mnist 5 example1.png](/images/3/3d/Mnist_5_example1.png)](/wiki/file_mnist_5_example1_png)
+![Mnist 5 example1.png](/images/3/3d/Mnist_5_example1.png)
 
 From this image we can deduce the following features:
 

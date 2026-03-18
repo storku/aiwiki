@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat with Quran (ChatGPT Plugin) |
 | --- |
-| [![Chat with Quran.png](/images/thumb/c/c7/Chat_with_Quran.png/300px-Chat_with_Quran.png)](/wiki/file_chat_with_quran_png) |
+| ![Chat with Quran.png](/images/thumb/c/c7/Chat_with_Quran.png/300px-Chat_with_Quran.png) |
 | Information |
 | **Name** | Chat with Quran |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

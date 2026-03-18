@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SignalPlus (ChatGPT Plugin) |
 | --- |
-| [![SignalPlus.png](/images/thumb/d/d7/SignalPlus.png/300px-SignalPlus.png)](/wiki/file_signalplus_png) |
+| ![SignalPlus.png](/images/thumb/d/d7/SignalPlus.png/300px-SignalPlus.png) |
 | Information |
 | **Name** | SignalPlus |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

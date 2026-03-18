@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GetYourGuide (ChatGPT Plugin) |
 | --- |
-| [![GetYourGuide.jpg](/images/thumb/8/87/GetYourGuide.jpg/300px-GetYourGuide.jpg)](/wiki/file_getyourguide_jpg) |
+| ![GetYourGuide.jpg](/images/thumb/8/87/GetYourGuide.jpg/300px-GetYourGuide.jpg) |
 | Information |
 | **Name** | GetYourGuide |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

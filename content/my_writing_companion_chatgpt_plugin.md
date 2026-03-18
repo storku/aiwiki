@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| My Writing Companion (ChatGPT Plugin) |
 | --- |
-| [![My Writing Companion.png](/images/thumb/a/a3/My_Writing_Companion.png/300px-My_Writing_Companion.png)](/wiki/file_my_writing_companion_png) |
+| ![My Writing Companion.png](/images/thumb/a/a3/My_Writing_Companion.png/300px-My_Writing_Companion.png) |
 | Information |
 | **Name** | My Writing Companion |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

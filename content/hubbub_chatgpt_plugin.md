@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Hubbub (ChatGPT Plugin) |
 | --- |
-| [![Hubbub.png](/images/5/5c/Hubbub.png)](/wiki/file_hubbub_png) |
+| ![Hubbub.png](/images/5/5c/Hubbub.png) |
 | Information |
 | **Name** | Hubbub |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

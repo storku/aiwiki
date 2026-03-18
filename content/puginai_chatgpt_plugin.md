@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PuginAI (ChatGPT Plugin) |
 | --- |
-| [![PuginAI.png](/images/thumb/7/73/PuginAI.png/300px-PuginAI.png)](/wiki/file_puginai_png) |
+| ![PuginAI.png](/images/thumb/7/73/PuginAI.png/300px-PuginAI.png) |
 | Information |
 | **Name** | PuginAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

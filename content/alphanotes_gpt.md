@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AlphaNotes GPT |
 | --- |
-| [![AlphaNotes GPT.png](/images/thumb/d/d3/AlphaNotes_GPT.png/300px-AlphaNotes_GPT.png)](/wiki/file_alphanotes_gpt_png) |
+| ![AlphaNotes GPT.png](/images/thumb/d/d3/AlphaNotes_GPT.png/300px-AlphaNotes_GPT.png) |
 | Information |
 | **Name** | AlphaNotes GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

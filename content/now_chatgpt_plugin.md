@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Now (ChatGPT Plugin) |
 | --- |
-| [![Now.png](/images/thumb/f/f6/Now.png/300px-Now.png)](/wiki/file_now_png) |
+| ![Now.png](/images/thumb/f/f6/Now.png/300px-Now.png) |
 | Information |
 | **Name** | Now |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Figlet (ChatGPT Plugin) |
 | --- |
-| [![Figlet.png](/images/c/c8/Figlet.png)](/wiki/file_figlet_png) |
+| ![Figlet.png](/images/c/c8/Figlet.png) |
 | Information |
 | **Name** | Figlet |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

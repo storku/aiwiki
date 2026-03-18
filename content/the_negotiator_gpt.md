@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| The Negotiator (GPT) |
 | --- |
-| [![The Negotiator (GPT).png](/images/thumb/a/a3/The_Negotiator_%28GPT%29.png/300px-The_Negotiator_%28GPT%29.png)](/wiki/file_the_negotiator_gpt_png) |
+| ![The Negotiator (GPT).png](/images/thumb/a/a3/The_Negotiator_%28GPT%29.png/300px-The_Negotiator_%28GPT%29.png) |
 | Information |
 | **Name** | The Negotiator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Image Caption Generator (GPT) |
 | --- |
-| [![Image Caption Generator (GPT).png](/images/thumb/9/9c/Image_Caption_Generator_%28GPT%29.png/300px-Image_Caption_Generator_%28GPT%29.png)](/wiki/file_image_caption_generator_gpt_png) |
+| ![Image Caption Generator (GPT).png](/images/thumb/9/9c/Image_Caption_Generator_%28GPT%29.png/300px-Image_Caption_Generator_%28GPT%29.png) |
 | Information |
 | **Name** | Image Caption Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

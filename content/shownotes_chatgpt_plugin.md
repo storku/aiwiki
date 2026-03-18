@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shownotes (ChatGPT Plugin) |
 | --- |
-| [![Shownotes.jpg](/images/d/df/Shownotes.jpg)](/wiki/file_shownotes_jpg) |
+| ![Shownotes.jpg](/images/d/df/Shownotes.jpg) |
 | Information |
 | **Name** | shownotes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

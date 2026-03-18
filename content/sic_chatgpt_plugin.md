@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Sic (ChatGPT Plugin) |
 | --- |
-| [![Sic.png](/images/thumb/8/85/Sic.png/300px-Sic.png)](/wiki/file_sic_png) |
+| ![Sic.png](/images/thumb/8/85/Sic.png/300px-Sic.png) |
 | Information |
 | **Name** | sic |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

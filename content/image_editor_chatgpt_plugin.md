@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Image Editor (ChatGPT Plugin) |
 | --- |
-| [![Image Editor.png](/images/thumb/3/31/Image_Editor.png/300px-Image_Editor.png)](/wiki/file_image_editor_png) |
+| ![Image Editor.png](/images/thumb/3/31/Image_Editor.png/300px-Image_Editor.png) |
 | Information |
 | **Name** | Image Editor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

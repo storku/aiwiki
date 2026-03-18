@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Golden (ChatGPT Plugin) |
 | --- |
-| [![Golden.png](/images/5/55/Golden.png)](/wiki/file_golden_png) |
+| ![Golden.png](/images/5/55/Golden.png) |
 | Information |
 | **Name** | Golden |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

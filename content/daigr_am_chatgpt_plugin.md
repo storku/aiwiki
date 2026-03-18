@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Daigr.am (ChatGPT Plugin) |
 | --- |
-| [![Daigram.jpg](/images/thumb/9/97/Daigram.jpg/300px-Daigram.jpg)](/wiki/file_daigram_jpg) |
+| ![Daigram.jpg](/images/thumb/9/97/Daigram.jpg/300px-Daigram.jpg) |
 | Information |
 | **Name** | daigr.am |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

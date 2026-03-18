@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Video Script Writer (GPT) |
 | --- |
-| [![Video Script Writer (GPT).png](/images/thumb/4/40/Video_Script_Writer_%28GPT%29.png/300px-Video_Script_Writer_%28GPT%29.png)](/wiki/file_video_script_writer_gpt_png) |
+| ![Video Script Writer (GPT).png](/images/thumb/4/40/Video_Script_Writer_%28GPT%29.png/300px-Video_Script_Writer_%28GPT%29.png) |
 | Information |
 | **Name** | Video Script Writer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

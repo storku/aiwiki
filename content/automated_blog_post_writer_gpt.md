@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Automated Blog Post Writer (GPT) |
 | --- |
-| [![Automated Blog Post Writer (GPT).png](/images/thumb/2/2a/Automated_Blog_Post_Writer_%28GPT%29.png/300px-Automated_Blog_Post_Writer_%28GPT%29.png)](/wiki/file_automated_blog_post_writer_gpt_png) |
+| ![Automated Blog Post Writer (GPT).png](/images/thumb/2/2a/Automated_Blog_Post_Writer_%28GPT%29.png/300px-Automated_Blog_Post_Writer_%28GPT%29.png) |
 | Information |
 | **Name** | Automated Blog Post Writer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

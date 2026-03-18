@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| CK-12 Flexi (GPT) |
 | --- |
-| [![CK-12 Flexi (GPT).png](/images/thumb/9/9a/CK-12_Flexi_%28GPT%29.png/300px-CK-12_Flexi_%28GPT%29.png)](/wiki/file_ck-12_flexi_gpt_png) |
+| ![CK-12 Flexi (GPT).png](/images/thumb/9/9a/CK-12_Flexi_%28GPT%29.png/300px-CK-12_Flexi_%28GPT%29.png) |
 | Information |
 | **Name** | CK-12 Flexi |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

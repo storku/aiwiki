@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ImageSearch (ChatGPT Plugin) |
 | --- |
-| [![ImageSearch.png](/images/thumb/c/c0/ImageSearch.png/300px-ImageSearch.png)](/wiki/file_imagesearch_png) |
+| ![ImageSearch.png](/images/thumb/c/c0/ImageSearch.png/300px-ImageSearch.png) |
 | Information |
 | **Name** | ImageSearch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

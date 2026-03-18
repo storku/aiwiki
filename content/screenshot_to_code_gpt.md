@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Screenshot To Code GPT |
 | --- |
-| [![Screenshot To Code GPT.png](/images/thumb/6/66/Screenshot_To_Code_GPT.png/300px-Screenshot_To_Code_GPT.png)](/wiki/file_screenshot_to_code_gpt_png) |
+| ![Screenshot To Code GPT.png](/images/thumb/6/66/Screenshot_To_Code_GPT.png/300px-Screenshot_To_Code_GPT.png) |
 | Information |
 | **Name** | Screenshot To Code GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

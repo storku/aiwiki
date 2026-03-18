@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BuyWisely (ChatGPT Plugin) |
 | --- |
-| [![BuyWisely.png](/images/0/05/BuyWisely.png)](/wiki/file_buywisely_png) |
+| ![BuyWisely.png](/images/0/05/BuyWisely.png) |
 | Information |
 | **Name** | BuyWisely |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

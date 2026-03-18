@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TalkFPL (ChatGPT Plugin) |
 | --- |
-| [![TalkFPL.png](/images/thumb/2/27/TalkFPL.png/300px-TalkFPL.png)](/wiki/file_talkfpl_png) |
+| ![TalkFPL.png](/images/thumb/2/27/TalkFPL.png/300px-TalkFPL.png) |
 | Information |
 | **Name** | TalkFPL |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| P-E For NFTs (ChatGPT Plugin) |
 | --- |
-| [![P-E For NFTs.png](/images/thumb/b/bd/P-E_For_NFTs.png/300px-P-E_For_NFTs.png)](/wiki/file_p-e_for_nfts_png) |
+| ![P-E For NFTs.png](/images/thumb/b/bd/P-E_For_NFTs.png/300px-P-E_For_NFTs.png) |
 | Information |
 | **Name** | P-E For NFTs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

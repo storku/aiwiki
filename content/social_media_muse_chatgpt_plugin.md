@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Social Media Muse (ChatGPT Plugin) |
 | --- |
-| [![Social Media Muse.jpg](/images/8/8b/Social_Media_Muse.jpg)](/wiki/file_social_media_muse_jpg) |
+| ![Social Media Muse.jpg](/images/8/8b/Social_Media_Muse.jpg) |
 | Information |
 | **Name** | Social Media Muse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

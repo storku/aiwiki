@@ -3,7 +3,7 @@ title: "Isaac GR00T"
 slug: "isaac_gr00t"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[![Isaac GR00T1.jpg](/images/thumb/b/b4/Isaac_GR00T1.jpg/300px-Isaac_GR00T1.jpg)](/wiki/file_isaac_gr00t1_jpg)
+![Isaac GR00T1.jpg](/images/thumb/b/b4/Isaac_GR00T1.jpg/300px-Isaac_GR00T1.jpg)
 
 **Isaac GR00T** (short for **Generalist Robot 00 Technology**) is an [artificial intelligence](/wiki/artificial_intelligence) and robotics project by [NVIDIA](/wiki/nvidia) that produced a general-purpose [foundation model](/wiki/foundation_model) for [humanoid robot](/index.php?title=Humanoid_robot&action=edit&redlink=1) control and reasoning.[&#91;1&#93;](#cite_note-NVIDIA2024PR-1) It is a multimodal [vision-language-action model](/wiki/vision-language-action_model) ([VLA](/wiki/vla)) designed to enable humanoid robots to understand [natural language](/index.php?title=Natural_language&action=edit&redlink=1) instructions and learn new skills by observing human actions, thereby acquiring coordination, dexterity and adaptability in real-world environments.[&#91;2&#93;](#cite_note-VentureBeat2024-2)[&#91;3&#93;](#cite_note-PCMag2024-3)
 

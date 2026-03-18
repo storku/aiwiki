@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Lexi Shopper (ChatGPT Plugin) |
 | --- |
-| [![Lexi Shopper.png](/images/2/21/Lexi_Shopper.png)](/wiki/file_lexi_shopper_png) |
+| ![Lexi Shopper.png](/images/2/21/Lexi_Shopper.png) |
 | Information |
 | **Name** | Lexi Shopper |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

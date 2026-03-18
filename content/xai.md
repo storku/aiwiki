@@ -14,7 +14,7 @@ categories:
 ---| xAI |
 | --- |
 | X.AI Corp. |
-| [*](/wiki/file_xai_logo1_png) |
+| * |
 | Type | [Private](/index.php?title=Private_company&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | March 9, 2023 |

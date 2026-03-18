@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Giga Tutor (ChatGPT Plugin) |
 | --- |
-| [![Giga Tutor.png](/images/9/9d/Giga_Tutor.png)](/wiki/file_giga_tutor_png) |
+| ![Giga Tutor.png](/images/9/9d/Giga_Tutor.png) |
 | Information |
 | **Name** | Giga Tutor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

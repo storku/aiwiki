@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox FreecableTV (ChatGPT Plugin) |
 | --- |
-| [![MixerBox FreecableTV.png](/images/thumb/7/74/MixerBox_FreecableTV.png/300px-MixerBox_FreecableTV.png)](/wiki/file_mixerbox_freecabletv_png) |
+| ![MixerBox FreecableTV.png](/images/thumb/7/74/MixerBox_FreecableTV.png/300px-MixerBox_FreecableTV.png) |
 | Information |
 | **Name** | MixerBox FreecableTV |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

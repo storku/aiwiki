@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CharitySense (ChatGPT Plugin) |
 | --- |
-| [![CharitySense.png](/images/0/0f/CharitySense.png)](/wiki/file_charitysense_png) |
+| ![CharitySense.png](/images/0/0f/CharitySense.png) |
 | Information |
 | **Name** | CharitySense |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

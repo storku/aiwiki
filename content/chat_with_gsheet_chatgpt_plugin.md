@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat with GSheet (ChatGPT Plugin) |
 | --- |
-| [![Chat with GSheet.jpeg](/images/1/1c/Chat_with_GSheet.jpeg)](/wiki/file_chat_with_gsheet_jpeg) |
+| ![Chat with GSheet.jpeg](/images/1/1c/Chat_with_GSheet.jpeg) |
 | Information |
 | **Name** | Chat with GSheet |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

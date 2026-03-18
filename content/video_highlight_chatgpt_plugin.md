@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Video Highlight (ChatGPT Plugin) |
 | --- |
-| [![Video Highlight.jpg](/images/thumb/0/06/Video_Highlight.jpg/300px-Video_Highlight.jpg)](/wiki/file_video_highlight_jpg) |
+| ![Video Highlight.jpg](/images/thumb/0/06/Video_Highlight.jpg/300px-Video_Highlight.jpg) |
 | Information |
 | **Name** | Video Highlight |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

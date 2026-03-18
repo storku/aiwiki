@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Language Learner (GPT) |
 | --- |
-| [![Language Learner (GPT).jpg](/images/thumb/4/49/Language_Learner_%28GPT%29.jpg/300px-Language_Learner_%28GPT%29.jpg)](/wiki/file_language_learner_gpt_jpg) |
+| ![Language Learner (GPT).jpg](/images/thumb/4/49/Language_Learner_%28GPT%29.jpg/300px-Language_Learner_%28GPT%29.jpg) |
 | Information |
 | **Name** | Language Learner |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

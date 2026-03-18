@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Savvy Trader AI (ChatGPT Plugin) |
 | --- |
-| [![Savvy Trader AI.png](/images/b/b5/Savvy_Trader_AI.png)](/wiki/file_savvy_trader_ai_png) |
+| ![Savvy Trader AI.png](/images/b/b5/Savvy_Trader_AI.png) |
 | Information |
 | **Name** | Savvy Trader AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

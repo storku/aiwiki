@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MediSearch (GPT) |
 | --- |
-| [![MediSearch (GPT).png](/images/thumb/b/b5/MediSearch_%28GPT%29.png/300px-MediSearch_%28GPT%29.png)](/wiki/file_medisearch_gpt_png) |
+| ![MediSearch (GPT).png](/images/thumb/b/b5/MediSearch_%28GPT%29.png/300px-MediSearch_%28GPT%29.png) |
 | Information |
 | **Name** | MediSearch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

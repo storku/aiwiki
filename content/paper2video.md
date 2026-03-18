@@ -7,7 +7,7 @@ categories:
 
 [Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[*](/wiki/file_paper2video1_png)
+*
 
 **Paper2Video** (Paper2Video: Automatic Video Generation from Scientific Papers*) is a research project from [Show Lab](/index.php?title=Show_Lab&action=edit&redlink=1) at the [National University of Singapore](/index.php?title=National_University_of_Singapore&action=edit&redlink=1) that formalizes and evaluates automatic generation of academic presentation videos directly from scientific papers. It comprises (1) the **Paper2Video Benchmark**, a curated set of 101 paper–video pairs with slides and speaker metadata, and (2) **[PaperTalker](/index.php?title=PaperTalker&action=edit&redlink=1)**, a [multi‑agent](/index.php?title=Multi%E2%80%91agent&action=edit&redlink=1) framework that turns a paper (plus a reference image and short voice sample) into a narrated presentation video with slides, subtitles, cursor highlights, and an optional talking‑head presenter.[&#91;1&#93;](#cite_note-arxiv-1)[&#91;2&#93;](#cite_note-projpage-2) Code and data are open‑sourced under the MIT license on [GitHub](/index.php?title=GitHub&action=edit&redlink=1) and the benchmark is hosted on [Hugging Face](/wiki/hugging_face).[&#91;3&#93;](#cite_note-github-3)[&#91;4&#93;](#cite_note-hf-dataset-4)
 

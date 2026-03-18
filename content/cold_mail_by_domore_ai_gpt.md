@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Cold Mail by DoMore.ai (GPT) |
 | --- |
-| [![Cold Mail by DoMore.ai (GPT).png](/images/thumb/6/67/Cold_Mail_by_DoMore.ai_%28GPT%29.png/300px-Cold_Mail_by_DoMore.ai_%28GPT%29.png)](/wiki/file_cold_mail_by_domore_ai_gpt_png) |
+| ![Cold Mail by DoMore.ai (GPT).png](/images/thumb/6/67/Cold_Mail_by_DoMore.ai_%28GPT%29.png/300px-Cold_Mail_by_DoMore.ai_%28GPT%29.png) |
 | Information |
 | **Name** | Cold Mail by DoMore.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

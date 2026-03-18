@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Executive func (GPT) |
 | --- |
-| [![Executive func (GPT).png](/images/thumb/e/ed/Executive_func_%28GPT%29.png/300px-Executive_func_%28GPT%29.png)](/wiki/file_executive_func_gpt_png) |
+| ![Executive func (GPT).png](/images/thumb/e/ed/Executive_func_%28GPT%29.png/300px-Executive_func_%28GPT%29.png) |
 | Information |
 | **Name** | Executive func |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

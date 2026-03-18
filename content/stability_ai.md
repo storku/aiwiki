@@ -1,7 +1,7 @@
 ---
 title: "Stability AI"
 slug: "stability_ai"
----[![](/images/thumb/5/56/Stability_AI_motto.png/300px-Stability_AI_motto.png)](/wiki/file_stability_ai_motto_png)  [](/wiki/file_stability_ai_motto_png)
+---![](/images/thumb/5/56/Stability_AI_motto.png/300px-Stability_AI_motto.png)  
 Figure 1: Stability AI motto from their official website. Source: Stability AI
 Founded in 2020 by Emad Mostaque, Stability AI is a [community-driven](/wiki/organizations) [company](/wiki/company) in the field of [artificial intelligence](/wiki/artificial_intelligence) ([AI](/wiki/ai)). Its mission is "to build [open-source AI projects](/index.php?title=Open_source_projects&action=edit&redlink=1) through collaborative research efforts between leaders and experts in their fields; these include researchers, engineers, developers, PhD candidates, and [AI artists](/index.php?title=AI_artists&action=edit&redlink=1) across multiple disciplines." [&#91;1&#93;](#cite_note-”1”-1) The company is building AI tools through an [open-source model](/index.php?title=Open_source_models&action=edit&redlink=1) attempting to democratize AI. [&#91;2&#93;](#cite_note-”2”-2) This attitude of openness is expressed in their motto, "AI by the people, for the people" (figure 1). [&#91;3&#93;](#cite_note-”3”-3)
 
@@ -39,7 +39,7 @@ November 2022: Stability AI selects Amazon Web Services (AWS) as its preferred c
 
 ## Projects
 
-[![](/images/thumb/9/99/Stability_AI_projects.png/300px-Stability_AI_projects.png)](/wiki/file_stability_ai_projects_png)  [](/wiki/file_stability_ai_projects_png)
+![](/images/thumb/9/99/Stability_AI_projects.png/300px-Stability_AI_projects.png)  
 Figure 2: Stability AI involvement in different communities and projects. Source: Stability AI.
 The company is involved in the funding and development of open-source music- and image-generating models (figure 2). [&#91;4&#93;](#cite_note-”6”-4)
 

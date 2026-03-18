@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GymStreak Workout Creator (GPT) |
 | --- |
-| [![GymStreak Workout Creator (GPT).png](/images/thumb/2/2c/GymStreak_Workout_Creator_%28GPT%29.png/300px-GymStreak_Workout_Creator_%28GPT%29.png)](/wiki/file_gymstreak_workout_creator_gpt_png) |
+| ![GymStreak Workout Creator (GPT).png](/images/thumb/2/2c/GymStreak_Workout_Creator_%28GPT%29.png/300px-GymStreak_Workout_Creator_%28GPT%29.png) |
 | Information |
 | **Name** | GymStreak Workout Creator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

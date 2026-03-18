@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Global Travel Planner (GPT) |
 | --- |
-| [![Global Travel Planner (GPT).png](/images/thumb/0/0e/Global_Travel_Planner_%28GPT%29.png/300px-Global_Travel_Planner_%28GPT%29.png)](/wiki/file_global_travel_planner_gpt_png) |
+| ![Global Travel Planner (GPT).png](/images/thumb/0/0e/Global_Travel_Planner_%28GPT%29.png/300px-Global_Travel_Planner_%28GPT%29.png) |
 | Information |
 | **Name** | Global Travel Planner |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CoPilot (ChatGPT Plugin) |
 | --- |
-| [![CoPilot.png](/images/thumb/0/09/CoPilot.png/300px-CoPilot.png)](/wiki/file_copilot_png) |
+| ![CoPilot.png](/images/thumb/0/09/CoPilot.png/300px-CoPilot.png) |
 | Information |
 | **Name** | CoPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

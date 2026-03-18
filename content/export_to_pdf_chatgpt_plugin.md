@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Export to PDF (ChatGPT Plugin) |
 | --- |
-| [![Export to PDF.png](/images/thumb/c/c3/Export_to_PDF.png/300px-Export_to_PDF.png)](/wiki/file_export_to_pdf_png) |
+| ![Export to PDF.png](/images/thumb/c/c3/Export_to_PDF.png/300px-Export_to_PDF.png) |
 | Information |
 | **Name** | Export to PDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

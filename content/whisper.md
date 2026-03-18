@@ -11,13 +11,13 @@ Whispers' unprecedented high degree of accuracy and ease of use will allow the i
 
 ## Architecture
 
-[![](/images/thumb/3/39/Asr-summary-of-model-architecture.png/300px-Asr-summary-of-model-architecture.png)](/wiki/file_asr-summary-of-model-architecture_png)  [](/wiki/file_asr-summary-of-model-architecture_png)
+![](/images/thumb/3/39/Asr-summary-of-model-architecture.png/300px-Asr-summary-of-model-architecture.png)  
 Figure 1. Whisper architecture. Source: OpenAI.
-[![](/images/thumb/b/b6/Whisper_models.png/300px-Whisper_models.png)](/wiki/file_whisper_models_png)  [](/wiki/file_whisper_models_png)
+![](/images/thumb/b/b6/Whisper_models.png/300px-Whisper_models.png)  
 Figure 2. Different Whisper models. Source: OpenAI.
-[![](/images/thumb/8/84/Whisper_Word-Error-Rate.png/300px-Whisper_Word-Error-Rate.png)](/wiki/file_whisper_word-error-rate_png)  [](/wiki/file_whisper_word-error-rate_png)
+![](/images/thumb/8/84/Whisper_Word-Error-Rate.png/300px-Whisper_Word-Error-Rate.png)  
 Figure 3. Comparison of Whisper's Word-error-rate (WER) with other models. Source: OpenAI.
-[![](/images/thumb/5/5e/Multilingual_wer.png/300px-Multilingual_wer.png)](/wiki/file_multilingual_wer_png)  [](/wiki/file_multilingual_wer_png)
+![](/images/thumb/5/5e/Multilingual_wer.png/300px-Multilingual_wer.png)  
 Figure 4. Whisper's WER as a function of language. Source: OpenAI.
 OpenAI's ASR system has a classic built based on the transformer architecture, stacking encoder and decoder blocks (figure 1). [&#91;1&#93;](#cite_note-”1”-1) [&#91;10&#93;](#cite_note-”10”-10) [&#91;11&#93;](#cite_note-”11”-11) This is similar to [GPT-3](/wiki/gpt-3) and other language models. [&#91;11&#93;](#cite_note-”11”-11) The audio is split into 30-second pieces and processed one by one [&#91;1&#93;](#cite_note-”1”-1) [&#91;11&#93;](#cite_note-”11”-11) According to OpenAI, the audio chunks are "converted into a log-Mel spectrogram, and then passed into an encoder. A decoder is trained to predict the corresponding text caption, intermixed with special tokens that direct the single model to perform tasks such as language identification, phrase-level timestamps, multilingual speech transcription, and to-English speech translation." [&#91;1&#93;](#cite_note-”1”-1)
 

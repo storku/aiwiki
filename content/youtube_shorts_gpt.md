@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| YouTube Shorts 대본 만들기 (GPT) |
 | --- |
-| [![YouTube Shorts 대본 만들기 (GPT).png](/images/thumb/8/80/YouTube_Shorts_%EB%8C%80%EB%B3%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%28GPT%29.png/300px-YouTube_Shorts_%EB%8C%80%EB%B3%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%28GPT%29.png)](/wiki/file_youtube_shorts_gpt_png) |
+| ![YouTube Shorts 대본 만들기 (GPT).png](/images/thumb/8/80/YouTube_Shorts_%EB%8C%80%EB%B3%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%28GPT%29.png/300px-YouTube_Shorts_%EB%8C%80%EB%B3%B8_%EB%A7%8C%EB%93%A4%EA%B8%B0_%28GPT%29.png) |
 | Information |
 | **Name** | YouTube Shorts 대본 만들기 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

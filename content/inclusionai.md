@@ -10,7 +10,7 @@ categories:
   - "Ant_Group"
 ---| inclusionAI |
 | --- |
-| [![](/images/thumb/1/1c/Inclusionai_logo1.png/200px-Inclusionai_logo1.png)](/wiki/file_inclusionai_logo1_png) |
+| ![](/images/thumb/1/1c/Inclusionai_logo1.png/200px-Inclusionai_logo1.png) |
 | Type | Research division |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | 2024

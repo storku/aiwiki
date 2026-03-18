@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CSV Export (ChatGPT Plugin) |
 | --- |
-| [![CSV Export.jpeg](/images/3/3b/CSV_Export.jpeg)](/wiki/file_csv_export_jpeg) |
+| ![CSV Export.jpeg](/images/3/3b/CSV_Export.jpeg) |
 | Information |
 | **Name** | CSV Export |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Home Style Advisor (GPT) |
 | --- |
-| [![Home Style Advisor (GPT).png](/images/thumb/6/60/Home_Style_Advisor_%28GPT%29.png/300px-Home_Style_Advisor_%28GPT%29.png)](/wiki/file_home_style_advisor_gpt_png) |
+| ![Home Style Advisor (GPT).png](/images/thumb/6/60/Home_Style_Advisor_%28GPT%29.png/300px-Home_Style_Advisor_%28GPT%29.png) |
 | Information |
 | **Name** | Home Style Advisor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

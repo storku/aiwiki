@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Weather (ChatGPT Plugin) |
 | --- |
-| [![Weather.png](/images/d/df/Weather.png)](/wiki/file_weather_png) |
+| ![Weather.png](/images/d/df/Weather.png) |
 | Information |
 | **Name** | Weather |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

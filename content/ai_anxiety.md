@@ -36,7 +36,7 @@ The developmental path that AI will take in the future is not clear, with each s
 
 ### Li & Huang (2020)
 
-[![](/images/thumb/c/c9/Factor_analysis_results_Li%26Huang.png/300px-Factor_analysis_results_Li%26Huang.png)](/wiki/file_factor_analysis_results_li_huang_png)  [](/wiki/file_factor_analysis_results_li_huang_png)
+![](/images/thumb/c/c9/Factor_analysis_results_Li%26Huang.png/300px-Factor_analysis_results_Li%26Huang.png)  
 Figure 1. Contributing factors for AI anxiety and supporting literature. Source: Li & Huang (2020)
 Li & Huang (2020) [&#91;3&#93;](#cite_note-”3”-3) identified eight anxieties that may contribute to the overall AI anxiety (figure 1).
 

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox Translate (ChatGPT Plugin) |
 | --- |
-| [![MixerBox Translate.png](/images/thumb/0/04/MixerBox_Translate.png/300px-MixerBox_Translate.png)](/wiki/file_mixerbox_translate_png) |
+| ![MixerBox Translate.png](/images/thumb/0/04/MixerBox_Translate.png/300px-MixerBox_Translate.png) |
 | Information |
 | **Name** | MixerBox Translate |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

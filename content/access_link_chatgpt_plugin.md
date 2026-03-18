@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Access Link (ChatGPT Plugin) |
 | --- |
-| [![Access Link.png](/images/thumb/4/46/Access_Link.png/300px-Access_Link.png)](/wiki/file_access_link_png) |
+| ![Access Link.png](/images/thumb/4/46/Access_Link.png/300px-Access_Link.png) |
 | Information |
 | **Name** | Access Link |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

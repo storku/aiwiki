@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NFT Guru (ChatGPT Plugin) |
 | --- |
-| [![NFT Guru.jpeg](/images/1/10/NFT_Guru.jpeg)](/wiki/file_nft_guru_jpeg) |
+| ![NFT Guru.jpeg](/images/1/10/NFT_Guru.jpeg) |
 | Information |
 | **Name** | NFT Guru |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

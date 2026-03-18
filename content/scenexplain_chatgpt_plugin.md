@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SceneXplain (ChatGPT Plugin) |
 | --- |
-| [![SceneXplain.png](/images/b/b6/SceneXplain.png)](/wiki/file_scenexplain_png) |
+| ![SceneXplain.png](/images/b/b6/SceneXplain.png) |
 | Information |
 | **Name** | SceneXplain |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

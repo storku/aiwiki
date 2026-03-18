@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SmartTicketsAI (ChatGPT Plugin) |
 | --- |
-| [![SmartTicketsAI.png](/images/thumb/0/05/SmartTicketsAI.png/300px-SmartTicketsAI.png)](/wiki/file_smartticketsai_png) |
+| ![SmartTicketsAI.png](/images/thumb/0/05/SmartTicketsAI.png/300px-SmartTicketsAI.png) |
 | Information |
 | **Name** | SmartTicketsAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

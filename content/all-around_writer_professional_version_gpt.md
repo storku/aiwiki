@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ✏️All-around Writer (Professional Version) (GPT) |
 | --- |
-| [![✏️All-around Writer (Professional Version) (GPT).png](/images/thumb/1/1b/%E2%9C%8F%EF%B8%8FAll-around_Writer_%28Professional_Version%29_%28GPT%29.png/300px-%E2%9C%8F%EF%B8%8FAll-around_Writer_%28Professional_Version%29_%28GPT%29.png)](/wiki/file_all-around_writer_professional_version_gpt_png) |
+| ![✏️All-around Writer (Professional Version) (GPT).png](/images/thumb/1/1b/%E2%9C%8F%EF%B8%8FAll-around_Writer_%28Professional_Version%29_%28GPT%29.png/300px-%E2%9C%8F%EF%B8%8FAll-around_Writer_%28Professional_Version%29_%28GPT%29.png) |
 | Information |
 | **Name** | ✏️All-around Writer (Professional Version) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AskYourPDF (ChatGPT Plugin) |
 | --- |
-| [![AskYourPDF.png](/images/thumb/e/e5/AskYourPDF.png/300px-AskYourPDF.png)](/wiki/file_askyourpdf_png) |
+| ![AskYourPDF.png](/images/thumb/e/e5/AskYourPDF.png/300px-AskYourPDF.png) |
 | Information |
 | **Name** | AskYourPDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

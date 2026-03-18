@@ -16,7 +16,7 @@ categories:
 [Template:Use mdy dates](/index.php?title=Template:Use_mdy_dates&action=edit&redlink=1)
 [Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[*](/wiki/file_cudnn1_png)
+*
 
 **NVIDIA cuDNN** (**CUDA Deep Neural Network library**) is a [proprietary](/index.php?title=Proprietary_software&action=edit&redlink=1) [GPU](/index.php?title=GPU&action=edit&redlink=1)-accelerated software library of primitives for [deep learning](/index.php?title=Deep_learning&action=edit&redlink=1) developed by [NVIDIA](/wiki/nvidia). It provides highly tuned implementations for standard routines such as forward and backward [convolution](/wiki/convolution), [attention](/index.php?title=Attention_mechanism&action=edit&redlink=1), [matmul](/index.php?title=Matrix_multiplication&action=edit&redlink=1), [pooling](/wiki/pooling), and [normalization](/wiki/normalization).[&#91;1&#93;](#cite_note-cudnn-main-1)[&#91;2&#93;](#cite_note-cudnn-docs-main-2)
 

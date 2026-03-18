@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ESIM Travel Asst (ChatGPT Plugin) |
 | --- |
-| [![ESIM Travel Asst.png](/images/e/e3/ESIM_Travel_Asst.png)](/wiki/file_esim_travel_asst_png) |
+| ![ESIM Travel Asst.png](/images/e/e3/ESIM_Travel_Asst.png) |
 | Information |
 | **Name** | eSIM Travel Asst |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TopHap (ChatGPT Plugin) |
 | --- |
-| [![TopHap.png](/images/4/48/TopHap.png)](/wiki/file_tophap_png) |
+| ![TopHap.png](/images/4/48/TopHap.png) |
 | Information |
 | **Name** | TopHap |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

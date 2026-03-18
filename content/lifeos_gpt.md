@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| LifeOS (GPT) |
 | --- |
-| [![LifeOS (GPT).png](/images/thumb/7/79/LifeOS_%28GPT%29.png/300px-LifeOS_%28GPT%29.png)](/wiki/file_lifeos_gpt_png) |
+| ![LifeOS (GPT).png](/images/thumb/7/79/LifeOS_%28GPT%29.png/300px-LifeOS_%28GPT%29.png) |
 | Information |
 | **Name** | LifeOS |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

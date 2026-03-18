@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| OfferZen World (ChatGPT Plugin) |
 | --- |
-| [![OfferZen World.jpeg](/images/a/aa/OfferZen_World.jpeg)](/wiki/file_offerzen_world_jpeg) |
+| ![OfferZen World.jpeg](/images/a/aa/OfferZen_World.jpeg) |
 | Information |
 | **Name** | OfferZen World |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

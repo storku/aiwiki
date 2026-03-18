@@ -14,7 +14,7 @@ categories:
 ---| MiniMax |
 | --- |
 | 上海稀宇科技有限公司 (Shanghai Xiyu Technology Co., Ltd.) |
-| [![MiniMax logo](/images/thumb/5/58/Minimax_logo1.png/200px-Minimax_logo1.png)](/wiki/file_minimax_logo1_png) |
+| ![MiniMax logo](/images/thumb/5/58/Minimax_logo1.png/200px-Minimax_logo1.png) |
 | Type | [Private](/index.php?title=Private_company&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | December 2021 |

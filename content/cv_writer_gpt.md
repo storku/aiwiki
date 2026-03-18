@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| CV Writer (GPT) |
 | --- |
-| [![CV Writer (GPT).jpeg](/images/thumb/f/f0/CV_Writer_%28GPT%29.jpeg/300px-CV_Writer_%28GPT%29.jpeg)](/wiki/file_cv_writer_gpt_jpeg) |
+| ![CV Writer (GPT).jpeg](/images/thumb/f/f0/CV_Writer_%28GPT%29.jpeg/300px-CV_Writer_%28GPT%29.jpeg) |
 | Information |
 | **Name** | CV Writer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

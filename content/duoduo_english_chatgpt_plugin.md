@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Duoduo English (ChatGPT Plugin) |
 | --- |
-| [![Duoduo English.png](/images/thumb/6/62/Duoduo_English.png/300px-Duoduo_English.png)](/wiki/file_duoduo_english_png) |
+| ![Duoduo English.png](/images/thumb/6/62/Duoduo_English.png/300px-Duoduo_English.png) |
 | Information |
 | **Name** | Duoduo English |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

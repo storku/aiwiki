@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Domatron Domains (ChatGPT Plugin) |
 | --- |
-| [![Domatron Domains.png](/images/2/2d/Domatron_Domains.png)](/wiki/file_domatron_domains_png) |
+| ![Domatron Domains.png](/images/2/2d/Domatron_Domains.png) |
 | Information |
 | **Name** | Domatron Domains |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

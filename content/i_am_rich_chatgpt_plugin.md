@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| I Am Rich (ChatGPT Plugin) |
 | --- |
-| [![I Am Rich.jpg](/images/thumb/6/6f/I_Am_Rich.jpg/300px-I_Am_Rich.jpg)](/wiki/file_i_am_rich_jpg) |
+| ![I Am Rich.jpg](/images/thumb/6/6f/I_Am_Rich.jpg/300px-I_Am_Rich.jpg) |
 | Information |
 | **Name** | I Am Rich |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

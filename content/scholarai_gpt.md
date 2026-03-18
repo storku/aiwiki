@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ScholarAI (GPT) |
 | --- |
-| [![ScholarAI (GPT).png](/images/thumb/e/e5/ScholarAI_%28GPT%29.png/300px-ScholarAI_%28GPT%29.png)](/wiki/file_scholarai_gpt_png) |
+| ![ScholarAI (GPT).png](/images/thumb/e/e5/ScholarAI_%28GPT%29.png/300px-ScholarAI_%28GPT%29.png) |
 | Information |
 | **Name** | ScholarAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

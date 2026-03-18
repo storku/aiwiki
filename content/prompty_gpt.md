@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Prompty (GPT) |
 | --- |
-| [![Prompty (GPT).png](/images/thumb/4/49/Prompty_%28GPT%29.png/300px-Prompty_%28GPT%29.png)](/wiki/file_prompty_gpt_png) |
+| ![Prompty (GPT).png](/images/thumb/4/49/Prompty_%28GPT%29.png/300px-Prompty_%28GPT%29.png) |
 | Information |
 | **Name** | Prompty |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Scholar GPT |
 | --- |
-| [![Scholar GPT.png](/images/thumb/c/cc/Scholar_GPT.png/300px-Scholar_GPT.png)](/wiki/file_scholar_gpt_png) |
+| ![Scholar GPT.png](/images/thumb/c/cc/Scholar_GPT.png/300px-Scholar_GPT.png) |
 | Information |
 | **Name** | Scholar GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

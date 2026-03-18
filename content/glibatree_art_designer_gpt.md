@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Glibatree Art Designer (GPT) |
 | --- |
-| [![Glibatree Art Designer (GPT).png](/images/thumb/2/28/Glibatree_Art_Designer_%28GPT%29.png/300px-Glibatree_Art_Designer_%28GPT%29.png)](/wiki/file_glibatree_art_designer_gpt_png) |
+| ![Glibatree Art Designer (GPT).png](/images/thumb/2/28/Glibatree_Art_Designer_%28GPT%29.png/300px-Glibatree_Art_Designer_%28GPT%29.png) |
 | Information |
 | **Name** | Glibatree Art Designer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

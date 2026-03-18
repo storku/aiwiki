@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Coding Assistant (GPT) |
 | --- |
-| [![Coding Assistant (GPT).png](/images/thumb/8/89/Coding_Assistant_%28GPT%29.png/300px-Coding_Assistant_%28GPT%29.png)](/wiki/file_coding_assistant_gpt_png) |
+| ![Coding Assistant (GPT).png](/images/thumb/8/89/Coding_Assistant_%28GPT%29.png/300px-Coding_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | Coding Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -3,7 +3,7 @@ title: "Claude"
 slug: "claude"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[![Claude logo1.png](/images/thumb/5/57/Claude_logo1.png/250px-Claude_logo1.png)](/wiki/file_claude_logo1_png)
+![Claude logo1.png](/images/thumb/5/57/Claude_logo1.png/250px-Claude_logo1.png)
 
 **Claude** is a family of [large language models](/wiki/large_language_model) (LLMs) developed by [Anthropic](/wiki/anthropic), an American [artificial intelligence](/wiki/artificial_intelligence) safety and research company. Named after [Claude Shannon](/index.php?title=Claude_Shannon&action=edit&redlink=1), the founder of [information theory](/index.php?title=Information_theory&action=edit&redlink=1), the series is positioned for enterprise and developer use with emphasis on [AI safety](/index.php?title=AI_safety&action=edit&redlink=1) and [alignment](/index.php?title=Alignment_(artificial_intelligence)&action=edit&redlink=1), including the use of [Constitutional AI](/index.php?title=Constitutional_AI&action=edit&redlink=1) for training.[&#91;1&#93;](#cite_note-anthropic-claude4-1)[&#91;2&#93;](#cite_note-shannon-naming-2) Claude models are available via Anthropic's own API and through third-party platforms such as [Amazon Bedrock](/index.php?title=Amazon_Bedrock&action=edit&redlink=1) (by [Amazon Web Services](/index.php?title=Amazon_Web_Services&action=edit&redlink=1)), [Vertex AI](/index.php?title=Vertex_AI&action=edit&redlink=1) (by [Google Cloud](/index.php?title=Google_Cloud&action=edit&redlink=1)), and [GitHub Copilot](/wiki/github_copilot).[&#91;3&#93;](#cite_note-aws-bedrock-3)[&#91;4&#93;](#cite_note-gcp-vertex-4)
 

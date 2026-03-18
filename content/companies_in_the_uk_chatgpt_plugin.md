@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Companies In The UK (ChatGPT Plugin) |
 | --- |
-| [![Companies In The UK.png](/images/thumb/9/9e/Companies_In_The_UK.png/300px-Companies_In_The_UK.png)](/wiki/file_companies_in_the_uk_png) |
+| ![Companies In The UK.png](/images/thumb/9/9e/Companies_In_The_UK.png/300px-Companies_In_The_UK.png) |
 | Information |
 | **Name** | Companies In The UK |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

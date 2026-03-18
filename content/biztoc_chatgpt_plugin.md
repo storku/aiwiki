@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BizToc (ChatGPT Plugin) |
 | --- |
-| [![BizToc.png](/images/thumb/9/9a/BizToc.png/300px-BizToc.png)](/wiki/file_biztoc_png) |
+| ![BizToc.png](/images/thumb/9/9a/BizToc.png/300px-BizToc.png) |
 | Information |
 | **Name** | BizToc |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

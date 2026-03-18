@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Idea Organiser (ChatGPT Plugin) |
 | --- |
-| [![Idea Organiser.jpeg](/images/thumb/3/3d/Idea_Organiser.jpeg/300px-Idea_Organiser.jpeg)](/wiki/file_idea_organiser_jpeg) |
+| ![Idea Organiser.jpeg](/images/thumb/3/3d/Idea_Organiser.jpeg/300px-Idea_Organiser.jpeg) |
 | Information |
 | **Name** | Idea Organiser |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

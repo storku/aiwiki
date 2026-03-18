@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CCData.io (ChatGPT Plugin) |
 | --- |
-| [![CCData.io.jpg](/images/thumb/4/4d/CCData.io.jpg/300px-CCData.io.jpg)](/wiki/file_ccdata_io_jpg) |
+| ![CCData.io.jpg](/images/thumb/4/4d/CCData.io.jpg/300px-CCData.io.jpg) |
 | Information |
 | **Name** | CCData.io |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

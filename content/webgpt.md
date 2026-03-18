@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| WebGPT🤖 |
 | --- |
-| [![WebGPT🤖.png](/images/thumb/6/6d/WebGPT%F0%9F%A4%96.png/300px-WebGPT%F0%9F%A4%96.png)](/wiki/file_webgpt_png) |
+| ![WebGPT🤖.png](/images/thumb/6/6d/WebGPT%F0%9F%A4%96.png/300px-WebGPT%F0%9F%A4%96.png) |
 | Information |
 | **Name** | WebGPT🤖 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

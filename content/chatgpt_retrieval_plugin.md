@@ -19,7 +19,7 @@ With the integration of plugins, ChatGPT can now perform various tasks such as o
 
 ## ChatGPT Retrieval Plugin: Connecting to a Vector Database
 
-[![Chatgpt retrieval plugin1.png](/images/thumb/6/6b/Chatgpt_retrieval_plugin1.png/400px-Chatgpt_retrieval_plugin1.png)](/wiki/file_chatgpt_retrieval_plugin1_png)
+![Chatgpt retrieval plugin1.png](/images/thumb/6/6b/Chatgpt_retrieval_plugin1.png/400px-Chatgpt_retrieval_plugin1.png)
 
 The ChatGPT Retrieval Plugin enables users to connect [ChatGPT](/wiki/chatgpt) to an instance of a [vector database](/wiki/vector_database), allowing any information stored in the connected database to be used to answer questions and provide responses based on the details stored in the database. Additionally, the vector database can be utilized as a long-term storage solution for ChatGPT, allowing it to persist and store portions of user conversations beyond the short-lived memory of a browser tab.
 

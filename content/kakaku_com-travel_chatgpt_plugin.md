@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Kakaku.com-travel (ChatGPT Plugin) |
 | --- |
-| [![Kakakucom-travel.jpg](/images/2/21/Kakakucom-travel.jpg)](/wiki/file_kakakucom-travel_jpg) |
+| ![Kakakucom-travel.jpg](/images/2/21/Kakakucom-travel.jpg) |
 | Information |
 | **Name** | Kakaku.com-travel |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GeoGuru (ChatGPT Plugin) |
 | --- |
-| [![GeoGuru.png](/images/thumb/5/5b/GeoGuru.png/300px-GeoGuru.png)](/wiki/file_geoguru_png) |
+| ![GeoGuru.png](/images/thumb/5/5b/GeoGuru.png/300px-GeoGuru.png) |
 | Information |
 | **Name** | GeoGuru |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Etihad Airline (ChatGPT Plugin) |
 | --- |
-| [![Etihad Airline.jpeg](/images/b/b3/Etihad_Airline.jpeg)](/wiki/file_etihad_airline_jpeg) |
+| ![Etihad Airline.jpeg](/images/b/b3/Etihad_Airline.jpeg) |
 | Information |
 | **Name** | Etihad Airline |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

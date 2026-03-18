@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Clinical Trial Radar (ChatGPT Plugin) |
 | --- |
-| [![Clinical Trial Radar.png](/images/f/fc/Clinical_Trial_Radar.png)](/wiki/file_clinical_trial_radar_png) |
+| ![Clinical Trial Radar.png](/images/f/fc/Clinical_Trial_Radar.png) |
 | Information |
 | **Name** | Clinical Trial Radar |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

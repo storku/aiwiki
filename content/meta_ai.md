@@ -19,7 +19,7 @@ categories:
 
 *See also: [Terms](/wiki/terms) and [Artificial intelligence terms](/wiki/artificial_intelligence_terms)*
 *See also: [Meta AI (Company)](/wiki/meta_ai_company)*
-[![Meta ai1.jpg](/images/thumb/5/5f/Meta_ai1.jpg/300px-Meta_ai1.jpg)](/wiki/file_meta_ai1_jpg)
+![Meta ai1.jpg](/images/thumb/5/5f/Meta_ai1.jpg/300px-Meta_ai1.jpg)
 
 **Meta AI** is an [artificial intelligence](/wiki/artificial_intelligence) [assistant](/index.php?title=Virtual_assistant&action=edit&redlink=1) developed by [Meta Platforms](/index.php?title=Meta_Platforms&action=edit&redlink=1). Initially launched as an integrated assistant within Meta's social media platforms on September 27, 2023, it became available as a standalone application on April 29, 2025.[&#91;1&#93;](#cite_note-intro-1)[&#91;2&#93;](#cite_note-cnbc-launch-2) The app represents Meta's effort to compete directly with [ChatGPT](/wiki/chatgpt), [Google Gemini](/index.php?title=Google_Gemini&action=edit&redlink=1), and other AI assistant applications, offering unique social features and deep integration with Meta's ecosystem.[&#91;2&#93;](#cite_note-cnbc-launch-2)
 
@@ -175,7 +175,7 @@ CEO Mark Zuckerberg stated that 2025 would be "the year when a highly intelligen
 ## Images
 
 		- 
-			[![Meta ai6.jpg](/images/thumb/4/4b/Meta_ai6.jpg/286px-Meta_ai6.jpg)](/wiki/file_meta_ai6_jpg)
+			![Meta ai6.jpg](/images/thumb/4/4b/Meta_ai6.jpg/286px-Meta_ai6.jpg)
 
 			
 			
@@ -183,7 +183,7 @@ CEO Mark Zuckerberg stated that 2025 would be "the year when a highly intelligen
 		
 
 		- 
-			[![Meta ai3.jpg](/images/thumb/9/9d/Meta_ai3.jpg/207px-Meta_ai3.jpg)](/wiki/file_meta_ai3_jpg)
+			![Meta ai3.jpg](/images/thumb/9/9d/Meta_ai3.jpg/207px-Meta_ai3.jpg)
 
 			
 			
@@ -191,7 +191,7 @@ CEO Mark Zuckerberg stated that 2025 would be "the year when a highly intelligen
 		
 
 		- 
-			[![Meta ai4.jpg](/images/thumb/d/d3/Meta_ai4.jpg/207px-Meta_ai4.jpg)](/wiki/file_meta_ai4_jpg)
+			![Meta ai4.jpg](/images/thumb/d/d3/Meta_ai4.jpg/207px-Meta_ai4.jpg)
 
 			
 			
@@ -199,7 +199,7 @@ CEO Mark Zuckerberg stated that 2025 would be "the year when a highly intelligen
 		
 
 		- 
-			[![Meta ai1.jpg](/images/thumb/5/5f/Meta_ai1.jpg/207px-Meta_ai1.jpg)](/wiki/file_meta_ai1_jpg)
+			![Meta ai1.jpg](/images/thumb/5/5f/Meta_ai1.jpg/207px-Meta_ai1.jpg)
 
 			
 			

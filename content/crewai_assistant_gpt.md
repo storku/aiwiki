@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| CrewAI Assistant (GPT) |
 | --- |
-| [![CrewAI Assistant (GPT).png](/images/thumb/8/8b/CrewAI_Assistant_%28GPT%29.png/300px-CrewAI_Assistant_%28GPT%29.png)](/wiki/file_crewai_assistant_gpt_png) |
+| ![CrewAI Assistant (GPT).png](/images/thumb/8/8b/CrewAI_Assistant_%28GPT%29.png/300px-CrewAI_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | CrewAI Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

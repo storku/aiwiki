@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| What To Watch (ChatGPT Plugin) |
 | --- |
-| [![What To Watch.png](/images/thumb/4/43/What_To_Watch.png/300px-What_To_Watch.png)](/wiki/file_what_to_watch_png) |
+| ![What To Watch.png](/images/thumb/4/43/What_To_Watch.png/300px-What_To_Watch.png) |
 | Information |
 | **Name** | What To Watch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

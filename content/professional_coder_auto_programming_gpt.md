@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 💻Professional Coder (Auto programming) (GPT) |
 | --- |
-| [![💻Professional Coder (Auto programming) (GPT).png](/images/thumb/a/a7/%F0%9F%92%BBProfessional_Coder_%28Auto_programming%29_%28GPT%29.png/300px-%F0%9F%92%BBProfessional_Coder_%28Auto_programming%29_%28GPT%29.png)](/wiki/file_professional_coder_auto_programming_gpt_png) |
+| ![💻Professional Coder (Auto programming) (GPT).png](/images/thumb/a/a7/%F0%9F%92%BBProfessional_Coder_%28Auto_programming%29_%28GPT%29.png/300px-%F0%9F%92%BBProfessional_Coder_%28Auto_programming%29_%28GPT%29.png) |
 | Information |
 | **Name** | 💻Professional Coder (Auto programming) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

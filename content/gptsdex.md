@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPTsdex |
 | --- |
-| [![GPTsdex.png](/images/thumb/b/bf/GPTsdex.png/300px-GPTsdex.png)](/wiki/file_gptsdex_png) |
+| ![GPTsdex.png](/images/thumb/b/bf/GPTsdex.png/300px-GPTsdex.png) |
 | Information |
 | **Name** | GPTsdex |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Talkface IELTS Prep (ChatGPT Plugin) |
 | --- |
-| [![Talkface IELTS Prep.png](/images/thumb/a/af/Talkface_IELTS_Prep.png/300px-Talkface_IELTS_Prep.png)](/wiki/file_talkface_ielts_prep_png) |
+| ![Talkface IELTS Prep.png](/images/thumb/a/af/Talkface_IELTS_Prep.png/300px-Talkface_IELTS_Prep.png) |
 | Information |
 | **Name** | Talkface IELTS Prep |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

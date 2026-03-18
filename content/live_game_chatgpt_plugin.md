@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Live Game (ChatGPT Plugin) |
 | --- |
-| [![Live Game.jpeg](/images/5/57/Live_Game.jpeg)](/wiki/file_live_game_jpeg) |
+| ![Live Game.jpeg](/images/5/57/Live_Game.jpeg) |
 | Information |
 | **Name** | Live Game |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

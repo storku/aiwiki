@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Free Kiddie Books (ChatGPT Plugin) |
 | --- |
-| [![Free Kiddie Books.png](/images/thumb/e/ea/Free_Kiddie_Books.png/300px-Free_Kiddie_Books.png)](/wiki/file_free_kiddie_books_png) |
+| ![Free Kiddie Books.png](/images/thumb/e/ea/Free_Kiddie_Books.png/300px-Free_Kiddie_Books.png) |
 | Information |
 | **Name** | Free Kiddie Books |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

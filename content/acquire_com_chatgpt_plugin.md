@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Acquire.com (ChatGPT Plugin) |
 | --- |
-| [![Acquirecom.jpg](/images/thumb/0/03/Acquirecom.jpg/300px-Acquirecom.jpg)](/wiki/file_acquirecom_jpg) |
+| ![Acquirecom.jpg](/images/thumb/0/03/Acquirecom.jpg/300px-Acquirecom.jpg) |
 | Information |
 | **Name** | Acquire.com |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TalentOrg (ChatGPT Plugin) |
 | --- |
-| [![TalentOrg.png](/images/thumb/2/2c/TalentOrg.png/300px-TalentOrg.png)](/wiki/file_talentorg_png) |
+| ![TalentOrg.png](/images/thumb/2/2c/TalentOrg.png/300px-TalentOrg.png) |
 | Information |
 | **Name** | TalentOrg |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

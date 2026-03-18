@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WebRewind (ChatGPT Plugin) |
 | --- |
-| [![WebRewind.png](/images/thumb/f/fa/WebRewind.png/300px-WebRewind.png)](/wiki/file_webrewind_png) |
+| ![WebRewind.png](/images/thumb/f/fa/WebRewind.png/300px-WebRewind.png) |
 | Information |
 | **Name** | WebRewind |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

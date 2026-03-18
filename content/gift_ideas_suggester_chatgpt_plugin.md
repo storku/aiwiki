@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Gift ideas suggester (ChatGPT Plugin) |
 | --- |
-| [![Gift ideas suggester.png](/images/thumb/0/0e/Gift_ideas_suggester.png/300px-Gift_ideas_suggester.png)](/wiki/file_gift_ideas_suggester_png) |
+| ![Gift ideas suggester.png](/images/thumb/0/0e/Gift_ideas_suggester.png/300px-Gift_ideas_suggester.png) |
 | Information |
 | **Name** | Gift ideas suggester |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

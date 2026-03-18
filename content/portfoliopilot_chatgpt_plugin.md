@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PortfolioPilot (ChatGPT Plugin) |
 | --- |
-| [![PortfolioPilot.png](/images/1/14/PortfolioPilot.png)](/wiki/file_portfoliopilot_png) |
+| ![PortfolioPilot.png](/images/1/14/PortfolioPilot.png) |
 | Information |
 | **Name** | PortfolioPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Finance Wizard (GPT) |
 | --- |
-| [![Finance Wizard (GPT).png](/images/thumb/3/3c/Finance_Wizard_%28GPT%29.png/300px-Finance_Wizard_%28GPT%29.png)](/wiki/file_finance_wizard_gpt_png) |
+| ![Finance Wizard (GPT).png](/images/thumb/3/3c/Finance_Wizard_%28GPT%29.png/300px-Finance_Wizard_%28GPT%29.png) |
 | Information |
 | **Name** | Finance Wizard |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

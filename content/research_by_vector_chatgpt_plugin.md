@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Research By Vector (ChatGPT Plugin) |
 | --- |
-| [![Research By Vector.jpeg](/images/6/60/Research_By_Vector.jpeg)](/wiki/file_research_by_vector_jpeg) |
+| ![Research By Vector.jpeg](/images/6/60/Research_By_Vector.jpeg) |
 | Information |
 | **Name** | Research By Vector |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

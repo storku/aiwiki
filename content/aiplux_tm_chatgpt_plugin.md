@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AIPLUX TM (ChatGPT Plugin) |
 | --- |
-| [![AIPLUX TM.jpeg](/images/a/af/AIPLUX_TM.jpeg)](/wiki/file_aiplux_tm_jpeg) |
+| ![AIPLUX TM.jpeg](/images/a/af/AIPLUX_TM.jpeg) |
 | Information |
 | **Name** | AIPLUX TM |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

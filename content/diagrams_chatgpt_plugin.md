@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Diagrams (ChatGPT Plugin) |
 | --- |
-| [![Diagrams.png](/images/thumb/3/39/Diagrams.png/300px-Diagrams.png)](/wiki/file_diagrams_png) |
+| ![Diagrams.png](/images/thumb/3/39/Diagrams.png/300px-Diagrams.png) |
 | Information |
 | **Name** | Diagrams |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

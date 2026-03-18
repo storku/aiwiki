@@ -12,7 +12,7 @@ categories:
   - "Y_Combinator_companies"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[![Ollama logo1.png](/images/thumb/8/88/Ollama_logo1.png/350px-Ollama_logo1.png)](/wiki/file_ollama_logo1_png)
+![Ollama logo1.png](/images/thumb/8/88/Ollama_logo1.png/350px-Ollama_logo1.png)
 
 **Ollama** is an [open-source](/index.php?title=Open-source_software&action=edit&redlink=1) tool designed to simplify the deployment and management of [large language models](/index.php?title=Large_language_models&action=edit&redlink=1) (LLMs) locally on personal computers and servers.[&#91;1&#93;](#cite_note-kdnuggets-1) It provides a streamlined interface for downloading, running, and managing various open-source LLMs without requiring [cloud computing](/index.php?title=Cloud_computing&action=edit&redlink=1) services or extensive technical expertise, positioning itself as "[Docker](/index.php?title=Docker&action=edit&redlink=1) for LLMs."[&#91;2&#93;](#cite_note-medium-deploy-2)
 

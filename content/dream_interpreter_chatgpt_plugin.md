@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Dream Interpreter (ChatGPT Plugin) |
 | --- |
-| [![Dream Interpreter.jpeg](/images/3/30/Dream_Interpreter.jpeg)](/wiki/file_dream_interpreter_jpeg) |
+| ![Dream Interpreter.jpeg](/images/3/30/Dream_Interpreter.jpeg) |
 | Information |
 | **Name** | Dream Interpreter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

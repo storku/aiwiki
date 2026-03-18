@@ -10,7 +10,7 @@ categories:
 *See also: [artificial intelligence terms](/wiki/artificial_intelligence_terms)&#160;and [How to Pressure LLMs for Better Output](/wiki/how_to_pressure_llms_for_better_output)*
 [Template:Infobox Scientific Study](/index.php?title=Template:Infobox_Scientific_Study&action=edit&redlink=1)
 
-[*](/wiki/file_llm_anxiety1_jpg)
+*
 
 ## Introduction
 

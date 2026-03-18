@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Canva (GPT) |
 | --- |
-| [![Canva (GPT).png](/images/thumb/8/8c/Canva_%28GPT%29.png/300px-Canva_%28GPT%29.png)](/wiki/file_canva_gpt_png) |
+| ![Canva (GPT).png](/images/thumb/8/8c/Canva_%28GPT%29.png/300px-Canva_%28GPT%29.png) |
 | Information |
 | **Name** | Canva |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

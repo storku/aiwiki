@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Public Directory |
 | --- |
-| [![GPT Public Directory.png](/images/thumb/4/4f/GPT_Public_Directory.png/300px-GPT_Public_Directory.png)](/wiki/file_gpt_public_directory_png) |
+| ![GPT Public Directory.png](/images/thumb/4/4f/GPT_Public_Directory.png/300px-GPT_Public_Directory.png) |
 | Information |
 | **Name** | GPT Public Directory |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

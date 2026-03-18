@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ask MFM (ChatGPT Plugin) |
 | --- |
-| [![Ask MFM.png](/images/b/b8/Ask_MFM.png)](/wiki/file_ask_mfm_png) |
+| ![Ask MFM.png](/images/b/b8/Ask_MFM.png) |
 | Information |
 | **Name** | Ask MFM |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

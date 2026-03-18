@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| SuperDalle (GPT) |
 | --- |
-| [![SuperDalle (GPT).png](/images/thumb/c/cc/SuperDalle_%28GPT%29.png/300px-SuperDalle_%28GPT%29.png)](/wiki/file_superdalle_gpt_png) |
+| ![SuperDalle (GPT).png](/images/thumb/c/cc/SuperDalle_%28GPT%29.png/300px-SuperDalle_%28GPT%29.png) |
 | Information |
 | **Name** | SuperDalle |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

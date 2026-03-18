@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Job Search (ChatGPT Plugin) |
 | --- |
-| [![Job Search.jpeg](/images/c/ca/Job_Search.jpeg)](/wiki/file_job_search_jpeg) |
+| ![Job Search.jpeg](/images/c/ca/Job_Search.jpeg) |
 | Information |
 | **Name** | Job Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

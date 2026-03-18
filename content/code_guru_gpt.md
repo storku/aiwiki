@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Code Guru (GPT) |
 | --- |
-| [![Code Guru (GPT).png](/images/thumb/8/87/Code_Guru_%28GPT%29.png/300px-Code_Guru_%28GPT%29.png)](/wiki/file_code_guru_gpt_png) |
+| ![Code Guru (GPT).png](/images/thumb/8/87/Code_Guru_%28GPT%29.png/300px-Code_Guru_%28GPT%29.png) |
 | Information |
 | **Name** | Code Guru |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

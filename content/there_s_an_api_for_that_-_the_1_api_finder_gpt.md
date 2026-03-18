@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| There&#39;s An API For That - The 1 API Finder (GPT) |
 | --- |
-| [![There&#39;s An API For That - The -1 API Finder (GPT).png](/images/thumb/f/fa/There%27s_An_API_For_That_-_The_-1_API_Finder_%28GPT%29.png/300px-There%27s_An_API_For_That_-_The_-1_API_Finder_%28GPT%29.png)](/wiki/file_there_s_an_api_for_that_-_the_-1_api_finder_gpt_png) |
+| ![There&#39;s An API For That - The -1 API Finder (GPT).png](/images/thumb/f/fa/There%27s_An_API_For_That_-_The_-1_API_Finder_%28GPT%29.png/300px-There%27s_An_API_For_That_-_The_-1_API_Finder_%28GPT%29.png) |
 | Information |
 | **Name** | There's An API For That - The #1 API Finder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

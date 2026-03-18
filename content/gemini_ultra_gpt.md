@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Gemini Ultra® (GPT) |
 | --- |
-| [![Gemini Ultra® (GPT).png](/images/thumb/8/8d/Gemini_Ultra%C2%AE_%28GPT%29.png/300px-Gemini_Ultra%C2%AE_%28GPT%29.png)](/wiki/file_gemini_ultra_gpt_png) |
+| ![Gemini Ultra® (GPT).png](/images/thumb/8/8d/Gemini_Ultra%C2%AE_%28GPT%29.png/300px-Gemini_Ultra%C2%AE_%28GPT%29.png) |
 | Information |
 | **Name** | Gemini Ultra® |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

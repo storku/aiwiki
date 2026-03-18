@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| DALLE3 with Parameters (GPT) |
 | --- |
-| [![DALLE3 with Parameters (GPT).png](/images/thumb/a/a1/DALLE3_with_Parameters_%28GPT%29.png/300px-DALLE3_with_Parameters_%28GPT%29.png)](/wiki/file_dalle3_with_parameters_gpt_png) |
+| ![DALLE3 with Parameters (GPT).png](/images/thumb/a/a1/DALLE3_with_Parameters_%28GPT%29.png/300px-DALLE3_with_Parameters_%28GPT%29.png) |
 | Information |
 | **Name** | DALLE3 with Parameters |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

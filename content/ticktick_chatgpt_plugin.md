@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TickTick (ChatGPT Plugin) |
 | --- |
-| [![TickTick.png](/images/3/31/TickTick.png)](/wiki/file_ticktick_png) |
+| ![TickTick.png](/images/3/31/TickTick.png) |
 | Information |
 | **Name** | TickTick |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

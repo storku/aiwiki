@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| FaceTheFacts (ChatGPT Plugin) |
 | --- |
-| [![FaceTheFacts.jpeg](/images/d/dd/FaceTheFacts.jpeg)](/wiki/file_facethefacts_jpeg) |
+| ![FaceTheFacts.jpeg](/images/d/dd/FaceTheFacts.jpeg) |
 | Information |
 | **Name** | FaceTheFacts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

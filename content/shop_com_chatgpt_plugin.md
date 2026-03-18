@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SHOP.COM (ChatGPT Plugin) |
 | --- |
-| [![SHOPCOM.jpeg](/images/6/6d/SHOPCOM.jpeg)](/wiki/file_shopcom_jpeg) |
+| ![SHOPCOM.jpeg](/images/6/6d/SHOPCOM.jpeg) |
 | Information |
 | **Name** | SHOP.COM |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

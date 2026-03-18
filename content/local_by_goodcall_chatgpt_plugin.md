@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Local by GoodCall (ChatGPT Plugin) |
 | --- |
-| [![Local by GoodCall.png](/images/thumb/4/45/Local_by_GoodCall.png/300px-Local_by_GoodCall.png)](/wiki/file_local_by_goodcall_png) |
+| ![Local by GoodCall.png](/images/thumb/4/45/Local_by_GoodCall.png/300px-Local_by_GoodCall.png) |
 | Information |
 | **Name** | Local by GoodCall |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

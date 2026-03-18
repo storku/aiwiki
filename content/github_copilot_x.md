@@ -11,7 +11,7 @@ categories:
 
 ## Introduction
 
-[![Github copilot x1.jpg](/images/thumb/c/c3/Github_copilot_x1.jpg/400px-Github_copilot_x1.jpg)](/wiki/file_github_copilot_x1_jpg)
+![Github copilot x1.jpg](/images/thumb/c/c3/Github_copilot_x1.jpg/400px-Github_copilot_x1.jpg)
 
 GitHub Copilot X is the next step in the evolution of AI-powered software development, incorporating new features and enhancements designed to make developers more productive, efficient, and creative. By incorporating [OpenAI](/wiki/openai)'s [GPT-4](/wiki/gpt-4) [model](/wiki/model) and introducing chat and voice interfaces, GitHub Copilot X aims to redefine the developer experience throughout the entire software development lifecycle. The goal is to minimize manual tasks and boilerplate work, allowing developers to concentrate on innovation and accelerating human progress. The "X" in the name signifies both the potential expansion of experiences offered and the intended magnitude of impact on developer achievement.
 
@@ -26,7 +26,7 @@ GitHub Copilot X is not a separate product offering but a representation of the 
 
 ## AI-Powered Developer Experience
 
-[![Github copilot chat1.jpg](/images/thumb/a/a2/Github_copilot_chat1.jpg/400px-Github_copilot_chat1.jpg)](/wiki/file_github_copilot_chat1_jpg)
+![Github copilot chat1.jpg](/images/thumb/a/a2/Github_copilot_chat1.jpg/400px-Github_copilot_chat1.jpg)
 
 GitHub Copilot X builds upon the success of GitHub Copilot, which has already helped developers code up to 55% faster and now writes 46% of code. It includes a range of new features designed to enhance and streamline the software development process.
 

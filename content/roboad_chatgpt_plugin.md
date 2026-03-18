@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| RoboAd (ChatGPT Plugin) |
 | --- |
-| [![RoboAd.png](/images/0/0b/RoboAd.png)](/wiki/file_roboad_png) |
+| ![RoboAd.png](/images/0/0b/RoboAd.png) |
 | Information |
 | **Name** | RoboAd |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

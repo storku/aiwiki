@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Public (ChatGPT Plugin) |
 | --- |
-| [![Public.jpg](/images/e/e2/Public.jpg)](/wiki/file_public_jpg) |
+| ![Public.jpg](/images/e/e2/Public.jpg) |
 | Information |
 | **Name** | Public |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

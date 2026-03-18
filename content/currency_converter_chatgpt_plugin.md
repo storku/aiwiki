@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Currency Converter (ChatGPT Plugin) |
 | --- |
-| [![Currency Converter.png](/images/f/f1/Currency_Converter.png)](/wiki/file_currency_converter_png) |
+| ![Currency Converter.png](/images/f/f1/Currency_Converter.png) |
 | Information |
 | **Name** | Currency Converter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

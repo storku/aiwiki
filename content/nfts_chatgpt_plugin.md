@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NFTs (ChatGPT Plugin) |
 | --- |
-| [![NFTs.png](/images/thumb/1/17/NFTs.png/300px-NFTs.png)](/wiki/file_nfts_png) |
+| ![NFTs.png](/images/thumb/1/17/NFTs.png/300px-NFTs.png) |
 | Information |
 | **Name** | NFTs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

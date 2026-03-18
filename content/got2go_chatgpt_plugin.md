@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Got2Go (ChatGPT Plugin) |
 | --- |
-| [![Got2Go.png](/images/e/eb/Got2Go.png)](/wiki/file_got2go_png) |
+| ![Got2Go.png](/images/e/eb/Got2Go.png) |
 | Information |
 | **Name** | Got2Go |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

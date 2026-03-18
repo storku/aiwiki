@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Broadway (ChatGPT Plugin) |
 | --- |
-| [![Broadway.png](/images/c/c0/Broadway.png)](/wiki/file_broadway_png) |
+| ![Broadway.png](/images/c/c0/Broadway.png) |
 | Information |
 | **Name** | Broadway |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

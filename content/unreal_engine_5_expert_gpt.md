@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Unreal Engine 5 Expert (GPT) |
 | --- |
-| [![Unreal Engine 5 Expert (GPT).png](/images/thumb/5/53/Unreal_Engine_5_Expert_%28GPT%29.png/300px-Unreal_Engine_5_Expert_%28GPT%29.png)](/wiki/file_unreal_engine_5_expert_gpt_png) |
+| ![Unreal Engine 5 Expert (GPT).png](/images/thumb/5/53/Unreal_Engine_5_Expert_%28GPT%29.png/300px-Unreal_Engine_5_Expert_%28GPT%29.png) |
 | Information |
 | **Name** | Unreal Engine 5 Expert |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

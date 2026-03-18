@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Cocktail GPT |
 | --- |
-| [![Cocktail GPT.png](/images/thumb/a/a1/Cocktail_GPT.png/300px-Cocktail_GPT.png)](/wiki/file_cocktail_gpt_png) |
+| ![Cocktail GPT.png](/images/thumb/a/a1/Cocktail_GPT.png/300px-Cocktail_GPT.png) |
 | Information |
 | **Name** | Cocktail GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

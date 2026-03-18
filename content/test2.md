@@ -4,7 +4,7 @@ slug: "test2"
 ---| Welcome to AIWIKI.AI, the AI and ML Wiki
  |
 | --- |
-| We are a community wiki written and maintained by fans and enthusiasts of [artificial intelligence](/wiki/artificial_intelligence) and [machine learning](/wiki/machine_learning). To edit pre-existing pages or create new pages, please [log in](/wiki/special_userlogin) or [register](/wiki/special_createaccount). |
+| We are a community wiki written and maintained by fans and enthusiasts of [artificial intelligence](/wiki/artificial_intelligence) and [machine learning](/wiki/machine_learning). To edit pre-existing pages or create new pages, please log in or register. |
 
 | [Terms](/wiki/terms)
  |

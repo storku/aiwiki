@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Dr. Thoth&#39;s Tarot (ChatGPT Plugin) |
 | --- |
-| [![Dr. Thoth&#39;s Tarot.png](/images/d/d8/Dr._Thoth%27s_Tarot.png)](/wiki/file_dr_thoth_s_tarot_png) |
+| ![Dr. Thoth&#39;s Tarot.png](/images/d/d8/Dr._Thoth%27s_Tarot.png) |
 | Information |
 | **Name** | Dr. Thoth's Tarot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

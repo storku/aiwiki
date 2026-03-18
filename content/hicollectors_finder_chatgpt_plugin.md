@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HiCollectors Finder (ChatGPT Plugin) |
 | --- |
-| [![HiCollectors Finder.png](/images/b/b1/HiCollectors_Finder.png)](/wiki/file_hicollectors_finder_png) |
+| ![HiCollectors Finder.png](/images/b/b1/HiCollectors_Finder.png) |
 | Information |
 | **Name** | HiCollectors Finder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

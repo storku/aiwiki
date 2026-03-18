@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Write For Me (GPT) |
 | --- |
-| [![Write For Me (GPT).png](/images/thumb/1/1a/Write_For_Me_%28GPT%29.png/300px-Write_For_Me_%28GPT%29.png)](/wiki/file_write_for_me_gpt_png) |
+| ![Write For Me (GPT).png](/images/thumb/1/1a/Write_For_Me_%28GPT%29.png/300px-Write_For_Me_%28GPT%29.png) |
 | Information |
 | **Name** | Write For Me |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

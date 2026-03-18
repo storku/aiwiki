@@ -19,9 +19,9 @@ While there hasn't been an official explanatin for the name "Bard," it is "assum
 
 ## Basic features
 
-[![](/images/thumb/a/a0/Example_of_prompt_Bard-Howtogeek.png/300px-Example_of_prompt_Bard-Howtogeek.png)](/wiki/file_example_of_prompt_bard-howtogeek_png)  [](/wiki/file_example_of_prompt_bard-howtogeek_png)
+![](/images/thumb/a/a0/Example_of_prompt_Bard-Howtogeek.png/300px-Example_of_prompt_Bard-Howtogeek.png)  
 Figure 1. Example of a prompt in Bard. Source: howtogeek.com
-[![](/images/thumb/6/68/Bard-example_of_a_response-howtogeek.png/300px-Bard-example_of_a_response-howtogeek.png)](/wiki/file_bard-example_of_a_response-howtogeek_png)  [](/wiki/file_bard-example_of_a_response-howtogeek_png)
+![](/images/thumb/6/68/Bard-example_of_a_response-howtogeek.png/300px-Bard-example_of_a_response-howtogeek.png)  
 Figure 2. Bard’s response. Source: howtogeek.com
 Google Bard has a simple interface where users input prompts through typing or voice (figure 1). [&#91;8&#93;](#cite_note-”8”-8) The response is not generated in real-time like ChatGPT and Bing Chat. Instead, it presents the full response after loading (figure 2). Users can rate responses with a thumbs up or down, regenerate them, or do a Google Search. Bard's "drafts" feature provides alternative responses to user prompts. Since the chatbot is conversational, it maintains context for follow-up prompts. However, unlike ChatGPT, Bard cannot save or share conversations. Regarding sources, not always does it cites them. [&#91;1&#93;](#cite_note-”1”-1)
 
@@ -35,7 +35,7 @@ Bard combines features from LLMs like LaMDA with search engine technology to imp
 
 ## Bard vs ChatGPT and Bing Chat
 
-[![](/images/thumb/5/5d/Comparative_table_between_Bard_AI_and_ChatGPT.png/300px-Comparative_table_between_Bard_AI_and_ChatGPT.png)](/wiki/file_comparative_table_between_bard_ai_and_chatgpt_png)  [](/wiki/file_comparative_table_between_bard_ai_and_chatgpt_png)
+![](/images/thumb/5/5d/Comparative_table_between_Bard_AI_and_ChatGPT.png/300px-Comparative_table_between_Bard_AI_and_ChatGPT.png)  
 Figure 3. Comparison between Bard and ChatGPT. Source: Tech.co
 ### Bard vs ChatGPT
 

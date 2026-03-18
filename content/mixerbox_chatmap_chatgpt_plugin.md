@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox ChatMap (ChatGPT Plugin) |
 | --- |
-| [![MixerBox ChatMap.png](/images/thumb/d/d5/MixerBox_ChatMap.png/300px-MixerBox_ChatMap.png)](/wiki/file_mixerbox_chatmap_png) |
+| ![MixerBox ChatMap.png](/images/thumb/d/d5/MixerBox_ChatMap.png/300px-MixerBox_ChatMap.png) |
 | Information |
 | **Name** | MixerBox ChatMap |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

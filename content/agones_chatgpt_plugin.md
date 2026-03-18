@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Agones (ChatGPT Plugin) |
 | --- |
-| [![Agones.png](/images/d/d2/Agones.png)](/wiki/file_agones_png) |
+| ![Agones.png](/images/d/d2/Agones.png) |
 | Information |
 | **Name** | Agones |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

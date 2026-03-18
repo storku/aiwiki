@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Dover Assistant (ChatGPT Plugin) |
 | --- |
-| [![Dover Assistant.png](/images/thumb/5/5d/Dover_Assistant.png/300px-Dover_Assistant.png)](/wiki/file_dover_assistant_png) |
+| ![Dover Assistant.png](/images/thumb/5/5d/Dover_Assistant.png/300px-Dover_Assistant.png) |
 | Information |
 | **Name** | Dover Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NASA Media Explorer (ChatGPT Plugin) |
 | --- |
-| [![NASA Media Explorer.png](/images/thumb/d/de/NASA_Media_Explorer.png/300px-NASA_Media_Explorer.png)](/wiki/file_nasa_media_explorer_png) |
+| ![NASA Media Explorer.png](/images/thumb/d/de/NASA_Media_Explorer.png/300px-NASA_Media_Explorer.png) |
 | Information |
 | **Name** | NASA Media Explorer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

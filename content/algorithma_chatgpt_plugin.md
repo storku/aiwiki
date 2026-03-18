@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Algorithma (ChatGPT Plugin) |
 | --- |
-| [![Algorithma.png](/images/thumb/2/25/Algorithma.png/300px-Algorithma.png)](/wiki/file_algorithma_png) |
+| ![Algorithma.png](/images/thumb/2/25/Algorithma.png/300px-Algorithma.png) |
 | Information |
 | **Name** | Algorithma |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

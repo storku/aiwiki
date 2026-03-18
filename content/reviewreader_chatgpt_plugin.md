@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ReviewReader (ChatGPT Plugin) |
 | --- |
-| [![ReviewReader.jpg](/images/5/58/ReviewReader.jpg)](/wiki/file_reviewreader_jpg) |
+| ![ReviewReader.jpg](/images/5/58/ReviewReader.jpg) |
 | Information |
 | **Name** | ReviewReader |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

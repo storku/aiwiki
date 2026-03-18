@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Coupons by Tenere (ChatGPT Plugin) |
 | --- |
-| [![Coupons by Tenere.png](/images/thumb/d/d8/Coupons_by_Tenere.png/300px-Coupons_by_Tenere.png)](/wiki/file_coupons_by_tenere_png) |
+| ![Coupons by Tenere.png](/images/thumb/d/d8/Coupons_by_Tenere.png/300px-Coupons_by_Tenere.png) |
 | Information |
 | **Name** | Coupons by Tenere |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

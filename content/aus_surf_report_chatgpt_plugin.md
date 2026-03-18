@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Aus Surf Report (ChatGPT Plugin) |
 | --- |
-| [![Aus Surf Report.png](/images/5/58/Aus_Surf_Report.png)](/wiki/file_aus_surf_report_png) |
+| ![Aus Surf Report.png](/images/5/58/Aus_Surf_Report.png) |
 | Information |
 | **Name** | Aus Surf Report |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

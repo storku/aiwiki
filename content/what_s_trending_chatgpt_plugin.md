@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| What&#39;s trending? (ChatGPT Plugin) |
 | --- |
-| [![What&#39;s trending?.png](/images/thumb/0/0d/What%27s_trending%3F.png/300px-What%27s_trending%3F.png)](/wiki/file_what_s_trending_png) |
+| ![What&#39;s trending?.png](/images/thumb/0/0d/What%27s_trending%3F.png/300px-What%27s_trending%3F.png) |
 | Information |
 | **Name** | What's trending? |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

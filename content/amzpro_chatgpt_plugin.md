@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AMZPRO (ChatGPT Plugin) |
 | --- |
-| [![AMZPRO.jpeg](/images/d/df/AMZPRO.jpeg)](/wiki/file_amzpro_jpeg) |
+| ![AMZPRO.jpeg](/images/d/df/AMZPRO.jpeg) |
 | Information |
 | **Name** | AMZPRO |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

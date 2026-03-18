@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TotalQuery Search (ChatGPT Plugin) |
 | --- |
-| [![TotalQuery Search.jpg](/images/thumb/e/e5/TotalQuery_Search.jpg/300px-TotalQuery_Search.jpg)](/wiki/file_totalquery_search_jpg) |
+| ![TotalQuery Search.jpg](/images/thumb/e/e5/TotalQuery_Search.jpg/300px-TotalQuery_Search.jpg) |
 | Information |
 | **Name** | TotalQuery Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

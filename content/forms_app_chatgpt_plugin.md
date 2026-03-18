@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Forms.app (ChatGPT Plugin) |
 | --- |
-| [![Formsapp.jpeg](/images/thumb/3/33/Formsapp.jpeg/300px-Formsapp.jpeg)](/wiki/file_formsapp_jpeg) |
+| ![Formsapp.jpeg](/images/thumb/3/33/Formsapp.jpeg/300px-Formsapp.jpeg) |
 | Information |
 | **Name** | forms.app |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

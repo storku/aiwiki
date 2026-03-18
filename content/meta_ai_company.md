@@ -15,7 +15,7 @@ categories:
   - "Artificial_superintelligence"
 ---| Meta AI |
 | --- |
-| [*](/wiki/file_meta_logo1_png) |
+| * |
 | [File:Meta headquarters Menlo Park.jpg](/index.php?title=Special:Upload&wpDestFile=Meta_headquarters_Menlo_Park.jpg) |
 | Meta headquarters in [Menlo Park, California](/index.php?title=Menlo_Park,_California&action=edit&redlink=1) |
 | Type | Research division |

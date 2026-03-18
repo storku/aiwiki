@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shop AIssistant (ChatGPT Plugin) |
 | --- |
-| [![Shop AIssistant.png](/images/thumb/5/5c/Shop_AIssistant.png/300px-Shop_AIssistant.png)](/wiki/file_shop_aissistant_png) |
+| ![Shop AIssistant.png](/images/thumb/5/5c/Shop_AIssistant.png/300px-Shop_AIssistant.png) |
 | Information |
 | **Name** | Shop AIssistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

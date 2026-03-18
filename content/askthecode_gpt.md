@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AskTheCode (GPT) |
 | --- |
-| [![AskTheCode (GPT).png](/images/thumb/6/6f/AskTheCode_%28GPT%29.png/300px-AskTheCode_%28GPT%29.png)](/wiki/file_askthecode_gpt_png) |
+| ![AskTheCode (GPT).png](/images/thumb/6/6f/AskTheCode_%28GPT%29.png/300px-AskTheCode_%28GPT%29.png) |
 | Information |
 | **Name** | AskTheCode |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

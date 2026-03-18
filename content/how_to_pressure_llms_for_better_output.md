@@ -1,7 +1,7 @@
 ---
 title: "How to Pressure LLMs for Better Output"
 slug: "how_to_pressure_llms_for_better_output"
----[![Windsurf ai pressure prompt1.png](/images/thumb/d/d2/Windsurf_ai_pressure_prompt1.png/400px-Windsurf_ai_pressure_prompt1.png)](/wiki/file_windsurf_ai_pressure_prompt1_png)
+---![Windsurf ai pressure prompt1.png](/images/thumb/d/d2/Windsurf_ai_pressure_prompt1.png/400px-Windsurf_ai_pressure_prompt1.png)
 
 Because [LLMs can "feel" anxiety](/wiki/llm_anxiety), you can use stress or pressure to make them perform better.[&#91;1&#93;](#cite_note-”1”-1) Here is a [prompt](/wiki/prompt) by [Windsurf](/index.php?title=Windsurf&action=edit&redlink=1), an [AI](/wiki/ai)-powered [code](/wiki/vibe_coding) editor:
 

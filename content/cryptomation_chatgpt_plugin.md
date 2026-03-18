@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CryptoMation (ChatGPT Plugin) |
 | --- |
-| [![CryptoMation.jpeg](/images/c/c7/CryptoMation.jpeg)](/wiki/file_cryptomation_jpeg) |
+| ![CryptoMation.jpeg](/images/c/c7/CryptoMation.jpeg) |
 | Information |
 | **Name** | CryptoMation |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| SellMeThisPen (GPT) |
 | --- |
-| [![SellMeThisPen (GPT).png](/images/thumb/5/57/SellMeThisPen_%28GPT%29.png/300px-SellMeThisPen_%28GPT%29.png)](/wiki/file_sellmethispen_gpt_png) |
+| ![SellMeThisPen (GPT).png](/images/thumb/5/57/SellMeThisPen_%28GPT%29.png/300px-SellMeThisPen_%28GPT%29.png) |
 | Information |
 | **Name** | SellMeThisPen |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

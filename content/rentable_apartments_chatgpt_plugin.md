@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Rentable Apartments (ChatGPT Plugin) |
 | --- |
-| [![Rentable Apartments.png](/images/thumb/9/90/Rentable_Apartments.png/300px-Rentable_Apartments.png)](/wiki/file_rentable_apartments_png) |
+| ![Rentable Apartments.png](/images/thumb/9/90/Rentable_Apartments.png/300px-Rentable_Apartments.png) |
 | Information |
 | **Name** | Rentable Apartments |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

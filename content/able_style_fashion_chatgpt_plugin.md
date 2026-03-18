@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Able Style Fashion (ChatGPT Plugin) |
 | --- |
-| [![Able Style Fashion.png](/images/thumb/7/77/Able_Style_Fashion.png/300px-Able_Style_Fashion.png)](/wiki/file_able_style_fashion_png) |
+| ![Able Style Fashion.png](/images/thumb/7/77/Able_Style_Fashion.png/300px-Able_Style_Fashion.png) |
 | Information |
 | **Name** | Able Style Fashion |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

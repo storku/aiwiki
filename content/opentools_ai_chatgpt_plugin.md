@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| OpenTools AI (ChatGPT Plugin) |
 | --- |
-| [![OpenTools AI.jpeg](/images/e/ef/OpenTools_AI.jpeg)](/wiki/file_opentools_ai_jpeg) |
+| ![OpenTools AI.jpeg](/images/e/ef/OpenTools_AI.jpeg) |
 | Information |
 | **Name** | OpenTools AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

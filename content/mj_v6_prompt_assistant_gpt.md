@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MJ V6 Prompt Assistant 🎨 (GPT) |
 | --- |
-| [![MJ V6 Prompt Assistant 🎨 (GPT).png](/images/thumb/1/18/MJ_V6_Prompt_Assistant_%F0%9F%8E%A8_%28GPT%29.png/300px-MJ_V6_Prompt_Assistant_%F0%9F%8E%A8_%28GPT%29.png)](/wiki/file_mj_v6_prompt_assistant_gpt_png) |
+| ![MJ V6 Prompt Assistant 🎨 (GPT).png](/images/thumb/1/18/MJ_V6_Prompt_Assistant_%F0%9F%8E%A8_%28GPT%29.png/300px-MJ_V6_Prompt_Assistant_%F0%9F%8E%A8_%28GPT%29.png) |
 | Information |
 | **Name** | MJ V6 Prompt Assistant 🎨 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -61,7 +61,7 @@ The practical application of the Q* hypothesis involves using PRMs to score ToT 
 
 ## Yann LeCun Response
 
-[![Q* yann lecun response1.png](/images/thumb/d/d1/Q%2A_yann_lecun_response1.png/400px-Q%2A_yann_lecun_response1.png)](/wiki/file_q_yann_lecun_response1_png)
+![Q* yann lecun response1.png](/images/thumb/d/d1/Q%2A_yann_lecun_response1.png/400px-Q%2A_yann_lecun_response1.png)
 
 Please ignore the deluge of complete nonsense about Q*.
 One of the main challenges to improve LLM reliability is to replace Auto-Regressive token prediction with planning.

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Speak (ChatGPT Plugin) |
 | --- |
-| [![Speak.png](/images/thumb/9/92/Speak.png/300px-Speak.png)](/wiki/file_speak_png) |
+| ![Speak.png](/images/thumb/9/92/Speak.png/300px-Speak.png) |
 | Information |
 | **Name** | Speak |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Java Assistant (GPT) |
 | --- |
-| [![Java Assistant (GPT).png](/images/thumb/7/76/Java_Assistant_%28GPT%29.png/300px-Java_Assistant_%28GPT%29.png)](/wiki/file_java_assistant_gpt_png) |
+| ![Java Assistant (GPT).png](/images/thumb/7/76/Java_Assistant_%28GPT%29.png/300px-Java_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | Java Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

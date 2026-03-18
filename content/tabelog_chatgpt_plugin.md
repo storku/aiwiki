@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tabelog (ChatGPT Plugin) |
 | --- |
-| [![Tabelog.png](/images/e/e6/Tabelog.png)](/wiki/file_tabelog_png) |
+| ![Tabelog.png](/images/e/e6/Tabelog.png) |
 | Information |
 | **Name** | Tabelog |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

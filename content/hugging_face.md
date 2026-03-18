@@ -33,7 +33,7 @@ From its beginnings has a chatbot, it’s becoming the GitHub of ML. The platfor
 
 ## Models
 
-[![](/images/thumb/a/ad/3._Example_of_full_model_card-source-towardsdatascience.png/300px-3._Example_of_full_model_card-source-towardsdatascience.png)](/wiki/file_3_example_of_full_model_card-source-towardsdatascience_png)  [](/wiki/file_3_example_of_full_model_card-source-towardsdatascience_png)
+![](/images/thumb/a/ad/3._Example_of_full_model_card-source-towardsdatascience.png/300px-3._Example_of_full_model_card-source-towardsdatascience.png)  
 Figure 1. Model card elements. Source: Towards Data Science.
 Creating a new [model](/wiki/model) in the platform is actually a Git repo for the files related to an ML model a user wants to share with the same characteristics as versioning, branches, and discoverability to name a few. The type of OS license attributed to the contributing model and assets can also be specified as well as defining its visibility. [&#91;2&#93;](#cite_note-”2”-2)
 
@@ -49,7 +49,7 @@ The model in the user interface has several elements (figure 1):
 
 ## Datasets
 
-[![](/images/thumb/d/d9/4._Dataset_elements-source-towardsdatascience.png/300px-4._Dataset_elements-source-towardsdatascience.png)](/wiki/file_4_dataset_elements-source-towardsdatascience_png)  [](/wiki/file_4_dataset_elements-source-towardsdatascience_png)
+![](/images/thumb/d/d9/4._Dataset_elements-source-towardsdatascience.png/300px-4._Dataset_elements-source-towardsdatascience.png)  
 Figure 2. Dataset card. Source: Towards Data Science.
 [Datasets](/wiki/datasets) are used to help with model training or fine-tuning and they are available in multiple languages. The company’s datasets library provides users with an easy way to load datasets and the most commonly used operations for processing them (e.g. sampling, shuffling, filtering, etc.). [&#91;3&#93;](#cite_note-”3”-3)
 
@@ -69,7 +69,7 @@ When creating a new dataset, the user will also have to name it and choose its l
 
 ## Spaces
 
-[![](/images/thumb/1/1e/5._Spaces-towardsdatascience.png/300px-5._Spaces-towardsdatascience.png)](/wiki/file_5_spaces-towardsdatascience_png)  [](/wiki/file_5_spaces-towardsdatascience_png)
+![](/images/thumb/1/1e/5._Spaces-towardsdatascience.png/300px-5._Spaces-towardsdatascience.png)  
 Figure 3. Hugging Face's Spaces. Source: Towards Data Science.
 The platform also has Spaces (figure 3), a place to showcase the work done in a self-contained ML demo app. The community actively contributes to it and a user can look for inspiration by checking out different submissions. [&#91;2&#93;](#cite_note-”2”-2)
 

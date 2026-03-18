@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CoinCap (ChatGPT Plugin) |
 | --- |
-| [![CoinCap.png](/images/3/30/CoinCap.png)](/wiki/file_coincap_png) |
+| ![CoinCap.png](/images/3/30/CoinCap.png) |
 | Information |
 | **Name** | CoinCap |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| SEO Fox (GPT) |
 | --- |
-| [![SEO Fox (GPT).png](/images/thumb/d/da/SEO_Fox_%28GPT%29.png/300px-SEO_Fox_%28GPT%29.png)](/wiki/file_seo_fox_gpt_png) |
+| ![SEO Fox (GPT).png](/images/thumb/d/da/SEO_Fox_%28GPT%29.png/300px-SEO_Fox_%28GPT%29.png) |
 | Information |
 | **Name** | SEO Fox |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

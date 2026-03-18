@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mobula (ChatGPT Plugin) |
 | --- |
-| [![Mobula.jpg](/images/5/58/Mobula.jpg)](/wiki/file_mobula_jpg) |
+| ![Mobula.jpg](/images/5/58/Mobula.jpg) |
 | Information |
 | **Name** | Mobula |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -7,7 +7,7 @@ categories:
 ---| Alibaba Cloud |
 | --- |
 | 阿里云 (Aliyun) |
-| [*](/wiki/file_alibaba_cloud_logo1_png) |
+| * |
 | [File:Alibaba-Cloud-Z-Space.jpg](/index.php?title=Special:Upload&wpDestFile=Alibaba-Cloud-Z-Space.jpg) |
 | Alibaba Cloud headquarters in [Hangzhou](/index.php?title=Hangzhou&action=edit&redlink=1), [China](/index.php?title=China&action=edit&redlink=1) |
 | Type | [Subsidiary](/index.php?title=Subsidiary&action=edit&redlink=1) |

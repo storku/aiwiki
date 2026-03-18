@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Skipit AI (ChatGPT Plugin) |
 | --- |
-| [![Skipit AI.jpeg](/images/d/d7/Skipit_AI.jpeg)](/wiki/file_skipit_ai_jpeg) |
+| ![Skipit AI.jpeg](/images/d/d7/Skipit_AI.jpeg) |
 | Information |
 | **Name** | Skipit AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

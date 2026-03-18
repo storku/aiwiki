@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GitAIOps (ChatGPT Plugin) |
 | --- |
-| [![GitAIOps.jpeg](/images/f/f8/GitAIOps.jpeg)](/wiki/file_gitaiops_jpeg) |
+| ![GitAIOps.jpeg](/images/f/f8/GitAIOps.jpeg) |
 | Information |
 | **Name** | GitAIOps |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

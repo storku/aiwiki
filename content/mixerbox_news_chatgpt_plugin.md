@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox News (ChatGPT Plugin) |
 | --- |
-| [![MixerBox News.png](/images/thumb/8/83/MixerBox_News.png/300px-MixerBox_News.png)](/wiki/file_mixerbox_news_png) |
+| ![MixerBox News.png](/images/thumb/8/83/MixerBox_News.png/300px-MixerBox_News.png) |
 | Information |
 | **Name** | MixerBox News |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

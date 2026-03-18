@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Bio To Schema (GPT) |
 | --- |
-| [![Bio To Schema (GPT).png](/images/thumb/7/7a/Bio_To_Schema_%28GPT%29.png/300px-Bio_To_Schema_%28GPT%29.png)](/wiki/file_bio_to_schema_gpt_png) |
+| ![Bio To Schema (GPT).png](/images/thumb/7/7a/Bio_To_Schema_%28GPT%29.png/300px-Bio_To_Schema_%28GPT%29.png) |
 | Information |
 | **Name** | Bio To Schema |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

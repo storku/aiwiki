@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Universal (ChatGPT Plugin) |
 | --- |
-| [![Universal.png](/images/1/1f/Universal.png)](/wiki/file_universal_png) |
+| ![Universal.png](/images/1/1f/Universal.png) |
 | Information |
 | **Name** | Universal |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

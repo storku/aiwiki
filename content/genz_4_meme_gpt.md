@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Genz 4 meme (GPT) |
 | --- |
-| [![Genz 4 meme (GPT).png](/images/thumb/3/31/Genz_4_meme_%28GPT%29.png/300px-Genz_4_meme_%28GPT%29.png)](/wiki/file_genz_4_meme_gpt_png) |
+| ![Genz 4 meme (GPT).png](/images/thumb/3/31/Genz_4_meme_%28GPT%29.png/300px-Genz_4_meme_%28GPT%29.png) |
 | Information |
 | **Name** | genz 4 meme |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

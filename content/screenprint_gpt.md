@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| ScreenPrint GPT |
 | --- |
-| [![ScreenPrint GPT.png](/images/thumb/e/ed/ScreenPrint_GPT.png/300px-ScreenPrint_GPT.png)](/wiki/file_screenprint_gpt_png) |
+| ![ScreenPrint GPT.png](/images/thumb/e/ed/ScreenPrint_GPT.png/300px-ScreenPrint_GPT.png) |
 | Information |
 | **Name** | ScreenPrint GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

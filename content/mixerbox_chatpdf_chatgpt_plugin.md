@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox ChatPDF (ChatGPT Plugin) |
 | --- |
-| [![MixerBox ChatPDF.png](/images/thumb/3/3d/MixerBox_ChatPDF.png/300px-MixerBox_ChatPDF.png)](/wiki/file_mixerbox_chatpdf_png) |
+| ![MixerBox ChatPDF.png](/images/thumb/3/3d/MixerBox_ChatPDF.png/300px-MixerBox_ChatPDF.png) |
 | Information |
 | **Name** | MixerBox ChatPDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

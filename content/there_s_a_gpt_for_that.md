@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| There&#39;s a GPT For That |
 | --- |
-| [![There&#39;s a GPT For That.png](/images/thumb/0/09/There%27s_a_GPT_For_That.png/300px-There%27s_a_GPT_For_That.png)](/wiki/file_there_s_a_gpt_for_that_png) |
+| ![There&#39;s a GPT For That.png](/images/thumb/0/09/There%27s_a_GPT_For_That.png/300px-There%27s_a_GPT_For_That.png) |
 | Information |
 | **Name** | There's a GPT For That |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

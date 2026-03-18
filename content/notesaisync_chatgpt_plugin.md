@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NotesAISync (ChatGPT Plugin) |
 | --- |
-| [![NotesAISync.jpeg](/images/c/c9/NotesAISync.jpeg)](/wiki/file_notesaisync_jpeg) |
+| ![NotesAISync.jpeg](/images/c/c9/NotesAISync.jpeg) |
 | Information |
 | **Name** | NotesAISync |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

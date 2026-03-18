@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tutory (ChatGPT Plugin) |
 | --- |
-| [![Tutory.png](/images/thumb/b/b5/Tutory.png/300px-Tutory.png)](/wiki/file_tutory_png) |
+| ![Tutory.png](/images/thumb/b/b5/Tutory.png/300px-Tutory.png) |
 | Information |
 | **Name** | Tutory |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

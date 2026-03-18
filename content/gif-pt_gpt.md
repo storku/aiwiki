@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Gif-PT (GPT) |
 | --- |
-| [![Gif-PT (GPT).png](/images/thumb/f/f1/Gif-PT_%28GPT%29.png/300px-Gif-PT_%28GPT%29.png)](/wiki/file_gif-pt_gpt_png) |
+| ![Gif-PT (GPT).png](/images/thumb/f/f1/Gif-PT_%28GPT%29.png/300px-Gif-PT_%28GPT%29.png) |
 | Information |
 | **Name** | Gif-PT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

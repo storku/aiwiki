@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Noteable (ChatGPT Plugin) |
 | --- |
-| [![Noteable.png](/images/thumb/6/6b/Noteable.png/300px-Noteable.png)](/wiki/file_noteable_png) |
+| ![Noteable.png](/images/thumb/6/6b/Noteable.png/300px-Noteable.png) |
 | Information |
 | **Name** | Noteable |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

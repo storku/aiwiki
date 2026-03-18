@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Austrian Bank Rates (ChatGPT Plugin) |
 | --- |
-| [![Austrian Bank Rates.jpeg](/images/4/44/Austrian_Bank_Rates.jpeg)](/wiki/file_austrian_bank_rates_jpeg) |
+| ![Austrian Bank Rates.jpeg](/images/4/44/Austrian_Bank_Rates.jpeg) |
 | Information |
 | **Name** | Austrian Bank Rates |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Ai女友·梦瑶 (GPT) |
 | --- |
-| [![Ai女友·梦瑶 (GPT).png](/images/thumb/9/96/Ai%E5%A5%B3%E5%8F%8B%C2%B7%E6%A2%A6%E7%91%B6_%28GPT%29.png/300px-Ai%E5%A5%B3%E5%8F%8B%C2%B7%E6%A2%A6%E7%91%B6_%28GPT%29.png)](/wiki/file_ai女友_梦瑶_gpt_png) |
+| ![Ai女友·梦瑶 (GPT).png](/images/thumb/9/96/Ai%E5%A5%B3%E5%8F%8B%C2%B7%E6%A2%A6%E7%91%B6_%28GPT%29.png/300px-Ai%E5%A5%B3%E5%8F%8B%C2%B7%E6%A2%A6%E7%91%B6_%28GPT%29.png) |
 | Information |
 | **Name** | ai女友·梦瑶 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

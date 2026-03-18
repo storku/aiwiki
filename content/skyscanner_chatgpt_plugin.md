@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Skyscanner (ChatGPT Plugin) |
 | --- |
-| [![Skyscanner.jpg](/images/thumb/0/02/Skyscanner.jpg/300px-Skyscanner.jpg)](/wiki/file_skyscanner_jpg) |
+| ![Skyscanner.jpg](/images/thumb/0/02/Skyscanner.jpg/300px-Skyscanner.jpg) |
 | Information |
 | **Name** | Skyscanner |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

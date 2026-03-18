@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GoFynd (ChatGPT Plugin) |
 | --- |
-| [![Gofynd.jpeg](/images/e/e3/Gofynd.jpeg)](/wiki/file_gofynd_jpeg) |
+| ![Gofynd.jpeg](/images/e/e3/Gofynd.jpeg) |
 | Information |
 | **Name** | GoFynd |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

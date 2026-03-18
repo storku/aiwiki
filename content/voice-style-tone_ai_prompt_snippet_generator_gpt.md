@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Voice-Style-Tone AI Prompt Snippet Generator (GPT) |
 | --- |
-| [![Voice-Style-Tone AI Prompt Snippet Generator (GPT).png](/images/thumb/0/09/Voice-Style-Tone_AI_Prompt_Snippet_Generator_%28GPT%29.png/300px-Voice-Style-Tone_AI_Prompt_Snippet_Generator_%28GPT%29.png)](/wiki/file_voice-style-tone_ai_prompt_snippet_generator_gpt_png) |
+| ![Voice-Style-Tone AI Prompt Snippet Generator (GPT).png](/images/thumb/0/09/Voice-Style-Tone_AI_Prompt_Snippet_Generator_%28GPT%29.png/300px-Voice-Style-Tone_AI_Prompt_Snippet_Generator_%28GPT%29.png) |
 | Information |
 | **Name** | Voice/Style/Tone AI Prompt Snippet Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

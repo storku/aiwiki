@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Email by Nylas (ChatGPT Plugin) |
 | --- |
-| [![Email by Nylas.jpg](/images/c/ca/Email_by_Nylas.jpg)](/wiki/file_email_by_nylas_jpg) |
+| ![Email by Nylas.jpg](/images/c/ca/Email_by_Nylas.jpg) |
 | Information |
 | **Name** | Email by Nylas |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

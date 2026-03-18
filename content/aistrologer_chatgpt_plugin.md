@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AIstrologer (ChatGPT Plugin) |
 | --- |
-| [![AIstrologer.png](/images/thumb/3/3c/AIstrologer.png/300px-AIstrologer.png)](/wiki/file_aistrologer_png) |
+| ![AIstrologer.png](/images/thumb/3/3c/AIstrologer.png/300px-AIstrologer.png) |
 | Information |
 | **Name** | AIstrologer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

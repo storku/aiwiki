@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| JoPilot (ChatGPT Plugin) |
 | --- |
-| [![JoPilot.jpg](/images/thumb/d/d1/JoPilot.jpg/300px-JoPilot.jpg)](/wiki/file_jopilot_jpg) |
+| ![JoPilot.jpg](/images/thumb/d/d1/JoPilot.jpg/300px-JoPilot.jpg) |
 | Information |
 | **Name** | JoPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

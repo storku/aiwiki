@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bardeen (ChatGPT Plugin) |
 | --- |
-| [![Bardeen.png](/images/1/1e/Bardeen.png)](/wiki/file_bardeen_png) |
+| ![Bardeen.png](/images/1/1e/Bardeen.png) |
 | Information |
 | **Name** | Bardeen |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

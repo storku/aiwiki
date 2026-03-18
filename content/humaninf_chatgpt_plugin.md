@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HumanInf (ChatGPT Plugin) |
 | --- |
-| [![HumanInf.png](/images/0/0a/HumanInf.png)](/wiki/file_humaninf_png) |
+| ![HumanInf.png](/images/0/0a/HumanInf.png) |
 | Information |
 | **Name** | HumanInf |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

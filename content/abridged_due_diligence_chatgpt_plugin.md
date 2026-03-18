@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Abridged Due Diligence (ChatGPT Plugin) |
 | --- |
-| [![Abridged Due Diligence.png](/images/thumb/2/27/Abridged_Due_Diligence.png/300px-Abridged_Due_Diligence.png)](/wiki/file_abridged_due_diligence_png) |
+| ![Abridged Due Diligence.png](/images/thumb/2/27/Abridged_Due_Diligence.png/300px-Abridged_Due_Diligence.png) |
 | Information |
 | **Name** | Abridged Due Diligence |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

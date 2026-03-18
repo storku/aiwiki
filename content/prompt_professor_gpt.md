@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Prompt Professor (GPT) |
 | --- |
-| [![Prompt Professor (GPT).png](/images/thumb/9/95/Prompt_Professor_%28GPT%29.png/300px-Prompt_Professor_%28GPT%29.png)](/wiki/file_prompt_professor_gpt_png) |
+| ![Prompt Professor (GPT).png](/images/thumb/9/95/Prompt_Professor_%28GPT%29.png/300px-Prompt_Professor_%28GPT%29.png) |
 | Information |
 | **Name** | Prompt Professor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

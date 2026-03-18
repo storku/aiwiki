@@ -38,7 +38,7 @@ slug: "chatgpt_plugin_categories"
 
 - **[Education](/wiki/education_chatgpt_plugins)**
 
-- **[Employment](/wiki/employment_chatgpt_plugins)**
+- **Employment**
 
 - **[Entertainment](/wiki/entertainment_chatgpt_plugins)**
 

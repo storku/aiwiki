@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Placid.app (ChatGPT Plugin) |
 | --- |
-| [![Placid.app.jpg](/images/thumb/3/34/Placid.app.jpg/300px-Placid.app.jpg)](/wiki/file_placid_app_jpg) |
+| ![Placid.app.jpg](/images/thumb/3/34/Placid.app.jpg/300px-Placid.app.jpg) |
 | Information |
 | **Name** | Placid.app |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AI Agents (ChatGPT Plugin) |
 | --- |
-| [![AI Agents.png](/images/thumb/9/90/AI_Agents.png/300px-AI_Agents.png)](/wiki/file_ai_agents_png) |
+| ![AI Agents.png](/images/thumb/9/90/AI_Agents.png/300px-AI_Agents.png) |
 | Information |
 | **Name** | AI Agents |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

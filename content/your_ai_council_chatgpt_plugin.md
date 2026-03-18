@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Your AI Council (ChatGPT Plugin) |
 | --- |
-| [![Your AI Council.jpeg](/images/thumb/6/65/Your_AI_Council.jpeg/300px-Your_AI_Council.jpeg)](/wiki/file_your_ai_council_jpeg) |
+| ![Your AI Council.jpeg](/images/thumb/6/65/Your_AI_Council.jpeg/300px-Your_AI_Council.jpeg) |
 | Information |
 | **Name** | Your AI Council |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

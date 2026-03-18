@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Penrose Analyst (ChatGPT Plugin) |
 | --- |
-| [![Penrose Analyst.png](/images/thumb/6/65/Penrose_Analyst.png/300px-Penrose_Analyst.png)](/wiki/file_penrose_analyst_png) |
+| ![Penrose Analyst.png](/images/thumb/6/65/Penrose_Analyst.png/300px-Penrose_Analyst.png) |
 | Information |
 | **Name** | Penrose Analyst |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ScholarlyInsight (ChatGPT Plugin) |
 | --- |
-| [![ScholarlyInsight.png](/images/thumb/8/8c/ScholarlyInsight.png/300px-ScholarlyInsight.png)](/wiki/file_scholarlyinsight_png) |
+| ![ScholarlyInsight.png](/images/thumb/8/8c/ScholarlyInsight.png/300px-ScholarlyInsight.png) |
 | Information |
 | **Name** | ScholarlyInsight |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

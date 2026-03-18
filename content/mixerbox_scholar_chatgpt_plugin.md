@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox Scholar (ChatGPT Plugin) |
 | --- |
-| [![MixerBox Scholar.png](/images/thumb/c/c7/MixerBox_Scholar.png/300px-MixerBox_Scholar.png)](/wiki/file_mixerbox_scholar_png) |
+| ![MixerBox Scholar.png](/images/thumb/c/c7/MixerBox_Scholar.png/300px-MixerBox_Scholar.png) |
 | Information |
 | **Name** | MixerBox Scholar |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

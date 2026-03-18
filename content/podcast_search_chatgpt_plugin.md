@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Podcast search (ChatGPT Plugin) |
 | --- |
-| [![Podcast search.png](/images/d/d8/Podcast_search.png)](/wiki/file_podcast_search_png) |
+| ![Podcast search.png](/images/d/d8/Podcast_search.png) |
 | Information |
 | **Name** | Podcast search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

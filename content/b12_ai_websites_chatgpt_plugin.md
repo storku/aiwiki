@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| B12 AI Websites (ChatGPT Plugin) |
 | --- |
-| [![B12 AI Websites.png](/images/thumb/9/9e/B12_AI_Websites.png/300px-B12_AI_Websites.png)](/wiki/file_b12_ai_websites_png) |
+| ![B12 AI Websites.png](/images/thumb/9/9e/B12_AI_Websites.png/300px-B12_AI_Websites.png) |
 | Information |
 | **Name** | B12 AI Websites |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

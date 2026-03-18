@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Content.app (ChatGPT Plugin) |
 | --- |
-| [![Contentapp.jpeg](/images/8/89/Contentapp.jpeg)](/wiki/file_contentapp_jpeg) |
+| ![Contentapp.jpeg](/images/8/89/Contentapp.jpeg) |
 | Information |
 | **Name** | Content.app |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Glowing (ChatGPT Plugin) |
 | --- |
-| [![Glowing.png](/images/9/95/Glowing.png)](/wiki/file_glowing_png) |
+| ![Glowing.png](/images/9/95/Glowing.png) |
 | Information |
 | **Name** | Glowing |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

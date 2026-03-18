@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Vio.com (ChatGPT Plugin) |
 | --- |
-| [![Viocom.jpg](/images/0/09/Viocom.jpg)](/wiki/file_viocom_jpg) |
+| ![Viocom.jpg](/images/0/09/Viocom.jpg) |
 | Information |
 | **Name** | Vio.com |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

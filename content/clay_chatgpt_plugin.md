@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Clay (ChatGPT Plugin) |
 | --- |
-| [![Clay.jpeg](/images/0/06/Clay.jpeg)](/wiki/file_clay_jpeg) |
+| ![Clay.jpeg](/images/0/06/Clay.jpeg) |
 | Information |
 | **Name** | Clay |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

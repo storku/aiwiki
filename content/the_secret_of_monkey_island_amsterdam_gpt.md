@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| The Secret of Monkey Island: Amsterdam (GPT) |
 | --- |
-| [![The Secret of Monkey Island- Amsterdam (GPT).png](/images/thumb/4/4a/The_Secret_of_Monkey_Island-_Amsterdam_%28GPT%29.png/300px-The_Secret_of_Monkey_Island-_Amsterdam_%28GPT%29.png)](/wiki/file_the_secret_of_monkey_island-_amsterdam_gpt_png) |
+| ![The Secret of Monkey Island- Amsterdam (GPT).png](/images/thumb/4/4a/The_Secret_of_Monkey_Island-_Amsterdam_%28GPT%29.png/300px-The_Secret_of_Monkey_Island-_Amsterdam_%28GPT%29.png) |
 | Information |
 | **Name** | The Secret of Monkey Island: Amsterdam |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

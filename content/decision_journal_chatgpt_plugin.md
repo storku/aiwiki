@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Decision Journal (ChatGPT Plugin) |
 | --- |
-| [![Decision Journal.png](/images/thumb/6/69/Decision_Journal.png/300px-Decision_Journal.png)](/wiki/file_decision_journal_png) |
+| ![Decision Journal.png](/images/thumb/6/69/Decision_Journal.png/300px-Decision_Journal.png) |
 | Information |
 | **Name** | Decision Journal |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

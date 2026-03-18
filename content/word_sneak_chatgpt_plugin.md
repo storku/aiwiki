@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Word Sneak (ChatGPT Plugin) |
 | --- |
-| [![Word Sneak.png](/images/2/2f/Word_Sneak.png)](/wiki/file_word_sneak_png) |
+| ![Word Sneak.png](/images/2/2f/Word_Sneak.png) |
 | Information |
 | **Name** | Word Sneak |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

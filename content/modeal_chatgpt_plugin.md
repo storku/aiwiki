@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Modeal (ChatGPT Plugin) |
 | --- |
-| [![Modeal.jpg](/images/thumb/f/f4/Modeal.jpg/300px-Modeal.jpg)](/wiki/file_modeal_jpg) |
+| ![Modeal.jpg](/images/thumb/f/f4/Modeal.jpg/300px-Modeal.jpg) |
 | Information |
 | **Name** | Modeal |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

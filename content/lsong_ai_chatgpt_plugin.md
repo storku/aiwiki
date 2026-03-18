@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Lsong AI (ChatGPT Plugin) |
 | --- |
-| [![Lsong AI.png](/images/thumb/9/92/Lsong_AI.png/300px-Lsong_AI.png)](/wiki/file_lsong_ai_png) |
+| ![Lsong AI.png](/images/thumb/9/92/Lsong_AI.png/300px-Lsong_AI.png) |
 | Information |
 | **Name** | Lsong AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

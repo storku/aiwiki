@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| SEO (GPT) |
 | --- |
-| [![SEO (GPT).png](/images/thumb/b/b8/SEO_%28GPT%29.png/300px-SEO_%28GPT%29.png)](/wiki/file_seo_gpt_png) |
+| ![SEO (GPT).png](/images/thumb/b/b8/SEO_%28GPT%29.png/300px-SEO_%28GPT%29.png) |
 | Information |
 | **Name** | SEO |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

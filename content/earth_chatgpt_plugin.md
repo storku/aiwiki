@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Earth (ChatGPT Plugin) |
 | --- |
-| [![Earth.png](/images/thumb/1/1e/Earth.png/300px-Earth.png)](/wiki/file_earth_png) |
+| ![Earth.png](/images/thumb/1/1e/Earth.png/300px-Earth.png) |
 | Information |
 | **Name** | Earth |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

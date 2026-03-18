@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| PowerPoint Presentation Maker by SlidesGPT |
 | --- |
-| [![PowerPoint Presentation Maker by SlidesGPT.png](/images/thumb/6/67/PowerPoint_Presentation_Maker_by_SlidesGPT.png/300px-PowerPoint_Presentation_Maker_by_SlidesGPT.png)](/wiki/file_powerpoint_presentation_maker_by_slidesgpt_png) |
+| ![PowerPoint Presentation Maker by SlidesGPT.png](/images/thumb/6/67/PowerPoint_Presentation_Maker_by_SlidesGPT.png/300px-PowerPoint_Presentation_Maker_by_SlidesGPT.png) |
 | Information |
 | **Name** | PowerPoint Presentation Maker by SlidesGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

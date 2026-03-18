@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| UK Latest News (ChatGPT Plugin) |
 | --- |
-| [![UK Latest News.jpg](/images/thumb/d/de/UK_Latest_News.jpg/300px-UK_Latest_News.jpg)](/wiki/file_uk_latest_news_jpg) |
+| ![UK Latest News.jpg](/images/thumb/d/de/UK_Latest_News.jpg/300px-UK_Latest_News.jpg) |
 | Information |
 | **Name** | UK Latest News |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

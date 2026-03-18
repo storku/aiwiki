@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Visual Weather Artist GPT |
 | --- |
-| [![Visual Weather Artist GPT.png](/images/thumb/1/15/Visual_Weather_Artist_GPT.png/300px-Visual_Weather_Artist_GPT.png)](/wiki/file_visual_weather_artist_gpt_png) |
+| ![Visual Weather Artist GPT.png](/images/thumb/1/15/Visual_Weather_Artist_GPT.png/300px-Visual_Weather_Artist_GPT.png) |
 | Information |
 | **Name** | Visual Weather Artist GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

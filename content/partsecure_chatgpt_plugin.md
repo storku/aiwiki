@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PartSecure (ChatGPT Plugin) |
 | --- |
-| [![PartSecure.png](/images/4/4d/PartSecure.png)](/wiki/file_partsecure_png) |
+| ![PartSecure.png](/images/4/4d/PartSecure.png) |
 | Information |
 | **Name** | PartSecure |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

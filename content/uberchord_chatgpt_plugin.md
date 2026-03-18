@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Uberchord (ChatGPT Plugin) |
 | --- |
-| [![Uberchord.png](/images/thumb/d/de/Uberchord.png/300px-Uberchord.png)](/wiki/file_uberchord_png) |
+| ![Uberchord.png](/images/thumb/d/de/Uberchord.png/300px-Uberchord.png) |
 | Information |
 | **Name** | Uberchord |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

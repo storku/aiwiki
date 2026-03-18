@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Hot Mods (GPT) |
 | --- |
-| [![Hot Mods (GPT).png](/images/thumb/1/1d/Hot_Mods_%28GPT%29.png/300px-Hot_Mods_%28GPT%29.png)](/wiki/file_hot_mods_gpt_png) |
+| ![Hot Mods (GPT).png](/images/thumb/1/1d/Hot_Mods_%28GPT%29.png/300px-Hot_Mods_%28GPT%29.png) |
 | Information |
 | **Name** | Hot Mods |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

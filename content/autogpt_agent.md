@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AutoGPT Agent |
 | --- |
-| [![AutoGPT Agent.png](/images/thumb/e/ed/AutoGPT_Agent.png/300px-AutoGPT_Agent.png)](/wiki/file_autogpt_agent_png) |
+| ![AutoGPT Agent.png](/images/thumb/e/ed/AutoGPT_Agent.png/300px-AutoGPT_Agent.png) |
 | Information |
 | **Name** | AutoGPT Agent |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

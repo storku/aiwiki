@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tailor ERP Generator (ChatGPT Plugin) |
 | --- |
-| [![Tailor ERP Generator.png](/images/thumb/8/88/Tailor_ERP_Generator.png/300px-Tailor_ERP_Generator.png)](/wiki/file_tailor_erp_generator_png) |
+| ![Tailor ERP Generator.png](/images/thumb/8/88/Tailor_ERP_Generator.png/300px-Tailor_ERP_Generator.png) |
 | Information |
 | **Name** | Tailor ERP Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

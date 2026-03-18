@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT-4.5 (Unofficial) - Best General Purpose GPT |
 | --- |
-| [![GPT-4.5 (Unofficial) - Best General Purpose GPT.png](/images/thumb/e/e3/GPT-4.5_%28Unofficial%29_-_Best_General_Purpose_GPT.png/300px-GPT-4.5_%28Unofficial%29_-_Best_General_Purpose_GPT.png)](/wiki/file_gpt-4_5_unofficial_-_best_general_purpose_gpt_png) |
+| ![GPT-4.5 (Unofficial) - Best General Purpose GPT.png](/images/thumb/e/e3/GPT-4.5_%28Unofficial%29_-_Best_General_Purpose_GPT.png/300px-GPT-4.5_%28Unofficial%29_-_Best_General_Purpose_GPT.png) |
 | Information |
 | **Name** | GPT-4.5 (Unofficial) - Best General Purpose GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

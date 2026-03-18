@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Coupert (ChatGPT Plugin) |
 | --- |
-| [![Coupert.jpg](/images/c/ca/Coupert.jpg)](/wiki/file_coupert_jpg) |
+| ![Coupert.jpg](/images/c/ca/Coupert.jpg) |
 | Information |
 | **Name** | Coupert |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

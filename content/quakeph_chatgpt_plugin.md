@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QuakePH (ChatGPT Plugin) |
 | --- |
-| [![QuakePH.png](/images/thumb/f/f7/QuakePH.png/300px-QuakePH.png)](/wiki/file_quakeph_png) |
+| ![QuakePH.png](/images/thumb/f/f7/QuakePH.png/300px-QuakePH.png) |
 | Information |
 | **Name** | QuakePH |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

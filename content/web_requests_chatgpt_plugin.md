@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Web Requests (ChatGPT Plugin) |
 | --- |
-| [![Web Requests.png](/images/thumb/f/f9/Web_Requests.png/300px-Web_Requests.png)](/wiki/file_web_requests_png) |
+| ![Web Requests.png](/images/thumb/f/f9/Web_Requests.png/300px-Web_Requests.png) |
 | Information |
 | **Name** | Web Requests |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

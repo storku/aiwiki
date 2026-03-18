@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox Weather (ChatGPT Plugin) |
 | --- |
-| [![MixerBox Weather.png](/images/thumb/c/ca/MixerBox_Weather.png/300px-MixerBox_Weather.png)](/wiki/file_mixerbox_weather_png) |
+| ![MixerBox Weather.png](/images/thumb/c/ca/MixerBox_Weather.png/300px-MixerBox_Weather.png) |
 | Information |
 | **Name** | MixerBox Weather |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

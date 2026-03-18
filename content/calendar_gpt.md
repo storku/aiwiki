@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Calendar GPT |
 | --- |
-| [![Calendar GPT.png](/images/thumb/2/23/Calendar_GPT.png/300px-Calendar_GPT.png)](/wiki/file_calendar_gpt_png) |
+| ![Calendar GPT.png](/images/thumb/2/23/Calendar_GPT.png/300px-Calendar_GPT.png) |
 | Information |
 | **Name** | Calendar GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

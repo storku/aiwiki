@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Open Archives (ChatGPT Plugin) |
 | --- |
-| [![Open Archives.png](/images/4/44/Open_Archives.png)](/wiki/file_open_archives_png) |
+| ![Open Archives.png](/images/4/44/Open_Archives.png) |
 | Information |
 | **Name** | Open Archives |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

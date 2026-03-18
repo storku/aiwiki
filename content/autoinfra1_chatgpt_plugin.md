@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AutoInfra1 (ChatGPT Plugin) |
 | --- |
-| [![AutoInfra1.png](/images/c/c6/AutoInfra1.png)](/wiki/file_autoinfra1_png) |
+| ![AutoInfra1.png](/images/c/c6/AutoInfra1.png) |
 | Information |
 | **Name** | AutoInfra1 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

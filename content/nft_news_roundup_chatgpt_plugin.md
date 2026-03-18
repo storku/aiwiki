@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NFT News Roundup (ChatGPT Plugin) |
 | --- |
-| [![NFT News Roundup.png](/images/thumb/8/8f/NFT_News_Roundup.png/300px-NFT_News_Roundup.png)](/wiki/file_nft_news_roundup_png) |
+| ![NFT News Roundup.png](/images/thumb/8/8f/NFT_News_Roundup.png/300px-NFT_News_Roundup.png) |
 | Information |
 | **Name** | NFT News Roundup |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

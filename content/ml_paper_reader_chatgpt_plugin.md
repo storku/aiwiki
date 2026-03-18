@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ML Paper Reader (ChatGPT Plugin) |
 | --- |
-| [![ML Paper Reader.png](/images/5/57/ML_Paper_Reader.png)](/wiki/file_ml_paper_reader_png) |
+| ![ML Paper Reader.png](/images/5/57/ML_Paper_Reader.png) |
 | Information |
 | **Name** | ML Paper Reader |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

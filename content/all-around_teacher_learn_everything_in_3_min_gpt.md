@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 📗All-around Teacher (Learn Everything in 3 min) (GPT) |
 | --- |
-| [![📗All-around Teacher (Learn Everything in 3 min) (GPT).png](/images/thumb/6/69/%F0%9F%93%97All-around_Teacher_%28Learn_Everything_in_3_min%29_%28GPT%29.png/300px-%F0%9F%93%97All-around_Teacher_%28Learn_Everything_in_3_min%29_%28GPT%29.png)](/wiki/file_all-around_teacher_learn_everything_in_3_min_gpt_png) |
+| ![📗All-around Teacher (Learn Everything in 3 min) (GPT).png](/images/thumb/6/69/%F0%9F%93%97All-around_Teacher_%28Learn_Everything_in_3_min%29_%28GPT%29.png/300px-%F0%9F%93%97All-around_Teacher_%28Learn_Everything_in_3_min%29_%28GPT%29.png) |
 | Information |
 | **Name** | 📗All-around Teacher (Learn Everything in 3 min) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

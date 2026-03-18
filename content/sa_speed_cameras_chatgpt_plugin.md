@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SA Speed Cameras (ChatGPT Plugin) |
 | --- |
-| [![SA Speed Cameras.png](/images/0/0a/SA_Speed_Cameras.png)](/wiki/file_sa_speed_cameras_png) |
+| ![SA Speed Cameras.png](/images/0/0a/SA_Speed_Cameras.png) |
 | Information |
 | **Name** | SA Speed Cameras |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

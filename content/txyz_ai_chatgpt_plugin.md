@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Txyz.ai (ChatGPT Plugin) |
 | --- |
-| [![Txyz.ai.jpg](/images/thumb/2/20/Txyz.ai.jpg/300px-Txyz.ai.jpg)](/wiki/file_txyz_ai_jpg) |
+| ![Txyz.ai.jpg](/images/thumb/2/20/Txyz.ai.jpg/300px-Txyz.ai.jpg) |
 | Information |
 | **Name** | txyz.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

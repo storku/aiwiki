@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Link Reader (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_link_reader_png) |
+| * |
 | Information |
 | **Name** | Link Reader |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

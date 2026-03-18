@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| DEV Community (ChatGPT Plugin) |
 | --- |
-| [![DEV Community.png](/images/0/04/DEV_Community.png)](/wiki/file_dev_community_png) |
+| ![DEV Community.png](/images/0/04/DEV_Community.png) |
 | Information |
 | **Name** | DEV Community |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

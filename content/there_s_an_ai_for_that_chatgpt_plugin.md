@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| There&#39;s An AI For That (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_there_s_an_ai_for_that_png) |
+| * |
 | Information |
 | **Name** | There's An AI For That |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

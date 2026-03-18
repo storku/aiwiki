@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Image Copy Machine GPT |
 | --- |
-| [![Image Copy Machine GPT.png](/images/thumb/d/d9/Image_Copy_Machine_GPT.png/300px-Image_Copy_Machine_GPT.png)](/wiki/file_image_copy_machine_gpt_png) |
+| ![Image Copy Machine GPT.png](/images/thumb/d/d9/Image_Copy_Machine_GPT.png/300px-Image_Copy_Machine_GPT.png) |
 | Information |
 | **Name** | Image Copy Machine GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

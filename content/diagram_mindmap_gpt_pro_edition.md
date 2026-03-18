@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Diagram &#38; MindMap GPT: PRO Edition |
 | --- |
-| [![Diagram & MindMap GPT- PRO Edition.png](/images/thumb/6/63/Diagram_%26_MindMap_GPT-_PRO_Edition.png/300px-Diagram_%26_MindMap_GPT-_PRO_Edition.png)](/wiki/file_diagram_mindmap_gpt-_pro_edition_png) |
+| ![Diagram & MindMap GPT- PRO Edition.png](/images/thumb/6/63/Diagram_%26_MindMap_GPT-_PRO_Edition.png/300px-Diagram_%26_MindMap_GPT-_PRO_Edition.png) |
 | Information |
 | **Name** | Diagram & MindMap GPT: PRO Edition |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

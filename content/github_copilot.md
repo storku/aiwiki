@@ -41,7 +41,7 @@ While the code assistant has had a good reception, it still has room for improve
 
 ## Features
 
-[![](/images/thumb/9/93/Github_copilot.png/300px-Github_copilot.png)](/wiki/file_github_copilot_png)  [](/wiki/file_github_copilot_png)
+![](/images/thumb/9/93/Github_copilot.png/300px-Github_copilot.png)  
 Figure 1: GitHub Copilot general overview. Source: QACaffe.
 GitHub Copilot is powered by [Codex](/index.php?title=Codex&action=edit&redlink=1), an AI system developed by OpenAI that is based on the [GPT-3](/wiki/gpt-3) model and fine-tuned for programming tasks. [&#91;1&#93;](#cite_note-”1”-1) [&#91;3&#93;](#cite_note-”3”-3) Codex is an algorithm that was trained on a data set that included a bigger concentration of public source code than GPT-3, making it more capable in the function of code generation. [&#91;1&#93;](#cite_note-”1”-1) Copilot was trained "a selection of English language and source code from publicly available sources, including code in public repositories on GitHub". [&#91;4&#93;](#cite_note-”4”-4) The program works best with Python, JavaScript, TypeScript, Ruby, and Go. [&#91;1&#93;](#cite_note-”1”-1) [&#91;6&#93;](#cite_note-”6”-6)
 

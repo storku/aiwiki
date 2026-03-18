@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Cloud Diagram Gen (ChatGPT Plugin) |
 | --- |
-| [![Cloud Diagram Gen.jpeg](/images/4/4d/Cloud_Diagram_Gen.jpeg)](/wiki/file_cloud_diagram_gen_jpeg) |
+| ![Cloud Diagram Gen.jpeg](/images/4/4d/Cloud_Diagram_Gen.jpeg) |
 | Information |
 | **Name** | Cloud Diagram Gen |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Customizer, File Finder &#38; JSON Action Creator |
 | --- |
-| [![GPT Customizer, File Finder & JSON Action Creator.jpeg](/images/thumb/6/60/GPT_Customizer%2C_File_Finder_%26_JSON_Action_Creator.jpeg/300px-GPT_Customizer%2C_File_Finder_%26_JSON_Action_Creator.jpeg)](/wiki/file_gpt_customizer_file_finder_json_action_creator_jpeg) |
+| ![GPT Customizer, File Finder & JSON Action Creator.jpeg](/images/thumb/6/60/GPT_Customizer%2C_File_Finder_%26_JSON_Action_Creator.jpeg/300px-GPT_Customizer%2C_File_Finder_%26_JSON_Action_Creator.jpeg) |
 | Information |
 | **Name** | GPT Customizer, File Finder & JSON Action Creator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

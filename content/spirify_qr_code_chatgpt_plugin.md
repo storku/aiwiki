@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Spirify QR Code (ChatGPT Plugin) |
 | --- |
-| [![Spirify QR Code.jpeg](/images/d/d5/Spirify_QR_Code.jpeg)](/wiki/file_spirify_qr_code_jpeg) |
+| ![Spirify QR Code.jpeg](/images/d/d5/Spirify_QR_Code.jpeg) |
 | Information |
 | **Name** | Spirify QR Code |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

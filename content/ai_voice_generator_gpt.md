@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Voice Generator (GPT) |
 | --- |
-| [![AI Voice Generator (GPT).png](/images/thumb/2/2c/AI_Voice_Generator_%28GPT%29.png/300px-AI_Voice_Generator_%28GPT%29.png)](/wiki/file_ai_voice_generator_gpt_png) |
+| ![AI Voice Generator (GPT).png](/images/thumb/2/2c/AI_Voice_Generator_%28GPT%29.png/300px-AI_Voice_Generator_%28GPT%29.png) |
 | Information |
 | **Name** | AI Voice Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

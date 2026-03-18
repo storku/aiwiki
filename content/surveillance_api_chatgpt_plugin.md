@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Surveillance API (ChatGPT Plugin) |
 | --- |
-| [![Surveillance API.png](/images/thumb/f/f4/Surveillance_API.png/300px-Surveillance_API.png)](/wiki/file_surveillance_api_png) |
+| ![Surveillance API.png](/images/thumb/f/f4/Surveillance_API.png/300px-Surveillance_API.png) |
 | Information |
 | **Name** | Surveillance API |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

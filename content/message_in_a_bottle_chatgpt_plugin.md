@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Message in a Bottle (ChatGPT Plugin) |
 | --- |
-| [![Message in a Bottle.png](/images/thumb/7/7f/Message_in_a_Bottle.png/300px-Message_in_a_Bottle.png)](/wiki/file_message_in_a_bottle_png) |
+| ![Message in a Bottle.png](/images/thumb/7/7f/Message_in_a_Bottle.png/300px-Message_in_a_Bottle.png) |
 | Information |
 | **Name** | Message in a Bottle |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

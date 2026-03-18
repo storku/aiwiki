@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Slide Maker (GPT) |
 | --- |
-| [![Slide Maker (GPT).png](/images/thumb/c/cc/Slide_Maker_%28GPT%29.png/300px-Slide_Maker_%28GPT%29.png)](/wiki/file_slide_maker_gpt_png) |
+| ![Slide Maker (GPT).png](/images/thumb/c/cc/Slide_Maker_%28GPT%29.png/300px-Slide_Maker_%28GPT%29.png) |
 | Information |
 | **Name** | Slide Maker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -71,7 +71,7 @@ GPT-3 handles tokens based on their context in the corpus data. Identical words 
 - The more likely or common a token is, the lower the token number assigned to it. For example, the token for the period ("13") remains consistent in all three sentences because its usage is similar throughout the corpus data.
 
 		- 
-			[![Tokens3.png](/images/thumb/7/7d/Tokens3.png/299px-Tokens3.png)](/wiki/file_tokens3_png)
+			![Tokens3.png](/images/thumb/7/7d/Tokens3.png/299px-Tokens3.png)
 
 			
 			
@@ -79,7 +79,7 @@ GPT-3 handles tokens based on their context in the corpus data. Identical words 
 		
 
 		- 
-			[![Tokens2.png](/images/thumb/f/fa/Tokens2.png/301px-Tokens2.png)](/wiki/file_tokens2_png)
+			![Tokens2.png](/images/thumb/f/fa/Tokens2.png/301px-Tokens2.png)
 
 			
 			
@@ -87,7 +87,7 @@ GPT-3 handles tokens based on their context in the corpus data. Identical words 
 		
 
 		- 
-			[![Tokens1.png](/images/thumb/4/45/Tokens1.png/301px-Tokens1.png)](/wiki/file_tokens1_png)
+			![Tokens1.png](/images/thumb/4/45/Tokens1.png/301px-Tokens1.png)
 
 			
 			

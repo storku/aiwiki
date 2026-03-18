@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Effortless Book Summary (GPT) |
 | --- |
-| [![Effortless Book Summary (GPT).png](/images/thumb/8/8e/Effortless_Book_Summary_%28GPT%29.png/300px-Effortless_Book_Summary_%28GPT%29.png)](/wiki/file_effortless_book_summary_gpt_png) |
+| ![Effortless Book Summary (GPT).png](/images/thumb/8/8e/Effortless_Book_Summary_%28GPT%29.png/300px-Effortless_Book_Summary_%28GPT%29.png) |
 | Information |
 | **Name** | Effortless Book Summary |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

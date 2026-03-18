@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MixerBox WebSearchG (GPT) |
 | --- |
-| [![MixerBox WebSearchG (GPT).png](/images/thumb/2/20/MixerBox_WebSearchG_%28GPT%29.png/300px-MixerBox_WebSearchG_%28GPT%29.png)](/wiki/file_mixerbox_websearchg_gpt_png) |
+| ![MixerBox WebSearchG (GPT).png](/images/thumb/2/20/MixerBox_WebSearchG_%28GPT%29.png/300px-MixerBox_WebSearchG_%28GPT%29.png) |
 | Information |
 | **Name** | MixerBox WebSearchG |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

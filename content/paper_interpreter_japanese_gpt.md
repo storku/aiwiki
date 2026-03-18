@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Paper Interpreter (Japanese) (GPT) |
 | --- |
-| [![Paper Interpreter (Japanese) (GPT).png](/images/thumb/a/a6/Paper_Interpreter_%28Japanese%29_%28GPT%29.png/300px-Paper_Interpreter_%28Japanese%29_%28GPT%29.png)](/wiki/file_paper_interpreter_japanese_gpt_png) |
+| ![Paper Interpreter (Japanese) (GPT).png](/images/thumb/a/a6/Paper_Interpreter_%28Japanese%29_%28GPT%29.png/300px-Paper_Interpreter_%28Japanese%29_%28GPT%29.png) |
 | Information |
 | **Name** | Paper Interpreter (Japanese) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

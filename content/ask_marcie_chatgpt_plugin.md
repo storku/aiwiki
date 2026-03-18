@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ask Marcie (ChatGPT Plugin) |
 | --- |
-| [![Ask Marcie.jpeg](/images/a/ae/Ask_Marcie.jpeg)](/wiki/file_ask_marcie_jpeg) |
+| ![Ask Marcie.jpeg](/images/a/ae/Ask_Marcie.jpeg) |
 | Information |
 | **Name** | Ask Marcie |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

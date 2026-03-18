@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SEO Assistant (ChatGPT Plugin) |
 | --- |
-| [![SEO Assistant.jpg](/images/5/5c/SEO_Assistant.jpg)](/wiki/file_seo_assistant_jpg) |
+| ![SEO Assistant.jpg](/images/5/5c/SEO_Assistant.jpg) |
 | Information |
 | **Name** | SEO Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

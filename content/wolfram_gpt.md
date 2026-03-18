@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Wolfram (GPT) |
 | --- |
-| [![Wolfram (GPT).png](/images/thumb/d/de/Wolfram_%28GPT%29.png/300px-Wolfram_%28GPT%29.png)](/wiki/file_wolfram_gpt_png) |
+| ![Wolfram (GPT).png](/images/thumb/d/de/Wolfram_%28GPT%29.png/300px-Wolfram_%28GPT%29.png) |
 | Information |
 | **Name** | Wolfram |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

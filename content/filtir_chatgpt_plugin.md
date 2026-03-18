@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Filtir (ChatGPT Plugin) |
 | --- |
-| [![Filtir.jpeg](/images/9/97/Filtir.jpeg)](/wiki/file_filtir_jpeg) |
+| ![Filtir.jpeg](/images/9/97/Filtir.jpeg) |
 | Information |
 | **Name** | Filtir |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

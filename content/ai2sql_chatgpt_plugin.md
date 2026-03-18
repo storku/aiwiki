@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AI2sql (ChatGPT Plugin) |
 | --- |
-| [![AI2sql.png](/images/thumb/d/d0/AI2sql.png/300px-AI2sql.png)](/wiki/file_ai2sql_png) |
+| ![AI2sql.png](/images/thumb/d/d0/AI2sql.png/300px-AI2sql.png) |
 | Information |
 | **Name** | AI2sql |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

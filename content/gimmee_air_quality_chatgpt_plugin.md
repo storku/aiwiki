@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Gimmee Air Quality (ChatGPT Plugin) |
 | --- |
-| [![Gimmee Air Quality.png](/images/thumb/b/b0/Gimmee_Air_Quality.png/300px-Gimmee_Air_Quality.png)](/wiki/file_gimmee_air_quality_png) |
+| ![Gimmee Air Quality.png](/images/thumb/b/b0/Gimmee_Air_Quality.png/300px-Gimmee_Air_Quality.png) |
 | Information |
 | **Name** | Gimmee Air Quality |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

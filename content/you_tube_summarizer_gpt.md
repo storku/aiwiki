@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| You Tube Summarizer (GPT) |
 | --- |
-| [![You Tube Summarizer (GPT).png](/images/thumb/9/95/You_Tube_Summarizer_%28GPT%29.png/300px-You_Tube_Summarizer_%28GPT%29.png)](/wiki/file_you_tube_summarizer_gpt_png) |
+| ![You Tube Summarizer (GPT).png](/images/thumb/9/95/You_Tube_Summarizer_%28GPT%29.png/300px-You_Tube_Summarizer_%28GPT%29.png) |
 | Information |
 | **Name** | You Tube Summarizer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

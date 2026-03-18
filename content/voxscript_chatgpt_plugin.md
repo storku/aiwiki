@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| VoxScript (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_voxscript_png) |
+| * |
 | Information |
 | **Name** | VoxScript |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

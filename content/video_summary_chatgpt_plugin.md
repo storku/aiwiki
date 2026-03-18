@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Video Summary (ChatGPT Plugin) |
 | --- |
-| [![Video Summary.png](/images/b/bc/Video_Summary.png)](/wiki/file_video_summary_png) |
+| ![Video Summary.png](/images/b/bc/Video_Summary.png) |
 | Information |
 | **Name** | Video Summary |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Devhunt (ChatGPT Plugin) |
 | --- |
-| [![Devhunt.jpeg](/images/e/ec/Devhunt.jpeg)](/wiki/file_devhunt_jpeg) |
+| ![Devhunt.jpeg](/images/e/ec/Devhunt.jpeg) |
 | Information |
 | **Name** | Devhunt |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

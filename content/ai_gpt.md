@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI GPT |
 | --- |
-| [![AI GPT.png](/images/thumb/8/80/AI_GPT.png/300px-AI_GPT.png)](/wiki/file_ai_gpt_png) |
+| ![AI GPT.png](/images/thumb/8/80/AI_GPT.png/300px-AI_GPT.png) |
 | Information |
 | **Name** | AI GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

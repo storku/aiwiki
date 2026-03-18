@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Game Time (GPT) |
 | --- |
-| [![Game Time (GPT).png](/images/thumb/a/a0/Game_Time_%28GPT%29.png/300px-Game_Time_%28GPT%29.png)](/wiki/file_game_time_gpt_png) |
+| ![Game Time (GPT).png](/images/thumb/a/a0/Game_Time_%28GPT%29.png/300px-Game_Time_%28GPT%29.png) |
 | Information |
 | **Name** | Game Time |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Man of Many (ChatGPT Plugin) |
 | --- |
-| [![Man of Many.jpeg](/images/thumb/8/83/Man_of_Many.jpeg/300px-Man_of_Many.jpeg)](/wiki/file_man_of_many_jpeg) |
+| ![Man of Many.jpeg](/images/thumb/8/83/Man_of_Many.jpeg/300px-Man_of_Many.jpeg) |
 | Information |
 | **Name** | Man of Many |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

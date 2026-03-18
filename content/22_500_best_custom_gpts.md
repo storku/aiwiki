@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 22.500 Best Custom GPTs |
 | --- |
-| [![22.500+ Best Custom GPTs.png](/images/thumb/7/70/22.500%2B_Best_Custom_GPTs.png/300px-22.500%2B_Best_Custom_GPTs.png)](/wiki/file_22_500_best_custom_gpts_png) |
+| ![22.500+ Best Custom GPTs.png](/images/thumb/7/70/22.500%2B_Best_Custom_GPTs.png/300px-22.500%2B_Best_Custom_GPTs.png) |
 | Information |
 | **Name** | 22.500+ Best Custom GPTs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

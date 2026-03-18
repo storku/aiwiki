@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Merlin, the Job Application Wizard (GPT) |
 | --- |
-| [![Merlin, the Job Application Wizard (GPT).png](/images/thumb/8/85/Merlin%2C_the_Job_Application_Wizard_%28GPT%29.png/300px-Merlin%2C_the_Job_Application_Wizard_%28GPT%29.png)](/wiki/file_merlin_the_job_application_wizard_gpt_png) |
+| ![Merlin, the Job Application Wizard (GPT).png](/images/thumb/8/85/Merlin%2C_the_Job_Application_Wizard_%28GPT%29.png/300px-Merlin%2C_the_Job_Application_Wizard_%28GPT%29.png) |
 | Information |
 | **Name** | Merlin, the Job Application Wizard |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

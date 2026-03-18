@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| StockCode (GPT) |
 | --- |
-| [![StockCode (GPT).png](/images/thumb/8/82/StockCode_%28GPT%29.png/300px-StockCode_%28GPT%29.png)](/wiki/file_stockcode_gpt_png) |
+| ![StockCode (GPT).png](/images/thumb/8/82/StockCode_%28GPT%29.png/300px-StockCode_%28GPT%29.png) |
 | Information |
 | **Name** | StockCode |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

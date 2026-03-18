@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Talk Law Brazil (ChatGPT Plugin) |
 | --- |
-| [![Talk Law Brazil.png](/images/thumb/2/27/Talk_Law_Brazil.png/300px-Talk_Law_Brazil.png)](/wiki/file_talk_law_brazil_png) |
+| ![Talk Law Brazil.png](/images/thumb/2/27/Talk_Law_Brazil.png/300px-Talk_Law_Brazil.png) |
 | Information |
 | **Name** | Talk Law Brazil |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

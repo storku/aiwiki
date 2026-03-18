@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TimeNavi (ChatGPT Plugin) |
 | --- |
-| [![TimeNavi.jpeg](/images/1/1d/TimeNavi.jpeg)](/wiki/file_timenavi_jpeg) |
+| ![TimeNavi.jpeg](/images/1/1d/TimeNavi.jpeg) |
 | Information |
 | **Name** | TimeNavi |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -11,7 +11,7 @@ categories:
   - "XPeng"
 ---[Template:Infobox robot](/index.php?title=Template:Infobox_robot&action=edit&redlink=1)
 
-[![Xpeng iron1.png](/images/thumb/f/fe/Xpeng_iron1.png/400px-Xpeng_iron1.png)](/wiki/file_xpeng_iron1_png)
+![Xpeng iron1.png](/images/thumb/f/fe/Xpeng_iron1.png/400px-Xpeng_iron1.png)
 
 **XPeng IRON** is an advanced [humanoid robot](/index.php?title=Humanoid_robot&action=edit&redlink=1) developed by Chinese [electric vehicle](/index.php?title=Electric_vehicle&action=edit&redlink=1) manufacturer [XPeng Motors](/index.php?title=XPeng&action=edit&redlink=1). First unveiled at XPeng's AI Day 2024 in November, the robot represents the company's ambitious expansion into embodied intelligence and [robotics](/index.php?title=Robotics&action=edit&redlink=1).[&#91;1&#93;](#cite_note-xpeng2025-1) The next-generation IRON, revealed at the 2025 AI Day on November 5, 2025, attracted global attention for its unprecedented human-like appearance and movement, becoming a viral sensation when the company had to cut the robot open on stage to prove it wasn't a person in a costume.[&#91;2&#93;](#cite_note-livescience-2)
 

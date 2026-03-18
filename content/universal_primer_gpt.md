@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Universal Primer (GPT) |
 | --- |
-| [![Universal Primer (GPT).png](/images/thumb/a/ad/Universal_Primer_%28GPT%29.png/300px-Universal_Primer_%28GPT%29.png)](/wiki/file_universal_primer_gpt_png) |
+| ![Universal Primer (GPT).png](/images/thumb/a/ad/Universal_Primer_%28GPT%29.png/300px-Universal_Primer_%28GPT%29.png) |
 | Information |
 | **Name** | Universal Primer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

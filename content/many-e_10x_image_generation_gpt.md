@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MANY-E 🌟 10X Image Generation 🌟 (GPT) |
 | --- |
-| [![MANY-E 🌟 10X Image Generation 🌟 (GPT).png](/images/thumb/8/82/MANY-E_%F0%9F%8C%9F_10X_Image_Generation_%F0%9F%8C%9F_%28GPT%29.png/300px-MANY-E_%F0%9F%8C%9F_10X_Image_Generation_%F0%9F%8C%9F_%28GPT%29.png)](/wiki/file_many-e_10x_image_generation_gpt_png) |
+| ![MANY-E 🌟 10X Image Generation 🌟 (GPT).png](/images/thumb/8/82/MANY-E_%F0%9F%8C%9F_10X_Image_Generation_%F0%9F%8C%9F_%28GPT%29.png/300px-MANY-E_%F0%9F%8C%9F_10X_Image_Generation_%F0%9F%8C%9F_%28GPT%29.png) |
 | Information |
 | **Name** | MANY-E 🌟 10X Image Generation 🌟 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

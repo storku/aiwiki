@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Gift Finder (ChatGPT Plugin) |
 | --- |
-| [![Gift Finder.png](/images/thumb/6/68/Gift_Finder.png/300px-Gift_Finder.png)](/wiki/file_gift_finder_png) |
+| ![Gift Finder.png](/images/thumb/6/68/Gift_Finder.png/300px-Gift_Finder.png) |
 | Information |
 | **Name** | Gift Finder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

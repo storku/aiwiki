@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Charts by Kesem AI (ChatGPT Plugin) |
 | --- |
-| [![Charts by Kesem AI.jpeg](/images/5/5c/Charts_by_Kesem_AI.jpeg)](/wiki/file_charts_by_kesem_ai_jpeg) |
+| ![Charts by Kesem AI.jpeg](/images/5/5c/Charts_by_Kesem_AI.jpeg) |
 | Information |
 | **Name** | Charts by Kesem AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

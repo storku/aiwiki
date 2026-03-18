@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 结构化提示词工程师 (GPT) |
 | --- |
-| [![结构化提示词工程师 (GPT).png](/images/thumb/d/da/%E7%BB%93%E6%9E%84%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E5%B8%88_%28GPT%29.png/300px-%E7%BB%93%E6%9E%84%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E5%B8%88_%28GPT%29.png)](/wiki/file_结构化提示词工程师_gpt_png) |
+| ![结构化提示词工程师 (GPT).png](/images/thumb/d/da/%E7%BB%93%E6%9E%84%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E5%B8%88_%28GPT%29.png/300px-%E7%BB%93%E6%9E%84%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E5%B8%88_%28GPT%29.png) |
 | Information |
 | **Name** | 结构化提示词工程师 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

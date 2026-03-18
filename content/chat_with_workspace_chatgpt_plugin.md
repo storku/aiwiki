@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat With Workspace (ChatGPT Plugin) |
 | --- |
-| [![Chat With Workspace.png](/images/thumb/f/fb/Chat_With_Workspace.png/300px-Chat_With_Workspace.png)](/wiki/file_chat_with_workspace_png) |
+| ![Chat With Workspace.png](/images/thumb/f/fb/Chat_With_Workspace.png/300px-Chat_With_Workspace.png) |
 | Information |
 | **Name** | Chat With Workspace |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shop (ChatGPT Plugin) |
 | --- |
-| [![Shop.png](/images/thumb/3/31/Shop.png/300px-Shop.png)](/wiki/file_shop_png) |
+| ![Shop.png](/images/thumb/3/31/Shop.png/300px-Shop.png) |
 | Information |
 | **Name** | Shop |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

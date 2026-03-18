@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Clearbit (ChatGPT Plugin) |
 | --- |
-| [![Clearbit.png](/images/thumb/a/a4/Clearbit.png/300px-Clearbit.png)](/wiki/file_clearbit_png) |
+| ![Clearbit.png](/images/thumb/a/a4/Clearbit.png/300px-Clearbit.png) |
 | Information |
 | **Name** | Clearbit |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

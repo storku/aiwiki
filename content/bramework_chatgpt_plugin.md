@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bramework (ChatGPT Plugin) |
 | --- |
-| [![Bramework.png](/images/thumb/0/0b/Bramework.png/300px-Bramework.png)](/wiki/file_bramework_png) |
+| ![Bramework.png](/images/thumb/0/0b/Bramework.png/300px-Bramework.png) |
 | Information |
 | **Name** | Bramework |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AITickerChat (ChatGPT Plugin) |
 | --- |
-| [![AITickerChat.png](/images/thumb/4/4d/AITickerChat.png/300px-AITickerChat.png)](/wiki/file_aitickerchat_png) |
+| ![AITickerChat.png](/images/thumb/4/4d/AITickerChat.png/300px-AITickerChat.png) |
 | Information |
 | **Name** | AITickerChat |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Doc Maker (GPT) |
 | --- |
-| [![Doc Maker (GPT).png](/images/thumb/d/d9/Doc_Maker_%28GPT%29.png/300px-Doc_Maker_%28GPT%29.png)](/wiki/file_doc_maker_gpt_png) |
+| ![Doc Maker (GPT).png](/images/thumb/d/d9/Doc_Maker_%28GPT%29.png/300px-Doc_Maker_%28GPT%29.png) |
 | Information |
 | **Name** | Doc Maker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

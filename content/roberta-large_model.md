@@ -39,7 +39,7 @@ categories:
 
 **License**
 
-[mit](/wiki/mit)
+mit
 
 **Related to**
 

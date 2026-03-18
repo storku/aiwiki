@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| OnePage Stock Ideas (ChatGPT Plugin) |
 | --- |
-| [![OnePage Stock Ideas.jpeg](/images/thumb/2/22/OnePage_Stock_Ideas.jpeg/300px-OnePage_Stock_Ideas.jpeg)](/wiki/file_onepage_stock_ideas_jpeg) |
+| ![OnePage Stock Ideas.jpeg](/images/thumb/2/22/OnePage_Stock_Ideas.jpeg/300px-OnePage_Stock_Ideas.jpeg) |
 | Information |
 | **Name** | OnePage Stock Ideas |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -14,7 +14,7 @@ categories:
 ---[Template:Infobox AI model](/index.php?title=Template:Infobox_AI_model&action=edit&redlink=1)
 
 *See also: [Claude](/wiki/claude)*
-[*](/wiki/file_claude_sonnet_4_5_logo1_png)
+*
 
 **Claude Sonnet 4.5** is a [multimodal](/index.php?title=Multimodal&action=edit&redlink=1) [large language model](/wiki/large_language_model) (LLM) developed by [Anthropic](/wiki/anthropic) and released on September 29, 2025.[&#91;1&#93;](#cite_note-anthropic-announce-1) Described by Anthropic as "the best coding model in the world," it represents a significant advancement in [artificial intelligence](/wiki/artificial_intelligence), particularly in coding, agentic tasks, and [computer use](/index.php?title=Computer_use&action=edit&redlink=1) capabilities.[&#91;1&#93;](#cite_note-anthropic-announce-1) The model is positioned as the strongest in Anthropic's lineup for building complex [agents](/index.php?title=AI_agents&action=edit&redlink=1) and its best model for computer use tasks.[&#91;2&#93;](#cite_note-claude-page-2)
 

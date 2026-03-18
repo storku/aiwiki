@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 超级论文辅助（Super Academic Paper Assistance） (GPT) |
 | --- |
-| [![超级论文辅助（Super Academic Paper Assistance） (GPT).png](/images/thumb/8/87/%E8%B6%85%E7%BA%A7%E8%AE%BA%E6%96%87%E8%BE%85%E5%8A%A9%EF%BC%88Super_Academic_Paper_Assistance%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7%E8%AE%BA%E6%96%87%E8%BE%85%E5%8A%A9%EF%BC%88Super_Academic_Paper_Assistance%EF%BC%89_%28GPT%29.png)](/wiki/file_超级论文辅助_super_academic_paper_assistance_gpt_png) |
+| ![超级论文辅助（Super Academic Paper Assistance） (GPT).png](/images/thumb/8/87/%E8%B6%85%E7%BA%A7%E8%AE%BA%E6%96%87%E8%BE%85%E5%8A%A9%EF%BC%88Super_Academic_Paper_Assistance%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7%E8%AE%BA%E6%96%87%E8%BE%85%E5%8A%A9%EF%BC%88Super_Academic_Paper_Assistance%EF%BC%89_%28GPT%29.png) |
 | Information |
 | **Name** | 超级论文辅助（Super Academic Paper Assistance） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

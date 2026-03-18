@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Cribbage Scorer (ChatGPT Plugin) |
 | --- |
-| [![Cribbage Scorer.png](/images/thumb/1/1f/Cribbage_Scorer.png/300px-Cribbage_Scorer.png)](/wiki/file_cribbage_scorer_png) |
+| ![Cribbage Scorer.png](/images/thumb/1/1f/Cribbage_Scorer.png/300px-Cribbage_Scorer.png) |
 | Information |
 | **Name** | Cribbage Scorer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

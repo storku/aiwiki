@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| FreshTech (ChatGPT Plugin) |
 | --- |
-| [![FreshTech.jpeg](/images/6/60/FreshTech.jpeg)](/wiki/file_freshtech_jpeg) |
+| ![FreshTech.jpeg](/images/6/60/FreshTech.jpeg) |
 | Information |
 | **Name** | FreshTech |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

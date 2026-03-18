@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Polygon (ChatGPT Plugin) |
 | --- |
-| [![Polygon.png](/images/thumb/9/9d/Polygon.png/300px-Polygon.png)](/wiki/file_polygon_png) |
+| ![Polygon.png](/images/thumb/9/9d/Polygon.png/300px-Polygon.png) |
 | Information |
 | **Name** | Polygon |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

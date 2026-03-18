@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Diagrams (GPT) |
 | --- |
-| [![AI Diagrams (GPT).png](/images/thumb/4/40/AI_Diagrams_%28GPT%29.png/300px-AI_Diagrams_%28GPT%29.png)](/wiki/file_ai_diagrams_gpt_png) |
+| ![AI Diagrams (GPT).png](/images/thumb/4/40/AI_Diagrams_%28GPT%29.png/300px-AI_Diagrams_%28GPT%29.png) |
 | Information |
 | **Name** | AI Diagrams |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

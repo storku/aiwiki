@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QyrusTestPilot (ChatGPT Plugin) |
 | --- |
-| [![QyrusTestPilot.jpeg](/images/d/de/QyrusTestPilot.jpeg)](/wiki/file_qyrustestpilot_jpeg) |
+| ![QyrusTestPilot.jpeg](/images/d/de/QyrusTestPilot.jpeg) |
 | Information |
 | **Name** | QyrusTestPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

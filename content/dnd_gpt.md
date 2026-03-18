@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| DnD GPT |
 | --- |
-| [![DnD GPT.png](/images/thumb/2/23/DnD_GPT.png/300px-DnD_GPT.png)](/wiki/file_dnd_gpt_png) |
+| ![DnD GPT.png](/images/thumb/2/23/DnD_GPT.png/300px-DnD_GPT.png) |
 | Information |
 | **Name** | DnD GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

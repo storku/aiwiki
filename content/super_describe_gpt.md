@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Super Describe (GPT) |
 | --- |
-| [![Super Describe (GPT).png](/images/thumb/0/06/Super_Describe_%28GPT%29.png/300px-Super_Describe_%28GPT%29.png)](/wiki/file_super_describe_gpt_png) |
+| ![Super Describe (GPT).png](/images/thumb/0/06/Super_Describe_%28GPT%29.png/300px-Super_Describe_%28GPT%29.png) |
 | Information |
 | **Name** | Super Describe |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Advantage Web Designer (GPT) |
 | --- |
-| [![AI Advantage Web Designer (GPT).png](/images/thumb/a/af/AI_Advantage_Web_Designer_%28GPT%29.png/300px-AI_Advantage_Web_Designer_%28GPT%29.png)](/wiki/file_ai_advantage_web_designer_gpt_png) |
+| ![AI Advantage Web Designer (GPT).png](/images/thumb/a/af/AI_Advantage_Web_Designer_%28GPT%29.png/300px-AI_Advantage_Web_Designer_%28GPT%29.png) |
 | Information |
 | **Name** | AI Advantage Web Designer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

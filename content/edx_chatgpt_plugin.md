@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| EdX (ChatGPT Plugin) |
 | --- |
-| [![EdX.jpg](/images/thumb/6/6c/EdX.jpg/300px-EdX.jpg)](/wiki/file_edx_jpg) |
+| ![EdX.jpg](/images/thumb/6/6c/EdX.jpg/300px-EdX.jpg) |
 | Information |
 | **Name** | edX |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

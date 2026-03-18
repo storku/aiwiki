@@ -17,7 +17,7 @@ categories:
   - "Cloud_computing"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[![Openrouter logo1.jpeg](/images/e/eb/Openrouter_logo1.jpeg)](/wiki/file_openrouter_logo1_jpeg)
+![Openrouter logo1.jpeg](/images/e/eb/Openrouter_logo1.jpeg)
 
 **OpenRouter** is a unified [API](/index.php?title=API&action=edit&redlink=1) gateway platform and marketplace that provides developers with access to over 400 [large language models](/index.php?title=Large_language_models&action=edit&redlink=1) (LLMs) from multiple providers through a single, standardized interface.[&#91;1&#93;](#cite_note-datacamp-1)[&#91;2&#93;](#cite_note-orrick-2) Founded in early 2023 by [Alex Atallah](/index.php?title=Alex_Atallah&action=edit&redlink=1), co-founder and former [CTO](/index.php?title=Chief_Technology_Officer&action=edit&redlink=1) of [OpenSea](/index.php?title=OpenSea&action=edit&redlink=1), and engineer Louis Vichy, the platform aims to simplify the integration and optimization of [AI](/wiki/artificial_intelligence) models while providing price transparency, reliability, and consolidated billing.[&#91;3&#93;](#cite_note-developer-puter-3)[&#91;4&#93;](#cite_note-forbes-4)
 

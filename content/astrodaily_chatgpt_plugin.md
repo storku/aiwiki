@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Astrodaily (ChatGPT Plugin) |
 | --- |
-| [![Astrodaily.png](/images/thumb/6/6e/Astrodaily.png/300px-Astrodaily.png)](/wiki/file_astrodaily_png) |
+| ![Astrodaily.png](/images/thumb/6/6e/Astrodaily.png/300px-Astrodaily.png) |
 | Information |
 | **Name** | Astrodaily |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

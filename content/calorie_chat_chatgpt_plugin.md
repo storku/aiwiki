@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Calorie Chat (ChatGPT Plugin) |
 | --- |
-| [![Calorie Chat.png](/images/5/5c/Calorie_Chat.png)](/wiki/file_calorie_chat_png) |
+| ![Calorie Chat.png](/images/5/5c/Calorie_Chat.png) |
 | Information |
 | **Name** | Calorie Chat |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

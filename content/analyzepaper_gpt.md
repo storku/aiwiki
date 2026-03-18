@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AnalyzePaper (GPT) |
 | --- |
-| [![AnalyzePaper (GPT).png](/images/thumb/0/02/AnalyzePaper_%28GPT%29.png/300px-AnalyzePaper_%28GPT%29.png)](/wiki/file_analyzepaper_gpt_png) |
+| ![AnalyzePaper (GPT).png](/images/thumb/0/02/AnalyzePaper_%28GPT%29.png/300px-AnalyzePaper_%28GPT%29.png) |
 | Information |
 | **Name** | AnalyzePaper |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Instacart (ChatGPT Plugin) |
 | --- |
-| [![Instacart.png](/images/8/84/Instacart.png)](/wiki/file_instacart_png) |
+| ![Instacart.png](/images/8/84/Instacart.png) |
 | Information |
 | **Name** | Instacart |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

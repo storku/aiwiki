@@ -15,7 +15,7 @@ categories:
   - "Proprietary_software"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[*](/wiki/file_claude_code_logo1_png)
+*
 
 See also: [Claude](/wiki/claude)*
 **Claude Code** is an [AI](/wiki/artificial_intelligence)-powered [command-line](/index.php?title=Command-line_interface&action=edit&redlink=1) tool for [agentic coding](/index.php?title=Software_engineering&action=edit&redlink=1) developed by [Anthropic](/wiki/anthropic). First released as a beta [research preview](/index.php?title=Research_preview&action=edit&redlink=1) alongside Claude 3.7 Sonnet on February 24, 2025, and made generally available on May 22, 2025, Claude Code enables developers to delegate coding tasks to [Claude](/index.php?title=Claude_(AI_assistant)&action=edit&redlink=1) directly from their [terminal](/index.php?title=Terminal_emulator&action=edit&redlink=1).[&#91;1&#93;](#cite_note-sonnet37-1)[&#91;2&#93;](#cite_note-claude4-2) 

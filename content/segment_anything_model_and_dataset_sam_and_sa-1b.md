@@ -15,7 +15,7 @@ categories:
 
 ## Introduction
 
-[![Segment anything model demo2.png](/images/thumb/6/66/Segment_anything_model_demo2.png/400px-Segment_anything_model_demo2.png)](/wiki/file_segment_anything_model_demo2_png)
+![Segment anything model demo2.png](/images/thumb/6/66/Segment_anything_model_demo2.png/400px-Segment_anything_model_demo2.png)
 
 ### Model Introduction
 
@@ -33,7 +33,7 @@ SAM is designed to reduce the need for task-specific modeling expertise, trainin
 
 ## Segmentation Anything Model (SAM) Structure and Implementation
 
-[![Segment anything model1.png](/images/thumb/8/8f/Segment_anything_model1.png/400px-Segment_anything_model1.png)](/wiki/file_segment_anything_model1_png)
+![Segment anything model1.png](/images/thumb/8/8f/Segment_anything_model1.png/400px-Segment_anything_model1.png)
 
 SAM's structure consists of three components:
 
@@ -53,7 +53,7 @@ SAM was trained for 3-5 days on 256 A100 GPUs.
 
 ## Segmentation Anything Model (SAM) Overview
 
-[![Segment anything model demo1.png](/images/thumb/d/dd/Segment_anything_model_demo1.png/400px-Segment_anything_model_demo1.png)](/wiki/file_segment_anything_model_demo1_png)
+![Segment anything model demo1.png](/images/thumb/d/dd/Segment_anything_model_demo1.png/400px-Segment_anything_model_demo1.png)
 
 ### Input Prompts
 
@@ -77,13 +77,13 @@ Historically, there have been two main approaches to segmentation problems: [int
 
 ### Promptable Segmentation
 
-[![Segment anything model2.png](/images/thumb/0/08/Segment_anything_model2.png/400px-Segment_anything_model2.png)](/wiki/file_segment_anything_model2_png)
+![Segment anything model2.png](/images/thumb/0/08/Segment_anything_model2.png/400px-Segment_anything_model2.png)
 
 SAM is designed to return a valid segmentation mask for any [prompt](/wiki/prompt), whether it be foreground/background points, a rough box or mask, freeform text, or any other information indicating what to segment in an image. This model has been trained on the SA-1B dataset, which consists of over 1 billion masks, allowing it to generalize to new objects and images beyond its [training data](/wiki/training_data). As a result, practitioners no longer need to collect their own segmentation data and [fine-tune](/index.php?title=Fine-tune&action=edit&redlink=1) a model for their use case.
 
 ## Segmenting 1 Billion Masks: Building SA-1B Dataset
 
-[![Segment anything dataset1.png](/images/thumb/9/9b/Segment_anything_dataset1.png/400px-Segment_anything_dataset1.png)](/wiki/file_segment_anything_dataset1_png)
+![Segment anything dataset1.png](/images/thumb/9/9b/Segment_anything_dataset1.png/400px-Segment_anything_dataset1.png)
 
 To train SAM, a massive and diverse dataset was needed. The SA-1B dataset was collected using the model itself; annotators used SAM to annotate images interactively, and the newly annotated data was then used to update SAM. This process was repeated multiple times to iteratively improve both the model and the [dataset](/wiki/dataset).
 

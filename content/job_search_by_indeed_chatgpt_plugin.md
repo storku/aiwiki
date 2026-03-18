@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Job search by Indeed (ChatGPT Plugin) |
 | --- |
-| [![Job search by Indeed.jpg](/images/8/85/Job_search_by_Indeed.jpg)](/wiki/file_job_search_by_indeed_jpg) |
+| ![Job search by Indeed.jpg](/images/8/85/Job_search_by_Indeed.jpg) |
 | Information |
 | **Name** | Job search by Indeed |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

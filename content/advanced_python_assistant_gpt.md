@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Advanced Python Assistant (GPT) |
 | --- |
-| [![Advanced Python Assistant (GPT).png](/images/thumb/1/1f/Advanced_Python_Assistant_%28GPT%29.png/300px-Advanced_Python_Assistant_%28GPT%29.png)](/wiki/file_advanced_python_assistant_gpt_png) |
+| ![Advanced Python Assistant (GPT).png](/images/thumb/1/1f/Advanced_Python_Assistant_%28GPT%29.png/300px-Advanced_Python_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | Advanced Python Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

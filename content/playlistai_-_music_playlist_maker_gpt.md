@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| PlaylistAI - Music Playlist Maker (GPT) |
 | --- |
-| [![PlaylistAI - Music Playlist Maker (GPT).png](/images/thumb/d/d3/PlaylistAI_-_Music_Playlist_Maker_%28GPT%29.png/300px-PlaylistAI_-_Music_Playlist_Maker_%28GPT%29.png)](/wiki/file_playlistai_-_music_playlist_maker_gpt_png) |
+| ![PlaylistAI - Music Playlist Maker (GPT).png](/images/thumb/d/d3/PlaylistAI_-_Music_Playlist_Maker_%28GPT%29.png/300px-PlaylistAI_-_Music_Playlist_Maker_%28GPT%29.png) |
 | Information |
 | **Name** | PlaylistAI - Music Playlist Maker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Custom Knowledge (ChatGPT Plugin) |
 | --- |
-| [![Custom Knowledge.jpeg](/images/2/21/Custom_Knowledge.jpeg)](/wiki/file_custom_knowledge_jpeg) |
+| ![Custom Knowledge.jpeg](/images/2/21/Custom_Knowledge.jpeg) |
 | Information |
 | **Name** | Custom Knowledge |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

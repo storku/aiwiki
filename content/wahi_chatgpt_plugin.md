@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Wahi (ChatGPT Plugin) |
 | --- |
-| [![Wahi.jpg](/images/c/cd/Wahi.jpg)](/wiki/file_wahi_jpg) |
+| ![Wahi.jpg](/images/c/cd/Wahi.jpg) |
 | Information |
 | **Name** | Wahi |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Laundry Buddy (GPT) |
 | --- |
-| [![Laundry Buddy (GPT).png](/images/thumb/6/61/Laundry_Buddy_%28GPT%29.png/300px-Laundry_Buddy_%28GPT%29.png)](/wiki/file_laundry_buddy_gpt_png) |
+| ![Laundry Buddy (GPT).png](/images/thumb/6/61/Laundry_Buddy_%28GPT%29.png/300px-Laundry_Buddy_%28GPT%29.png) |
 | Information |
 | **Name** | Laundry Buddy |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

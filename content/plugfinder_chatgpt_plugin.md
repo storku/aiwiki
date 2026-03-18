@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PlugFinder (ChatGPT Plugin) |
 | --- |
-| [![PlugFinder.png](/images/thumb/6/64/PlugFinder.png/300px-PlugFinder.png)](/wiki/file_plugfinder_png) |
+| ![PlugFinder.png](/images/thumb/6/64/PlugFinder.png/300px-PlugFinder.png) |
 | Information |
 | **Name** | PlugFinder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

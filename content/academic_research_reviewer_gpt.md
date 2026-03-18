@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Academic Research Reviewer (GPT) |
 | --- |
-| [![Academic Research Reviewer (GPT).png](/images/thumb/9/9c/Academic_Research_Reviewer_%28GPT%29.png/300px-Academic_Research_Reviewer_%28GPT%29.png)](/wiki/file_academic_research_reviewer_gpt_png) |
+| ![Academic Research Reviewer (GPT).png](/images/thumb/9/9c/Academic_Research_Reviewer_%28GPT%29.png/300px-Academic_Research_Reviewer_%28GPT%29.png) |
 | Information |
 | **Name** | Academic Research Reviewer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

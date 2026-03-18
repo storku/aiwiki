@@ -29,7 +29,7 @@ During the pre-training stage, a dataset containing 1.56 trillion words, sourced
 
 ### LaMDA Fine-Tuning
 
-[![](/images/thumb/4/4f/LaMDa_generative_and_classification.png/300px-LaMDa_generative_and_classification.png)](/wiki/file_lamda_generative_and_classification_png)  [](/wiki/file_lamda_generative_and_classification_png)
+![](/images/thumb/4/4f/LaMDa_generative_and_classification.png/300px-LaMDa_generative_and_classification.png)  
 Figure1. LaMDa’s generative and classification tasks. Source: Google.
 LaMDA was trained to perform a mix of generative tasks to produce natural-language responses to given contexts, and classification tasks to assess response safety and quality in the fine-tuning stage (figure 1). [&#91;2&#93;](#cite_note-”2”-2) [&#91;5&#93;](#cite_note-”5”-5)  The LaMDA generator predicts the next token in a dialog dataset, while LaMDA classifiers predict Safety and Quality (SSI) ratings for each generated response in context using annotated data. The generator produces several candidate responses during dialog, and the classifiers predict SSI and Safety scores for each candidate. Responses with low Safety scores are filtered out, and the remaining candidates are re-ranked by their SSI scores. The top result is chosen as the response. The training data for the generation task is further filtered with LaMDA classifiers to increase the density of high-quality response candidates. [&#91;5&#93;](#cite_note-”5”-5)  This ensures that the most relevant, high-quality, and safest response is given. [&#91;2&#93;](#cite_note-”2”-2)
 
@@ -41,7 +41,7 @@ Quality is divided into Sensibleness, Specificity, and Interestingness (SSI), ev
 
 ### Evaluation
 
-[![](/images/thumb/e/e0/Comparison_between_PT%2C_LaMDA_and_human-rater-generated_dialogs.png/300px-Comparison_between_PT%2C_LaMDA_and_human-rater-generated_dialogs.png)](/wiki/file_comparison_between_pt_lamda_and_human-rater-generated_dialogs_png)  [](/wiki/file_comparison_between_pt_lamda_and_human-rater-generated_dialogs_png)
+![](/images/thumb/e/e0/Comparison_between_PT%2C_LaMDA_and_human-rater-generated_dialogs.png/300px-Comparison_between_PT%2C_LaMDA_and_human-rater-generated_dialogs.png)  
 Figure 2. Comparison between the pre-trained model (PT), fine-tuned model (LaMDA) and human-rater-generated dialogs (Human) for different metrics. Source: Google.
 Progress against the key metrics of Quality, Safety, and Groundedness is measured by collecting responses from the pre-trained model, fine-tuned model, and human raters and evaluated by a separate set of human raters (figure 2). This ongoing process helps to assess the effectiveness of the model in relation to these metrics. [&#91;5&#93;](#cite_note-”5”-5)
 

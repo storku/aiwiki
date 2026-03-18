@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AskYourKG (ChatGPT Plugin) |
 | --- |
-| [![AskYourKG.jpeg](/images/1/1a/AskYourKG.jpeg)](/wiki/file_askyourkg_jpeg) |
+| ![AskYourKG.jpeg](/images/1/1a/AskYourKG.jpeg) |
 | Information |
 | **Name** | AskYourKG |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

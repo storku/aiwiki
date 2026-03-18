@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Hauling Buddies (ChatGPT Plugin) |
 | --- |
-| [![Hauling Buddies.png](/images/2/21/Hauling_Buddies.png)](/wiki/file_hauling_buddies_png) |
+| ![Hauling Buddies.png](/images/2/21/Hauling_Buddies.png) |
 | Information |
 | **Name** | Hauling Buddies |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

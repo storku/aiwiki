@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crypto Jobs List (ChatGPT Plugin) |
 | --- |
-| [![Crypto Jobs List.jpg](/images/thumb/4/4d/Crypto_Jobs_List.jpg/300px-Crypto_Jobs_List.jpg)](/wiki/file_crypto_jobs_list_jpg) |
+| ![Crypto Jobs List.jpg](/images/thumb/4/4d/Crypto_Jobs_List.jpg/300px-Crypto_Jobs_List.jpg) |
 | Information |
 | **Name** | Crypto Jobs List |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

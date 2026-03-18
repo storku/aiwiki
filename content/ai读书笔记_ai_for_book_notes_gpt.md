@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI读书笔记（AI for Book Notes ） (GPT) |
 | --- |
-| [![AI读书笔记（AI for Book Notes ） (GPT).jpg](/images/thumb/2/24/AI%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%88AI_for_Book_Notes_%EF%BC%89_%28GPT%29.jpg/300px-AI%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%88AI_for_Book_Notes_%EF%BC%89_%28GPT%29.jpg)](/wiki/file_ai读书笔记_ai_for_book_notes_gpt_jpg) |
+| ![AI读书笔记（AI for Book Notes ） (GPT).jpg](/images/thumb/2/24/AI%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%88AI_for_Book_Notes_%EF%BC%89_%28GPT%29.jpg/300px-AI%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%88AI_for_Book_Notes_%EF%BC%89_%28GPT%29.jpg) |
 | Information |
 | **Name** | AI读书笔记（AI for Book  Notes ） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

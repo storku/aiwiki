@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatWithGit (ChatGPT Plugin) |
 | --- |
-| [![ChatWithGit.png](/images/thumb/b/b3/ChatWithGit.png/300px-ChatWithGit.png)](/wiki/file_chatwithgit_png) |
+| ![ChatWithGit.png](/images/thumb/b/b3/ChatWithGit.png/300px-ChatWithGit.png) |
 | Information |
 | **Name** | ChatWithGit |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

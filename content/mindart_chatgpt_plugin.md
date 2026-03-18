@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mindart (ChatGPT Plugin) |
 | --- |
-| [![Mindart.jpg](/images/thumb/7/7e/Mindart.jpg/300px-Mindart.jpg)](/wiki/file_mindart_jpg) |
+| ![Mindart.jpg](/images/thumb/7/7e/Mindart.jpg/300px-Mindart.jpg) |
 | Information |
 | **Name** | Mindart |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

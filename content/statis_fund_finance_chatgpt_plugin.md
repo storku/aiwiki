@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Statis Fund Finance (ChatGPT Plugin) |
 | --- |
-| [![Statis Fund Finance.png](/images/2/2f/Statis_Fund_Finance.png)](/wiki/file_statis_fund_finance_png) |
+| ![Statis Fund Finance.png](/images/2/2f/Statis_Fund_Finance.png) |
 | Information |
 | **Name** | Statis Fund Finance |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

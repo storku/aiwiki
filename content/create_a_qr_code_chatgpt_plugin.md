@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Create a QR code (ChatGPT Plugin) |
 | --- |
-| [![Create a QR code.png](/images/b/bd/Create_a_QR_code.png)](/wiki/file_create_a_qr_code_png) |
+| ![Create a QR code.png](/images/b/bd/Create_a_QR_code.png) |
 | Information |
 | **Name** | Create a QR code |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

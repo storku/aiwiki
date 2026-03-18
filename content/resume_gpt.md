@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Resume (GPT) |
 | --- |
-| [![Resume (GPT).png](/images/thumb/c/ce/Resume_%28GPT%29.png/300px-Resume_%28GPT%29.png)](/wiki/file_resume_gpt_png) |
+| ![Resume (GPT).png](/images/thumb/c/ce/Resume_%28GPT%29.png/300px-Resume_%28GPT%29.png) |
 | Information |
 | **Name** | Resume |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

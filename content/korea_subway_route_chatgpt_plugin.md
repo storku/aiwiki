@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Korea subway route (ChatGPT Plugin) |
 | --- |
-| [![Korea subway route.png](/images/f/f8/Korea_subway_route.png)](/wiki/file_korea_subway_route_png) |
+| ![Korea subway route.png](/images/f/f8/Korea_subway_route.png) |
 | Information |
 | **Name** | Korea subway route |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

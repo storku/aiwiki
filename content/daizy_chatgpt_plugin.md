@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| DAIZY (ChatGPT Plugin) |
 | --- |
-| [![DAIZY.png](/images/b/bf/DAIZY.png)](/wiki/file_daizy_png) |
+| ![DAIZY.png](/images/b/bf/DAIZY.png) |
 | Information |
 | **Name** | DAIZY |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

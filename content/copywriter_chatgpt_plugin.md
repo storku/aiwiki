@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Copywriter (ChatGPT Plugin) |
 | --- |
-| [![Copywriter.png](/images/c/c2/Copywriter.png)](/wiki/file_copywriter_png) |
+| ![Copywriter.png](/images/c/c2/Copywriter.png) |
 | Information |
 | **Name** | Copywriter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

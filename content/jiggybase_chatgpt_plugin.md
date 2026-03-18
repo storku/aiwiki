@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| JiggyBase (ChatGPT Plugin) |
 | --- |
-| [![JiggyBase.png](/images/thumb/f/f5/JiggyBase.png/300px-JiggyBase.png)](/wiki/file_jiggybase_png) |
+| ![JiggyBase.png](/images/thumb/f/f5/JiggyBase.png/300px-JiggyBase.png) |
 | Information |
 | **Name** | JiggyBase |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

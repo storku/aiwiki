@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HaffPrice (ChatGPT Plugin) |
 | --- |
-| [![HaffPrice.png](/images/f/fb/HaffPrice.png)](/wiki/file_haffprice_png) |
+| ![HaffPrice.png](/images/f/fb/HaffPrice.png) |
 | Information |
 | **Name** | HaffPrice |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

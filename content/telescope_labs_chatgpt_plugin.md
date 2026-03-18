@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Telescope Labs (ChatGPT Plugin) |
 | --- |
-| [![Telescope Labs.jpeg](/images/0/09/Telescope_Labs.jpeg)](/wiki/file_telescope_labs_jpeg) |
+| ![Telescope Labs.jpeg](/images/0/09/Telescope_Labs.jpeg) |
 | Information |
 | **Name** | Telescope Labs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

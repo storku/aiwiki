@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Shop Keeper |
 | --- |
-| [![GPT Shop Keeper.png](/images/thumb/8/87/GPT_Shop_Keeper.png/300px-GPT_Shop_Keeper.png)](/wiki/file_gpt_shop_keeper_png) |
+| ![GPT Shop Keeper.png](/images/thumb/8/87/GPT_Shop_Keeper.png/300px-GPT_Shop_Keeper.png) |
 | Information |
 | **Name** | GPT Shop Keeper |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

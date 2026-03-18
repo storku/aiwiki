@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| LIFULL HOME&#39;S (ChatGPT Plugin) |
 | --- |
-| [![LIFULL HOME&#39;S.jpg](/images/thumb/e/eb/LIFULL_HOME%27S.jpg/300px-LIFULL_HOME%27S.jpg)](/wiki/file_lifull_home_s_jpg) |
+| ![LIFULL HOME&#39;S.jpg](/images/thumb/e/eb/LIFULL_HOME%27S.jpg/300px-LIFULL_HOME%27S.jpg) |
 | Information |
 | **Name** | LIFULL HOME'S |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

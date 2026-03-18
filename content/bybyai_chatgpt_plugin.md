@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ByByAI (ChatGPT Plugin) |
 | --- |
-| [![ByByAI.jpeg](/images/2/24/ByByAI.jpeg)](/wiki/file_bybyai_jpeg) |
+| ![ByByAI.jpeg](/images/2/24/ByByAI.jpeg) |
 | Information |
 | **Name** | ByByAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

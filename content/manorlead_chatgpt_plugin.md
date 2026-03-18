@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Manorlead (ChatGPT Plugin) |
 | --- |
-| [![Manorlead.png](/images/d/db/Manorlead.png)](/wiki/file_manorlead_png) |
+| ![Manorlead.png](/images/d/db/Manorlead.png) |
 | Information |
 | **Name** | Manorlead |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

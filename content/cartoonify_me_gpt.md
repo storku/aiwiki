@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Cartoonify Me (GPT) |
 | --- |
-| [![Cartoonify Me (GPT).png](/images/thumb/0/04/Cartoonify_Me_%28GPT%29.png/300px-Cartoonify_Me_%28GPT%29.png)](/wiki/file_cartoonify_me_gpt_png) |
+| ![Cartoonify Me (GPT).png](/images/thumb/0/04/Cartoonify_Me_%28GPT%29.png/300px-Cartoonify_Me_%28GPT%29.png) |
 | Information |
 | **Name** | Cartoonify Me |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

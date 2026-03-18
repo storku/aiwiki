@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Competitor PPC Ads (ChatGPT Plugin) |
 | --- |
-| [![Competitor PPC Ads.png](/images/thumb/a/a2/Competitor_PPC_Ads.png/300px-Competitor_PPC_Ads.png)](/wiki/file_competitor_ppc_ads_png) |
+| ![Competitor PPC Ads.png](/images/thumb/a/a2/Competitor_PPC_Ads.png/300px-Competitor_PPC_Ads.png) |
 | Information |
 | **Name** | Competitor PPC Ads |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

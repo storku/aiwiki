@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatWithWebsite (ChatGPT Plugin) |
 | --- |
-| [![ChatWithWebsite.png](/images/thumb/9/9f/ChatWithWebsite.png/300px-ChatWithWebsite.png)](/wiki/file_chatwithwebsite_png) |
+| ![ChatWithWebsite.png](/images/thumb/9/9f/ChatWithWebsite.png/300px-ChatWithWebsite.png) |
 | Information |
 | **Name** | ChatWithWebsite |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

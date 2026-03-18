@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mantium (ChatGPT Plugin) |
 | --- |
-| [![Mantium.jpg](/images/thumb/a/a2/Mantium.jpg/300px-Mantium.jpg)](/wiki/file_mantium_jpg) |
+| ![Mantium.jpg](/images/thumb/a/a2/Mantium.jpg/300px-Mantium.jpg) |
 | Information |
 | **Name** | Mantium |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

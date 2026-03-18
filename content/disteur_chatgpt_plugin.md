@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Disteur (ChatGPT Plugin) |
 | --- |
-| [![Disteur.jpeg](/images/d/d6/Disteur.jpeg)](/wiki/file_disteur_jpeg) |
+| ![Disteur.jpeg](/images/d/d6/Disteur.jpeg) |
 | Information |
 | **Name** | Disteur |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

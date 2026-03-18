@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Smart Connections (ChatGPT Plugin) |
 | --- |
-| [![Smart Connections.jpeg](/images/b/b2/Smart_Connections.jpeg)](/wiki/file_smart_connections_jpeg) |
+| ![Smart Connections.jpeg](/images/b/b2/Smart_Connections.jpeg) |
 | Information |
 | **Name** | Smart Connections |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

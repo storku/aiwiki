@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Access PDF |
 | --- |
-| [![Access PDF & Docs.jpeg](/images/d/dd/Access_PDF_%26_Docs.jpeg)](/wiki/file_access_pdf_docs_jpeg) |
+| ![Access PDF & Docs.jpeg](/images/d/dd/Access_PDF_%26_Docs.jpeg) |
 | Information |
 | **Name** | Access PDF & Docs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

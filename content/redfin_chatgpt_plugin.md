@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Redfin (ChatGPT Plugin) |
 | --- |
-| [![Redfin.png](/images/thumb/2/29/Redfin.png/300px-Redfin.png)](/wiki/file_redfin_png) |
+| ![Redfin.png](/images/thumb/2/29/Redfin.png/300px-Redfin.png) |
 | Information |
 | **Name** | Redfin |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

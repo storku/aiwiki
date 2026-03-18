@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SummarizeAnything.ai (ChatGPT Plugin) |
 | --- |
-| [![SummarizeAnything.ai.jpg](/images/thumb/c/c6/SummarizeAnything.ai.jpg/300px-SummarizeAnything.ai.jpg)](/wiki/file_summarizeanything_ai_jpg) |
+| ![SummarizeAnything.ai.jpg](/images/thumb/c/c6/SummarizeAnything.ai.jpg/300px-SummarizeAnything.ai.jpg) |
 | Information |
 | **Name** | SummarizeAnything.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

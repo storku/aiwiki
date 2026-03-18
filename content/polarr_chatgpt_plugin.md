@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Polarr (ChatGPT Plugin) |
 | --- |
-| [![Polarr.png](/images/7/70/Polarr.png)](/wiki/file_polarr_png) |
+| ![Polarr.png](/images/7/70/Polarr.png) |
 | Information |
 | **Name** | Polarr |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

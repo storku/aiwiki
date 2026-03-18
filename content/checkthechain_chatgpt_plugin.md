@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CheckTheChain (ChatGPT Plugin) |
 | --- |
-| [![CheckTheChain.png](/images/thumb/c/c5/CheckTheChain.png/300px-CheckTheChain.png)](/wiki/file_checkthechain_png) |
+| ![CheckTheChain.png](/images/thumb/c/c5/CheckTheChain.png/300px-CheckTheChain.png) |
 | Information |
 | **Name** | CheckTheChain |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

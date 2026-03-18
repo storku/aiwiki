@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Voxscript (GPT) |
 | --- |
-| [![Voxscript (GPT).png](/images/thumb/6/6b/Voxscript_%28GPT%29.png/300px-Voxscript_%28GPT%29.png)](/wiki/file_voxscript_gpt_png) |
+| ![Voxscript (GPT).png](/images/thumb/6/6b/Voxscript_%28GPT%29.png/300px-Voxscript_%28GPT%29.png) |
 | Information |
 | **Name** | Voxscript |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

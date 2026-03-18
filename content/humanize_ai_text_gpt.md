@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Humanize AI text (GPT) |
 | --- |
-| [![Humanize AI text (GPT).png](/images/thumb/0/08/Humanize_AI_text_%28GPT%29.png/300px-Humanize_AI_text_%28GPT%29.png)](/wiki/file_humanize_ai_text_gpt_png) |
+| ![Humanize AI text (GPT).png](/images/thumb/0/08/Humanize_AI_text_%28GPT%29.png/300px-Humanize_AI_text_%28GPT%29.png) |
 | Information |
 | **Name** | Humanize AI text |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

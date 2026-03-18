@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Pluginpedia (ChatGPT Plugin) |
 | --- |
-| [![Pluginpedia.png](/images/b/b3/Pluginpedia.png)](/wiki/file_pluginpedia_png) |
+| ![Pluginpedia.png](/images/b/b3/Pluginpedia.png) |
 | Information |
 | **Name** | Pluginpedia |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

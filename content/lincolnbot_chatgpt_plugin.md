@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| LincolnBot (ChatGPT Plugin) |
 | --- |
-| [![LincolnBot.jpeg](/images/1/16/LincolnBot.jpeg)](/wiki/file_lincolnbot_jpeg) |
+| ![LincolnBot.jpeg](/images/1/16/LincolnBot.jpeg) |
 | Information |
 | **Name** | LincolnBot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

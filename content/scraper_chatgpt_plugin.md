@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Scraper (ChatGPT Plugin) |
 | --- |
-| [![Scraper.png](/images/thumb/a/ab/Scraper.png/300px-Scraper.png)](/wiki/file_scraper_png) |
+| ![Scraper.png](/images/thumb/a/ab/Scraper.png/300px-Scraper.png) |
 | Information |
 | **Name** | Scraper |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

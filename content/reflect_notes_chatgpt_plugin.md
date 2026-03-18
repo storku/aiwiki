@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Reflect Notes (ChatGPT Plugin) |
 | --- |
-| [![Reflect Notes.png](/images/thumb/e/e8/Reflect_Notes.png/300px-Reflect_Notes.png)](/wiki/file_reflect_notes_png) |
+| ![Reflect Notes.png](/images/thumb/e/e8/Reflect_Notes.png/300px-Reflect_Notes.png) |
 | Information |
 | **Name** | Reflect Notes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Sakenowa (ChatGPT Plugin) |
 | --- |
-| [![Sakenowa.png](/images/thumb/d/d1/Sakenowa.png/300px-Sakenowa.png)](/wiki/file_sakenowa_png) |
+| ![Sakenowa.png](/images/thumb/d/d1/Sakenowa.png/300px-Sakenowa.png) |
 | Information |
 | **Name** | Sakenowa |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

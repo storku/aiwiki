@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TechPulse (ChatGPT Plugin) |
 | --- |
-| [![TechPulse.png](/images/thumb/7/7c/TechPulse.png/300px-TechPulse.png)](/wiki/file_techpulse_png) |
+| ![TechPulse.png](/images/thumb/7/7c/TechPulse.png/300px-TechPulse.png) |
 | Information |
 | **Name** | TechPulse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

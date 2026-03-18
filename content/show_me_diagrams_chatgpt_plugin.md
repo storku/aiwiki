@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Show Me Diagrams (ChatGPT Plugin) |
 | --- |
-| [![Show Me Diagrams.jpeg](/images/3/3c/Show_Me_Diagrams.jpeg)](/wiki/file_show_me_diagrams_jpeg) |
+| ![Show Me Diagrams.jpeg](/images/3/3c/Show_Me_Diagrams.jpeg) |
 | Information |
 | **Name** | Show Me Diagrams |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

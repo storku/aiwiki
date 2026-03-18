@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Outschool (ChatGPT Plugin) |
 | --- |
-| [![Outschool.png](/images/thumb/3/3f/Outschool.png/300px-Outschool.png)](/wiki/file_outschool_png) |
+| ![Outschool.png](/images/thumb/3/3f/Outschool.png/300px-Outschool.png) |
 | Information |
 | **Name** | Outschool |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

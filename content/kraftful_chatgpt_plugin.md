@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Kraftful (ChatGPT Plugin) |
 | --- |
-| [![Kraftful.png](/images/thumb/e/e4/Kraftful.png/300px-Kraftful.png)](/wiki/file_kraftful_png) |
+| ![Kraftful.png](/images/thumb/e/e4/Kraftful.png/300px-Kraftful.png) |
 | Information |
 | **Name** | Kraftful |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

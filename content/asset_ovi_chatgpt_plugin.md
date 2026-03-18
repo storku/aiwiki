@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Asset Ovi (ChatGPT Plugin) |
 | --- |
-| [![Asset Ovi.png](/images/thumb/8/8b/Asset_Ovi.png/300px-Asset_Ovi.png)](/wiki/file_asset_ovi_png) |
+| ![Asset Ovi.png](/images/thumb/8/8b/Asset_Ovi.png/300px-Asset_Ovi.png) |
 | Information |
 | **Name** | Asset Ovi |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

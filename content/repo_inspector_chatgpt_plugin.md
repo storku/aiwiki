@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Repo Inspector (ChatGPT Plugin) |
 | --- |
-| [![Repo Inspector.jpg](/images/thumb/6/67/Repo_Inspector.jpg/300px-Repo_Inspector.jpg)](/wiki/file_repo_inspector_jpg) |
+| ![Repo Inspector.jpg](/images/thumb/6/67/Repo_Inspector.jpg/300px-Repo_Inspector.jpg) |
 | Information |
 | **Name** | Repo Inspector |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Planfit (ChatGPT Plugin) |
 | --- |
-| [![Planfit.png](/images/thumb/a/a2/Planfit.png/300px-Planfit.png)](/wiki/file_planfit_png) |
+| ![Planfit.png](/images/thumb/a/a2/Planfit.png/300px-Planfit.png) |
 | Information |
 | **Name** | Planfit |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| KeyMate.AI Search (ChatGPT Plugin) |
 | --- |
-| [![KeyMate.AI Search.png](/images/c/ce/KeyMate.AI_Search.png)](/wiki/file_keymate_ai_search_png) |
+| ![KeyMate.AI Search.png](/images/c/ce/KeyMate.AI_Search.png) |
 | Information |
 | **Name** | KeyMate.AI Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

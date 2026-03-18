@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Open Lecture (ChatGPT Plugin) |
 | --- |
-| [![Open Lecture.png](/images/thumb/b/bd/Open_Lecture.png/300px-Open_Lecture.png)](/wiki/file_open_lecture_png) |
+| ![Open Lecture.png](/images/thumb/b/bd/Open_Lecture.png/300px-Open_Lecture.png) |
 | Information |
 | **Name** | Open Lecture |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

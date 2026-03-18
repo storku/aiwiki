@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Lark Base Importer (ChatGPT Plugin) |
 | --- |
-| [![Lark Base Importer.png](/images/6/63/Lark_Base_Importer.png)](/wiki/file_lark_base_importer_png) |
+| ![Lark Base Importer.png](/images/6/63/Lark_Base_Importer.png) |
 | Information |
 | **Name** | Lark Base Importer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| SEO Optimized Blog Writer and Analyzer (GPT) |
 | --- |
-| [![SEO Optimized Blog Writer and Analyzer (GPT).png](/images/thumb/6/66/SEO_Optimized_Blog_Writer_and_Analyzer_%28GPT%29.png/300px-SEO_Optimized_Blog_Writer_and_Analyzer_%28GPT%29.png)](/wiki/file_seo_optimized_blog_writer_and_analyzer_gpt_png) |
+| ![SEO Optimized Blog Writer and Analyzer (GPT).png](/images/thumb/6/66/SEO_Optimized_Blog_Writer_and_Analyzer_%28GPT%29.png/300px-SEO_Optimized_Blog_Writer_and_Analyzer_%28GPT%29.png) |
 | Information |
 | **Name** | SEO Optimized Blog Writer and Analyzer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

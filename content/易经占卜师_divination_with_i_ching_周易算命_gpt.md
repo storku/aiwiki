@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 易经占卜师(Divination with I Ching&#59; 周易算命) (GPT) |
 | --- |
-| [![易经占卜师(Divination with I Ching; 周易算命) (GPT).png](/images/thumb/5/59/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%B8%88%28Divination_with_I_Ching%3B_%E5%91%A8%E6%98%93%E7%AE%97%E5%91%BD%29_%28GPT%29.png/300px-%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%B8%88%28Divination_with_I_Ching%3B_%E5%91%A8%E6%98%93%E7%AE%97%E5%91%BD%29_%28GPT%29.png)](/wiki/file_易经占卜师_divination_with_i_ching_周易算命_gpt_png) |
+| ![易经占卜师(Divination with I Ching; 周易算命) (GPT).png](/images/thumb/5/59/%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%B8%88%28Divination_with_I_Ching%3B_%E5%91%A8%E6%98%93%E7%AE%97%E5%91%BD%29_%28GPT%29.png/300px-%E6%98%93%E7%BB%8F%E5%8D%A0%E5%8D%9C%E5%B8%88%28Divination_with_I_Ching%3B_%E5%91%A8%E6%98%93%E7%AE%97%E5%91%BD%29_%28GPT%29.png) |
 | Information |
 | **Name** | 易经占卜师(Divination with I Ching; 周易算命) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

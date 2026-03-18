@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| US Federal Law (ChatGPT Plugin) |
 | --- |
-| [![US Federal Law.jpeg](/images/d/d8/US_Federal_Law.jpeg)](/wiki/file_us_federal_law_jpeg) |
+| ![US Federal Law.jpeg](/images/d/d8/US_Federal_Law.jpeg) |
 | Information |
 | **Name** | US Federal Law |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

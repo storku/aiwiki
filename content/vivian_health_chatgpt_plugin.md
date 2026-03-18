@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Vivian Health (ChatGPT Plugin) |
 | --- |
-| [![Vivian Health.png](/images/thumb/9/95/Vivian_Health.png/300px-Vivian_Health.png)](/wiki/file_vivian_health_png) |
+| ![Vivian Health.png](/images/thumb/9/95/Vivian_Health.png/300px-Vivian_Health.png) |
 | Information |
 | **Name** | Vivian Health |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

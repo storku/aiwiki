@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AskTheCode (ChatGPT Plugin) |
 | --- |
-| [![AskTheCode.jpeg](/images/7/7d/AskTheCode.jpeg)](/wiki/file_askthecode_jpeg) |
+| ![AskTheCode.jpeg](/images/7/7d/AskTheCode.jpeg) |
 | Information |
 | **Name** | AskTheCode |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

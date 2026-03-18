@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crypto ERC20 Scout (ChatGPT Plugin) |
 | --- |
-| [![Crypto ERC20 Scout.png](/images/thumb/c/c6/Crypto_ERC20_Scout.png/300px-Crypto_ERC20_Scout.png)](/wiki/file_crypto_erc20_scout_png) |
+| ![Crypto ERC20 Scout.png](/images/thumb/c/c6/Crypto_ERC20_Scout.png/300px-Crypto_ERC20_Scout.png) |
 | Information |
 | **Name** | Crypto ERC20 Scout |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

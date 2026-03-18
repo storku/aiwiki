@@ -16,11 +16,11 @@ categories:
   - "C++_software"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[![Nvidia omniverse1.png](/images/thumb/a/ae/Nvidia_omniverse1.png/300px-Nvidia_omniverse1.png)](/wiki/file_nvidia_omniverse1_png)
+![Nvidia omniverse1.png](/images/thumb/a/ae/Nvidia_omniverse1.png/300px-Nvidia_omniverse1.png)
 
-[![Nvidia omniverse2.jpeg](/images/thumb/1/19/Nvidia_omniverse2.jpeg/300px-Nvidia_omniverse2.jpeg)](/wiki/file_nvidia_omniverse2_jpeg)
+![Nvidia omniverse2.jpeg](/images/thumb/1/19/Nvidia_omniverse2.jpeg/300px-Nvidia_omniverse2.jpeg)
 
-[![Nvidia omniverse3.jpeg](/images/thumb/a/ab/Nvidia_omniverse3.jpeg/300px-Nvidia_omniverse3.jpeg)](/wiki/file_nvidia_omniverse3_jpeg)
+![Nvidia omniverse3.jpeg](/images/thumb/a/ab/Nvidia_omniverse3.jpeg/300px-Nvidia_omniverse3.jpeg)
 
 **NVIDIA Omniverse** is a scalable, multi-[GPU](/index.php?title=GPU&action=edit&redlink=1) real-time 3D graphics collaboration and simulation platform developed by [NVIDIA](/wiki/nvidia).[&#91;1&#93;](#cite_note-nvidia-docs-1) It is a modular development platform of [SDKs](/index.php?title=Software_development_kit&action=edit&redlink=1), [APIs](/index.php?title=Application_programming_interface&action=edit&redlink=1), and [microservices](/index.php?title=Microservices&action=edit&redlink=1) for building [3D applications](/index.php?title=3D_computer_graphics&action=edit&redlink=1) and services powered by [Universal Scene Description](/index.php?title=Universal_Scene_Description&action=edit&redlink=1) (OpenUSD) and [NVIDIA RTX](/index.php?title=NVIDIA_RTX&action=edit&redlink=1) rendering technologies.[&#91;2&#93;](#cite_note-developer-platform-2) The platform enables designers, artists, and engineers to work together in a shared virtual space to create and simulate complex 3D scenes and worlds in real time, with high fidelity and physical accuracy.[&#91;3&#93;](#cite_note-open-beta-3)
 

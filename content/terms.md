@@ -217,7 +217,7 @@ slug: "terms"
 
 **[Pre-training](/wiki/pre-training)**
 
-**[Presentations](/wiki/presentations)**
+**Presentations**
 
 **[Prompt](/wiki/prompt)**
 

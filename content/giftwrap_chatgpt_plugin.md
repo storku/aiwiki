@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Giftwrap (ChatGPT Plugin) |
 | --- |
-| [![Giftwrap.png](/images/thumb/d/d5/Giftwrap.png/300px-Giftwrap.png)](/wiki/file_giftwrap_png) |
+| ![Giftwrap.png](/images/thumb/d/d5/Giftwrap.png/300px-Giftwrap.png) |
 | Information |
 | **Name** | Giftwrap |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

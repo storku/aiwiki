@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Flowbite GPT |
 | --- |
-| [![Flowbite GPT.png](/images/thumb/a/ab/Flowbite_GPT.png/300px-Flowbite_GPT.png)](/wiki/file_flowbite_gpt_png) |
+| ![Flowbite GPT.png](/images/thumb/a/ab/Flowbite_GPT.png/300px-Flowbite_GPT.png) |
 | Information |
 | **Name** | Flowbite GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

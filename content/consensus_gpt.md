@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Consensus (GPT) |
 | --- |
-| [![Consensus (GPT).png](/images/thumb/8/8d/Consensus_%28GPT%29.png/300px-Consensus_%28GPT%29.png)](/wiki/file_consensus_gpt_png) |
+| ![Consensus (GPT).png](/images/thumb/8/8d/Consensus_%28GPT%29.png/300px-Consensus_%28GPT%29.png) |
 | Information |
 | **Name** | Consensus |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

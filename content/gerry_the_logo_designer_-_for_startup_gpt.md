@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Gerry, The Logo Designer - For Startup (GPT) |
 | --- |
-| [![Gerry, The Logo Designer - For Startup (GPT).png](/images/thumb/c/c3/Gerry%2C_The_Logo_Designer_-_For_Startup_%28GPT%29.png/300px-Gerry%2C_The_Logo_Designer_-_For_Startup_%28GPT%29.png)](/wiki/file_gerry_the_logo_designer_-_for_startup_gpt_png) |
+| ![Gerry, The Logo Designer - For Startup (GPT).png](/images/thumb/c/c3/Gerry%2C_The_Logo_Designer_-_For_Startup_%28GPT%29.png/300px-Gerry%2C_The_Logo_Designer_-_For_Startup_%28GPT%29.png) |
 | Information |
 | **Name** | Gerry, The Logo Designer - For Startup |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

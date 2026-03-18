@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bibliography Crossref (ChatGPT Plugin) |
 | --- |
-| [![Bibliography Crossref.jpg](/images/thumb/0/08/Bibliography_Crossref.jpg/300px-Bibliography_Crossref.jpg)](/wiki/file_bibliography_crossref_jpg) |
+| ![Bibliography Crossref.jpg](/images/thumb/0/08/Bibliography_Crossref.jpg/300px-Bibliography_Crossref.jpg) |
 | Information |
 | **Name** | Bibliography Crossref |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Detector |
 | --- |
-| [![GPT Detector.png](/images/thumb/1/18/GPT_Detector.png/300px-GPT_Detector.png)](/wiki/file_gpt_detector_png) |
+| ![GPT Detector.png](/images/thumb/1/18/GPT_Detector.png/300px-GPT_Detector.png) |
 | Information |
 | **Name** | GPT Detector |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

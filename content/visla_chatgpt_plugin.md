@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Visla (ChatGPT Plugin) |
 | --- |
-| [![Visla.png](/images/4/4e/Visla.png)](/wiki/file_visla_png) |
+| ![Visla.png](/images/4/4e/Visla.png) |
 | Information |
 | **Name** | Visla |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

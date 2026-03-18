@@ -13,7 +13,7 @@ categories:
   - "XAI"
 ---[Template:Infobox software](/index.php?title=Template:Infobox_software&action=edit&redlink=1)
 
-[*](/wiki/file_grok_logo1_png)
+*
 
 **Grok** is a family of [generative artificial intelligence](/index.php?title=Generative_artificial_intelligence&action=edit&redlink=1) [chatbots](/index.php?title=Chatbot&action=edit&redlink=1) and [large language models](/wiki/large_language_model) (LLMs) developed by [xAI](/wiki/xai), a company founded by [Elon Musk](/index.php?title=Elon_Musk&action=edit&redlink=1). Launched on November 4, 2023, Grok is designed to provide conversational AI capabilities with real-time information access through integration with the [X](/index.php?title=X_(social_network)&action=edit&redlink=1) platform (formerly Twitter). The name "Grok" is derived from the verb coined by [Robert A. Heinlein](/index.php?title=Robert_A._Heinlein&action=edit&redlink=1) in his 1961 novel [Stranger in a Strange Land](/index.php?title=Stranger_in_a_Strange_Land&action=edit&redlink=1)*, describing a profound form of understanding.[&#91;1&#93;](#cite_note-naming-1)
 

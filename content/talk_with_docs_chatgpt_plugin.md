@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Talk With Docs (ChatGPT Plugin) |
 | --- |
-| [![Talk With Docs.jpeg](/images/3/38/Talk_With_Docs.jpeg)](/wiki/file_talk_with_docs_jpeg) |
+| ![Talk With Docs.jpeg](/images/3/38/Talk_With_Docs.jpeg) |
 | Information |
 | **Name** | Talk With Docs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

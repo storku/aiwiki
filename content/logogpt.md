@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| LogoGPT |
 | --- |
-| [![LogoGPT.png](/images/thumb/1/10/LogoGPT.png/300px-LogoGPT.png)](/wiki/file_logogpt_png) |
+| ![LogoGPT.png](/images/thumb/1/10/LogoGPT.png/300px-LogoGPT.png) |
 | Information |
 | **Name** | LogoGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

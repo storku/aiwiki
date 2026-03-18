@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Books (GPT) |
 | --- |
-| [![Books (GPT).png](/images/thumb/6/66/Books_%28GPT%29.png/300px-Books_%28GPT%29.png)](/wiki/file_books_gpt_png) |
+| ![Books (GPT).png](/images/thumb/6/66/Books_%28GPT%29.png/300px-Books_%28GPT%29.png) |
 | Information |
 | **Name** | Books |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Rogo (ChatGPT Plugin) |
 | --- |
-| [![Rogo.png](/images/d/d7/Rogo.png)](/wiki/file_rogo_png) |
+| ![Rogo.png](/images/d/d7/Rogo.png) |
 | Information |
 | **Name** | Rogo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

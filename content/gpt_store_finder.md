@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Store Finder |
 | --- |
-| [![GPT Store Finder.png](/images/thumb/c/c7/GPT_Store_Finder.png/300px-GPT_Store_Finder.png)](/wiki/file_gpt_store_finder_png) |
+| ![GPT Store Finder.png](/images/thumb/c/c7/GPT_Store_Finder.png/300px-GPT_Store_Finder.png) |
 | Information |
 | **Name** | GPT Store Finder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

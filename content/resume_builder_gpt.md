@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Resume Builder (GPT) |
 | --- |
-| [![Resume Builder (GPT).png](/images/thumb/9/90/Resume_Builder_%28GPT%29.png/300px-Resume_Builder_%28GPT%29.png)](/wiki/file_resume_builder_gpt_png) |
+| ![Resume Builder (GPT).png](/images/thumb/9/90/Resume_Builder_%28GPT%29.png/300px-Resume_Builder_%28GPT%29.png) |
 | Information |
 | **Name** | Resume Builder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

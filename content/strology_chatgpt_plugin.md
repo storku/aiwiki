@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Strology (ChatGPT Plugin) |
 | --- |
-| [![Strology.png](/images/thumb/4/4e/Strology.png/300px-Strology.png)](/wiki/file_strology_png) |
+| ![Strology.png](/images/thumb/4/4e/Strology.png/300px-Strology.png) |
 | Information |
 | **Name** | Strology |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ask Cars (ChatGPT Plugin) |
 | --- |
-| [![Ask Cars.jpeg](/images/b/b6/Ask_Cars.jpeg)](/wiki/file_ask_cars_jpeg) |
+| ![Ask Cars.jpeg](/images/b/b6/Ask_Cars.jpeg) |
 | Information |
 | **Name** | Ask Cars |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

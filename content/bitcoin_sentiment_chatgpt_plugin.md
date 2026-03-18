@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bitcoin Sentiment (ChatGPT Plugin) |
 | --- |
-| [![Bitcoin Sentiment.png](/images/e/e3/Bitcoin_Sentiment.png)](/wiki/file_bitcoin_sentiment_png) |
+| ![Bitcoin Sentiment.png](/images/e/e3/Bitcoin_Sentiment.png) |
 | Information |
 | **Name** | Bitcoin Sentiment |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

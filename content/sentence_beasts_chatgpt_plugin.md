@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Sentence Beasts (ChatGPT Plugin) |
 | --- |
-| [![Sentence Beasts.jpg](/images/thumb/3/32/Sentence_Beasts.jpg/300px-Sentence_Beasts.jpg)](/wiki/file_sentence_beasts_jpg) |
+| ![Sentence Beasts.jpg](/images/thumb/3/32/Sentence_Beasts.jpg/300px-Sentence_Beasts.jpg) |
 | Information |
 | **Name** | Sentence Beasts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

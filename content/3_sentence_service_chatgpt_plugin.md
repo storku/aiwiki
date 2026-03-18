@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| 3 Sentence Service (ChatGPT Plugin) |
 | --- |
-| [![3 Sentence Service.png](/images/thumb/0/0a/3_Sentence_Service.png/300px-3_Sentence_Service.png)](/wiki/file_3_sentence_service_png) |
+| ![3 Sentence Service.png](/images/thumb/0/0a/3_Sentence_Service.png/300px-3_Sentence_Service.png) |
 | Information |
 | **Name** | 3 Sentence Service |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

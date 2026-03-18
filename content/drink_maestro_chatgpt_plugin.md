@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Drink Maestro (ChatGPT Plugin) |
 | --- |
-| [![Drink Maestro.jpeg](/images/8/8d/Drink_Maestro.jpeg)](/wiki/file_drink_maestro_jpeg) |
+| ![Drink Maestro.jpeg](/images/8/8d/Drink_Maestro.jpeg) |
 | Information |
 | **Name** | Drink Maestro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

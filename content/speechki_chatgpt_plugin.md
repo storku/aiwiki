@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Speechki (ChatGPT Plugin) |
 | --- |
-| [![Speechki.jpg](/images/thumb/4/4f/Speechki.jpg/300px-Speechki.jpg)](/wiki/file_speechki_jpg) |
+| ![Speechki.jpg](/images/thumb/4/4f/Speechki.jpg/300px-Speechki.jpg) |
 | Information |
 | **Name** | Speechki |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

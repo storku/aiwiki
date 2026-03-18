@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tax Calculator (ChatGPT Plugin) |
 | --- |
-| [![Tax Calculator.jpg](/images/thumb/f/fd/Tax_Calculator.jpg/300px-Tax_Calculator.jpg)](/wiki/file_tax_calculator_jpg) |
+| ![Tax Calculator.jpg](/images/thumb/f/fd/Tax_Calculator.jpg/300px-Tax_Calculator.jpg) |
 | Information |
 | **Name** | Tax Calculator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

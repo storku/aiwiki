@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| スーパーロゴデザイナ「ロゴ作る君」 (GPT) |
 | --- |
-| [![スーパーロゴデザイナ「ロゴ作る君」 (GPT).png](/images/thumb/2/2f/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AD%E3%82%B4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%80%8C%E3%83%AD%E3%82%B4%E4%BD%9C%E3%82%8B%E5%90%9B%E3%80%8D_%28GPT%29.png/300px-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AD%E3%82%B4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%80%8C%E3%83%AD%E3%82%B4%E4%BD%9C%E3%82%8B%E5%90%9B%E3%80%8D_%28GPT%29.png)](/wiki/file_スーパーロゴデザイナ_ロゴ作る君_gpt_png) |
+| ![スーパーロゴデザイナ「ロゴ作る君」 (GPT).png](/images/thumb/2/2f/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AD%E3%82%B4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%80%8C%E3%83%AD%E3%82%B4%E4%BD%9C%E3%82%8B%E5%90%9B%E3%80%8D_%28GPT%29.png/300px-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%AD%E3%82%B4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%8A%E3%80%8C%E3%83%AD%E3%82%B4%E4%BD%9C%E3%82%8B%E5%90%9B%E3%80%8D_%28GPT%29.png) |
 | Information |
 | **Name** | スーパーロゴデザイナ「ロゴ作る君」 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

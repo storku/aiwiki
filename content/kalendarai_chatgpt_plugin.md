@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| KalendarAI (ChatGPT Plugin) |
 | --- |
-| [![KalendarAI.png](/images/thumb/e/e7/KalendarAI.png/300px-KalendarAI.png)](/wiki/file_kalendarai_png) |
+| ![KalendarAI.png](/images/thumb/e/e7/KalendarAI.png/300px-KalendarAI.png) |
 | Information |
 | **Name** | KalendarAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

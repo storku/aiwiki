@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CreatiCode Scratch (ChatGPT Plugin) |
 | --- |
-| [![CreatiCode Scratch.png](/images/c/cc/CreatiCode_Scratch.png)](/wiki/file_creaticode_scratch_png) |
+| ![CreatiCode Scratch.png](/images/c/cc/CreatiCode_Scratch.png) |
 | Information |
 | **Name** | CreatiCode Scratch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

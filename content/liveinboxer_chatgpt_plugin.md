@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Liveinboxer (ChatGPT Plugin) |
 | --- |
-| [![Liveinboxer.png](/images/a/a0/Liveinboxer.png)](/wiki/file_liveinboxer_png) |
+| ![Liveinboxer.png](/images/a/a0/Liveinboxer.png) |
 | Information |
 | **Name** | liveinboxer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

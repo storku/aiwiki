@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crypto Market News (ChatGPT Plugin) |
 | --- |
-| [![Crypto Market News.png](/images/7/79/Crypto_Market_News.png)](/wiki/file_crypto_market_news_png) |
+| ![Crypto Market News.png](/images/7/79/Crypto_Market_News.png) |
 | Information |
 | **Name** | Crypto Market News |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

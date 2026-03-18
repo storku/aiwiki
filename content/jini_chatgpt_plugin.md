@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Jini (ChatGPT Plugin) |
 | --- |
-| [![Jini.png](/images/thumb/8/8f/Jini.png/300px-Jini.png)](/wiki/file_jini_png) |
+| ![Jini.png](/images/thumb/8/8f/Jini.png/300px-Jini.png) |
 | Information |
 | **Name** | Jini |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

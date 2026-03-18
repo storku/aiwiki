@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| FitPal (GPT) |
 | --- |
-| [![FitPal (GPT).png](/images/thumb/e/e3/FitPal_%28GPT%29.png/300px-FitPal_%28GPT%29.png)](/wiki/file_fitpal_gpt_png) |
+| ![FitPal (GPT).png](/images/thumb/e/e3/FitPal_%28GPT%29.png/300px-FitPal_%28GPT%29.png) |
 | Information |
 | **Name** | FitPal |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

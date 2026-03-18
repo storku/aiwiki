@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Video GPT by VEED |
 | --- |
-| [![Video GPT by VEED.png](/images/thumb/6/6e/Video_GPT_by_VEED.png/300px-Video_GPT_by_VEED.png)](/wiki/file_video_gpt_by_veed_png) |
+| ![Video GPT by VEED.png](/images/thumb/6/6e/Video_GPT_by_VEED.png/300px-Video_GPT_by_VEED.png) |
 | Information |
 | **Name** | Video GPT by VEED |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

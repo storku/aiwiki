@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Transcript Thief (GPT) |
 | --- |
-| [![Transcript Thief (GPT).png](/images/thumb/1/14/Transcript_Thief_%28GPT%29.png/300px-Transcript_Thief_%28GPT%29.png)](/wiki/file_transcript_thief_gpt_png) |
+| ![Transcript Thief (GPT).png](/images/thumb/1/14/Transcript_Thief_%28GPT%29.png/300px-Transcript_Thief_%28GPT%29.png) |
 | Information |
 | **Name** | Transcript Thief |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

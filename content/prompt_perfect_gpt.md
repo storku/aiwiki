@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Prompt Perfect (GPT) |
 | --- |
-| [![Prompt Perfect (GPT).png](/images/thumb/c/c4/Prompt_Perfect_%28GPT%29.png/300px-Prompt_Perfect_%28GPT%29.png)](/wiki/file_prompt_perfect_gpt_png) |
+| ![Prompt Perfect (GPT).png](/images/thumb/c/c4/Prompt_Perfect_%28GPT%29.png/300px-Prompt_Perfect_%28GPT%29.png) |
 | Information |
 | **Name** | Prompt Perfect |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

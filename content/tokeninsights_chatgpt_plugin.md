@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TokenInsights (ChatGPT Plugin) |
 | --- |
-| [![TokenInsights.jpeg](/images/8/86/TokenInsights.jpeg)](/wiki/file_tokeninsights_jpeg) |
+| ![TokenInsights.jpeg](/images/8/86/TokenInsights.jpeg) |
 | Information |
 | **Name** | TokenInsights |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Easy Product Search (ChatGPT Plugin) |
 | --- |
-| [![Easy Product Search.png](/images/thumb/2/24/Easy_Product_Search.png/300px-Easy_Product_Search.png)](/wiki/file_easy_product_search_png) |
+| ![Easy Product Search.png](/images/thumb/2/24/Easy_Product_Search.png/300px-Easy_Product_Search.png) |
 | Information |
 | **Name** | Easy Product Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

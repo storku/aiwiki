@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Brick Box Generator (GPT) |
 | --- |
-| [![Brick Box Generator (GPT).png](/images/thumb/9/90/Brick_Box_Generator_%28GPT%29.png/300px-Brick_Box_Generator_%28GPT%29.png)](/wiki/file_brick_box_generator_gpt_png) |
+| ![Brick Box Generator (GPT).png](/images/thumb/9/90/Brick_Box_Generator_%28GPT%29.png/300px-Brick_Box_Generator_%28GPT%29.png) |
 | Information |
 | **Name** | Brick Box Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

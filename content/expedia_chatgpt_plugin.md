@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Expedia (ChatGPT Plugin) |
 | --- |
-| [![Expedia.png](/images/e/e6/Expedia.png)](/wiki/file_expedia_png) |
+| ![Expedia.png](/images/e/e6/Expedia.png) |
 | Information |
 | **Name** | Expedia |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

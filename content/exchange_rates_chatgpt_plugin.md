@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Exchange Rates (ChatGPT Plugin) |
 | --- |
-| [![Exchange Rates.png](/images/thumb/e/ea/Exchange_Rates.png/300px-Exchange_Rates.png)](/wiki/file_exchange_rates_png) |
+| ![Exchange Rates.png](/images/thumb/e/ea/Exchange_Rates.png/300px-Exchange_Rates.png) |
 | Information |
 | **Name** | Exchange Rates |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

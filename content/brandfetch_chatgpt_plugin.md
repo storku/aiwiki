@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Brandfetch (ChatGPT Plugin) |
 | --- |
-| [![Brandfetch.png](/images/thumb/f/f3/Brandfetch.png/300px-Brandfetch.png)](/wiki/file_brandfetch_png) |
+| ![Brandfetch.png](/images/thumb/f/f3/Brandfetch.png/300px-Brandfetch.png) |
 | Information |
 | **Name** | Brandfetch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

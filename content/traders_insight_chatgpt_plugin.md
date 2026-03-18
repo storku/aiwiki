@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Traders Insight (ChatGPT Plugin) |
 | --- |
-| [![Traders Insight.png](/images/thumb/b/b2/Traders_Insight.png/300px-Traders_Insight.png)](/wiki/file_traders_insight_png) |
+| ![Traders Insight.png](/images/thumb/b/b2/Traders_Insight.png/300px-Traders_Insight.png) |
 | Information |
 | **Name** | Traders Insight |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

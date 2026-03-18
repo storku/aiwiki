@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| DailyBot (ChatGPT Plugin) |
 | --- |
-| [![DailyBot.jpeg](/images/c/ca/DailyBot.jpeg)](/wiki/file_dailybot_jpeg) |
+| ![DailyBot.jpeg](/images/c/ca/DailyBot.jpeg) |
 | Information |
 | **Name** | DailyBot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

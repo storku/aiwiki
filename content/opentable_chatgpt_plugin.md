@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| OpenTable (ChatGPT Plugin) |
 | --- |
-| [![OpenTable.png](/images/thumb/7/76/OpenTable.png/300px-OpenTable.png)](/wiki/file_opentable_png) |
+| ![OpenTable.png](/images/thumb/7/76/OpenTable.png/300px-OpenTable.png) |
 | Information |
 | **Name** | OpenTable |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

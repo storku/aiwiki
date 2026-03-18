@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Finna Bolag (ChatGPT Plugin) |
 | --- |
-| [![Finna Bolag.jpg](/images/thumb/0/06/Finna_Bolag.jpg/300px-Finna_Bolag.jpg)](/wiki/file_finna_bolag_jpg) |
+| ![Finna Bolag.jpg](/images/thumb/0/06/Finna_Bolag.jpg/300px-Finna_Bolag.jpg) |
 | Information |
 | **Name** | Finna Bolag |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

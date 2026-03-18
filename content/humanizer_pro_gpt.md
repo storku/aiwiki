@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Humanizer Pro (GPT) |
 | --- |
-| [![Humanizer Pro (GPT).jpg](/images/thumb/5/51/Humanizer_Pro_%28GPT%29.jpg/300px-Humanizer_Pro_%28GPT%29.jpg)](/wiki/file_humanizer_pro_gpt_jpg) |
+| ![Humanizer Pro (GPT).jpg](/images/thumb/5/51/Humanizer_Pro_%28GPT%29.jpg/300px-Humanizer_Pro_%28GPT%29.jpg) |
 | Information |
 | **Name** | Humanizer Pro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox WebSearchG (ChatGPT Plugin) |
 | --- |
-| [![MixerBox WebSearchG.png](/images/thumb/8/8b/MixerBox_WebSearchG.png/300px-MixerBox_WebSearchG.png)](/wiki/file_mixerbox_websearchg_png) |
+| ![MixerBox WebSearchG.png](/images/thumb/8/8b/MixerBox_WebSearchG.png/300px-MixerBox_WebSearchG.png) |
 | Information |
 | **Name** | MixerBox WebSearchG |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

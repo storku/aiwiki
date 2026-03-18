@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| NutriCheck (GPT) |
 | --- |
-| [![NutriCheck (GPT).png](/images/thumb/7/73/NutriCheck_%28GPT%29.png/300px-NutriCheck_%28GPT%29.png)](/wiki/file_nutricheck_gpt_png) |
+| ![NutriCheck (GPT).png](/images/thumb/7/73/NutriCheck_%28GPT%29.png/300px-NutriCheck_%28GPT%29.png) |
 | Information |
 | **Name** | NutriCheck |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

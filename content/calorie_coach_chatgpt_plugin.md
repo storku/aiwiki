@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Calorie Coach (ChatGPT Plugin) |
 | --- |
-| [![Calorie Coach.jpg](/images/thumb/6/6c/Calorie_Coach.jpg/300px-Calorie_Coach.jpg)](/wiki/file_calorie_coach_jpg) |
+| ![Calorie Coach.jpg](/images/thumb/6/6c/Calorie_Coach.jpg/300px-Calorie_Coach.jpg) |
 | Information |
 | **Name** | Calorie Coach |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

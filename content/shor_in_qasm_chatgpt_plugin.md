@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shor in QASM (ChatGPT Plugin) |
 | --- |
-| [![Shor in QASM.jpg](/images/9/98/Shor_in_QASM.jpg)](/wiki/file_shor_in_qasm_jpg) |
+| ![Shor in QASM.jpg](/images/9/98/Shor_in_QASM.jpg) |
 | Information |
 | **Name** | Shor in QASM |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

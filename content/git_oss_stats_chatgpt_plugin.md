@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Git OSS Stats (ChatGPT Plugin) |
 | --- |
-| [![Git OSS Stats.jpeg](/images/d/dd/Git_OSS_Stats.jpeg)](/wiki/file_git_oss_stats_jpeg) |
+| ![Git OSS Stats.jpeg](/images/d/dd/Git_OSS_Stats.jpeg) |
 | Information |
 | **Name** | Git OSS Stats |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

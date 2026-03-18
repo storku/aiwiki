@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPT Finder 👉🏼 38.000+ GPT Search |
 | --- |
-| [![GPT Finder 👉🏼 38.000 GPT Search.png](/images/thumb/b/b0/GPT_Finder_%F0%9F%91%89%F0%9F%8F%BC_38.000_GPT_Search.png/300px-GPT_Finder_%F0%9F%91%89%F0%9F%8F%BC_38.000_GPT_Search.png)](/wiki/file_gpt_finder_38_000_gpt_search_png) |
+| ![GPT Finder 👉🏼 38.000 GPT Search.png](/images/thumb/b/b0/GPT_Finder_%F0%9F%91%89%F0%9F%8F%BC_38.000_GPT_Search.png/300px-GPT_Finder_%F0%9F%91%89%F0%9F%8F%BC_38.000_GPT_Search.png) |
 | Information |
 | **Name** | GPT Finder 👉🏼 38.000+ GPT Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

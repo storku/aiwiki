@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 10x Engineer (GPT) |
 | --- |
-| [![10x Engineer (GPT).png](/images/thumb/9/94/10x_Engineer_%28GPT%29.png/300px-10x_Engineer_%28GPT%29.png)](/wiki/file_10x_engineer_gpt_png) |
+| ![10x Engineer (GPT).png](/images/thumb/9/94/10x_Engineer_%28GPT%29.png/300px-10x_Engineer_%28GPT%29.png) |
 | Information |
 | **Name** | 10x Engineer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MagiCodex (ChatGPT Plugin) |
 | --- |
-| [![MagiCodex.png](/images/3/32/MagiCodex.png)](/wiki/file_magicodex_png) |
+| ![MagiCodex.png](/images/3/32/MagiCodex.png) |
 | Information |
 | **Name** | MagiCodex |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

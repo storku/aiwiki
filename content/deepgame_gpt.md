@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| DeepGame (GPT) |
 | --- |
-| [![DeepGame (GPT).png](/images/thumb/3/32/DeepGame_%28GPT%29.png/300px-DeepGame_%28GPT%29.png)](/wiki/file_deepgame_gpt_png) |
+| ![DeepGame (GPT).png](/images/thumb/3/32/DeepGame_%28GPT%29.png/300px-DeepGame_%28GPT%29.png) |
 | Information |
 | **Name** | DeepGame |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

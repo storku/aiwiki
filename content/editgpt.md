@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| EditGPT |
 | --- |
-| [![EditGPT.png](/images/thumb/4/40/EditGPT.png/300px-EditGPT.png)](/wiki/file_editgpt_png) |
+| ![EditGPT.png](/images/thumb/4/40/EditGPT.png/300px-EditGPT.png) |
 | Information |
 | **Name** | editGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

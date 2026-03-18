@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Stepstone Jobs (ChatGPT Plugin) |
 | --- |
-| [![Stepstone Jobs.png](/images/thumb/6/6c/Stepstone_Jobs.png/300px-Stepstone_Jobs.png)](/wiki/file_stepstone_jobs_png) |
+| ![Stepstone Jobs.png](/images/thumb/6/6c/Stepstone_Jobs.png/300px-Stepstone_Jobs.png) |
 | Information |
 | **Name** | Stepstone Jobs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

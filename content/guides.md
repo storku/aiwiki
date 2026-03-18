@@ -7,7 +7,7 @@ slug: "guides"
 
 [Acronyms](/wiki/acronyms)
 
-[Presentations](/wiki/presentations)
+Presentations
 
 **[26 Principles of Good Prompts](/wiki/26_principles_of_good_prompts)**
 

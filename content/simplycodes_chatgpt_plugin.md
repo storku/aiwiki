@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SimplyCodes (ChatGPT Plugin) |
 | --- |
-| [![SimplyCodes.jpg](/images/thumb/d/da/SimplyCodes.jpg/300px-SimplyCodes.jpg)](/wiki/file_simplycodes_jpg) |
+| ![SimplyCodes.jpg](/images/thumb/d/da/SimplyCodes.jpg/300px-SimplyCodes.jpg) |
 | Information |
 | **Name** | SimplyCodes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

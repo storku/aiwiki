@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MBTI (ChatGPT Plugin) |
 | --- |
-| [![MBTI.png](/images/thumb/c/cb/MBTI.png/300px-MBTI.png)](/wiki/file_mbti_png) |
+| ![MBTI.png](/images/thumb/c/cb/MBTI.png/300px-MBTI.png) |
 | Information |
 | **Name** | MBTI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

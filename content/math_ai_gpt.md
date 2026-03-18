@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Math AI 🧮 (GPT) |
 | --- |
-| [![Math AI 🧮 (GPT).png](/images/thumb/4/40/Math_AI_%F0%9F%A7%AE_%28GPT%29.png/300px-Math_AI_%F0%9F%A7%AE_%28GPT%29.png)](/wiki/file_math_ai_gpt_png) |
+| ![Math AI 🧮 (GPT).png](/images/thumb/4/40/Math_AI_%F0%9F%A7%AE_%28GPT%29.png/300px-Math_AI_%F0%9F%A7%AE_%28GPT%29.png) |
 | Information |
 | **Name** | Math AI 🧮 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| World News (ChatGPT Plugin) |
 | --- |
-| [![World News.png](/images/thumb/2/2b/World_News.png/300px-World_News.png)](/wiki/file_world_news_png) |
+| ![World News.png](/images/thumb/2/2b/World_News.png/300px-World_News.png) |
 | Information |
 | **Name** | World News |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

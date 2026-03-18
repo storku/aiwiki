@@ -5,7 +5,7 @@ categories:
   - "Companies"
 ---| Mistral AI SAS |
 | --- |
-| [*](/wiki/file_mistral_ai_logo1_png) |
+| * |
 | Type | [Private](/index.php?title=Private_company&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | April 28, 2023 |

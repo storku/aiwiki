@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Code Runner (ChatGPT Plugin) |
 | --- |
-| [![Code Runner.jpeg](/images/a/ab/Code_Runner.jpeg)](/wiki/file_code_runner_jpeg) |
+| ![Code Runner.jpeg](/images/a/ab/Code_Runner.jpeg) |
 | Information |
 | **Name** | Code Runner |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Alaga.ai PH (ChatGPT Plugin) |
 | --- |
-| [![Alaga.ai PH.png](/images/thumb/8/8a/Alaga.ai_PH.png/300px-Alaga.ai_PH.png)](/wiki/file_alaga_ai_ph_png) |
+| ![Alaga.ai PH.png](/images/thumb/8/8a/Alaga.ai_PH.png/300px-Alaga.ai_PH.png) |
 | Information |
 | **Name** | alaga.ai_PH |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

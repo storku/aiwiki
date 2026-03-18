@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TradingBro (ChatGPT Plugin) |
 | --- |
-| [![TradingBro.png](/images/c/cc/TradingBro.png)](/wiki/file_tradingbro_png) |
+| ![TradingBro.png](/images/c/cc/TradingBro.png) |
 | Information |
 | **Name** | TradingBro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

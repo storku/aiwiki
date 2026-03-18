@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| WebG by MixerBox (WebSearchG AI GPT) |
 | --- |
-| [![WebG by MixerBox (WebSearchG AI GPT).png](/images/thumb/7/76/WebG_by_MixerBox_%28WebSearchG_AI_GPT%29.png/300px-WebG_by_MixerBox_%28WebSearchG_AI_GPT%29.png)](/wiki/file_webg_by_mixerbox_websearchg_ai_gpt_png) |
+| ![WebG by MixerBox (WebSearchG AI GPT).png](/images/thumb/7/76/WebG_by_MixerBox_%28WebSearchG_AI_GPT%29.png/300px-WebG_by_MixerBox_%28WebSearchG_AI_GPT%29.png) |
 | Information |
 | **Name** | WebG by MixerBox (WebSearchG AI GPT) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

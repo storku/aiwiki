@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Rank Math SEO Optimized Content Writer (GPT) |
 | --- |
-| [![Rank Math SEO Optimized Content Writer (GPT).png](/images/thumb/1/1d/Rank_Math_SEO_Optimized_Content_Writer_%28GPT%29.png/300px-Rank_Math_SEO_Optimized_Content_Writer_%28GPT%29.png)](/wiki/file_rank_math_seo_optimized_content_writer_gpt_png) |
+| ![Rank Math SEO Optimized Content Writer (GPT).png](/images/thumb/1/1d/Rank_Math_SEO_Optimized_Content_Writer_%28GPT%29.png/300px-Rank_Math_SEO_Optimized_Content_Writer_%28GPT%29.png) |
 | Information |
 | **Name** | Rank Math SEO Optimized Content Writer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

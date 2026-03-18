@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QuickRecall (ChatGPT Plugin) |
 | --- |
-| [![QuickRecall.png](/images/thumb/0/03/QuickRecall.png/300px-QuickRecall.png)](/wiki/file_quickrecall_png) |
+| ![QuickRecall.png](/images/thumb/0/03/QuickRecall.png/300px-QuickRecall.png) |
 | Information |
 | **Name** | QuickRecall |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

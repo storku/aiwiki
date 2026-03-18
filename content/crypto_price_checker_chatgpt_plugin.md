@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crypto Price Checker (ChatGPT Plugin) |
 | --- |
-| [![Crypto Price Checker.png](/images/1/1d/Crypto_Price_Checker.png)](/wiki/file_crypto_price_checker_png) |
+| ![Crypto Price Checker.png](/images/1/1d/Crypto_Price_Checker.png) |
 | Information |
 | **Name** | Crypto Price Checker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Professor Synapse (GPT) |
 | --- |
-| [![Professor Synapse (GPT).png](/images/thumb/c/c1/Professor_Synapse_%28GPT%29.png/300px-Professor_Synapse_%28GPT%29.png)](/wiki/file_professor_synapse_gpt_png) |
+| ![Professor Synapse (GPT).png](/images/thumb/c/c1/Professor_Synapse_%28GPT%29.png/300px-Professor_Synapse_%28GPT%29.png) |
 | Information |
 | **Name** | Professor Synapse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PTCG price research (ChatGPT Plugin) |
 | --- |
-| [![PTCG price research.png](/images/thumb/d/d8/PTCG_price_research.png/300px-PTCG_price_research.png)](/wiki/file_ptcg_price_research_png) |
+| ![PTCG price research.png](/images/thumb/d/d8/PTCG_price_research.png/300px-PTCG_price_research.png) |
 | Information |
 | **Name** | PTCG price research |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

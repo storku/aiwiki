@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI看面相 (GPT) |
 | --- |
-| [![AI看面相 (GPT).png](/images/thumb/2/28/AI%E7%9C%8B%E9%9D%A2%E7%9B%B8_%28GPT%29.png/300px-AI%E7%9C%8B%E9%9D%A2%E7%9B%B8_%28GPT%29.png)](/wiki/file_ai看面相_gpt_png) |
+| ![AI看面相 (GPT).png](/images/thumb/2/28/AI%E7%9C%8B%E9%9D%A2%E7%9B%B8_%28GPT%29.png/300px-AI%E7%9C%8B%E9%9D%A2%E7%9B%B8_%28GPT%29.png) |
 | Information |
 | **Name** | AI看面相 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

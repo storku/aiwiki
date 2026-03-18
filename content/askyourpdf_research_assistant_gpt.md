@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AskYourPDF Research Assistant (GPT) |
 | --- |
-| [![AskYourPDF Research Assistant (GPT).png](/images/thumb/a/a2/AskYourPDF_Research_Assistant_%28GPT%29.png/300px-AskYourPDF_Research_Assistant_%28GPT%29.png)](/wiki/file_askyourpdf_research_assistant_gpt_png) |
+| ![AskYourPDF Research Assistant (GPT).png](/images/thumb/a/a2/AskYourPDF_Research_Assistant_%28GPT%29.png/300px-AskYourPDF_Research_Assistant_%28GPT%29.png) |
 | Information |
 | **Name** | AskYourPDF Research Assistant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Appy Pie App Builder (ChatGPT Plugin) |
 | --- |
-| [![Appy Pie App Builder.png](/images/thumb/0/05/Appy_Pie_App_Builder.png/300px-Appy_Pie_App_Builder.png)](/wiki/file_appy_pie_app_builder_png) |
+| ![Appy Pie App Builder.png](/images/thumb/0/05/Appy_Pie_App_Builder.png/300px-Appy_Pie_App_Builder.png) |
 | Information |
 | **Name** | Appy Pie App Builder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

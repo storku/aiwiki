@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Job Search UK (ChatGPT Plugin) |
 | --- |
-| [![Job Search UK.jpg](/images/thumb/3/31/Job_Search_UK.jpg/300px-Job_Search_UK.jpg)](/wiki/file_job_search_uk_jpg) |
+| ![Job Search UK.jpg](/images/thumb/3/31/Job_Search_UK.jpg/300px-Job_Search_UK.jpg) |
 | Information |
 | **Name** | Job Search UK |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

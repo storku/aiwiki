@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox ImageGen (ChatGPT Plugin) |
 | --- |
-| [![MixerBox ImageGen.jpeg](/images/8/8b/MixerBox_ImageGen.jpeg)](/wiki/file_mixerbox_imagegen_jpeg) |
+| ![MixerBox ImageGen.jpeg](/images/8/8b/MixerBox_ImageGen.jpeg) |
 | Information |
 | **Name** | MixerBox ImageGen |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

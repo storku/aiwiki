@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tabor AI (ChatGPT Plugin) |
 | --- |
-| [![Tabor AI.jpeg](/images/6/6b/Tabor_AI.jpeg)](/wiki/file_tabor_ai_jpeg) |
+| ![Tabor AI.jpeg](/images/6/6b/Tabor_AI.jpeg) |
 | Information |
 | **Name** | Tabor AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

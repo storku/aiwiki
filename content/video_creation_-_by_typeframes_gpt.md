@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Video Creation - by Typeframes (GPT) |
 | --- |
-| [![Video Creation - by Typeframes (GPT).png](/images/thumb/7/79/Video_Creation_-_by_Typeframes_%28GPT%29.png/300px-Video_Creation_-_by_Typeframes_%28GPT%29.png)](/wiki/file_video_creation_-_by_typeframes_gpt_png) |
+| ![Video Creation - by Typeframes (GPT).png](/images/thumb/7/79/Video_Creation_-_by_Typeframes_%28GPT%29.png/300px-Video_Creation_-_by_Typeframes_%28GPT%29.png) |
 | Information |
 | **Name** | Video Creation - by Typeframes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

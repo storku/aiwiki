@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Automation Consultant by Zapier (GPT) |
 | --- |
-| [![Automation Consultant by Zapier (GPT).png](/images/thumb/f/f5/Automation_Consultant_by_Zapier_%28GPT%29.png/300px-Automation_Consultant_by_Zapier_%28GPT%29.png)](/wiki/file_automation_consultant_by_zapier_gpt_png) |
+| ![Automation Consultant by Zapier (GPT).png](/images/thumb/f/f5/Automation_Consultant_by_Zapier_%28GPT%29.png/300px-Automation_Consultant_by_Zapier_%28GPT%29.png) |
 | Information |
 | **Name** | Automation Consultant by Zapier |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

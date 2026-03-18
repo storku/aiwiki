@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Data Analyst (GPT) |
 | --- |
-| [![Data Analyst (GPT).png](/images/thumb/3/30/Data_Analyst_%28GPT%29.png/300px-Data_Analyst_%28GPT%29.png)](/wiki/file_data_analyst_gpt_png) |
+| ![Data Analyst (GPT).png](/images/thumb/3/30/Data_Analyst_%28GPT%29.png/300px-Data_Analyst_%28GPT%29.png) |
 | Information |
 | **Name** | Data Analyst |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

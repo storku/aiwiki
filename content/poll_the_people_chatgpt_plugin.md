@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Poll the People (ChatGPT Plugin) |
 | --- |
-| [![Poll the People.jpeg](/images/d/d0/Poll_the_People.jpeg)](/wiki/file_poll_the_people_jpeg) |
+| ![Poll the People.jpeg](/images/d/d0/Poll_the_People.jpeg) |
 | Information |
 | **Name** | Poll the People |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

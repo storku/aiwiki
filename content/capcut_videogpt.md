@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| CapCut VideoGPT |
 | --- |
-| [![CapCut VideoGPT.png](/images/thumb/1/1c/CapCut_VideoGPT.png/300px-CapCut_VideoGPT.png)](/wiki/file_capcut_videogpt_png) |
+| ![CapCut VideoGPT.png](/images/thumb/1/1c/CapCut_VideoGPT.png/300px-CapCut_VideoGPT.png) |
 | Information |
 | **Name** | CapCut VideoGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

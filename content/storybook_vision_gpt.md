@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Storybook Vision (GPT) |
 | --- |
-| [![Storybook Vision (GPT).png](/images/thumb/f/ff/Storybook_Vision_%28GPT%29.png/300px-Storybook_Vision_%28GPT%29.png)](/wiki/file_storybook_vision_gpt_png) |
+| ![Storybook Vision (GPT).png](/images/thumb/f/ff/Storybook_Vision_%28GPT%29.png/300px-Storybook_Vision_%28GPT%29.png) |
 | Information |
 | **Name** | Storybook Vision |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

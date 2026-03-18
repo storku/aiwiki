@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| WebPilot (GPT) |
 | --- |
-| [![WebPilot (GPT).png](/images/thumb/9/99/WebPilot_%28GPT%29.png/300px-WebPilot_%28GPT%29.png)](/wiki/file_webpilot_gpt_png) |
+| ![WebPilot (GPT).png](/images/thumb/9/99/WebPilot_%28GPT%29.png/300px-WebPilot_%28GPT%29.png) |
 | Information |
 | **Name** | WebPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 超级Dalle (GPT) |
 | --- |
-| [![超级Dalle (GPT).png](/images/thumb/f/f8/%E8%B6%85%E7%BA%A7Dalle_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7Dalle_%28GPT%29.png)](/wiki/file_超级dalle_gpt_png) |
+| ![超级Dalle (GPT).png](/images/thumb/f/f8/%E8%B6%85%E7%BA%A7Dalle_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7Dalle_%28GPT%29.png) |
 | Information |
 | **Name** | 超级Dalle |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PrimeLoupe (ChatGPT Plugin) |
 | --- |
-| [![PrimeLoupe.jpeg](/images/6/63/PrimeLoupe.jpeg)](/wiki/file_primeloupe_jpeg) |
+| ![PrimeLoupe.jpeg](/images/6/63/PrimeLoupe.jpeg) |
 | Information |
 | **Name** | PrimeLoupe |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

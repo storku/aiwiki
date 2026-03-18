@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CarYardBard (ChatGPT Plugin) |
 | --- |
-| [![CarYardBard.png](/images/thumb/3/34/CarYardBard.png/300px-CarYardBard.png)](/wiki/file_caryardbard_png) |
+| ![CarYardBard.png](/images/thumb/3/34/CarYardBard.png/300px-CarYardBard.png) |
 | Information |
 | **Name** | CarYardBard |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

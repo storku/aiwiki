@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Code Copilot (GPT) |
 | --- |
-| [![Code Copilot (GPT).png](/images/thumb/4/4b/Code_Copilot_%28GPT%29.png/300px-Code_Copilot_%28GPT%29.png)](/wiki/file_code_copilot_gpt_png) |
+| ![Code Copilot (GPT).png](/images/thumb/4/4b/Code_Copilot_%28GPT%29.png/300px-Code_Copilot_%28GPT%29.png) |
 | Information |
 | **Name** | Code Copilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

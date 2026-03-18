@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NextPaper.ai (ChatGPT Plugin) |
 | --- |
-| [![NextPaper.ai.png](/images/thumb/d/da/NextPaper.ai.png/300px-NextPaper.ai.png)](/wiki/file_nextpaper_ai_png) |
+| ![NextPaper.ai.png](/images/thumb/d/da/NextPaper.ai.png/300px-NextPaper.ai.png) |
 | Information |
 | **Name** | NextPaper.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

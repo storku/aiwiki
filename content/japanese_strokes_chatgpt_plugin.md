@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Japanese Strokes (ChatGPT Plugin) |
 | --- |
-| [![Japanese Strokes.jpeg](/images/d/de/Japanese_Strokes.jpeg)](/wiki/file_japanese_strokes_jpeg) |
+| ![Japanese Strokes.jpeg](/images/d/de/Japanese_Strokes.jpeg) |
 | Information |
 | **Name** | Japanese Strokes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| LINE Sticker Creator (GPT) |
 | --- |
-| [![LINE Sticker Creator (GPT).png](/images/thumb/2/27/LINE_Sticker_Creator_%28GPT%29.png/300px-LINE_Sticker_Creator_%28GPT%29.png)](/wiki/file_line_sticker_creator_gpt_png) |
+| ![LINE Sticker Creator (GPT).png](/images/thumb/2/27/LINE_Sticker_Creator_%28GPT%29.png/300px-LINE_Sticker_Creator_%28GPT%29.png) |
 | Information |
 | **Name** | LINE Sticker Creator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

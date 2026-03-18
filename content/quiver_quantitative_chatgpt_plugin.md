@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Quiver Quantitative (ChatGPT Plugin) |
 | --- |
-| [![Quiver Quantitative.jpg](/images/thumb/b/b4/Quiver_Quantitative.jpg/300px-Quiver_Quantitative.jpg)](/wiki/file_quiver_quantitative_jpg) |
+| ![Quiver Quantitative.jpg](/images/thumb/b/b4/Quiver_Quantitative.jpg/300px-Quiver_Quantitative.jpg) |
 | Information |
 | **Name** | Quiver Quantitative |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

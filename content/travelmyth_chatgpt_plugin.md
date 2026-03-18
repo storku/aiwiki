@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Travelmyth (ChatGPT Plugin) |
 | --- |
-| [![Travelmyth.jpg](/images/thumb/a/af/Travelmyth.jpg/300px-Travelmyth.jpg)](/wiki/file_travelmyth_jpg) |
+| ![Travelmyth.jpg](/images/thumb/a/af/Travelmyth.jpg/300px-Travelmyth.jpg) |
 | Information |
 | **Name** | Travelmyth |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

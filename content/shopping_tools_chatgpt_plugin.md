@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Shopping tools (ChatGPT Plugin) |
 | --- |
-| [![Shopping tools.jpeg](/images/8/88/Shopping_tools.jpeg)](/wiki/file_shopping_tools_jpeg) |
+| ![Shopping tools.jpeg](/images/8/88/Shopping_tools.jpeg) |
 | Information |
 | **Name** | Shopping tools |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

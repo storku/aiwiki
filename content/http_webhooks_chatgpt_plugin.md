@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HTTP Webhooks (ChatGPT Plugin) |
 | --- |
-| [![HTTP Webhooks.jpg](/images/thumb/9/9f/HTTP_Webhooks.jpg/300px-HTTP_Webhooks.jpg)](/wiki/file_http_webhooks_jpg) |
+| ![HTTP Webhooks.jpg](/images/thumb/9/9f/HTTP_Webhooks.jpg/300px-HTTP_Webhooks.jpg) |
 | Information |
 | **Name** | HTTP Webhooks |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatWithPDF (ChatGPT Plugin) |
 | --- |
-| [![ChatWithPDF.png](/images/thumb/f/fd/ChatWithPDF.png/300px-ChatWithPDF.png)](/wiki/file_chatwithpdf_png) |
+| ![ChatWithPDF.png](/images/thumb/f/fd/ChatWithPDF.png/300px-ChatWithPDF.png) |
 | Information |
 | **Name** | ChatWithPDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

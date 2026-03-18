@@ -98,7 +98,7 @@ In addition to text, vector embeddings can be created for various types of data,
 
 ### Example: Image Embedding with a Convolutional Neural Network
 
-[![Image embedding with cnn1.png](/images/thumb/3/3a/Image_embedding_with_cnn1.png/400px-Image_embedding_with_cnn1.png)](/wiki/file_image_embedding_with_cnn1_png)
+![Image embedding with cnn1.png](/images/thumb/3/3a/Image_embedding_with_cnn1.png/400px-Image_embedding_with_cnn1.png)
 
 In this example, raw images are represented as greyscale pixels, which correspond to a matrix of integer values ranging from 0 to 255, where 0 signifies black and 255 represents white. The matrix values define a vector embedding, with the first coordinate being the matrix's upper-left cell and the last coordinate corresponding to the lower-right matrix cell.
 

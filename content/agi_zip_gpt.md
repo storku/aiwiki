@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Agi.zip (GPT) |
 | --- |
-| [![Agi.zip (GPT).png](/images/thumb/3/36/Agi.zip_%28GPT%29.png/300px-Agi.zip_%28GPT%29.png)](/wiki/file_agi_zip_gpt_png) |
+| ![Agi.zip (GPT).png](/images/thumb/3/36/Agi.zip_%28GPT%29.png/300px-Agi.zip_%28GPT%29.png) |
 | Information |
 | **Name** | Agi.zip |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

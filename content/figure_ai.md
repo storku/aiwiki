@@ -15,7 +15,7 @@ categories:
 ---| Figure AI |
 | --- |
 | Figure AI, Inc. |
-| [*](/wiki/file_figure_ai_logo1_png) |
+| * |
 | [File:Figure 02 humanoid robot.jpg](/index.php?title=Special:Upload&wpDestFile=Figure_02_humanoid_robot.jpg) |
 | Figure 02 humanoid robot at BMW facility |
 | Type | [Private](/index.php?title=Private_company&action=edit&redlink=1) |

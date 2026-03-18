@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ad4mat (ChatGPT Plugin) |
 | --- |
-| [![Ad4mat.png](/images/thumb/3/32/Ad4mat.png/300px-Ad4mat.png)](/wiki/file_ad4mat_png) |
+| ![Ad4mat.png](/images/thumb/3/32/Ad4mat.png/300px-Ad4mat.png) |
 | Information |
 | **Name** | ad4mat |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Website Performance (ChatGPT Plugin) |
 | --- |
-| [![Website Performance.jpg](/images/3/39/Website_Performance.jpg)](/wiki/file_website_performance_jpg) |
+| ![Website Performance.jpg](/images/3/39/Website_Performance.jpg) |
 | Information |
 | **Name** | Website Performance |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

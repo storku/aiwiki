@@ -10,7 +10,7 @@ categories:
   - "ARM-based_computers"
 ---[Template:Infobox product](/index.php?title=Template:Infobox_product&action=edit&redlink=1)
 
-[![Nvidia dgx spark1.jpg](/images/thumb/9/94/Nvidia_dgx_spark1.jpg/300px-Nvidia_dgx_spark1.jpg)](/wiki/file_nvidia_dgx_spark1_jpg)
+![Nvidia dgx spark1.jpg](/images/thumb/9/94/Nvidia_dgx_spark1.jpg/300px-Nvidia_dgx_spark1.jpg)
 
 **NVIDIA DGX Spark** is a compact, deskside [AI](/wiki/ai) development system in the [DGX](/index.php?title=DGX&action=edit&redlink=1) product family created by [NVIDIA](/wiki/nvidia). First announced as "Project DIGITS" at [CES](/index.php?title=CES&action=edit&redlink=1) 2025 and officially launched on 15 October 2025, DGX Spark places a Grace Blackwell [Superchip](/index.php?title=Superchip&action=edit&redlink=1)-based AI computer on a desktop, targeting developers, researchers, and students who need local fine-tuning and inference without relying exclusively on the cloud.[&#91;1&#93;](#cite_note-nvidia-press-1)[&#91;2&#93;](#cite_note-verge-gtc-2)
 

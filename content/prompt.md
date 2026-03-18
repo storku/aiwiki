@@ -6,7 +6,7 @@ categories:
   - "AI_Terms"
 ---## Introduction
 
-[![](/images/thumb/f/f2/0._chat-email-copy_Blusteak.png/300px-0._chat-email-copy_Blusteak.png)](/wiki/file_0_chat-email-copy_blusteak_png)  [](/wiki/file_0_chat-email-copy_blusteak_png)
+![](/images/thumb/f/f2/0._chat-email-copy_Blusteak.png/300px-0._chat-email-copy_Blusteak.png)  
 Figure 1. Example of a prompt on ChatGPT. Source: Blusteak.
 A prompt or an [artificial intelligence](/wiki/artificial_intelligence) ([AI](/wiki/ai)) prompt is a [natural language](/index.php?title=Natural_language&action=edit&redlink=1) set of instructions, a text, that functions as [input](/index.php?title=Input&action=edit&redlink=1) for an [AI generator](/index.php?title=AI_generator&action=edit&redlink=1). [&#91;1&#93;](#cite_note-”1”-1) Simply, it is a phrase or individual keywords used in tools like [ChatGPT](/wiki/chatgpt) (figure 1), a [text-to-text](/index.php?title=Text-to-text&action=edit&redlink=1) generator, or in [text-to-image](/index.php?title=Text-to-image&action=edit&redlink=1) generators like [DALL-E](/wiki/dall-e). After the input, the [AI model](/wiki/ai_model) tries to interpret it and generates a response. [&#91;2&#93;](#cite_note-”2”-2)
 
@@ -34,9 +34,9 @@ For a [text-to-text model](/index.php?title=Text-to-text_model&action=edit&redli
 
 ### Text-to-image prompts
 
-[![](/images/thumb/d/d7/8._Prompt_structure_Bildea.png/300px-8._Prompt_structure_Bildea.png)](/wiki/file_8_prompt_structure_bildea_png)  [](/wiki/file_8_prompt_structure_bildea_png)
+![](/images/thumb/d/d7/8._Prompt_structure_Bildea.png/300px-8._Prompt_structure_Bildea.png)  
 Figure 2. General prompt structure. Source: Towards AI.
-[![](/images/thumb/f/fc/1._Word_cloud_prompt.png/300px-1._Word_cloud_prompt.png)](/wiki/file_1_word_cloud_prompt_png)  [](/wiki/file_1_word_cloud_prompt_png)
+![](/images/thumb/f/fc/1._Word_cloud_prompt.png/300px-1._Word_cloud_prompt.png)  
 Figure 3. Frequent keywords used in Midjourney. Source: Towards Data Science.
 [Stable Diffusion](/wiki/stable_diffusion), [DALL-E](/wiki/dall-e), [Midjourney](/wiki/midjourney), and other [text-to-image](/index.php?title=Text-to-image&action=edit&redlink=1) systems rely on written descriptions to generate images using algorithms to convert the text into an image. [&#91;7&#93;](#cite_note-”7”-7) [&#91;8&#93;](#cite_note-”8”-8) These system can even produce images according to a specific style like (i.e. photograph, watercolor, illustration, etc.) or artist. [&#91;8&#93;](#cite_note-”8”-8)
 
@@ -68,11 +68,11 @@ While the subject of an intended image, the modifiers, words that describe the s
 
 ## Prompt generators
 
-[![](/images/thumb/0/03/2._Text_prompt_generator_model.png/300px-2._Text_prompt_generator_model.png)](/wiki/file_2_text_prompt_generator_model_png)  [](/wiki/file_2_text_prompt_generator_model_png)
+![](/images/thumb/0/03/2._Text_prompt_generator_model.png/300px-2._Text_prompt_generator_model.png)  
 Figure 9. Example of a text prompt generator. Source: Towards Data Science.
-[![](/images/thumb/2/25/9._ChatGPT_prompt_before.png/300px-9._ChatGPT_prompt_before.png)](/wiki/file_9_chatgpt_prompt_before_png)  [](/wiki/file_9_chatgpt_prompt_before_png)
+![](/images/thumb/2/25/9._ChatGPT_prompt_before.png/300px-9._ChatGPT_prompt_before.png)  
 Figure 10a. Creating prompts with ChatGPT (before). Prompt: beautiful village on Christmas, covered by snow, modern, unreal engine, 8K. Source: Towards AI.
-[![](/images/thumb/3/3e/10._ChatGPT_prompt_after.png/300px-10._ChatGPT_prompt_after.png)](/wiki/file_10_chatgpt_prompt_after_png)  [](/wiki/file_10_chatgpt_prompt_after_png)
+![](/images/thumb/3/3e/10._ChatGPT_prompt_after.png/300px-10._ChatGPT_prompt_after.png)  
 Figure 10b. Creating prompts with ChatGPT (after). Prompt: Christmas village, magical, enchanting, wreaths, snow-covered streets, colorful buildings, sparkling, charming, detailed, glittery, shiny, twinkling lights, festive, ornate, traditional, whimsical, Christmastide, highly detailed, hyperrealistic, illustration, Unreal Engine 5,8K. Source: Towards AI.
 Due to the difficulty of good manual prompt development, several [prompt generator models](/index.php?title=Prompt_generators&action=edit&redlink=1) have surfaced (figure 9) that help the user in refining the text input to obtain the best result possible, automatically performing prompt engineering. [&#91;3&#93;](#cite_note-”3”-3) [&#91;5&#93;](#cite_note-”5”-5)
 
@@ -104,7 +104,7 @@ Fine-tuning involves adapting an LLM's [parameters](/index.php?title=Parameters&
 
 Conversely, prompting is the technique of providing specific instructions to an LLM to guide its responses. It doesn't necessitate model retraining for each new prompt or data change, and thus, offers a quicker iterative process. Importantly, it doesn't require a labeled dataset, making it a viable option when training data is scant or absent. Prompting can be an excellent starting point for solving tasks, especially simpler ones, as it can be resource-friendly and computationally efficient.
 
-[![Prompting vs finetuning1.png](/images/thumb/0/0b/Prompting_vs_finetuning1.png/400px-Prompting_vs_finetuning1.png)](/wiki/file_prompting_vs_finetuning1_png)
+![Prompting vs finetuning1.png](/images/thumb/0/0b/Prompting_vs_finetuning1.png/400px-Prompting_vs_finetuning1.png)
 
 Despite its advantages, prompting may underperform compared to fine-tuning for complex tasks. There's a clear trade-off in terms of [inference](/wiki/inference) costs. Fine-tuned models, by integrating task-specific knowledge into the model's parameters, can generate accurate responses with minimal explicit instructions or prompts, making them cheaper in the long run. In contrast, prompted models, which rely heavily on explicit instructions, can be resource-intensive and more expensive, particularly for large-scale applications. Therefore, the choice between fine-tuning and prompting will depend on the specific use case, data availability, task complexity, and computational resources.
 

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat With Your Data (ChatGPT Plugin) |
 | --- |
-| [![Chat With Your Data.jpeg](/images/2/27/Chat_With_Your_Data.jpeg)](/wiki/file_chat_with_your_data_jpeg) |
+| ![Chat With Your Data.jpeg](/images/2/27/Chat_With_Your_Data.jpeg) |
 | Information |
 | **Name** | Chat With Your Data |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

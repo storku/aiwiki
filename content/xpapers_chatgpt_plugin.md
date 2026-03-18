@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Xpapers (ChatGPT Plugin) |
 | --- |
-| [![Xpapers.png](/images/2/29/Xpapers.png)](/wiki/file_xpapers_png) |
+| ![Xpapers.png](/images/2/29/Xpapers.png) |
 | Information |
 | **Name** | Xpapers |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

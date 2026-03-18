@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 超级PPT生成（Super PPT） (GPT) |
 | --- |
-| [![超级PPT生成（Super PPT） (GPT).png](/images/thumb/c/c1/%E8%B6%85%E7%BA%A7PPT%E7%94%9F%E6%88%90%EF%BC%88Super_PPT%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7PPT%E7%94%9F%E6%88%90%EF%BC%88Super_PPT%EF%BC%89_%28GPT%29.png)](/wiki/file_超级ppt生成_super_ppt_gpt_png) |
+| ![超级PPT生成（Super PPT） (GPT).png](/images/thumb/c/c1/%E8%B6%85%E7%BA%A7PPT%E7%94%9F%E6%88%90%EF%BC%88Super_PPT%EF%BC%89_%28GPT%29.png/300px-%E8%B6%85%E7%BA%A7PPT%E7%94%9F%E6%88%90%EF%BC%88Super_PPT%EF%BC%89_%28GPT%29.png) |
 | Information |
 | **Name** | 超级PPT生成（Super PPT） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

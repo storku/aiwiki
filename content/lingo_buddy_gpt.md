@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Lingo Buddy (GPT) |
 | --- |
-| [![Lingo Buddy (GPT).png](/images/thumb/6/66/Lingo_Buddy_%28GPT%29.png/300px-Lingo_Buddy_%28GPT%29.png)](/wiki/file_lingo_buddy_gpt_png) |
+| ![Lingo Buddy (GPT).png](/images/thumb/6/66/Lingo_Buddy_%28GPT%29.png/300px-Lingo_Buddy_%28GPT%29.png) |
 | Information |
 | **Name** | Lingo Buddy |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

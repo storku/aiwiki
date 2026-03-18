@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Word Counter (ChatGPT Plugin) |
 | --- |
-| [![Word Counter.png](/images/thumb/c/cd/Word_Counter.png/300px-Word_Counter.png)](/wiki/file_word_counter_png) |
+| ![Word Counter.png](/images/thumb/c/cd/Word_Counter.png/300px-Word_Counter.png) |
 | Information |
 | **Name** | Word Counter |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

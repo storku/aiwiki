@@ -19,7 +19,7 @@ NVIDIA Triton Inference Server is an open-source solution that streamlines model
 
 ## Features
 
-[![Nvidia triton1.jpg](/images/thumb/1/13/Nvidia_triton1.jpg/400px-Nvidia_triton1.jpg)](/wiki/file_nvidia_triton1_jpg)
+![Nvidia triton1.jpg](/images/thumb/1/13/Nvidia_triton1.jpg/400px-Nvidia_triton1.jpg)
 
 ### Support for Diverse Frameworks
 
@@ -43,7 +43,7 @@ Triton delivers high-throughput inference by concurrently executing multiple mod
 
 ## Scalability and Integration Ease
 
-[![Nvidia triton2.jpg](/images/thumb/4/4f/Nvidia_triton2.jpg/400px-Nvidia_triton2.jpg)](/wiki/file_nvidia_triton2_jpg)
+![Nvidia triton2.jpg](/images/thumb/4/4f/Nvidia_triton2.jpg/400px-Nvidia_triton2.jpg)
 
 Available as a Docker container, Triton easily integrates with Kubernetes for orchestration, metrics, and autoscaling. It supports the standard HTTP/gRPC interface for connections with other applications, such as load balancers, and can scale to any number of servers for handling increasing inference loads for any model.
 

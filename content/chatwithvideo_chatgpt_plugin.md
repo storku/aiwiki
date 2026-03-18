@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatWithVideo (ChatGPT Plugin) |
 | --- |
-| [![ChatWithVideo.png](/images/thumb/b/b5/ChatWithVideo.png/300px-ChatWithVideo.png)](/wiki/file_chatwithvideo_png) |
+| ![ChatWithVideo.png](/images/thumb/b/b5/ChatWithVideo.png/300px-ChatWithVideo.png) |
 | Information |
 | **Name** | ChatWithVideo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

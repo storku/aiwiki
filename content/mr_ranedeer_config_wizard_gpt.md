@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Mr. Ranedeer Config Wizard (GPT) |
 | --- |
-| [![Mr. Ranedeer Config Wizard (GPT).png](/images/thumb/8/83/Mr._Ranedeer_Config_Wizard_%28GPT%29.png/300px-Mr._Ranedeer_Config_Wizard_%28GPT%29.png)](/wiki/file_mr_ranedeer_config_wizard_gpt_png) |
+| ![Mr. Ranedeer Config Wizard (GPT).png](/images/thumb/8/83/Mr._Ranedeer_Config_Wizard_%28GPT%29.png/300px-Mr._Ranedeer_Config_Wizard_%28GPT%29.png) |
 | Information |
 | **Name** | Mr. Ranedeer Config Wizard |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

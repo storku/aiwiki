@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ai Tool Hunt (ChatGPT Plugin) |
 | --- |
-| [![Ai Tool Hunt.png](/images/8/82/Ai_Tool_Hunt.png)](/wiki/file_ai_tool_hunt_png) |
+| ![Ai Tool Hunt.png](/images/8/82/Ai_Tool_Hunt.png) |
 | Information |
 | **Name** | Ai Tool Hunt |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

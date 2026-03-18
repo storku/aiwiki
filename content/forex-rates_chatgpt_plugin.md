@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Forex-Rates (ChatGPT Plugin) |
 | --- |
-| [![Forex-Rates.png](/images/thumb/e/e2/Forex-Rates.png/300px-Forex-Rates.png)](/wiki/file_forex-rates_png) |
+| ![Forex-Rates.png](/images/thumb/e/e2/Forex-Rates.png/300px-Forex-Rates.png) |
 | Information |
 | **Name** | Forex-Rates |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

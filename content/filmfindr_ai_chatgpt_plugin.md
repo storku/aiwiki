@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| FilmFindr AI (ChatGPT Plugin) |
 | --- |
-| [![FilmFindr AI.jpeg](/images/thumb/d/d4/FilmFindr_AI.jpeg/300px-FilmFindr_AI.jpeg)](/wiki/file_filmfindr_ai_jpeg) |
+| ![FilmFindr AI.jpeg](/images/thumb/d/d4/FilmFindr_AI.jpeg/300px-FilmFindr_AI.jpeg) |
 | Information |
 | **Name** | FilmFindr AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

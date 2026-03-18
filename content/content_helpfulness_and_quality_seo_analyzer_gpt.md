@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Content Helpfulness and Quality SEO Analyzer (GPT) |
 | --- |
-| [![Content Helpfulness and Quality SEO Analyzer (GPT).png](/images/thumb/9/98/Content_Helpfulness_and_Quality_SEO_Analyzer_%28GPT%29.png/300px-Content_Helpfulness_and_Quality_SEO_Analyzer_%28GPT%29.png)](/wiki/file_content_helpfulness_and_quality_seo_analyzer_gpt_png) |
+| ![Content Helpfulness and Quality SEO Analyzer (GPT).png](/images/thumb/9/98/Content_Helpfulness_and_Quality_SEO_Analyzer_%28GPT%29.png/300px-Content_Helpfulness_and_Quality_SEO_Analyzer_%28GPT%29.png) |
 | Information |
 | **Name** | Content Helpfulness and Quality SEO Analyzer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Lingo (ChatGPT Plugin) |
 | --- |
-| [![Lingo.png](/images/6/67/Lingo.png)](/wiki/file_lingo_png) |
+| ![Lingo.png](/images/6/67/Lingo.png) |
 | Information |
 | **Name** | Lingo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

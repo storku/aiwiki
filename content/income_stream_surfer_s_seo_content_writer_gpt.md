@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Income Stream Surfer&#39;s SEO Content Writer (GPT) |
 | --- |
-| [![Income Stream Surfer&#39;s SEO Content Writer (GPT).png](/images/thumb/9/9e/Income_Stream_Surfer%27s_SEO_Content_Writer_%28GPT%29.png/300px-Income_Stream_Surfer%27s_SEO_Content_Writer_%28GPT%29.png)](/wiki/file_income_stream_surfer_s_seo_content_writer_gpt_png) |
+| ![Income Stream Surfer&#39;s SEO Content Writer (GPT).png](/images/thumb/9/9e/Income_Stream_Surfer%27s_SEO_Content_Writer_%28GPT%29.png/300px-Income_Stream_Surfer%27s_SEO_Content_Writer_%28GPT%29.png) |
 | Information |
 | **Name** | Income Stream Surfer's SEO Content Writer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

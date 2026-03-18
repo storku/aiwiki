@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Smarter Contracts (ChatGPT Plugin) |
 | --- |
-| [![Smarter Contracts.png](/images/thumb/5/5e/Smarter_Contracts.png/300px-Smarter_Contracts.png)](/wiki/file_smarter_contracts_png) |
+| ![Smarter Contracts.png](/images/thumb/5/5e/Smarter_Contracts.png/300px-Smarter_Contracts.png) |
 | Information |
 | **Name** | Smarter Contracts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Humanizer by BypassGPT |
 | --- |
-| [![AI Humanizer by BypassGPT.png](/images/thumb/0/02/AI_Humanizer_by_BypassGPT.png/300px-AI_Humanizer_by_BypassGPT.png)](/wiki/file_ai_humanizer_by_bypassgpt_png) |
+| ![AI Humanizer by BypassGPT.png](/images/thumb/0/02/AI_Humanizer_by_BypassGPT.png/300px-AI_Humanizer_by_BypassGPT.png) |
 | Information |
 | **Name** | AI Humanizer by BypassGPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

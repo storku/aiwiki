@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Klarna Shopping (ChatGPT Plugin) |
 | --- |
-| [![Klarna Shopping.jpg](/images/0/09/Klarna_Shopping.jpg)](/wiki/file_klarna_shopping_jpg) |
+| ![Klarna Shopping.jpg](/images/0/09/Klarna_Shopping.jpg) |
 | Information |
 | **Name** | Klarna Shopping |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

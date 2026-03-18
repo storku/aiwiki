@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Andorra (ChatGPT Plugin) |
 | --- |
-| [![Andorra.jpeg](/images/9/97/Andorra.jpeg)](/wiki/file_andorra_jpeg) |
+| ![Andorra.jpeg](/images/9/97/Andorra.jpeg) |
 | Information |
 | **Name** | Andorra |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

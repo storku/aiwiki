@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HDB Car Park (ChatGPT Plugin) |
 | --- |
-| [![HDB Car Park.png](/images/thumb/1/1e/HDB_Car_Park.png/300px-HDB_Car_Park.png)](/wiki/file_hdb_car_park_png) |
+| ![HDB Car Park.png](/images/thumb/1/1e/HDB_Car_Park.png/300px-HDB_Car_Park.png) |
 | Information |
 | **Name** | HDB Car Park |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

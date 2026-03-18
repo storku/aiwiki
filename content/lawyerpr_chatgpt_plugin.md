@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| LawyerPR (ChatGPT Plugin) |
 | --- |
-| [![LawyerPR.png](/images/thumb/1/1c/LawyerPR.png/300px-LawyerPR.png)](/wiki/file_lawyerpr_png) |
+| ![LawyerPR.png](/images/thumb/1/1c/LawyerPR.png/300px-LawyerPR.png) |
 | Information |
 | **Name** | LawyerPR |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

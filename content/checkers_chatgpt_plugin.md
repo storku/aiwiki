@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Checkers (ChatGPT Plugin) |
 | --- |
-| [![Checkers.jpg](/images/thumb/2/24/Checkers.jpg/300px-Checkers.jpg)](/wiki/file_checkers_jpg) |
+| ![Checkers.jpg](/images/thumb/2/24/Checkers.jpg/300px-Checkers.jpg) |
 | Information |
 | **Name** | Checkers |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Calculator (ChatGPT Plugin) |
 | --- |
-| [![Calculator.png](/images/2/23/Calculator.png)](/wiki/file_calculator_png) |
+| ![Calculator.png](/images/2/23/Calculator.png) |
 | Information |
 | **Name** | Calculator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

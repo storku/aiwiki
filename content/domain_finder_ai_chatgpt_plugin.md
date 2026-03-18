@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Domain Finder AI (ChatGPT Plugin) |
 | --- |
-| [![Domain Finder AI.jpeg](/images/2/21/Domain_Finder_AI.jpeg)](/wiki/file_domain_finder_ai_jpeg) |
+| ![Domain Finder AI.jpeg](/images/2/21/Domain_Finder_AI.jpeg) |
 | Information |
 | **Name** | Domain Finder AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PaperChat (ChatGPT Plugin) |
 | --- |
-| [![PaperChat.png](/images/thumb/a/ae/PaperChat.png/300px-PaperChat.png)](/wiki/file_paperchat_png) |
+| ![PaperChat.png](/images/thumb/a/ae/PaperChat.png/300px-PaperChat.png) |
 | Information |
 | **Name** | PaperChat |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

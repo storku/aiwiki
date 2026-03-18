@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| PortfoliosLab (ChatGPT Plugin) |
 | --- |
-| [![PortfoliosLab.png](/images/b/b1/PortfoliosLab.png)](/wiki/file_portfolioslab_png) |
+| ![PortfoliosLab.png](/images/b/b1/PortfoliosLab.png) |
 | Information |
 | **Name** | PortfoliosLab |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

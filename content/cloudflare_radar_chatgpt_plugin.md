@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Cloudflare Radar (ChatGPT Plugin) |
 | --- |
-| [![Cloudflare Radar.jpg](/images/thumb/7/75/Cloudflare_Radar.jpg/300px-Cloudflare_Radar.jpg)](/wiki/file_cloudflare_radar_jpg) |
+| ![Cloudflare Radar.jpg](/images/thumb/7/75/Cloudflare_Radar.jpg/300px-Cloudflare_Radar.jpg) |
 | Information |
 | **Name** | Cloudflare Radar |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

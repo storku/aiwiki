@@ -9,7 +9,7 @@ categories:
 
 ## Introduction
 
-[![](/images/thumb/3/30/Ann.png/300px-Ann.png)](/wiki/file_ann_png)  [](/wiki/file_ann_png)
+![](/images/thumb/3/30/Ann.png/300px-Ann.png)  
 Figure 1. Input, hidden, and output layers of an ANN. Source: Nahar (2012).
 Neural networks are [machine learning](/wiki/machine_learning) [algorithms](/index.php?title=Algorithm&action=edit&redlink=1) [modeled](/wiki/model) after the structure and function of the human brain, designed to recognize patterns and make decisions based on [input data](/index.php?title=Input_data&action=edit&redlink=1). An artificial neural network (ANN), or just neural network (NN) for simplicity, is a massively parallel distributed processor made up of simple, interconnected processing units. It is an information processing paradigm – a computing system - inspired by biological nervous systems (e.g. the brain) and how they process information, where a large number of highly interconnected processing units work in unison to solve specific problems. The scale of an artificial neural network is smaller when compared to their biological counterpart. For example, a large ANN might have hundreds or thousands of processor units while a biological nervous system (e.g. a mammalian brain) has billions of neurons [&#91;1&#93;](#cite_note-”1”-1) [&#91;2&#93;](#cite_note-”2”-2) [&#91;3&#93;](#cite_note-”3”-3). Neural networks - a set of algorithms designed to recognize patterns - interpret data, labeling or clustering raw input. They recognize numerical patterns contained in vectors, into which all real-world data, such as images, sound, text, or time series need to be translated [&#91;4&#93;](#cite_note-”4”-4).
 
@@ -79,8 +79,8 @@ The overall network structure of ANNs should be simple and easy. According to Ya
 
 ## Feedforward network
 
-[![](/images/thumb/5/57/Feedforward.jpg/300px-Feedforward.jpg)](/wiki/file_feedforward_jpg)  [](/wiki/file_feedforward_jpg)
-Figure 2. Feedforward network. Source: Deeplearning4j.[![](/images/thumb/d/d3/Figure_3._Feedforward_shortcut_connections.jpg/300px-Figure_3._Feedforward_shortcut_connections.jpg)](/wiki/file_figure_3_feedforward_shortcut_connections_jpg)  [](/wiki/file_figure_3_feedforward_shortcut_connections_jpg)
+![](/images/thumb/5/57/Feedforward.jpg/300px-Feedforward.jpg)  
+Figure 2. Feedforward network. Source: Deeplearning4j.![](/images/thumb/d/d3/Figure_3._Feedforward_shortcut_connections.jpg/300px-Figure_3._Feedforward_shortcut_connections.jpg)  
 Figure 3. Feedforward network with shortcut connections. Source: Kriesel (2007)Both feedforward (figure 2) and recurrent networks are named after the way they channel information through a series of mathematical operations that are performed at the nodes of the network. In feedforward networks, the information goes straight through (in a one way), never touching a given node twice, while in the other it cycles it through a loop [&#91;7&#93;](#cite_note-”7”-7) [&#91;10&#93;](#cite_note-”10”-10).
 
 The input nodes in feedforward networks do not perform computation and are used instead to distribute inputs into the other layers of the network. In this case, the nodes are grouped in the same layout as described previously: an input layer, one or more hidden processing layers that are invisible from the outside, and an output layer, with each neuron in a layer only having direct connections to the neurons of the next [&#91;5&#93;](#cite_note-”5”-5) [&#91;7&#93;](#cite_note-”7”-7).
@@ -89,7 +89,7 @@ In some feedforward networks, shortcut connections are permitted (figure 3). The
 
 ## Recurrent network
 
-[![](/images/thumb/f/ff/Recurrent_network.jpg/300px-Recurrent_network.jpg)](/wiki/file_recurrent_network_jpg)  [](/wiki/file_recurrent_network_jpg)
+![](/images/thumb/f/ff/Recurrent_network.jpg/300px-Recurrent_network.jpg)  
 Figure 4. A network with directly recurrent neurons. Source: Kriesel (2007).
 The process of a neuron influencing itself by any means or by any connection is called recurrence. In recurrent networks (figure 4), the input or output neurons may not be explicitly defined. Some networks of this type allow for neurons to be connected to themselves, in a process called direct recurrence (or self-recurrence). When connections towards the input layer from the other layers of the network are allowed, it’s named indirect recurrences. A neuron can use this to influence itself by influencing the neurons of the next layer and these, in turn, will influence it. Lateral recurrences occur when there are connections between neurons within one layer. In this mode, each neuron often will inhibit the other neurons of the layer and strengthen itself, resulting that only the strongest neuron becomes active. Finally, in a recurrent network, there could be a completely linked network. This permits connections between all neurons, except for direct recurrences. Also, the connection has to be symmetric. The neurons are always allowed to be connected to every other neuron, and as a result, every neuron can become an input neuron [&#91;5&#93;](#cite_note-”5”-5).
 

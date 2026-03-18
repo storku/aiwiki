@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Chrome Unlimited Search &#38; Browse GPT |
 | --- |
-| [![Chrome Unlimited Search & Browse GPT.png](/images/thumb/7/7a/Chrome_Unlimited_Search_%26_Browse_GPT.png/300px-Chrome_Unlimited_Search_%26_Browse_GPT.png)](/wiki/file_chrome_unlimited_search_browse_gpt_png) |
+| ![Chrome Unlimited Search & Browse GPT.png](/images/thumb/7/7a/Chrome_Unlimited_Search_%26_Browse_GPT.png/300px-Chrome_Unlimited_Search_%26_Browse_GPT.png) |
 | Information |
 | **Name** | Chrome Unlimited Search & Browse GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

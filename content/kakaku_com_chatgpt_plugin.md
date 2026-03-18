@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Kakaku.com (ChatGPT Plugin) |
 | --- |
-| [![Kakakucom.jpg](/images/2/2a/Kakakucom.jpg)](/wiki/file_kakakucom_jpg) |
+| ![Kakakucom.jpg](/images/2/2a/Kakakucom.jpg) |
 | Information |
 | **Name** | Kakaku.com |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| InfoJobs (ChatGPT Plugin) |
 | --- |
-| [![InfoJobs.jpeg](/images/a/ad/InfoJobs.jpeg)](/wiki/file_infojobs_jpeg) |
+| ![InfoJobs.jpeg](/images/a/ad/InfoJobs.jpeg) |
 | Information |
 | **Name** | InfoJobs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

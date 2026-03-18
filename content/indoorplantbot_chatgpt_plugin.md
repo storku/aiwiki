@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| IndoorPlantBot (ChatGPT Plugin) |
 | --- |
-| [![IndoorPlantBot.jpeg](/images/5/5e/IndoorPlantBot.jpeg)](/wiki/file_indoorplantbot_jpeg) |
+| ![IndoorPlantBot.jpeg](/images/5/5e/IndoorPlantBot.jpeg) |
 | Information |
 | **Name** | IndoorPlantBot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

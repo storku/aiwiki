@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ScholarAI (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_scholarai_png) |
+| * |
 | Information |
 | **Name** | ScholarAI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

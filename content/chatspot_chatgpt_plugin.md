@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ChatSpot (ChatGPT Plugin) |
 | --- |
-| [![ChatSpot.png](/images/thumb/0/05/ChatSpot.png/300px-ChatSpot.png)](/wiki/file_chatspot_png) |
+| ![ChatSpot.png](/images/thumb/0/05/ChatSpot.png/300px-ChatSpot.png) |
 | Information |
 | **Name** | ChatSpot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Astrology Birth Chart GPT |
 | --- |
-| [![Astrology Birth Chart GPT.png](/images/thumb/0/0b/Astrology_Birth_Chart_GPT.png/300px-Astrology_Birth_Chart_GPT.png)](/wiki/file_astrology_birth_chart_gpt_png) |
+| ![Astrology Birth Chart GPT.png](/images/thumb/0/0b/Astrology_Birth_Chart_GPT.png/300px-Astrology_Birth_Chart_GPT.png) |
 | Information |
 | **Name** | Astrology Birth Chart GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

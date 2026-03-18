@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mifuzi Domain AI (ChatGPT Plugin) |
 | --- |
-| [![Mifuzi Domain AI.png](/images/thumb/b/b2/Mifuzi_Domain_AI.png/300px-Mifuzi_Domain_AI.png)](/wiki/file_mifuzi_domain_ai_png) |
+| ![Mifuzi Domain AI.png](/images/thumb/b/b2/Mifuzi_Domain_AI.png/300px-Mifuzi_Domain_AI.png) |
 | Information |
 | **Name** | Mifuzi Domain AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

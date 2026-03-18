@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Ad Copywriter Pro (GPT) |
 | --- |
-| [![Ad Copywriter Pro (GPT).png](/images/thumb/a/a5/Ad_Copywriter_Pro_%28GPT%29.png/300px-Ad_Copywriter_Pro_%28GPT%29.png)](/wiki/file_ad_copywriter_pro_gpt_png) |
+| ![Ad Copywriter Pro (GPT).png](/images/thumb/a/a5/Ad_Copywriter_Pro_%28GPT%29.png/300px-Ad_Copywriter_Pro_%28GPT%29.png) |
 | Information |
 | **Name** | Ad Copywriter Pro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

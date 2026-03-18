@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Creative Writing Coach (GPT) |
 | --- |
-| [![Creative Writing Coach (GPT).png](/images/thumb/1/1e/Creative_Writing_Coach_%28GPT%29.png/300px-Creative_Writing_Coach_%28GPT%29.png)](/wiki/file_creative_writing_coach_gpt_png) |
+| ![Creative Writing Coach (GPT).png](/images/thumb/1/1e/Creative_Writing_Coach_%28GPT%29.png/300px-Creative_Writing_Coach_%28GPT%29.png) |
 | Information |
 | **Name** | Creative Writing Coach |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

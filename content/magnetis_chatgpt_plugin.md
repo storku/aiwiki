@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Magnetis (ChatGPT Plugin) |
 | --- |
-| [![Magnetis.png](/images/thumb/9/91/Magnetis.png/300px-Magnetis.png)](/wiki/file_magnetis_png) |
+| ![Magnetis.png](/images/thumb/9/91/Magnetis.png/300px-Magnetis.png) |
 | Information |
 | **Name** | Magnetis |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

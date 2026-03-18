@@ -8,7 +8,7 @@ categories:
   - "Quantum_information_science"
 ---[Template:Infobox computing device](/index.php?title=Template:Infobox_computing_device&action=edit&redlink=1)
 
-[*](/wiki/file_qpu1_jpg)
+*
 
 A **Quantum Processing Unit** (**QPU**), also known as a **quantum processor**, is the core hardware component of a [quantum computer](/index.php?title=Quantum_computer&action=edit&redlink=1) that manipulates [qubits](/index.php?title=Qubit&action=edit&redlink=1) using the principles of [quantum mechanics](/index.php?title=Quantum_mechanics&action=edit&redlink=1) to perform computations that are intractable for classical processors.[&#91;1&#93;](#cite_note-IBM2025-1)[&#91;2&#93;](#cite_note-NVIDIA2022-2) Unlike classical [CPUs](/index.php?title=Central_Processing_Unit&action=edit&redlink=1) that process [bits](/index.php?title=Bit&action=edit&redlink=1) in binary states (0 or 1), QPUs leverage quantum phenomena such as [superposition](/index.php?title=Quantum_superposition&action=edit&redlink=1) and [entanglement](/index.php?title=Quantum_entanglement&action=edit&redlink=1) to process qubits that can exist in multiple states simultaneously, enabling exponential scaling of computational power for specific problems.[&#91;3&#93;](#cite_note-Quera2025-3)
 

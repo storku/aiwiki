@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat Raku Journey (ChatGPT Plugin) |
 | --- |
-| [![Chat Raku Journey.jpeg](/images/thumb/b/b7/Chat_Raku_Journey.jpeg/300px-Chat_Raku_Journey.jpeg)](/wiki/file_chat_raku_journey_jpeg) |
+| ![Chat Raku Journey.jpeg](/images/thumb/b/b7/Chat_Raku_Journey.jpeg/300px-Chat_Raku_Journey.jpeg) |
 | Information |
 | **Name** | Chat Raku Journey |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

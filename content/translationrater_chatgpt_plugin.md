@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| TranslationRater (ChatGPT Plugin) |
 | --- |
-| [![TranslationRater.png](/images/c/c5/TranslationRater.png)](/wiki/file_translationrater_png) |
+| ![TranslationRater.png](/images/c/c5/TranslationRater.png) |
 | Information |
 | **Name** | TranslationRater |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

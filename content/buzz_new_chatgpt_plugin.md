@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BUZZ.NEW (ChatGPT Plugin) |
 | --- |
-| [![BUZZNEW.jpeg](/images/thumb/c/cb/BUZZNEW.jpeg/300px-BUZZNEW.jpeg)](/wiki/file_buzznew_jpeg) |
+| ![BUZZNEW.jpeg](/images/thumb/c/cb/BUZZNEW.jpeg/300px-BUZZNEW.jpeg) |
 | Information |
 | **Name** | BUZZ.NEW |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

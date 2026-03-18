@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| AI Website Builder by B12 (GPT) |
 | --- |
-| [![AI Website Builder by B12 (GPT).png](/images/thumb/8/85/AI_Website_Builder_by_B12_%28GPT%29.png/300px-AI_Website_Builder_by_B12_%28GPT%29.png)](/wiki/file_ai_website_builder_by_b12_gpt_png) |
+| ![AI Website Builder by B12 (GPT).png](/images/thumb/8/85/AI_Website_Builder_by_B12_%28GPT%29.png/300px-AI_Website_Builder_by_B12_%28GPT%29.png) |
 | Information |
 | **Name** | AI Website Builder by B12 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

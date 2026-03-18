@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Puzzle Constructor (ChatGPT Plugin) |
 | --- |
-| [![Puzzle Constructor.png](/images/thumb/7/72/Puzzle_Constructor.png/300px-Puzzle_Constructor.png)](/wiki/file_puzzle_constructor_png) |
+| ![Puzzle Constructor.png](/images/thumb/7/72/Puzzle_Constructor.png/300px-Puzzle_Constructor.png) |
 | Information |
 | **Name** | Puzzle Constructor |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Netlify Drop (ChatGPT Plugin) |
 | --- |
-| [![Netlify Drop.png](/images/7/75/Netlify_Drop.png)](/wiki/file_netlify_drop_png) |
+| ![Netlify Drop.png](/images/7/75/Netlify_Drop.png) |
 | Information |
 | **Name** | Netlify Drop |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

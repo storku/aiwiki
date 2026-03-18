@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| MBA Admission Consultant (GPT) |
 | --- |
-| [![MBA Admission Consultant (GPT).png](/images/thumb/2/22/MBA_Admission_Consultant_%28GPT%29.png/300px-MBA_Admission_Consultant_%28GPT%29.png)](/wiki/file_mba_admission_consultant_gpt_png) |
+| ![MBA Admission Consultant (GPT).png](/images/thumb/2/22/MBA_Admission_Consultant_%28GPT%29.png/300px-MBA_Admission_Consultant_%28GPT%29.png) |
 | Information |
 | **Name** | MBA Admission Consultant |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

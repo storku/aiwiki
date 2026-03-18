@@ -8,7 +8,7 @@ categories:
 ---*Certain elements of this article are incomplete. You can help the AI Wiki by [**expanding it**](https://aiwiki.ai/index.php?title=Adobe_Firefly&action=edit).* 
 
 *See also: [artificial intelligence applications](/wiki/artificial_intelligence_applications) and [image generation apps](/index.php?title=Image_generation_apps&action=edit&redlink=1)*
-[![Adobe firefly1.jpeg](/images/thumb/e/e0/Adobe_firefly1.jpeg/300px-Adobe_firefly1.jpeg)](/wiki/file_adobe_firefly1_jpeg)
+![Adobe firefly1.jpeg](/images/thumb/e/e0/Adobe_firefly1.jpeg/300px-Adobe_firefly1.jpeg)
 
 Adobe Firefly is a family of creative [generative](/index.php?title=Generative&action=edit&redlink=1) [Artificial Intelligence](/wiki/artificial_intelligence) [(AI)](/index.php?title=(AI)&action=edit&redlink=1) [models](/wiki/models) that are being integrated into [Adobe](/index.php?title=Adobe&action=edit&redlink=1) products to provide a wide range of creative possibilities for users. These AI models can be utilized across various domains, including [digital imaging](/index.php?title=Digital_imaging&action=edit&redlink=1), [photography](/wiki/photography), [illustration](/index.php?title=Illustration&action=edit&redlink=1), [graphic design](/index.php?title=Graphic_design&action=edit&redlink=1), [video](/index.php?title=Video&action=edit&redlink=1), [marketing](/wiki/marketing), [social media](/index.php?title=Social_media&action=edit&redlink=1), and [3D modeling](/index.php?title=3D_modeling&action=edit&redlink=1).
 

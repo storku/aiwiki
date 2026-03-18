@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Wishbucket (ChatGPT Plugin) |
 | --- |
-| [![Wishbucket.png](/images/thumb/1/13/Wishbucket.png/300px-Wishbucket.png)](/wiki/file_wishbucket_png) |
+| ![Wishbucket.png](/images/thumb/1/13/Wishbucket.png/300px-Wishbucket.png) |
 | Information |
 | **Name** | Wishbucket |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

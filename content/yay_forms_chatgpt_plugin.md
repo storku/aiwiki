@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Yay! Forms (ChatGPT Plugin) |
 | --- |
-| [![Yay! Forms.jpg](/images/7/70/Yay%21_Forms.jpg)](/wiki/file_yay_forms_jpg) |
+| ![Yay! Forms.jpg](/images/7/70/Yay%21_Forms.jpg) |
 | Information |
 | **Name** | Yay! Forms |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

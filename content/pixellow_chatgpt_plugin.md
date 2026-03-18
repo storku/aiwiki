@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Pixellow (ChatGPT Plugin) |
 | --- |
-| [![Pixellow.jpeg](/images/0/05/Pixellow.jpeg)](/wiki/file_pixellow_jpeg) |
+| ![Pixellow.jpeg](/images/0/05/Pixellow.jpeg) |
 | Information |
 | **Name** | Pixellow |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

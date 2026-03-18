@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Link Reader (GPT) |
 | --- |
-| [![Link Reader (GPT).png](/images/thumb/6/60/Link_Reader_%28GPT%29.png/300px-Link_Reader_%28GPT%29.png)](/wiki/file_link_reader_gpt_png) |
+| ![Link Reader (GPT).png](/images/thumb/6/60/Link_Reader_%28GPT%29.png/300px-Link_Reader_%28GPT%29.png) |
 | Information |
 | **Name** | Link Reader |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CT Criteria Parser (ChatGPT Plugin) |
 | --- |
-| [![CT Criteria Parser.png](/images/6/6d/CT_Criteria_Parser.png)](/wiki/file_ct_criteria_parser_png) |
+| ![CT Criteria Parser.png](/images/6/6d/CT_Criteria_Parser.png) |
 | Information |
 | **Name** | CT Criteria Parser |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

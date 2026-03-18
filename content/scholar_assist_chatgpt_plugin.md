@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Scholar Assist (ChatGPT Plugin) |
 | --- |
-| [![Scholar Assist.png](/images/thumb/3/3a/Scholar_Assist.png/300px-Scholar_Assist.png)](/wiki/file_scholar_assist_png) |
+| ![Scholar Assist.png](/images/thumb/3/3a/Scholar_Assist.png/300px-Scholar_Assist.png) |
 | Information |
 | **Name** | Scholar Assist |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

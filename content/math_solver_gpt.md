@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Math Solver (GPT) |
 | --- |
-| [![Math Solver (GPT).png](/images/thumb/3/3e/Math_Solver_%28GPT%29.png/300px-Math_Solver_%28GPT%29.png)](/wiki/file_math_solver_gpt_png) |
+| ![Math Solver (GPT).png](/images/thumb/3/3e/Math_Solver_%28GPT%29.png/300px-Math_Solver_%28GPT%29.png) |
 | Information |
 | **Name** | Math Solver |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tasty Recipes (ChatGPT Plugin) |
 | --- |
-| [![Tasty Recipes.png](/images/thumb/4/48/Tasty_Recipes.png/300px-Tasty_Recipes.png)](/wiki/file_tasty_recipes_png) |
+| ![Tasty Recipes.png](/images/thumb/4/48/Tasty_Recipes.png/300px-Tasty_Recipes.png) |
 | Information |
 | **Name** | Tasty Recipes |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

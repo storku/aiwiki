@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| The Diet Search (ChatGPT Plugin) |
 | --- |
-| [![The Diet Search.jpeg](/images/0/03/The_Diet_Search.jpeg)](/wiki/file_the_diet_search_jpeg) |
+| ![The Diet Search.jpeg](/images/0/03/The_Diet_Search.jpeg) |
 | Information |
 | **Name** | The Diet Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

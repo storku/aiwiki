@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Keyplays Live Soccer (ChatGPT Plugin) |
 | --- |
-| [![Keyplays Live Soccer.png](/images/thumb/4/45/Keyplays_Live_Soccer.png/300px-Keyplays_Live_Soccer.png)](/wiki/file_keyplays_live_soccer_png) |
+| ![Keyplays Live Soccer.png](/images/thumb/4/45/Keyplays_Live_Soccer.png/300px-Keyplays_Live_Soccer.png) |
 | Information |
 | **Name** | Keyplays Live Soccer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

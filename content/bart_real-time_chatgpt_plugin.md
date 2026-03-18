@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| BART Real-Time (ChatGPT Plugin) |
 | --- |
-| [![BART Real-Time.jpg](/images/thumb/a/ab/BART_Real-Time.jpg/300px-BART_Real-Time.jpg)](/wiki/file_bart_real-time_jpg) |
+| ![BART Real-Time.jpg](/images/thumb/a/ab/BART_Real-Time.jpg/300px-BART_Real-Time.jpg) |
 | Information |
 | **Name** | BART Real-Time |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MintbaseSearch (ChatGPT Plugin) |
 | --- |
-| [![MintbaseSearch.png](/images/1/1c/MintbaseSearch.png)](/wiki/file_mintbasesearch_png) |
+| ![MintbaseSearch.png](/images/1/1c/MintbaseSearch.png) |
 | Information |
 | **Name** | MintbaseSearch |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

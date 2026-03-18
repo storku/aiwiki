@@ -23,7 +23,7 @@ NVIDIA Picasso is a cloud platform engineered to create and deploy [AI-generated
 
 ## NVIDIA Edify State-of-the-Art Generative AI Foundation Models
 
-[![Nvidia picasso1.jpeg](/images/thumb/7/76/Nvidia_picasso1.jpeg/400px-Nvidia_picasso1.jpeg)](/wiki/file_nvidia_picasso1_jpeg)
+![Nvidia picasso1.jpeg](/images/thumb/7/76/Nvidia_picasso1.jpeg/400px-Nvidia_picasso1.jpeg)
 
 NVIDIA Edify comprises a set of AI-driven core models that organizations and developers can either train on their proprietary data or begin with models pretrained by NVIDIA's top partners.
 

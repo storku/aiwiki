@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Undetectable AI Detector (GPT) |
 | --- |
-| [![Undetectable AI Detector (GPT).png](/images/thumb/2/2f/Undetectable_AI_Detector_%28GPT%29.png/300px-Undetectable_AI_Detector_%28GPT%29.png)](/wiki/file_undetectable_ai_detector_gpt_png) |
+| ![Undetectable AI Detector (GPT).png](/images/thumb/2/2f/Undetectable_AI_Detector_%28GPT%29.png/300px-Undetectable_AI_Detector_%28GPT%29.png) |
 | Information |
 | **Name** | Undetectable AI Detector |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

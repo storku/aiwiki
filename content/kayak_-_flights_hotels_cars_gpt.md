@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| KAYAK - Flights, Hotels &#38; Cars (GPT) |
 | --- |
-| [![KAYAK - Flights, Hotels & Cars (GPT).png](/images/thumb/5/57/KAYAK_-_Flights%2C_Hotels_%26_Cars_%28GPT%29.png/300px-KAYAK_-_Flights%2C_Hotels_%26_Cars_%28GPT%29.png)](/wiki/file_kayak_-_flights_hotels_cars_gpt_png) |
+| ![KAYAK - Flights, Hotels & Cars (GPT).png](/images/thumb/5/57/KAYAK_-_Flights%2C_Hotels_%26_Cars_%28GPT%29.png/300px-KAYAK_-_Flights%2C_Hotels_%26_Cars_%28GPT%29.png) |
 | Information |
 | **Name** | KAYAK - Flights, Hotels & Cars |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

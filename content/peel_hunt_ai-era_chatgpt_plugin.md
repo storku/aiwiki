@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Peel Hunt AI-ERA (ChatGPT Plugin) |
 | --- |
-| [![Peel Hunt AI-ERA.jpg](/images/6/61/Peel_Hunt_AI-ERA.jpg)](/wiki/file_peel_hunt_ai-era_jpg) |
+| ![Peel Hunt AI-ERA.jpg](/images/6/61/Peel_Hunt_AI-ERA.jpg) |
 | Information |
 | **Name** | Peel Hunt AI-ERA |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

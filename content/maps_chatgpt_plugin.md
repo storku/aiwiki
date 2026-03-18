@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Maps (ChatGPT Plugin) |
 | --- |
-| [![Maps.png](/images/6/6c/Maps.png)](/wiki/file_maps_png) |
+| ![Maps.png](/images/6/6c/Maps.png) |
 | Information |
 | **Name** | Maps |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| GameSight (ChatGPT Plugin) |
 | --- |
-| [![GameSight.png](/images/thumb/2/26/GameSight.png/300px-GameSight.png)](/wiki/file_gamesight_png) |
+| ![GameSight.png](/images/thumb/2/26/GameSight.png/300px-GameSight.png) |
 | Information |
 | **Name** | GameSight |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

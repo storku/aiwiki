@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Spreadsheet Maker (GPT) |
 | --- |
-| [![Spreadsheet Maker (GPT).png](/images/thumb/a/a4/Spreadsheet_Maker_%28GPT%29.png/300px-Spreadsheet_Maker_%28GPT%29.png)](/wiki/file_spreadsheet_maker_gpt_png) |
+| ![Spreadsheet Maker (GPT).png](/images/thumb/a/a4/Spreadsheet_Maker_%28GPT%29.png/300px-Spreadsheet_Maker_%28GPT%29.png) |
 | Information |
 | **Name** | Spreadsheet Maker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

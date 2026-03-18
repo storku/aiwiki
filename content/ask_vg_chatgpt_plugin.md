@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ask VG (ChatGPT Plugin) |
 | --- |
-| [![Ask VG.jpeg](/images/a/ab/Ask_VG.jpeg)](/wiki/file_ask_vg_jpeg) |
+| ![Ask VG.jpeg](/images/a/ab/Ask_VG.jpeg) |
 | Information |
 | **Name** | Ask VG |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

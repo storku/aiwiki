@@ -1,7 +1,7 @@
 ---
 title: "Gym"
 slug: "gym"
----[*](/wiki/file_opaigym_png)  [](/wiki/file_opaigym_png)
+---*  
 Figure 1: OpenAI Gym agent-environment. Source: Velotio Perspectives.
 Gym is a standard API for developing and testing learning agents developed by [OpenAI](/wiki/openai), originally built to accelerate the company's [reinforcement learning](/wiki/reinforcement_learning) ([RL](/wiki/rl)) research. While it has been developed for RL, other deep learning approaches can be used. [&#91;1&#93;](#cite_note-”1”-1) [&#91;2&#93;](#cite_note-”2”-2) [&#91;3&#93;](#cite_note-”3”-3) Open AI Gym has a simple interface, pythonic, capable of representing general RL problems, a diverse collection of environments and a site to compare and reproduce results of different RL algorithms. It is also compatible with algorithms written in other frameworks like Google's [Tensorflow](/index.php?title=Tensorflow&action=edit&redlink=1) or University of Montreal's [Theano](/index.php?title=Theano&action=edit&redlink=1). The beta version was released in 2016. [&#91;2&#93;](#cite_note-”2”-2) [&#91;3&#93;](#cite_note-”3”-3)
 

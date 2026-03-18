@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Code Faster (GPT) |
 | --- |
-| [![Code Faster (GPT).png](/images/thumb/e/e8/Code_Faster_%28GPT%29.png/300px-Code_Faster_%28GPT%29.png)](/wiki/file_code_faster_gpt_png) |
+| ![Code Faster (GPT).png](/images/thumb/e/e8/Code_Faster_%28GPT%29.png/300px-Code_Faster_%28GPT%29.png) |
 | Information |
 | **Name** | Code Faster |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

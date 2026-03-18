@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 👌Academic Assistant Pro (GPT) |
 | --- |
-| [![👌Academic Assistant Pro (GPT).png](/images/thumb/b/b2/%F0%9F%91%8CAcademic_Assistant_Pro_%28GPT%29.png/300px-%F0%9F%91%8CAcademic_Assistant_Pro_%28GPT%29.png)](/wiki/file_academic_assistant_pro_gpt_png) |
+| ![👌Academic Assistant Pro (GPT).png](/images/thumb/b/b2/%F0%9F%91%8CAcademic_Assistant_Pro_%28GPT%29.png/300px-%F0%9F%91%8CAcademic_Assistant_Pro_%28GPT%29.png) |
 | Information |
 | **Name** | 👌Academic Assistant Pro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

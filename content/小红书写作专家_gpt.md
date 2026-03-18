@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 小红书写作专家 (GPT) |
 | --- |
-| [![小红书写作专家 (GPT).png](/images/thumb/0/0e/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%86%99%E4%BD%9C%E4%B8%93%E5%AE%B6_%28GPT%29.png/300px-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%86%99%E4%BD%9C%E4%B8%93%E5%AE%B6_%28GPT%29.png)](/wiki/file_小红书写作专家_gpt_png) |
+| ![小红书写作专家 (GPT).png](/images/thumb/0/0e/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%86%99%E4%BD%9C%E4%B8%93%E5%AE%B6_%28GPT%29.png/300px-%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%86%99%E4%BD%9C%E4%B8%93%E5%AE%B6_%28GPT%29.png) |
 | Information |
 | **Name** | 小红书写作专家 |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

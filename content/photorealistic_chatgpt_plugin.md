@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Photorealistic (ChatGPT Plugin) |
 | --- |
-| [![Photorealistic.png](/images/5/5e/Photorealistic.png)](/wiki/file_photorealistic_png) |
+| ![Photorealistic.png](/images/5/5e/Photorealistic.png) |
 | Information |
 | **Name** | Photorealistic |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

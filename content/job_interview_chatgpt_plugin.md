@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Job Interview (ChatGPT Plugin) |
 | --- |
-| [![Job Interview.jpeg](/images/e/ec/Job_Interview.jpeg)](/wiki/file_job_interview_jpeg) |
+| ![Job Interview.jpeg](/images/e/ec/Job_Interview.jpeg) |
 | Information |
 | **Name** | Job Interview |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

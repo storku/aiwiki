@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Ai PDF (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_ai_pdf_png) |
+| * |
 | Information |
 | **Name** | Ai PDF |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

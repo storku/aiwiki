@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Logo Maker (GPT) |
 | --- |
-| [![Logo Maker (GPT).png](/images/thumb/1/11/Logo_Maker_%28GPT%29.png/300px-Logo_Maker_%28GPT%29.png)](/wiki/file_logo_maker_gpt_png) |
+| ![Logo Maker (GPT).png](/images/thumb/1/11/Logo_Maker_%28GPT%29.png/300px-Logo_Maker_%28GPT%29.png) |
 | Information |
 | **Name** | Logo Maker |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

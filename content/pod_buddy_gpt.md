@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| POD Buddy (GPT) |
 | --- |
-| [![POD Buddy (GPT).png](/images/thumb/d/d4/POD_Buddy_%28GPT%29.png/300px-POD_Buddy_%28GPT%29.png)](/wiki/file_pod_buddy_gpt_png) |
+| ![POD Buddy (GPT).png](/images/thumb/d/d4/POD_Buddy_%28GPT%29.png/300px-POD_Buddy_%28GPT%29.png) |
 | Information |
 | **Name** | POD Buddy |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

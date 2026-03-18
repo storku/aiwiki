@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Document AI (ChatGPT Plugin) |
 | --- |
-| [![Document AI.jpeg](/images/a/a6/Document_AI.jpeg)](/wiki/file_document_ai_jpeg) |
+| ![Document AI.jpeg](/images/a/a6/Document_AI.jpeg) |
 | Information |
 | **Name** | Document AI |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

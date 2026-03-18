@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Meme Creator (ChatGPT Plugin) |
 | --- |
-| [![Meme Creator.png](/images/thumb/5/5f/Meme_Creator.png/300px-Meme_Creator.png)](/wiki/file_meme_creator_png) |
+| ![Meme Creator.png](/images/thumb/5/5f/Meme_Creator.png/300px-Meme_Creator.png) |
 | Information |
 | **Name** | Meme Creator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

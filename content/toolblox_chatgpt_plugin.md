@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Toolblox (ChatGPT Plugin) |
 | --- |
-| [![Toolblox.jpeg](/images/9/9b/Toolblox.jpeg)](/wiki/file_toolblox_jpeg) |
+| ![Toolblox.jpeg](/images/9/9b/Toolblox.jpeg) |
 | Information |
 | **Name** | Toolblox |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

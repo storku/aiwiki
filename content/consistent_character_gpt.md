@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Consistent Character GPT |
 | --- |
-| [![Consistent Character GPT.png](/images/thumb/3/30/Consistent_Character_GPT.png/300px-Consistent_Character_GPT.png)](/wiki/file_consistent_character_gpt_png) |
+| ![Consistent Character GPT.png](/images/thumb/3/30/Consistent_Character_GPT.png/300px-Consistent_Character_GPT.png) |
 | Information |
 | **Name** | Consistent Character GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

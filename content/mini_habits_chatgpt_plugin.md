@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Mini Habits (ChatGPT Plugin) |
 | --- |
-| [![Mini Habits.png](/images/thumb/7/70/Mini_Habits.png/300px-Mini_Habits.png)](/wiki/file_mini_habits_png) |
+| ![Mini Habits.png](/images/thumb/7/70/Mini_Habits.png/300px-Mini_Habits.png) |
 | Information |
 | **Name** | Mini Habits |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Chat with Code (ChatGPT Plugin) |
 | --- |
-| [![Chat with Code.jpg](/images/thumb/e/e5/Chat_with_Code.jpg/300px-Chat_with_Code.jpg)](/wiki/file_chat_with_code_jpg) |
+| ![Chat with Code.jpg](/images/thumb/e/e5/Chat_with_Code.jpg/300px-Chat_with_Code.jpg) |
 | Information |
 | **Name** | Chat with Code |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

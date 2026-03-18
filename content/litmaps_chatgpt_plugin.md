@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Litmaps (ChatGPT Plugin) |
 | --- |
-| [![Litmaps.png](/images/thumb/2/2d/Litmaps.png/300px-Litmaps.png)](/wiki/file_litmaps_png) |
+| ![Litmaps.png](/images/thumb/2/2d/Litmaps.png/300px-Litmaps.png) |
 | Information |
 | **Name** | Litmaps |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

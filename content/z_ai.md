@@ -14,7 +14,7 @@ categories:
 ---| Z.ai |
 | --- |
 | 智谱 |
-| [![](/images/thumb/f/fb/Zai_logo1.png/200px-Zai_logo1.png)](/wiki/file_zai_logo1_png) |
+| ![](/images/thumb/f/fb/Zai_logo1.png/200px-Zai_logo1.png) |
 | Type | [Private company](/index.php?title=Private_company&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | June 11, 2019 |

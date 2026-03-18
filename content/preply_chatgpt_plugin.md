@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Preply (ChatGPT Plugin) |
 | --- |
-| [![Preply.jpg](/images/3/30/Preply.jpg)](/wiki/file_preply_jpg) |
+| ![Preply.jpg](/images/3/30/Preply.jpg) |
 | Information |
 | **Name** | Preply |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

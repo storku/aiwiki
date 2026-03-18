@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| QR Generator (ChatGPT Plugin) |
 | --- |
-| [![QR Generator.png](/images/thumb/0/0a/QR_Generator.png/300px-QR_Generator.png)](/wiki/file_qr_generator_png) |
+| ![QR Generator.png](/images/thumb/0/0a/QR_Generator.png/300px-QR_Generator.png) |
 | Information |
 | **Name** | QR Generator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Crafty Clues (ChatGPT Plugin) |
 | --- |
-| [![Crafty Clues.png](/images/d/d6/Crafty_Clues.png)](/wiki/file_crafty_clues_png) |
+| ![Crafty Clues.png](/images/d/d6/Crafty_Clues.png) |
 | Information |
 | **Name** | Crafty Clues |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

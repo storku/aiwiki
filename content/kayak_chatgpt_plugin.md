@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| KAYAK (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_kayak_png) |
+| * |
 | Information |
 | **Name** | KAYAK |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

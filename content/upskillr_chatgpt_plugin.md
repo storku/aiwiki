@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Upskillr (ChatGPT Plugin) |
 | --- |
-| [![Upskillr.png](/images/thumb/6/6d/Upskillr.png/300px-Upskillr.png)](/wiki/file_upskillr_png) |
+| ![Upskillr.png](/images/thumb/6/6d/Upskillr.png/300px-Upskillr.png) |
 | Information |
 | **Name** | Upskillr |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

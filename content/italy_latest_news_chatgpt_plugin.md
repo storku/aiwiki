@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Italy Latest News (ChatGPT Plugin) |
 | --- |
-| [![Italy Latest News.jpg](/images/thumb/a/ad/Italy_Latest_News.jpg/300px-Italy_Latest_News.jpg)](/wiki/file_italy_latest_news_jpg) |
+| ![Italy Latest News.jpg](/images/thumb/a/ad/Italy_Latest_News.jpg/300px-Italy_Latest_News.jpg) |
 | Information |
 | **Name** | Italy Latest News |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

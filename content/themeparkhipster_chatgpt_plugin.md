@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ThemeParkHipster (ChatGPT Plugin) |
 | --- |
-| [![ThemeParkHipster.png](/images/thumb/9/9c/ThemeParkHipster.png/300px-ThemeParkHipster.png)](/wiki/file_themeparkhipster_png) |
+| ![ThemeParkHipster.png](/images/thumb/9/9c/ThemeParkHipster.png/300px-ThemeParkHipster.png) |
 | Information |
 | **Name** | ThemeParkHipster |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Reminders (ChatGPT Plugin) |
 | --- |
-| [![Reminders.png](/images/1/13/Reminders.png)](/wiki/file_reminders_png) |
+| ![Reminders.png](/images/1/13/Reminders.png) |
 | Information |
 | **Name** | Reminders |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AskChloe (ChatGPT Plugin) |
 | --- |
-| [![AskChloe.jpeg](/images/f/ff/AskChloe.jpeg)](/wiki/file_askchloe_jpeg) |
+| ![AskChloe.jpeg](/images/f/ff/AskChloe.jpeg) |
 | Information |
 | **Name** | AskChloe |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

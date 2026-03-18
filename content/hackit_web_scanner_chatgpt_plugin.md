@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HACKIT Web Scanner (ChatGPT Plugin) |
 | --- |
-| [![HACKIT Web Scanner.png](/images/thumb/2/20/HACKIT_Web_Scanner.png/300px-HACKIT_Web_Scanner.png)](/wiki/file_hackit_web_scanner_png) |
+| ![HACKIT Web Scanner.png](/images/thumb/2/20/HACKIT_Web_Scanner.png/300px-HACKIT_Web_Scanner.png) |
 | Information |
 | **Name** | HACKIT Web Scanner |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

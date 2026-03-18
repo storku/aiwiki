@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Repo Radar (ChatGPT Plugin) |
 | --- |
-| [![Repo Radar.jpg](/images/thumb/e/ec/Repo_Radar.jpg/300px-Repo_Radar.jpg)](/wiki/file_repo_radar_jpg) |
+| ![Repo Radar.jpg](/images/thumb/e/ec/Repo_Radar.jpg/300px-Repo_Radar.jpg) |
 | Information |
 | **Name** | Repo Radar |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

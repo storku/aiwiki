@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Prompt Perfect (ChatGPT Plugin) |
 | --- |
-| [![Prompt Perfect.png](/images/thumb/f/fe/Prompt_Perfect.png/300px-Prompt_Perfect.png)](/wiki/file_prompt_perfect_png) |
+| ![Prompt Perfect.png](/images/thumb/f/fe/Prompt_Perfect.png/300px-Prompt_Perfect.png) |
 | Information |
 | **Name** | Prompt Perfect |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

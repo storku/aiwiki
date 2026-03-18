@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 大学论文写作大师-中文版(xtxian.com) (GPT) |
 | --- |
-| [![大学论文写作大师-中文版(xtxian.com) (GPT).jpeg](/images/thumb/b/b8/%E5%A4%A7%E5%AD%A6%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88-%E4%B8%AD%E6%96%87%E7%89%88%28xtxian.com%29_%28GPT%29.jpeg/300px-%E5%A4%A7%E5%AD%A6%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88-%E4%B8%AD%E6%96%87%E7%89%88%28xtxian.com%29_%28GPT%29.jpeg)](/wiki/file_大学论文写作大师-中文版_xtxian_com_gpt_jpeg) |
+| ![大学论文写作大师-中文版(xtxian.com) (GPT).jpeg](/images/thumb/b/b8/%E5%A4%A7%E5%AD%A6%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88-%E4%B8%AD%E6%96%87%E7%89%88%28xtxian.com%29_%28GPT%29.jpeg/300px-%E5%A4%A7%E5%AD%A6%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%A4%A7%E5%B8%88-%E4%B8%AD%E6%96%87%E7%89%88%28xtxian.com%29_%28GPT%29.jpeg) |
 | Information |
 | **Name** | 大学论文写作大师-中文版(xtxian.com) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

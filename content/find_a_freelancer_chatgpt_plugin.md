@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Find a Freelancer (ChatGPT Plugin) |
 | --- |
-| [![Find a Freelancer.jpeg](/images/f/fc/Find_a_Freelancer.jpeg)](/wiki/file_find_a_freelancer_jpeg) |
+| ![Find a Freelancer.jpeg](/images/f/fc/Find_a_Freelancer.jpeg) |
 | Information |
 | **Name** | Find a Freelancer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

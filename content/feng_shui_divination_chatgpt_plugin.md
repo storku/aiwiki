@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Feng Shui Divination (ChatGPT Plugin) |
 | --- |
-| [![Feng Shui Divination.jpeg](/images/e/ea/Feng_Shui_Divination.jpeg)](/wiki/file_feng_shui_divination_jpeg) |
+| ![Feng Shui Divination.jpeg](/images/e/ea/Feng_Shui_Divination.jpeg) |
 | Information |
 | **Name** | Feng Shui Divination |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

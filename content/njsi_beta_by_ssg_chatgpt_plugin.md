@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NJSI Beta by SSG (ChatGPT Plugin) |
 | --- |
-| [![NJSI Beta by SSG.jpeg](/images/3/3d/NJSI_Beta_by_SSG.jpeg)](/wiki/file_njsi_beta_by_ssg_jpeg) |
+| ![NJSI Beta by SSG.jpeg](/images/3/3d/NJSI_Beta_by_SSG.jpeg) |
 | Information |
 | **Name** | NJSI Beta by SSG |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

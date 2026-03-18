@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Text Count (ChatGPT Plugin) |
 | --- |
-| [![Text Count.jpeg](/images/4/42/Text_Count.jpeg)](/wiki/file_text_count_jpeg) |
+| ![Text Count.jpeg](/images/4/42/Text_Count.jpeg) |
 | Information |
 | **Name** | Text Count |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

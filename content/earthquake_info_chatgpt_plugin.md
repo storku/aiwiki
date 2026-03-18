@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Earthquake Info (ChatGPT Plugin) |
 | --- |
-| [![Earthquake Info.png](/images/1/1b/Earthquake_Info.png)](/wiki/file_earthquake_info_png) |
+| ![Earthquake Info.png](/images/1/1b/Earthquake_Info.png) |
 | Information |
 | **Name** | Earthquake Info |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

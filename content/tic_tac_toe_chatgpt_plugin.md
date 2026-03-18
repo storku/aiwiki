@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Tic Tac Toe (ChatGPT Plugin) |
 | --- |
-| [![Tic Tac Toe.png](/images/thumb/f/f6/Tic_Tac_Toe.png/300px-Tic_Tac_Toe.png)](/wiki/file_tic_tac_toe_png) |
+| ![Tic Tac Toe.png](/images/thumb/f/f6/Tic_Tac_Toe.png/300px-Tic_Tac_Toe.png) |
 | Information |
 | **Name** | Tic Tac Toe |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

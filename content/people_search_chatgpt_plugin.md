@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| People Search (ChatGPT Plugin) |
 | --- |
-| [![People Search.jpeg](/images/2/23/People_Search.jpeg)](/wiki/file_people_search_jpeg) |
+| ![People Search.jpeg](/images/2/23/People_Search.jpeg) |
 | Information |
 | **Name** | People Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

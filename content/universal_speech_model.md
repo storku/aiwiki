@@ -15,7 +15,7 @@ The USM showcases the efficiency of employing a sizable unlabelled multilingual 
 
 ## Proficiency Across Numerous Languages
 
-[![Usm1.png](/images/thumb/c/c2/Usm1.png/300px-Usm1.png)](/wiki/file_usm1_png)
+![Usm1.png](/images/thumb/c/c2/Usm1.png/300px-Usm1.png)
 
 Incorporating more than 300 languages in the pre-training phase, USM has displayed exceptional performance when fine-tuned on YouTube Caption's multilingual speech information. This supervised dataset comprises 73 languages, with an average of fewer than three thousand hours of data for each language. Despite the limited supervised data, the model achieves an average word error rate (WER) of under 30% for the 73 languages, an unprecedented accomplishment.
 
@@ -23,12 +23,12 @@ Compared to the internal cutting-edge model, USM has a 6% relative lower WER for
 
 ## Adaptation to Subsequent ASR Tasks
 
-[![Usm2.png](/images/thumb/e/ed/Usm2.png/300px-Usm2.png)](/wiki/file_usm2_png)
+![Usm2.png](/images/thumb/e/ed/Usm2.png/300px-Usm2.png)
 
 USM surpasses the Whisper model on various publicly accessible datasets, including CORAAL (African American Vernacular English), SpeechStew (English), and FLEURS (102 languages). These outcomes are attained with and without training on in-domain data. For the 62 languages in the FLEURS dataset that coincide with those supported by the Whisper model, CUSM has a 65.8% relative lower WER without in-domain data and a 67.8% relative lower WER with in-domain data.
 
 ## Superior Automated Speech Translation (AST)
 
-[![Usm3.png](/images/thumb/2/2d/Usm3.png/300px-Usm3.png)](/wiki/file_usm3_png)
+![Usm3.png](/images/thumb/2/2d/Usm3.png/300px-Usm3.png)
 
 USM is also efficient for speech translation tasks, as evidenced by its performance on the CoVoST dataset. The model categorizes languages into high, medium, and low-resource groups, computing the BLEU score for each segment. USM consistently surpasses the Whisper model across all resource divisions, highlighting its adaptability and effectiveness in speech translation.

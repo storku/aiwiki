@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox OnePlayer (ChatGPT Plugin) |
 | --- |
-| [![MixerBox OnePlayer.png](/images/thumb/7/7d/MixerBox_OnePlayer.png/300px-MixerBox_OnePlayer.png)](/wiki/file_mixerbox_oneplayer_png) |
+| ![MixerBox OnePlayer.png](/images/thumb/7/7d/MixerBox_OnePlayer.png/300px-MixerBox_OnePlayer.png) |
 | Information |
 | **Name** | MixerBox OnePlayer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Grimoire (GPT) |
 | --- |
-| [![Grimoire (GPT).png](/images/thumb/2/22/Grimoire_%28GPT%29.png/300px-Grimoire_%28GPT%29.png)](/wiki/file_grimoire_gpt_png) |
+| ![Grimoire (GPT).png](/images/thumb/2/22/Grimoire_%28GPT%29.png/300px-Grimoire_%28GPT%29.png) |
 | Information |
 | **Name** | Grimoire |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

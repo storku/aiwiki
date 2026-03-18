@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Your Startup Buddy (GPT) |
 | --- |
-| [![Your Startup Buddy (GPT).png](/images/thumb/2/2b/Your_Startup_Buddy_%28GPT%29.png/300px-Your_Startup_Buddy_%28GPT%29.png)](/wiki/file_your_startup_buddy_gpt_png) |
+| ![Your Startup Buddy (GPT).png](/images/thumb/2/2b/Your_Startup_Buddy_%28GPT%29.png/300px-Your_Startup_Buddy_%28GPT%29.png) |
 | Information |
 | **Name** | Your Startup Buddy |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WordCloud (ChatGPT Plugin) |
 | --- |
-| [![WordCloud.png](/images/c/c4/WordCloud.png)](/wiki/file_wordcloud_png) |
+| ![WordCloud.png](/images/c/c4/WordCloud.png) |
 | Information |
 | **Name** | WordCloud |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

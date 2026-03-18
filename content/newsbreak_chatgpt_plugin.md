@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| NewsBreak (ChatGPT Plugin) |
 | --- |
-| [![NewsBreak.jpg](/images/thumb/e/ec/NewsBreak.jpg/300px-NewsBreak.jpg)](/wiki/file_newsbreak_jpg) |
+| ![NewsBreak.jpg](/images/thumb/e/ec/NewsBreak.jpg/300px-NewsBreak.jpg) |
 | Information |
 | **Name** | NewsBreak |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

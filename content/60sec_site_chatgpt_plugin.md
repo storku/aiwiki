@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| 60sec site (ChatGPT Plugin) |
 | --- |
-| [![60sec site.png](/images/0/06/60sec_site.png)](/wiki/file_60sec_site_png) |
+| ![60sec site.png](/images/0/06/60sec_site.png) |
 | Information |
 | **Name** | 60sec site |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

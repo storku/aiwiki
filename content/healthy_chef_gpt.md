@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Healthy Chef (GPT) |
 | --- |
-| [![Healthy Chef (GPT).png](/images/thumb/6/6f/Healthy_Chef_%28GPT%29.png/300px-Healthy_Chef_%28GPT%29.png)](/wiki/file_healthy_chef_gpt_png) |
+| ![Healthy Chef (GPT).png](/images/thumb/6/6f/Healthy_Chef_%28GPT%29.png/300px-Healthy_Chef_%28GPT%29.png) |
 | Information |
 | **Name** | Healthy Chef |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

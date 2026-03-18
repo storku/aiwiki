@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Dart (ChatGPT Plugin) |
 | --- |
-| [![Dart.png](/images/thumb/2/29/Dart.png/300px-Dart.png)](/wiki/file_dart_png) |
+| ![Dart.png](/images/thumb/2/29/Dart.png/300px-Dart.png) |
 | Information |
 | **Name** | Dart |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

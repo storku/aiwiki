@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Auto Agent - saysay.ai (GPT) |
 | --- |
-| [![Auto Agent - saysay.ai (GPT).png](/images/thumb/e/eb/Auto_Agent_-_saysay.ai_%28GPT%29.png/300px-Auto_Agent_-_saysay.ai_%28GPT%29.png)](/wiki/file_auto_agent_-_saysay_ai_gpt_png) |
+| ![Auto Agent - saysay.ai (GPT).png](/images/thumb/e/eb/Auto_Agent_-_saysay.ai_%28GPT%29.png/300px-Auto_Agent_-_saysay.ai_%28GPT%29.png) |
 | Information |
 | **Name** | Auto Agent - saysay.ai |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

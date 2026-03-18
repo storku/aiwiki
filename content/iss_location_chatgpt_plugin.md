@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ISS Location (ChatGPT Plugin) |
 | --- |
-| [![ISS Location.png](/images/thumb/f/f0/ISS_Location.png/300px-ISS_Location.png)](/wiki/file_iss_location_png) |
+| ![ISS Location.png](/images/thumb/f/f0/ISS_Location.png/300px-ISS_Location.png) |
 | Information |
 | **Name** | ISS Location |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

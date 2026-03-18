@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| What should I watch? (GPT) |
 | --- |
-| [![What should I watch? (GPT).png](/images/thumb/0/05/What_should_I_watch%3F_%28GPT%29.png/300px-What_should_I_watch%3F_%28GPT%29.png)](/wiki/file_what_should_i_watch_gpt_png) |
+| ![What should I watch? (GPT).png](/images/thumb/0/05/What_should_I_watch%3F_%28GPT%29.png/300px-What_should_I_watch%3F_%28GPT%29.png) |
 | Information |
 | **Name** | What should I watch? |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

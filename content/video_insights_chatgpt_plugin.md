@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Video Insights (ChatGPT Plugin) |
 | --- |
-| [![Video Insights.png](/images/d/de/Video_Insights.png)](/wiki/file_video_insights_png) |
+| ![Video Insights.png](/images/d/de/Video_Insights.png) |
 | Information |
 | **Name** | Video Insights |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

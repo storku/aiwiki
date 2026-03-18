@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Aus Petrol Prices (ChatGPT Plugin) |
 | --- |
-| [![Aus Petrol Prices.png](/images/1/18/Aus_Petrol_Prices.png)](/wiki/file_aus_petrol_prices_png) |
+| ![Aus Petrol Prices.png](/images/1/18/Aus_Petrol_Prices.png) |
 | Information |
 | **Name** | Aus Petrol Prices |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

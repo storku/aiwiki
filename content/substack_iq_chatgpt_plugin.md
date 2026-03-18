@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Substack IQ (ChatGPT Plugin) |
 | --- |
-| [![Substack IQ.png](/images/thumb/e/e7/Substack_IQ.png/300px-Substack_IQ.png)](/wiki/file_substack_iq_png) |
+| ![Substack IQ.png](/images/thumb/e/e7/Substack_IQ.png/300px-Substack_IQ.png) |
 | Information |
 | **Name** | Substack IQ |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

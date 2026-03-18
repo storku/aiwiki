@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MediaReady (ChatGPT Plugin) |
 | --- |
-| [![MediaReady.png](/images/thumb/b/b9/MediaReady.png/300px-MediaReady.png)](/wiki/file_mediaready_png) |
+| ![MediaReady.png](/images/thumb/b/b9/MediaReady.png/300px-MediaReady.png) |
 | Information |
 | **Name** | MediaReady |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

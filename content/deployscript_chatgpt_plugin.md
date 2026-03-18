@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| DeployScript (ChatGPT Plugin) |
 | --- |
-| [![Deployscript.png](/images/thumb/c/c3/Deployscript.png/300px-Deployscript.png)](/wiki/file_deployscript_png) |
+| ![Deployscript.png](/images/thumb/c/c3/Deployscript.png/300px-Deployscript.png) |
 | Information |
 | **Name** | DeployScript |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Sudoku (ChatGPT Plugin) |
 | --- |
-| [![Sudoku.png](/images/thumb/d/d4/Sudoku.png/300px-Sudoku.png)](/wiki/file_sudoku_png) |
+| ![Sudoku.png](/images/thumb/d/d4/Sudoku.png/300px-Sudoku.png) |
 | Information |
 | **Name** | Sudoku |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Picturator (GPT) |
 | --- |
-| [![Picturator (GPT).png](/images/thumb/5/52/Picturator_%28GPT%29.png/300px-Picturator_%28GPT%29.png)](/wiki/file_picturator_gpt_png) |
+| ![Picturator (GPT).png](/images/thumb/5/52/Picturator_%28GPT%29.png/300px-Picturator_%28GPT%29.png) |
 | Information |
 | **Name** | Picturator |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

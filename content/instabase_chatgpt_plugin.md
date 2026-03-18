@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Instabase (ChatGPT Plugin) |
 | --- |
-| [![Instabase.jpeg](/images/b/ba/Instabase.jpeg)](/wiki/file_instabase_jpeg) |
+| ![Instabase.jpeg](/images/b/ba/Instabase.jpeg) |
 | Information |
 | **Name** | instabase |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

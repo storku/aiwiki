@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| GPTs Works |
 | --- |
-| [![GPTs Works.png](/images/thumb/3/3d/GPTs_Works.png/300px-GPTs_Works.png)](/wiki/file_gpts_works_png) |
+| ![GPTs Works.png](/images/thumb/3/3d/GPTs_Works.png/300px-GPTs_Works.png) |
 | Information |
 | **Name** | GPTs Works |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

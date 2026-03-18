@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Staypia (ChatGPT Plugin) |
 | --- |
-| [![Staypia.jpeg](/images/a/aa/Staypia.jpeg)](/wiki/file_staypia_jpeg) |
+| ![Staypia.jpeg](/images/a/aa/Staypia.jpeg) |
 | Information |
 | **Name** | staypia |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

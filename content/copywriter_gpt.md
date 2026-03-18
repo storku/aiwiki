@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Copywriter GPT |
 | --- |
-| [![Copywriter GPT.png](/images/thumb/8/88/Copywriter_GPT.png/300px-Copywriter_GPT.png)](/wiki/file_copywriter_gpt_png) |
+| ![Copywriter GPT.png](/images/thumb/8/88/Copywriter_GPT.png/300px-Copywriter_GPT.png) |
 | Information |
 | **Name** | Copywriter GPT |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WebPilot (ChatGPT Plugin) |
 | --- |
-| [*](/wiki/file_webpilot_png) |
+| * |
 | Information |
 | **Name** | WebPilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Space Photo Explorer (ChatGPT Plugin) |
 | --- |
-| [![Space Photo Explorer.png](/images/thumb/8/8a/Space_Photo_Explorer.png/300px-Space_Photo_Explorer.png)](/wiki/file_space_photo_explorer_png) |
+| ![Space Photo Explorer.png](/images/thumb/8/8a/Space_Photo_Explorer.png/300px-Space_Photo_Explorer.png) |
 | Information |
 | **Name** | Space Photo Explorer |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

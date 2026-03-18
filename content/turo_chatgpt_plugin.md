@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Turo (ChatGPT Plugin) |
 | --- |
-| [![Turo.png](/images/thumb/a/a6/Turo.png/300px-Turo.png)](/wiki/file_turo_png) |
+| ![Turo.png](/images/thumb/a/a6/Turo.png/300px-Turo.png) |
 | Information |
 | **Name** | Turo |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

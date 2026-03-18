@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WORDLY - WORD Game |
 | --- |
-| [![WORDLY - WORD Game.png](/images/thumb/1/14/WORDLY_-_WORD_Game.png/300px-WORDLY_-_WORD_Game.png)](/wiki/file_wordly_-_word_game_png) |
+| ![WORDLY - WORD Game.png](/images/thumb/1/14/WORDLY_-_WORD_Game.png/300px-WORDLY_-_WORD_Game.png) |
 | Information |
 | **Name** | WORDLY - WORD Game |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

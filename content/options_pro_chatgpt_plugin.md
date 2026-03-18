@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Options Pro (ChatGPT Plugin) |
 | --- |
-| [![Options Pro.png](/images/thumb/9/90/Options_Pro.png/300px-Options_Pro.png)](/wiki/file_options_pro_png) |
+| ![Options Pro.png](/images/thumb/9/90/Options_Pro.png/300px-Options_Pro.png) |
 | Information |
 | **Name** | Options Pro |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

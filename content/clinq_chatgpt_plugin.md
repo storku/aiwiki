@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| CLINQ (ChatGPT Plugin) |
 | --- |
-| [![CLINQ.png](/images/thumb/d/de/CLINQ.png/300px-CLINQ.png)](/wiki/file_clinq_png) |
+| ![CLINQ.png](/images/thumb/d/de/CLINQ.png/300px-CLINQ.png) |
 | Information |
 | **Name** | CLINQ |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

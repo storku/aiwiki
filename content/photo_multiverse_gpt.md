@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Photo Multiverse (GPT) |
 | --- |
-| [![Photo Multiverse (GPT).png](/images/thumb/f/f1/Photo_Multiverse_%28GPT%29.png/300px-Photo_Multiverse_%28GPT%29.png)](/wiki/file_photo_multiverse_gpt_png) |
+| ![Photo Multiverse (GPT).png](/images/thumb/f/f1/Photo_Multiverse_%28GPT%29.png/300px-Photo_Multiverse_%28GPT%29.png) |
 | Information |
 | **Name** | Photo Multiverse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

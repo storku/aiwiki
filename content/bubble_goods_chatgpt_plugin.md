@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Bubble Goods (ChatGPT Plugin) |
 | --- |
-| [![Bubble Goods.jpeg](/images/9/9e/Bubble_Goods.jpeg)](/wiki/file_bubble_goods_jpeg) |
+| ![Bubble Goods.jpeg](/images/9/9e/Bubble_Goods.jpeg) |
 | Information |
 | **Name** | Bubble Goods |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| C3 Glide (ChatGPT Plugin) |
 | --- |
-| [![C3 Glide.png](/images/thumb/a/a3/C3_Glide.png/300px-C3_Glide.png)](/wiki/file_c3_glide_png) |
+| ![C3 Glide.png](/images/thumb/a/a3/C3_Glide.png/300px-C3_Glide.png) |
 | Information |
 | **Name** | C3 Glide |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

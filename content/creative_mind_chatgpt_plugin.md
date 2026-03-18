@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Creative Mind (ChatGPT Plugin) |
 | --- |
-| [![Creative Mind.jpeg](/images/0/0c/Creative_Mind.jpeg)](/wiki/file_creative_mind_jpeg) |
+| ![Creative Mind.jpeg](/images/0/0c/Creative_Mind.jpeg) |
 | Information |
 | **Name** | Creative Mind |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

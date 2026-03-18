@@ -10,7 +10,7 @@ categories:
   - "Machine_learning"
 ---| Anthropic PBC |
 | --- |
-| [![Anthropic PBC logo](/images/thumb/c/c8/Anthropic_logo1.png/200px-Anthropic_logo1.png)](/wiki/file_anthropic_logo1_png) |
+| ![Anthropic PBC logo](/images/thumb/c/c8/Anthropic_logo1.png/200px-Anthropic_logo1.png) |
 | Type | [Private](/index.php?title=Private_company&action=edit&redlink=1) [Public-benefit corporation](/index.php?title=Public-benefit_corporation&action=edit&redlink=1) |
 | Industry | [Artificial intelligence](/wiki/artificial_intelligence) |
 | Founded | 2021 |

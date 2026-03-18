@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Career Copilot (ChatGPT Plugin) |
 | --- |
-| [![Career Copilot.png](/images/thumb/b/bc/Career_Copilot.png/300px-Career_Copilot.png)](/wiki/file_career_copilot_png) |
+| ![Career Copilot.png](/images/thumb/b/bc/Career_Copilot.png/300px-Career_Copilot.png) |
 | Information |
 | **Name** | Career Copilot |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

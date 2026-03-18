@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Change (ChatGPT Plugin) |
 | --- |
-| [![Change.png](/images/9/9a/Change.png)](/wiki/file_change_png) |
+| ![Change.png](/images/9/9a/Change.png) |
 | Information |
 | **Name** | Change |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

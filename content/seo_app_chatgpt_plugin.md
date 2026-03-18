@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| SEO.app (ChatGPT Plugin) |
 | --- |
-| [![SEO.app.png](/images/thumb/f/f3/SEO.app.png/300px-SEO.app.png)](/wiki/file_seo_app_png) |
+| ![SEO.app.png](/images/thumb/f/f3/SEO.app.png/300px-SEO.app.png) |
 | Information |
 | **Name** | SEO.app |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

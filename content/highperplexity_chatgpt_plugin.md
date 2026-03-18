@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HighPerplexity (ChatGPT Plugin) |
 | --- |
-| [![HighPerplexity.png](/images/thumb/e/e5/HighPerplexity.png/300px-HighPerplexity.png)](/wiki/file_highperplexity_png) |
+| ![HighPerplexity.png](/images/thumb/e/e5/HighPerplexity.png/300px-HighPerplexity.png) |
 | Information |
 | **Name** | highPerplexity |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| AI Chatbot Builder (ChatGPT Plugin) |
 | --- |
-| [![AI Chatbot Builder.png](/images/d/d7/AI_Chatbot_Builder.png)](/wiki/file_ai_chatbot_builder_png) |
+| ![AI Chatbot Builder.png](/images/d/d7/AI_Chatbot_Builder.png) |
 | Information |
 | **Name** | AI Chatbot Builder |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

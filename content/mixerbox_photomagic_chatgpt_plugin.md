@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox PhotoMagic (ChatGPT Plugin) |
 | --- |
-| [![MixerBox PhotoMagic.jpeg](/images/1/16/MixerBox_PhotoMagic.jpeg)](/wiki/file_mixerbox_photomagic_jpeg) |
+| ![MixerBox PhotoMagic.jpeg](/images/1/16/MixerBox_PhotoMagic.jpeg) |
 | Information |
 | **Name** | MixerBox PhotoMagic |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

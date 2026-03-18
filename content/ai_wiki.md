@@ -4,7 +4,7 @@ slug: "ai_wiki"
 ---| Welcome to AIWIKI.AI, the AI Wiki
  |
 | --- |
-| We are a community-driven wiki written and maintained by fans and enthusiasts of [artificial intelligence](/wiki/artificial_intelligence). To edit existing pages or create new pages, please [log in](/wiki/special_userlogin) or [register](/wiki/special_createaccount).
+| We are a community-driven wiki written and maintained by fans and enthusiasts of [artificial intelligence](/wiki/artificial_intelligence). To edit existing pages or create new pages, please log in or register.
  |
 
 | [AI Terms](/wiki/ai_terms)
@@ -85,15 +85,15 @@ slug: "ai_wiki"
 | [Custom GPTs](/wiki/custom_gpts)
  |
 | --- |
-|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/gpt_store) [GPT Store](/wiki/gpt_store) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/dall_e_custom_gpts) [DALL·E](/wiki/dall_e_custom_gpts) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/writing_custom_gpts) [Writing](/wiki/writing_custom_gpts) |  |
-|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/productivity_custom_gpts) [Productivity](/wiki/productivity_custom_gpts) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/research_analysis_custom_gpts) [Research & Analysis](/wiki/research_analysis_custom_gpts) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/programming_custom_gpts) [Programming](/wiki/programming_custom_gpts) |  |
+|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/gpt_store) [GPT Store](/wiki/gpt_store) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/dall_e_custom_gpts) [DALL·E](/wiki/dall_e_custom_gpts) | ![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png) Writing |  |
+|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/productivity_custom_gpts) [Productivity](/wiki/productivity_custom_gpts) | ![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png) Research & Analysis | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/programming_custom_gpts) [Programming](/wiki/programming_custom_gpts) |  |
 |  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/education_custom_gpts) [Education](/wiki/education_custom_gpts) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/lifestyle_custom_gpts) [Lifestyle](/wiki/lifestyle_custom_gpts) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/custom_gpts_by_chatgpt) [By ChatGPT](/wiki/custom_gpts_by_chatgpt) |  |
 
 | [ChatGPT Plugins](/wiki/list_of_chatgpt_plugins)
  |
 | --- |
 |  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/productivity_chatgpt_plugins) [Productivity](/wiki/productivity_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/finance_chatgpt_plugins) [Finance](/wiki/finance_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/education_chatgpt_plugins) [Education](/wiki/education_chatgpt_plugins) |  |
-|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/shopping_chatgpt_plugins) [Shopping](/wiki/shopping_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/travel_chatgpt_plugins) [Travel](/wiki/travel_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/employment_chatgpt_plugins) [Employment](/wiki/employment_chatgpt_plugins) |  |
+|  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/shopping_chatgpt_plugins) [Shopping](/wiki/shopping_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/travel_chatgpt_plugins) [Travel](/wiki/travel_chatgpt_plugins) | ![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png) Employment |  |
 |  | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/gaming_chatgpt_plugins) [Gaming](/wiki/gaming_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/entertainment_chatgpt_plugins) [Entertainment](/wiki/entertainment_chatgpt_plugins) | [![Aiwiki logo1 symbol.png](/images/thumb/6/64/Aiwiki_logo1_symbol.png/20px-Aiwiki_logo1_symbol.png)](/wiki/chatgpt_plugin_categories) [Others](/wiki/chatgpt_plugin_categories) |  |
 
 | [Models](/wiki/models)

@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| JetBook.Click (ChatGPT Plugin) |
 | --- |
-| [![JetBookClick.jpg](/images/thumb/3/36/JetBookClick.jpg/300px-JetBookClick.jpg)](/wiki/file_jetbookclick_jpg) |
+| ![JetBookClick.jpg](/images/thumb/3/36/JetBookClick.jpg/300px-JetBookClick.jpg) |
 | Information |
 | **Name** | JetBook.Click |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

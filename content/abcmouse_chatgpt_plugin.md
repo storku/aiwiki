@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| ABCmouse (ChatGPT Plugin) |
 | --- |
-| [![ABCmouse.png](/images/thumb/1/16/ABCmouse.png/300px-ABCmouse.png)](/wiki/file_abcmouse_png) |
+| ![ABCmouse.png](/images/thumb/1/16/ABCmouse.png/300px-ABCmouse.png) |
 | Information |
 | **Name** | ABCmouse |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

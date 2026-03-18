@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Venture GPT (for VC and Startups) |
 | --- |
-| [![Venture GPT (for VC and Startups).png](/images/thumb/c/ca/Venture_GPT_%28for_VC_and_Startups%29.png/300px-Venture_GPT_%28for_VC_and_Startups%29.png)](/wiki/file_venture_gpt_for_vc_and_startups_png) |
+| ![Venture GPT (for VC and Startups).png](/images/thumb/c/ca/Venture_GPT_%28for_VC_and_Startups%29.png/300px-Venture_GPT_%28for_VC_and_Startups%29.png) |
 | Information |
 | **Name** | Venture GPT (for VC and Startups) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

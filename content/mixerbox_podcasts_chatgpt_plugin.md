@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| MixerBox Podcasts (ChatGPT Plugin) |
 | --- |
-| [![MixerBox Podcasts.png](/images/thumb/f/f3/MixerBox_Podcasts.png/300px-MixerBox_Podcasts.png)](/wiki/file_mixerbox_podcasts_png) |
+| ![MixerBox Podcasts.png](/images/thumb/f/f3/MixerBox_Podcasts.png/300px-MixerBox_Podcasts.png) |
 | Information |
 | **Name** | MixerBox Podcasts |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

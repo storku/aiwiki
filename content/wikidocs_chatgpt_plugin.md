@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| WikiDocs (ChatGPT Plugin) |
 | --- |
-| [![WikiDocs.png](/images/thumb/a/af/WikiDocs.png/300px-WikiDocs.png)](/wiki/file_wikidocs_png) |
+| ![WikiDocs.png](/images/thumb/a/af/WikiDocs.png/300px-WikiDocs.png) |
 | Information |
 | **Name** | WikiDocs |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

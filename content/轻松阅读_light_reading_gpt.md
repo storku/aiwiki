@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| 轻松阅读（Light reading） (GPT) |
 | --- |
-| [![轻松阅读（Light reading） (GPT).png](/images/thumb/c/cb/%E8%BD%BB%E6%9D%BE%E9%98%85%E8%AF%BB%EF%BC%88Light_reading%EF%BC%89_%28GPT%29.png/300px-%E8%BD%BB%E6%9D%BE%E9%98%85%E8%AF%BB%EF%BC%88Light_reading%EF%BC%89_%28GPT%29.png)](/wiki/file_轻松阅读_light_reading_gpt_png) |
+| ![轻松阅读（Light reading） (GPT).png](/images/thumb/c/cb/%E8%BD%BB%E6%9D%BE%E9%98%85%E8%AF%BB%EF%BC%88Light_reading%EF%BC%89_%28GPT%29.png/300px-%E8%BD%BB%E6%9D%BE%E9%98%85%E8%AF%BB%EF%BC%88Light_reading%EF%BC%89_%28GPT%29.png) |
 | Information |
 | **Name** | 轻松阅读（Light reading） |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

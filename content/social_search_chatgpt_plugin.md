@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Social Search (ChatGPT Plugin) |
 | --- |
-| [![Social Search.png](/images/thumb/d/d3/Social_Search.png/300px-Social_Search.png)](/wiki/file_social_search_png) |
+| ![Social Search.png](/images/thumb/d/d3/Social_Search.png/300px-Social_Search.png) |
 | Information |
 | **Name** | Social Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

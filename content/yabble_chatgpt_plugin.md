@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Yabble (ChatGPT Plugin) |
 | --- |
-| [![Yabble.png](/images/thumb/e/e0/Yabble.png/300px-Yabble.png)](/wiki/file_yabble_png) |
+| ![Yabble.png](/images/thumb/e/e0/Yabble.png/300px-Yabble.png) |
 | Information |
 | **Name** | Yabble |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

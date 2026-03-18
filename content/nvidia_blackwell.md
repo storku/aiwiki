@@ -8,8 +8,8 @@ categories:
   - "Artificial_intelligence_hardware"
 ---[Template:Infobox chipset](/index.php?title=Template:Infobox_chipset&action=edit&redlink=1)
 
-[![Nvidia blackwell1.jpg](/images/thumb/c/c0/Nvidia_blackwell1.jpg/300px-Nvidia_blackwell1.jpg)](/wiki/file_nvidia_blackwell1_jpg)
- [![Nvidia blackwell2.jpg](/images/thumb/8/86/Nvidia_blackwell2.jpg/300px-Nvidia_blackwell2.jpg)](/wiki/file_nvidia_blackwell2_jpg)
+![Nvidia blackwell1.jpg](/images/thumb/c/c0/Nvidia_blackwell1.jpg/300px-Nvidia_blackwell1.jpg)
+ ![Nvidia blackwell2.jpg](/images/thumb/8/86/Nvidia_blackwell2.jpg/300px-Nvidia_blackwell2.jpg)
 
 **NVIDIA Blackwell** is a [GPU](/index.php?title=GPU&action=edit&redlink=1) architecture and data center platform family by [NVIDIA](/wiki/nvidia) introduced on March 18, 2024 at the company's Graphics Technology Conference (GTC). It succeeds [NVIDIA Hopper](/index.php?title=NVIDIA_Hopper&action=edit&redlink=1) for datacenter and [Ada Lovelace](/index.php?title=Ada_Lovelace_(microarchitecture)&action=edit&redlink=1) for consumer graphics, and underpins products such as the [B200](/index.php?title=B200&action=edit&redlink=1) Tensor Core GPU, the [GB200 Grace Blackwell Superchip](/index.php?title=GB200_Grace_Blackwell_Superchip&action=edit&redlink=1) (which couples two B200 GPUs with a [Grace CPU](/index.php?title=Grace_CPU&action=edit&redlink=1)), rack-scale systems like [GB200 NVL72](/index.php?title=GB200_NVL72&action=edit&redlink=1), and the consumer [GeForce RTX 50 series](/index.php?title=GeForce_RTX_50_series&action=edit&redlink=1). Blackwell-architecture GPUs comprise two reticle-limited dies linked by a 10 TB/s chip-to-chip interconnect in a single logical GPU, are fabricated on custom [TSMC](/index.php?title=TSMC&action=edit&redlink=1) 4NP for datacenter and 4N for consumer products, and pack 208 billion transistors in datacenter variants.[&#91;1&#93;](#cite_note-arch-page-1)
 

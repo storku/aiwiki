@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Mocktail Mixologist (GPT) |
 | --- |
-| [![Mocktail Mixologist (GPT).png](/images/thumb/c/c2/Mocktail_Mixologist_%28GPT%29.png/300px-Mocktail_Mixologist_%28GPT%29.png)](/wiki/file_mocktail_mixologist_gpt_png) |
+| ![Mocktail Mixologist (GPT).png](/images/thumb/c/c2/Mocktail_Mixologist_%28GPT%29.png/300px-Mocktail_Mixologist_%28GPT%29.png) |
 | Information |
 | **Name** | Mocktail Mixologist |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

@@ -5,7 +5,7 @@ slug: "chatgpt"
 
 ## Introduction
 
-[*](/wiki/file_gpt4-122_jpg)  [](/wiki/file_gpt4-122_jpg)
+*  
 Figure 1: ChatGPT user interface. Source: OpenAI.
 Developed by the [AI](/wiki/ai) research lab [OpenAI](/wiki/openai), ChatGPT is a [large language model](/wiki/large_language_model) ([LLM](/wiki/llm)) in the [GPT series](/wiki/gpt) that generates text based on an [input](/index.php?title=Input&action=edit&redlink=1) ([prompt](/wiki/prompt)) from a user (figure 1). It interacts in a conversational way, answering follow-up questions, admitting to its mistakes, refusing inappropriate requests, and challenging incorrect premises. [&#91;1&#93;](#cite_note-”1”-1) [&#91;2&#93;](#cite_note-”2”-2) [&#91;3&#93;](#cite_note-”3”-3) The LLM was trained on a massive amount of information [&#91;2&#93;](#cite_note-”2”-2) and it's a derivative of [InstructGPT](/index.php?title=InstructGPT&action=edit&redlink=1), a program trained to follow natural language instructions in a prompt and give an elaborate response. [&#91;1&#93;](#cite_note-”1”-1)
 
@@ -23,7 +23,7 @@ Users had a diverse range of requests to ChatGPT, with some asking the AI to rew
 
 ## Features
 
-[![](/images/thumb/f/fc/GPT_Training_process.png/300px-GPT_Training_process.png)](/wiki/file_gpt_training_process_png)  [](/wiki/file_gpt_training_process_png)
+![](/images/thumb/f/fc/GPT_Training_process.png/300px-GPT_Training_process.png)  
 Figure 2: General overview of the training process using reinforcement learning from human feedback. Source: OpenAI.
 The ChatGPT model was trained using [Reinforcement Learning from Human Feedback](/index.php?title=Reinforcement_Learning_from_Human_Feedback&action=edit&redlink=1) ([RLHF](/wiki/rlhf)) following the same methods as InstructGPT (figure 2); only with small differences in the data collection setup. Training for an initial model was made using supervised fine-tuning where human AI trainers had "conversations in which they played both sides-the user and an AI assistant." [&#91;1&#93;](#cite_note-”1”-1)
 

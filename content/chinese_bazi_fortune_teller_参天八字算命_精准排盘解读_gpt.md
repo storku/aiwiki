@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Chinese BaZi Fortune Teller (参天八字算命, 精准排盘解读) (GPT) |
 | --- |
-| [![Chinese BaZi Fortune Teller (参天八字算命, 精准排盘解读) (GPT).png](/images/thumb/f/f4/Chinese_BaZi_Fortune_Teller_%28%E5%8F%82%E5%A4%A9%E5%85%AB%E5%AD%97%E7%AE%97%E5%91%BD%2C_%E7%B2%BE%E5%87%86%E6%8E%92%E7%9B%98%E8%A7%A3%E8%AF%BB%29_%28GPT%29.png/300px-Chinese_BaZi_Fortune_Teller_%28%E5%8F%82%E5%A4%A9%E5%85%AB%E5%AD%97%E7%AE%97%E5%91%BD%2C_%E7%B2%BE%E5%87%86%E6%8E%92%E7%9B%98%E8%A7%A3%E8%AF%BB%29_%28GPT%29.png)](/wiki/file_chinese_bazi_fortune_teller_参天八字算命_精准排盘解读_gpt_png) |
+| ![Chinese BaZi Fortune Teller (参天八字算命, 精准排盘解读) (GPT).png](/images/thumb/f/f4/Chinese_BaZi_Fortune_Teller_%28%E5%8F%82%E5%A4%A9%E5%85%AB%E5%AD%97%E7%AE%97%E5%91%BD%2C_%E7%B2%BE%E5%87%86%E6%8E%92%E7%9B%98%E8%A7%A3%E8%AF%BB%29_%28GPT%29.png/300px-Chinese_BaZi_Fortune_Teller_%28%E5%8F%82%E5%A4%A9%E5%85%AB%E5%AD%97%E7%AE%97%E5%91%BD%2C_%E7%B2%BE%E5%87%86%E6%8E%92%E7%9B%98%E8%A7%A3%E8%AF%BB%29_%28GPT%29.png) |
 | Information |
 | **Name** | Chinese BaZi Fortune Teller (参天八字算命, 精准排盘解读) |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

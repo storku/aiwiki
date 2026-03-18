@@ -6,7 +6,7 @@ categories:
   - "Custom_GPTs"
 ---| Coloring Book Hero (GPT) |
 | --- |
-| [![Coloring Book Hero (GPT).png](/images/thumb/7/74/Coloring_Book_Hero_%28GPT%29.png/300px-Coloring_Book_Hero_%28GPT%29.png)](/wiki/file_coloring_book_hero_gpt_png) |
+| ![Coloring Book Hero (GPT).png](/images/thumb/7/74/Coloring_Book_Hero_%28GPT%29.png/300px-Coloring_Book_Hero_%28GPT%29.png) |
 | Information |
 | **Name** | Coloring Book Hero |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

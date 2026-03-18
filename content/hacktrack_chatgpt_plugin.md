@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| HackTrack (ChatGPT Plugin) |
 | --- |
-| [![HackTrack.png](/images/thumb/9/96/HackTrack.png/300px-HackTrack.png)](/wiki/file_hacktrack_png) |
+| ![HackTrack.png](/images/thumb/9/96/HackTrack.png/300px-HackTrack.png) |
 | Information |
 | **Name** | HackTrack |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

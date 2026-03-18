@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Klook (ChatGPT Plugin) |
 | --- |
-| [![Klook.jpg](/images/thumb/5/58/Klook.jpg/300px-Klook.jpg)](/wiki/file_klook_jpg) |
+| ![Klook.jpg](/images/thumb/5/58/Klook.jpg/300px-Klook.jpg) |
 | Information |
 | **Name** | Klook |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |

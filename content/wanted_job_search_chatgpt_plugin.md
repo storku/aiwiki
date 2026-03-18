@@ -5,7 +5,7 @@ categories:
   - "Plugin"
 ---| Wanted Job Search (ChatGPT Plugin) |
 | --- |
-| [![Wanted Job Search.png](/images/thumb/4/42/Wanted_Job_Search.png/300px-Wanted_Job_Search.png)](/wiki/file_wanted_job_search_png) |
+| ![Wanted Job Search.png](/images/thumb/4/42/Wanted_Job_Search.png/300px-Wanted_Job_Search.png) |
 | Information |
 | **Name** | Wanted Job Search |
 | **Platform** | [ChatGPT](/wiki/chatgpt) |
