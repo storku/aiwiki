@@ -1,15 +1,44 @@
-import { getAllPages } from "@/lib/content";
+import fs from "fs";
+import path from "path";
+import { getAllPages, getAllCategories } from "@/lib/content";
 import type { MetadataRoute } from "next";
+
+const POPULAR_SLUGS = new Set([
+  "chatgpt", "ai", "dall-e", "gpt-4", "large_language_model",
+  "midjourney", "claude", "anthropic", "transformer", "neural_network",
+  "deep_learning", "machine_learning", "openai", "stable_diffusion",
+  "reinforcement_learning", "natural_language_processing",
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = getAllPages();
+  const categories = getAllCategories();
   const baseUrl = "https://aiwiki.ai";
+  const contentDir = path.join(process.cwd(), "content");
 
-  const wikiPages = pages.map((page) => ({
-    url: `${baseUrl}/wiki/${page.slug}`,
+  const wikiPages = pages.map((page) => {
+    let lastModified = new Date();
+    const filePath = path.join(contentDir, `${page.slug}.md`);
+    try {
+      const stat = fs.statSync(filePath);
+      lastModified = stat.mtime;
+    } catch {
+      // use default
+    }
+
+    return {
+      url: `${baseUrl}/wiki/${page.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: POPULAR_SLUGS.has(page.slug) ? 0.9 : 0.7,
+    };
+  });
+
+  const categoryPages = categories.map((cat) => ({
+    url: `${baseUrl}/categories/${encodeURIComponent(cat.name)}`,
     lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
   }));
 
   return [
@@ -31,6 +60,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/search`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    ...categoryPages,
     ...wikiPages,
   ];
 }

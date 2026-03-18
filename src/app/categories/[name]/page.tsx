@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPages, getAllCategories } from "@/lib/content";
+import PaginatedGrid from "@/components/PaginatedGrid";
 import type { Metadata } from "next";
 
 interface Props {
@@ -51,25 +52,7 @@ export default async function CategoryPage({ params }: Props) {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {pages.map((page, i) => (
-          <Link
-            key={page.slug}
-            href={`/wiki/${page.slug}`}
-            className="card group p-4 animate-fade-in"
-            style={{ animationDelay: `${i * 0.015}s` }}
-          >
-            <h2 className="font-semibold text-sm group-hover:text-primary transition-colors">
-              {page.title}
-            </h2>
-            {page.categories.filter((c) => c !== catName).length > 0 && (
-              <p className="text-xs text-muted mt-1.5 truncate">
-                {page.categories.filter((c) => c !== catName).slice(0, 3).join(", ")}
-              </p>
-            )}
-          </Link>
-        ))}
-      </div>
+      <PaginatedGrid pages={pages} categoryName={catName} />
     </div>
   );
 }

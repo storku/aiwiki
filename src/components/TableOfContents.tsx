@@ -1,39 +1,13 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-
-interface TocItem {
-  id: string;
-  text: string;
-  level: number;
-}
+import { parseHeadings } from "@/lib/headings";
 
 export default function TableOfContents({ content }: { content: string }) {
   const [activeId, setActiveId] = useState("");
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  const headings: TocItem[] = [];
-  const lines = content.split("\n");
-  for (const line of lines) {
-    const match = line.match(/^(#{2,4})\s+(.+)$/);
-    if (match) {
-      const level = match[1].length;
-      const text = match[2]
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/[*_`]/g, "")
-        .replace(/&#\d+;/g, "")
-        .trim();
-      const id = text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
-      if (text && id) {
-        headings.push({ id, text, level });
-      }
-    }
-  }
+  const headings = parseHeadings(content);
 
   useEffect(() => {
     if (headings.length === 0) return;

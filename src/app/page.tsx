@@ -48,8 +48,25 @@ export default function HomePage() {
 
   const totalCategories = getAllCategories().length;
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AI Wiki",
+    url: "https://aiwiki.ai",
+    description: `Comprehensive encyclopedia covering ${pages.length.toLocaleString()} articles on artificial intelligence.`,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://aiwiki.ai/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative hero-glow pt-16 sm:pt-24 pb-12 sm:pb-16 text-center animate-fade-in-up">
         <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-5 leading-[1.1]">

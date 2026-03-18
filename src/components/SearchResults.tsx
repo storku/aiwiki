@@ -8,6 +8,7 @@ interface SearchItem {
   t: string;
   s: string;
   c: string;
+  e: string;
 }
 
 export default function SearchResults({ initialQuery }: { initialQuery: string }) {
@@ -28,7 +29,8 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
     () =>
       new Fuse(items, {
         keys: [
-          { name: "t", weight: 2 },
+          { name: "t", weight: 3 },
+          { name: "e", weight: 1.5 },
           { name: "c", weight: 1 },
         ],
         threshold: 0.3,
@@ -79,10 +81,10 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
           <Link
             key={item.s}
             href={`/wiki/${item.s}`}
-            className="card group flex items-center gap-3 p-4 animate-fade-in"
+            className="card group flex items-start gap-3 p-4 animate-fade-in"
             style={{ animationDelay: `${idx * 0.02}s` }}
           >
-            <div className="icon-box w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
+            <div className="icon-box w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors mt-0.5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
@@ -92,11 +94,14 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
               <h2 className="font-semibold text-sm group-hover:text-primary transition-colors">
                 {item.t}
               </h2>
+              {item.e && (
+                <p className="text-xs text-muted mt-1 line-clamp-2 leading-relaxed">{item.e}</p>
+              )}
               {item.c && (
-                <p className="text-xs text-muted mt-0.5 truncate">{item.c}</p>
+                <p className="text-[11px] text-muted/70 mt-1.5 truncate">{item.c}</p>
               )}
             </div>
-            <svg className="shrink-0 text-muted/30 group-hover:text-primary transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+            <svg className="shrink-0 text-muted/30 group-hover:text-primary transition-colors mt-1" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
           </Link>
         ))}
       </div>

@@ -32,7 +32,7 @@ function filterCategories(cats: string[]): string[] {
   return cats.filter((c) => !INTERNAL_CATEGORIES.has(c));
 }
 
-function generateExcerpt(content: string, maxLen = 160): string {
+export function generateExcerpt(content: string, maxLen = 160): string {
   const text = content
     .replace(/^---[\s\S]*?---/, "")
     .replace(/#{1,6}\s+.*/g, "")
@@ -132,14 +132,31 @@ export function getRelatedPages(
   limit = 6
 ): WikiPageMeta[] {
   const pages = getAllPages();
+  const allCats = getAllCategories();
+  const catSizeMap = new Map(allCats.map((c) => [c.name, c.count]));
   const catSet = new Set(categories);
+  const titleTokens = new Set(
+    slug.split("_").filter((t) => t.length > 2).map((t) => t.toLowerCase())
+  );
 
   return pages
-    .filter((p) => p.slug !== slug && p.categories.some((c) => catSet.has(c)))
-    .sort((a, b) => {
-      const aScore = a.categories.filter((c) => catSet.has(c)).length;
-      const bScore = b.categories.filter((c) => catSet.has(c)).length;
-      return bScore - aScore;
+    .filter((p) => p.slug !== slug)
+    .map((p) => {
+      let score = 0;
+      // Category overlap with IDF weighting (rarer categories = stronger signal)
+      for (const c of p.categories) {
+        if (catSet.has(c)) {
+          score += 1 / Math.log((catSizeMap.get(c) || 1) + 1);
+        }
+      }
+      // Title token overlap
+      const pTokens = p.slug.split("_").filter((t) => t.length > 2).map((t) => t.toLowerCase());
+      const overlap = pTokens.filter((t) => titleTokens.has(t)).length;
+      score += overlap * 0.5;
+      return { page: p, score };
     })
-    .slice(0, limit);
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.page);
 }
