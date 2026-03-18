@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -51,14 +52,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                const t = localStorage.getItem('theme');
-                if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.setAttribute('data-theme', 'dark');
-                }
-              } catch(e) {}
-            `,
+            __html: `try{const t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark')}catch(e){}`,
           }}
         />
       </head>
@@ -66,10 +60,11 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
       >
         <Header />
-        <main className="mx-auto max-w-6xl px-4 py-8 min-h-[60vh]">
+        <main className="mx-auto max-w-6xl px-4 sm:px-6 py-8 min-h-[60vh]">
           {children}
         </main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

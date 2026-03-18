@@ -11,26 +11,35 @@ export default function CategoriesPage() {
   const categories = getAllCategories();
 
   return (
-    <div>
+    <div className="animate-fade-in">
       <nav className="flex items-center gap-1.5 text-sm text-muted mb-6">
         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
-        <span>/</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
         <span className="text-foreground">Categories</span>
       </nav>
-      <h1 className="text-3xl font-extrabold tracking-tight mb-2">Categories</h1>
+
+      <h1 className="text-3xl font-extrabold tracking-tight mb-1">Categories</h1>
       <p className="text-muted mb-8">{categories.length} categories</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {categories.map((cat) => (
+        {categories.map((cat, i) => (
           <Link
             key={cat.name}
             href={`/categories/${encodeURIComponent(cat.name)}`}
-            className="group flex items-center justify-between p-4 rounded-lg border border-border hover:border-primary/50 hover:shadow-md transition-all"
+            className="card group flex items-center justify-between p-4 animate-fade-in"
+            style={{ animationDelay: `${i * 0.015}s` }}
           >
-            <span className="font-medium group-hover:text-primary transition-colors">
-              {cat.name.replace(/_/g, " ")}
-            </span>
-            <span className="text-sm text-muted bg-surface px-2 py-0.5 rounded-md">
+            <div className="flex items-center gap-3 min-w-0">
+              <div className="w-8 h-8 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" />
+                </svg>
+              </div>
+              <span className="font-medium text-sm group-hover:text-primary transition-colors truncate">
+                {cat.name.replace(/_/g, " ")}
+              </span>
+            </div>
+            <span className="text-xs text-muted bg-surface px-2 py-1 rounded-md shrink-0 ml-2">
               {cat.count}
             </span>
           </Link>
