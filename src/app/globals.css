@@ -6,7 +6,7 @@
   --color-primary: #3b82f6;
   --color-primary-dark: #2563eb;
   --color-primary-light: #dbeafe;
-  --color-border: #e5e7eb;
+  --color-border: #e2e8f0;
   --color-surface: #f8fafc;
   --color-surface-hover: #f1f5f9;
   --color-muted: #64748b;
@@ -25,27 +25,27 @@
 }
 
 [data-theme="dark"] {
-  --background: #0c1222;
+  --background: #0b1120;
   --foreground: #e2e8f0;
   --color-border: #1e293b;
-  --color-surface: #131c31;
-  --color-surface-hover: #1a2540;
+  --color-surface: #111827;
+  --color-surface-hover: #1a2332;
   --color-muted: #94a3b8;
-  --color-primary-light: #172554;
-  --color-accent-light: #1e1338;
+  --color-primary-light: #1e2d4a;
+  --color-accent-light: #271f45;
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background: #0c1222;
+    --background: #0b1120;
     --foreground: #e2e8f0;
     --color-border: #1e293b;
-    --color-surface: #131c31;
-    --color-surface-hover: #1a2540;
+    --color-surface: #111827;
+    --color-surface-hover: #1a2332;
     --color-muted: #94a3b8;
-    --color-primary-light: #172554;
-    --color-accent-light: #1e1338;
+    --color-primary-light: #1e2d4a;
+    --color-accent-light: #271f45;
     color-scheme: dark;
   }
 }
@@ -73,11 +73,6 @@ html {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulse-subtle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
-}
-
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
@@ -100,19 +95,18 @@ html {
 
 /* ── Hero gradient ─────────────────────────── */
 .hero-gradient {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 50%, #ec4899 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-glow {
-  background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(59, 130, 246, 0.08), transparent);
+  background: radial-gradient(ellipse 70% 50% at 50% 20%, rgba(59, 130, 246, 0.07), transparent);
 }
 
-[data-theme="dark"] .hero-glow,
-:root:not([data-theme="light"]) .hero-glow {
-  background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(59, 130, 246, 0.12), transparent);
+[data-theme="dark"] .hero-glow {
+  background: radial-gradient(ellipse 80% 60% at 50% 10%, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.1), transparent);
 }
 
 /* ── Card hover effects ────────────────────── */
@@ -124,13 +118,33 @@ html {
 }
 
 .card:hover {
-  border-color: var(--color-primary);
-  box-shadow: 0 4px 24px -4px rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 24px -4px rgba(59, 130, 246, 0.08);
   transform: translateY(-1px);
 }
 
+[data-theme="dark"] .card {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
 [data-theme="dark"] .card:hover {
-  box-shadow: 0 4px 24px -4px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 4px 24px -4px rgba(59, 130, 246, 0.18), 0 0 0 1px rgba(59, 130, 246, 0.1);
+}
+
+/* ── Stat card ─────────────────────────────── */
+.stat-card {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+}
+
+[data-theme="dark"] .stat-card {
+  background: linear-gradient(145deg, var(--color-surface) 0%, var(--color-surface-hover) 100%);
+  border-color: var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 /* ── Wiki content styles ───────────────────── */
@@ -156,6 +170,11 @@ html {
   letter-spacing: -0.01em;
 }
 
+[data-theme="dark"] .wiki-content h2 {
+  border-bottom-color: #1e293b;
+  color: #f1f5f9;
+}
+
 .wiki-content h3 {
   font-size: 1.175rem;
   font-weight: 600;
@@ -173,7 +192,6 @@ html {
 .wiki-content p {
   margin-bottom: 1rem;
   line-height: 1.8;
-  color: var(--foreground);
 }
 
 .wiki-content a {
@@ -185,9 +203,13 @@ html {
   transition: text-decoration-color 0.15s, color 0.15s;
 }
 
+[data-theme="dark"] .wiki-content a {
+  color: #60a5fa;
+  text-decoration-color: rgba(96, 165, 250, 0.3);
+}
+
 .wiki-content a:hover {
-  text-decoration-color: var(--color-primary);
-  color: var(--color-primary-dark);
+  text-decoration-color: currentColor;
 }
 
 .wiki-content ul {
@@ -238,6 +260,15 @@ html {
   color: var(--color-muted);
 }
 
+[data-theme="dark"] .wiki-content th {
+  background-color: var(--color-surface-hover);
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .wiki-content tr:nth-child(even) td {
+  background-color: rgba(30, 41, 59, 0.35);
+}
+
 .wiki-content code {
   background-color: var(--color-surface);
   padding: 0.125rem 0.375rem;
@@ -272,6 +303,22 @@ html {
   color: var(--color-muted);
   background-color: var(--color-surface);
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+[data-theme="dark"] .wiki-content blockquote {
+  background-color: rgba(59, 130, 246, 0.06);
+  border-left-color: rgba(59, 130, 246, 0.5);
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .wiki-content code {
+  background: var(--color-surface-hover);
+  border-color: #263354;
+}
+
+[data-theme="dark"] .wiki-content pre {
+  background: #0d1117;
+  border-color: #1e293b;
 }
 
 .wiki-content blockquote p:last-child {
@@ -316,6 +363,10 @@ mark {
   border-radius: 0.125rem;
 }
 
+[data-theme="dark"] mark {
+  background-color: rgba(59, 130, 246, 0.25);
+}
+
 /* ── Back to top button ────────────────────── */
 .back-to-top {
   transition: opacity 0.3s, transform 0.3s;
@@ -327,9 +378,20 @@ mark {
   pointer-events: none;
 }
 
+/* ── Kbd styling (dark mode) ───────────────── */
+[data-theme="dark"] kbd {
+  background: var(--color-surface-hover);
+  border-color: #334155;
+  color: #94a3b8;
+}
+
 /* ── Selection ─────────────────────────────── */
 ::selection {
   background-color: rgba(59, 130, 246, 0.2);
+}
+
+[data-theme="dark"] ::selection {
+  background-color: rgba(59, 130, 246, 0.35);
 }
 
 /* ── Scrollbar ─────────────────────────────── */
@@ -349,4 +411,90 @@ mark {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-muted);
+}
+
+/* ── Dark mode utility overrides ───────────── */
+[data-theme="dark"] .dark\:surface-elevated {
+  background: var(--color-surface-hover);
+}
+
+/* ── Dark mode inputs ─────────────────────── */
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="search"] {
+  background: #0d1117;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] input[type="text"]:focus,
+[data-theme="dark"] input[type="search"]:focus {
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* ── Dark mode back-to-top ────────────────── */
+[data-theme="dark"] .back-to-top {
+  background: var(--color-surface-hover);
+  border-color: #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Dark mode header ─────────────────────── */
+[data-theme="dark"] header {
+  border-bottom-color: #1e293b;
+}
+
+/* ── Dark mode footer ─────────────────────── */
+[data-theme="dark"] footer {
+  border-top-color: #1e293b;
+}
+
+/* ── Dark mode explore CTA section ────────── */
+[data-theme="dark"] .explore-cta {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 50%, rgba(236, 72, 153, 0.04) 100%);
+  border-color: #1e293b;
+}
+
+/* ── Dark mode category badge counts ──────── */
+[data-theme="dark"] .cat-count {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+/* ── Dark mode icon containers in cards ───── */
+[data-theme="dark"] .icon-box {
+  background: #0d1117;
+  color: #64748b;
+}
+
+/* ── Dark mode alphabet nav ───────────────── */
+[data-theme="dark"] .alpha-nav {
+  background: var(--color-surface);
+  border-color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .alpha-nav a {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .alpha-nav a:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ── Dark mode quick link pills ───────────── */
+[data-theme="dark"] .quick-link {
+  background: var(--color-surface);
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .quick-link:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  background: var(--color-surface-hover);
+}
+
+/* ── Dark mode wiki images ────────────────── */
+[data-theme="dark"] .wiki-content img {
+  border-color: #1e293b;
+  opacity: 0.9;
 }

@@ -8,7 +8,7 @@ const POPULAR_SLUGS = [
   "gpt-4",
   "large_language_model",
   "midjourney",
-  "claude__ai",
+  "claude",
   "anthropic",
   "transformer",
   "neural_network",
@@ -31,7 +31,7 @@ const TOPIC_SECTIONS = [
   {
     title: "AI Products",
     icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
-    slugs: ["chatgpt", "dall-e", "midjourney", "claude__ai", "stable_diffusion", "gpt-4"],
+    slugs: ["chatgpt", "dall-e", "midjourney", "claude", "stable_diffusion", "gpt-4"],
   },
   {
     title: "AI Companies",
@@ -83,7 +83,7 @@ export default function HomePage() {
               <Link
                 key={slug}
                 href={`/wiki/${slug}`}
-                className="px-3 py-1 rounded-full border border-border bg-background hover:border-primary hover:text-primary transition-colors"
+                className="quick-link px-3 py-1 rounded-full border border-border bg-background hover:border-primary hover:text-primary transition-colors"
               >
                 {label}
               </Link>
@@ -99,9 +99,9 @@ export default function HomePage() {
           { value: totalCategories.toString(), label: "Categories", color: "text-accent" },
           { value: "Free", label: "Open Access", color: "text-success" },
         ].map((stat) => (
-          <div key={stat.label} className="text-center p-4 sm:p-5 rounded-xl bg-surface border border-border">
+          <div key={stat.label} className="stat-card text-center p-4 sm:p-5">
             <p className={`text-2xl sm:text-3xl font-extrabold ${stat.color}`}>{stat.value}</p>
-            <p className="text-xs sm:text-sm text-muted mt-0.5">{stat.label}</p>
+            <p className="text-xs sm:text-sm text-foreground/60 mt-0.5">{stat.label}</p>
           </div>
         ))}
       </section>
@@ -134,7 +134,7 @@ export default function HomePage() {
                     href={`/wiki/${page.slug}`}
                     className="card group flex items-center gap-3 p-4"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
+                    <div className="icon-box w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                         <polyline points="14 2 14 8 20 8" />
@@ -184,14 +184,14 @@ export default function HomePage() {
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface border border-border text-sm hover:border-primary hover:text-primary transition-all hover:shadow-sm"
             >
               <span>{cat.name.replace(/_/g, " ")}</span>
-              <span className="text-[11px] text-muted bg-background px-1.5 py-0.5 rounded-md">{cat.count}</span>
+              <span className="cat-count text-[11px] font-medium text-muted bg-border/40 px-1.5 py-0.5 rounded-md">{cat.count}</span>
             </Link>
           ))}
         </div>
       </section>
 
       {/* Explore CTA */}
-      <section className="mb-12 p-8 sm:p-10 rounded-2xl bg-gradient-to-br from-primary/5 via-accent/5 to-transparent border border-border text-center animate-fade-in" style={{ animationDelay: "0.35s" }}>
+      <section className="explore-cta mb-12 p-8 sm:p-10 rounded-2xl bg-gradient-to-br from-primary/5 via-accent/5 to-transparent border border-border text-center animate-fade-in" style={{ animationDelay: "0.35s" }}>
         <h2 className="text-2xl font-bold mb-2">Explore the Full Encyclopedia</h2>
         <p className="text-muted mb-6 max-w-md mx-auto">
           Dive into {pages.length.toLocaleString()} articles spanning every corner of artificial intelligence.

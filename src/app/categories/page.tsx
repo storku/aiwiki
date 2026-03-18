@@ -30,7 +30,7 @@ export default function CategoriesPage() {
             style={{ animationDelay: `${i * 0.015}s` }}
           >
             <div className="flex items-center gap-3 min-w-0">
-              <div className="w-8 h-8 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
+              <div className="icon-box w-8 h-8 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" />
                 </svg>
@@ -39,7 +39,7 @@ export default function CategoriesPage() {
                 {cat.name.replace(/_/g, " ")}
               </span>
             </div>
-            <span className="text-xs text-muted bg-surface px-2 py-1 rounded-md shrink-0 ml-2">
+            <span className="cat-count text-xs font-medium text-muted bg-border/50 px-2 py-1 rounded-md shrink-0 ml-2">
               {cat.count}
             </span>
           </Link>

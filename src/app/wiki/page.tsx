@@ -40,7 +40,7 @@ export default function AllPagesPage() {
       </div>
 
       {/* Alphabet navigation */}
-      <nav className="flex flex-wrap gap-1 mb-10 p-3 rounded-xl bg-surface border border-border sticky top-14 z-10">
+      <nav className="alpha-nav flex flex-wrap gap-1 mb-10 p-3 rounded-xl bg-surface border border-border sticky top-14 z-10">
         {sortedKeys.map((key) => (
           <a
             key={key}

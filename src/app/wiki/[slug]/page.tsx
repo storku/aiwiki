@@ -88,7 +88,7 @@ export default async function WikiPage({ params }: Props) {
         {related.length > 0 && (
           <section className="mt-16 pt-8 border-t border-border">
             <div className="flex items-center gap-2 mb-5">
-              <div className="p-1.5 rounded-md bg-surface text-muted">
+              <div className="icon-box p-1.5 rounded-md bg-surface text-muted">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
                 </svg>

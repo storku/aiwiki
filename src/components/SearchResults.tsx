@@ -82,7 +82,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
             className="card group flex items-center gap-3 p-4 animate-fade-in"
             style={{ animationDelay: `${idx * 0.02}s` }}
           >
-            <div className="w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
+            <div className="icon-box w-9 h-9 rounded-lg bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-colors">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
