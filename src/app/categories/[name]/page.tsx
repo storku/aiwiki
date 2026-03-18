@@ -1,15 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPages, getAllCategories } from "@/lib/content";
+import { getAllPages } from "@/lib/content";
 import PaginatedGrid from "@/components/PaginatedGrid";
 import type { Metadata } from "next";
 
+export const dynamicParams = true;
+export const revalidate = 3600;
+
 interface Props {
   params: Promise<{ name: string }>;
-}
-
-export async function generateStaticParams() {
-  return getAllCategories().map((cat) => ({ name: encodeURIComponent(cat.name) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -24,7 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CategoryPage({ params }: Props) {
   const { name } = await params;
   const catName = decodeURIComponent(name);
-  const pages = getAllPages().filter((p) => p.categories.includes(catName));
+  const allPages = await getAllPages();
+  const pages = allPages.filter((p) => p.categories.includes(catName));
 
   if (pages.length === 0) {
     notFound();

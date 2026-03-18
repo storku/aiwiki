@@ -2,13 +2,15 @@ import Link from "next/link";
 import { getAllCategories } from "@/lib/content";
 import type { Metadata } from "next";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "Categories",
   description: "Browse AI Wiki articles by category.",
 };
 
-export default function CategoriesPage() {
-  const categories = getAllCategories();
+export default async function CategoriesPage() {
+  const categories = await getAllCategories();
 
   return (
     <div className="animate-fade-in">

@@ -1,26 +1,7 @@
 import Link from "next/link";
 import { getAllPages, getAllCategories } from "@/lib/content";
 
-const POPULAR_SLUGS = [
-  "chatgpt",
-  "ai",
-  "dall-e",
-  "gpt-4",
-  "large_language_model",
-  "midjourney",
-  "claude",
-  "anthropic",
-  "transformer",
-  "neural_network",
-  "deep_learning",
-  "machine_learning",
-  "openai",
-  "stable_diffusion",
-  "reinforcement_learning",
-  "natural_language_processing",
-  "computer_vision",
-  "artificial_intelligence",
-];
+export const revalidate = 3600;
 
 const TOPIC_SECTIONS = [
   {
@@ -40,13 +21,14 @@ const TOPIC_SECTIONS = [
   },
 ];
 
-export default function HomePage() {
-  const pages = getAllPages();
-  const categories = getAllCategories()
+export default async function HomePage() {
+  const pages = await getAllPages();
+  const allCategories = await getAllCategories();
+  const categories = allCategories
     .filter((c) => c.name !== "Plugin" && !c.name.startsWith("Not_"))
     .slice(0, 16);
 
-  const totalCategories = getAllCategories().length;
+  const totalCategories = allCategories.length;
 
   const websiteJsonLd = {
     "@context": "https://schema.org",

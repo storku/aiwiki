@@ -3,13 +3,15 @@ import { getAllPages } from "@/lib/content";
 import PaginatedPageList from "@/components/PaginatedPageList";
 import type { Metadata } from "next";
 
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: "All Pages",
   description: "Browse all 2,000+ articles in the AI Wiki encyclopedia.",
 };
 
-export default function AllPagesPage() {
-  const pages = getAllPages();
+export default async function AllPagesPage() {
+  const pages = await getAllPages();
 
   return (
     <div className="animate-fade-in">

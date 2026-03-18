@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.19",
+    "@neondatabase/serverless": "^1.0.2",
+    "@vercel/blob": "^2.3.1",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",

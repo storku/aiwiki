@@ -52,12 +52,6 @@ export default function WikiContent({ content }: WikiContentProps) {
   // Clean up common MediaWiki artifacts
   let cleaned = content;
 
-  // Fix broken image refs that point to old wiki
-  cleaned = cleaned.replace(
-    /!\[([^\]]*)\]\(\/images\//g,
-    "![$1](https://aiwiki.ai/images/"
-  );
-
   // Remove red link edit URLs, keeping the text
   cleaned = cleaned.replace(
     /\[([^\]]+)\]\(\/index\.php\?title=[^)]+&action=edit&redlink=1\)/g,

@@ -6,16 +6,23 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
-  const page = getPageBySlug(slug);
+  const page = await getPageBySlug(slug);
 
   if (!page) {
     return NextResponse.json(null, { status: 404 });
   }
 
-  return NextResponse.json({
-    title: page.title,
-    excerpt: page.excerpt,
-    categories: page.categories.slice(0, 3),
-    readingTime: page.readingTime,
-  });
+  return NextResponse.json(
+    {
+      title: page.title,
+      excerpt: page.excerpt,
+      categories: page.categories.slice(0, 3),
+      readingTime: page.readingTime,
+    },
+    {
+      headers: {
+        "Cache-Control": "public, s-maxage=600, stale-while-revalidate=3600",
+      },
+    }
+  );
 }

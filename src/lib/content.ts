@@ -1,16 +1,12 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import { sql } from "./db";
 
-const CONTENT_DIR = path.join(process.cwd(), "content");
-
-const INTERNAL_CATEGORIES = new Set([
+const INTERNAL_CATEGORIES = [
   "Not_updated",
   "Not_Edited",
   "Updated",
   "Not_edited",
   "Pages_with_broken_file_links",
-]);
+];
 
 export interface WikiPage {
   title: string;
@@ -19,6 +15,7 @@ export interface WikiPage {
   content: string;
   excerpt: string;
   readingTime: number;
+  updatedAt: Date;
 }
 
 export interface WikiPageMeta {
@@ -26,10 +23,6 @@ export interface WikiPageMeta {
   slug: string;
   categories: string[];
   excerpt?: string;
-}
-
-function filterCategories(cats: string[]): string[] {
-  return cats.filter((c) => !INTERNAL_CATEGORIES.has(c));
 }
 
 export function generateExcerpt(content: string, maxLen = 160): string {
@@ -47,116 +40,142 @@ export function generateExcerpt(content: string, maxLen = 160): string {
   return text.slice(0, maxLen).replace(/\s\S*$/, "") + "...";
 }
 
-function calcReadingTime(content: string): number {
-  const words = content.split(/\s+/).length;
-  return Math.max(1, Math.round(words / 200));
+export async function getAllPages(): Promise<WikiPageMeta[]> {
+  const rows = await sql`
+    SELECT p.id, p.slug, p.title, p.excerpt,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    GROUP BY p.id
+    ORDER BY p.title
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    categories: (r.categories as string[]) || [],
+    excerpt: r.excerpt as string,
+  }));
 }
 
-let cachedPages: WikiPageMeta[] | null = null;
+export async function getPageBySlug(slug: string): Promise<WikiPage | null> {
+  const rows = await sql`
+    SELECT p.*,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    WHERE p.slug = ${slug}
+    GROUP BY p.id
+  `;
 
-export function getAllPages(): WikiPageMeta[] {
-  if (cachedPages) return cachedPages;
-  const indexPath = path.join(CONTENT_DIR, "_index.json");
-  if (fs.existsSync(indexPath)) {
-    const raw = JSON.parse(fs.readFileSync(indexPath, "utf-8")) as {
-      title: string;
-      slug: string;
-      categories: string[];
-    }[];
-    cachedPages = raw.map((p) => ({
-      ...p,
-      categories: filterCategories(p.categories),
-    }));
-    return cachedPages;
-  }
-  return [];
-}
+  if (rows.length === 0) return null;
 
-export function getPageBySlug(slug: string): WikiPage | null {
-  const filePath = path.join(CONTENT_DIR, `${slug}.md`);
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
-
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(raw);
-  const categories = filterCategories(data.categories || []);
-
+  const row = rows[0];
   return {
-    title: data.title || slug,
-    slug: data.slug || slug,
-    categories,
-    content,
-    excerpt: generateExcerpt(content),
-    readingTime: calcReadingTime(content),
+    title: row.title as string,
+    slug: row.slug as string,
+    categories: (row.categories as string[]) || [],
+    content: row.content as string,
+    excerpt: row.excerpt as string,
+    readingTime: row.reading_time as number,
+    updatedAt: new Date(row.updated_at as string),
   };
 }
 
-export function getAllSlugs(): string[] {
-  const files = fs.readdirSync(CONTENT_DIR);
-  return files
-    .filter((f) => f.endsWith(".md") && f !== "_index.md")
-    .map((f) => f.replace(".md", ""));
+export async function getAllSlugs(): Promise<string[]> {
+  const rows = await sql`SELECT slug FROM pages ORDER BY slug`;
+  return rows.map((r) => r.slug as string);
 }
 
-export function getAllCategories(): { name: string; count: number }[] {
-  const pages = getAllPages();
-  const catMap = new Map<string, number>();
-
-  for (const page of pages) {
-    for (const cat of page.categories) {
-      catMap.set(cat, (catMap.get(cat) || 0) + 1);
-    }
-  }
-
-  return Array.from(catMap.entries())
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => b.count - a.count);
+export async function getAllCategories(): Promise<{ name: string; count: number }[]> {
+  const rows = await sql`
+    SELECT c.name, COUNT(pc.page_id) as count
+    FROM categories c
+    JOIN page_categories pc ON pc.category_id = c.id
+    WHERE c.name NOT IN (${INTERNAL_CATEGORIES[0]}, ${INTERNAL_CATEGORIES[1]}, ${INTERNAL_CATEGORIES[2]}, ${INTERNAL_CATEGORIES[3]}, ${INTERNAL_CATEGORIES[4]})
+    GROUP BY c.id
+    ORDER BY count DESC
+  `;
+  return rows.map((r) => ({
+    name: r.name as string,
+    count: Number(r.count),
+  }));
 }
 
-export function searchPages(query: string): WikiPageMeta[] {
-  const pages = getAllPages();
-  const q = query.toLowerCase();
-  return pages
-    .filter(
-      (p) =>
-        p.title.toLowerCase().includes(q) ||
-        p.categories.some((c) => c.toLowerCase().includes(q))
-    )
-    .slice(0, 100);
+export async function searchPages(query: string): Promise<WikiPageMeta[]> {
+  const q = `%${query}%`;
+  const rows = await sql`
+    SELECT DISTINCT p.slug, p.title, p.excerpt,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    WHERE p.title ILIKE ${q}
+       OR EXISTS (
+         SELECT 1 FROM page_categories pc2
+         JOIN categories c2 ON c2.id = pc2.category_id
+         WHERE pc2.page_id = p.id AND c2.name ILIKE ${q}
+       )
+    GROUP BY p.id
+    LIMIT 100
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    categories: (r.categories as string[]) || [],
+    excerpt: r.excerpt as string,
+  }));
 }
 
-export function getRelatedPages(
+export async function getRelatedPages(
   slug: string,
   categories: string[],
   limit = 6
-): WikiPageMeta[] {
-  const pages = getAllPages();
-  const allCats = getAllCategories();
-  const catSizeMap = new Map(allCats.map((c) => [c.name, c.count]));
-  const catSet = new Set(categories);
-  const titleTokens = new Set(
-    slug.split("_").filter((t) => t.length > 2).map((t) => t.toLowerCase())
-  );
+): Promise<WikiPageMeta[]> {
+  if (categories.length === 0) return [];
 
-  return pages
-    .filter((p) => p.slug !== slug)
-    .map((p) => {
-      let score = 0;
-      // Category overlap with IDF weighting (rarer categories = stronger signal)
-      for (const c of p.categories) {
-        if (catSet.has(c)) {
-          score += 1 / Math.log((catSizeMap.get(c) || 1) + 1);
-        }
-      }
-      // Title token overlap
-      const pTokens = p.slug.split("_").filter((t) => t.length > 2).map((t) => t.toLowerCase());
-      const overlap = pTokens.filter((t) => titleTokens.has(t)).length;
-      score += overlap * 0.5;
-      return { page: p, score };
-    })
-    .filter((x) => x.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
-    .map((x) => x.page);
+  const rows = await sql`
+    WITH category_sizes AS (
+      SELECT c.name, COUNT(pc.page_id) as size
+      FROM categories c
+      JOIN page_categories pc ON pc.category_id = c.id
+      GROUP BY c.id
+    ),
+    scored AS (
+      SELECT p.id, p.slug, p.title, p.excerpt,
+             SUM(1.0 / ln(cs.size + 2)) as cat_score
+      FROM pages p
+      JOIN page_categories pc ON pc.page_id = p.id
+      JOIN categories c ON c.id = pc.category_id
+      JOIN category_sizes cs ON cs.name = c.name
+      WHERE c.name = ANY(${categories})
+        AND p.slug != ${slug}
+      GROUP BY p.id
+    )
+    SELECT s.slug, s.title, s.excerpt, s.cat_score,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM scored s
+    LEFT JOIN page_categories pc ON pc.page_id = s.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    GROUP BY s.id, s.slug, s.title, s.excerpt, s.cat_score
+    ORDER BY s.cat_score DESC
+    LIMIT ${limit}
+  `;
+
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    categories: (r.categories as string[]) || [],
+    excerpt: r.excerpt as string,
+  }));
+}
+
+export async function getPageTimestamps(): Promise<Map<string, Date>> {
+  const rows = await sql`SELECT slug, updated_at FROM pages`;
+  const map = new Map<string, Date>();
+  for (const r of rows) {
+    map.set(r.slug as string, new Date(r.updated_at as string));
+  }
+  return map;
 }

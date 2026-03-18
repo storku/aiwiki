@@ -1,23 +1,22 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPageBySlug, getAllSlugs, getRelatedPages } from "@/lib/content";
+import { getPageBySlug, getRelatedPages } from "@/lib/content";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
 import MobileToc from "@/components/MobileToc";
 import ReadingProgress from "@/components/ReadingProgress";
 import type { Metadata } from "next";
 
+export const dynamicParams = true;
+export const revalidate = 3600;
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const page = getPageBySlug(slug);
+  const page = await getPageBySlug(slug);
   if (!page) return {};
   return {
     title: page.title,
@@ -35,13 +34,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function WikiPage({ params }: Props) {
   const { slug } = await params;
-  const page = getPageBySlug(slug);
+  const page = await getPageBySlug(slug);
 
   if (!page) {
     notFound();
   }
 
-  const related = getRelatedPages(page.slug, page.categories);
+  const related = await getRelatedPages(page.slug, page.categories);
 
   const jsonLd = {
     "@context": "https://schema.org",

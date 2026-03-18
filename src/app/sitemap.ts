@@ -1,6 +1,4 @@
-import fs from "fs";
-import path from "path";
-import { getAllPages, getAllCategories } from "@/lib/content";
+import { getAllPages, getAllCategories, getPageTimestamps } from "@/lib/content";
 import type { MetadataRoute } from "next";
 
 const POPULAR_SLUGS = new Set([
@@ -10,29 +8,21 @@ const POPULAR_SLUGS = new Set([
   "reinforcement_learning", "natural_language_processing",
 ]);
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = getAllPages();
-  const categories = getAllCategories();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [pages, categories, timestamps] = await Promise.all([
+    getAllPages(),
+    getAllCategories(),
+    getPageTimestamps(),
+  ]);
+
   const baseUrl = "https://aiwiki.ai";
-  const contentDir = path.join(process.cwd(), "content");
 
-  const wikiPages = pages.map((page) => {
-    let lastModified = new Date();
-    const filePath = path.join(contentDir, `${page.slug}.md`);
-    try {
-      const stat = fs.statSync(filePath);
-      lastModified = stat.mtime;
-    } catch {
-      // use default
-    }
-
-    return {
-      url: `${baseUrl}/wiki/${page.slug}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: POPULAR_SLUGS.has(page.slug) ? 0.9 : 0.7,
-    };
-  });
+  const wikiPages = pages.map((page) => ({
+    url: `${baseUrl}/wiki/${page.slug}`,
+    lastModified: timestamps.get(page.slug) || new Date(),
+    changeFrequency: "monthly" as const,
+    priority: POPULAR_SLUGS.has(page.slug) ? 0.9 : 0.7,
+  }));
 
   const categoryPages = categories.map((cat) => ({
     url: `${baseUrl}/categories/${encodeURIComponent(cat.name)}`,
