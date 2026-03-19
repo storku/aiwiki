@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getPageBySlug, getRelatedPages } from "@/lib/content";
+import { addHeadingIds } from "@/lib/html-utils";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
 import MobileToc from "@/components/MobileToc";
@@ -39,6 +40,9 @@ export default async function WikiPage({ params }: Props) {
   if (!page) {
     notFound();
   }
+
+  // Add heading IDs to pre-rendered HTML for TOC anchor links
+  const processedHtml = page.contentHtml ? addHeadingIds(page.contentHtml) : null;
 
   const related = await getRelatedPages(page.slug, page.categories);
 
@@ -121,10 +125,10 @@ export default async function WikiPage({ params }: Props) {
           </header>
 
           {/* Mobile Table of Contents */}
-          <MobileToc content={page.content} contentHtml={page.contentHtml} />
+          <MobileToc content={page.content} contentHtml={processedHtml} />
 
           {/* Content */}
-          <WikiContent content={page.content} contentHtml={page.contentHtml} />
+          <WikiContent content={page.content} contentHtml={processedHtml} />
 
           {/* Related Articles */}
           {related.length > 0 && (
@@ -160,7 +164,7 @@ export default async function WikiPage({ params }: Props) {
         </article>
 
         {/* Table of Contents sidebar */}
-        <TableOfContents content={page.content} contentHtml={page.contentHtml} />
+        <TableOfContents content={page.content} contentHtml={processedHtml} />
       </div>
     </>
   );

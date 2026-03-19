@@ -15,11 +15,16 @@ function slugify(title: string): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Only handle /wiki/SLUG paths
+  // Only handle /wiki/SLUG paths (single segment, not sub-paths like /history or /revisions/*)
   if (!pathname.startsWith("/wiki/")) return;
 
-  const raw = pathname.slice("/wiki/".length);
-  if (!raw) return;
+  const rest = pathname.slice("/wiki/".length);
+  if (!rest) return;
+
+  // Skip sub-paths (history, revisions, etc.)
+  if (rest.includes("/")) return;
+
+  const raw = rest;
 
   // Decode any percent-encoded characters (e.g. %28 → (, spaces, etc.)
   const decoded = decodeURIComponent(raw);
