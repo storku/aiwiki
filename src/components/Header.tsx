@@ -79,7 +79,7 @@ export default function Header() {
               placeholder="Search articles..."
               className="w-full pl-9 pr-16 py-1.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
             />
-            <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-border bg-background text-[10px] text-muted font-mono">
+            <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-border bg-surface text-[10px] text-muted font-mono">
               <span className="text-[11px]">{typeof navigator !== "undefined" && /Mac/.test(navigator.userAgent) ? "\u2318" : "Ctrl"}</span>K
             </kbd>
           </div>
@@ -92,7 +92,7 @@ export default function Header() {
               href={link.href}
               className={`px-3 py-1.5 rounded-lg transition-all ${
                 pathname.startsWith(link.href)
-                  ? "text-primary bg-primary-light font-medium"
+                  ? "nav-active text-primary bg-primary/10 font-medium"
                   : "text-muted hover:text-foreground hover:bg-surface"
               }`}
             >
@@ -153,7 +153,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className={`px-3 py-2.5 rounded-lg text-sm transition-all ${
                   pathname.startsWith(link.href)
-                    ? "text-primary bg-primary-light font-medium"
+                    ? "nav-active text-primary bg-primary/10 font-medium"
                     : "text-muted hover:text-foreground hover:bg-surface"
                 }`}
               >

@@ -78,24 +78,53 @@ async function main() {
     .replace(/\n+/g, " ")
     .trim();
 
-  // Upsert the page
-  const result = await sql`
-    INSERT INTO pages (slug, title, content, excerpt, reading_time, word_count, content_plain, status, quality)
-    VALUES (${slug}, ${title}, ${content}, ${excerpt}, ${readingTime}, ${wordCount}, ${contentPlain}, 'published', 'complete')
-    ON CONFLICT (slug) DO UPDATE SET
-      title = EXCLUDED.title,
-      content = EXCLUDED.content,
-      excerpt = EXCLUDED.excerpt,
-      reading_time = EXCLUDED.reading_time,
-      word_count = EXCLUDED.word_count,
-      content_plain = EXCLUDED.content_plain,
-      status = EXCLUDED.status,
-      quality = EXCLUDED.quality,
-      updated_at = now()
-    RETURNING id
+  // Check if page already exists — if so, save current version to page_revisions
+  const existing = await sql`
+    SELECT id, content, content_tiptap, version FROM pages WHERE slug = ${slug}
   `;
-  const pageId = result[0].id;
-  console.log(`Upserted page: ${slug} (id: ${pageId}, ${wordCount} words)`);
+
+  let pageId;
+
+  if (existing.length > 0) {
+    const old = existing[0];
+    const oldVersion = old.version || 1;
+    const newVersion = oldVersion + 1;
+
+    // Save the old content as a revision
+    await sql`
+      INSERT INTO page_revisions (page_id, version, content, content_tiptap, summary, ai_assisted)
+      VALUES (${old.id}, ${oldVersion}, ${old.content}, ${old.content_tiptap}, ${'Auto-saved before update'}, ${true})
+      ON CONFLICT (page_id, version) DO NOTHING
+    `;
+    console.log(`  Saved previous version ${oldVersion} to page_revisions`);
+
+    // Update the existing page
+    await sql`
+      UPDATE pages SET
+        title = ${title},
+        content = ${content},
+        excerpt = ${excerpt},
+        reading_time = ${readingTime},
+        word_count = ${wordCount},
+        content_plain = ${contentPlain},
+        status = 'published',
+        quality = 'complete',
+        version = ${newVersion},
+        updated_at = now()
+      WHERE id = ${old.id}
+    `;
+    pageId = old.id;
+    console.log(`Updated page: ${slug} (id: ${pageId}, v${oldVersion} -> v${newVersion}, ${wordCount} words)`);
+  } else {
+    // Insert new page
+    const result = await sql`
+      INSERT INTO pages (slug, title, content, excerpt, reading_time, word_count, content_plain, status, quality, version)
+      VALUES (${slug}, ${title}, ${content}, ${excerpt}, ${readingTime}, ${wordCount}, ${contentPlain}, 'published', 'complete', 1)
+      RETURNING id
+    `;
+    pageId = result[0].id;
+    console.log(`Created page: ${slug} (id: ${pageId}, v1, ${wordCount} words)`);
+  }
 
   // Handle categories
   if (categories.length > 0) {

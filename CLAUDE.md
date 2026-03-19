@@ -62,6 +62,7 @@ When creating or improving wiki pages:
   - **Connecting related clauses:** use a semicolon.
 - When reading or reviewing wiki articles, always **query the database for the latest version**. Do not rely on cached data, old script outputs, or previously read content. The database is the single source of truth and articles may have been updated since last read.
 - All wiki content must be **100% accurate and factual**. Never hallucinate or fabricate information. If something cannot be verified, omit it.
+- **When updating existing wiki articles, the previous version must be saved in the revision history.** The `scripts/upsert-article.mjs` script handles this automatically: before overwriting an existing page, it saves the old content to `page_revisions` and increments the version number. Always use this script for article updates.
 - **When updating existing wiki articles, enhance rather than replace.** Always read and understand the full existing article content before making changes. Merge new information into the existing structure, preserving the original text, tables, wikilinks, and formatting. Do not overwrite an entire article with new content unless the existing content is factually wrong. Specific rules:
   - **Read first:** Query the database for the article's current TipTap JSON content and plain text before writing any update script.
   - **Preserve existing content:** Keep all existing sections, tables, and paragraphs that are accurate. Add new sections, rows, or paragraphs alongside them.

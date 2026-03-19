@@ -14,6 +14,7 @@ export default function ThemeToggle() {
       document.documentElement.setAttribute("data-theme", stored);
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
     }
   }, []);
 

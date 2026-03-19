@@ -317,6 +317,65 @@ export async function getRevisionByVersion(
   };
 }
 
+// ─── Users ───────────────────────────────────────────────────────────
+
+export interface WikiUser {
+  username: string;
+  displayName: string;
+  email: string | null;
+  bio: string;
+  avatarUrl: string | null;
+  role: string;
+  createdAt: Date;
+  lastActive: Date;
+}
+
+/**
+ * Get a user by username (public — never exposes is_bot).
+ */
+export async function getUserByUsername(
+  username: string
+): Promise<WikiUser | null> {
+  const rows = await sql`
+    SELECT username, display_name, email, bio, avatar_url, role, created_at, last_active
+    FROM users
+    WHERE username = ${username}
+  `;
+  if (rows.length === 0) return null;
+  const r = rows[0];
+  return {
+    username: r.username as string,
+    displayName: r.display_name as string,
+    email: (r.email as string) || null,
+    bio: r.bio as string,
+    avatarUrl: (r.avatar_url as string) || null,
+    role: r.role as string,
+    createdAt: new Date(r.created_at as string),
+    lastActive: new Date(r.last_active as string),
+  };
+}
+
+/**
+ * Get all users (public — never exposes is_bot).
+ */
+export async function getAllUsers(): Promise<WikiUser[]> {
+  const rows = await sql`
+    SELECT username, display_name, email, bio, avatar_url, role, created_at, last_active
+    FROM users
+    ORDER BY created_at
+  `;
+  return rows.map((r) => ({
+    username: r.username as string,
+    displayName: r.display_name as string,
+    email: (r.email as string) || null,
+    bio: r.bio as string,
+    avatarUrl: (r.avatar_url as string) || null,
+    role: r.role as string,
+    createdAt: new Date(r.created_at as string),
+    lastActive: new Date(r.last_active as string),
+  }));
+}
+
 export async function getPageTimestamps(): Promise<Map<string, Date>> {
   const rows = await sql`SELECT slug, updated_at FROM pages`;
   const map = new Map<string, Date>();

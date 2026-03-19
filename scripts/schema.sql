@@ -66,7 +66,24 @@ CREATE TABLE IF NOT EXISTS page_links (
   created_at        TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+CREATE TABLE IF NOT EXISTS users (
+  id           SERIAL PRIMARY KEY,
+  username     TEXT UNIQUE NOT NULL,
+  display_name TEXT NOT NULL,
+  bio          TEXT NOT NULL DEFAULT '',
+  email        TEXT,
+  avatar_url   TEXT,
+  role         TEXT NOT NULL DEFAULT 'editor',
+  is_bot       BOOLEAN NOT NULL DEFAULT false,
+  created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
+  last_active  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 -- Indexes
+CREATE INDEX IF NOT EXISTS idx_users_username ON users(username);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_users_email ON users(email) WHERE email IS NOT NULL;
+CREATE INDEX IF NOT EXISTS idx_users_role ON users(role);
+
 CREATE INDEX IF NOT EXISTS idx_pages_slug ON pages(slug);
 CREATE INDEX IF NOT EXISTS idx_pages_updated ON pages(updated_at);
 CREATE INDEX IF NOT EXISTS idx_pages_search_vector ON pages USING GIN(search_vector);
