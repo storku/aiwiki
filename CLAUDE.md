@@ -47,6 +47,11 @@ This fetches all pages via the MediaWiki API with rate limiting (200ms delay) an
 
 When researching and writing multiple different wiki article pages/topics, create **1 agent per page/topic**. Each agent should independently research and write its assigned article. This allows all articles to be worked on in parallel rather than sequentially.
 
+## Research & Writing Quality
+
+- When **researching** wiki article topics, be as thorough as possible. Use `ultrathink` to deeply analyze sources, cross-reference facts, and identify all relevant subtopics before writing.
+- When **writing** wiki articles, be as thorough as possible. Use `ultrathink` to plan article structure, ensure comprehensive coverage, and produce detailed, high-quality content.
+
 ## Wiki Content Guidelines
 
 When creating or improving wiki pages:
