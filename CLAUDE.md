@@ -8,14 +8,14 @@ AI Wiki is a comprehensive encyclopedia of artificial intelligence with 2,000+ a
 
 - **Framework:** Next.js 16 (App Router, TypeScript)
 - **Styling:** Tailwind CSS v4
-- **Content:** Markdown files with gray-matter frontmatter (in `content/`)
+- **Content:** Stored in a Neon (PostgreSQL) database. Wiki pages are NOT saved locally; you must fetch content from the Neon database.
 - **Search:** Fuse.js (client-side fuzzy search)
 - **Markdown rendering:** react-markdown + remark-gfm + rehype-raw + rehype-slug
 - **Hosting:** Vercel
 
 ## Project Structure
 
-- `content/` — 2,000+ markdown article files + `_index.json` master index
+- **Neon database** — 2,000+ wiki articles stored in PostgreSQL (not saved locally)
 - `src/app/` — Next.js App Router pages (home, wiki/[slug], categories, search)
 - `src/components/` — Header, Footer, WikiContent, TableOfContents, SearchResults, ThemeToggle
 - `src/lib/content.ts` — Content loading utilities (getAllPages, getPageBySlug, etc.)
@@ -75,3 +75,4 @@ When creating or improving wiki pages:
   - **Tables are exempt from the one-link-per-article rule** — terms inside table cells **should** be linked even if they are already linked elsewhere in the article body. Tables are read row-by-row, so readers may not see the earlier link. Each table row gets its own dedup set: link each term at most once per row, but the same term can be linked again in other rows.
   - Missing wikilinks (pointing to non-existent articles) are automatically rendered in red on the article page via server-side checking.
 - Use **tables** for structured data instead of bullet lists. When content follows a consistent "Label : Description" pattern (items, skills, stats, characters, locations, etc.), convert it to a table for better readability.
+- Include **citations and references** for claims and facts. List all references in a **References** section at the bottom of each wiki article.

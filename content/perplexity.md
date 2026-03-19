@@ -8,7 +8,11 @@ categories:
   - "Terms"
   - "Language_model"
   - "NLP"
----*See also: [AI text](/index.php?title=AI_text&action=edit&redlink=1), [AI content](/index.php?title=AI_content&action=edit&redlink=1) and [AI content detectors](/wiki/ai_content_detectors)*
+---
+
+*For the AI search engine company, see [Perplexity AI](/wiki/perplexity_ai).*
+
+*See also: [AI text](/index.php?title=AI_text&action=edit&redlink=1), [AI content](/index.php?title=AI_content&action=edit&redlink=1) and [AI content detectors](/wiki/ai_content_detectors)*
 ## For AI Content Detection
 
 In order to [not have articles being flagged](/index.php?title=How_to_write_articles_to_be_undetectable_by_AI_content_detectors&action=edit&redlink=1) as [AI generated content](/index.php?title=AI_generated_content&action=edit&redlink=1) by [AI Content Detectors](/wiki/ai_content_detectors) like [GPTZero](/index.php?title=GPTZero&action=edit&redlink=1) and [OpenAI AI Text Classifier](/index.php?title=OpenAI_AI_Text_Classifier&action=edit&redlink=1). The text should have high perplexity along with high [burstiness](/wiki/burstiness).

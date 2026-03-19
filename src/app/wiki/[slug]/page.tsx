@@ -72,16 +72,16 @@ export default async function WikiPage({ params }: Props) {
         <article className="flex-1 min-w-0 animate-fade-in">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-1.5 text-sm text-muted mb-6">
-            <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
-            <Link href="/wiki" className="hover:text-foreground transition-colors">Wiki</Link>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 18 15 12 9 6"/></svg>
-            <span className="text-foreground truncate max-w-[200px]">{page.title}</span>
+            <Link href="/" className="breadcrumb-link hover:text-primary transition-colors">Home</Link>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
+            <Link href="/wiki" className="breadcrumb-link hover:text-primary transition-colors">Wiki</Link>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
+            <span className="text-foreground font-medium truncate max-w-[200px]">{page.title}</span>
           </nav>
 
           {/* Header */}
           <header className="mb-10">
-            <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-accent mb-6" />
+            <div className="article-accent-bar mb-6" />
             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
               {page.title}
             </h1>
@@ -92,7 +92,7 @@ export default async function WikiPage({ params }: Props) {
                     <Link
                       key={cat}
                       href={`/categories/${encodeURIComponent(cat)}`}
-                      className="inline-flex items-center px-2.5 py-1 rounded-md bg-surface border border-border text-xs font-medium hover:border-primary hover:text-primary transition-colors"
+                      className="category-badge inline-flex items-center px-2.5 py-1 rounded-md bg-surface border border-border text-xs font-medium"
                     >
                       {cat.replace(/_/g, " ")}
                     </Link>
@@ -106,20 +106,31 @@ export default async function WikiPage({ params }: Props) {
                 </svg>
                 {page.readingTime} min read
               </div>
+              <Link
+                href={`/wiki/${slug}/history`}
+                className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 8v4l3 3" />
+                  <path d="M3.05 11a9 9 0 1 1 .5 4" />
+                  <path d="M3 16l-1.5-3L5 12" />
+                </svg>
+                History
+              </Link>
             </div>
           </header>
 
           {/* Mobile Table of Contents */}
-          <MobileToc content={page.content} />
+          <MobileToc content={page.content} contentHtml={page.contentHtml} />
 
           {/* Content */}
-          <WikiContent content={page.content} />
+          <WikiContent content={page.content} contentHtml={page.contentHtml} />
 
           {/* Related Articles */}
           {related.length > 0 && (
-            <section className="mt-16 pt-8 border-t border-border">
-              <div className="flex items-center gap-2 mb-5">
-                <div className="icon-box p-1.5 rounded-md bg-surface text-muted">
+            <section className="mt-16 pt-8 related-divider">
+              <div className="flex items-center gap-2.5 mb-5">
+                <div className="icon-box p-2 rounded-lg bg-surface text-muted">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
                   </svg>
@@ -149,7 +160,7 @@ export default async function WikiPage({ params }: Props) {
         </article>
 
         {/* Table of Contents sidebar */}
-        <TableOfContents content={page.content} />
+        <TableOfContents content={page.content} contentHtml={page.contentHtml} />
       </div>
     </>
   );

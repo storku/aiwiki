@@ -20,7 +20,7 @@ export default function ReadingProgress() {
 
   return (
     <div
-      className="fixed top-14 left-0 h-[3px] z-40 bg-gradient-to-r from-primary via-accent to-pink-500 transition-[transform] duration-100"
+      className="fixed top-14 left-0 h-[3px] z-40 reading-progress transition-[transform] duration-100"
       style={{ width: "100%", transform: `scaleX(${progress / 100})`, transformOrigin: "left" }}
     />
   );

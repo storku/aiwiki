@@ -13,6 +13,8 @@ export interface WikiPage {
   slug: string;
   categories: string[];
   content: string;
+  contentHtml: string | null;
+  contentPlain: string | null;
   excerpt: string;
   readingTime: number;
   updatedAt: Date;
@@ -60,7 +62,7 @@ export async function getAllPages(): Promise<WikiPageMeta[]> {
 
 export async function getPageBySlug(slug: string): Promise<WikiPage | null> {
   const rows = await sql`
-    SELECT p.*,
+    SELECT p.*, p.content_html, p.content_plain,
            COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
     FROM pages p
     LEFT JOIN page_categories pc ON pc.page_id = p.id
@@ -77,6 +79,8 @@ export async function getPageBySlug(slug: string): Promise<WikiPage | null> {
     slug: row.slug as string,
     categories: (row.categories as string[]) || [],
     content: row.content as string,
+    contentHtml: (row.content_html as string) || null,
+    contentPlain: (row.content_plain as string) || null,
     excerpt: row.excerpt as string,
     readingTime: row.reading_time as number,
     updatedAt: new Date(row.updated_at as string),
@@ -128,6 +132,79 @@ export async function searchPages(query: string): Promise<WikiPageMeta[]> {
   }));
 }
 
+/**
+ * Full-text search using PostgreSQL tsvector.
+ * Returns pages matching the query with headline snippets.
+ */
+export async function fullTextSearch(
+  query: string,
+  limit = 30
+): Promise<
+  Array<{
+    slug: string;
+    title: string;
+    excerpt: string;
+    headline: string;
+    rank: number;
+    categories: string[];
+  }>
+> {
+  // Convert user query to tsquery: split words and join with &
+  const words = query
+    .trim()
+    .split(/\s+/)
+    .filter((w) => w.length > 0)
+    .map((w) => w.replace(/[^a-zA-Z0-9]/g, ""))
+    .filter((w) => w.length > 0);
+
+  if (words.length === 0) return [];
+
+  const tsQuery = words.join(" & ");
+
+  const rows = await sql`
+    SELECT p.slug, p.title, p.excerpt,
+           ts_headline('english', COALESCE(p.content_plain, ''), to_tsquery('english', ${tsQuery}),
+             'StartSel=<mark>, StopSel=</mark>, MaxWords=40, MinWords=20, MaxFragments=2') as headline,
+           ts_rank(p.search_vector, to_tsquery('english', ${tsQuery})) as rank,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    WHERE p.search_vector @@ to_tsquery('english', ${tsQuery})
+    GROUP BY p.id
+    ORDER BY rank DESC
+    LIMIT ${limit}
+  `;
+
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    excerpt: r.excerpt as string,
+    headline: r.headline as string,
+    rank: Number(r.rank),
+    categories: (r.categories as string[]) || [],
+  }));
+}
+
+/**
+ * Get pages that link to the given slug (backlinks).
+ */
+export async function getBacklinks(
+  slug: string
+): Promise<Array<{ slug: string; title: string }>> {
+  const rows = await sql`
+    SELECT p.slug, p.title
+    FROM page_links pl
+    JOIN pages p ON p.id = pl.source_page_id
+    WHERE pl.target_slug = ${slug}
+    ORDER BY p.title
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+  }));
+}
+
 export async function getRelatedPages(
   slug: string,
   categories: string[],
@@ -169,6 +246,75 @@ export async function getRelatedPages(
     categories: (r.categories as string[]) || [],
     excerpt: r.excerpt as string,
   }));
+}
+
+// ─── Revision History ────────────────────────────────────────────────
+
+export interface PageRevision {
+  id: number;
+  version: number;
+  summary: string | null;
+  editorId: string | null;
+  aiAssisted: boolean;
+  createdAt: Date;
+}
+
+export interface PageRevisionFull extends PageRevision {
+  content: string;
+  contentTiptap: unknown | null;
+}
+
+/**
+ * Get all revisions for a page (newest first), by slug.
+ */
+export async function getPageRevisions(slug: string): Promise<PageRevision[]> {
+  const rows = await sql`
+    SELECT r.id, r.version, r.summary, r.editor_id, r.ai_assisted, r.created_at
+    FROM page_revisions r
+    JOIN pages p ON p.id = r.page_id
+    WHERE p.slug = ${slug}
+    ORDER BY r.version DESC
+  `;
+  return rows.map((r) => ({
+    id: r.id as number,
+    version: r.version as number,
+    summary: (r.summary as string) || null,
+    editorId: (r.editor_id as string) || null,
+    aiAssisted: r.ai_assisted as boolean,
+    createdAt: new Date(r.created_at as string),
+  }));
+}
+
+/**
+ * Get a specific revision by slug and version number.
+ */
+export async function getRevisionByVersion(
+  slug: string,
+  version: number
+): Promise<(PageRevisionFull & { pageTitle: string; pageSlug: string; currentVersion: number }) | null> {
+  const rows = await sql`
+    SELECT r.id, r.version, r.content, r.content_tiptap, r.summary,
+           r.editor_id, r.ai_assisted, r.created_at,
+           p.title as page_title, p.slug as page_slug, p.version as current_version
+    FROM page_revisions r
+    JOIN pages p ON p.id = r.page_id
+    WHERE p.slug = ${slug} AND r.version = ${version}
+  `;
+  if (rows.length === 0) return null;
+  const r = rows[0];
+  return {
+    id: r.id as number,
+    version: r.version as number,
+    content: r.content as string,
+    contentTiptap: r.content_tiptap,
+    summary: (r.summary as string) || null,
+    editorId: (r.editor_id as string) || null,
+    aiAssisted: r.ai_assisted as boolean,
+    createdAt: new Date(r.created_at as string),
+    pageTitle: r.page_title as string,
+    pageSlug: r.page_slug as string,
+    currentVersion: r.current_version as number,
+  };
 }
 
 export async function getPageTimestamps(): Promise<Map<string, Date>> {

@@ -8,6 +8,7 @@ import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -19,6 +20,15 @@ export default function Header() {
       setMenuOpen(false);
     }
   }
+
+  // Track scroll for header shadow
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 8);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Ctrl/Cmd + K to focus search
   useEffect(() => {
@@ -33,19 +43,24 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  // Close menu on route change
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
   const navLinks = [
     { href: "/wiki", label: "All Pages" },
     { href: "/categories", label: "Categories" },
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
+    <header className={`sticky top-0 z-50 border-b bg-background/80 backdrop-blur-xl transition-all duration-300 ${scrolled ? "border-border shadow-sm" : "border-transparent"}`}>
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-6 h-14 gap-3">
-        <Link href="/" className="flex items-center gap-2 shrink-0 group">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+        <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all">
             <span className="text-white font-extrabold text-xs">AI</span>
           </div>
-          <span className="font-bold text-base hidden sm:block">
+          <span className="font-bold text-base hidden sm:block tracking-tight">
             Wiki
           </span>
         </Link>
@@ -62,7 +77,7 @@ export default function Header() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search articles..."
-              className="w-full pl-9 pr-16 py-1.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/25 focus:border-primary/50 transition-all"
+              className="w-full pl-9 pr-16 py-1.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
             />
             <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-border bg-background text-[10px] text-muted font-mono">
               <span className="text-[11px]">{typeof navigator !== "undefined" && /Mac/.test(navigator.userAgent) ? "\u2318" : "Ctrl"}</span>K
@@ -70,12 +85,12 @@ export default function Header() {
           </div>
         </form>
 
-        <nav className="hidden sm:flex items-center gap-0.5 text-sm">
+        <nav className="hidden sm:flex items-center gap-1 text-sm">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-3 py-1.5 rounded-lg transition-colors ${
+              className={`px-3 py-1.5 rounded-lg transition-all ${
                 pathname.startsWith(link.href)
                   ? "text-primary bg-primary-light font-medium"
                   : "text-muted hover:text-foreground hover:bg-surface"
@@ -84,7 +99,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <div className="w-px h-5 bg-border mx-1" />
+          <div className="w-px h-5 bg-border mx-1.5" />
           <ThemeToggle />
         </nav>
 
@@ -114,23 +129,29 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="sm:hidden border-t border-border px-4 py-3 space-y-3 bg-background animate-fade-in">
+        <div className="sm:hidden border-t border-border px-4 py-3 space-y-3 bg-background animate-slide-in-down">
           <form onSubmit={handleSearch}>
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search articles..."
-              className="w-full px-3 py-2.5 rounded-lg border border-border bg-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary/25"
-            />
+            <div className="relative">
+              <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search articles..."
+                className="w-full pl-9 pr-4 py-2.5 rounded-lg border border-border bg-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
+            </div>
           </form>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`px-3 py-2 rounded-lg text-sm transition-colors ${
+                className={`px-3 py-2.5 rounded-lg text-sm transition-all ${
                   pathname.startsWith(link.href)
                     ? "text-primary bg-primary-light font-medium"
                     : "text-muted hover:text-foreground hover:bg-surface"

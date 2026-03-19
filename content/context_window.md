@@ -7,25 +7,25 @@ categories:
   - "Artificial_intelligence"
   - "Machine_learning"
   - "Deep_learning"
----In the field of [Large Language Models](/index.php?title=Large_Language_Models&action=edit&redlink=1) ([LLMs](/wiki/llm)), a **context window** (also called **context length**) refers to the maximum number of [tokens](/wiki/tokens) that an [artificial intelligence](/wiki/artificial_intelligence) ([AI](/wiki/ai)) model can process and respond to simultaneously during both training and [inference](/wiki/inference).[&#91;1&#93;](#cite_note-ibm1-1)[&#91;2&#93;](#cite_note-mckinsey1-2) The context window determines the span of information an AI model can consider—its "working memory"—when generating responses, analyzing documents, or performing complex reasoning tasks. It defines how much of a conversation or document the model can use as context before earlier parts are "forgotten" by the model.[&#91;1&#93;](#cite_note-ibm1-1)
+---In the field of [Large Language Models](/index.php?title=Large_Language_Models&action=edit&redlink=1) ([LLMs](/wiki/llm)), a **context window** (also called **context length**) refers to the maximum number of [tokens](/wiki/tokens) that an [artificial intelligence](/wiki/artificial_intelligence) ([AI](/wiki/ai)) model can process and respond to simultaneously during both training and [inference](/wiki/inference).[&#91;1&#93;](#cite_note-ibm1-1)[&#91;2&#93;](#cite_note-mckinsey1-2) The context window determines the span of information an AI model can consider (its "working memory") when generating responses, analyzing documents, or performing complex reasoning tasks. It defines how much of a conversation or document the model can use as context before earlier parts are "forgotten" by the model.[&#91;1&#93;](#cite_note-ibm1-1)
 
-Since the introduction of [GPT-1](/wiki/gpt-1) with 512 tokens in 2018, context windows have grown exponentially to over 10 million tokens in specialized models like [Meta](/wiki/meta)'s [Llama](/index.php?title=Llama&action=edit&redlink=1) 4 Scout, fundamentally transforming the capabilities of artificial intelligence systems.[&#91;3&#93;](#cite_note-llama4-3) This rapid expansion—representing a roughly 20,000x increase in seven years—has unlocked applications previously impossible, from analyzing entire legal case files to understanding massive codebases and synthesizing extensive research literature in a single session.
+Since the introduction of [GPT-1](/wiki/gpt-1) with 512 tokens in 2018, context windows have grown exponentially to over 10 million tokens in specialized models like [Meta](/wiki/meta)'s [Llama](/index.php?title=Llama&action=edit&redlink=1) 4 Scout, fundamentally transforming the capabilities of artificial intelligence systems.[&#91;3&#93;](#cite_note-llama4-3) This rapid expansion, representing a roughly 20,000x increase in seven years, has unlocked applications previously impossible, from analyzing entire legal case files to understanding massive codebases and synthesizing extensive research literature in a single session.
 
 ## Fundamental Concepts
 
 ### Definition and Core Mechanics
 
-A context window functions as a [large language model](/wiki/large_language_model)'s working memory—the maximum number of tokens the model can process simultaneously. Unlike human memory, which can selectively recall information from across a lifetime, [transformer](/wiki/transformer)-based models operate on a fixed window: when input exceeds this limit, older information must be truncated or the model fails to process the request.[&#91;1&#93;](#cite_note-ibm1-1)
+A context window functions as a [large language model](/wiki/large_language_model)'s working memory: the maximum number of tokens the model can process simultaneously. Unlike human memory, which can selectively recall information from across a lifetime, [transformer](/wiki/transformer)-based models operate on a fixed window: when input exceeds this limit, older information must be truncated or the model fails to process the request.[&#91;1&#93;](#cite_note-ibm1-1)
 
 The context window encompasses both input and output tokens. For instance, [OpenAI](/wiki/openai)'s [GPT-4o](/index.php?title=GPT-4o&action=edit&redlink=1) has a 128,000-token context window but limits output generation to 16,384 tokens, meaning the total conversation history plus the model's response cannot exceed 128,000 tokens.[&#91;4&#93;](#cite_note-openai_community1-4) This distinction between total context capacity and maximum output length has important practical implications for application design.
 
-LLMs process text using fixed-size context windows with a **sliding window** approach. As new tokens are fed in (for example, as a conversation progresses), older tokens eventually fall outside the window and are no longer consulted by the model's attention mechanism.[&#91;5&#93;](#cite_note-wiki_transformer-5) This can cause models to lose track of earlier details—a chatbot may go off-topic or contradict something from earlier once that information slips out of context.
+LLMs process text using fixed-size context windows with a **sliding window** approach. As new tokens are fed in (for example, as a conversation progresses), older tokens eventually fall outside the window and are no longer consulted by the model's attention mechanism.[&#91;5&#93;](#cite_note-wiki_transformer-5) This can cause models to lose track of earlier details; a chatbot may go off-topic or contradict something from earlier once that information slips out of context.
 
 Smaller context windows lead models to "forget" the content of recent conversations, which can cause them to go off topic. After a few thousand words, they may forget their initial instructions, leading to responses based only on the last information in their context window.[&#91;6&#93;](#cite_note-wiggers1-6)
 
 ### Tokenization: The Foundation of Context
 
-[Tokens](/wiki/tokens) form the fundamental units that models process, and understanding [tokenization](/index.php?title=Tokenization&action=edit&redlink=1) is essential to grasping context window limitations. **A token does not equal a word**—it represents the smallest meaningful unit a model recognizes, which can be a complete word, a subword fragment, punctuation, or even a single character.[&#91;7&#93;](#cite_note-hf1-7) In English, the approximate ratio is 1.5 tokens per word, meaning "Hello, world!" might consume 3-4 tokens rather than 2.
+[Tokens](/wiki/tokens) form the fundamental units that models process, and understanding [tokenization](/index.php?title=Tokenization&action=edit&redlink=1) is essential to grasping context window limitations. **A token does not equal a word**; it represents the smallest meaningful unit a model recognizes, which can be a complete word, a subword fragment, punctuation, or even a single character.[&#91;7&#93;](#cite_note-hf1-7) In English, the approximate ratio is 1.5 tokens per word, meaning "Hello, world!" might consume 3-4 tokens rather than 2.
 
 #### Major Tokenization Algorithms
 
@@ -41,7 +41,7 @@ Smaller context windows lead models to "forget" the content of recent conversati
 
 #### Language Bias in Tokenization
 
-Tokenization efficiency varies dramatically across languages, creating significant inequities in context window utilization. Research demonstrates that the same sentence translated into Telugu requires approximately 7 times more tokens than its English equivalent despite having fewer characters.[&#91;1&#93;](#cite_note-ibm1-1) English speakers can effectively fit 2-3 times more semantic content into the same context window compared to speakers of many Asian and African languages. This bias stems from training data composition—models trained predominantly on English text develop tokenizers optimized for English morphology and character patterns.
+Tokenization efficiency varies dramatically across languages, creating significant inequities in context window utilization. Research demonstrates that the same sentence translated into Telugu requires approximately 7 times more tokens than its English equivalent despite having fewer characters.[&#91;1&#93;](#cite_note-ibm1-1) English speakers can effectively fit 2-3 times more semantic content into the same context window compared to speakers of many Asian and African languages. This bias stems from training data composition, as models trained predominantly on English text develop tokenizers optimized for English morphology and character patterns.
 
 ### The Attention Mechanism
 
@@ -75,11 +75,11 @@ Original transformer specifications used 512-dimensional embeddings split across
 
 The most fundamental limitation of context windows stems from self-attention's **O(n²) computational complexity** with respect to sequence length n.[&#91;13&#93;](#cite_note-arxiv_complexity-13) When computing attention, each token must attend to every other token, creating an n×n attention matrix. Doubling the sequence length quadruples memory requirements and computational cost.
 
-For a concrete example: processing 1,000 tokens requires 1 million attention computations, while processing 10,000 tokens requires 100 million—a 100-fold increase for a 10-fold increase in context. This quadratic scaling creates severe bottlenecks as context windows expand.
+For a concrete example: processing 1,000 tokens requires 1 million attention computations, while processing 10,000 tokens requires 100 million, a 100-fold increase for a 10-fold increase in context. This quadratic scaling creates severe bottlenecks as context windows expand.
 
 #### Mathematical Foundations
 
-Google researchers (Duman Keles et al., 2023) proved that self-attention time complexity is **necessarily quadratic** unless the Strong Exponential Time Hypothesis (SETH) is false—a fundamental result in computational complexity theory.[&#91;13&#93;](#cite_note-arxiv_complexity-13) This means no algorithmic trick can reduce attention to linear time without sacrificing the full expressivity of standard attention or making implausible assumptions about computational hardness.
+Google researchers (Duman Keles et al., 2023) proved that self-attention time complexity is **necessarily quadratic** unless the Strong Exponential Time Hypothesis (SETH) is false, a fundamental result in computational complexity theory.[&#91;13&#93;](#cite_note-arxiv_complexity-13) This means no algorithmic trick can reduce attention to linear time without sacrificing the full expressivity of standard attention or making implausible assumptions about computational hardness.
 
 The memory complexity presents an even more pressing constraint. Modern GPUs are memory-bandwidth-bound rather than compute-bound, meaning data transfer between GPU memory levels (SRAM, HBM, system RAM) becomes the bottleneck.[&#91;14&#93;](#cite_note-flashattention1-14) Standard attention constantly moves the large n×n attention matrix between fast on-chip SRAM (~20MB capacity) and slower High Bandwidth Memory (~40-80GB), creating severe inefficiencies.
 
@@ -87,7 +87,7 @@ The memory complexity presents an even more pressing constraint. Modern GPUs are
 
 For large-scale models processing long sequences, the [KV cache](/index.php?title=KV_cache&action=edit&redlink=1) (key-value pairs stored for each token) requires substantial memory. Modern production systems typically require **approximately 1MB per token** of GPU memory for the KV cache alone, excluding model parameters and activation memory.[&#91;15&#93;](#cite_note-tds1-15)
 
-When context windows extend to 128,000 tokens, memory requirements increase dramatically. Without optimizations, moving from a 4,000-token to a 128,000-token context window increases memory needs substantially—approaching the square of the length increase due to the quadratic attention complexity.[&#91;12&#93;](#cite_note-ibm2-12)
+When context windows extend to 128,000 tokens, memory requirements increase dramatically. Without optimizations, moving from a 4,000-token to a 128,000-token context window increases memory needs substantially, approaching the square of the length increase due to the quadratic attention complexity.[&#91;12&#93;](#cite_note-ibm2-12)
 
 ## Historical Evolution of Context Windows
 
@@ -115,33 +115,33 @@ When context windows extend to 128,000 tokens, memory requirements increase dram
 
 ### Early Era: 2018-2020
 
-**GPT-1** (June 2018), OpenAI's first Generative Pre-trained Transformer, launched with a modest **512-token context window**—roughly 350-400 words or about one page of text.[&#91;16&#93;](#cite_note-wiki_gpt3-16) This marked the beginning of the transformer's dominance in language modeling, though the limited context constrained practical applications.
+**GPT-1** (June 2018), OpenAI's first Generative Pre-trained Transformer, launched with a modest **512-token context window**, roughly 350-400 words or about one page of text.[&#91;16&#93;](#cite_note-wiki_gpt3-16) This marked the beginning of the transformer's dominance in language modeling, though the limited context constrained practical applications.
 
 **BERT** (October 2018), Google's bidirectional encoder model, maintained the same **512-token limit** but processed context differently.[&#91;17&#93;](#cite_note-wiki_bert-17) Unlike GPT's left-to-right generation, BERT considered both preceding and following context simultaneously, proving highly effective for classification and information extraction tasks within its limited window.
 
 **GPT-2** (February 2019) doubled the context to **1,024 tokens**, a seemingly modest improvement that expanded the model's ability to maintain narrative coherence. With 1.5 billion parameters, GPT-2 demonstrated unprecedented text generation quality.
 
-**GPT-3** (June 11, 2020) doubled context again to **2,048 tokens**—equivalent to approximately 1,500 words or 3-4 pages.[&#91;16&#93;](#cite_note-wiki_gpt3-16) With 175 billion parameters, GPT-3 demonstrated remarkable few-shot learning capabilities, establishing new benchmarks for in-context learning.
+**GPT-3** (June 11, 2020) doubled context again to **2,048 tokens**, equivalent to approximately 1,500 words or 3-4 pages.[&#91;16&#93;](#cite_note-wiki_gpt3-16) With 175 billion parameters, GPT-3 demonstrated remarkable few-shot learning capabilities, establishing new benchmarks for in-context learning.
 
 ### Rapid Expansion: 2022-2023
 
 **GPT-3.5-Turbo** (November 2022), the model powering ChatGPT's initial release, featured a **4,096-token context window**, enabling conversations spanning approximately 3,000 words.[&#91;1&#93;](#cite_note-ibm1-1) This represented a significant milestone as it brought conversational AI to mainstream audiences.
 
-**GPT-3.5-Turbo-16K** (June 2023) achieved a **16,384-token context window**—equivalent to roughly 20 pages of text.[&#91;18&#93;](#cite_note-humanfirst1-18) This expansion enabled processing of much longer documents and extended conversations.
+**GPT-3.5-Turbo-16K** (June 2023) achieved a **16,384-token context window**, equivalent to roughly 20 pages of text.[&#91;18&#93;](#cite_note-humanfirst1-18) This expansion enabled processing of much longer documents and extended conversations.
 
 **GPT-4** (March 14, 2023) launched with two variants: an **8,192-token** standard model and a **32,768-token** extended version (GPT-4-32k).[&#91;19&#93;](#cite_note-techtarget1-19) The 32K version could handle about 25,000 words of text (around 50 pages), enabling use cases such as analyzing lengthy documents.
 
-**Claude 2** (July 2023), from [Anthropic](/wiki/anthropic), achieved a breakthrough **100,000-token context window**—roughly 75,000 words or 300 pages.[&#91;20&#93;](#cite_note-anthropic1-20) This represented an 11x increase over Claude 1's 9,000-token window and marked the first time a production model could process entire books. Anthropic demonstrated this capability by having Claude read the full text of *The Great Gatsby* (~72K tokens) and identify a single altered sentence, which it successfully did in under 22 seconds.
+**Claude 2** (July 2023), from [Anthropic](/wiki/anthropic), achieved a breakthrough **100,000-token context window**, roughly 75,000 words or 300 pages.[&#91;20&#93;](#cite_note-anthropic1-20) This represented an 11x increase over Claude 1's 9,000-token window and marked the first time a production model could process entire books. Anthropic demonstrated this capability by having Claude read the full text of *The Great Gatsby* (~72K tokens) and identify a single altered sentence, which it successfully did in under 22 seconds.
 
 **Claude 2.1** (November 21, 2023) doubled this achievement to **200,000 tokens** (150,000 words or 500+ pages).[&#91;21&#93;](#cite_note-anthropic2-21) This capacity allowed Claude to digest and explain dense financial reports, compare themes across legal contracts, or sift through thousands of lines of code for debugging assistance.
 
-**GPT-4 Turbo** (November 6, 2023) countered with a **128,000-token context window**—equivalent to roughly 300 pages of text or 96,000 words.[&#91;22&#93;](#cite_note-openai_turbo-22) This represented OpenAI's most significant context expansion to date.
+**GPT-4 Turbo** (November 6, 2023) countered with a **128,000-token context window**, equivalent to roughly 300 pages of text or 96,000 words.[&#91;22&#93;](#cite_note-openai_turbo-22) This represented OpenAI's most significant context expansion to date.
 
 ### The Million-Token Milestone: 2024
 
-**Gemini 1.5 Pro** (February 15, 2024) shattered previous records with a **1,000,000-token context window**—a 5x leap capable of processing approximately 700,000 words, 11 hours of audio, or 1 hour of video.[&#91;23&#93;](#cite_note-google2-23) The model utilized a [Mixture-of-Experts](/index.php?title=Mixture-of-Experts&action=edit&redlink=1) (MoE) architecture, activating only a subset of parameters per input token, which helped manage computational costs.
+**Gemini 1.5 Pro** (February 15, 2024) shattered previous records with a **1,000,000-token context window**, a 5x leap capable of processing approximately 700,000 words, 11 hours of audio, or 1 hour of video.[&#91;23&#93;](#cite_note-google2-23) The model utilized a [Mixture-of-Experts](/index.php?title=Mixture-of-Experts&action=edit&redlink=1) (MoE) architecture, activating only a subset of parameters per input token, which helped manage computational costs.
 
-**Gemini 1.5 Pro - 2 Million Tokens** (June 27, 2024) extended the context to **2,000,000 tokens**—equivalent to approximately 1.4 million words, 22 hours of audio, or 2 hours of video.[&#91;24&#93;](#cite_note-google3-24) This represented the largest commercially available context window at the time.
+**Gemini 1.5 Pro - 2 Million Tokens** (June 27, 2024) extended the context to **2,000,000 tokens**, equivalent to approximately 1.4 million words, 22 hours of audio, or 2 hours of video.[&#91;24&#93;](#cite_note-google3-24) This represented the largest commercially available context window at the time.
 
 **Meta's Llama Family** progressed rapidly:
 
@@ -149,7 +149,7 @@ When context windows extend to 128,000 tokens, memory requirements increase dram
 
 - **Llama 3** (April 2024): 8,192 tokens
 
-- **Llama 3.1** (July 2024): 128,000 tokens—a 16x jump[&#91;25&#93;](#cite_note-meta1-25)
+- **Llama 3.1** (July 2024): 128,000 tokens, a 16x jump[&#91;25&#93;](#cite_note-meta1-25)
 
 **Mistral AI's Evolution**:
 
@@ -161,7 +161,7 @@ When context windows extend to 128,000 tokens, memory requirements increase dram
 
 ### Specialized Models Push Boundaries: 2025
 
-**GPT-4.1** (April 2025) features **approximately 1 million tokens** of context—described officially as supporting "up to 1 million tokens of context."[&#91;28&#93;](#cite_note-openai_gpt41-28) All three models in the GPT-4.1 family (GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano) share this context window capacity. The models show significant improvements in coding performance, scoring 54.6% on SWE-bench Verified, and demonstrate enhanced long-context comprehension capabilities.
+**GPT-4.1** (April 2025) features **approximately 1 million tokens** of context, described officially as supporting "up to 1 million tokens of context."[&#91;28&#93;](#cite_note-openai_gpt41-28) All three models in the GPT-4.1 family (GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano) share this context window capacity. The models show significant improvements in coding performance, scoring 54.6% on SWE-bench Verified, and demonstrate enhanced long-context comprehension capabilities.
 
 **GPT-5** (August 2025) represents OpenAI's latest flagship model with a **256,000-token context window** available via API, with some sources indicating up to 400,000 total tokens (272,000 input + 128,000 output).[&#91;29&#93;](#cite_note-openai_gpt5-29)[&#91;30&#93;](#cite_note-9to5mac_gpt5-30) GPT-5 unifies advanced reasoning with general-purpose capabilities and features an intelligent router that automatically determines the appropriate amount of "thinking" needed for each query.
 
@@ -169,7 +169,7 @@ When context windows extend to 128,000 tokens, memory requirements increase dram
 
 **Meta Llama 4** (April 2025) achieved the most dramatic expansion:
 
-- **Llama 4 Scout**: **10,000,000 tokens**—the longest context window for an open-source model[&#91;3&#93;](#cite_note-llama4-3)
+- **Llama 4 Scout**: **10,000,000 tokens**, the longest context window for an open-source model[&#91;3&#93;](#cite_note-llama4-3)
 
 - **Llama 4 Maverick**: **1,000,000 tokens** with 400B parameters
 
@@ -177,7 +177,7 @@ When context windows extend to 128,000 tokens, memory requirements increase dram
 
 - **MiniMax-Text-01** (January 2025): **4,000,000 tokens** with 456B parameters[&#91;32&#93;](#cite_note-codingscape1-32)
 
-- **Magic.dev LTM-2-Mini**: **100,000,000 tokens**—claimed as the largest context window, capable of processing approximately 10 million lines of code[&#91;33&#93;](#cite_note-magic1-33)
+- **Magic.dev LTM-2-Mini**: **100,000,000 tokens**, claimed as the largest context window, capable of processing approximately 10 million lines of code[&#91;33&#93;](#cite_note-magic1-33)
 
 ## Technical Mechanisms and Optimizations
 
@@ -228,6 +228,29 @@ For each position, RoPE rotates Q and K vectors in 2D planes with rotation angle
 4. **Relative Position Encoding**: Captures relative distances between tokens
 
 **Adoption**: RoPE powers [Llama 3](/index.php?title=Llama_3&action=edit&redlink=1), [Gemma](/index.php?title=Gemma&action=edit&redlink=1), [Qwen](/wiki/qwen), Mistral, and most modern open-source models.[&#91;37&#93;](#cite_note-arxiv_rope_analysis-37)
+
+#### RoPE Scaling Methods
+
+A key challenge with RoPE is extending models to context lengths significantly longer than those seen during training. Several methods have been developed to scale RoPE embeddings:
+
+**Position Interpolation** (Chen et al., 2023) linearly downscales position indices so that the extended context maps onto the same range of rotation angles the model saw during training. While simple and effective, this approach compresses high-frequency components, which can degrade performance on tasks requiring fine-grained positional distinctions.
+
+**NTK-Aware Interpolation** (Reddit/community, 2023) addressed limitations of Position Interpolation by spreading the interpolation pressure across multiple frequency dimensions rather than scaling every dimension equally. High-frequency components (which encode local relationships) are scaled less aggressively, while low-frequency components (which encode global position) are scaled more, preserving local pattern recognition while extending the effective range.
+
+**YaRN (Yet Another RoPE extensioN)** (Peng et al., 2023) was the first formal academic paper to rigorously analyze and improve upon community experimentations with RoPE context extension.[&#91;55&#93;](#cite_note-yarn-55) YaRN combines two key innovations:
+
+1. **NTK-by-parts interpolation**: A ramp function partitions RoPE frequencies into distinct regions, each receiving a different scaling strategy. High-frequency dimensions that encode local relationships are left unscaled, while low-frequency dimensions that encode global position are interpolated more aggressively.
+
+2. **Attention scaling temperature**: A temperature parameter applied to the attention logits prevents the attention distribution from collapsing as the context window grows. By deliberately making attention "fuzzier," YaRN forces the model to consider a broader range of key tokens rather than over-relying on a single high-scoring key, making decisions more robust when handling compressed position representations.
+
+YaRN is notably compute-efficient, requiring approximately 10x fewer tokens and 2.5x fewer training steps than previous context extension methods. Using YaRN, LLaMA models have been successfully extended from their original training context length to 128K tokens and beyond while maintaining performance competitive with models trained natively at those lengths.
+
+| RoPE Scaling Method | Key Idea | Advantages | Limitations |
+| --- | --- | --- | --- |
+| Position Interpolation | Linear downscaling of position indices | Simple implementation, effective for moderate extension | Compresses high frequencies, limited extension range |
+| NTK-Aware Interpolation | Non-uniform scaling across frequency dimensions | Preserves local patterns, better long-range extension | Community-derived, limited theoretical analysis |
+| YaRN | Frequency-partitioned scaling with attention temperature | Compute-efficient, strong theoretical foundation, large extension range | Requires brief fine-tuning on extended data |
+| Code Llama Scaling | Combination of position interpolation with additional fine-tuning | Proven at scale (16K context) | Requires substantial fine-tuning compute |
 
 ### Ring Attention: Distributed Context Processing
 
@@ -292,6 +315,59 @@ Instead of every query head having dedicated key/value heads, GQA shares K/V hea
 
 Modern systems quantize KV cache to FP8 or INT8 precision, achieving **2-4x memory reduction**. TensorRT-LLM and vLLM both support quantized caching in production deployments, allowing models to handle longer contexts with the same hardware.
 
+#### KV Cache Compression
+
+Beyond quantization and attention head sharing, a rapidly growing area of research focuses on dynamically compressing the KV cache by selectively retaining, evicting, or merging cached tokens. These methods aim to dramatically reduce memory usage while preserving the information most critical to generation quality.[&#91;56&#93;](#cite_note-kvcache-factory-56)
+
+**Eviction-based methods** identify and remove tokens deemed less important based on attention score patterns:
+
+- **SnapKV** (Li et al., 2024) selects a fixed number of tokens per attention head, retaining those with the highest estimated contribution to the attention distribution. By keeping only the most influential context tokens, SnapKV reduces memory usage while preserving the tokens that matter most for downstream generation.
+
+- **PyramidKV** (Cai et al., 2024) dynamically adjusts KV cache size across different layers of the model, allocating more cache entries in lower layers (which tend to exhibit broader attention patterns) and fewer in higher layers (where attention is more focused).[&#91;57&#93;](#cite_note-pyramidkv-57) PyramidKV achieves remarkable efficiency: it matches the performance of models with a full KV cache while retaining only 12% of the KV cache. Notably, retaining just 128 KV cache entries enables the LLaMA-3-70B model to achieve 100% accuracy on the Needle-in-a-Haystack experiment.
+
+- **FastKV** (2024) applies similar eviction heuristics but optimizes for minimal latency overhead during token selection.
+
+**Merging-based methods** attempt to combine similar tokens rather than dropping them entirely, preserving more information in a compressed representation. These approaches exploit the observation that nearby tokens often have similar key and value representations, making them candidates for consolidation.
+
+**Frequency-domain methods** represent the newest frontier in KV cache compression:
+
+- **FreqKV** (2025) operates in the frequency domain rather than the token domain, consistently improving performance across long-context understanding tasks and achieving state-of-the-art results compared to both eviction-based and merging-based strategies.[&#91;58&#93;](#cite_note-freqkv-58)
+
+| Method | Category | Key Approach | Cache Retention | Performance |
+| --- | --- | --- | --- | --- |
+| SnapKV | Eviction | Retain highest-attention tokens per head | Fixed budget per head | Near-full-cache performance |
+| PyramidKV | Eviction | Layer-adaptive cache sizing | ~12% of full cache | Matches full cache on NIAH |
+| FastKV | Eviction | Low-latency token selection | Configurable budget | Competitive with SnapKV |
+| FreqKV | Frequency domain | Frequency-based compression | Variable | State-of-the-art (2025) |
+| CacheGen | Streaming | Similarity-based compression | Variable | Optimized for serving |
+
+### Context Caching
+
+**Context caching** is a production-oriented optimization that allows repeated use of previously processed context without re-computing attention for the same tokens. This technique is particularly valuable when the same long context (such as a system prompt, reference document, or codebase) is used across multiple requests.
+
+#### Google Gemini Context Caching
+
+[Google](/index.php?title=Google&action=edit&redlink=1) pioneered context caching for commercial LLM APIs in May 2024, offering significant cost savings for applications that repeatedly send the same context to the model.[&#91;59&#93;](#cite_note-google-caching-59) The feature supports two modes:
+
+**Explicit caching**: Developers manually declare which content to cache using the Vertex AI or Gemini API. Cached content can include any modality supported by Gemini (text, PDF, image, audio, or video). Developers set a time-to-live (TTL) that determines how long the cache persists before automatic deletion.
+
+**Implicit caching**: Introduced in May 2025, this mode automatically detects repeated context across requests and applies cache discounts without requiring developers to create explicit cache objects. This makes caching benefits available with zero code changes.
+
+**Cost savings**: On [Gemini](/index.php?title=Gemini&action=edit&redlink=1) 2.5 and later models, cached tokens are charged at a 90% discount compared to standard input token pricing. On Gemini 2.0 models, the discount is 75%. This makes long-context applications significantly more economical when the same reference material is used across multiple queries.
+
+#### Anthropic Prompt Caching
+
+[Anthropic](/wiki/anthropic) offers prompt caching for [Claude](/wiki/claude) models, allowing developers to cache frequently used context (such as long documents, detailed instructions, or code repositories) to reduce processing costs and latency for subsequent requests that reuse the same prefix.
+
+#### Provider Caching Comparison
+
+| Provider | Feature | Discount | Minimum Size | Cache Duration |
+| --- | --- | --- | --- | --- |
+| Google (Gemini 2.5+) | Explicit + Implicit | 90% on input tokens | 32,768 tokens | Configurable TTL |
+| Google (Gemini 2.0) | Explicit + Implicit | 75% on input tokens | 32,768 tokens | Configurable TTL |
+| Anthropic (Claude) | Prompt Caching | ~90% on cached tokens | 1,024 tokens | 5-minute TTL (auto-refresh) |
+| OpenAI | Automatic caching | 50% on cached tokens | N/A | Automatic |
+
 ### ALiBi: Attention with Linear Biases
 
 **[ALiBi](/index.php?title=ALiBi&action=edit&redlink=1)** (Press et al., ICLR 2022) eliminates positional embeddings entirely, instead biasing attention scores with a simple linear penalty based on distance.[&#91;12&#93;](#cite_note-ibm2-12) This remarkably simple approach enables:
@@ -332,7 +408,7 @@ This attention bias means that even if a document fits within the window, there 
 
 #### Universal Problem
 
-Critically, simply extending context windows doesn't solve this problem. Models with 100K+ token windows exhibit the same U-shaped performance pattern—they can process more tokens but don't effectively use middle content. This suggests the issue is architectural rather than merely a capacity limitation.
+Critically, simply extending context windows doesn't solve this problem. Models with 100K+ token windows exhibit the same U-shaped performance pattern; they can process more tokens but don't effectively use middle content. This suggests the issue is architectural rather than merely a capacity limitation.
 
 ### Computational Costs and Scaling
 
@@ -356,6 +432,55 @@ Critically, simply extending context windows doesn't solve this problem. Models 
 
 **Training-Inference Mismatch**: Most models train on shorter sequences (4K-32K tokens) and extend to longer contexts through positional encoding interpolation techniques. This mismatch can lead to degraded performance at extreme context lengths.
 
+## Evaluation and Benchmarking
+
+### Needle-in-a-Haystack (NIAH) Test
+
+The **Needle-in-a-Haystack** (NIAH) test, first proposed by Greg Kamradt in November 2023, has become the standard evaluation methodology for assessing long-context retrieval capabilities of [large language models](/wiki/large_language_model).[&#91;60&#93;](#cite_note-niah-github-60) The test embeds a specific, targeted piece of information (the "needle") within a larger body of irrelevant text (the "haystack") and evaluates whether the model can locate and utilize that information when prompted.
+
+#### Methodology
+
+In Kamradt's original implementation, an out-of-place statement ("The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day") was inserted at varying depths within snippets of varying lengths taken from essays by Paul Graham. The models were then prompted to answer what the best thing to do in San Francisco was, using only the provided context. The test was repeated systematically across two dimensions:
+
+- **Document depth**: The needle was placed at positions ranging from 0% (top of document) to 100% (bottom of document)
+- **Context length**: The haystack size ranged from 1K tokens up to the maximum context window of each model (128K for [GPT-4](/wiki/gpt-4) and 200K for [Claude](/wiki/claude) 2.1)
+
+The results are typically visualized as a heatmap, with green cells indicating successful retrieval and red cells indicating failure, providing an intuitive visualization of where a model's long-context capabilities break down.
+
+#### Key Findings from NIAH Evaluations
+
+Initial NIAH testing revealed significant differences between models:
+
+- [GPT-4](/wiki/gpt-4) Turbo (128K) showed strong retrieval at most depths but exhibited failures in specific depth/length combinations
+- [Claude](/wiki/claude) 2.1 (200K) demonstrated nearly perfect retrieval across all tested positions and lengths
+- Most models showed the expected "lost in the middle" pattern, with weaker retrieval for needles placed in the middle third of the document
+
+#### Extended NIAH Variants
+
+The original single-needle test has been expanded into several more demanding variants:
+
+**Multi-Needle NIAH**: Tests the model's ability to retrieve multiple pieces of information scattered throughout the context simultaneously, evaluating whether models can track and integrate multiple relevant details.[&#91;61&#93;](#cite_note-langchain-multineedle-61)
+
+**Sequential-NIAH** (2025): A benchmark specifically designed to evaluate extraction of sequential information items from long contexts, with context lengths ranging from 8K to 128K and comprising 14,000 samples. Even the best-performing model achieved a maximum accuracy of only 63.50% on this more challenging variant.[&#91;62&#93;](#cite_note-sequential-niah-62)
+
+**Multimodal Needle-in-a-Haystack (MMNeedle)** (NAACL 2025): Extends the NIAH methodology to multimodal models, evaluating the ability to locate a target sub-image (needle) within a set of images (haystack) based on textual instructions. This benchmark revealed that even state-of-the-art multimodal models struggle with long-context visual retrieval.[&#91;63&#93;](#cite_note-mmneedle-63)
+
+**NeedleBench**: A comprehensive evaluation framework that includes single-needle retrieval, multi-needle retrieval, and multi-needle reasoning tasks, assessing not just information retrieval but also the ability to integrate multiple key pieces of information for complex reasoning.[&#91;64&#93;](#cite_note-needlebench-64)
+
+### Other Long-Context Benchmarks
+
+Beyond NIAH, several benchmarks evaluate different aspects of long-context capability:
+
+| Benchmark | Focus | Context Lengths | Description |
+| --- | --- | --- | --- |
+| Needle-in-a-Haystack (NIAH) | Single-fact retrieval | 1K to model max | Locate one fact in irrelevant text |
+| Multi-Needle NIAH | Multi-fact retrieval | 1K to model max | Locate multiple scattered facts |
+| Sequential-NIAH | Sequential extraction | 8K to 128K | Extract ordered sequences of facts |
+| RULER | Synthetic long-context tasks | 4K to 128K | Multiple retrieval and reasoning patterns |
+| BABILong | Reasoning over long context | Up to 1M tokens | Adapted bAbI tasks with extended contexts |
+| LongBench | Real-world long-context tasks | 4K to 32K | Diverse tasks including QA, summarization, code |
+| InfiniteBench | Ultra-long context | 100K+ | Tasks requiring understanding of very long documents |
+
 ## Applications and Use Cases
 
 ### Document Analysis and Summarization
@@ -368,7 +493,7 @@ Critically, simply extending context windows doesn't solve this problem. Models 
 
 ### Coding and Software Development
 
-**Codebase Understanding**: Models like GPT-4.1 and Claude Sonnet 4 with large context windows can ingest entire codebases—tens of thousands of lines of code—enabling:
+**Codebase Understanding**: Models like GPT-4.1 and Claude Sonnet 4 with large context windows can ingest entire codebases (tens of thousands of lines of code), enabling:
 
 - Cross-file refactoring with full dependency awareness
 
@@ -425,10 +550,10 @@ Critically, simply extending context windows doesn't solve this problem. Models 
 | Claude Opus 4.1 | 200,000 tokens | 64,000 tokens | August 2025 |
 | Gemini 2.5 Pro | ~1,000,000 tokens | ~65,000 tokens | 2025 |
 | Gemini 2.0 Pro | ~2,000,000 tokens | ~8,000 tokens | 2025 |
-| Llama 4 Scout | 10,000,000 tokens | — | April 2025 |
-| Llama 4 Maverick | 1,000,000 tokens | — | April 2025 |
-| MiniMax-Text-01 | 4,000,000 tokens | — | January 2025 |
-| Mistral Large 2 | 128,000 tokens | — | July 2024 |
+| Llama 4 Scout | 10,000,000 tokens | N/A | April 2025 |
+| Llama 4 Maverick | 1,000,000 tokens | N/A | April 2025 |
+| MiniMax-Text-01 | 4,000,000 tokens | N/A | January 2025 |
+| Mistral Large 2 | 128,000 tokens | N/A | July 2024 |
 
 *1M tokens with beta header
 
@@ -460,13 +585,13 @@ The **GPT-4o series** continues with **128,000-token context windows**, includin
 
 **Gemini 2.5 Pro**: Features **approximately 1 million tokens** context window with extended thinking capabilities and multimodal processing.[&#91;49&#93;](#cite_note-google_gemini-49)
 
-**Gemini 2.0 Pro (Experimental)**: Supports **up to 2 million tokens**—among Google's largest context windows for experimental use cases.[&#91;49&#93;](#cite_note-google_gemini-49)
+**Gemini 2.0 Pro (Experimental)**: Supports **up to 2 million tokens**, among Google's largest context windows for experimental use cases.[&#91;49&#93;](#cite_note-google_gemini-49)
 
 **Gemini 2.0 Flash**: **1,000,000 tokens** with multimodal input support and optimized for lower latency applications.
 
 ### Meta Llama Models
 
-**Llama 4 Scout** (April 2025): **10,000,000 tokens**—unprecedented for open-source models. With 109B parameters (17B active via MoE), it demonstrates that ultra-long context is achievable in open models.[&#91;3&#93;](#cite_note-llama4-3)
+**Llama 4 Scout** (April 2025): **10,000,000 tokens**, unprecedented for open-source models. With 109B parameters (17B active via MoE), it demonstrates that ultra-long context is achievable in open models.[&#91;3&#93;](#cite_note-llama4-3)
 
 **Llama 4 Maverick** (April 2025): **1,000,000 tokens** with 400B parameters, competitive with closed-source models on many benchmarks.
 
@@ -474,7 +599,7 @@ The **GPT-4o series** continues with **128,000-token context windows**, includin
 
 ### Other Notable Models
 
-**MiniMax-Text-01** (January 2025): **4,000,000 tokens** with 456B parameters—longest context from a Chinese AI startup, demonstrating global competition in long-context capabilities.[&#91;32&#93;](#cite_note-codingscape1-32)
+**MiniMax-Text-01** (January 2025): **4,000,000 tokens** with 456B parameters, the longest context from a Chinese AI startup, demonstrating global competition in long-context capabilities.[&#91;32&#93;](#cite_note-codingscape1-32)
 
 **Magic.dev LTM-2-Mini**: Claims **100,000,000 tokens** context window, potentially capable of processing approximately 10 million lines of code, though practical performance at such scales requires verification.[&#91;33&#93;](#cite_note-magic1-33)
 
@@ -506,7 +631,7 @@ Despite massive context windows, RAG maintains several key advantages:[&#91;51&#
 
 ### Hybrid Approaches
 
-Rather than being competitors, RAG and long context windows are increasingly seen as complementary technologies that converge into a powerful hybrid architecture. In this model, RAG acts as a coarse-grained filter, retrieving a large but relevant set of documents from a massive corpus. This curated set can then be fed into a million-token model for deep, cross-document reasoning and synthesis—combining RAG's scalability with long context's analytical depth.
+Rather than being competitors, RAG and long context windows are increasingly seen as complementary technologies that converge into a powerful hybrid architecture. In this model, RAG acts as a coarse-grained filter, retrieving a large but relevant set of documents from a massive corpus. This curated set can then be fed into a million-token model for deep, cross-document reasoning and synthesis, combining RAG's scalability with long context's analytical depth.
 
 ## Future Directions and Emerging Trends
 
@@ -521,6 +646,12 @@ Rather than being competitors, RAG and long context windows are increasingly see
 - **Hierarchical Processing**: Multi-level architectures processing information at different granularities[&#91;52&#93;](#cite_note-arxiv_survey-52)
 
 **Retrieval-Augmented Long Context**: Future systems will likely combine retrieval with long context windows, using retrieval to identify relevant passages then processing within long contexts for deep synthesis.
+
+**Neural Memory Modules**: Titans ([Google](/index.php?title=Google&action=edit&redlink=1), December 2025) introduces a deep neural network as a long-term memory module that updates its weights while reading input, combining [RNN](/index.php?title=Recurrent_neural_network&action=edit&redlink=1)-speed inference with [transformer](/wiki/transformer)-accuracy reasoning.[&#91;65&#93;](#cite_note-titans-65) This approach allows the model to maintain a persistent, learned representation of previously seen context without storing explicit KV pairs for every token.
+
+**Iterative Reasoning with Bounded Memory**: InftyThink (Zhejiang University, March 2026) transforms monolithic reasoning into an iterative process with intermediate summarization, creating a sawtooth memory pattern that enables unbounded reasoning depth while keeping computational costs bounded.[&#91;66&#93;](#cite_note-inftythink-66) Rather than processing all reasoning steps within a single context window, InftyThink periodically compresses intermediate results, freeing context capacity for further reasoning.
+
+**Curriculum-Based Context Extension**: UltraLong (2024-2025) stretches models from 128K to 1M, 2M, and 4M tokens using single-stage continued pretraining on long upsampled documents, YaRN-style [RoPE](/index.php?title=RoPE&action=edit&redlink=1) scaling, and brief instruction tuning. This approach demonstrates that existing models can be extended to much longer contexts without architecture changes, given appropriate training procedures.
 
 ### Hardware Co-Design
 
@@ -676,6 +807,30 @@ Rather than being competitors, RAG and long context windows are increasingly see
 
 54. [↑](#cite_ref-arxiv_infini_54-0) arXiv (2024). Leave No Context Behind: Efficient Infinite Context Transformers. [https://arxiv.org/html/2404.07143v1](https://arxiv.org/html/2404.07143v1)
 
+55. [↑](#cite_ref-yarn_55-0) Peng, B. et al. (2023). YaRN: Efficient Context Window Extension of Large Language Models. arXiv:2309.00071. [https://arxiv.org/abs/2309.00071](https://arxiv.org/abs/2309.00071)
+
+56. [↑](#cite_ref-kvcache-factory_56-0) GitHub (2024). KVCache-Factory: Unified KV Cache Compression Methods for Auto-Regressive Models. [https://github.com/Zefan-Cai/KVCache-Factory](https://github.com/Zefan-Cai/KVCache-Factory)
+
+57. [↑](#cite_ref-pyramidkv_57-0) Cai, Z. et al. (2024). PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling. [https://arxiv.org/html/2406.02069v1](https://arxiv.org/html/2406.02069v1)
+
+58. [↑](#cite_ref-freqkv_58-0) arXiv (2025). FreqKV: Key-Value Compression in Frequency Domain for Context Window Extension. [https://arxiv.org/html/2505.00570](https://arxiv.org/html/2505.00570)
+
+59. [↑](#cite_ref-google-caching_59-0) Google AI for Developers (2025). Context caching. [https://ai.google.dev/gemini-api/docs/caching](https://ai.google.dev/gemini-api/docs/caching)
+
+60. [↑](#cite_ref-niah-github_60-0) Kamradt, G. (2023). Needle In A Haystack - Pressure Testing LLMs. GitHub. [https://github.com/gkamradt/LLMTest_NeedleInAHaystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
+
+61. [↑](#cite_ref-langchain-multineedle_61-0) LangChain Blog (2024). Multi Needle in a Haystack. [https://blog.langchain.com/multi-needle-in-a-haystack/](https://blog.langchain.com/multi-needle-in-a-haystack/)
+
+62. [↑](#cite_ref-sequential-niah_62-0) arXiv (2025). Sequential-NIAH: A Needle-In-A-Haystack Benchmark for Extracting Sequential Needles from Long Contexts. [https://arxiv.org/abs/2504.04713](https://arxiv.org/abs/2504.04713)
+
+63. [↑](#cite_ref-mmneedle_63-0) Wang, H. et al. (2025). Multimodal Needle in a Haystack: Benchmarking Long-Context Capability of Multimodal Large Language Models. NAACL 2025. [https://aclanthology.org/2025.naacl-long.166/](https://aclanthology.org/2025.naacl-long.166/)
+
+64. [↑](#cite_ref-needlebench_64-0) OpenCompass (2024). Needle In A Haystack Evaluation. [https://opencompass.readthedocs.io/en/latest/advanced_guides/needleinahaystack_eval.html](https://opencompass.readthedocs.io/en/latest/advanced_guides/needleinahaystack_eval.html)
+
+65. [↑](#cite_ref-titans_65-0) Amaarora (2025). How LLMs Scaled from 512 to 2M Context: A Technical Deep Dive. [https://amaarora.github.io/posts/2025-09-21-rope-context-extension.html](https://amaarora.github.io/posts/2025-09-21-rope-context-extension.html)
+
+66. [↑](#cite_ref-inftythink_66-0) Ulum, Y. (2026). The Long Context Illusion: Why Bigger Windows Don't Fix Reasoning. Medium. [https://medium.com/@yusefulum/the-long-context-illusion-why-bigger-windows-dont-fix-reasoning-464b757c8185](https://medium.com/@yusefulum/the-long-context-illusion-why-bigger-windows-dont-fix-reasoning-464b757c8185)
+
 ## See Also
 
 - [Transformer (machine learning model)](/index.php?title=Transformer_(machine_learning_model)&action=edit&redlink=1)
@@ -699,6 +854,12 @@ Rather than being competitors, RAG and long context windows are increasingly see
 - [Retrieval-augmented generation](/index.php?title=Retrieval-augmented_generation&action=edit&redlink=1)
 
 - [In-context learning](/wiki/in-context_learning)
+
+- [Flash Attention](/index.php?title=Flash_Attention&action=edit&redlink=1)
+
+- [RoPE](/index.php?title=RoPE&action=edit&redlink=1)
+
+- [Mixture-of-Experts](/index.php?title=Mixture-of-Experts&action=edit&redlink=1)
 
 ## External Links
 

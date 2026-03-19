@@ -32,7 +32,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-      className="p-2 rounded-lg hover:bg-surface transition-all text-muted hover:text-foreground active:scale-90"
+      className="relative p-2 rounded-lg hover:bg-surface transition-all text-muted hover:text-foreground active:scale-90 overflow-hidden"
     >
       <svg
         width="16"
@@ -43,8 +43,8 @@ export default function ThemeToggle() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="transition-transform duration-300"
-        style={{ transform: theme === "dark" ? "rotate(180deg)" : "rotate(0deg)" }}
+        className="transition-transform duration-500 ease-out"
+        style={{ transform: theme === "dark" ? "rotate(360deg)" : "rotate(0deg)" }}
       >
         {theme === "light" ? (
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />

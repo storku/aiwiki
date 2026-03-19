@@ -81,7 +81,7 @@ By 2023-2025, RLHF became ubiquitous across the AI industry and a standard part 
 | 2022 | [InstructGPT](/index.php?title=InstructGPT&action=edit&redlink=1) - Established RLHF as viable for general-purpose alignment | Ouyang et al.[&#91;2&#93;](#cite_note-instructgpt-2) |
 | 2022 | [Constitutional AI](/index.php?title=Constitutional_AI&action=edit&redlink=1) - Introduced RLAIF and explicit value specification | Bai et al.[&#91;10&#93;](#cite_note-constitutional-10) |
 | 2023 | [Llama 2](/index.php?title=Llama_2&action=edit&redlink=1) - Most detailed public RLHF documentation | Touvron et al.[&#91;13&#93;](#cite_note-llama2-13) |
-| 2023 | [DPO](/index.php?title=DPO&action=edit&redlink=1) - Simpler alternative to RL-based training | Rafailov et al.[&#91;16&#93;](#cite_note-dpo-16) |
+| 2023 | [DPO](/wiki/direct_preference_optimization) - Simpler alternative to RL-based training | Rafailov et al.[&#91;16&#93;](#cite_note-dpo-16) |
 | 2023 | Open Problems in RLHF - Examined fundamental limitations | Casper et al.[&#91;17&#93;](#cite_note-casper-17) |
 
 ## Technical Methodology
@@ -1216,9 +1216,9 @@ The objective optimized by RL—maximizing reward model scores—does not perfec
 
 As RLHF becomes a standard tool, researchers are exploring extensions and alternatives to address its limitations.
 
-### Direct Preference Optimization (DPO)
+### [Direct Preference Optimization](/wiki/direct_preference_optimization) (DPO)
 
-One notable variant is **Direct Preference Optimization (DPO)**, introduced in 2023, which aims to eliminate the reinforcement learning step altogether and emerged as a simpler, more stable alternative to RLHF, eliminating separate reward model training and RL optimization.[&#91;16&#93;](#cite_note-dpo-16) DPO is an algorithm that takes the preference data (pairwise comparisons) and directly fine-tunes the main model to satisfy those preferences using a simple supervised objective, rather than training a separate reward model and doing RL. 
+One notable variant is **[Direct Preference Optimization](/wiki/direct_preference_optimization) (DPO)**, introduced in 2023, which aims to eliminate the reinforcement learning step altogether and emerged as a simpler, more stable alternative to RLHF, eliminating separate reward model training and RL optimization.[&#91;16&#93;](#cite_note-dpo-16) DPO is an algorithm that takes the preference data (pairwise comparisons) and directly fine-tunes the main model to satisfy those preferences using a simple supervised objective, rather than training a separate reward model and doing RL.
 
 DPO's key insight is that the optimal policy for the RLHF objective can be expressed analytically, enabling direct optimization from preference data using supervised learning. Essentially, DPO mathematically derives a loss function for the policy such that optimizing this loss is theoretically equivalent to optimizing the expected reward as in RLHF, under certain assumptions. The benefit is that it forgoes the complexity of RL training (which can be unstable and sensitive to hyperparameters) and instead uses standard gradient descent on a tailored classification or regression loss constructed from the preference pairs.
 
@@ -1522,6 +1522,8 @@ The RLHF research community faces numerous open challenges:
 - [Claude (chatbot)](/index.php?title=Claude_(chatbot)&action=edit&redlink=1)
 
 - [Constitutional AI](/index.php?title=Constitutional_AI&action=edit&redlink=1)
+
+- [Direct Preference Optimization](/wiki/direct_preference_optimization)
 
 - [Inverse reinforcement learning](/index.php?title=Inverse_reinforcement_learning&action=edit&redlink=1)
 

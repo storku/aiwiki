@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -9,11 +12,13 @@ import WikiLink from "./WikiLink";
 
 interface WikiContentProps {
   content: string;
+  contentHtml?: string | null;
 }
+
+// ─── Markdown fallback components ────────────────────────────────────
 
 const components: Components = {
   a: ({ href, children, ...props }) => {
-    // Internal wiki links with hover preview
     if (href && href.startsWith("/wiki/")) {
       return (
         <WikiLink href={href} {...props}>
@@ -21,7 +26,6 @@ const components: Components = {
         </WikiLink>
       );
     }
-    // External links open in a new tab
     if (href && (href.startsWith("http://") || href.startsWith("https://"))) {
       return (
         <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
@@ -29,7 +33,11 @@ const components: Components = {
         </a>
       );
     }
-    return <a href={href} {...props}>{children}</a>;
+    return (
+      <a href={href} {...props}>
+        {children}
+      </a>
+    );
   },
   img: ({ src, alt }) => {
     if (!src || typeof src !== "string") return null;
@@ -48,8 +56,46 @@ const components: Components = {
   },
 };
 
-export default function WikiContent({ content }: WikiContentProps) {
-  // Clean up common MediaWiki artifacts
+// ─── Pre-rendered HTML: client-side interactivity ────────────────────
+
+function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | null>) {
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    // Event delegation for wiki link hover previews
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest('a[href^="/wiki/"]') as HTMLAnchorElement | null;
+      if (link) {
+        // Let Next.js router handle navigation (WikiLink hover handled separately)
+        return;
+      }
+    };
+
+    el.addEventListener("click", handleClick);
+    return () => el.removeEventListener("click", handleClick);
+  }, [containerRef]);
+}
+
+// ─── Component ───────────────────────────────────────────────────────
+
+export default function WikiContent({ content, contentHtml }: WikiContentProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useHtmlInteractivity(containerRef);
+
+  // Pre-rendered HTML mode
+  if (contentHtml) {
+    return (
+      <div
+        ref={containerRef}
+        className="wiki-content"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
+    );
+  }
+
+  // Markdown fallback
   let cleaned = content;
 
   // Remove red link edit URLs, keeping the text
@@ -70,7 +116,7 @@ export default function WikiContent({ content }: WikiContentProps) {
   cleaned = cleaned.replace(/&#93;/g, "]");
 
   return (
-    <div className="wiki-content">
+    <div ref={containerRef} className="wiki-content">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw, rehypeSlug, [rehypeHighlight, { ignoreMissing: true }]]}
