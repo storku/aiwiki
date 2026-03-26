@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
@@ -9,6 +10,7 @@ export default function Header() {
   const [query, setQuery] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isMac, setIsMac] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
@@ -20,6 +22,11 @@ export default function Header() {
       setMenuOpen(false);
     }
   }
+
+  // Detect Mac for keyboard shortcut display (avoids hydration mismatch)
+  useEffect(() => {
+    setIsMac(/Mac|iPhone|iPad/.test(navigator.userAgent));
+  }, []);
 
   // Track scroll for header shadow
   useEffect(() => {
@@ -56,13 +63,22 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 border-b bg-background/80 backdrop-blur-xl transition-all duration-300 ${scrolled ? "border-border shadow-sm" : "border-transparent"}`}>
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-6 h-14 gap-3">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all">
-            <span className="text-white font-extrabold text-xs">AI</span>
-          </div>
-          <span className="font-bold text-base hidden sm:block tracking-tight">
-            Wiki
-          </span>
+        <Link href="/" className="flex items-center gap-2 shrink-0 group">
+          <Image
+            src="/aiwiki_logo_symbol.png"
+            alt="AI Wiki"
+            width={30}
+            height={30}
+            className="group-hover:scale-105 transition-transform"
+          />
+          <Image
+            src="/aiwiki_logo_words.png"
+            alt="AI Wiki"
+            width={90}
+            height={19}
+            className="hidden sm:block logo-wordmark"
+            priority
+          />
         </Link>
 
         <form onSubmit={handleSearch} className="flex-1 max-w-lg hidden sm:block">
@@ -80,7 +96,7 @@ export default function Header() {
               className="w-full pl-9 pr-16 py-1.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
             />
             <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-border bg-surface text-[10px] text-muted font-mono">
-              <span className="text-[11px]">{typeof navigator !== "undefined" && /Mac/.test(navigator.userAgent) ? "\u2318" : "Ctrl"}</span>K
+              <span className="text-[11px]">{isMac ? "\u2318" : "Ctrl"}</span>K
             </kbd>
           </div>
         </form>
