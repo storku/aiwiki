@@ -18,6 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aiwiki.ai"),
   title: {
     default: "AI Wiki - The Encyclopedia of Artificial Intelligence",
     template: "%s | AI Wiki",
