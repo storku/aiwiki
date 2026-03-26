@@ -88,13 +88,24 @@ function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | nul
       wrapper.appendChild(table);
     }
 
-    // Event delegation for wiki link hover previews
+    // Handle heading anchor button clicks (copy link)
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const link = target.closest('a[href^="/wiki/"]') as HTMLAnchorElement | null;
-      if (link) {
-        // Let Next.js router handle navigation (WikiLink hover handled separately)
-        return;
+      const anchorBtn = target.closest(".heading-anchor") as HTMLButtonElement | null;
+      if (anchorBtn) {
+        e.preventDefault();
+        const id = anchorBtn.dataset.headingId;
+        if (id) {
+          const url = `${window.location.origin}${window.location.pathname}#${id}`;
+          navigator.clipboard.writeText(url).catch(() => {});
+          // Brief visual feedback
+          anchorBtn.style.opacity = "1";
+          anchorBtn.style.color = "var(--color-primary)";
+          setTimeout(() => {
+            anchorBtn.style.opacity = "";
+            anchorBtn.style.color = "";
+          }, 1000);
+        }
       }
     };
 
