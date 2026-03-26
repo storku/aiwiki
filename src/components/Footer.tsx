@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border mt-20 footer-gradient-border">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-3 group">
@@ -37,6 +37,16 @@ export default function Footer() {
               <Link href="/wiki/large_language_model" className="text-muted hover:text-primary transition-colors">Large Language Models</Link>
               <Link href="/wiki/deep_learning" className="text-muted hover:text-primary transition-colors">Deep Learning</Link>
               <Link href="/wiki/neural_network" className="text-muted hover:text-primary transition-colors">Neural Networks</Link>
+            </nav>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted mb-4">Legal</p>
+            <nav className="flex flex-col gap-2.5 text-sm">
+              <Link href="/about" className="text-muted hover:text-primary transition-colors">About</Link>
+              <Link href="/privacy" className="text-muted hover:text-primary transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="text-muted hover:text-primary transition-colors">Terms of Service</Link>
             </nav>
           </div>
         </div>
