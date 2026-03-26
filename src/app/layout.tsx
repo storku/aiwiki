@@ -55,6 +55,15 @@ export default function RootLayout({
             __html: `try{const t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark')}catch(e){}`,
           }}
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WZ77X7X9C4"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-WZ77X7X9C4');`,
+          }}
+        />
       </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
