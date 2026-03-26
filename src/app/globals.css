@@ -275,24 +275,38 @@ html {
 /* ── Wiki content styles ───────────────────── */
 .wiki-content {
   max-width: 42rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .wiki-content h1 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.025em;
 }
 
 .wiki-content h2 {
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--color-border);
   letter-spacing: -0.01em;
+}
+
+@media (min-width: 640px) {
+  .wiki-content h1 {
+    font-size: 1.875rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .wiki-content h2 {
+    font-size: 1.375rem;
+    margin-top: 2.5rem;
+  }
 }
 
 [data-theme="dark"] .wiki-content h2 {
@@ -378,14 +392,21 @@ html {
   border-radius: 0.75rem;
   overflow: hidden;
   border: 1px solid var(--color-border);
-  min-width: 400px;
+  min-width: min(400px, 100%);
 }
 
 .wiki-content th,
 .wiki-content td {
   border: 1px solid var(--color-border);
-  padding: 0.625rem 0.875rem;
+  padding: 0.5rem 0.625rem;
   text-align: left;
+}
+
+@media (min-width: 640px) {
+  .wiki-content th,
+  .wiki-content td {
+    padding: 0.625rem 0.875rem;
+  }
 }
 
 .wiki-content th {
@@ -416,13 +437,20 @@ html {
 
 .wiki-content pre {
   background-color: var(--color-surface);
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1rem;
   border-radius: 0.75rem;
   overflow-x: auto;
   margin-bottom: 1.5rem;
   border: 1px solid var(--color-border);
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .wiki-content pre {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+  }
 }
 
 .wiki-content pre code {

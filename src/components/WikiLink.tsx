@@ -97,7 +97,7 @@ export default function WikiLink({
             ref={refs.setFloating}
             style={floatingStyles}
             {...getFloatingProps()}
-            className="wiki-preview-card z-50 w-72 p-4 rounded-xl border border-border bg-background shadow-xl animate-fade-in"
+            className="wiki-preview-card z-50 w-72 max-w-[calc(100vw-2rem)] p-4 rounded-xl border border-border bg-background shadow-xl animate-fade-in"
           >
             {loading && !preview && (
               <div className="space-y-2">

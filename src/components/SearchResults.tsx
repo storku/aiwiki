@@ -89,6 +89,9 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
 
   useEffect(() => {
     searchServer(query);
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
   }, [query, searchServer]);
 
   // Merge client + server results, deduplicating by slug
@@ -146,7 +149,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Type to search..."
-          className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-border bg-surface text-base placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+          className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-border bg-surface text-base sm:text-sm placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
           autoFocus
         />
       </div>
@@ -186,7 +189,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
             key={item.slug}
             href={`/wiki/${item.slug}`}
             className="card group flex items-start gap-3.5 p-4 animate-fade-in"
-            style={{ animationDelay: `${idx * 0.02}s` }}
+            style={{ animationDelay: `${Math.min(idx * 0.02, 0.3)}s` }}
           >
             <div className="icon-box w-10 h-10 rounded-xl bg-surface flex items-center justify-center shrink-0 text-muted group-hover:bg-primary-light group-hover:text-primary transition-all mt-0.5">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -220,7 +223,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
       {!loading && query && results.length === 0 && !serverSearching && (
         <div className="text-center py-20 text-muted">
           <div className="empty-state-icon inline-block mb-4">
-            <svg className="text-muted/20" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="text-muted/30" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
               <line x1="8" y1="11" x2="14" y2="11" />
@@ -234,7 +237,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
       {!query && !loading && (
         <div className="text-center py-20 text-muted">
           <div className="empty-state-icon inline-block mb-4">
-            <svg className="text-muted/15" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg className="text-muted/25" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>

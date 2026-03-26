@@ -44,12 +44,12 @@ export default function PaginatedPageList({ pages }: { pages: PageMeta[] }) {
 
   return (
     <>
-      <nav className="alpha-nav flex flex-wrap gap-1 mb-10 p-3 rounded-xl bg-surface border border-border sticky top-14 z-10">
+      <nav className="alpha-nav flex overflow-x-auto sm:flex-wrap gap-1 mb-10 p-2 sm:p-3 rounded-xl bg-surface border border-border sticky top-14 z-10 -webkit-overflow-scrolling-touch">
         {sortedKeys.map((key) => (
           <a
             key={key}
             href={`#section-${key}`}
-            className="w-8 h-8 flex items-center justify-center text-sm font-medium rounded-lg hover:bg-primary hover:text-white transition-colors"
+            className="w-8 h-8 flex items-center justify-center shrink-0 text-sm font-medium rounded-lg hover:bg-primary hover:text-white transition-colors"
           >
             {key}
           </a>

@@ -66,7 +66,7 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       {/* Hero */}
-      <section className="relative hero-glow pt-20 sm:pt-28 pb-16 sm:pb-20 text-center animate-fade-in-up">
+      <section className="relative hero-glow pt-12 sm:pt-28 pb-12 sm:pb-20 text-center animate-fade-in-up">
         {/* Decorative orbs */}
         <div className="hero-orb hero-orb-1" />
         <div className="hero-orb hero-orb-2" />
@@ -120,20 +120,20 @@ export default async function HomePage() {
       </section>
 
       {/* Stats */}
-      <section className="grid grid-cols-3 gap-3 sm:gap-4 mb-16 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+      <section className="grid grid-cols-3 gap-2 sm:gap-4 mb-16 animate-fade-in" style={{ animationDelay: "0.15s" }}>
         {[
           { value: pages.length.toLocaleString(), label: "Articles", color: "text-primary", icon: STAT_ICONS[0] },
           { value: totalCategories.toString(), label: "Categories", color: "text-accent", icon: STAT_ICONS[1] },
           { value: "Free", label: "Open Access", color: "text-success", icon: STAT_ICONS[2] },
         ].map((stat) => (
-          <div key={stat.label} className="stat-card text-center p-4 sm:p-6 group cursor-default">
-            <div className="flex justify-center mb-2">
-              <svg className={`${stat.color} opacity-40 group-hover:opacity-70 transition-opacity`} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <div key={stat.label} className="stat-card text-center p-3 sm:p-6 group cursor-default">
+            <div className="flex justify-center mb-1.5 sm:mb-2">
+              <svg className={`${stat.color} opacity-40 group-hover:opacity-70 transition-opacity`} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d={stat.icon} />
               </svg>
             </div>
-            <p className={`text-2xl sm:text-3xl font-extrabold ${stat.color}`}>{stat.value}</p>
-            <p className="text-xs sm:text-sm text-muted mt-1">{stat.label}</p>
+            <p className={`text-xl sm:text-3xl font-extrabold ${stat.color}`}>{stat.value}</p>
+            <p className="text-[11px] sm:text-sm text-muted mt-0.5 sm:mt-1">{stat.label}</p>
           </div>
         ))}
       </section>

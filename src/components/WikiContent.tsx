@@ -63,6 +63,31 @@ function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | nul
     const el = containerRef.current;
     if (!el) return;
 
+    // Handle broken images - hide them gracefully
+    const imgs = el.querySelectorAll("img");
+    for (const img of imgs) {
+      if (!img.dataset.errorHandled) {
+        img.dataset.errorHandled = "1";
+        img.addEventListener("error", () => {
+          img.style.display = "none";
+        });
+        // Check if already failed (complete but no natural width)
+        if (img.complete && img.naturalWidth === 0 && img.src) {
+          img.style.display = "none";
+        }
+      }
+    }
+
+    // Wrap tables that may overflow on mobile in a scrollable container
+    const tables = el.querySelectorAll("table");
+    for (const table of tables) {
+      if (table.parentElement?.classList.contains("table-wrapper")) continue;
+      const wrapper = document.createElement("div");
+      wrapper.className = "table-wrapper overflow-x-auto -mx-1 px-1";
+      table.parentNode?.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+
     // Event delegation for wiki link hover previews
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;

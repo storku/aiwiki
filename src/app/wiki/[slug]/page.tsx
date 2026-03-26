@@ -80,13 +80,13 @@ export default async function WikiPage({ params }: Props) {
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
             <Link href="/wiki" className="breadcrumb-link hover:text-primary transition-colors">Wiki</Link>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
-            <span className="text-foreground font-medium truncate max-w-[200px]">{page.title}</span>
+            <span className="text-foreground font-medium truncate max-w-[120px] sm:max-w-[200px]">{page.title}</span>
           </nav>
 
           {/* Header */}
-          <header className="mb-10">
-            <div className="article-accent-bar mb-6" />
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
+          <header className="mb-8 sm:mb-10">
+            <div className="article-accent-bar mb-4 sm:mb-6" />
+            <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight mb-3 sm:mb-4 leading-tight">
               {page.title}
             </h1>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">

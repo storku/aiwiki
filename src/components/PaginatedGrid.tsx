@@ -52,7 +52,7 @@ export default function PaginatedGrid({
           <button
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             disabled={currentPage === 1}
-            className="px-3 py-1.5 rounded-lg border border-border text-sm font-medium hover:bg-surface transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="px-4 py-2.5 sm:py-1.5 rounded-lg border border-border text-sm font-medium hover:bg-surface transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Previous
           </button>
@@ -62,7 +62,7 @@ export default function PaginatedGrid({
           <button
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
             disabled={currentPage === totalPages}
-            className="px-3 py-1.5 rounded-lg border border-border text-sm font-medium hover:bg-surface transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="px-4 py-2.5 sm:py-1.5 rounded-lg border border-border text-sm font-medium hover:bg-surface transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Next
           </button>
