@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getPageBySlug, getRelatedPages } from "@/lib/content";
 import { addHeadingIds } from "@/lib/html-utils";
@@ -6,6 +6,7 @@ import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
 import MobileToc from "@/components/MobileToc";
 import ReadingProgress from "@/components/ReadingProgress";
+import RelatedArticles from "@/components/RelatedArticles";
 import type { Metadata } from "next";
 
 export const dynamicParams = true;
@@ -41,8 +42,35 @@ export default async function WikiPage({ params }: Props) {
     notFound();
   }
 
+  // Detect redirect pages: content_html may contain a MediaWiki redirect message
+  // while the markdown content field has the actual article text.
+  let contentHtmlToUse = page.contentHtml;
+
+  if (
+    contentHtmlToUse &&
+    (contentHtmlToUse.includes('class="redirectMsg"') ||
+      contentHtmlToUse.includes("Redirect to:"))
+  ) {
+    // content_html is a redirect. Check if markdown content is also a redirect.
+    const contentIsRedirect =
+      page.content && page.content.trimStart().startsWith("Redirect to:");
+
+    if (contentIsRedirect) {
+      // Both fields are redirects: this is a genuine redirect page.
+      // Parse the target slug from the markdown link, e.g. "[LLMs](/wiki/llms)"
+      const linkMatch = page.content.match(/\[.*?\]\(\/wiki\/([^)]+)\)/);
+      if (linkMatch) {
+        redirect(`/wiki/${linkMatch[1]}`);
+      }
+    } else {
+      // Only content_html is a redirect but content has real article text.
+      // Discard the redirect HTML so the markdown renderer is used instead.
+      contentHtmlToUse = null;
+    }
+  }
+
   // Add heading IDs to pre-rendered HTML for TOC anchor links
-  const processedHtml = page.contentHtml ? addHeadingIds(page.contentHtml) : null;
+  const processedHtml = contentHtmlToUse ? addHeadingIds(contentHtmlToUse) : null;
 
   const related = await getRelatedPages(page.slug, page.categories);
 
@@ -131,36 +159,7 @@ export default async function WikiPage({ params }: Props) {
           <WikiContent content={page.content} contentHtml={processedHtml} />
 
           {/* Related Articles */}
-          {related.length > 0 && (
-            <section className="mt-16 pt-8 related-divider">
-              <div className="flex items-center gap-2.5 mb-5">
-                <div className="icon-box p-2 rounded-lg bg-surface text-muted">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
-                  </svg>
-                </div>
-                <h2 className="text-lg font-bold">Related Articles</h2>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {related.map((r) => (
-                  <Link
-                    key={r.slug}
-                    href={`/wiki/${r.slug}`}
-                    className="card group p-4"
-                  >
-                    <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
-                      {r.title}
-                    </h3>
-                    {r.categories.length > 0 && (
-                      <p className="text-xs text-muted mt-1.5 truncate">
-                        {r.categories.slice(0, 3).join(", ")}
-                      </p>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
+          <RelatedArticles related={related} />
         </article>
 
         {/* Table of Contents sidebar */}

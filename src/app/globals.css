@@ -57,6 +57,39 @@
   :root:not([data-theme="light"]) .logo-wordmark {
     filter: brightness(0) invert(1);
   }
+  :root:not([data-theme="light"]) .wiki-content table {
+    border-color: #263354;
+  }
+  :root:not([data-theme="light"]) .wiki-content th {
+    background-color: #1a2332;
+    color: #e2e8f0;
+    border-color: #263354;
+  }
+  :root:not([data-theme="light"]) .wiki-content td {
+    color: #e2e8f0;
+    border-color: #1e293b;
+  }
+  :root:not([data-theme="light"]) .wiki-content tr:nth-child(even) td {
+    background-color: rgba(30, 41, 59, 0.35);
+  }
+  :root:not([data-theme="light"]) .wiki-content blockquote {
+    background-color: rgba(59, 130, 246, 0.06);
+    border-left-color: rgba(59, 130, 246, 0.5);
+    color: #cbd5e1;
+  }
+  :root:not([data-theme="light"]) .wiki-content code {
+    background: #1a2332;
+    color: #e2e8f0;
+    border-color: #263354;
+  }
+  :root:not([data-theme="light"]) .wiki-content pre {
+    background: #0d1117;
+    border-color: #1e293b;
+  }
+  :root:not([data-theme="light"]) .wiki-content pre code {
+    background: none;
+    color: inherit;
+  }
 }
 
 body {
@@ -423,9 +456,19 @@ html {
   color: var(--color-muted);
 }
 
+[data-theme="dark"] .wiki-content table {
+  border-color: #263354;
+}
+
 [data-theme="dark"] .wiki-content th {
-  background-color: var(--color-surface-hover);
-  color: #cbd5e1;
+  background-color: #1a2332;
+  color: #e2e8f0;
+  border-color: #263354;
+}
+
+[data-theme="dark"] .wiki-content td {
+  color: #e2e8f0;
+  border-color: #1e293b;
 }
 
 [data-theme="dark"] .wiki-content tr:nth-child(even) td {
@@ -478,11 +521,12 @@ html {
 [data-theme="dark"] .wiki-content blockquote {
   background-color: rgba(59, 130, 246, 0.06);
   border-left-color: rgba(59, 130, 246, 0.5);
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
 [data-theme="dark"] .wiki-content code {
-  background: var(--color-surface-hover);
+  background: #1a2332;
+  color: #e2e8f0;
   border-color: #263354;
 }
 

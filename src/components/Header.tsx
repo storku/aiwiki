@@ -58,6 +58,7 @@ export default function Header() {
   const navLinks = [
     { href: "/wiki", label: "All Pages" },
     { href: "/categories", label: "Categories" },
+    { href: "/about", label: "About" },
   ];
 
   return (
@@ -145,7 +146,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="sm:hidden border-t border-border px-4 py-3 space-y-3 bg-background animate-slide-in-down">
+        <div className="sm:hidden border-t border-border px-4 py-3 space-y-3 bg-background/95 backdrop-blur-sm animate-slide-in-down">
           <form onSubmit={handleSearch}>
             <div className="relative">
               <svg className="absolute left-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -161,6 +162,7 @@ export default function Header() {
               />
             </div>
           </form>
+          <div className="border-t border-border my-1" />
           <div className="flex flex-col gap-0.5">
             {navLinks.map((link) => (
               <Link
