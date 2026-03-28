@@ -67,7 +67,14 @@ When creating or improving wiki pages:
   - **Connecting related clauses:** use a semicolon.
 - When reading or reviewing wiki articles, always **query the database for the latest version**. Do not rely on cached data, old script outputs, or previously read content. The database is the single source of truth and articles may have been updated since last read.
 - All wiki content must be **100% accurate and factual**. Never hallucinate or fabricate information. If something cannot be verified, omit it.
-- **When updating existing wiki articles, the previous version must be saved in the revision history.** The `scripts/upsert-article.mjs` script handles this automatically: before overwriting an existing page, it saves the old content to `page_revisions` and increments the version number. Always use this script for article updates.
+- **Always use `scripts/upsert-article.mjs` to create or update wiki articles.** This script is mandatory for every article write because it:
+  1. Saves the previous version to `page_revisions` (revision history).
+  2. Increments the version number.
+  3. Triggers on-demand revalidation so the live site reflects the change immediately (pages are cached for 24 hours via ISR, so without revalidation visitors would see stale content).
+
+  Run it with: `node --env-file=.env.local scripts/upsert-article.mjs <json-file>`
+
+  Never write directly to the `pages` table with raw SQL. Always go through this script.
 - **When updating existing wiki articles, enhance rather than replace.** Always read and understand the full existing article content before making changes. Merge new information into the existing structure, preserving the original text, tables, wikilinks, and formatting. Do not overwrite an entire article with new content unless the existing content is factually wrong. Specific rules:
   - **Read first:** Query the database for the article's current TipTap JSON content and plain text before writing any update script.
   - **Preserve existing content:** Keep all existing sections, tables, and paragraphs that are accurate. Add new sections, rows, or paragraphs alongside them.
