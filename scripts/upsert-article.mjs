@@ -150,6 +150,30 @@ async function main() {
     console.log(`  Categories: ${categories.join(", ")}`);
   }
 
+  // Trigger on-demand revalidation so the site reflects the update immediately
+  const revalidateUrl = process.env.REVALIDATE_URL || "https://aiwiki.ai/api/revalidate";
+  const revalidateSecret = process.env.REVALIDATE_SECRET;
+  if (revalidateSecret) {
+    try {
+      const res = await fetch(revalidateUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${revalidateSecret}`,
+        },
+        body: JSON.stringify({ slug }),
+      });
+      if (res.ok) {
+        const result = await res.json();
+        console.log(`  Revalidated: ${result.revalidated.join(", ")}`);
+      } else {
+        console.warn(`  Revalidation failed (${res.status}) - page will update at next ISR cycle`);
+      }
+    } catch (e) {
+      console.warn(`  Revalidation skipped: ${e.message}`);
+    }
+  }
+
   console.log("Done!");
 }
 
