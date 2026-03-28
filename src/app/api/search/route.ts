@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
     const results = await fullTextSearch(query, 30);
     return NextResponse.json(results, {
       headers: {
-        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=3600",
+        "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
       },
     });
   } catch {

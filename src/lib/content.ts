@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { sql } from "./db";
 
 const INTERNAL_CATEGORIES = [
@@ -42,7 +43,7 @@ export function generateExcerpt(content: string, maxLen = 160): string {
   return text.slice(0, maxLen).replace(/\s\S*$/, "") + "...";
 }
 
-export async function getAllPages(): Promise<WikiPageMeta[]> {
+export const getAllPages = cache(async function getAllPages(): Promise<WikiPageMeta[]> {
   const rows = await sql`
     SELECT p.id, p.slug, p.title, p.excerpt,
            COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
@@ -58,9 +59,9 @@ export async function getAllPages(): Promise<WikiPageMeta[]> {
     categories: (r.categories as string[]) || [],
     excerpt: r.excerpt as string,
   }));
-}
+});
 
-export async function getPageBySlug(slug: string): Promise<WikiPage | null> {
+export const getPageBySlug = cache(async function getPageBySlug(slug: string): Promise<WikiPage | null> {
   const rows = await sql`
     SELECT p.*, p.content_html, p.content_plain,
            COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
@@ -85,14 +86,14 @@ export async function getPageBySlug(slug: string): Promise<WikiPage | null> {
     readingTime: row.reading_time as number,
     updatedAt: new Date(row.updated_at as string),
   };
-}
+});
 
 export async function getAllSlugs(): Promise<string[]> {
   const rows = await sql`SELECT slug FROM pages ORDER BY slug`;
   return rows.map((r) => r.slug as string);
 }
 
-export async function getAllCategories(): Promise<{ name: string; count: number }[]> {
+export const getAllCategories = cache(async function getAllCategories(): Promise<{ name: string; count: number }[]> {
   const rows = await sql`
     SELECT c.name, COUNT(pc.page_id) as count
     FROM categories c
@@ -104,6 +105,64 @@ export async function getAllCategories(): Promise<{ name: string; count: number 
   return rows.map((r) => ({
     name: r.name as string,
     count: Number(r.count),
+  }));
+});
+
+/**
+ * Lightweight query for hover previews. Returns only metadata, not full content.
+ */
+export async function getPagePreview(slug: string): Promise<{
+  title: string;
+  excerpt: string;
+  categories: string[];
+  readingTime: number;
+} | null> {
+  const rows = await sql`
+    SELECT p.title, p.excerpt, p.reading_time,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    WHERE p.slug = ${slug}
+    GROUP BY p.id
+  `;
+  if (rows.length === 0) return null;
+  const r = rows[0];
+  return {
+    title: r.title as string,
+    excerpt: r.excerpt as string,
+    categories: ((r.categories as string[]) || []).slice(0, 3),
+    readingTime: r.reading_time as number,
+  };
+}
+
+/**
+ * Get page count and basic stats without loading all page data.
+ */
+export async function getPageStats(): Promise<{ totalPages: number }> {
+  const rows = await sql`SELECT COUNT(*) as count FROM pages`;
+  return { totalPages: Number(rows[0].count) };
+}
+
+/**
+ * Get specific pages by their slugs (for homepage topic sections).
+ */
+export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> {
+  if (slugs.length === 0) return [];
+  const rows = await sql`
+    SELECT p.slug, p.title, p.excerpt,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    LEFT JOIN page_categories pc ON pc.page_id = p.id
+    LEFT JOIN categories c ON c.id = pc.category_id
+    WHERE p.slug = ANY(${slugs})
+    GROUP BY p.id
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    categories: (r.categories as string[]) || [],
+    excerpt: r.excerpt as string,
   }));
 }
 

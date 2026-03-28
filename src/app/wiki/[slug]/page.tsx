@@ -10,7 +10,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 import type { Metadata } from "next";
 
 export const dynamicParams = true;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 interface Props {
   params: Promise<{ slug: string }>;

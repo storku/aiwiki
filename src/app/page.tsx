@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { getAllPages, getAllCategories } from "@/lib/content";
+import { getAllCategories, getPagesBySlugs, getPageStats } from "@/lib/content";
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 const TOPIC_SECTIONS = [
   {
@@ -38,8 +38,12 @@ const STAT_ICONS = [
 ];
 
 export default async function HomePage() {
-  const pages = await getAllPages();
-  const allCategories = await getAllCategories();
+  const allSlugs = TOPIC_SECTIONS.flatMap((s) => s.slugs);
+  const [topicPages, allCategories, { totalPages }] = await Promise.all([
+    getPagesBySlugs(allSlugs),
+    getAllCategories(),
+    getPageStats(),
+  ]);
   const categories = allCategories
     .filter((c) => c.name !== "Plugin" && !c.name.startsWith("Not_"))
     .slice(0, 16);
@@ -51,7 +55,7 @@ export default async function HomePage() {
     "@type": "WebSite",
     name: "AI Wiki",
     url: "https://aiwiki.ai",
-    description: `Comprehensive encyclopedia covering ${pages.length.toLocaleString()} articles on artificial intelligence.`,
+    description: `Comprehensive encyclopedia covering ${totalPages.toLocaleString()} articles on artificial intelligence.`,
     potentialAction: {
       "@type": "SearchAction",
       target: "https://aiwiki.ai/search?q={search_term_string}",
@@ -75,7 +79,7 @@ export default async function HomePage() {
         <div className="relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-medium mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            {pages.length.toLocaleString()}+ articles and growing
+            {totalPages.toLocaleString()}+ articles and growing
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-[1.1]">
@@ -84,7 +88,7 @@ export default async function HomePage() {
             <span className="hero-gradient">Artificial Intelligence</span>
           </h1>
           <p className="text-base sm:text-lg text-muted max-w-xl mx-auto mb-10 leading-relaxed">
-            Explore {pages.length.toLocaleString()} articles covering everything from machine learning fundamentals to the latest AI breakthroughs.
+            Explore {totalPages.toLocaleString()} articles covering everything from machine learning fundamentals to the latest AI breakthroughs.
           </p>
 
           {/* Search CTA */}
@@ -122,7 +126,7 @@ export default async function HomePage() {
       {/* Stats */}
       <section className="grid grid-cols-3 gap-2 sm:gap-4 mb-16 animate-fade-in" style={{ animationDelay: "0.15s" }}>
         {[
-          { value: pages.length.toLocaleString(), label: "Articles", color: "text-primary", icon: STAT_ICONS[0] },
+          { value: totalPages.toLocaleString(), label: "Articles", color: "text-primary", icon: STAT_ICONS[0] },
           { value: totalCategories.toString(), label: "Categories", color: "text-accent", icon: STAT_ICONS[1] },
           { value: "Free", label: "Open Access", color: "text-success", icon: STAT_ICONS[2] },
         ].map((stat) => (
@@ -141,7 +145,7 @@ export default async function HomePage() {
       {/* Topic Sections */}
       {TOPIC_SECTIONS.map((section, i) => {
         const sectionPages = section.slugs
-          .map((slug) => pages.find((p) => p.slug === slug))
+          .map((slug) => topicPages.find((p) => p.slug === slug))
           .filter(Boolean);
         if (sectionPages.length === 0) return null;
         return (
@@ -232,7 +236,7 @@ export default async function HomePage() {
       <section className="explore-cta mb-12 p-8 sm:p-12 rounded-2xl bg-gradient-to-br from-primary/5 via-accent/5 to-transparent border border-border text-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-3">Explore the Full Encyclopedia</h2>
         <p className="text-muted mb-8 max-w-md mx-auto text-sm sm:text-base">
-          Dive into {pages.length.toLocaleString()} articles spanning every corner of artificial intelligence.
+          Dive into {totalPages.toLocaleString()} articles spanning every corner of artificial intelligence.
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link
