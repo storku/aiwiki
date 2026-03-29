@@ -51,9 +51,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted">
+        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">
           <p className="font-medium">AIWiki.ai</p>
-          <p>Open knowledge for everyone</p>
+          <div className="flex items-center gap-4">
+            <Link href="/feed.xml" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 11a9 9 0 0 1 9 9" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <circle cx="5" cy="19" r="1" />
+              </svg>
+              RSS Feed
+            </Link>
+            <p>Open knowledge for everyone</p>
+          </div>
         </div>
       </div>
     </footer>
