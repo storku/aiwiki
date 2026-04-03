@@ -79,9 +79,11 @@ function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | nul
     }
 
     // Wrap tables that may overflow on mobile in a scrollable container
+    // Skip infobox tables — they float right and must not be wrapped
     const tables = el.querySelectorAll("table");
     for (const table of tables) {
       if (table.parentElement?.classList.contains("table-wrapper")) continue;
+      if (table.classList.contains("infobox")) continue;
       const wrapper = document.createElement("div");
       wrapper.className = "table-wrapper overflow-x-auto -mx-1 px-1";
       table.parentNode?.insertBefore(wrapper, table);

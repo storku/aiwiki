@@ -100,18 +100,17 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
 
 /* ── Animations ────────────────────────────── */
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0.7; transform: translateY(4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0.7; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -137,7 +136,7 @@ html {
 }
 
 @keyframes slide-in-down {
-  from { opacity: 0; transform: translateY(-8px); }
+  from { opacity: 0.7; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -307,9 +306,129 @@ html {
 
 /* ── Wiki content styles ───────────────────── */
 .wiki-content {
-  max-width: 42rem;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+/* ── Infobox ─────────────────────────────────── */
+.wiki-content .infobox {
+  float: right;
+  clear: right;
+  width: 22rem !important;
+  max-width: 50%;
+  margin: 0 0 1.25rem 1.5rem;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  font-size: 0.8125rem !important;
+  line-height: 1.6 !important;
+  background-color: var(--color-surface) !important;
+  color: var(--foreground) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  min-width: auto;
+}
+
+.wiki-content .infobox th,
+.wiki-content .infobox td {
+  padding: 0.5rem 0.75rem;
+  border-color: var(--color-border);
+}
+
+/* Infobox title row */
+.wiki-content .infobox > tbody > tr:first-child > th {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  letter-spacing: -0.01em;
+  border: none;
+}
+
+/* Infobox section headers */
+.wiki-content .infobox th[colspan="2"] {
+  background-color: color-mix(in srgb, var(--color-primary) 12%, transparent) !important;
+  color: var(--color-primary) !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.4rem 0.75rem;
+  border-left: none;
+  border-right: none;
+}
+
+/* Override the title row match from section header rule */
+.wiki-content .infobox > tbody > tr:first-child > th[colspan="2"] {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+}
+
+/* Infobox label cells */
+.wiki-content .infobox th[scope="row"] {
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--color-muted);
+  white-space: nowrap;
+  width: 1%;
+  font-size: 0.8125rem;
+  vertical-align: top;
+}
+
+/* Infobox value cells */
+.wiki-content .infobox td {
+  background-color: transparent !important;
+  color: var(--foreground);
+}
+
+/* Infobox images */
+.wiki-content .infobox img {
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  display: block;
+  border: none;
+}
+
+/* Dark mode infobox overrides */
+[data-theme="dark"] .wiki-content .infobox {
+  background-color: #131c2b !important;
+  border-color: #1e293b !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .wiki-content .infobox th,
+[data-theme="dark"] .wiki-content .infobox td {
+  border-color: #1e293b;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .wiki-content .infobox > tbody > tr:first-child > th {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .wiki-content .infobox th[colspan="2"] {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+  color: #60a5fa !important;
+}
+
+[data-theme="dark"] .wiki-content .infobox > tbody > tr:first-child > th[colspan="2"] {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .wiki-content .infobox th[scope="row"] {
+  color: #94a3b8;
+}
+
+/* Stack infobox on mobile */
+@media (max-width: 639px) {
+  .wiki-content .infobox {
+    float: none;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 1rem 0 1.25rem 0;
+  }
 }
 
 .wiki-content h1 {

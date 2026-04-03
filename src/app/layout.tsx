@@ -51,6 +51,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+:root{--background:#ffffff;--foreground:#0f172a;--color-border:#e5e7eb;--color-surface:#f8fafc;--color-surface-hover:#f1f5f9;--color-muted:#64748b;--color-primary:#3b82f6;--color-primary-light:#dbeafe;--color-accent:#8b5cf6;--color-accent-light:#ede9fe}
+[data-theme="dark"]{--background:#0a0f1e;--foreground:#e2e8f0;--color-border:#1e293b;--color-surface:#111827;--color-surface-hover:#1a2332;--color-muted:#94a3b8;--color-primary-light:#1e2d4a;--color-accent-light:#271f45}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--background:#0a0f1e;--foreground:#e2e8f0;--color-border:#1e293b;--color-surface:#111827;--color-surface-hover:#1a2332;--color-muted:#94a3b8;--color-primary-light:#1e2d4a;--color-accent-light:#271f45}}
+html{scroll-padding-top:5rem}
+body{background:var(--background);color:var(--foreground);margin:0}
+`,
+          }}
+        />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -74,7 +85,7 @@ export default function RootLayout({
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased min-h-screen`}
       >
         <Header />
-        <main className="mx-auto max-w-6xl px-4 sm:px-6 py-8 min-h-[60vh]">
+        <main className="mx-auto max-w-7xl px-4 sm:px-6 py-8 min-h-[60vh]">
           {children}
         </main>
         <Footer />

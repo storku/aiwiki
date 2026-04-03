@@ -7,7 +7,7 @@ const securityHeaders = [
       "default-src 'self'",
       "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://aiwiki.ai https://*.public.blob.vercel-storage.com https://www.google-analytics.com https://www.googletagmanager.com",
+      "img-src 'self' data: blob: https://aiwiki.ai https://*.public.blob.vercel-storage.com https://wikimedia.org https://*.wikimedia.org https://www.google-analytics.com https://www.googletagmanager.com",
       "font-src 'self'",
       "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://*.google-analytics.com",
       "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
@@ -56,6 +56,16 @@ const nextConfig: NextConfig = {
         hostname: "*.public.blob.vercel-storage.com",
       },
     ],
+  },
+  async rewrites() {
+    return {
+      afterFiles: [
+        {
+          source: "/images/:path+",
+          destination: "https://aiwiki.ai/images/:path+",
+        },
+      ],
+    };
   },
   async headers() {
     return [
