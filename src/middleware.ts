@@ -67,6 +67,17 @@ export function middleware(request: NextRequest) {
   const rest = pathname.slice("/wiki/".length);
   if (!rest) return;
 
+  // Protect /wiki/*/edit routes — require editor cookie
+  if (pathname.match(/^\/wiki\/[^/]+\/edit$/)) {
+    const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
+    if (!editorToken || !process.env.EDITOR_SECRET || editorToken !== process.env.EDITOR_SECRET) {
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("redirect", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+    return;
+  }
+
   // Skip sub-paths that belong to the new site (history, revisions, etc.)
   if (rest.includes("/")) return;
 

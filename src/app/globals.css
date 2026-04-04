@@ -421,11 +421,95 @@ html {
   color: #94a3b8;
 }
 
-/* Stack infobox on mobile */
+/* ── Thumbnail images (MediaWiki .thumb) ─────── */
+.wiki-content .thumb.tright {
+  float: right;
+  clear: right;
+  margin: 0.25rem 0 1.25rem 1.5rem;
+  max-width: 50%;
+}
+
+.wiki-content .thumbinner {
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  padding: 0.5rem;
+  width: auto !important;
+}
+
+.wiki-content .thumbinner .thumbimage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0;
+  border: none;
+}
+
+.wiki-content .thumbcaption {
+  padding: 0.5rem 0.25rem 0.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.wiki-content .thumbcaption .magnify {
+  display: none;
+}
+
+[data-theme="dark"] .wiki-content .thumbinner {
+  background-color: #131c2b;
+  border-color: #1e293b;
+}
+
+/* ── Standalone figure images ────────────────── */
+.wiki-content figure:not(.embedvideo) {
+  float: right;
+  clear: right;
+  margin: 0.25rem 0 1.25rem 1.5rem;
+  max-width: 50%;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  padding: 0.5rem;
+}
+
+.wiki-content figure:not(.embedvideo) img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0;
+  border: none;
+}
+
+.wiki-content figure:not(.embedvideo) figcaption {
+  padding: 0.5rem 0.25rem 0.25rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+[data-theme="dark"] .wiki-content figure:not(.embedvideo) {
+  background-color: #131c2b;
+  border-color: #1e293b;
+}
+
+/* Stack infobox and images on mobile */
 @media (max-width: 639px) {
   .wiki-content .infobox {
     float: none;
     width: 100% !important;
+    max-width: 100%;
+    margin: 1rem 0 1.25rem 0;
+  }
+  .wiki-content .thumb.tright,
+  .wiki-content figure:not(.embedvideo) {
+    float: none;
     max-width: 100%;
     margin: 1rem 0 1.25rem 0;
   }
@@ -815,15 +899,24 @@ mark {
 
 /* ── Dark mode inputs ─────────────────────── */
 [data-theme="dark"] input[type="text"],
-[data-theme="dark"] input[type="search"] {
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] input[type="password"] {
   background: #0d1117;
   border-color: #1e293b;
 }
 
 [data-theme="dark"] input[type="text"]:focus,
-[data-theme="dark"] input[type="search"]:focus {
+[data-theme="dark"] input[type="search"]:focus,
+[data-theme="dark"] input[type="password"]:focus {
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* ── Login error message dark mode ───────── */
+[data-theme="dark"] .login-error {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+  border-color: rgba(239, 68, 68, 0.25) !important;
+  color: #f87171 !important;
 }
 
 /* ── Dark mode back-to-top ────────────────── */
