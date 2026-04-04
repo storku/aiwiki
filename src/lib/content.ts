@@ -435,6 +435,46 @@ export async function getAllUsers(): Promise<WikiUser[]> {
   }));
 }
 
+/**
+ * Get the most recently updated pages.
+ */
+export async function getRecentlyUpdatedPages(
+  limit = 10
+): Promise<Array<{ slug: string; title: string; updatedAt: Date; excerpt: string }>> {
+  const rows = await sql`
+    SELECT slug, title, updated_at, excerpt
+    FROM pages
+    ORDER BY updated_at DESC
+    LIMIT ${limit}
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    updatedAt: new Date(r.updated_at as string),
+    excerpt: (r.excerpt as string) || "",
+  }));
+}
+
+/**
+ * Get a random selection of pages.
+ */
+export async function getRandomPages(
+  limit = 5
+): Promise<Array<{ slug: string; title: string; excerpt: string }>> {
+  const rows = await sql`
+    SELECT slug, title, excerpt
+    FROM pages
+    WHERE excerpt IS NOT NULL AND excerpt != ''
+    ORDER BY random()
+    LIMIT ${limit}
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    excerpt: (r.excerpt as string) || "",
+  }));
+}
+
 export async function getPageTimestamps(): Promise<Map<string, Date>> {
   const rows = await sql`SELECT slug, updated_at FROM pages`;
   const map = new Map<string, Date>();
