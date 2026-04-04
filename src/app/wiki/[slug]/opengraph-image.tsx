@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getPageBySlug } from "@/lib/content";
 
-export const runtime = "edge";
+export const revalidate = 86400;
 export const alt = "AI Wiki Article";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

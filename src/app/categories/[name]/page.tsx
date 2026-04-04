@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPages } from "@/lib/content";
+import { getPagesByCategory } from "@/lib/content";
 import PaginatedGrid from "@/components/PaginatedGrid";
 import type { Metadata } from "next";
 
@@ -32,8 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CategoryPage({ params }: Props) {
   const { name } = await params;
   const catName = decodeURIComponent(name);
-  const allPages = await getAllPages();
-  const pages = allPages.filter((p) => p.categories.includes(catName));
+  const pages = await getPagesByCategory(catName);
 
   if (pages.length === 0) {
     notFound();

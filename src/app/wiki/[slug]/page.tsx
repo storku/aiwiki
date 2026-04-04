@@ -12,6 +12,18 @@ import type { Metadata } from "next";
 export const dynamicParams = true;
 export const revalidate = 86400;
 
+const POPULAR_SLUGS = [
+  "chatgpt", "ai", "dall-e", "gpt-4", "large_language_model",
+  "midjourney", "claude", "anthropic", "transformer", "neural_network",
+  "deep_learning", "machine_learning", "openai", "stable_diffusion",
+  "reinforcement_learning", "natural_language_processing", "gpt-4o",
+  "computer_vision", "generative_ai", "prompt_engineering",
+];
+
+export async function generateStaticParams() {
+  return POPULAR_SLUGS.map((slug) => ({ slug }));
+}
+
 interface Props {
   params: Promise<{ slug: string }>;
 }

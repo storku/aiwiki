@@ -166,6 +166,33 @@ export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> 
   }));
 }
 
+/**
+ * Get pages belonging to a specific category (avoids fetching ALL pages).
+ */
+export async function getPagesByCategory(categoryName: string): Promise<WikiPageMeta[]> {
+  const rows = await sql`
+    SELECT p.slug, p.title, p.excerpt,
+           COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
+    FROM pages p
+    JOIN page_categories pc ON pc.page_id = p.id
+    JOIN categories c ON c.id = pc.category_id
+    WHERE p.id IN (
+      SELECT pc2.page_id
+      FROM page_categories pc2
+      JOIN categories c2 ON c2.id = pc2.category_id
+      WHERE c2.name = ${categoryName}
+    )
+    GROUP BY p.id
+    ORDER BY p.title
+  `;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    title: r.title as string,
+    categories: (r.categories as string[]) || [],
+    excerpt: r.excerpt as string,
+  }));
+}
+
 export async function searchPages(query: string): Promise<WikiPageMeta[]> {
   const q = `%${query}%`;
   const rows = await sql`
