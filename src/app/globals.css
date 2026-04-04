@@ -4,18 +4,18 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: #3b82f6;
   --color-primary-dark: #2563eb;
-  --color-primary-light: #dbeafe;
-  --color-border: #e5e7eb;
-  --color-surface: #f8fafc;
-  --color-surface-hover: #f1f5f9;
-  --color-muted: #64748b;
+  --color-primary-light: var(--primary-light);
+  --color-border: var(--border-color);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-muted: var(--muted);
   --color-accent: #8b5cf6;
-  --color-accent-light: #ede9fe;
+  --color-accent-light: var(--accent-light);
   --color-success: #10b981;
   --color-warm: #f59e0b;
   --font-sans: var(--font-geist-sans);
@@ -25,18 +25,24 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
+  --surface: #f8fafc;
+  --surface-hover: #f1f5f9;
+  --border-color: #e5e7eb;
+  --muted: #64748b;
+  --primary-light: #dbeafe;
+  --accent-light: #ede9fe;
   color-scheme: light;
 }
 
 [data-theme="dark"] {
   --background: #0a0f1e;
   --foreground: #e2e8f0;
-  --color-border: #1e293b;
-  --color-surface: #111827;
-  --color-surface-hover: #1a2332;
-  --color-muted: #94a3b8;
-  --color-primary-light: #1e2d4a;
-  --color-accent-light: #271f45;
+  --surface: #111827;
+  --surface-hover: #1a2332;
+  --border-color: #1e293b;
+  --muted: #94a3b8;
+  --primary-light: #1e2d4a;
+  --accent-light: #271f45;
   color-scheme: dark;
 }
 
@@ -48,12 +54,12 @@
   :root:not([data-theme="light"]) {
     --background: #0a0f1e;
     --foreground: #e2e8f0;
-    --color-border: #1e293b;
-    --color-surface: #111827;
-    --color-surface-hover: #1a2332;
-    --color-muted: #94a3b8;
-    --color-primary-light: #1e2d4a;
-    --color-accent-light: #271f45;
+    --surface: #111827;
+    --surface-hover: #1a2332;
+    --border-color: #1e293b;
+    --muted: #94a3b8;
+    --primary-light: #1e2d4a;
+    --accent-light: #271f45;
     color-scheme: dark;
   }
   :root:not([data-theme="light"]) .logo-wordmark {
