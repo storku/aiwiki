@@ -16,7 +16,7 @@ export default function Error({
 
   return (
     <div className="flex flex-col items-center justify-center py-20 text-center animate-fade-in">
-      <div className="w-16 h-16 rounded-2xl bg-red-50 flex items-center justify-center mb-6">
+      <div className="w-16 h-16 rounded-2xl bg-red-50 dark:bg-red-950/30 flex items-center justify-center mb-6">
         <svg
           width="28"
           height="28"
