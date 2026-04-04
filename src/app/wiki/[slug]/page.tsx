@@ -30,6 +30,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${page.title} | AI Wiki`,
       description: page.excerpt,
       type: "article",
+      url: `https://aiwiki.ai/wiki/${slug}`,
+      siteName: "AI Wiki",
+      modifiedTime: page.updatedAt.toISOString(),
+      section: page.categories[0]?.replace(/_/g, " "),
+      tags: page.categories.map((c) => c.replace(/_/g, " ")),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${page.title} | AI Wiki`,
+      description: page.excerpt,
     },
   };
 }
@@ -74,13 +84,28 @@ export default async function WikiPage({ params }: Props) {
 
   const related = await getRelatedPages(page.slug, page.categories);
 
+  const wordCount = page.content
+    ? page.content.split(/\s+/).filter((w) => w.length > 0).length
+    : 0;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: page.title,
     description: page.excerpt,
     url: `https://aiwiki.ai/wiki/${slug}`,
+    dateModified: page.updatedAt.toISOString(),
+    wordCount,
     publisher: {
+      "@type": "Organization",
+      name: "AI Wiki",
+      url: "https://aiwiki.ai",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://aiwiki.ai/favicon-32x32.png",
+      },
+    },
+    author: {
       "@type": "Organization",
       name: "AI Wiki",
       url: "https://aiwiki.ai",
@@ -89,7 +114,34 @@ export default async function WikiPage({ params }: Props) {
       "@type": "WebPage",
       "@id": `https://aiwiki.ai/wiki/${slug}`,
     },
-    articleSection: page.categories,
+    articleSection: page.categories.map((c) => c.replace(/_/g, " ")),
+    inLanguage: "en",
+    isAccessibleForFree: true,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://aiwiki.ai",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Wiki",
+        item: "https://aiwiki.ai/wiki",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: page.title,
+        item: `https://aiwiki.ai/wiki/${slug}`,
+      },
+    ],
   };
 
   return (
@@ -98,6 +150,10 @@ export default async function WikiPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="flex gap-10">
         {/* Main content */}

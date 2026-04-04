@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Learn about AI Wiki, the free encyclopedia of artificial intelligence with 2,000+ articles covering AI concepts, models, tools, and applications.",
+  alternates: {
+    canonical: "https://aiwiki.ai/about",
+  },
 };
 
 export default function AboutPage() {

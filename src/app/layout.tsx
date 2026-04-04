@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -17,6 +17,15 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0f1e" },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://aiwiki.ai"),
   title: {
@@ -25,12 +34,35 @@ export const metadata: Metadata = {
   },
   description:
     "AI Wiki is a comprehensive encyclopedia covering 2,000+ articles on artificial intelligence concepts, tools, models, and applications.",
+  keywords: [
+    "artificial intelligence",
+    "AI",
+    "machine learning",
+    "deep learning",
+    "neural networks",
+    "NLP",
+    "natural language processing",
+    "computer vision",
+    "GPT",
+    "ChatGPT",
+    "large language models",
+    "AI encyclopedia",
+    "AI wiki",
+  ],
+  alternates: {
+    canonical: "https://aiwiki.ai",
+    types: {
+      "application/rss+xml": "https://aiwiki.ai/feed.xml",
+    },
+  },
   openGraph: {
     title: "AI Wiki - The Encyclopedia of Artificial Intelligence",
     description:
       "Comprehensive encyclopedia covering 2,000+ articles on AI concepts, tools, models, and applications.",
     siteName: "AI Wiki",
     type: "website",
+    locale: "en_US",
+    url: "https://aiwiki.ai",
   },
   twitter: {
     card: "summary_large_image",
@@ -40,6 +72,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

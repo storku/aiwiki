@@ -7,6 +7,9 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "Categories",
   description: "Browse AI Wiki articles by category.",
+  alternates: {
+    canonical: "https://aiwiki.ai/categories",
+  },
 };
 
 export default async function CategoriesPage() {

@@ -8,6 +8,9 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "All Pages",
   description: "Browse all 2,000+ articles in the AI Wiki encyclopedia.",
+  alternates: {
+    canonical: "https://aiwiki.ai/wiki",
+  },
 };
 
 export default async function AllPagesPage() {

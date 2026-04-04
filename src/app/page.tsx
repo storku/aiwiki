@@ -64,11 +64,26 @@ export default async function HomePage() {
     name: "AI Wiki",
     url: "https://aiwiki.ai",
     description: `Comprehensive encyclopedia covering ${totalPages.toLocaleString()} articles on artificial intelligence.`,
+    inLanguage: "en",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://aiwiki.ai/search?q={search_term_string}",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://aiwiki.ai/search?q={search_term_string}",
+      },
       "query-input": "required name=search_term_string",
     },
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AI Wiki",
+    url: "https://aiwiki.ai",
+    logo: "https://aiwiki.ai/favicon-32x32.png",
+    description:
+      "AI Wiki is a free, open-access encyclopedia dedicated to artificial intelligence.",
+    sameAs: [],
   };
 
   return (
@@ -76,6 +91,10 @@ export default async function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
 
       {/* Welcome banner */}
