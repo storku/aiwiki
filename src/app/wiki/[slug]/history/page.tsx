@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPageBySlug, getPageRevisions } from "@/lib/content";
+import { getPagePreview, getPageRevisions } from "@/lib/content";
 import type { Metadata } from "next";
 
 export const dynamicParams = true;
@@ -12,7 +12,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const page = await getPageBySlug(slug);
+  const page = await getPagePreview(slug);
   if (!page) return {};
   return {
     title: `Revision History - ${page.title}`,
@@ -46,7 +46,7 @@ function timeAgo(date: Date): string {
 
 export default async function HistoryPage({ params }: Props) {
   const { slug } = await params;
-  const page = await getPageBySlug(slug);
+  const page = await getPagePreview(slug);
 
   if (!page) {
     notFound();

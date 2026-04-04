@@ -1,4 +1,4 @@
-import { getAllPages, getAllCategories, getPageTimestamps } from "@/lib/content";
+import { getSitemapPages, getAllCategories } from "@/lib/content";
 import type { MetadataRoute } from "next";
 
 const POPULAR_SLUGS = new Set([
@@ -9,17 +9,16 @@ const POPULAR_SLUGS = new Set([
 ]);
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [pages, categories, timestamps] = await Promise.all([
-    getAllPages(),
+  const [pages, categories] = await Promise.all([
+    getSitemapPages(),
     getAllCategories(),
-    getPageTimestamps(),
   ]);
 
   const baseUrl = "https://aiwiki.ai";
 
   const wikiPages = pages.map((page) => ({
     url: `${baseUrl}/wiki/${page.slug}`,
-    lastModified: timestamps.get(page.slug) || new Date(),
+    lastModified: page.updatedAt,
     changeFrequency: "monthly" as const,
     priority: POPULAR_SLUGS.has(page.slug) ? 0.9 : 0.7,
   }));

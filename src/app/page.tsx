@@ -2,8 +2,7 @@ import Link from "next/link";
 import {
   getAllCategories,
   getPagesBySlugs,
-  getPageStats,
-  getRecentlyUpdatedPages,
+  getRecentPagesWithCount,
   getRandomPages,
 } from "@/lib/content";
 
@@ -43,12 +42,11 @@ const TOPIC_SECTIONS = [
 
 export default async function HomePage() {
   const allSlugs = TOPIC_SECTIONS.flatMap((s) => s.slugs);
-  const [topicPages, allCategories, { totalPages }, recentPages, randomPages] =
+  const [topicPages, allCategories, { totalPages, recentPages }, randomPages] =
     await Promise.all([
       getPagesBySlugs(allSlugs),
       getAllCategories(),
-      getPageStats(),
-      getRecentlyUpdatedPages(8),
+      getRecentPagesWithCount(8),
       getRandomPages(5),
     ]);
 

@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { getPageBySlug } from "@/lib/content";
+import { getPagePreview } from "@/lib/content";
 
 export const revalidate = 86400;
 export const alt = "AI Wiki Article";
@@ -12,7 +12,7 @@ export default async function OGImage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const page = await getPageBySlug(slug);
+  const page = await getPagePreview(slug);
 
   const title = page?.title || slug.replace(/_/g, " ");
   const excerpt = page?.excerpt || "";

@@ -145,6 +145,33 @@ export async function getPageStats(): Promise<{ totalPages: number }> {
 }
 
 /**
+ * Get total page count + recently updated pages in a single query.
+ * Replaces separate getPageStats() + getRecentlyUpdatedPages() calls.
+ */
+export async function getRecentPagesWithCount(
+  limit = 10
+): Promise<{
+  totalPages: number;
+  recentPages: Array<{ slug: string; title: string; updatedAt: Date; excerpt: string }>;
+}> {
+  const rows = await sql`
+    SELECT slug, title, updated_at, excerpt, COUNT(*) OVER() as total_count
+    FROM pages
+    ORDER BY updated_at DESC
+    LIMIT ${limit}
+  `;
+  return {
+    totalPages: rows.length > 0 ? Number(rows[0].total_count) : 0,
+    recentPages: rows.map((r) => ({
+      slug: r.slug as string,
+      title: r.title as string,
+      updatedAt: new Date(r.updated_at as string),
+      excerpt: (r.excerpt as string) || "",
+    })),
+  };
+}
+
+/**
  * Get specific pages by their slugs (for homepage topic sections).
  */
 export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> {
@@ -509,4 +536,41 @@ export async function getPageTimestamps(): Promise<Map<string, Date>> {
     map.set(r.slug as string, new Date(r.updated_at as string));
   }
   return map;
+}
+
+/**
+ * Lightweight sitemap query: returns only slug + updated_at for all pages.
+ * Replaces the need to call both getAllPages() + getPageTimestamps() in sitemap.ts.
+ */
+export async function getSitemapPages(): Promise<Array<{ slug: string; updatedAt: Date }>> {
+  const rows = await sql`SELECT slug, updated_at FROM pages ORDER BY slug`;
+  return rows.map((r) => ({
+    slug: r.slug as string,
+    updatedAt: new Date(r.updated_at as string),
+  }));
+}
+
+/**
+ * Lightweight search index: returns title, slug, excerpt, and categories as a
+ * pre-joined string. Uses a scalar subquery instead of GROUP BY + 2 JOINs,
+ * reducing query plan complexity for 2000+ pages.
+ */
+export async function getSearchIndex(): Promise<Array<{ title: string; slug: string; excerpt: string; categories: string }>> {
+  const rows = await sql`
+    SELECT p.title, p.slug, p.excerpt,
+           COALESCE((
+             SELECT string_agg(c.name, ', ' ORDER BY c.name)
+             FROM page_categories pc
+             JOIN categories c ON c.id = pc.category_id
+             WHERE pc.page_id = p.id
+           ), '') as categories
+    FROM pages p
+    ORDER BY p.title
+  `;
+  return rows.map((r) => ({
+    title: r.title as string,
+    slug: r.slug as string,
+    excerpt: (r.excerpt as string) || "",
+    categories: (r.categories as string) || "",
+  }));
 }

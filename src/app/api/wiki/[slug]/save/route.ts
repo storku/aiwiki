@@ -117,36 +117,38 @@ export async function POST(
       WHERE id = ${pageId}
     `;
 
-    // 9. Update page_links
+    // 9. Update page_links (batch: 1 DELETE + 1 INSERT instead of N+1)
     await sql`
       DELETE FROM page_links WHERE source_page_id = ${pageId}
     `;
 
-    for (const targetSlug of outgoingLinkSlugs) {
+    if (outgoingLinkSlugs.length > 0) {
+      const slugArray = Array.from(outgoingLinkSlugs);
       await sql`
         INSERT INTO page_links (source_page_id, target_slug)
-        VALUES (${pageId}, ${targetSlug})
+        SELECT ${pageId}, unnest(${slugArray}::text[])
         ON CONFLICT DO NOTHING
       `;
     }
 
-    // 10. Update categories
+    // 10. Update categories (batch: 1 DELETE + 1 UPSERT + 1 INSERT instead of N*2)
     await sql`
       DELETE FROM page_categories WHERE page_id = ${pageId}
     `;
 
-    for (const categoryName of categories) {
-      const catResult = await sql`
+    if (categories.length > 0) {
+      const catRows = await sql`
         INSERT INTO categories (name)
-        VALUES (${categoryName})
+        SELECT unnest(${categories}::text[])
         ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name
         RETURNING id
       `;
 
-      if (catResult.length > 0) {
+      if (catRows.length > 0) {
+        const catIds = catRows.map((r) => r.id as number);
         await sql`
           INSERT INTO page_categories (page_id, category_id)
-          VALUES (${pageId}, ${catResult[0].id})
+          SELECT ${pageId}, unnest(${catIds}::int[])
           ON CONFLICT DO NOTHING
         `;
       }

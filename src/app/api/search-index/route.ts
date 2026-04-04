@@ -1,13 +1,13 @@
-import { getAllPages } from "@/lib/content";
+import { getSearchIndex } from "@/lib/content";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const pages = await getAllPages();
+  const pages = await getSearchIndex();
   const index = pages.map((p) => ({
     t: p.title,
     s: p.slug,
-    c: p.categories.join(", "),
-    e: p.excerpt || "",
+    c: p.categories,
+    e: p.excerpt,
   }));
   return NextResponse.json(index, {
     headers: {
