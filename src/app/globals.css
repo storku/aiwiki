@@ -618,6 +618,42 @@ html {
   margin-bottom: 0.25rem;
 }
 
+/* ── Citation references ──────────────────── */
+.wiki-content .cite-ref {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.wiki-content .cite-ref:hover {
+  text-decoration: underline;
+}
+
+.wiki-content .references-list {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  padding-left: 2rem;
+  margin-top: 0.75rem;
+}
+
+.wiki-content .references-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  color: var(--color-muted);
+}
+
+.wiki-content .references-list li:target {
+  background-color: var(--color-primary-light);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+}
+
+.wiki-content .references-list a {
+  color: var(--color-primary);
+  word-break: break-all;
+}
+
 .wiki-content .table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;

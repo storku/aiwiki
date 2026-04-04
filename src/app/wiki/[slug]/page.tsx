@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getPageBySlug, getRelatedPages } from "@/lib/content";
-import { addHeadingIds } from "@/lib/html-utils";
+import { addHeadingIds, fixReferences } from "@/lib/html-utils";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
 import MobileToc from "@/components/MobileToc";
@@ -91,8 +91,13 @@ export default async function WikiPage({ params }: Props) {
     }
   }
 
-  // Add heading IDs to pre-rendered HTML for TOC anchor links
-  const processedHtml = contentHtmlToUse ? addHeadingIds(contentHtmlToUse) : null;
+  // Process pre-rendered HTML: fix references, add heading IDs
+  let processedHtml = contentHtmlToUse
+    ? fixReferences(contentHtmlToUse, page.content)
+    : null;
+  if (processedHtml) {
+    processedHtml = addHeadingIds(processedHtml);
+  }
 
   const related = await getRelatedPages(page.slug, page.categories);
 

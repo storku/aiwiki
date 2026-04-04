@@ -222,6 +222,88 @@ export function extractHeadings(html: string): Array<{ id: string; text: string;
 }
 
 /**
+ * Convert reference text (from markdown) to HTML, handling markdown links and bare URLs.
+ */
+export function refTextToHtml(text: string): string {
+  // Convert markdown links [text](url) to HTML
+  let html = text.replace(
+    /\[([^\]]+)\]\(([^)]+)\)/g,
+    (_, linkText: string, url: string) => {
+      const isInternal = url.startsWith("/");
+      const attrs = isInternal ? "" : ' target="_blank" rel="noopener noreferrer"';
+      return `<a href="${url}"${attrs}>${linkText}</a>`;
+    }
+  );
+
+  // Convert bare URLs (not already inside href="...") to clickable links
+  html = html.replace(
+    /(?<![="'/])(https?:\/\/[^\s<>")\]]+)/g,
+    '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+  );
+
+  return html;
+}
+
+/**
+ * Parse references from markdown content's "## References" section.
+ */
+function parseMarkdownReferences(
+  markdown: string
+): Array<{ num: number; html: string }> {
+  const refsMatch = markdown.match(/##\s*References\s*\n+([\s\S]*?)(?=\n##\s|$)/);
+  if (!refsMatch) return [];
+
+  const lines = refsMatch[1].trim().split("\n");
+  const refs: Array<{ num: number; html: string }> = [];
+
+  for (const line of lines) {
+    const match = line.trim().match(/^(\d+)\.\s+(.*)/);
+    if (match) {
+      refs.push({
+        num: parseInt(match[1]),
+        html: refTextToHtml(match[2]),
+      });
+    }
+  }
+
+  return refs;
+}
+
+/**
+ * Fix references in pre-rendered HTML:
+ * - Convert plain <sup>[N]</sup> to clickable citation links
+ * - Populate empty References section from markdown content
+ */
+export function fixReferences(html: string, markdown: string): string {
+  if (!html || !markdown) return html;
+
+  // Make inline citations clickable
+  let fixed = html.replace(
+    /<sup>\s*\[(\d+)\]\s*<\/sup>/g,
+    (_, num) =>
+      `<sup><a href="#cite_note-${num}" class="cite-ref">[${num}]</a></sup>`
+  );
+
+  // Parse references from markdown
+  const refs = parseMarkdownReferences(markdown);
+  if (refs.length === 0) return fixed;
+
+  // Build reference list HTML
+  const items = refs
+    .map((ref) => `<li id="cite_note-${ref.num}">${ref.html}</li>`)
+    .join("");
+  const refListHtml = `<ol class="references-list">${items}</ol>`;
+
+  // Replace empty References section
+  fixed = fixed.replace(
+    /(<h2[^>]*>(?:<span[^>]*>)?References(?:<\/span>)?[^<]*<\/h2>\s*)<div>\s*<\/div>/i,
+    `$1${refListHtml}`
+  );
+
+  return fixed;
+}
+
+/**
  * Optimize article images for performance:
  * - First image: fetchpriority="high" decoding="async"
  * - Others: loading="lazy" decoding="async"

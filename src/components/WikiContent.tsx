@@ -9,6 +9,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeHighlight from "rehype-highlight";
 import type { Components } from "react-markdown";
 import WikiLink from "./WikiLink";
+import { refTextToHtml } from "@/lib/html-utils";
 
 interface WikiContentProps {
   content: string;
@@ -18,7 +19,7 @@ interface WikiContentProps {
 // ─── Markdown fallback components ────────────────────────────────────
 
 const components: Components = {
-  a: ({ href, children, ...props }) => {
+  a: ({ href, children, node: _node, ...props }) => {
     if (href && href.startsWith("/wiki/")) {
       return (
         <WikiLink href={href} {...props}>
@@ -39,7 +40,7 @@ const components: Components = {
       </a>
     );
   },
-  img: ({ src, alt }) => {
+  img: ({ src, alt, node: _imgNode, ..._ }) => {
     if (!src || typeof src !== "string") return null;
     return (
       <Image
@@ -145,13 +146,42 @@ export default function WikiContent({ content, contentHtml }: WikiContentProps) 
   // Clean up citation references like [&#91;1&#93;](#cite_note-...)
   cleaned = cleaned.replace(
     /\[&#91;(\d+)&#93;\]\(#cite_note[^)]*\)/g,
-    '<sup class="text-xs text-muted">[$1]</sup>'
+    '<sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
   );
 
   // Clean up HTML entities that didn't get decoded
   cleaned = cleaned.replace(/&#160;/g, " ");
   cleaned = cleaned.replace(/&#91;/g, "[");
   cleaned = cleaned.replace(/&#93;/g, "]");
+
+  // Make [N] inline citations clickable and add IDs to reference list items
+  const hasRefs = /##\s*References\s*\n/.test(cleaned);
+  if (hasRefs) {
+    // Convert [N] inline citations to linked superscripts
+    // Match " [N]" not followed by ( (which would be a markdown link)
+    cleaned = cleaned.replace(
+      / \[(\d{1,3})\](?!\()/g,
+      ' <sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
+    );
+
+    // Convert References numbered list to HTML with anchor IDs
+    cleaned = cleaned.replace(
+      /(##\s*References\s*\n+)((?:\d+\.\s+.+\n?)+)/,
+      (_, heading: string, list: string) => {
+        const items = list
+          .trim()
+          .split("\n")
+          .map((line: string) => {
+            const m = line.match(/^(\d+)\.\s+(.*)/);
+            if (!m) return "";
+            return `<li id="cite_note-${m[1]}">${refTextToHtml(m[2])}</li>`;
+          })
+          .filter(Boolean)
+          .join("\n");
+        return `${heading}<ol class="references-list">\n${items}\n</ol>\n`;
+      }
+    );
+  }
 
   return (
     <div ref={containerRef} className="wiki-content">
