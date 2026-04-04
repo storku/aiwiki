@@ -154,10 +154,15 @@ export async function POST(
       }
     }
 
-    // 11. Revalidate paths
+    // 11. Revalidate paths (page, OG image, listings, categories)
     revalidatePath(`/wiki/${slug}`);
+    revalidatePath(`/wiki/${slug}/opengraph-image`);
     revalidatePath("/wiki");
     revalidatePath("/");
+    revalidatePath("/categories");
+    for (const cat of categories) {
+      revalidatePath(`/categories/${encodeURIComponent(cat)}`);
+    }
 
     // 12. Return success
     return NextResponse.json({ success: true, version: newVersion });

@@ -11,7 +11,7 @@ export async function GET() {
   }));
   return NextResponse.json(index, {
     headers: {
-      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
+      "Cache-Control": "public, max-age=300, s-maxage=86400, stale-while-revalidate=604800",
     },
   });
 }
