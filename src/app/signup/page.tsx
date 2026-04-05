@@ -1,37 +1,51 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function SignupPage() {
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const searchParams = useSearchParams();
 
-  const redirectUrl = searchParams.get("redirect") || "/";
+  function clearError() {
+    if (error) setError("");
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
+
+    if (password !== confirmPassword) {
+      setError("Passwords do not match.");
+      return;
+    }
+
+    if (password.length < 8) {
+      setError("Password must be at least 8 characters.");
+      return;
+    }
+
     setLoading(true);
 
     try {
-      const res = await fetch("/api/auth/login", {
+      const res = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ username, email, password, displayName: username }),
       });
 
       if (res.ok) {
-        router.push(redirectUrl);
+        router.push("/");
       } else {
         const data = await res.json();
-        setError(data.error || "Invalid email or password.");
+        setError(data.error || "Failed to create account.");
       }
     } catch {
       setError("Network error. Please check your connection and try again.");
@@ -61,43 +75,80 @@ export default function LoginPage() {
                 className="logo-wordmark"
               />
             </Link>
-            <h1 className="text-xl font-bold mb-1">Welcome back</h1>
+            <h1 className="text-xl font-bold mb-1">Create an account</h1>
             <p className="text-sm text-muted">
-              Log in to your AI Wiki account.
+              Join AI Wiki to contribute and edit articles.
             </p>
           </div>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="login-email" className="block text-sm font-medium mb-1.5">
+              <label htmlFor="signup-username" className="block text-sm font-medium mb-1.5">
+                Username
+              </label>
+              <input
+                id="signup-username"
+                type="text"
+                value={username}
+                onChange={(e) => { setUsername(e.target.value); clearError(); }}
+                placeholder="your_username"
+                required
+                autoFocus
+                autoComplete="username"
+                minLength={3}
+                maxLength={30}
+                pattern="[a-zA-Z0-9_\-]+"
+                className="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="signup-email" className="block text-sm font-medium mb-1.5">
                 Email
               </label>
               <input
-                id="login-email"
+                id="signup-email"
                 type="email"
                 value={email}
-                onChange={(e) => { setEmail(e.target.value); if (error) setError(""); }}
+                onChange={(e) => { setEmail(e.target.value); clearError(); }}
                 placeholder="you@example.com"
                 required
-                autoFocus
                 autoComplete="email"
                 className="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
               />
             </div>
 
             <div>
-              <label htmlFor="login-password" className="block text-sm font-medium mb-1.5">
+              <label htmlFor="signup-password" className="block text-sm font-medium mb-1.5">
                 Password
               </label>
               <input
-                id="login-password"
+                id="signup-password"
                 type="password"
                 value={password}
-                onChange={(e) => { setPassword(e.target.value); if (error) setError(""); }}
-                placeholder="Enter your password"
+                onChange={(e) => { setPassword(e.target.value); clearError(); }}
+                placeholder="At least 8 characters"
                 required
-                autoComplete="current-password"
+                minLength={8}
+                autoComplete="new-password"
+                className="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="signup-confirm" className="block text-sm font-medium mb-1.5">
+                Confirm password
+              </label>
+              <input
+                id="signup-confirm"
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => { setConfirmPassword(e.target.value); clearError(); }}
+                placeholder="Repeat your password"
+                required
+                minLength={8}
+                autoComplete="new-password"
                 className="w-full px-3.5 py-2.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
               />
             </div>
@@ -124,7 +175,7 @@ export default function LoginPage() {
             {/* Submit */}
             <button
               type="submit"
-              disabled={loading || !email || !password}
+              disabled={loading || !username || !email || !password || !confirmPassword}
               className="btn-primary w-full py-2.5 rounded-lg text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {loading ? (
@@ -132,20 +183,29 @@ export default function LoginPage() {
                   <svg className="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2v4m0 12v4m-7.07-3.93l2.83-2.83m8.48-8.48l2.83-2.83M2 12h4m12 0h4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83" />
                   </svg>
-                  Signing in...
+                  Creating account...
                 </span>
               ) : (
-                "Log in"
+                "Sign up"
               )}
             </button>
           </form>
 
+          {/* Terms notice */}
+          <p className="text-xs text-muted text-center mt-4">
+            By creating an account, you agree to the{" "}
+            <Link href="/terms" className="text-primary hover:underline">
+              Terms of Service
+            </Link>
+            .
+          </p>
+
           {/* Footer links */}
-          <div className="text-center mt-6 space-y-3">
+          <div className="text-center mt-5 space-y-3">
             <p className="text-sm text-muted">
-              Don&apos;t have an account?{" "}
-              <Link href="/signup" className="text-primary hover:underline font-medium">
-                Sign up
+              Already have an account?{" "}
+              <Link href="/login" className="text-primary hover:underline font-medium">
+                Log in
               </Link>
             </p>
             <Link

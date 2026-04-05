@@ -1,15 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, useMemo, useRef, useCallback } from "react";
-import Fuse from "fuse.js";
-
-interface SearchItem {
-  t: string;
-  s: string;
-  c: string;
-  e: string;
-}
+import { useEffect, useState, useRef, useCallback } from "react";
 
 interface ServerResult {
   slug: string;
@@ -20,122 +12,67 @@ interface ServerResult {
   categories: string[];
 }
 
-interface MergedResult {
+interface DisplayResult {
   slug: string;
   title: string;
   excerpt: string;
   categories: string;
   headline?: string;
-  source: "client" | "server";
 }
 
 export default function SearchResults({ initialQuery }: { initialQuery: string }) {
   const [query, setQuery] = useState(initialQuery);
-  const [items, setItems] = useState<SearchItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [serverResults, setServerResults] = useState<ServerResult[]>([]);
-  const [serverSearching, setServerSearching] = useState(false);
+  const [results, setResults] = useState<DisplayResult[]>([]);
+  const [searching, setSearching] = useState(!!initialQuery);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    fetch("/api/search-index")
-      .then((r) => r.json())
-      .then((data) => {
-        setItems(data);
-        setLoading(false);
-      });
-  }, []);
-
-  const fuse = useMemo(
-    () =>
-      new Fuse(items, {
-        keys: [
-          { name: "t", weight: 3 },
-          { name: "e", weight: 1.5 },
-          { name: "c", weight: 1 },
-        ],
-        threshold: 0.3,
-        includeMatches: true,
-        minMatchCharLength: 2,
-      }),
-    [items]
-  );
-
-  // Debounced server-side search
-  const searchServer = useCallback((q: string) => {
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-
+  const search = useCallback(async (q: string) => {
     if (!q.trim() || q.trim().length < 2) {
-      setServerResults([]);
-      setServerSearching(false);
+      setResults([]);
+      setSearching(false);
       return;
     }
 
-    setServerSearching(true);
-    debounceRef.current = setTimeout(async () => {
-      try {
-        const res = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}`);
-        if (res.ok) {
-          const data = await res.json();
-          setServerResults(data);
-        }
-      } catch {
-        // Silently fail; client results are still shown
-      } finally {
-        setServerSearching(false);
+    setSearching(true);
+    try {
+      const res = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}`);
+      if (res.ok) {
+        const data: ServerResult[] = await res.json();
+        setResults(
+          data.map((sr) => ({
+            slug: sr.slug,
+            title: sr.title,
+            excerpt: sr.excerpt,
+            categories: sr.categories.join(", "),
+            headline: sr.headline,
+          }))
+        );
       }
-    }, 300);
+    } catch {
+      // Silently fail
+    } finally {
+      setSearching(false);
+    }
   }, []);
 
   useEffect(() => {
-    searchServer(query);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+
+    if (!query.trim() || query.trim().length < 2) {
+      setResults([]);
+      setSearching(false);
+      return;
+    }
+
+    setSearching(true);
+    debounceRef.current = setTimeout(() => {
+      search(query);
+    }, 300);
+
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [query, searchServer]);
-
-  // Merge client + server results, deduplicating by slug
-  const results: MergedResult[] = useMemo(() => {
-    const clientResults = query.trim()
-      ? fuse.search(query.trim(), { limit: 50 }).map(({ item }) => ({
-          slug: item.s,
-          title: item.t,
-          excerpt: item.e,
-          categories: item.c,
-          source: "client" as const,
-        }))
-      : [];
-
-    if (serverResults.length === 0) return clientResults;
-
-    const seen = new Set<string>();
-    const merged: MergedResult[] = [];
-
-    // Server results first (more relevant for content matches)
-    for (const sr of serverResults) {
-      if (!seen.has(sr.slug)) {
-        seen.add(sr.slug);
-        merged.push({
-          slug: sr.slug,
-          title: sr.title,
-          excerpt: sr.excerpt,
-          categories: sr.categories.join(", "),
-          headline: sr.headline,
-          source: "server",
-        });
-      }
-    }
-
-    // Then client results that weren't in server results
-    for (const cr of clientResults) {
-      if (!seen.has(cr.slug)) {
-        seen.add(cr.slug);
-        merged.push(cr);
-      }
-    }
-
-    return merged.slice(0, 50);
-  }, [query, fuse, serverResults]);
+  }, [query, search]);
 
   return (
     <div>
@@ -154,7 +91,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
         />
       </div>
 
-      {loading && query && (
+      {searching && query && (
         <div className="space-y-3">
           {[1, 2, 3].map((i) => (
             <div key={i} className="p-4 rounded-xl border border-border">
@@ -166,21 +103,10 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
         </div>
       )}
 
-      {!loading && query && (
-        <div className="flex items-center gap-2 mb-4">
-          <p className="text-muted text-sm">
-            {results.length} result{results.length !== 1 ? "s" : ""} for &ldquo;{query}&rdquo;
-          </p>
-          {serverSearching && (
-            <div className="flex items-center gap-1.5 text-xs text-muted/50">
-              <svg className="animate-spin" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <circle cx="12" cy="12" r="10" className="opacity-25" />
-                <path d="M4 12a8 8 0 018-8" className="opacity-75" />
-              </svg>
-              searching content...
-            </div>
-          )}
-        </div>
+      {!searching && query && (
+        <p className="text-muted text-sm mb-4">
+          {results.length} result{results.length !== 1 ? "s" : ""} for &ldquo;{query}&rdquo;
+        </p>
       )}
 
       <div className="space-y-2">
@@ -201,7 +127,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
               <h2 className="font-semibold text-sm group-hover:text-primary transition-colors">
                 {item.title}
               </h2>
-              {item.headline && item.source === "server" ? (
+              {item.headline ? (
                 <p
                   className="text-xs text-muted mt-1 line-clamp-2 leading-relaxed [&_mark]:bg-primary/15 [&_mark]:text-foreground [&_mark]:rounded-sm [&_mark]:px-0.5"
                   dangerouslySetInnerHTML={{ __html: item.headline }}
@@ -220,7 +146,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
         ))}
       </div>
 
-      {!loading && query && results.length === 0 && !serverSearching && (
+      {!searching && query && results.length === 0 && (
         <div className="text-center py-20 text-muted">
           <div className="empty-state-icon inline-block mb-4">
             <svg className="text-muted/30" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -234,7 +160,7 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
         </div>
       )}
 
-      {!query && !loading && (
+      {!query && (
         <div className="text-center py-20 text-muted">
           <div className="empty-state-icon inline-block mb-4">
             <svg className="text-muted/25" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -242,8 +168,8 @@ export default function SearchResults({ initialQuery }: { initialQuery: string }
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </div>
-          <p className="text-lg font-semibold mb-1">Search {items.length.toLocaleString()} articles</p>
-          <p className="text-sm">Fuzzy matching finds what you need, even with typos</p>
+          <p className="text-lg font-semibold mb-1">Search articles</p>
+          <p className="text-sm">Full-text search across all wiki content</p>
         </div>
       )}
     </div>

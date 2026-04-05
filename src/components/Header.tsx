@@ -92,6 +92,19 @@ export default function Header() {
           ))}
           <div className="w-px h-5 bg-border mx-1.5" />
           <ThemeToggle />
+          <div className="w-px h-5 bg-border mx-1.5" />
+          <Link
+            href="/login"
+            className="px-3 py-1.5 rounded-lg text-sm text-muted hover:text-foreground hover:bg-surface transition-all"
+          >
+            Log in
+          </Link>
+          <Link
+            href="/signup"
+            className="px-3 py-1.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
+          >
+            Sign up
+          </Link>
         </nav>
 
         <div className="flex items-center gap-1 sm:hidden">
@@ -142,6 +155,23 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+          </div>
+          <div className="border-t border-border my-1" />
+          <div className="flex gap-2">
+            <Link
+              href="/login"
+              onClick={() => setMenuOpen(false)}
+              className="flex-1 text-center px-3 py-2.5 rounded-lg text-sm border border-border text-muted hover:text-foreground hover:bg-surface transition-all"
+            >
+              Log in
+            </Link>
+            <Link
+              href="/signup"
+              onClick={() => setMenuOpen(false)}
+              className="flex-1 text-center px-3 py-2.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
+            >
+              Sign up
+            </Link>
           </div>
         </div>
       )}
