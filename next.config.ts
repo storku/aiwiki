@@ -68,7 +68,13 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return {
-      afterFiles: [],
+      afterFiles: [
+        {
+          source: "/images/:path+",
+          destination:
+            "https://qqcb8dyk5bp2il4c.public.blob.vercel-storage.com/wiki/images/:path+",
+        },
+      ],
     };
   },
   async headers() {
