@@ -58,7 +58,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function WikiPage({ params }: Props) {
   const { slug } = await params;
-  const page = await getPageBySlug(slug);
+  let page = await getPageBySlug(slug);
+
+  // If not found, try replacing dashes with underscores (wiki convention)
+  if (!page && slug.includes("-")) {
+    const underscoreSlug = slug.replace(/-/g, "_");
+    if (underscoreSlug !== slug) {
+      const altPage = await getPageBySlug(underscoreSlug);
+      if (altPage) {
+        redirect(`/wiki/${underscoreSlug}`);
+      }
+    }
+  }
 
   if (!page) {
     notFound();

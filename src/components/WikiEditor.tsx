@@ -78,7 +78,7 @@ function EditorToolbar({ editor }: { editor: NonNullable<ReturnType<typeof useEd
   };
 
   const insertWikilink = () => {
-    const slug = window.prompt("Wiki page slug (e.g. machine-learning):");
+    const slug = window.prompt("Wiki page slug (e.g. machine_learning):");
     if (!slug) return;
     const href = `/wiki/${slug.trim()}`;
     const { from, to } = editor.state.selection;

@@ -6,7 +6,15 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params;
-  const preview = await getPagePreview(slug);
+  let preview = await getPagePreview(slug);
+
+  // If not found, try replacing dashes with underscores (wiki convention)
+  if (!preview && slug.includes("-")) {
+    const underscoreSlug = slug.replace(/-/g, "_");
+    if (underscoreSlug !== slug) {
+      preview = await getPagePreview(underscoreSlug);
+    }
+  }
 
   if (!preview) {
     return NextResponse.json(null, { status: 404 });
