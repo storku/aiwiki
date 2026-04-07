@@ -21,6 +21,16 @@ AI Wiki is a comprehensive encyclopedia of artificial intelligence with 2,000+ a
 - `src/lib/content.ts` — Content loading utilities (getAllPages, getPageBySlug, etc.)
 - `scripts/fetch-wiki-content.mjs` — Script to fetch content from the old MediaWiki API
 
+## Images
+
+All wiki images are stored in **Vercel Blob Storage** (not in the git repo). They are served via a Next.js rewrite that proxies `aiwiki.ai/images/*` to the blob store.
+
+- **Never bulk-delete images from Vercel Blob** without first checking which articles reference them. Images may be shared across multiple articles. Always cross-reference the database (`content` and `content_html` fields) before deleting any blob.
+- **Company/product logos** (e.g., `anthropic_logo1.png`, `openai_logo1.png`, `deepseek_logo1.png`) are used in article infoboxes. Do not delete these when cleaning up unrelated images.
+- When deleting pages, do not assume their images are safe to delete. Other articles may reference the same images (e.g., the GPT Store article uses 50px icons from individual GPT pages).
+- The blob store has two prefixes: `wiki/images/` and `images/`. The rewrite rule points to `wiki/images/`. Both prefixes may contain copies of the same file.
+- If images are accidentally deleted, originals can be recovered from the EC2 server at `/var/www/html/mediawiki/images/`.
+
 ## Old Wiki (MediaWiki)
 
 The original site was built with MediaWiki and hosted on AWS EC2.
