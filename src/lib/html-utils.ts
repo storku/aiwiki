@@ -257,11 +257,12 @@ function parseMarkdownReferences(
   const refs: Array<{ num: number; html: string }> = [];
 
   for (const line of lines) {
-    const match = line.trim().match(/^(\d+)\.\s+(.*)/);
+    // Support both "1. text" and "[1] text" formats
+    const match = line.trim().match(/^(?:(\d+)\.\s+|\[(\d+)\]\s+)(.*)/);
     if (match) {
       refs.push({
-        num: parseInt(match[1]),
-        html: refTextToHtml(match[2]),
+        num: parseInt(match[1] || match[2]),
+        html: refTextToHtml(match[3]),
       });
     }
   }

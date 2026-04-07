@@ -57,6 +57,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/wiki/ai_wiki",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return {
       afterFiles: [

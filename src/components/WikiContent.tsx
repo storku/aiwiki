@@ -157,29 +157,32 @@ export default function WikiContent({ content, contentHtml }: WikiContentProps) 
   // Make [N] inline citations clickable and add IDs to reference list items
   const hasRefs = /##\s*References\s*\n/.test(cleaned);
   if (hasRefs) {
-    // Convert [N] inline citations to linked superscripts
-    // Match " [N]" not followed by ( (which would be a markdown link)
+    // First: convert References list to HTML with anchor IDs (before inline citation pass)
+    // Supports both "1. text" and "[1] text" formats, with optional blank lines between entries
     cleaned = cleaned.replace(
-      / \[(\d{1,3})\](?!\()/g,
-      ' <sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
-    );
-
-    // Convert References numbered list to HTML with anchor IDs
-    cleaned = cleaned.replace(
-      /(##\s*References\s*\n+)((?:\d+\.\s+.+\n?)+)/,
-      (_, heading: string, list: string) => {
-        const items = list
+      /(##\s*References\s*\n+)([\s\S]*?)(?=\n##\s|$)/,
+      (_, heading: string, block: string) => {
+        const items = block
           .trim()
           .split("\n")
           .map((line: string) => {
-            const m = line.match(/^(\d+)\.\s+(.*)/);
+            const m = line.match(/^(?:(\d+)\.\s+|\[(\d+)\]\s+)(.*)/);
             if (!m) return "";
-            return `<li id="cite_note-${m[1]}">${refTextToHtml(m[2])}</li>`;
+            const num = m[1] || m[2];
+            return `<li id="cite_note-${num}">${refTextToHtml(m[3])}</li>`;
           })
           .filter(Boolean)
           .join("\n");
+        if (!items) return `${heading}`;
         return `${heading}<ol class="references-list">\n${items}\n</ol>\n`;
       }
+    );
+
+    // Second: convert [N] inline citations to linked superscripts
+    // Match [N] not preceded by [ and not followed by ( (markdown link)
+    cleaned = cleaned.replace(
+      /(?<!\[)\[(\d{1,3})\](?!\()/g,
+      '<sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
     );
   }
 
