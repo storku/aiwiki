@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,11 +8,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2.5 mb-3 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-                <span className="text-white font-extrabold text-xs">AI</span>
-              </div>
-              <span className="font-bold tracking-tight">Wiki</span>
+            <Link href="/" className="flex items-center gap-2 mb-3 group">
+              <Image
+                src="/aiwiki_logo_symbol.png"
+                alt="AI Wiki"
+                width={28}
+                height={28}
+              />
+              <Image
+                src="/aiwiki_logo_words.png"
+                alt="AI Wiki"
+                width={80}
+                height={17}
+                className="logo-wordmark"
+              />
             </Link>
             <p className="text-sm text-muted leading-relaxed">
               The free encyclopedia of artificial intelligence. Explore 2,000+ articles on AI concepts, models, tools, and applications.
