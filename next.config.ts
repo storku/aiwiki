@@ -68,12 +68,7 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return {
-      afterFiles: [
-        {
-          source: "/images/:path+",
-          destination: "https://aiwiki.ai/images/:path+",
-        },
-      ],
+      afterFiles: [],
     };
   },
   async headers() {
