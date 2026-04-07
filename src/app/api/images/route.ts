@@ -14,33 +14,97 @@ function guessContentType(pathname: string): string {
   return map[ext || ""] || "image/png";
 }
 
+// Both prefixes used in blob storage
+const PREFIXES = ["wiki/images/", "images/"];
+
 /**
- * GET /api/images - List all uploaded images
- * Supports pagination via ?cursor=xxx
+ * GET /api/images - List images or get stats
+ * ?mode=stats  — return aggregate stats (count, size, type breakdown)
+ * ?cursor=xxx  — paginated listing
  */
 export async function GET(request: NextRequest) {
   try {
+    const mode = request.nextUrl.searchParams.get("mode");
+
+    if (mode === "stats") {
+      let totalCount = 0;
+      let totalSize = 0;
+      const typeCounts: Record<string, number> = {};
+      const typeSizes: Record<string, number> = {};
+
+      for (const prefix of PREFIXES) {
+        let cursor: string | undefined;
+        do {
+          const result = await list({ prefix, limit: 1000, cursor });
+          for (const blob of result.blobs) {
+            totalCount++;
+            totalSize += blob.size;
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const ct = (blob as any).contentType || guessContentType(blob.pathname);
+            typeCounts[ct] = (typeCounts[ct] || 0) + 1;
+            typeSizes[ct] = (typeSizes[ct] || 0) + blob.size;
+          }
+          cursor = result.cursor;
+        } while (cursor);
+      }
+
+      return NextResponse.json({
+        totalCount,
+        totalSize,
+        typeCounts,
+        typeSizes,
+      });
+    }
+
+    // Regular listing — merge results from both prefixes
     const cursor = request.nextUrl.searchParams.get("cursor") || undefined;
     const limit = Number(request.nextUrl.searchParams.get("limit")) || 100;
-    const prefix = request.nextUrl.searchParams.get("prefix") || "images/";
+    const prefix = request.nextUrl.searchParams.get("prefix") || undefined;
 
-    const result = await list({
-      prefix,
-      limit,
-      cursor,
+    // If a specific prefix is requested, use it; otherwise merge both
+    const prefixes = prefix ? [prefix] : PREFIXES;
+    const allBlobs: Array<{
+      url: string;
+      pathname: string;
+      size: number;
+      uploadedAt: string;
+      contentType: string;
+    }> = [];
+
+    let nextCursor: string | undefined;
+    let moreAvailable = false;
+
+    for (const pfx of prefixes) {
+      const result = await list({ prefix: pfx, limit, cursor });
+      for (const blob of result.blobs) {
+        allBlobs.push({
+          url: blob.url,
+          pathname: blob.pathname,
+          size: blob.size,
+          uploadedAt: blob.uploadedAt as unknown as string,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          contentType: (blob as any).contentType || guessContentType(blob.pathname),
+        });
+      }
+      if (result.hasMore) {
+        nextCursor = result.cursor;
+        moreAvailable = true;
+      }
+    }
+
+    // Deduplicate by filename (same file may exist under both prefixes)
+    const seen = new Set<string>();
+    const deduped = allBlobs.filter((b) => {
+      const name = b.pathname.split("/").pop() || b.pathname;
+      if (seen.has(name)) return false;
+      seen.add(name);
+      return true;
     });
 
     return NextResponse.json({
-      blobs: result.blobs.map((blob) => ({
-        url: blob.url,
-        pathname: blob.pathname,
-        size: blob.size,
-        uploadedAt: blob.uploadedAt,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        contentType: (blob as any).contentType || guessContentType(blob.pathname),
-      })),
-      cursor: result.cursor,
-      hasMore: result.hasMore,
+      blobs: deduped,
+      cursor: nextCursor,
+      hasMore: moreAvailable,
     });
   } catch (error) {
     const message =
