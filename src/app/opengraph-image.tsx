@@ -73,7 +73,7 @@ export default function OGImage() {
             marginTop: "16px",
           }}
         >
-          2,500+ articles on AI concepts, models, tools, and benchmarks
+          2,000+ articles on AI concepts, models, tools, and applications
         </div>
       </div>
     ),

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { list, put, del } from "@vercel/blob";
+import { isAuthenticated } from "@/lib/auth";
 
 function guessContentType(pathname: string): string {
   const ext = pathname.split(".").pop()?.toLowerCase();
@@ -118,6 +119,11 @@ export async function GET(request: NextRequest) {
  * Expects multipart form data with a "file" field
  */
 export async function POST(request: NextRequest) {
+  const authed = await isAuthenticated();
+  if (!authed) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const formData = await request.formData();
     const file = formData.get("file") as File | null;
@@ -178,6 +184,11 @@ export async function POST(request: NextRequest) {
  * Expects JSON body with { url: "..." }
  */
 export async function DELETE(request: NextRequest) {
+  const authed = await isAuthenticated();
+  if (!authed) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const { url } = await request.json();
 

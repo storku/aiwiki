@@ -1,7 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { validateEditorToken, COOKIE_NAME, authenticateUser, setSessionCookie } from "@/lib/auth";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
+
+const loginLimiter = rateLimit("login", { maxRequests: 5, windowSeconds: 15 * 60 });
 
 export async function POST(request: NextRequest) {
+  const ip = getClientIp(request);
+  const { allowed, resetAt } = loginLimiter.check(ip);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Too many login attempts. Please try again later." },
+      { status: 429, headers: { "Retry-After": String(Math.ceil((resetAt - Date.now()) / 1000)) } }
+    );
+  }
+
   const body = await request.json();
 
   // Legacy editor-secret login

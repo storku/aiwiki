@@ -28,7 +28,7 @@ export async function GET() {
   <channel>
     <title>AI Wiki</title>
     <link>https://aiwiki.ai</link>
-    <description>The free encyclopedia of artificial intelligence. 2,500+ articles on AI concepts, models, tools, and applications.</description>
+    <description>The free encyclopedia of artificial intelligence. 2,000+ articles on AI concepts, models, tools, and applications.</description>
     <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="https://aiwiki.ai/feed.xml" rel="self" type="application/rss+xml"/>
