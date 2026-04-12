@@ -98,11 +98,15 @@ async function main() {
     `;
     console.log(`  Saved previous version ${oldVersion} to page_revisions`);
 
-    // Update the existing page
+    // Update the existing page. Null out content_html and content_tiptap so the
+    // renderer falls back to the fresh markdown — otherwise WikiContent would keep
+    // serving the stale pre-rendered HTML imported from MediaWiki.
     await sql`
       UPDATE pages SET
         title = ${title},
         content = ${content},
+        content_html = NULL,
+        content_tiptap = NULL,
         excerpt = ${excerpt},
         reading_time = ${readingTime},
         word_count = ${wordCount},
