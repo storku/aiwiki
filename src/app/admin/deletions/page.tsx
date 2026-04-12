@@ -53,10 +53,14 @@ function SeverityBadge({ ratio }: { ratio: number }) {
     label = "Major";
     classes =
       "bg-orange-100 text-orange-800 dark:bg-orange-950/40 dark:text-orange-300 border-orange-200 dark:border-orange-800";
-  } else {
+  } else if (ratio >= 0.3) {
     label = "Warning";
     classes =
       "bg-yellow-100 text-yellow-800 dark:bg-yellow-950/40 dark:text-yellow-300 border-yellow-200 dark:border-yellow-800";
+  } else {
+    label = "Minor";
+    classes =
+      "bg-blue-100 text-blue-800 dark:bg-blue-950/40 dark:text-blue-300 border-blue-200 dark:border-blue-800";
   }
 
   return (
@@ -96,7 +100,9 @@ function AlertCard({
                 ? "bg-red-100 dark:bg-red-950/40"
                 : ratio >= 0.5
                 ? "bg-orange-100 dark:bg-orange-950/40"
-                : "bg-yellow-100 dark:bg-yellow-950/40"
+                : ratio >= 0.3
+                ? "bg-yellow-100 dark:bg-yellow-950/40"
+                : "bg-blue-100 dark:bg-blue-950/40"
             }`}
           >
             <svg
@@ -113,7 +119,9 @@ function AlertCard({
                   ? "text-red-600 dark:text-red-400"
                   : ratio >= 0.5
                   ? "text-orange-600 dark:text-orange-400"
-                  : "text-yellow-600 dark:text-yellow-400"
+                  : ratio >= 0.3
+                  ? "text-yellow-600 dark:text-yellow-400"
+                  : "text-blue-600 dark:text-blue-400"
               }
             >
               <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />

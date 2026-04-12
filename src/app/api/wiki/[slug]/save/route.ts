@@ -141,8 +141,9 @@ export async function POST(
     const deletionRatio = oldWordCount > 0 ? wordsDeleted / oldWordCount : 0;
 
     if (
-      wordsDeleted > 500 ||
-      (oldWordCount >= 200 && deletionRatio >= 0.3)
+      wordsDeleted > 0 &&
+      oldWordCount >= 100 &&
+      deletionRatio >= 0.1
     ) {
       const oldPlain = (current.content_plain as string) || "";
       const deletedContent = extractDeletedText(oldPlain, contentPlain);
