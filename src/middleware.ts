@@ -61,6 +61,17 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/", request.url), 301);
   }
 
+  // ── /admin/* paths — require editor auth ──
+  if (pathname.startsWith("/admin")) {
+    const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
+    if (!editorToken || !process.env.EDITOR_SECRET || editorToken !== process.env.EDITOR_SECRET) {
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("redirect", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+    return;
+  }
+
   // ── /wiki/* paths ──
   if (!pathname.startsWith("/wiki/")) return;
 
@@ -196,5 +207,5 @@ function handleMediaWikiNamespace(
 }
 
 export const config = {
-  matcher: ["/wiki/:slug+", "/w/:path*", "/index.php", "/api.php"],
+  matcher: ["/wiki/:slug+", "/w/:path*", "/index.php", "/api.php", "/admin/:path*"],
 };

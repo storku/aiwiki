@@ -5,6 +5,24 @@ import { isAuthenticated } from "@/lib/auth";
 import { computeArticleDerivedFields } from "@/lib/article-utils";
 import { generateExcerpt } from "@/lib/content";
 
+/**
+ * Extract text present in oldText but missing from newText.
+ * Splits into sentences, finds those removed in the new version.
+ */
+function extractDeletedText(oldText: string, newText: string): string {
+  // Split into sentences (rough heuristic)
+  const oldSentences = oldText.split(/(?<=[.!?])\s+/).filter((s) => s.trim().length > 10);
+  const newLower = newText.toLowerCase();
+
+  const deleted = oldSentences.filter((sentence) => {
+    const normalized = sentence.trim().toLowerCase();
+    return !newLower.includes(normalized);
+  });
+
+  if (deleted.length === 0) return oldText;
+  return deleted.join(" ");
+}
+
 export async function POST(
   request: Request,
   { params }: { params: Promise<{ slug: string }> }
@@ -46,7 +64,7 @@ export async function POST(
   try {
     // 3. Fetch current page and check optimistic concurrency
     const rows = await sql`
-      SELECT id, version, content, content_tiptap
+      SELECT id, version, content, content_tiptap, content_plain, word_count, title
       FROM pages
       WHERE slug = ${slug}
     `;
@@ -116,6 +134,25 @@ export async function POST(
         updated_at = now()
       WHERE id = ${pageId}
     `;
+
+    // 8b. Check for large content deletions and create alert if needed
+    const oldWordCount = (current.word_count as number) || 0;
+    const wordsDeleted = oldWordCount - wordCount;
+    const deletionRatio = oldWordCount > 0 ? wordsDeleted / oldWordCount : 0;
+
+    if (
+      wordsDeleted > 500 ||
+      (oldWordCount >= 200 && deletionRatio >= 0.3)
+    ) {
+      const oldPlain = (current.content_plain as string) || "";
+      const deletedContent = extractDeletedText(oldPlain, contentPlain);
+
+      // Fire-and-forget: don't block the save on alert insertion
+      sql`
+        INSERT INTO deletion_alerts (page_id, page_slug, page_title, deleted_content, old_word_count, new_word_count, words_deleted, edit_summary)
+        VALUES (${pageId}, ${slug}, ${title}, ${deletedContent.slice(0, 50000)}, ${oldWordCount}, ${wordCount}, ${wordsDeleted}, ${summary})
+      `.catch((err) => console.error("Failed to insert deletion alert:", err));
+    }
 
     // 9. Update page_links (batch: 1 DELETE + 1 INSERT instead of N+1)
     await sql`
