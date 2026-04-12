@@ -79,12 +79,27 @@ function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | nul
       }
     }
 
-    // Wrap tables that may overflow on mobile in a scrollable container
-    // Skip infobox tables — they float right and must not be wrapped
+    // Auto-detect infobox: the first table in the article that has bold
+    // label cells (e.g. **Manufacturer**) is treated as an infobox.
     const tables = el.querySelectorAll("table");
+    let infoboxDetected = false;
     for (const table of tables) {
+      if (table.classList.contains("infobox")) {
+        infoboxDetected = true;
+        continue;
+      }
+      // Detect infobox pattern: first table with <strong> inside <td> cells
+      if (
+        !infoboxDetected &&
+        !table.parentElement?.classList.contains("table-wrapper") &&
+        table.querySelectorAll("td > strong").length >= 3
+      ) {
+        table.classList.add("infobox");
+        infoboxDetected = true;
+        continue;
+      }
+      // Wrap non-infobox tables in a scrollable container for mobile
       if (table.parentElement?.classList.contains("table-wrapper")) continue;
-      if (table.classList.contains("infobox")) continue;
       const wrapper = document.createElement("div");
       wrapper.className = "table-wrapper overflow-x-auto -mx-1 px-1";
       table.parentNode?.insertBefore(wrapper, table);
