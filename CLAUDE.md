@@ -11,7 +11,7 @@ AI Wiki is a comprehensive encyclopedia of artificial intelligence with 2,000+ a
 - **Content:** Stored in a Neon (PostgreSQL) database. Wiki pages are NOT saved locally; you must fetch content from the Neon database.
 - **Search:** Fuse.js (client-side fuzzy search)
 - **Markdown rendering:** react-markdown + remark-gfm + rehype-raw + rehype-slug
-- **Hosting:** Vercel
+- **Hosting:** Vercel (team: `ai-team-fad7938b` / "ai team", user: `coolsloth`)
 
 ## Project Structure
 
