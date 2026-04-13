@@ -139,6 +139,8 @@ function escapeHtml(str: string): string {
     .replace(/'/g, "&#039;");
 }
 
+import { generateHeadingId } from "./headings";
+
 const ANCHOR_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
 
@@ -159,10 +161,7 @@ export function addHeadingIds(html: string): string {
         id = idMatch[1];
       } else {
         const text = content.replace(/<[^>]*>/g, "").trim();
-        id = `heading-${headingIndex}-${text
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/^-|-$/g, "")}`;
+        id = generateHeadingId(text, headingIndex);
       }
 
       headingIndex++;
@@ -187,38 +186,6 @@ export function addHeadingIds(html: string): string {
       return `<${tag}${newAttrs}>${content}${anchorHtml}</${tag}>`;
     }
   );
-}
-
-/**
- * Extract headings from HTML content (server-safe)
- */
-export function extractHeadings(html: string): Array<{ id: string; text: string; level: number }> {
-  const headings: Array<{ id: string; text: string; level: number }> = [];
-  let headingIndex = 0;
-
-  const regex = /<(h[1-4])(\s[^>]*)?>(([\s\S]*?))<\/\1>/gi;
-  let match;
-
-  while ((match = regex.exec(html)) !== null) {
-    const [, tag, attrs = "", content] = match;
-    const level = parseInt(tag.charAt(1));
-    const text = content.replace(/<[^>]*>/g, "").trim();
-
-    const idMatch = attrs.match(/\bid="([^"]*)"/);
-    const existingId = idMatch ? idMatch[1] : null;
-
-    const id =
-      existingId ||
-      `heading-${headingIndex}-${text
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "")}`;
-
-    headings.push({ id, text, level });
-    headingIndex++;
-  }
-
-  return headings;
 }
 
 /**

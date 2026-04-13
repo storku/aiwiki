@@ -1,61 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useRef } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
-import rehypeSlug from "rehype-slug";
-import rehypeHighlight from "rehype-highlight";
-import type { Components } from "react-markdown";
-import WikiLink from "./WikiLink";
-import { refTextToHtml } from "@/lib/html-utils";
+import { useEffect, useRef, lazy, Suspense } from "react";
 
 interface WikiContentProps {
   content: string;
   contentHtml?: string | null;
 }
 
-// ─── Markdown fallback components ────────────────────────────────────
-
-const components: Components = {
-  a: ({ href, children, node: _node, ...props }) => {
-    if (href && href.startsWith("/wiki/")) {
-      return (
-        <WikiLink href={href} {...props}>
-          {children}
-        </WikiLink>
-      );
-    }
-    if (href && (href.startsWith("http://") || href.startsWith("https://"))) {
-      return (
-        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
-          {children}
-        </a>
-      );
-    }
-    return (
-      <a href={href} {...props}>
-        {children}
-      </a>
-    );
-  },
-  img: ({ src, alt, node: _imgNode, ..._ }) => {
-    if (!src || typeof src !== "string") return null;
-    return (
-      <Image
-        src={src}
-        alt={alt || ""}
-        width={800}
-        height={450}
-        className="rounded-xl border border-border my-5"
-        style={{ width: "100%", height: "auto" }}
-        loading="lazy"
-        unoptimized={src.startsWith("http")}
-      />
-    );
-  },
-};
+const MarkdownRenderer = lazy(() => import("./MarkdownRenderer"));
 
 // ─── Pre-rendered HTML: client-side interactivity ────────────────────
 
@@ -149,67 +101,21 @@ export default function WikiContent({ content, contentHtml }: WikiContentProps) 
     );
   }
 
-  // Markdown fallback
-  let cleaned = content;
-
-  // Remove red link edit URLs, keeping the text
-  cleaned = cleaned.replace(
-    /\[([^\]]+)\]\(\/index\.php\?title=[^)]+&action=edit&redlink=1\)/g,
-    "$1"
-  );
-
-  // Clean up citation references like [&#91;1&#93;](#cite_note-...)
-  cleaned = cleaned.replace(
-    /\[&#91;(\d+)&#93;\]\(#cite_note[^)]*\)/g,
-    '<sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
-  );
-
-  // Clean up HTML entities that didn't get decoded
-  cleaned = cleaned.replace(/&#160;/g, " ");
-  cleaned = cleaned.replace(/&#91;/g, "[");
-  cleaned = cleaned.replace(/&#93;/g, "]");
-
-  // Make [N] inline citations clickable and add IDs to reference list items
-  const hasRefs = /##\s*References\s*\n/.test(cleaned);
-  if (hasRefs) {
-    // First: convert References list to HTML with anchor IDs (before inline citation pass)
-    // Supports both "1. text" and "[1] text" formats, with optional blank lines between entries
-    cleaned = cleaned.replace(
-      /(##\s*References\s*\n+)([\s\S]*?)(?=\n##\s|$)/,
-      (_, heading: string, block: string) => {
-        const items = block
-          .trim()
-          .split("\n")
-          .map((line: string) => {
-            const m = line.match(/^(?:(\d+)\.\s+|\[(\d+)\]\s+)(.*)/);
-            if (!m) return "";
-            const num = m[1] || m[2];
-            return `<li id="cite_note-${num}">${refTextToHtml(m[3])}</li>`;
-          })
-          .filter(Boolean)
-          .join("\n");
-        if (!items) return `${heading}`;
-        return `${heading}<ol class="references-list">\n${items}\n</ol>\n`;
-      }
-    );
-
-    // Second: convert [N] inline citations to linked superscripts
-    // Match [N] not preceded by [ and not followed by ( (markdown link)
-    cleaned = cleaned.replace(
-      /(?<!\[)\[(\d{1,3})\](?!\()/g,
-      '<sup><a href="#cite_note-$1" class="cite-ref">[$1]</a></sup>'
-    );
-  }
-
+  // Markdown fallback (lazy-loaded to avoid bundling renderer when unused)
   return (
     <div ref={containerRef} className="wiki-content">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw, rehypeSlug, [rehypeHighlight, { ignoreMissing: true }]]}
-        components={components}
+      <Suspense
+        fallback={
+          <div className="space-y-4">
+            <div className="skeleton h-4 w-full" />
+            <div className="skeleton h-4 w-3/4" />
+            <div className="skeleton h-4 w-5/6" />
+            <div className="skeleton h-4 w-2/3" />
+          </div>
+        }
       >
-        {cleaned}
-      </ReactMarkdown>
+        <MarkdownRenderer content={content} />
+      </Suspense>
     </div>
   );
 }

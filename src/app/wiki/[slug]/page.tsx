@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getPageBySlug, getRelatedPages } from "@/lib/content";
@@ -109,8 +110,6 @@ export default async function WikiPage({ params }: Props) {
   if (processedHtml) {
     processedHtml = addHeadingIds(processedHtml);
   }
-
-  const related = await getRelatedPages(page.slug, page.categories);
 
   const wordCount = page.content
     ? page.content.split(/\s+/).filter((w) => w.length > 0).length
@@ -261,8 +260,10 @@ export default async function WikiPage({ params }: Props) {
           {/* Content */}
           <WikiContent content={page.content} contentHtml={processedHtml} />
 
-          {/* Related Articles */}
-          <RelatedArticles related={related} />
+          {/* Related Articles (streamed separately) */}
+          <Suspense>
+            <RelatedArticlesAsync slug={page.slug} categories={page.categories} />
+          </Suspense>
         </article>
 
         {/* Table of Contents sidebar */}
@@ -270,4 +271,10 @@ export default async function WikiPage({ params }: Props) {
       </div>
     </>
   );
+}
+
+async function RelatedArticlesAsync({ slug, categories }: { slug: string; categories: string[] }) {
+  const related = await getRelatedPages(slug, categories);
+  if (related.length === 0) return null;
+  return <RelatedArticles related={related} />;
 }

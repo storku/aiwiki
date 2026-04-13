@@ -44,6 +44,15 @@ const MEDIAWIKI_PARAMS = [
   "safemode",
 ];
 
+function tokenEquals(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
+
 export function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
 
@@ -64,7 +73,7 @@ export function middleware(request: NextRequest) {
   // ── /admin/* paths — require editor auth ──
   if (pathname.startsWith("/admin")) {
     const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
-    if (!editorToken || !process.env.EDITOR_SECRET || editorToken !== process.env.EDITOR_SECRET) {
+    if (!editorToken || !process.env.EDITOR_SECRET || !tokenEquals(editorToken, process.env.EDITOR_SECRET)) {
       const loginUrl = new URL("/login", request.url);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);
@@ -81,7 +90,7 @@ export function middleware(request: NextRequest) {
   // Protect /wiki/*/edit routes — require editor cookie
   if (pathname.match(/^\/wiki\/[^/]+\/edit$/)) {
     const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
-    if (!editorToken || !process.env.EDITOR_SECRET || editorToken !== process.env.EDITOR_SECRET) {
+    if (!editorToken || !process.env.EDITOR_SECRET || !tokenEquals(editorToken, process.env.EDITOR_SECRET)) {
       const loginUrl = new URL("/login", request.url);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);

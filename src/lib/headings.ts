@@ -5,7 +5,20 @@ export interface TocItem {
 }
 
 /**
+ * Generate a stable heading ID from text and index.
+ * Shared by all heading-related functions to ensure consistency.
+ */
+export function generateHeadingId(text: string, index: number): string {
+  return `heading-${index}-${text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")}`;
+}
+
+/**
  * Parse headings from markdown content (h2-h4).
+ * Uses the same ID scheme as rehypeSlug (github-slugger style) for consistency
+ * with the markdown rendering path.
  */
 export function parseHeadings(content: string): TocItem[] {
   const headings: TocItem[] = [];
@@ -47,19 +60,13 @@ export function parseHeadingsFromHtml(html: string): TocItem[] {
   while ((match = regex.exec(html)) !== null) {
     const [, tag, attrs = "", content] = match;
     const level = parseInt(tag.charAt(1));
-    // Strip HTML tags to get plain text
     const text = content.replace(/<[^>]*>/g, "").trim();
 
     if (!text) continue;
 
-    // Check for existing id attribute
+    // Use existing id attribute if present, otherwise generate one
     const idMatch = attrs.match(/\bid="([^"]*)"/);
-    const id =
-      idMatch?.[1] ||
-      `heading-${headingIndex}-${text
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "")}`;
+    const id = idMatch?.[1] || generateHeadingId(text, headingIndex);
 
     headings.push({ id, text, level });
     headingIndex++;

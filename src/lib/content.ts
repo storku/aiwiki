@@ -9,6 +9,12 @@ const INTERNAL_CATEGORIES = [
   "Pages_with_broken_file_links",
 ];
 
+// DB row extraction helpers
+function str(v: unknown): string { return (v != null ? String(v) : ""); }
+function num(v: unknown): number { return Number(v) || 0; }
+function arr(v: unknown): string[] { return (v as string[]) || []; }
+function ts(v: unknown): Date { return new Date(v as string); }
+
 export interface WikiPage {
   title: string;
   slug: string;
@@ -54,10 +60,10 @@ export const getAllPages = cache(async function getAllPages(): Promise<WikiPageM
     ORDER BY p.title
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    categories: (r.categories as string[]) || [],
-    excerpt: r.excerpt as string,
+    slug: str(r.slug),
+    title: str(r.title),
+    categories: arr(r.categories),
+    excerpt: str(r.excerpt),
   }));
 });
 
@@ -74,23 +80,23 @@ export const getPageBySlug = cache(async function getPageBySlug(slug: string): P
 
   if (rows.length === 0) return null;
 
-  const row = rows[0];
+  const r = rows[0];
   return {
-    title: row.title as string,
-    slug: row.slug as string,
-    categories: (row.categories as string[]) || [],
-    content: row.content as string,
-    contentHtml: (row.content_html as string) || null,
-    contentPlain: (row.content_plain as string) || null,
-    excerpt: row.excerpt as string,
-    readingTime: row.reading_time as number,
-    updatedAt: new Date(row.updated_at as string),
+    title: str(r.title),
+    slug: str(r.slug),
+    categories: arr(r.categories),
+    content: str(r.content),
+    contentHtml: (r.content_html as string) || null,
+    contentPlain: (r.content_plain as string) || null,
+    excerpt: str(r.excerpt),
+    readingTime: num(r.reading_time),
+    updatedAt: ts(r.updated_at),
   };
 });
 
 export async function getAllSlugs(): Promise<string[]> {
   const rows = await sql`SELECT slug FROM pages ORDER BY slug`;
-  return rows.map((r) => r.slug as string);
+  return rows.map((r) => str(r.slug));
 }
 
 export const getAllCategories = cache(async function getAllCategories(): Promise<{ name: string; count: number }[]> {
@@ -103,8 +109,8 @@ export const getAllCategories = cache(async function getAllCategories(): Promise
     ORDER BY count DESC
   `;
   return rows.map((r) => ({
-    name: r.name as string,
-    count: Number(r.count),
+    name: str(r.name),
+    count: num(r.count),
   }));
 });
 
@@ -129,24 +135,15 @@ export async function getPagePreview(slug: string): Promise<{
   if (rows.length === 0) return null;
   const r = rows[0];
   return {
-    title: r.title as string,
-    excerpt: r.excerpt as string,
-    categories: ((r.categories as string[]) || []).slice(0, 3),
-    readingTime: r.reading_time as number,
+    title: str(r.title),
+    excerpt: str(r.excerpt),
+    categories: arr(r.categories).slice(0, 3),
+    readingTime: num(r.reading_time),
   };
 }
 
 /**
- * Get page count and basic stats without loading all page data.
- */
-export async function getPageStats(): Promise<{ totalPages: number }> {
-  const rows = await sql`SELECT COUNT(*) as count FROM pages`;
-  return { totalPages: Number(rows[0].count) };
-}
-
-/**
  * Get total page count + recently updated pages in a single query.
- * Replaces separate getPageStats() + getRecentlyUpdatedPages() calls.
  */
 export async function getRecentPagesWithCount(
   limit = 10
@@ -161,12 +158,12 @@ export async function getRecentPagesWithCount(
     LIMIT ${limit}
   `;
   return {
-    totalPages: rows.length > 0 ? Number(rows[0].total_count) : 0,
+    totalPages: rows.length > 0 ? num(rows[0].total_count) : 0,
     recentPages: rows.map((r) => ({
-      slug: r.slug as string,
-      title: r.title as string,
-      updatedAt: new Date(r.updated_at as string),
-      excerpt: (r.excerpt as string) || "",
+      slug: str(r.slug),
+      title: str(r.title),
+      updatedAt: ts(r.updated_at),
+      excerpt: str(r.excerpt),
     })),
   };
 }
@@ -186,10 +183,10 @@ export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> 
     GROUP BY p.id
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    categories: (r.categories as string[]) || [],
-    excerpt: r.excerpt as string,
+    slug: str(r.slug),
+    title: str(r.title),
+    categories: arr(r.categories),
+    excerpt: str(r.excerpt),
   }));
 }
 
@@ -213,10 +210,10 @@ export async function getPagesByCategory(categoryName: string): Promise<WikiPage
     ORDER BY p.title
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    categories: (r.categories as string[]) || [],
-    excerpt: r.excerpt as string,
+    slug: str(r.slug),
+    title: str(r.title),
+    categories: arr(r.categories),
+    excerpt: str(r.excerpt),
   }));
 }
 
@@ -238,10 +235,10 @@ export async function searchPages(query: string): Promise<WikiPageMeta[]> {
     LIMIT 100
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    categories: (r.categories as string[]) || [],
-    excerpt: r.excerpt as string,
+    slug: str(r.slug),
+    title: str(r.title),
+    categories: arr(r.categories),
+    excerpt: str(r.excerpt),
   }));
 }
 
@@ -290,12 +287,12 @@ export async function fullTextSearch(
   `;
 
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    excerpt: r.excerpt as string,
-    headline: r.headline as string,
-    rank: Number(r.rank),
-    categories: (r.categories as string[]) || [],
+    slug: str(r.slug),
+    title: str(r.title),
+    excerpt: str(r.excerpt),
+    headline: str(r.headline),
+    rank: num(r.rank),
+    categories: arr(r.categories),
   }));
 }
 
@@ -313,8 +310,8 @@ export async function getBacklinks(
     ORDER BY p.title
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
+    slug: str(r.slug),
+    title: str(r.title),
   }));
 }
 
@@ -354,10 +351,10 @@ export async function getRelatedPages(
   `;
 
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    categories: (r.categories as string[]) || [],
-    excerpt: r.excerpt as string,
+    slug: str(r.slug),
+    title: str(r.title),
+    categories: arr(r.categories),
+    excerpt: str(r.excerpt),
   }));
 }
 
@@ -389,12 +386,12 @@ export async function getPageRevisions(slug: string): Promise<PageRevision[]> {
     ORDER BY r.version DESC
   `;
   return rows.map((r) => ({
-    id: r.id as number,
-    version: r.version as number,
+    id: num(r.id),
+    version: num(r.version),
     summary: (r.summary as string) || null,
     editorId: (r.editor_id as string) || null,
-    aiAssisted: r.ai_assisted as boolean,
-    createdAt: new Date(r.created_at as string),
+    aiAssisted: r.ai_assisted === true,
+    createdAt: ts(r.created_at),
   }));
 }
 
@@ -416,17 +413,17 @@ export async function getRevisionByVersion(
   if (rows.length === 0) return null;
   const r = rows[0];
   return {
-    id: r.id as number,
-    version: r.version as number,
-    content: r.content as string,
+    id: num(r.id),
+    version: num(r.version),
+    content: str(r.content),
     contentTiptap: r.content_tiptap,
     summary: (r.summary as string) || null,
     editorId: (r.editor_id as string) || null,
-    aiAssisted: r.ai_assisted as boolean,
-    createdAt: new Date(r.created_at as string),
-    pageTitle: r.page_title as string,
-    pageSlug: r.page_slug as string,
-    currentVersion: r.current_version as number,
+    aiAssisted: r.ai_assisted === true,
+    createdAt: ts(r.created_at),
+    pageTitle: str(r.page_title),
+    pageSlug: str(r.page_slug),
+    currentVersion: num(r.current_version),
   };
 }
 
@@ -443,33 +440,34 @@ export interface WikiUser {
   lastActive: Date;
 }
 
+function mapUser(r: Record<string, unknown>): WikiUser {
+  return {
+    username: str(r.username),
+    displayName: str(r.display_name),
+    email: (r.email as string) || null,
+    bio: str(r.bio),
+    avatarUrl: (r.avatar_url as string) || null,
+    role: str(r.role),
+    createdAt: ts(r.created_at),
+    lastActive: ts(r.last_active),
+  };
+}
+
 /**
- * Get a user by username (public — never exposes is_bot).
+ * Get a user by username (public).
  */
-export async function getUserByUsername(
-  username: string
-): Promise<WikiUser | null> {
+export async function getUserByUsername(username: string): Promise<WikiUser | null> {
   const rows = await sql`
     SELECT username, display_name, email, bio, avatar_url, role, created_at, last_active
     FROM users
     WHERE username = ${username}
   `;
   if (rows.length === 0) return null;
-  const r = rows[0];
-  return {
-    username: r.username as string,
-    displayName: r.display_name as string,
-    email: (r.email as string) || null,
-    bio: r.bio as string,
-    avatarUrl: (r.avatar_url as string) || null,
-    role: r.role as string,
-    createdAt: new Date(r.created_at as string),
-    lastActive: new Date(r.last_active as string),
-  };
+  return mapUser(rows[0]);
 }
 
 /**
- * Get all users (public — never exposes is_bot).
+ * Get all users (public).
  */
 export async function getAllUsers(): Promise<WikiUser[]> {
   const rows = await sql`
@@ -477,36 +475,7 @@ export async function getAllUsers(): Promise<WikiUser[]> {
     FROM users
     ORDER BY created_at
   `;
-  return rows.map((r) => ({
-    username: r.username as string,
-    displayName: r.display_name as string,
-    email: (r.email as string) || null,
-    bio: r.bio as string,
-    avatarUrl: (r.avatar_url as string) || null,
-    role: r.role as string,
-    createdAt: new Date(r.created_at as string),
-    lastActive: new Date(r.last_active as string),
-  }));
-}
-
-/**
- * Get the most recently updated pages.
- */
-export async function getRecentlyUpdatedPages(
-  limit = 10
-): Promise<Array<{ slug: string; title: string; updatedAt: Date; excerpt: string }>> {
-  const rows = await sql`
-    SELECT slug, title, updated_at, excerpt
-    FROM pages
-    ORDER BY updated_at DESC
-    LIMIT ${limit}
-  `;
-  return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    updatedAt: new Date(r.updated_at as string),
-    excerpt: (r.excerpt as string) || "",
-  }));
+  return rows.map(mapUser);
 }
 
 /**
@@ -523,30 +492,20 @@ export async function getRandomPages(
     LIMIT ${limit}
   `;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    title: r.title as string,
-    excerpt: (r.excerpt as string) || "",
+    slug: str(r.slug),
+    title: str(r.title),
+    excerpt: str(r.excerpt),
   }));
-}
-
-export async function getPageTimestamps(): Promise<Map<string, Date>> {
-  const rows = await sql`SELECT slug, updated_at FROM pages`;
-  const map = new Map<string, Date>();
-  for (const r of rows) {
-    map.set(r.slug as string, new Date(r.updated_at as string));
-  }
-  return map;
 }
 
 /**
  * Lightweight sitemap query: returns only slug + updated_at for all pages.
- * Replaces the need to call both getAllPages() + getPageTimestamps() in sitemap.ts.
  */
 export async function getSitemapPages(): Promise<Array<{ slug: string; updatedAt: Date }>> {
   const rows = await sql`SELECT slug, updated_at FROM pages ORDER BY slug`;
   return rows.map((r) => ({
-    slug: r.slug as string,
-    updatedAt: new Date(r.updated_at as string),
+    slug: str(r.slug),
+    updatedAt: ts(r.updated_at),
   }));
 }
 
@@ -568,9 +527,9 @@ export async function getSearchIndex(): Promise<Array<{ title: string; slug: str
     ORDER BY p.title
   `;
   return rows.map((r) => ({
-    title: r.title as string,
-    slug: r.slug as string,
-    excerpt: (r.excerpt as string) || "",
-    categories: (r.categories as string) || "",
+    title: str(r.title),
+    slug: str(r.slug),
+    excerpt: str(r.excerpt),
+    categories: str(r.categories),
   }));
 }
