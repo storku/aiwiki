@@ -11,52 +11,63 @@ const MarkdownRenderer = lazy(() => import("./MarkdownRenderer"));
 
 // ─── Pre-rendered HTML: client-side interactivity ────────────────────
 
+function processContent(el: HTMLElement) {
+  // Handle broken images - hide them gracefully
+  const imgs = el.querySelectorAll("img");
+  for (const img of imgs) {
+    if (!img.dataset.errorHandled) {
+      img.dataset.errorHandled = "1";
+      img.addEventListener("error", () => {
+        img.style.display = "none";
+      });
+      if (img.complete && img.naturalWidth === 0 && img.src) {
+        img.style.display = "none";
+      }
+    }
+  }
+
+  // Auto-detect infobox: the first table in the article that has bold
+  // label cells (e.g. **Manufacturer**) is treated as an infobox.
+  const tables = el.querySelectorAll("table");
+  let infoboxDetected = false;
+  for (const table of tables) {
+    if (table.classList.contains("infobox")) {
+      infoboxDetected = true;
+      continue;
+    }
+    // Detect infobox pattern: first table with <strong> inside <td> cells
+    if (
+      !infoboxDetected &&
+      !table.parentElement?.classList.contains("table-wrapper") &&
+      table.querySelectorAll("td > strong").length >= 3
+    ) {
+      table.classList.add("infobox");
+      infoboxDetected = true;
+      continue;
+    }
+    // Wrap non-infobox tables in a scrollable container for mobile
+    if (table.parentElement?.classList.contains("table-wrapper")) continue;
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper overflow-x-auto -mx-1 px-1";
+    table.parentNode?.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  }
+}
+
 function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | null>) {
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
 
-    // Handle broken images - hide them gracefully
-    const imgs = el.querySelectorAll("img");
-    for (const img of imgs) {
-      if (!img.dataset.errorHandled) {
-        img.dataset.errorHandled = "1";
-        img.addEventListener("error", () => {
-          img.style.display = "none";
-        });
-        // Check if already failed (complete but no natural width)
-        if (img.complete && img.naturalWidth === 0 && img.src) {
-          img.style.display = "none";
-        }
-      }
-    }
+    // Process any content already in the DOM
+    processContent(el);
 
-    // Auto-detect infobox: the first table in the article that has bold
-    // label cells (e.g. **Manufacturer**) is treated as an infobox.
-    const tables = el.querySelectorAll("table");
-    let infoboxDetected = false;
-    for (const table of tables) {
-      if (table.classList.contains("infobox")) {
-        infoboxDetected = true;
-        continue;
-      }
-      // Detect infobox pattern: first table with <strong> inside <td> cells
-      if (
-        !infoboxDetected &&
-        !table.parentElement?.classList.contains("table-wrapper") &&
-        table.querySelectorAll("td > strong").length >= 3
-      ) {
-        table.classList.add("infobox");
-        infoboxDetected = true;
-        continue;
-      }
-      // Wrap non-infobox tables in a scrollable container for mobile
-      if (table.parentElement?.classList.contains("table-wrapper")) continue;
-      const wrapper = document.createElement("div");
-      wrapper.className = "table-wrapper overflow-x-auto -mx-1 px-1";
-      table.parentNode?.insertBefore(wrapper, table);
-      wrapper.appendChild(table);
-    }
+    // Watch for lazy-loaded content (e.g. React.lazy MarkdownRenderer)
+    // so tables added after initial render still get wrapped
+    const observer = new MutationObserver(() => {
+      processContent(el);
+    });
+    observer.observe(el, { childList: true, subtree: true });
 
     // Handle heading anchor button clicks (copy link)
     const handleClick = (e: MouseEvent) => {
@@ -80,7 +91,10 @@ function useHtmlInteractivity(containerRef: React.RefObject<HTMLDivElement | nul
     };
 
     el.addEventListener("click", handleClick);
-    return () => el.removeEventListener("click", handleClick);
+    return () => {
+      observer.disconnect();
+      el.removeEventListener("click", handleClick);
+    };
   }, [containerRef]);
 }
 

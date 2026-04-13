@@ -706,6 +706,18 @@ html {
 
 .wiki-content .table-wrapper table {
   margin: 0;
+  width: max-content;
+  min-width: 100%;
+}
+
+.wiki-content .table-wrapper th {
+  white-space: nowrap;
+}
+
+@media (max-width: 639px) {
+  .wiki-content .table-wrapper td {
+    min-width: 4.5rem;
+  }
 }
 
 .wiki-content table {
