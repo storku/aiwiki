@@ -35,9 +35,12 @@ function processContent(el: HTMLElement) {
       infoboxDetected = true;
       continue;
     }
-    // Detect infobox pattern: first table with <strong> inside <td> cells
+    // Detect infobox pattern: first table with <strong> inside <td> cells.
+    // Skip tables that have a <thead> — markdown data tables have one,
+    // MediaWiki-imported infoboxes use a <th colspan="2"> title row in tbody.
     if (
       !infoboxDetected &&
+      !table.tHead &&
       !table.parentElement?.classList.contains("table-wrapper") &&
       table.querySelectorAll("td > strong").length >= 3
     ) {
