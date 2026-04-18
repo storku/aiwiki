@@ -8,6 +8,8 @@ import {
 
 export const revalidate = 86400;
 
+const FEATURED_SLUGS = ["humanoid_robots"];
+
 const TOPIC_SECTIONS = [
   {
     title: "Core Concepts",
@@ -42,13 +44,19 @@ const TOPIC_SECTIONS = [
 
 export default async function HomePage() {
   const allSlugs = TOPIC_SECTIONS.flatMap((s) => s.slugs);
-  const [topicPages, allCategories, { totalPages, recentPages }, randomPages] =
+  const [topicPages, featuredPages, allCategories, { totalPages, recentPages }, randomPages] =
     await Promise.all([
       getPagesBySlugs(allSlugs),
+      getPagesBySlugs(FEATURED_SLUGS),
       getAllCategories(),
       getRecentPagesWithCount(8),
-      getRandomPages(5),
+      getRandomPages(5 - FEATURED_SLUGS.length),
     ]);
+
+  const orderedFeatured = FEATURED_SLUGS
+    .map((slug) => featuredPages.find((p) => p.slug === slug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const featuredItems = [...orderedFeatured, ...randomPages];
 
   const categories = allCategories
     .filter((c) => c.name !== "Plugin" && !c.name.startsWith("Not_"))
@@ -149,7 +157,7 @@ export default async function HomePage() {
               <h2>Featured Articles</h2>
             </div>
             <div className="portal-section-body">
-              {randomPages.map((page) => (
+              {featuredItems.map((page) => (
                 <div key={page.slug} className="portal-featured-item">
                   <Link
                     href={`/wiki/${page.slug}`}
