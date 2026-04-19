@@ -259,28 +259,55 @@ export async function fullTextSearch(
     categories: string[];
   }>
 > {
-  // Convert user query to tsquery: split words and join with &
-  const words = query
-    .trim()
-    .split(/\s+/)
-    .filter((w) => w.length > 0)
-    .map((w) => w.replace(/[^a-zA-Z0-9]/g, ""))
-    .filter((w) => w.length > 0);
+  const normalizedQuery = query.trim();
+  if (!normalizedQuery) return [];
 
-  if (words.length === 0) return [];
-
-  const tsQuery = words.join(" & ");
+  const slugQueryUnderscore = normalizedQuery.toLowerCase().replace(/\s+/g, "_");
+  const slugQueryHyphen = normalizedQuery.toLowerCase().replace(/\s+/g, "-");
+  const titleLike = `%${normalizedQuery}%`;
+  const slugLikeUnderscore = `%${slugQueryUnderscore}%`;
+  const slugLikeHyphen = `%${slugQueryHyphen}%`;
 
   const rows = await sql`
     SELECT p.slug, p.title, p.excerpt,
-           ts_headline('english', COALESCE(p.content_plain, ''), to_tsquery('english', ${tsQuery}),
-             'StartSel=<mark>, StopSel=</mark>, MaxWords=40, MinWords=20, MaxFragments=2') as headline,
-           ts_rank(p.search_vector, to_tsquery('english', ${tsQuery})) as rank,
+           COALESCE(
+             NULLIF(
+               ts_headline(
+                 'english',
+                 COALESCE(p.content_plain, ''),
+                 plainto_tsquery('english', ${normalizedQuery}),
+                 'StartSel=<mark>, StopSel=</mark>, MaxWords=40, MinWords=20, MaxFragments=2'
+               ),
+               ''
+             ),
+             p.excerpt
+           ) as headline,
+           (
+             ts_rank(p.search_vector, plainto_tsquery('english', ${normalizedQuery}))
+             + CASE WHEN lower(p.title) = lower(${normalizedQuery}) THEN 10 ELSE 0 END
+             + CASE
+                 WHEN lower(p.slug) = lower(${normalizedQuery})
+                   OR lower(p.slug) = ${slugQueryUnderscore}
+                   OR lower(p.slug) = ${slugQueryHyphen}
+                 THEN 9
+                 ELSE 0
+               END
+             + CASE WHEN p.title ILIKE ${titleLike} THEN 2 ELSE 0 END
+             + CASE
+                 WHEN p.slug ILIKE ${slugLikeUnderscore}
+                   OR p.slug ILIKE ${slugLikeHyphen}
+                 THEN 1.5
+                 ELSE 0
+               END
+           ) as rank,
            COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
     FROM pages p
     LEFT JOIN page_categories pc ON pc.page_id = p.id
     LEFT JOIN categories c ON c.id = pc.category_id
-    WHERE p.search_vector @@ to_tsquery('english', ${tsQuery})
+    WHERE p.search_vector @@ plainto_tsquery('english', ${normalizedQuery})
+       OR p.title ILIKE ${titleLike}
+       OR p.slug ILIKE ${slugLikeUnderscore}
+       OR p.slug ILIKE ${slugLikeHyphen}
     GROUP BY p.id
     ORDER BY rank DESC
     LIMIT ${limit}

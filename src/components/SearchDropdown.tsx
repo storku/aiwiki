@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Fuse from "fuse.js";
@@ -15,14 +15,21 @@ interface SearchItem {
 // Module-level cache so the index persists across re-renders / remounts
 let cachedItems: SearchItem[] | null = null;
 let fetchPromise: Promise<SearchItem[]> | null = null;
+let cachedAt = 0;
+
+const INDEX_TTL_MS = 60_000;
 
 function fetchIndex(): Promise<SearchItem[]> {
-  if (cachedItems) return Promise.resolve(cachedItems);
+  const now = Date.now();
+  if (cachedItems && now - cachedAt < INDEX_TTL_MS) {
+    return Promise.resolve(cachedItems);
+  }
   if (fetchPromise) return fetchPromise;
-  fetchPromise = fetch("/api/search-index")
+  fetchPromise = fetch("/api/search-index", { cache: "no-store" })
     .then((r) => r.json())
     .then((data: SearchItem[]) => {
       cachedItems = data;
+      cachedAt = Date.now();
       fetchPromise = null;
       return data;
     })
@@ -56,35 +63,29 @@ export default function SearchDropdown({
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const fuse = useRef<Fuse<SearchItem> | null>(null);
-
-  // Build Fuse index when items load
-  useEffect(() => {
-    if (items.length > 0) {
-      fuse.current = new Fuse(items, {
-        keys: [
-          { name: "t", weight: 3 },
-          { name: "e", weight: 1.5 },
-          { name: "c", weight: 1 },
-        ],
-        threshold: 0.3,
-        includeMatches: true,
-        minMatchCharLength: 2,
-      });
-    }
+  const fuse = useMemo(() => {
+    if (items.length === 0) return null;
+    return new Fuse(items, {
+      keys: [
+        { name: "t", weight: 3 },
+        { name: "e", weight: 1.5 },
+        { name: "c", weight: 1 },
+      ],
+      threshold: 0.3,
+      includeMatches: true,
+      minMatchCharLength: 2,
+    });
   }, [items]);
 
   // Lazy-load index on first focus
   const ensureLoaded = useCallback(() => {
-    if (items.length === 0) {
-      fetchIndex().then(setItems);
-    }
-  }, [items.length]);
+    fetchIndex().then(setItems);
+  }, []);
 
   // Compute results
   const results =
-    query.trim().length >= 1 && fuse.current
-      ? fuse.current.search(query.trim(), { limit: MAX_RESULTS })
+    query.trim().length >= 1 && fuse
+      ? fuse.search(query.trim(), { limit: MAX_RESULTS })
       : [];
 
   // Close dropdown on click outside

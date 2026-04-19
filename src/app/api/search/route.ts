@@ -1,6 +1,9 @@
 import { fullTextSearch } from "@/lib/content";
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams.get("q")?.trim();
 
@@ -12,7 +15,7 @@ export async function GET(request: NextRequest) {
     const results = await fullTextSearch(query, 30);
     return NextResponse.json(results, {
       headers: {
-        "Cache-Control": "public, max-age=60, s-maxage=21600, stale-while-revalidate=86400",
+        "Cache-Control": "public, max-age=30, s-maxage=300, stale-while-revalidate=3600",
       },
     });
   } catch {
