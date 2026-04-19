@@ -10,6 +10,7 @@ interface PageMeta {
 }
 
 const PER_PAGE = 60;
+const formatCategoryName = (name: string) => name.replace(/_/g, " ");
 
 export default function PaginatedGrid({
   pages,
@@ -26,26 +27,29 @@ export default function PaginatedGrid({
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {visible.map((page, i) => (
-          <Link
-            key={page.slug}
-            href={`/wiki/${page.slug}`}
-            className="card group p-4 animate-fade-in"
-            style={{ animationDelay: `${i * 0.015}s` }}
-          >
-            <h2 className="font-semibold text-sm group-hover:text-primary transition-colors">
-              {page.title}
-            </h2>
-            {page.categories.filter((c) => c !== categoryName).length > 0 && (
-              <p className="text-xs text-muted mt-1.5 truncate">
-                {page.categories
-                  .filter((c) => c !== categoryName)
-                  .slice(0, 3)
-                  .join(", ")}
-              </p>
-            )}
-          </Link>
-        ))}
+        {visible.map((page, i) => {
+          const otherCategories = page.categories
+            .filter((c) => c !== categoryName)
+            .slice(0, 3);
+
+          return (
+            <Link
+              key={page.slug}
+              href={`/wiki/${page.slug}`}
+              className="card group p-4 animate-fade-in"
+              style={{ animationDelay: `${i * 0.015}s` }}
+            >
+              <h2 className="font-semibold text-sm group-hover:text-primary transition-colors">
+                {page.title}
+              </h2>
+              {otherCategories.length > 0 && (
+                <p className="text-xs text-muted mt-1.5 truncate">
+                  {otherCategories.map(formatCategoryName).join(", ")}
+                </p>
+              )}
+            </Link>
+          );
+        })}
       </div>
       {totalPages > 1 && (
         <nav className="flex items-center justify-center gap-2 mt-8">
