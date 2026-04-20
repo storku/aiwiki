@@ -403,6 +403,16 @@ html {
   font-weight: 600;
 }
 
+/* Infobox rows normalized from single-cell markdown rows */
+.wiki-content .infobox tr:has(> td:last-child:empty) > td:first-child {
+  width: auto;
+  text-align: center;
+}
+
+.wiki-content .infobox tr:has(> td:last-child:empty) > td:last-child {
+  display: none;
+}
+
 /* Infobox: markdown section header rows (single-cell rows with text like "General information") */
 .wiki-content .infobox td[colspan] {
   background-color: color-mix(in srgb, var(--color-primary) 12%, transparent);
