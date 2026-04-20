@@ -4,11 +4,11 @@ function slugify(title: string): string {
   return title
     .replace(/ /g, "_")
     .replace(
-      /[^a-zA-Z0-9_\-\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff]/g,
+      /[^a-zA-Z0-9_.\-\u4e00-\u9fff\u3040-\u309f\u30a0-\u30ff]/g,
       "_"
     )
     .replace(/_+/g, "_")
-    .replace(/^_|_$/g, "")
+    .replace(/^[_.]|[_.]$/g, "")
     .toLowerCase();
 }
 

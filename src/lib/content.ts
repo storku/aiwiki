@@ -94,6 +94,36 @@ export const getPageBySlug = cache(async function getPageBySlug(slug: string): P
   };
 });
 
+export const resolvePageBySlug = cache(async function resolvePageBySlug(slug: string): Promise<{
+  page: WikiPage | null;
+  canonicalSlug: string | null;
+}> {
+  const page = await getPageBySlug(slug);
+  if (page) {
+    return { page, canonicalSlug: page.slug };
+  }
+
+  const candidates = new Set<string>();
+
+  if (slug.includes("-")) {
+    candidates.add(slug.replace(/-/g, "_"));
+  }
+
+  if (slug.includes("_")) {
+    candidates.add(slug.replace(/_/g, "."));
+  }
+
+  for (const candidate of candidates) {
+    if (!candidate || candidate === slug) continue;
+    const altPage = await getPageBySlug(candidate);
+    if (altPage) {
+      return { page: altPage, canonicalSlug: altPage.slug };
+    }
+  }
+
+  return { page: null, canonicalSlug: null };
+});
+
 export async function getAllSlugs(): Promise<string[]> {
   const rows = await sql`SELECT slug FROM pages ORDER BY slug`;
   return rows.map((r) => str(r.slug));

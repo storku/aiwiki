@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
-import { getPageBySlug, getRelatedPages } from "@/lib/content";
+import { getRelatedPages, resolvePageBySlug } from "@/lib/content";
 import { addHeadingIds, fixReferences } from "@/lib/html-utils";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
@@ -31,19 +31,20 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const page = await getPageBySlug(slug);
+  const { page, canonicalSlug } = await resolvePageBySlug(slug);
   if (!page) return {};
+  const pageSlug = canonicalSlug || page.slug;
   return {
     title: page.title,
     description: page.excerpt,
     alternates: {
-      canonical: `https://aiwiki.ai/wiki/${slug}`,
+      canonical: `https://aiwiki.ai/wiki/${pageSlug}`,
     },
     openGraph: {
       title: `${page.title} | AI Wiki`,
       description: page.excerpt,
       type: "article",
-      url: `https://aiwiki.ai/wiki/${slug}`,
+      url: `https://aiwiki.ai/wiki/${pageSlug}`,
       siteName: "AI Wiki",
       modifiedTime: page.updatedAt.toISOString(),
       section: page.categories[0]?.replace(/_/g, " "),
@@ -59,22 +60,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function WikiPage({ params }: Props) {
   const { slug } = await params;
-  let page = await getPageBySlug(slug);
+  const { page, canonicalSlug } = await resolvePageBySlug(slug);
 
-  // If not found, try replacing dashes with underscores (wiki convention)
-  if (!page && slug.includes("-")) {
-    const underscoreSlug = slug.replace(/-/g, "_");
-    if (underscoreSlug !== slug) {
-      const altPage = await getPageBySlug(underscoreSlug);
-      if (altPage) {
-        redirect(`/wiki/${underscoreSlug}`);
-      }
-    }
+  if (page && canonicalSlug && canonicalSlug !== slug) {
+    redirect(`/wiki/${canonicalSlug}`);
   }
 
   if (!page) {
     notFound();
   }
+
+  const pageSlug = canonicalSlug || page.slug;
 
   // Detect redirect pages: content_html may contain a MediaWiki redirect message
   // while the markdown content field has the actual article text.
@@ -120,7 +116,7 @@ export default async function WikiPage({ params }: Props) {
     "@type": "Article",
     headline: page.title,
     description: page.excerpt,
-    url: `https://aiwiki.ai/wiki/${slug}`,
+    url: `https://aiwiki.ai/wiki/${pageSlug}`,
     dateModified: page.updatedAt.toISOString(),
     wordCount,
     publisher: {
@@ -139,7 +135,7 @@ export default async function WikiPage({ params }: Props) {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://aiwiki.ai/wiki/${slug}`,
+      "@id": `https://aiwiki.ai/wiki/${pageSlug}`,
     },
     articleSection: page.categories.map((c) => c.replace(/_/g, " ")),
     inLanguage: "en",
@@ -166,7 +162,7 @@ export default async function WikiPage({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: page.title,
-        item: `https://aiwiki.ai/wiki/${slug}`,
+        item: `https://aiwiki.ai/wiki/${pageSlug}`,
       },
     ],
   };
@@ -231,7 +227,7 @@ export default async function WikiPage({ params }: Props) {
                 Updated {page.updatedAt.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
               </div>
               <Link
-                href={`/wiki/${slug}/edit`}
+                href={`/wiki/${pageSlug}/edit`}
                 className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -241,7 +237,7 @@ export default async function WikiPage({ params }: Props) {
                 Edit
               </Link>
               <Link
-                href={`/wiki/${slug}/history`}
+                href={`/wiki/${pageSlug}/history`}
                 className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
