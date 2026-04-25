@@ -48,7 +48,6 @@ export default function Header() {
   const navLinks = [
     { href: "/wiki", label: "All Pages" },
     { href: "/categories", label: "Categories" },
-    { href: "/about", label: "About" },
   ];
 
   return (
