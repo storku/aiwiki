@@ -4,6 +4,7 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import rehypeSlug from "rehype-slug";
 import rehypeHighlight from "rehype-highlight";
 import type { Components } from "react-markdown";
@@ -162,7 +163,7 @@ function normalizeInfoboxValue(value: string): string {
 }
 
 const components: Components = {
-  a: ({ href, children, node: _node, ...props }) => {
+  a: ({ href, children, ...props }) => {
     if (href && href.startsWith("/wiki/")) {
       return (
         <WikiLink href={href} {...props}>
@@ -183,7 +184,7 @@ const components: Components = {
       </a>
     );
   },
-  img: ({ src, alt, node: _imgNode, ..._ }) => {
+  img: ({ src, alt }) => {
     if (!src || typeof src !== "string") return null;
     return (
       <Image
@@ -197,6 +198,63 @@ const components: Components = {
         unoptimized={src.startsWith("http")}
       />
     );
+  },
+};
+
+const sanitizeSchema = {
+  ...defaultSchema,
+  tagNames: [
+    ...(defaultSchema.tagNames || []),
+    "mark",
+    "sup",
+    "sub",
+    "br",
+    "figure",
+    "figcaption",
+    "table",
+    "thead",
+    "tbody",
+    "tfoot",
+    "tr",
+    "th",
+    "td",
+  ],
+  attributes: {
+    ...defaultSchema.attributes,
+    "*": [
+      ...((defaultSchema.attributes?.["*"] as unknown[]) || []),
+      "className",
+      "id",
+      "title",
+    ],
+    a: [
+      ...((defaultSchema.attributes?.a as unknown[]) || []),
+      "className",
+      "href",
+      "id",
+      "rel",
+      "target",
+      "title",
+    ],
+    code: [
+      ...((defaultSchema.attributes?.code as unknown[]) || []),
+      "className",
+    ],
+    span: [
+      ...((defaultSchema.attributes?.span as unknown[]) || []),
+      "className",
+    ],
+    img: ["src", "alt", "title", "width", "height", "loading"],
+    th: ["scope", "colSpan", "rowSpan", "className", "id"],
+    td: ["colSpan", "rowSpan", "className", "id"],
+    ol: ["className", "id"],
+    li: ["className", "id"],
+    sup: ["className", "id"],
+  },
+  protocols: {
+    ...defaultSchema.protocols,
+    href: ["http", "https", "mailto"],
+    src: ["http", "https"],
   },
 };
 
@@ -251,7 +309,12 @@ export default function MarkdownRenderer({ content }: { content: string }) {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw, rehypeSlug, [rehypeHighlight, { ignoreMissing: true }]]}
+      rehypePlugins={[
+        rehypeRaw,
+        [rehypeSanitize, sanitizeSchema],
+        rehypeSlug,
+        [rehypeHighlight, { ignoreMissing: true }],
+      ]}
       components={components}
     >
       {cleaned}

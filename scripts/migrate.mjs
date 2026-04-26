@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { neon } from "@neondatabase/serverless";
 
@@ -58,20 +58,42 @@ function splitSqlStatements(sqlText) {
 
 async function main() {
   if (!process.env.DATABASE_URL) {
-    console.error("DATABASE_URL not set. Use: node --env-file=.env.local scripts/run-schema.mjs");
+    console.error("DATABASE_URL not set. Use: node --env-file=.env.local scripts/migrate.mjs");
     process.exit(1);
   }
 
   const sql = neon(process.env.DATABASE_URL);
-  const schemaPath = path.join(process.cwd(), "scripts", "schema.sql");
-  const schema = await readFile(schemaPath, "utf8");
+  const migrationsDir = path.join(process.cwd(), "migrations");
+  const files = (await readdir(migrationsDir))
+    .filter((file) => file.endsWith(".sql"))
+    .sort();
 
-  for (const statement of splitSqlStatements(schema)) {
-    await sql.query(statement);
-    console.log("OK:", statement.slice(0, 72).replace(/\s+/g, " ") + "...");
+  await sql`
+    CREATE TABLE IF NOT EXISTS schema_migrations (
+      name TEXT PRIMARY KEY,
+      applied_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    )
+  `;
+
+  const appliedRows = await sql`SELECT name FROM schema_migrations`;
+  const applied = new Set(appliedRows.map((row) => row.name));
+
+  for (const file of files) {
+    if (applied.has(file)) {
+      console.log(`skip ${file}`);
+      continue;
+    }
+
+    const sqlText = await readFile(path.join(migrationsDir, file), "utf8");
+    const statements = splitSqlStatements(sqlText);
+
+    await sql.transaction((tx) => [
+      ...statements.map((statement) => tx.query(statement)),
+      tx`INSERT INTO schema_migrations (name) VALUES (${file})`,
+    ]);
+
+    console.log(`applied ${file}`);
   }
-
-  console.log("\nSchema created successfully.");
 }
 
 main().catch((error) => {

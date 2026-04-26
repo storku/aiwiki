@@ -1,4 +1,6 @@
 export default function WikiPageLoading() {
+  const tocWidths = ["82%", "64%", "91%", "73%", "88%", "69%", "95%", "78%"];
+
   return (
     <div className="flex gap-10">
       {/* Main content skeleton */}
@@ -53,8 +55,8 @@ export default function WikiPageLoading() {
         <div className="sticky top-20">
           <div className="skeleton h-4 w-24 mb-3" />
           <div className="space-y-2 pl-3 border-l border-border">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="skeleton h-3.5" style={{ width: `${60 + Math.random() * 40}%` }} />
+            {tocWidths.map((width, i) => (
+              <div key={i} className="skeleton h-3.5" style={{ width }} />
             ))}
           </div>
         </div>

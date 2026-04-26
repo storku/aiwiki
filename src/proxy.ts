@@ -53,7 +53,19 @@ function tokenEquals(a: string, b: string): boolean {
   return result === 0;
 }
 
-export function middleware(request: NextRequest) {
+function hasEditorOrSessionCookie(request: NextRequest): boolean {
+  const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
+  if (
+    editorToken &&
+    process.env.EDITOR_SECRET &&
+    tokenEquals(editorToken, process.env.EDITOR_SECRET)
+  ) {
+    return true;
+  }
+  return Boolean(request.cookies.get("aiwiki_session")?.value);
+}
+
+export function proxy(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
 
   // ── /w/index.php?title=Page_Name (old MediaWiki short URLs) ──
@@ -72,8 +84,7 @@ export function middleware(request: NextRequest) {
 
   // ── /admin/* paths — require editor auth ──
   if (pathname.startsWith("/admin")) {
-    const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
-    if (!editorToken || !process.env.EDITOR_SECRET || !tokenEquals(editorToken, process.env.EDITOR_SECRET)) {
+    if (!hasEditorOrSessionCookie(request)) {
       const loginUrl = new URL("/login", request.url);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);
@@ -89,8 +100,7 @@ export function middleware(request: NextRequest) {
 
   // Protect /wiki/*/edit routes — require editor cookie
   if (pathname.match(/^\/wiki\/[^/]+\/edit$/)) {
-    const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
-    if (!editorToken || !process.env.EDITOR_SECRET || !tokenEquals(editorToken, process.env.EDITOR_SECRET)) {
+    if (!hasEditorOrSessionCookie(request)) {
       const loginUrl = new URL("/login", request.url);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);

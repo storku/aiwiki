@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sql } from "@/lib/db";
-import { isAuthenticated } from "@/lib/auth";
+import { canManageAdmin } from "@/lib/auth";
 
 /**
  * GET /api/admin/deletions - List deletion alerts
@@ -9,7 +9,7 @@ import { isAuthenticated } from "@/lib/auth";
  * ?offset=N              — pagination offset (default: 0)
  */
 export async function GET(request: NextRequest) {
-  const authed = await isAuthenticated();
+  const authed = await canManageAdmin();
   if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
@@ -46,7 +46,7 @@ export async function GET(request: NextRequest) {
  * Body: { id: number, dismissed: boolean }
  */
 export async function PATCH(request: NextRequest) {
-  const authed = await isAuthenticated();
+  const authed = await canManageAdmin();
   if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }

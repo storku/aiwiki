@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
+import { canManageAdmin } from "@/lib/auth";
 
 export const metadata: Metadata = {
   title: { default: "Admin", template: "%s | Admin | AI Wiki" },
@@ -10,7 +12,11 @@ const adminNav = [
   { href: "/admin/deletions", label: "Deletion Alerts" },
 ];
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  if (!(await canManageAdmin())) {
+    redirect("/login?redirect=/admin/deletions");
+  }
+
   return (
     <div>
       <div className="flex items-center gap-4 mb-6 pb-4 border-b border-border">

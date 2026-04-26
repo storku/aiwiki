@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
+import { randomUUID } from "crypto";
 import { list, put, del } from "@vercel/blob";
-import { isAuthenticated } from "@/lib/auth";
+import { canManageImages } from "@/lib/auth";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 function guessContentType(pathname: string): string {
   const ext = pathname.split(".").pop()?.toLowerCase();
@@ -17,6 +19,28 @@ function guessContentType(pathname: string): string {
 
 // Both prefixes used in blob storage
 const PREFIXES = ["wiki/images/", "images/"];
+const imageMutationLimiter = rateLimit("image-mutations", {
+  maxRequests: 30,
+  windowSeconds: 60 * 60,
+});
+
+function isManagedPrefix(prefix: string): boolean {
+  return PREFIXES.includes(prefix);
+}
+
+function isManagedBlobUrl(value: string): boolean {
+  try {
+    const url = new URL(value);
+    const pathname = url.pathname.replace(/^\/+/, "");
+    return (
+      url.protocol === "https:" &&
+      url.hostname.endsWith(".public.blob.vercel-storage.com") &&
+      PREFIXES.some((prefix) => pathname.startsWith(prefix))
+    );
+  } catch {
+    return false;
+  }
+}
 
 /**
  * GET /api/images - List images or get stats
@@ -24,6 +48,11 @@ const PREFIXES = ["wiki/images/", "images/"];
  * ?cursor=xxx  — paginated listing
  */
 export async function GET(request: NextRequest) {
+  const authed = await canManageImages();
+  if (!authed) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const mode = request.nextUrl.searchParams.get("mode");
 
@@ -59,8 +88,14 @@ export async function GET(request: NextRequest) {
 
     // Regular listing — merge results from both prefixes
     const cursor = request.nextUrl.searchParams.get("cursor") || undefined;
-    const limit = Number(request.nextUrl.searchParams.get("limit")) || 100;
+    const limit = Math.min(
+      Math.max(Number(request.nextUrl.searchParams.get("limit")) || 100, 1),
+      200
+    );
     const prefix = request.nextUrl.searchParams.get("prefix") || undefined;
+    if (prefix && !isManagedPrefix(prefix)) {
+      return NextResponse.json({ error: "Invalid image prefix" }, { status: 400 });
+    }
 
     // If a specific prefix is requested, use it; otherwise merge both
     const prefixes = prefix ? [prefix] : PREFIXES;
@@ -119,9 +154,22 @@ export async function GET(request: NextRequest) {
  * Expects multipart form data with a "file" field
  */
 export async function POST(request: NextRequest) {
-  const authed = await isAuthenticated();
+  const authed = await canManageImages();
   if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const ip = getClientIp(request);
+  const { allowed, resetAt } = imageMutationLimiter.check(ip);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Too many image changes. Please try again later." },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(Math.ceil((resetAt - Date.now()) / 1000)),
+        },
+      }
+    );
   }
 
   try {
@@ -138,11 +186,10 @@ export async function POST(request: NextRequest) {
       "image/jpeg",
       "image/gif",
       "image/webp",
-      "image/svg+xml",
     ];
     if (!allowedTypes.includes(file.type)) {
       return NextResponse.json(
-        { error: "Invalid file type. Allowed: PNG, JPEG, GIF, WebP, SVG" },
+        { error: "Invalid file type. Allowed: PNG, JPEG, GIF, WebP" },
         { status: 400 }
       );
     }
@@ -160,8 +207,9 @@ export async function POST(request: NextRequest) {
     const safeName = file.name
       .replace(/[^a-zA-Z0-9._-]/g, "_")
       .toLowerCase();
+    const uniqueName = `${Date.now()}-${randomUUID()}-${safeName || "image"}`;
 
-    const blob = await put(`images/${safeName}`, file, {
+    const blob = await put(`images/${uniqueName}`, file, {
       access: "public",
       contentType: file.type,
     });
@@ -184,9 +232,22 @@ export async function POST(request: NextRequest) {
  * Expects JSON body with { url: "..." }
  */
 export async function DELETE(request: NextRequest) {
-  const authed = await isAuthenticated();
+  const authed = await canManageImages();
   if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const ip = getClientIp(request);
+  const { allowed, resetAt } = imageMutationLimiter.check(ip);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Too many image changes. Please try again later." },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(Math.ceil((resetAt - Date.now()) / 1000)),
+        },
+      }
+    );
   }
 
   try {
@@ -194,6 +255,10 @@ export async function DELETE(request: NextRequest) {
 
     if (!url) {
       return NextResponse.json({ error: "No URL provided" }, { status: 400 });
+    }
+
+    if (!isManagedBlobUrl(url)) {
+      return NextResponse.json({ error: "Invalid image URL" }, { status: 400 });
     }
 
     await del(url);

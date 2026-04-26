@@ -501,7 +501,7 @@ export default function ImagesPage() {
           <input
             ref={fileInputRef}
             type="file"
-            accept="image/png,image/jpeg,image/gif,image/webp,image/svg+xml"
+            accept="image/png,image/jpeg,image/gif,image/webp"
             multiple
             onChange={(e) => handleUpload(e.target.files)}
             className="hidden"
@@ -548,7 +548,7 @@ export default function ImagesPage() {
           </button>
         </p>
         <p className="text-xs text-muted/60 mt-1">
-          PNG, JPEG, GIF, WebP, SVG. Max 10MB.
+          PNG, JPEG, GIF, WebP. Max 10MB.
         </p>
       </div>
 

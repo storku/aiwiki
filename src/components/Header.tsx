@@ -3,20 +3,31 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 import ThemeToggle from "./ThemeToggle";
 import SearchDropdown from "./SearchDropdown";
+
+function subscribeToPlatformChanges() {
+  return () => {};
+}
+
+function getClientIsMac() {
+  return /Mac|iPhone|iPad/.test(navigator.userAgent);
+}
+
+function getServerIsMac() {
+  return false;
+}
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isMac, setIsMac] = useState(false);
+  const isMac = useSyncExternalStore(
+    subscribeToPlatformChanges,
+    getClientIsMac,
+    getServerIsMac
+  );
   const pathname = usePathname();
-
-  // Detect Mac for keyboard shortcut display (avoids hydration mismatch)
-  useEffect(() => {
-    setIsMac(/Mac|iPhone|iPad/.test(navigator.userAgent));
-  }, []);
 
   // Track scroll for header shadow
   useEffect(() => {
@@ -39,11 +50,6 @@ export default function Header() {
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
-
-  // Close menu on route change
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
 
   const navLinks = [
     { href: "/wiki", label: "All Pages" },

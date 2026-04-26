@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Wiki
 
-## Getting Started
+Next.js app for AI Wiki, backed by Neon PostgreSQL and Vercel Blob Storage.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20.9 or newer
+- npm
+- Neon PostgreSQL database
+- Vercel Blob token for image uploads
+
+## Setup
+
+```bash
+npm install
+cp .env.local.example .env.local
+```
+
+Fill in:
+
+- `DATABASE_URL`: Neon PostgreSQL connection string.
+- `AUTH_SECRET`: long random secret for signed user sessions.
+- `EDITOR_SECRET`: legacy editor/admin secret.
+- `BLOB_READ_WRITE_TOKEN`: Vercel Blob read/write token.
+- `REVALIDATE_SECRET`: on-demand revalidation secret.
+
+Create or update database tables:
+
+```bash
+npm run db:migrate
+```
+
+Run locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Useful Commands
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+npm run db:migrate
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Notes
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `content/` contains imported/generated article source files.
+- `tmp/` and `screenshots/` are generated working artifacts and are ignored.
+- Admin deletion alerts depend on the `deletion_alerts` table from migrations.
+- Search performance depends on the `pg_trgm` indexes created by migrations.

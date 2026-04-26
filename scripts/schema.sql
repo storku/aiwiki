@@ -1,5 +1,7 @@
 -- AI Wiki Database Schema for Neon PostgreSQL (V2)
 
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
 CREATE TABLE IF NOT EXISTS pages (
   id           SERIAL PRIMARY KEY,
   slug         TEXT UNIQUE NOT NULL,
@@ -72,11 +74,26 @@ CREATE TABLE IF NOT EXISTS users (
   display_name TEXT NOT NULL,
   bio          TEXT NOT NULL DEFAULT '',
   email        TEXT,
+  password_hash TEXT,
   avatar_url   TEXT,
   role         TEXT NOT NULL DEFAULT 'editor',
   is_bot       BOOLEAN NOT NULL DEFAULT false,
   created_at   TIMESTAMPTZ NOT NULL DEFAULT now(),
   last_active  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS deletion_alerts (
+  id SERIAL PRIMARY KEY,
+  page_id INTEGER REFERENCES pages(id) ON DELETE SET NULL,
+  page_slug TEXT NOT NULL,
+  page_title TEXT NOT NULL,
+  deleted_content TEXT NOT NULL,
+  old_word_count INTEGER NOT NULL,
+  new_word_count INTEGER NOT NULL,
+  words_deleted INTEGER NOT NULL,
+  edit_summary TEXT,
+  dismissed BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 -- Indexes
@@ -87,10 +104,13 @@ CREATE INDEX IF NOT EXISTS idx_users_role ON users(role);
 CREATE INDEX IF NOT EXISTS idx_pages_slug ON pages(slug);
 CREATE INDEX IF NOT EXISTS idx_pages_updated ON pages(updated_at);
 CREATE INDEX IF NOT EXISTS idx_pages_search_vector ON pages USING GIN(search_vector);
+CREATE INDEX IF NOT EXISTS idx_pages_title_trgm ON pages USING GIN(title gin_trgm_ops);
+CREATE INDEX IF NOT EXISTS idx_pages_slug_trgm ON pages USING GIN(slug gin_trgm_ops);
 CREATE INDEX IF NOT EXISTS idx_pages_status ON pages(status);
 CREATE INDEX IF NOT EXISTS idx_pages_view_count ON pages(view_count);
 
 CREATE INDEX IF NOT EXISTS idx_categories_name ON categories(name);
+CREATE INDEX IF NOT EXISTS idx_categories_name_trgm ON categories USING GIN(name gin_trgm_ops);
 
 CREATE INDEX IF NOT EXISTS idx_pc_page ON page_categories(page_id);
 CREATE INDEX IF NOT EXISTS idx_pc_category ON page_categories(category_id);
@@ -101,6 +121,11 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_revisions_page_version ON page_revisions(p
 CREATE INDEX IF NOT EXISTS idx_page_links_target ON page_links(target_slug);
 CREATE INDEX IF NOT EXISTS idx_page_links_source ON page_links(source_page_id);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_page_links_source_target ON page_links(source_page_id, target_slug);
+
+CREATE INDEX IF NOT EXISTS idx_deletion_alerts_dismissed
+  ON deletion_alerts (dismissed, created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_deletion_alerts_page_slug
+  ON deletion_alerts (page_slug);
 
 -- Search vector trigger
 CREATE OR REPLACE FUNCTION pages_search_vector_update() RETURNS trigger AS $$

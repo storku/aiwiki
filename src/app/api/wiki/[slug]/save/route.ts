@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { sql } from "@/lib/db";
-import { isAuthenticated } from "@/lib/auth";
+import { canEditWiki } from "@/lib/auth";
 import { computeArticleDerivedFields } from "@/lib/article-utils";
 import { generateExcerpt } from "@/lib/content";
+
+const MAX_TITLE_LENGTH = 180;
+const MAX_SUMMARY_LENGTH = 500;
+const MAX_CATEGORIES = 30;
+const MAX_CATEGORY_LENGTH = 80;
 
 /**
  * Extract text present in oldText but missing from newText.
@@ -28,7 +33,7 @@ export async function POST(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   // 1. Auth check
-  const authed = await isAuthenticated();
+  const authed = await canEditWiki();
   if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
@@ -54,9 +59,53 @@ export async function POST(
 
   const { title, contentTiptap, categories, summary, expectedVersion } = body;
 
-  if (!title || !contentTiptap || !Array.isArray(categories)) {
+  if (
+    typeof title !== "string" ||
+    !contentTiptap ||
+    typeof contentTiptap !== "object" ||
+    Array.isArray(contentTiptap) ||
+    !Array.isArray(categories) ||
+    !Number.isInteger(expectedVersion)
+  ) {
     return NextResponse.json(
-      { error: "Missing required fields: title, contentTiptap, categories" },
+      { error: "Missing or invalid fields: title, contentTiptap, categories, expectedVersion" },
+      { status: 400 }
+    );
+  }
+
+  const normalizedTitle = title.trim();
+  const editSummary = typeof summary === "string" ? summary.trim() : "";
+  const normalizedCategories = Array.from(
+    new Set(
+      categories
+        .filter((category): category is string => typeof category === "string")
+        .map((category) => category.trim())
+        .filter(Boolean)
+    )
+  );
+
+  if (!normalizedTitle || normalizedTitle.length > MAX_TITLE_LENGTH) {
+    return NextResponse.json(
+      { error: `Title must be between 1 and ${MAX_TITLE_LENGTH} characters.` },
+      { status: 400 }
+    );
+  }
+
+  if (editSummary.length > MAX_SUMMARY_LENGTH) {
+    return NextResponse.json(
+      { error: `Edit summary must be ${MAX_SUMMARY_LENGTH} characters or fewer.` },
+      { status: 400 }
+    );
+  }
+
+  if (
+    normalizedCategories.length > MAX_CATEGORIES ||
+    normalizedCategories.some((category) => category.length > MAX_CATEGORY_LENGTH)
+  ) {
+    return NextResponse.json(
+      {
+        error: `Use at most ${MAX_CATEGORIES} categories, each ${MAX_CATEGORY_LENGTH} characters or fewer.`,
+      },
       { status: 400 }
     );
   }
@@ -88,24 +137,6 @@ export async function POST(
       );
     }
 
-    // 4. Save old version to page_revisions
-    const oldContent = current.content;
-    const oldContentTiptap = current.content_tiptap;
-
-    await sql`
-      INSERT INTO page_revisions (page_id, version, content, content_tiptap, summary, ai_assisted)
-      VALUES (
-        ${pageId},
-        ${oldVersion},
-        ${oldContent},
-        ${JSON.stringify(oldContentTiptap)}::jsonb,
-        ${summary},
-        false
-      )
-      ON CONFLICT (page_id, version) DO NOTHING
-    `;
-
-    // 5. Compute derived fields
     const {
       contentHtml,
       contentPlain,
@@ -114,82 +145,136 @@ export async function POST(
       outgoingLinkSlugs,
     } = computeArticleDerivedFields(contentTiptap);
 
-    // 6-7. Generate excerpt from plain text
     const excerpt = generateExcerpt(contentPlain);
-
-    // 8. Update the page
     const newVersion = oldVersion + 1;
-
-    await sql`
-      UPDATE pages SET
-        title = ${title},
-        content = ${contentPlain},
-        content_tiptap = ${JSON.stringify(contentTiptap)}::jsonb,
-        content_html = ${contentHtml},
-        content_plain = ${contentPlain},
-        excerpt = ${excerpt},
-        reading_time = ${readingTimeMinutes},
-        word_count = ${wordCount},
-        version = ${newVersion},
-        updated_at = now()
-      WHERE id = ${pageId}
-    `;
-
-    // 8b. Check for large content deletions and create alert if needed
     const oldWordCount = (current.word_count as number) || 0;
     const wordsDeleted = oldWordCount - wordCount;
     const deletionRatio = oldWordCount > 0 ? wordsDeleted / oldWordCount : 0;
-
-    if (
+    const shouldCreateDeletionAlert =
       wordsDeleted > 0 &&
       oldWordCount >= 100 &&
-      deletionRatio >= 0.1
-    ) {
-      const oldPlain = (current.content_plain as string) || "";
-      const deletedContent = extractDeletedText(oldPlain, contentPlain);
+      deletionRatio >= 0.1;
+    const oldPlain = (current.content_plain as string) || "";
+    const deletedContent = shouldCreateDeletionAlert
+      ? extractDeletedText(oldPlain, contentPlain).slice(0, 50000)
+      : "";
+    const outgoingLinkArray = Array.from(new Set(outgoingLinkSlugs));
 
-      // Fire-and-forget: don't block the save on alert insertion
-      sql`
-        INSERT INTO deletion_alerts (page_id, page_slug, page_title, deleted_content, old_word_count, new_word_count, words_deleted, edit_summary)
-        VALUES (${pageId}, ${slug}, ${title}, ${deletedContent.slice(0, 50000)}, ${oldWordCount}, ${wordCount}, ${wordsDeleted}, ${summary})
-      `.catch((err) => console.error("Failed to insert deletion alert:", err));
-    }
-
-    // 9. Update page_links (batch: 1 DELETE + 1 INSERT instead of N+1)
-    await sql`
-      DELETE FROM page_links WHERE source_page_id = ${pageId}
-    `;
-
-    if (outgoingLinkSlugs.length > 0) {
-      const slugArray = Array.from(outgoingLinkSlugs);
-      await sql`
+    const saveRows = await sql`
+      WITH current AS (
+        SELECT id, version, content, content_tiptap
+        FROM pages
+        WHERE slug = ${slug} AND version = ${expectedVersion}
+      ),
+      revision AS (
+        INSERT INTO page_revisions (page_id, version, content, content_tiptap, summary, ai_assisted)
+        SELECT id, version, content, content_tiptap, ${editSummary}, false
+        FROM current
+        ON CONFLICT (page_id, version) DO NOTHING
+        RETURNING 1
+      ),
+      updated AS (
+        UPDATE pages p SET
+          title = ${normalizedTitle},
+          content = ${contentPlain},
+          content_tiptap = ${JSON.stringify(contentTiptap)}::jsonb,
+          content_html = ${contentHtml},
+          content_plain = ${contentPlain},
+          excerpt = ${excerpt},
+          reading_time = ${readingTimeMinutes},
+          word_count = ${wordCount},
+          version = ${newVersion},
+          updated_at = now()
+        FROM current
+        WHERE p.id = current.id
+        RETURNING p.id, p.version
+      ),
+      alert AS (
+        INSERT INTO deletion_alerts (
+          page_id,
+          page_slug,
+          page_title,
+          deleted_content,
+          old_word_count,
+          new_word_count,
+          words_deleted,
+          edit_summary
+        )
+        SELECT
+          updated.id,
+          ${slug},
+          ${normalizedTitle},
+          ${deletedContent},
+          ${oldWordCount},
+          ${wordCount},
+          ${wordsDeleted},
+          ${editSummary}
+        FROM updated
+        WHERE ${shouldCreateDeletionAlert}
+        RETURNING 1
+      ),
+      deleted_links AS (
+        DELETE FROM page_links
+        WHERE source_page_id IN (SELECT id FROM updated)
+        RETURNING 1
+      ),
+      links_ready AS (
+        SELECT id
+        FROM updated
+        WHERE (SELECT COUNT(*) FROM deleted_links) >= 0
+      ),
+      inserted_links AS (
         INSERT INTO page_links (source_page_id, target_slug)
-        SELECT ${pageId}, unnest(${slugArray}::text[])
+        SELECT links_ready.id, links.link_slug
+        FROM links_ready
+        CROSS JOIN unnest(${outgoingLinkArray}::text[]) AS links(link_slug)
         ON CONFLICT DO NOTHING
-      `;
-    }
-
-    // 10. Update categories (batch: 1 DELETE + 1 UPSERT + 1 INSERT instead of N*2)
-    await sql`
-      DELETE FROM page_categories WHERE page_id = ${pageId}
-    `;
-
-    if (categories.length > 0) {
-      const catRows = await sql`
+        RETURNING 1
+      ),
+      deleted_categories AS (
+        DELETE FROM page_categories
+        WHERE page_id IN (SELECT id FROM updated)
+        RETURNING 1
+      ),
+      categories_ready AS (
+        SELECT id
+        FROM updated
+        WHERE (SELECT COUNT(*) FROM deleted_categories) >= 0
+      ),
+      input_categories AS (
+        SELECT DISTINCT NULLIF(trim(name), '') AS name
+        FROM unnest(${normalizedCategories}::text[]) AS input(name)
+        WHERE NULLIF(trim(name), '') IS NOT NULL
+      ),
+      upserted_categories AS (
         INSERT INTO categories (name)
-        SELECT unnest(${categories}::text[])
+        SELECT name
+        FROM input_categories
         ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name
         RETURNING id
-      `;
+      ),
+      inserted_categories AS (
+        INSERT INTO page_categories (page_id, category_id)
+        SELECT categories_ready.id, upserted_categories.id
+        FROM categories_ready
+        CROSS JOIN upserted_categories
+        ON CONFLICT DO NOTHING
+        RETURNING 1
+      )
+      SELECT id, version FROM updated
+    `;
 
-      if (catRows.length > 0) {
-        const catIds = catRows.map((r) => r.id as number);
-        await sql`
-          INSERT INTO page_categories (page_id, category_id)
-          SELECT ${pageId}, unnest(${catIds}::int[])
-          ON CONFLICT DO NOTHING
-        `;
-      }
+    if (saveRows.length === 0) {
+      const latest = await sql`SELECT version FROM pages WHERE id = ${pageId}`;
+      const currentVersion = (latest[0]?.version as number | undefined) ?? oldVersion;
+      return NextResponse.json(
+        {
+          error: "Version conflict",
+          message: `Expected version ${expectedVersion} but current is ${currentVersion}. Reload and try again.`,
+          currentVersion,
+        },
+        { status: 409 }
+      );
     }
 
     // 11. Revalidate paths (page, OG image, listings, categories)
@@ -198,7 +283,7 @@ export async function POST(
     revalidatePath("/wiki");
     revalidatePath("/");
     revalidatePath("/categories");
-    for (const cat of categories) {
+    for (const cat of normalizedCategories) {
       revalidatePath(`/categories/${encodeURIComponent(cat)}`);
     }
 

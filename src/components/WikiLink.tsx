@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   useFloating,
   offset,
@@ -44,6 +44,7 @@ export default function WikiLink({
     middleware: [offset(8), flip(), shift({ padding: 8 })],
     whileElementsMounted: autoUpdate,
   });
+  const { setReference, setFloating } = refs;
 
   const hover = useHover(context, { delay: { open: 400, close: 100 } });
   const dismiss = useDismiss(context);
@@ -51,41 +52,52 @@ export default function WikiLink({
 
   const slug = href.replace("/wiki/", "");
 
-  const fetchPreview = useCallback(() => {
-    if (previewCache.has(slug)) {
-      setPreview(previewCache.get(slug)!);
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!isOpen) {
+      if (fetchTimeoutRef.current) {
+        clearTimeout(fetchTimeoutRef.current);
+      }
       return;
     }
-    setLoading(true);
+
     fetchTimeoutRef.current = setTimeout(() => {
+      if (cancelled) return;
+
+      if (previewCache.has(slug)) {
+        setPreview(previewCache.get(slug)!);
+        setLoading(false);
+        return;
+      }
+
+      setLoading(true);
       fetch(`/api/preview/${encodeURIComponent(slug)}`)
         .then((r) => (r.ok ? r.json() : null))
         .then((data) => {
+          if (cancelled) return;
           previewCache.set(slug, data);
           setPreview(data);
           setLoading(false);
         })
         .catch(() => {
-          setLoading(false);
+          if (!cancelled) setLoading(false);
         });
     }, 100);
-  }, [slug]);
 
-  useEffect(() => {
-    if (isOpen) {
-      fetchPreview();
-    } else {
+    return () => {
+      cancelled = true;
       if (fetchTimeoutRef.current) {
         clearTimeout(fetchTimeoutRef.current);
       }
-    }
-  }, [isOpen, fetchPreview]);
+    };
+  }, [isOpen, slug]);
 
   return (
     <>
       <Link
         href={href}
-        ref={refs.setReference}
+        ref={setReference}
         {...getReferenceProps()}
         {...props}
       >
@@ -94,7 +106,7 @@ export default function WikiLink({
       {isOpen && (
         <FloatingPortal>
           <div
-            ref={refs.setFloating}
+            ref={setFloating}
             style={floatingStyles}
             {...getFloatingProps()}
             className="wiki-preview-card z-50 w-72 max-w-[calc(100vw-2rem)] p-4 rounded-xl border border-border bg-background shadow-xl animate-fade-in"

@@ -2,6 +2,7 @@ import { cookies } from "next/headers";
 import crypto from "crypto";
 import bcrypt from "bcryptjs";
 import { sql } from "./db";
+import { getAuthSecret } from "./env";
 
 // Editor token auth (existing system)
 const EDITOR_COOKIE = "aiwiki_editor_token";
@@ -17,17 +18,12 @@ export function validateEditorToken(token: string): boolean {
   return result === 0;
 }
 
-export async function isAuthenticated(): Promise<boolean> {
-  const cookieStore = await cookies();
-  const token = cookieStore.get(EDITOR_COOKIE)?.value;
-  if (!token) return false;
-  return validateEditorToken(token);
-}
-
 // User auth (email/password)
 const SESSION_COOKIE = "aiwiki_session";
 const SALT_ROUNDS = 10;
 const SESSION_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
+const EDIT_ROLES = new Set(["user", "editor", "admin"]);
+const ADMIN_ROLES = new Set(["editor", "admin"]);
 
 export interface User {
   id: number;
@@ -38,9 +34,9 @@ export interface User {
   avatar_url: string | null;
 }
 
-function signPayload(payload: string): string {
-  const secret = process.env.EDITOR_SECRET;
-  if (!secret) return "";
+function signPayload(payload: string): string | null {
+  const secret = getAuthSecret();
+  if (!secret) return null;
   return crypto.createHmac("sha256", secret).update(payload).digest("hex");
 }
 
@@ -92,6 +88,9 @@ export async function setSessionCookie(userId: number): Promise<void> {
   const nonce = crypto.randomBytes(16).toString("hex");
   const payload = `${userId}:${timestamp}:${nonce}`;
   const signature = signPayload(payload);
+  if (!signature) {
+    throw new Error("AUTH_SECRET or EDITOR_SECRET must be set before creating sessions.");
+  }
   const cookieStore = await cookies();
   cookieStore.set(SESSION_COOKIE, `${payload}:${signature}`, {
     httpOnly: true,
@@ -150,6 +149,33 @@ export async function getSessionUser(): Promise<User | null> {
     role: r.role as string,
     avatar_url: (r.avatar_url as string) || null,
   };
+}
+
+export async function hasLegacyEditorToken(): Promise<boolean> {
+  const cookieStore = await cookies();
+  const token = cookieStore.get(EDITOR_COOKIE)?.value;
+  return Boolean(token && validateEditorToken(token));
+}
+
+export async function canEditWiki(): Promise<boolean> {
+  if (await hasLegacyEditorToken()) return true;
+  const user = await getSessionUser();
+  return Boolean(user && EDIT_ROLES.has(user.role));
+}
+
+export async function canManageAdmin(): Promise<boolean> {
+  if (await hasLegacyEditorToken()) return true;
+  const user = await getSessionUser();
+  return Boolean(user && ADMIN_ROLES.has(user.role));
+}
+
+export async function canManageImages(): Promise<boolean> {
+  return canEditWiki();
+}
+
+export async function isAuthenticated(): Promise<boolean> {
+  if (await hasLegacyEditorToken()) return true;
+  return Boolean(await getSessionUser());
 }
 
 export async function clearSessionCookie(): Promise<void> {

@@ -1,5 +1,6 @@
 import { cache } from "react";
 import { sql } from "./db";
+import { sanitizeSearchHeadline } from "./html-sanitize";
 
 const INTERNAL_CATEGORIES = [
   "Not_updated",
@@ -347,7 +348,7 @@ export async function fullTextSearch(
     slug: str(r.slug),
     title: str(r.title),
     excerpt: str(r.excerpt),
-    headline: str(r.headline),
+    headline: sanitizeSearchHeadline(str(r.headline)),
     rank: num(r.rank),
     categories: arr(r.categories),
   }));
@@ -541,11 +542,23 @@ export async function getAllUsers(): Promise<WikiUser[]> {
 export async function getRandomPages(
   limit = 5
 ): Promise<Array<{ slug: string; title: string; excerpt: string }>> {
+  const countRows = await sql`
+    SELECT COUNT(*)::int AS count
+    FROM pages
+    WHERE excerpt IS NOT NULL AND excerpt != ''
+  `;
+  const count = num(countRows[0]?.count);
+  if (count === 0) return [];
+
+  const maxOffset = Math.max(count - limit, 0);
+  const offset = Math.floor(Math.random() * (maxOffset + 1));
+
   const rows = await sql`
     SELECT slug, title, excerpt
     FROM pages
     WHERE excerpt IS NOT NULL AND excerpt != ''
-    ORDER BY random()
+    ORDER BY id
+    OFFSET ${offset}
     LIMIT ${limit}
   `;
   return rows.map((r) => ({

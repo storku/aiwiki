@@ -1,6 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import { sql } from "@/lib/db";
-import { isAuthenticated } from "@/lib/auth";
+import { canEditWiki } from "@/lib/auth";
 import WikiEditor from "@/components/WikiEditor";
 import type { Metadata } from "next";
 
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function EditWikiPage({ params }: Props) {
-  const authed = await isAuthenticated();
+  const authed = await canEditWiki();
   const { slug } = await params;
 
   if (!authed) {

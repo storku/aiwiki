@@ -308,7 +308,12 @@ export default function WikiEditor({
   const [summary, setSummary] = useState("");
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [hasChanges, setHasChanges] = useState(false);
+  const [hasContentChanges, setHasContentChanges] = useState(false);
+  const initialCategoryInput = initialCategories.join(", ");
+  const hasChanges =
+    hasContentChanges ||
+    title !== initialTitle ||
+    categoryInput !== initialCategoryInput;
 
   const editor = useEditor({
     immediatelyRender: false,
@@ -326,7 +331,7 @@ export default function WikiEditor({
       content: [{ type: "paragraph" }],
     },
     onUpdate: () => {
-      setHasChanges(true);
+      setHasContentChanges(true);
     },
     editorProps: {
       attributes: {
@@ -345,13 +350,6 @@ export default function WikiEditor({
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
   }, [hasChanges]);
-
-  // Track title/category changes
-  useEffect(() => {
-    if (title !== initialTitle || categoryInput !== initialCategories.join(", ")) {
-      setHasChanges(true);
-    }
-  }, [title, categoryInput, initialTitle, initialCategories]);
 
   const handleSave = useCallback(async () => {
     if (!editor) return;
@@ -397,7 +395,7 @@ export default function WikiEditor({
         return;
       }
 
-      setHasChanges(false);
+      setHasContentChanges(false);
       router.push(`/wiki/${slug}`);
     } catch {
       setError("Network error. Please check your connection and try again.");

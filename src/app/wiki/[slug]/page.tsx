@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getRelatedPages, resolvePageBySlug } from "@/lib/content";
 import { addHeadingIds, fixReferences } from "@/lib/html-utils";
+import { sanitizeArticleHtml } from "@/lib/html-sanitize";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
 import MobileToc from "@/components/MobileToc";
@@ -101,7 +102,7 @@ export default async function WikiPage({ params }: Props) {
 
   // Process pre-rendered HTML: fix references, add heading IDs
   let processedHtml = contentHtmlToUse
-    ? fixReferences(contentHtmlToUse, page.content)
+    ? sanitizeArticleHtml(fixReferences(contentHtmlToUse, page.content))
     : null;
   if (processedHtml) {
     processedHtml = addHeadingIds(processedHtml);
