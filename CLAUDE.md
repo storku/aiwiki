@@ -4,6 +4,10 @@
 
 AI Wiki is a comprehensive encyclopedia of artificial intelligence with 2,000+ articles covering AI concepts, models, tools, and applications. The site is built with Next.js and hosted on Vercel.
 
+## Working Constraints
+
+- **Do NOT spawn more than 5 local agents at a time.** When parallelizing work via the Agent tool (subagents), keep the concurrent count to 5 or fewer. If a task needs more, batch it into waves of 5 and wait for each wave to complete before launching the next.
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, TypeScript)
@@ -12,6 +16,7 @@ AI Wiki is a comprehensive encyclopedia of artificial intelligence with 2,000+ a
 - **Search:** Fuse.js (client-side fuzzy search)
 - **Markdown rendering:** react-markdown + remark-gfm + rehype-raw + rehype-slug
 - **Hosting:** Vercel (team: `ai-team-fad7938b` / "ai team", user: `coolsloth`)
+- **Cache purge:** Run `vercel cache purge --yes` to clear the CDN and Data cache. **Required after every batch of article writes** (see Wiki Content Guidelines below). On-demand revalidation in `upsert-article.mjs` is rate-limited (429) under bulk writes, so a single cache purge at the end of a batch is the reliable way to make changes go live immediately.
 
 ## Project Structure
 
@@ -53,10 +58,6 @@ node scripts/fetch-wiki-content.mjs
 
 This fetches all pages via the MediaWiki API with rate limiting (200ms delay) and saves them as markdown files in `content/`.
 
-## Workflow: Multiple Wiki Articles
-
-When researching and writing multiple different wiki article pages/topics, create **1 agent per page/topic**. Each agent should independently research and write its assigned article. This allows all articles to be worked on in parallel rather than sequentially.
-
 ## Research & Writing Quality
 
 - When **researching** wiki article topics, be as thorough as possible. Use `ultrathink` to deeply analyze sources, cross-reference facts, and identify all relevant subtopics before writing.
@@ -85,6 +86,8 @@ When creating or improving wiki pages:
   Run it with: `node --env-file=.env.local scripts/upsert-article.mjs <json-file>`
 
   Never write directly to the `pages` table with raw SQL. Always go through this script.
+
+- **Always run `vercel cache purge --yes` after every batch of article writes.** The on-demand revalidation in `upsert-article.mjs` is rate-limited by Vercel and returns 429 once you write more than a few articles in quick succession, which leaves the live site serving stale content until the next 24-hour ISR cycle. A single cache purge at the end of each batch makes every article in the batch go live immediately. Do not wait for the user to ask: run it as the final step of any session that touches multiple articles.
 - **When updating existing wiki articles, enhance rather than replace.** Always read and understand the full existing article content before making changes. Merge new information into the existing structure, preserving the original text, tables, wikilinks, and formatting. Do not overwrite an entire article with new content unless the existing content is factually wrong. Specific rules:
   - **Read first:** Query the database for the article's current TipTap JSON content and plain text before writing any update script.
   - **Preserve existing content:** Keep all existing sections, tables, and paragraphs that are accurate. Add new sections, rows, or paragraphs alongside them.
