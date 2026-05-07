@@ -10,9 +10,18 @@ interface TableOfContentsProps {
 
 export default function TableOfContents({ content, contentHtml }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState("");
+  const [showFullOutline, setShowFullOutline] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   const headings = contentHtml ? parseHeadingsFromHtml(contentHtml) : parseHeadings(content);
+  const compactLimit = 24;
+  const activeIndex = headings.findIndex((heading) => heading.id === activeId);
+  const visibleHeadings =
+    showFullOutline || headings.length <= compactLimit
+      ? headings
+      : activeIndex >= compactLimit
+        ? [...headings.slice(0, compactLimit - 1), headings[activeIndex]]
+        : headings.slice(0, compactLimit);
 
   useEffect(() => {
     if (headings.length === 0) return;
@@ -40,8 +49,8 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
   if (headings.length < 3) return null;
 
   return (
-    <aside className="hidden xl:block w-56 shrink-0">
-      <nav className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2">
+    <aside className="hidden xl:block w-60 shrink-0">
+      <nav className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-hidden rounded-xl border border-border bg-background p-3 shadow-sm">
         <p className="text-[11px] font-semibold text-muted uppercase tracking-widest mb-3 flex items-center gap-1.5">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-50">
             <line x1="8" y1="6" x2="21" y2="6" />
@@ -53,16 +62,16 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
           </svg>
           On this page
         </p>
-        <ul className="space-y-0.5">
-          {headings.map((h) => (
+        <ul className="max-h-[calc(100vh-11rem)] space-y-0.5 overflow-y-auto pr-1">
+          {visibleHeadings.map((h) => (
             <li key={h.id}>
               <a
                 href={`#${h.id}`}
-                className={`toc-link block py-1 border-l-2 text-[13px] leading-snug ${
+                className={`toc-link flex min-h-10 items-center rounded-md border-l-2 py-2 pr-2 text-[13px] leading-snug ${
                   h.level === 2 ? "pl-3" : h.level === 3 ? "pl-5" : "pl-7"
                 } ${
                   activeId === h.id
-                    ? "text-primary border-primary font-medium"
+                    ? "bg-primary-light text-primary border-primary font-medium"
                     : "text-muted border-transparent hover:text-foreground hover:border-border"
                 }`}
               >
@@ -71,6 +80,15 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
             </li>
           ))}
         </ul>
+        {headings.length > compactLimit && (
+          <button
+            type="button"
+            onClick={() => setShowFullOutline((value) => !value)}
+            className="mt-3 min-h-10 w-full rounded-lg border border-border px-3 text-sm font-medium text-primary hover:bg-primary-light"
+          >
+            {showFullOutline ? "Show less" : `Show all ${headings.length} headings`}
+          </button>
+        )}
       </nav>
     </aside>
   );

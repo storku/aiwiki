@@ -35,15 +35,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { page, canonicalSlug } = await resolvePageBySlug(slug);
   if (!page) return {};
   const pageSlug = canonicalSlug || page.slug;
+  const description = createArticleSummary(page.content, page.excerpt);
   return {
     title: page.title,
-    description: page.excerpt,
+    description,
     alternates: {
       canonical: `https://aiwiki.ai/wiki/${pageSlug}`,
     },
     openGraph: {
       title: `${page.title} | AI Wiki`,
-      description: page.excerpt,
+      description,
       type: "article",
       url: `https://aiwiki.ai/wiki/${pageSlug}`,
       siteName: "AI Wiki",
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: `${page.title} | AI Wiki`,
-      description: page.excerpt,
+      description,
     },
   };
 }
@@ -72,6 +73,7 @@ export default async function WikiPage({ params }: Props) {
   }
 
   const pageSlug = canonicalSlug || page.slug;
+  const articleSummary = createArticleSummary(page.content, page.excerpt);
 
   // Detect redirect pages: content_html may contain a MediaWiki redirect message
   // while the markdown content field has the actual article text.
@@ -184,9 +186,9 @@ export default async function WikiPage({ params }: Props) {
         <article className="flex-1 min-w-0 animate-fade-in">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-1.5 text-sm text-muted mb-6">
-            <Link href="/" className="breadcrumb-link hover:text-primary transition-colors">Home</Link>
+            <Link href="/" className="breadcrumb-link inline-flex min-h-10 items-center hover:text-primary transition-colors">Home</Link>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
-            <Link href="/wiki" className="breadcrumb-link hover:text-primary transition-colors">Wiki</Link>
+            <Link href="/wiki" className="breadcrumb-link inline-flex min-h-10 items-center hover:text-primary transition-colors">Wiki</Link>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-muted/40"><polyline points="9 18 15 12 9 6"/></svg>
             <span className="text-foreground font-medium truncate max-w-[120px] sm:max-w-[200px]">{page.title}</span>
           </nav>
@@ -204,21 +206,21 @@ export default async function WikiPage({ params }: Props) {
                     <Link
                       key={cat}
                       href={`/categories/${encodeURIComponent(cat)}`}
-                      className="category-badge inline-flex items-center px-2.5 py-1 rounded-md bg-surface border border-border text-xs font-medium"
+                      className="category-badge inline-flex min-h-10 items-center px-2.5 py-1.5 rounded-md bg-surface border border-border text-xs font-medium"
                     >
                       {cat.replace(/_/g, " ")}
                     </Link>
                   ))}
                 </div>
               )}
-              <div className="flex items-center gap-1.5 text-sm text-muted">
+              <div className="flex min-h-10 items-center gap-1.5 text-sm text-muted">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
                 {page.readingTime} min read
               </div>
-              <div className="flex items-center gap-1.5 text-sm text-muted">
+              <div className="flex min-h-10 items-center gap-1.5 text-sm text-muted">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                   <line x1="16" y1="2" x2="16" y2="6" />
@@ -229,7 +231,8 @@ export default async function WikiPage({ params }: Props) {
               </div>
               <Link
                 href={`/wiki/${pageSlug}/edit`}
-                className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
+                prefetch={false}
+                className="inline-flex min-h-10 items-center gap-1.5 rounded-lg px-2 text-sm text-muted hover:bg-surface hover:text-primary transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
@@ -239,7 +242,7 @@ export default async function WikiPage({ params }: Props) {
               </Link>
               <Link
                 href={`/wiki/${pageSlug}/history`}
-                className="flex items-center gap-1.5 text-sm text-muted hover:text-primary transition-colors"
+                className="inline-flex min-h-10 items-center gap-1.5 rounded-lg px-2 text-sm text-muted hover:bg-surface hover:text-primary transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 8v4l3 3" />
@@ -249,6 +252,16 @@ export default async function WikiPage({ params }: Props) {
                 History
               </Link>
             </div>
+            {articleSummary && (
+              <aside className="article-summary-card mt-5 rounded-xl border border-border bg-surface px-4 py-3.5">
+                <p className="mb-1 text-[11px] font-semibold uppercase tracking-widest text-muted">
+                  At a glance
+                </p>
+                <p className="text-sm leading-6 text-muted sm:text-[15px]">
+                  {articleSummary}
+                </p>
+              </aside>
+            )}
           </header>
 
           {/* Mobile Table of Contents */}
@@ -274,4 +287,48 @@ async function RelatedArticlesAsync({ slug, categories }: { slug: string; catego
   const related = await getRelatedPages(slug, categories);
   if (related.length === 0) return null;
   return <RelatedArticles related={related} />;
+}
+
+function createArticleSummary(content: string, fallback: string, maxLength = 220): string {
+  const blocks = content
+    .replace(/^---[\s\S]*?---/, "")
+    .split(/\n{2,}/)
+    .map(cleanSummaryBlock)
+    .filter((block) => block.length >= 80);
+
+  const summary = blocks[0] || cleanSummaryBlock(fallback);
+  if (summary.length <= maxLength) return summary;
+  return `${summary.slice(0, maxLength).replace(/\s+\S*$/, "")}...`;
+}
+
+function cleanSummaryBlock(block: string): string {
+  const cleanedLines = block
+    .split("\n")
+    .map(cleanSummaryInline)
+    .map((line) => line.trim())
+    .filter((line) => {
+      if (!line) return false;
+      if (/^#{1,6}\s+/.test(line)) return false;
+      if (/^see also:/i.test(line)) return false;
+      if (/^figure\s+\d+:/i.test(line)) return false;
+      if (/^[*-]\s*$/.test(line)) return false;
+      return true;
+    });
+
+  return cleanedLines.join(" ").replace(/\s+/g, " ").trim();
+}
+
+function cleanSummaryInline(value: string): string {
+  return value
+    .replace(/!\[[^\]]*]\([^)]+\)/g, "")
+    .replace(/\[[^\]]*]\(\/wiki\/file[^)]*\)/gi, "")
+    .replace(/\[\]\([^)]+\)/g, "")
+    .replace(/\[([^\]]+)]\([^)]+\)/g, "$1")
+    .replace(/\[&#91;?\d+&#93;?]\([^)]*\)/g, "")
+    .replace(/\[\d+]/g, "")
+    .replace(/&#160;/g, " ")
+    .replace(/&#91;/g, "[")
+    .replace(/&#93;/g, "]")
+    .replace(/[*_`~]/g, "")
+    .replace(/\s+/g, " ");
 }

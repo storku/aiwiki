@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -162,8 +159,18 @@ function normalizeInfoboxValue(value: string): string {
   return normalized.replace(/(?:<br \/>){3,}/g, "<br /><br />").trim();
 }
 
+function cleanElementProps<T extends Record<string, unknown>>(props: T): T {
+  const mutableProps = props as Record<string, unknown>;
+  delete mutableProps.node;
+  if (Array.isArray(mutableProps.className)) {
+    mutableProps.className = mutableProps.className.filter(Boolean).join(" ");
+  }
+  return props;
+}
+
 const components: Components = {
   a: ({ href, children, ...props }) => {
+    cleanElementProps(props as Record<string, unknown>);
     if (href && href.startsWith("/wiki/")) {
       return (
         <WikiLink href={href} {...props}>
@@ -184,18 +191,39 @@ const components: Components = {
       </a>
     );
   },
-  img: ({ src, alt }) => {
+  table: ({ children, ...props }) => {
+    cleanElementProps(props as Record<string, unknown>);
+    const className = typeof props.className === "string" ? props.className : "";
+
+    if (className.split(/\s+/).includes("infobox")) {
+      return (
+        <table {...props} className={className}>
+          {children}
+        </table>
+      );
+    }
+
+    return (
+      <div className="table-wrapper overflow-x-auto -mx-1 px-1">
+        <table {...props}>
+          {children}
+        </table>
+      </div>
+    );
+  },
+  img: ({ src, alt, title }) => {
     if (!src || typeof src !== "string") return null;
     return (
-      <Image
+      // Wiki images often come from migrated thumbnail URLs. A plain img keeps
+      // small thumbnails at their natural size instead of upscaling them.
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
         src={src}
         alt={alt || ""}
-        width={800}
-        height={450}
+        title={typeof title === "string" ? title : undefined}
         className="rounded-xl border border-border my-5"
-        style={{ width: "100%", height: "auto" }}
         loading="lazy"
-        unoptimized={src.startsWith("http")}
+        decoding="async"
       />
     );
   },

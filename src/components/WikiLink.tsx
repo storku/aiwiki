@@ -32,6 +32,7 @@ export default function WikiLink({
   children: React.ReactNode;
   [key: string]: unknown;
 }) {
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [preview, setPreview] = useState<PreviewData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -51,6 +52,11 @@ export default function WikiLink({
   const { getReferenceProps, getFloatingProps } = useInteractions([hover, dismiss]);
 
   const slug = href.replace("/wiki/", "");
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -92,6 +98,14 @@ export default function WikiLink({
       }
     };
   }, [isOpen, slug]);
+
+  if (!mounted) {
+    return (
+      <Link href={href} {...props}>
+        {children}
+      </Link>
+    );
+  }
 
   return (
     <>

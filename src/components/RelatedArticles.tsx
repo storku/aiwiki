@@ -24,7 +24,7 @@ export default function RelatedArticles({ related }: RelatedArticlesProps) {
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center gap-2.5 mb-5 w-full text-left sm:pointer-events-none"
+        className="flex min-h-11 items-center gap-2.5 mb-5 w-full text-left sm:pointer-events-none"
       >
         <div className="icon-box p-2 rounded-lg bg-surface text-muted">
           <svg
@@ -71,7 +71,7 @@ export default function RelatedArticles({ related }: RelatedArticlesProps) {
           <Link
             key={r.slug}
             href={`/wiki/${r.slug}`}
-            className="card group p-4"
+            className="card group block min-h-16 p-4"
           >
             <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
               {r.title}
