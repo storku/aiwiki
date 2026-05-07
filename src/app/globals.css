@@ -541,7 +541,8 @@ html {
 
 .wiki-content figure:not(.embedvideo) img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
   margin: 0;
@@ -641,8 +642,8 @@ html {
 }
 
 [data-theme="dark"] .wiki-content a {
-  color: #60a5fa;
-  text-decoration-color: rgba(96, 165, 250, 0.3);
+  color: #7db7ff;
+  text-decoration-color: rgba(125, 183, 255, 0.22);
 }
 
 .wiki-content a:hover {
@@ -673,10 +674,16 @@ html {
 }
 
 /* ── Citation references ──────────────────── */
+.wiki-content sup,
+.wiki-content sup a {
+  font-size: 0.8125rem;
+  line-height: 1;
+}
+
 .wiki-content .cite-ref {
   color: var(--color-primary);
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 500;
 }
 
@@ -1109,6 +1116,11 @@ mark {
   color: white;
 }
 
+.alpha-scroll {
+  scrollbar-width: thin;
+  mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 1rem), transparent 100%);
+}
+
 /* ── Dark mode quick link pills ───────────── */
 [data-theme="dark"] .quick-link {
   background: var(--color-surface);
@@ -1171,6 +1183,10 @@ mark {
 
 /* ── Breadcrumb styling ──────────────────── */
 .breadcrumb-link {
+  display: inline-flex;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  align-items: center;
   transition: color 0.2s ease;
 }
 
@@ -1246,6 +1262,11 @@ mark {
   background: var(--color-primary-light);
   border-color: rgba(59, 130, 246, 0.4);
   color: #60a5fa;
+}
+
+[data-theme="dark"] .article-summary-card {
+  background: var(--color-surface);
+  border-color: #1e293b;
 }
 
 /* ── Reading progress bar enhanced ───────── */
@@ -1339,7 +1360,7 @@ mark {
   box-shadow: 0 1px 4px rgba(59, 130, 246, 0.08);
 }
 
-.portal-search span {
+.portal-search-label {
   flex: 1;
   text-align: left;
 }
@@ -1359,7 +1380,8 @@ mark {
 
 @media (min-width: 640px) {
   .portal-search-kbd {
-    display: inline-flex;
+  display: inline-flex;
+  align-items: center;
   }
 }
 
@@ -1382,6 +1404,7 @@ mark {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -1395,6 +1418,33 @@ mark {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.portal-section-featured,
+.portal-section-categories {
+  order: 0;
+}
+
+.portal-section-recent {
+  order: 1;
+}
+
+.portal-section-categories {
+  order: 2;
+}
+
+.portal-section-secondary {
+  order: 3;
+}
+
+.portal-section-nav {
+  order: 4;
+}
+
+@media (min-width: 768px) {
+  .portal-section {
+    order: initial;
+  }
 }
 
 /* ── Portal section (the bordered box) ───── */
@@ -1412,9 +1462,25 @@ mark {
 
 /* ── Section header (colored top bar) ────── */
 .portal-section-header {
-  border-top: 3px solid currentColor;
+  border-top: 3px solid var(--section-accent, var(--color-primary));
   padding: 0.625rem 1rem;
   background: var(--color-surface);
+}
+
+.portal-section-header-primary {
+  --section-accent: var(--color-primary);
+}
+
+.portal-section-header-warm {
+  --section-accent: var(--color-warm);
+}
+
+.portal-section-header-accent {
+  --section-accent: var(--color-accent);
+}
+
+.portal-section-header-success {
+  --section-accent: var(--color-success);
 }
 
 .portal-section-header h2 {
@@ -1445,6 +1511,9 @@ mark {
 }
 
 .portal-more-link {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
   font-size: 0.8125rem;
   color: var(--color-primary);
   font-weight: 500;
@@ -1472,6 +1541,10 @@ mark {
 }
 
 .portal-featured-title {
+  display: inline-flex;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  align-items: center;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-primary);
@@ -1510,6 +1583,10 @@ mark {
 }
 
 .portal-link {
+  display: inline-flex;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  align-items: center;
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
@@ -1571,7 +1648,8 @@ mark {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  padding: 0.25rem 0.625rem;
+  min-height: 2.5rem;
+  padding: 0.375rem 0.625rem;
   border: 1px solid var(--color-border);
   border-radius: 0.25rem;
   font-size: 0.8125rem;
@@ -1640,6 +1718,7 @@ mark {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 2.5rem;
   padding: 0.5rem 0.25rem;
   font-size: 0.875rem;
   color: var(--color-primary);
