@@ -3,30 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect, useSyncExternalStore } from "react";
+import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 import SearchDropdown from "./SearchDropdown";
-
-function subscribeToPlatformChanges() {
-  return () => {};
-}
-
-function getClientIsMac() {
-  return /Mac|iPhone|iPad/.test(navigator.userAgent);
-}
-
-function getServerIsMac() {
-  return false;
-}
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const isMac = useSyncExternalStore(
-    subscribeToPlatformChanges,
-    getClientIsMac,
-    getServerIsMac
-  );
   const pathname = usePathname();
 
   // Track scroll for header shadow
@@ -41,10 +24,34 @@ export default function Header() {
   // Ctrl/Cmd + K to focus search
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      const target = e.target as HTMLElement | null;
+      const isEditableTarget =
+        target?.tagName === "INPUT" ||
+        target?.tagName === "TEXTAREA" ||
+        target?.tagName === "SELECT" ||
+        target?.isContentEditable;
+
+      const isSearchShortcut =
+        (e.metaKey || e.ctrlKey) &&
+        (e.key.toLowerCase() === "k" || e.code === "KeyK");
+
+      if (isSearchShortcut && !isEditableTarget) {
         e.preventDefault();
-        const input = document.getElementById("header-search") as HTMLInputElement;
-        input?.focus();
+        const isDesktop = window.matchMedia("(min-width: 640px)").matches;
+
+        if (isDesktop) {
+          const input = document.getElementById("header-search") as HTMLInputElement | null;
+          input?.focus();
+          input?.select();
+          return;
+        }
+
+        setMenuOpen(true);
+        window.requestAnimationFrame(() => {
+          const mobileInput = document.getElementById("mobile-search") as HTMLInputElement | null;
+          mobileInput?.focus();
+          mobileInput?.select();
+        });
       }
     }
     window.addEventListener("keydown", onKeyDown);
@@ -59,7 +66,7 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 border-b bg-background/80 backdrop-blur-xl transition-all duration-300 ${scrolled ? "border-border shadow-sm" : "border-transparent"}`}>
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-6 h-14 gap-3">
-        <Link href="/" className="flex items-center gap-2 shrink-0 group">
+        <Link href="/" className="flex min-h-11 min-w-11 items-center gap-2 shrink-0 group rounded-lg sm:min-w-0">
           <Image
             src="/aiwiki_logo_symbol.png"
             alt="AI Wiki"
@@ -78,7 +85,7 @@ export default function Header() {
         </Link>
 
         <div className="flex-1 max-w-lg hidden sm:block">
-          <SearchDropdown id="header-search" isMac={isMac} />
+          <SearchDropdown id="header-search" />
         </div>
 
         <nav className="hidden sm:flex items-center gap-1 text-sm">
@@ -86,7 +93,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`px-3 py-1.5 rounded-lg transition-all ${
+              className={`inline-flex min-h-10 items-center px-3 py-1.5 rounded-lg transition-all ${
                 pathname.startsWith(link.href)
                   ? "nav-active text-primary bg-primary/10 font-medium"
                   : "text-muted hover:text-foreground hover:bg-surface"
@@ -100,13 +107,13 @@ export default function Header() {
           <div className="w-px h-5 bg-border mx-1.5" />
           <Link
             href="/login"
-            className="px-3 py-1.5 rounded-lg text-sm text-muted hover:text-foreground hover:bg-surface transition-all"
+            className="inline-flex min-h-10 items-center px-3 py-1.5 rounded-lg text-sm text-muted hover:text-foreground hover:bg-surface transition-all"
           >
             Log in
           </Link>
           <Link
             href="/signup"
-            className="px-3 py-1.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
+            className="inline-flex min-h-10 items-center px-3 py-1.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
           >
             Sign up
           </Link>
@@ -116,8 +123,9 @@ export default function Header() {
           <ThemeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="p-2.5 rounded-lg hover:bg-surface transition-colors"
+            className="flex h-11 w-11 items-center justify-center rounded-lg hover:bg-surface transition-colors"
             aria-label="Menu"
+            aria-expanded={menuOpen}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               {menuOpen ? (
@@ -151,7 +159,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className={`px-3 py-2.5 rounded-lg text-sm transition-all ${
+                className={`inline-flex min-h-11 items-center px-3 py-2.5 rounded-lg text-sm transition-all ${
                   pathname.startsWith(link.href)
                     ? "nav-active text-primary bg-primary/10 font-medium"
                     : "text-muted hover:text-foreground hover:bg-surface"
@@ -166,14 +174,14 @@ export default function Header() {
             <Link
               href="/login"
               onClick={() => setMenuOpen(false)}
-              className="flex-1 text-center px-3 py-2.5 rounded-lg text-sm border border-border text-muted hover:text-foreground hover:bg-surface transition-all"
+              className="flex min-h-11 flex-1 items-center justify-center px-3 py-2.5 rounded-lg text-sm border border-border text-muted hover:text-foreground hover:bg-surface transition-all"
             >
               Log in
             </Link>
             <Link
               href="/signup"
               onClick={() => setMenuOpen(false)}
-              className="flex-1 text-center px-3 py-2.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
+              className="flex min-h-11 flex-1 items-center justify-center px-3 py-2.5 rounded-lg text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-all"
             >
               Sign up
             </Link>

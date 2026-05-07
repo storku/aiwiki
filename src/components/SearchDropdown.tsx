@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Fuse from "fuse.js";
+import SearchShortcutHint from "./SearchShortcutHint";
 
 interface SearchItem {
   t: string; // title
@@ -46,14 +47,12 @@ interface Props {
   id?: string;
   mobile?: boolean;
   onNavigate?: () => void;
-  isMac?: boolean;
 }
 
 export default function SearchDropdown({
   id = "header-search",
   mobile = false,
   onNavigate,
-  isMac = false,
 }: Props) {
   const [query, setQuery] = useState("");
   const [items, setItems] = useState<SearchItem[]>([]);
@@ -243,16 +242,15 @@ export default function SearchDropdown({
           onKeyDown={handleKeyDown}
           placeholder="Search articles..."
           autoComplete="off"
+          aria-label="Search articles"
           className={
             mobile
-              ? "w-full pl-9 pr-4 py-2.5 rounded-lg border border-border bg-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
-              : "w-full pl-9 pr-16 py-1.5 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
+              ? "min-h-11 w-full pl-9 pr-4 py-3 rounded-lg border border-border bg-surface text-sm focus:outline-none focus:ring-2 focus:ring-primary/20"
+              : "min-h-10 w-full pl-9 pr-20 py-2 rounded-lg border border-border bg-surface text-sm placeholder:text-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all"
           }
         />
         {!mobile && (
-          <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded border border-border bg-surface text-[10px] text-muted font-mono">
-            <span className="text-[11px]">{isMac ? "\u2318" : "Ctrl"}</span>K
-          </kbd>
+          <SearchShortcutHint className="absolute right-2.5 top-1/2 -translate-y-1/2 hidden lg:inline-flex items-center gap-1 px-1.5 py-0.5 rounded border border-border bg-surface text-[10px] text-muted font-mono" />
         )}
       </div>
 
