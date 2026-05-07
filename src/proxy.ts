@@ -53,6 +53,21 @@ function tokenEquals(a: string, b: string): boolean {
   return result === 0;
 }
 
+function siteUrl(pathWithSearch: string, request: NextRequest): URL {
+  const url = request.nextUrl.clone();
+  const queryStart = pathWithSearch.indexOf("?");
+  const pathname = queryStart === -1 ? pathWithSearch : pathWithSearch.slice(0, queryStart);
+  const search = queryStart === -1 ? "" : pathWithSearch.slice(queryStart + 1);
+  url.pathname = pathname;
+  url.search = search ? `?${search}` : "";
+
+  if (url.hostname === "localhost" || url.hostname === "127.0.0.1" || url.hostname === "::1") {
+    url.protocol = "http:";
+  }
+
+  return url;
+}
+
 function hasEditorOrSessionCookie(request: NextRequest): boolean {
   const editorToken = request.cookies.get("aiwiki_editor_token")?.value;
   if (
@@ -74,18 +89,18 @@ export function proxy(request: NextRequest) {
     if (title) {
       return redirectMediaWikiTitle(title, request);
     }
-    return NextResponse.redirect(new URL("/", request.url), 301);
+    return NextResponse.redirect(siteUrl("/", request), 301);
   }
 
   // ── /api.php (old MediaWiki API, no equivalent on new site) ──
   if (pathname === "/api.php" || pathname === "/w/api.php") {
-    return NextResponse.redirect(new URL("/", request.url), 301);
+    return NextResponse.redirect(siteUrl("/", request), 301);
   }
 
   // ── /admin/* paths — require editor auth ──
   if (pathname.startsWith("/admin")) {
     if (!hasEditorOrSessionCookie(request)) {
-      const loginUrl = new URL("/login", request.url);
+      const loginUrl = siteUrl("/login", request);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);
     }
@@ -101,7 +116,7 @@ export function proxy(request: NextRequest) {
   // Protect /wiki/*/edit routes — require editor cookie
   if (pathname.match(/^\/wiki\/[^/]+\/edit$/)) {
     if (!hasEditorOrSessionCookie(request)) {
-      const loginUrl = new URL("/login", request.url);
+      const loginUrl = siteUrl("/login", request);
       loginUrl.searchParams.set("redirect", pathname);
       return NextResponse.redirect(loginUrl);
     }
@@ -125,7 +140,7 @@ export function proxy(request: NextRequest) {
 
   if (normalized !== rest || hasMediaWikiParams) {
     return NextResponse.redirect(
-      new URL(`/wiki/${normalized}`, request.url),
+      siteUrl(`/wiki/${normalized}`, request),
       301
     );
   }
@@ -142,7 +157,7 @@ function redirectMediaWikiTitle(
   if (namespaceRedirect) return namespaceRedirect;
 
   const slug = slugify(title);
-  return NextResponse.redirect(new URL(`/wiki/${slug}`, request.url), 301);
+  return NextResponse.redirect(siteUrl(`/wiki/${slug}`, request), 301);
 }
 
 /**
@@ -159,7 +174,7 @@ function handleMediaWikiNamespace(
   if (lowerDecoded.startsWith("category:")) {
     const catName = slugify(decoded.slice("category:".length));
     return NextResponse.redirect(
-      new URL(`/categories/${catName}`, request.url),
+      siteUrl(`/categories/${catName}`, request),
       301
     );
   }
@@ -176,21 +191,21 @@ function handleMediaWikiNamespace(
         new URL(request.url).searchParams.get("q") ||
         "";
       const dest = query ? `/search?q=${encodeURIComponent(query)}` : "/search";
-      return NextResponse.redirect(new URL(dest, request.url), 301);
+      return NextResponse.redirect(siteUrl(dest, request), 301);
     }
 
     const destination = SPECIAL_PAGE_REDIRECTS[specialSlug];
     if (destination) {
-      return NextResponse.redirect(new URL(destination, request.url), 301);
+      return NextResponse.redirect(siteUrl(destination, request), 301);
     }
 
     // Unknown Special: page, redirect to home
-    return NextResponse.redirect(new URL("/", request.url), 301);
+    return NextResponse.redirect(siteUrl("/", request), 301);
   }
 
   // File: and Image: namespaces (MediaWiki file pages, no equivalent)
   if (lowerDecoded.startsWith("file:") || lowerDecoded.startsWith("image:")) {
-    return NextResponse.redirect(new URL("/", request.url), 301);
+    return NextResponse.redirect(siteUrl("/", request), 301);
   }
 
   // Talk:, User:, User_talk:, Template:, Help:, MediaWiki: namespaces
@@ -214,11 +229,11 @@ function handleMediaWikiNamespace(
       if (articlePart) {
         const slug = slugify(articlePart);
         return NextResponse.redirect(
-          new URL(`/wiki/${slug}`, request.url),
+          siteUrl(`/wiki/${slug}`, request),
           301
         );
       }
-      return NextResponse.redirect(new URL("/", request.url), 301);
+      return NextResponse.redirect(siteUrl("/", request), 301);
     }
   }
 
