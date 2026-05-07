@@ -59,6 +59,10 @@ const ALIAS_FIXES = new Map([
   ["chinchilla_article", "chinchilla_scaling"],
   ["vanishing_gradient_article", "vanishing_gradient_problem"],
   ["kaplan_scaling_article", "scaling_laws_paper"],
+  ["atlas_article", "atlas_robot"],
+  ["cobot_article", "collaborative_robot"],
+  ["m365_copilot_article", "microsoft_365_copilot"],
+  ["bigbench_article", "big_bench"],
 ]);
 
 // 3. Context-aware fixer: target depends on the link's anchor text
