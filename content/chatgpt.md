@@ -23,7 +23,7 @@ Users had a diverse range of requests to ChatGPT, with some asking the AI to rew
 
 ## Features
 
-![](/images/thumb/f/fc/GPT_Training_process.png/300px-GPT_Training_process.png)  
+![](https://qqcb8dyk5bp2il4c.public.blob.vercel-storage.com/images/chatgpt_diagram_light_openai.png)  
 Figure 2: General overview of the training process using reinforcement learning from human feedback. Source: OpenAI.
 The ChatGPT model was trained using [Reinforcement Learning from Human Feedback](/index.php?title=Reinforcement_Learning_from_Human_Feedback&action=edit&redlink=1) ([RLHF](/wiki/rlhf)) following the same methods as InstructGPT (figure 2); only with small differences in the data collection setup. Training for an initial model was made using supervised fine-tuning where human AI trainers had "conversations in which they played both sides-the user and an AI assistant." [&#91;1&#93;](#cite_note-”1”-1)
 
