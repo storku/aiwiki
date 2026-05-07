@@ -88,7 +88,7 @@ export default function AboutPage() {
           you. Reach out at{" "}
           <a
             href="mailto:contact@aiwiki.ai"
-            className="text-primary hover:underline"
+            className="inline-flex min-h-10 items-center text-primary hover:underline"
           >
             contact@aiwiki.ai
           </a>
@@ -99,7 +99,7 @@ export default function AboutPage() {
       <div className="mt-12 pt-8 border-t border-border">
         <Link
           href="/"
-          className="text-sm text-primary hover:underline font-medium"
+          className="inline-flex min-h-10 items-center text-sm text-primary hover:underline font-medium"
         >
           &larr; Back to Home
         </Link>
