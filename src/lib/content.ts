@@ -1,14 +1,13 @@
 import { cache } from "react";
 import { sql } from "./db";
 import { sanitizeSearchHeadline } from "./html-sanitize";
-
-const INTERNAL_CATEGORIES = [
-  "Not_updated",
-  "Not_Edited",
-  "Updated",
-  "Not_edited",
-  "Pages_with_broken_file_links",
-];
+import {
+  categoryKey,
+  canonicalCategoryName,
+  dedupeCategoryNames,
+  isInternalCategory,
+} from "./categories";
+import { SLUG_ALIASES } from "./slug-aliases";
 
 // DB row extraction helpers
 function str(v: unknown): string { return (v != null ? String(v) : ""); }
@@ -25,6 +24,12 @@ export interface WikiPage {
   contentPlain: string | null;
   excerpt: string;
   readingTime: number;
+  wordCount: number;
+  version: number;
+  status: string;
+  quality: string;
+  needsReview: boolean;
+  hasConflictingInfo: boolean;
   updatedAt: Date;
 }
 
@@ -63,7 +68,7 @@ export const getAllPages = cache(async function getAllPages(): Promise<WikiPageM
   return rows.map((r) => ({
     slug: str(r.slug),
     title: str(r.title),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
     excerpt: str(r.excerpt),
   }));
 });
@@ -91,6 +96,12 @@ export const getPageBySlug = cache(async function getPageBySlug(slug: string): P
     contentPlain: (r.content_plain as string) || null,
     excerpt: str(r.excerpt),
     readingTime: num(r.reading_time),
+    wordCount: num(r.word_count),
+    version: num(r.version),
+    status: str(r.status),
+    quality: str(r.quality),
+    needsReview: r.needs_review === true,
+    hasConflictingInfo: r.has_conflicting_info === true,
     updatedAt: ts(r.updated_at),
   };
 });
@@ -106,11 +117,17 @@ export const resolvePageBySlug = cache(async function resolvePageBySlug(slug: st
 
   const candidates = new Set<string>();
 
+  const aliasedSlug = SLUG_ALIASES[slug];
+  if (aliasedSlug) {
+    candidates.add(aliasedSlug);
+  }
+
   if (slug.includes("-")) {
     candidates.add(slug.replace(/-/g, "_"));
   }
 
   if (slug.includes("_")) {
+    candidates.add(slug.replace(/_/g, "-"));
     candidates.add(slug.replace(/_/g, "."));
   }
 
@@ -132,17 +149,22 @@ export async function getAllSlugs(): Promise<string[]> {
 
 export const getAllCategories = cache(async function getAllCategories(): Promise<{ name: string; count: number }[]> {
   const rows = await sql`
-    SELECT c.name, COUNT(pc.page_id) as count
+    SELECT
+      lower(replace(c.name, '_', ' ')) as category_key,
+      array_agg(DISTINCT c.name ORDER BY c.name) as names,
+      COUNT(DISTINCT pc.page_id) as count
     FROM categories c
     JOIN page_categories pc ON pc.category_id = c.id
-    WHERE c.name NOT IN (${INTERNAL_CATEGORIES[0]}, ${INTERNAL_CATEGORIES[1]}, ${INTERNAL_CATEGORIES[2]}, ${INTERNAL_CATEGORIES[3]}, ${INTERNAL_CATEGORIES[4]})
-    GROUP BY c.id
+    GROUP BY category_key
     ORDER BY count DESC
   `;
-  return rows.map((r) => ({
-    name: str(r.name),
-    count: num(r.count),
-  }));
+  return rows
+    .map((r) => {
+      const names = arr(r.names);
+      const name = canonicalCategoryName(names[0] || str(r.category_key));
+      return { name, count: num(r.count) };
+    })
+    .filter((category) => category.name && !isInternalCategory(category.name));
 });
 
 /**
@@ -168,7 +190,7 @@ export async function getPagePreview(slug: string): Promise<{
   return {
     title: str(r.title),
     excerpt: str(r.excerpt),
-    categories: arr(r.categories).slice(0, 3),
+    categories: dedupeCategoryNames(arr(r.categories)).slice(0, 3),
     readingTime: num(r.reading_time),
   };
 }
@@ -216,7 +238,7 @@ export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> 
   return rows.map((r) => ({
     slug: str(r.slug),
     title: str(r.title),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
     excerpt: str(r.excerpt),
   }));
 }
@@ -224,7 +246,8 @@ export async function getPagesBySlugs(slugs: string[]): Promise<WikiPageMeta[]> 
 /**
  * Get pages belonging to a specific category (avoids fetching ALL pages).
  */
-export async function getPagesByCategory(categoryName: string): Promise<WikiPageMeta[]> {
+export const getPagesByCategory = cache(async function getPagesByCategory(categoryName: string): Promise<WikiPageMeta[]> {
+  const categoryNameKey = categoryKey(categoryName);
   const rows = await sql`
     SELECT p.slug, p.title, p.excerpt,
            COALESCE(array_agg(c.name ORDER BY c.name) FILTER (WHERE c.name IS NOT NULL), '{}') as categories
@@ -235,7 +258,7 @@ export async function getPagesByCategory(categoryName: string): Promise<WikiPage
       SELECT pc2.page_id
       FROM page_categories pc2
       JOIN categories c2 ON c2.id = pc2.category_id
-      WHERE c2.name = ${categoryName}
+      WHERE lower(replace(c2.name, '_', ' ')) = ${categoryNameKey}
     )
     GROUP BY p.id
     ORDER BY p.title
@@ -243,10 +266,10 @@ export async function getPagesByCategory(categoryName: string): Promise<WikiPage
   return rows.map((r) => ({
     slug: str(r.slug),
     title: str(r.title),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
     excerpt: str(r.excerpt),
   }));
-}
+});
 
 export async function searchPages(query: string): Promise<WikiPageMeta[]> {
   const q = `%${query}%`;
@@ -268,7 +291,7 @@ export async function searchPages(query: string): Promise<WikiPageMeta[]> {
   return rows.map((r) => ({
     slug: str(r.slug),
     title: str(r.title),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
     excerpt: str(r.excerpt),
   }));
 }
@@ -350,7 +373,7 @@ export async function fullTextSearch(
     excerpt: str(r.excerpt),
     headline: sanitizeSearchHeadline(str(r.headline)),
     rank: num(r.rank),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
   }));
 }
 
@@ -378,7 +401,8 @@ export async function getRelatedPages(
   categories: string[],
   limit = 6
 ): Promise<WikiPageMeta[]> {
-  if (categories.length === 0) return [];
+  const categoryKeys = dedupeCategoryNames(categories).map(categoryKey);
+  if (categoryKeys.length === 0) return [];
 
   const rows = await sql`
     WITH category_sizes AS (
@@ -394,7 +418,7 @@ export async function getRelatedPages(
       JOIN page_categories pc ON pc.page_id = p.id
       JOIN categories c ON c.id = pc.category_id
       JOIN category_sizes cs ON cs.name = c.name
-      WHERE c.name = ANY(${categories})
+      WHERE lower(replace(c.name, '_', ' ')) = ANY(${categoryKeys})
         AND p.slug != ${slug}
       GROUP BY p.id
     )
@@ -411,7 +435,7 @@ export async function getRelatedPages(
   return rows.map((r) => ({
     slug: str(r.slug),
     title: str(r.title),
-    categories: arr(r.categories),
+    categories: dedupeCategoryNames(arr(r.categories)),
     excerpt: str(r.excerpt),
   }));
 }
@@ -584,9 +608,9 @@ export async function getSitemapPages(): Promise<Array<{ slug: string; updatedAt
  * pre-joined string. Uses a scalar subquery instead of GROUP BY + 2 JOINs,
  * reducing query plan complexity for 2000+ pages.
  */
-export async function getSearchIndex(): Promise<Array<{ title: string; slug: string; excerpt: string; categories: string }>> {
+export async function getSearchIndex(): Promise<Array<{ title: string; slug: string; categories: string }>> {
   const rows = await sql`
-    SELECT p.title, p.slug, p.excerpt,
+    SELECT p.title, p.slug,
            COALESCE((
              SELECT string_agg(c.name, ', ' ORDER BY c.name)
              FROM page_categories pc
@@ -599,7 +623,11 @@ export async function getSearchIndex(): Promise<Array<{ title: string; slug: str
   return rows.map((r) => ({
     title: str(r.title),
     slug: str(r.slug),
-    excerpt: str(r.excerpt),
-    categories: str(r.categories),
+    categories: dedupeCategoryNames(
+      str(r.categories)
+        .split(",")
+        .map((category) => category.trim())
+        .filter((category) => category && !isInternalCategory(category))
+    ).join(", "),
   }));
 }

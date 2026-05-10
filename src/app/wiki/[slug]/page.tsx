@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getRelatedPages, resolvePageBySlug } from "@/lib/content";
-import { addHeadingIds, fixReferences } from "@/lib/html-utils";
+import { addHeadingIds, fixReferences, optimizeArticleImages } from "@/lib/html-utils";
 import { sanitizeArticleHtml } from "@/lib/html-sanitize";
 import WikiContent from "@/components/WikiContent";
 import TableOfContents from "@/components/TableOfContents";
@@ -33,7 +33,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const { page, canonicalSlug } = await resolvePageBySlug(slug);
-  if (!page) return {};
+  if (!page) notFound();
   const pageSlug = canonicalSlug || page.slug;
   const description = createArticleSummary(page.content, page.excerpt);
   return {
@@ -104,15 +104,24 @@ export default async function WikiPage({ params }: Props) {
 
   // Process pre-rendered HTML: fix references, add heading IDs
   let processedHtml = contentHtmlToUse
-    ? sanitizeArticleHtml(fixReferences(contentHtmlToUse, page.content))
+    ? optimizeArticleImages(sanitizeArticleHtml(fixReferences(contentHtmlToUse, page.content)))
     : null;
   if (processedHtml) {
     processedHtml = addHeadingIds(processedHtml);
   }
 
-  const wordCount = page.content
-    ? page.content.split(/\s+/).filter((w) => w.length > 0).length
-    : 0;
+  const wordCount =
+    page.wordCount ||
+    (page.content ? page.content.split(/\s+/).filter((w) => w.length > 0).length : 0);
+  const citationCount = countCitations(page.content, processedHtml);
+  const sourceStatus =
+    page.hasConflictingInfo
+      ? "Conflicting info flagged"
+      : page.needsReview
+        ? "Needs review"
+        : citationCount > 0
+          ? "Source-backed"
+          : "Needs citations";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -238,7 +247,7 @@ export default async function WikiPage({ params }: Props) {
                   <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
                   <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
                 </svg>
-                Edit
+                Suggest edit
               </Link>
               <Link
                 href={`/wiki/${pageSlug}/history`}
@@ -262,6 +271,36 @@ export default async function WikiPage({ params }: Props) {
                 </p>
               </aside>
             )}
+            <div className="mt-4 grid gap-2 rounded-xl border border-border bg-background p-3 text-xs text-muted sm:grid-cols-2 lg:grid-cols-4">
+              <div>
+                <p className="font-semibold uppercase tracking-widest text-muted/70">Last reviewed</p>
+                <p className="mt-1 text-sm font-medium text-foreground">
+                  {page.updatedAt.toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold uppercase tracking-widest text-muted/70">Sources</p>
+                <p className="mt-1 text-sm font-medium text-foreground">
+                  {citationCount > 0
+                    ? `${citationCount} citation${citationCount === 1 ? "" : "s"}`
+                    : "No citations yet"}
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold uppercase tracking-widest text-muted/70">Review status</p>
+                <p className="mt-1 text-sm font-medium text-foreground">{sourceStatus}</p>
+              </div>
+              <div>
+                <p className="font-semibold uppercase tracking-widest text-muted/70">Revision</p>
+                <p className="mt-1 text-sm font-medium text-foreground">
+                  v{page.version || 1} · {wordCount.toLocaleString()} words
+                </p>
+              </div>
+            </div>
           </header>
 
           {/* Mobile Table of Contents */}
@@ -269,6 +308,22 @@ export default async function WikiPage({ params }: Props) {
 
           {/* Content */}
           <WikiContent content={page.content} contentHtml={processedHtml} />
+
+          <section className="mt-10 rounded-xl border border-border bg-surface px-4 py-4 sm:flex sm:items-center sm:justify-between sm:gap-4">
+            <div>
+              <h2 className="text-sm font-semibold text-foreground">Improve this article</h2>
+              <p className="mt-1 text-sm leading-6 text-muted">
+                Add missing citations, update stale details, or suggest a clearer explanation.
+              </p>
+            </div>
+            <Link
+              href={`/wiki/${pageSlug}/edit`}
+              prefetch={false}
+              className="mt-3 inline-flex min-h-10 items-center rounded-lg bg-primary px-3 text-sm font-medium text-white hover:bg-primary-dark sm:mt-0"
+            >
+              Suggest edit
+            </Link>
+          </section>
 
           {/* Related Articles (streamed separately) */}
           <Suspense>
@@ -316,6 +371,21 @@ function cleanSummaryBlock(block: string): string {
     });
 
   return cleanedLines.join(" ").replace(/\s+/g, " ").trim();
+}
+
+function countCitations(content: string, contentHtml: string | null): number {
+  if (contentHtml) {
+    const citeIds = contentHtml.match(/\bid=["']cite_note-\d+["']/g);
+    if (citeIds?.length) return new Set(citeIds).size;
+  }
+
+  const refsMatch = content.match(/##\s*References\s*\n+([\s\S]*?)(?=\n##\s|$)/);
+  if (!refsMatch) return 0;
+
+  return refsMatch[1]
+    .split("\n")
+    .filter((line) => /^(?:\s*\d+\.\s+|\s*\[\d+\]\s+)/.test(line))
+    .length;
 }
 
 function cleanSummaryInline(value: string): string {

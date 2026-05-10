@@ -1,11 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function LoginPage() {
+  return (
+    <Suspense fallback={<LoginFallback />}>
+      <LoginForm />
+    </Suspense>
+  );
+}
+
+function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -155,6 +163,27 @@ export default function LoginPage() {
             >
               Back to AI Wiki
             </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function LoginFallback() {
+  return (
+    <div className="min-h-[80vh] flex items-center justify-center px-4">
+      <div className="w-full max-w-sm">
+        <div className="card p-8 sm:p-10">
+          <div className="mx-auto mb-6 h-9 w-36 rounded-lg skeleton" />
+          <div className="mb-8 space-y-2">
+            <div className="mx-auto h-5 w-32 rounded skeleton" />
+            <div className="mx-auto h-4 w-48 rounded skeleton" />
+          </div>
+          <div className="space-y-4">
+            <div className="h-10 rounded-lg skeleton" />
+            <div className="h-10 rounded-lg skeleton" />
+            <div className="h-10 rounded-lg skeleton" />
           </div>
         </div>
       </div>

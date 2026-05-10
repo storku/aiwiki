@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { canonicalCategoryName } from "@/lib/categories";
 
 interface Category {
   name: string;
@@ -12,7 +13,7 @@ const INITIAL_VISIBLE_COUNT = 60;
 const VISIBLE_INCREMENT = 60;
 
 function displayCategoryName(name: string) {
-  return name.replace(/_/g, " ");
+  return canonicalCategoryName(name);
 }
 
 function categoryLetter(name: string) {
@@ -184,7 +185,7 @@ export default function CategoryBrowser({ categories }: { categories: Category[]
           {visibleCategories.map((cat) => (
             <Link
               key={cat.name}
-              href={`/categories/${encodeURIComponent(cat.name)}`}
+              href={`/categories/${encodeURIComponent(displayCategoryName(cat.name))}`}
               className="card group flex min-h-16 items-center justify-between p-4"
             >
               <div className="flex items-center gap-3 min-w-0">

@@ -1,8 +1,7 @@
 import { getSearchIndex } from "@/lib/content";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+export const revalidate = 3600;
 
 export async function GET() {
   const pages = await getSearchIndex();
@@ -10,11 +9,10 @@ export async function GET() {
     t: p.title,
     s: p.slug,
     c: p.categories,
-    e: p.excerpt,
   }));
   return NextResponse.json(index, {
     headers: {
-      "Cache-Control": "public, max-age=60, s-maxage=300, stale-while-revalidate=3600",
+      "Cache-Control": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400",
     },
   });
 }

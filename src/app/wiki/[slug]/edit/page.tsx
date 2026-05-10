@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { sql } from "@/lib/db";
 import { canEditWiki } from "@/lib/auth";
+import { dedupeCategoryNames } from "@/lib/categories";
 import WikiEditor from "@/components/WikiEditor";
 import type { Metadata } from "next";
 
@@ -45,7 +46,7 @@ export default async function EditWikiPage({ params }: Props) {
       slug={page.slug as string}
       title={page.title as string}
       contentTiptap={page.content_tiptap}
-      categories={(page.categories as string[]) ?? []}
+      categories={dedupeCategoryNames((page.categories as string[]) ?? [])}
       version={(page.version as number) ?? 1}
     />
   );

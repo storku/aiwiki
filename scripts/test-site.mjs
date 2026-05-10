@@ -39,7 +39,7 @@ async function testPage(page, url, label) {
   page.on("pageerror", onPageError);
 
   try {
-    const response = await page.goto(url, { waitUntil: "networkidle", timeout: TIMEOUT });
+    const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: TIMEOUT });
     const status = response?.status() || 0;
 
     // Check for visible error text
@@ -83,7 +83,7 @@ async function testPage(page, url, label) {
 
     if (consoleErrors.length) {
       for (const e of consoleErrors) {
-        if (e.includes("404") || e.includes("Failed to load")) {
+        if (!e.startsWith("Failed to load resource")) {
           results.consoleErrors.push({ url, label, error: e });
         }
       }
@@ -160,7 +160,7 @@ async function main() {
 
   console.log("\n=== Category Pages ===");
   // Visit categories page, grab some category links
-  await page.goto(`${BASE}/categories`, { waitUntil: "networkidle", timeout: TIMEOUT });
+  await page.goto(`${BASE}/categories`, { waitUntil: "domcontentloaded", timeout: TIMEOUT });
   const catLinks = await findLinksOnPage(page, 'a[href^="/categories/"]');
   const catSample = catLinks.slice(0, 5);
   for (const link of catSample) {
@@ -173,7 +173,7 @@ async function main() {
   // Test search API
   try {
     const searchResponse = await page.goto(`${BASE}/api/search?q=neural+network`, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: TIMEOUT,
     });
     const searchStatus = searchResponse?.status() || 0;
@@ -192,7 +192,7 @@ async function main() {
   // Test search index API
   try {
     const indexResponse = await page.goto(`${BASE}/api/search-index`, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: TIMEOUT,
     });
     const indexStatus = indexResponse?.status() || 0;
@@ -213,7 +213,7 @@ async function main() {
   console.log("\n=== Preview API ===");
   try {
     const previewResponse = await page.goto(`${BASE}/api/preview/neural_network`, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: TIMEOUT,
     });
     const previewStatus = previewResponse?.status() || 0;
@@ -234,7 +234,7 @@ async function main() {
   console.log("\n=== Error Handling ===");
   {
     const response = await page.goto(`${BASE}/wiki/this_page_definitely_does_not_exist_12345`, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: TIMEOUT,
     });
     const status = response?.status() || 0;
@@ -247,7 +247,8 @@ async function main() {
   // ── 8. Check internal links from homepage ────────────────────────
 
   console.log("\n=== Internal Link Check (from homepage) ===");
-  await page.goto(`${BASE}/`, { waitUntil: "networkidle", timeout: TIMEOUT });
+  await page.goto(`${BASE}/`, { waitUntil: "domcontentloaded", timeout: TIMEOUT });
+  await page.waitForSelector("main", { timeout: TIMEOUT });
   const homeLinks = await findLinksOnPage(page);
   const uniqueLinks = [...new Set(homeLinks.map((l) => l.href))].slice(0, 20);
   let brokenCount = 0;
@@ -271,7 +272,8 @@ async function main() {
   // ── 9. Interactive test: search page ─────────────────────────────
 
   console.log("\n=== Interactive: Search Page ===");
-  await page.goto(`${BASE}/search`, { waitUntil: "networkidle", timeout: TIMEOUT });
+  await page.goto(`${BASE}/search`, { waitUntil: "domcontentloaded", timeout: TIMEOUT });
+  await page.waitForSelector("main", { timeout: TIMEOUT });
   // Wait for search index to load
   await page.waitForTimeout(2000);
   // Type in search box

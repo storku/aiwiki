@@ -4,6 +4,7 @@ import { sql } from "@/lib/db";
 import { canEditWiki } from "@/lib/auth";
 import { computeArticleDerivedFields } from "@/lib/article-utils";
 import { generateExcerpt } from "@/lib/content";
+import { dedupeCategoryNames } from "@/lib/categories";
 
 const MAX_TITLE_LENGTH = 180;
 const MAX_SUMMARY_LENGTH = 500;
@@ -76,7 +77,7 @@ export async function POST(
   const normalizedTitle = title.trim();
   const editSummary = typeof summary === "string" ? summary.trim() : "";
   const normalizedCategories = Array.from(
-    new Set(
+    dedupeCategoryNames(
       categories
         .filter((category): category is string => typeof category === "string")
         .map((category) => category.trim())
@@ -94,6 +95,13 @@ export async function POST(
   if (editSummary.length > MAX_SUMMARY_LENGTH) {
     return NextResponse.json(
       { error: `Edit summary must be ${MAX_SUMMARY_LENGTH} characters or fewer.` },
+      { status: 400 }
+    );
+  }
+
+  if (!editSummary) {
+    return NextResponse.json(
+      { error: "Please describe what changed before saving." },
       { status: 400 }
     );
   }

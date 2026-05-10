@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { canonicalCategoryName, categoryKey } from "@/lib/categories";
 
 interface PageMeta {
   title: string;
@@ -10,7 +11,7 @@ interface PageMeta {
 }
 
 const PER_PAGE = 60;
-const formatCategoryName = (name: string) => name.replace(/_/g, " ");
+const formatCategoryName = (name: string) => canonicalCategoryName(name);
 
 export default function PaginatedGrid({
   pages,
@@ -29,7 +30,7 @@ export default function PaginatedGrid({
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {visible.map((page, i) => {
           const otherCategories = page.categories
-            .filter((c) => c !== categoryName)
+            .filter((c) => categoryKey(c) !== categoryKey(categoryName))
             .slice(0, 3);
 
           return (

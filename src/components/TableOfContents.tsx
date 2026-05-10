@@ -14,14 +14,13 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   const headings = contentHtml ? parseHeadingsFromHtml(contentHtml) : parseHeadings(content);
-  const compactLimit = 24;
+  const compactLimit = 28;
   const activeIndex = headings.findIndex((heading) => heading.id === activeId);
+  const sectionCount = headings.filter((heading) => heading.level === 2).length;
   const visibleHeadings =
     showFullOutline || headings.length <= compactLimit
       ? headings
-      : activeIndex >= compactLimit
-        ? [...headings.slice(0, compactLimit - 1), headings[activeIndex]]
-        : headings.slice(0, compactLimit);
+      : getCompactHeadings(headings, activeIndex);
 
   useEffect(() => {
     if (headings.length === 0) return;
@@ -61,6 +60,9 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
             <line x1="3" y1="18" x2="3.01" y2="18" />
           </svg>
           On this page
+          <span className="ml-auto font-medium normal-case tracking-normal text-muted/70">
+            {sectionCount || headings.length}
+          </span>
         </p>
         <ul className="max-h-[calc(100vh-11rem)] space-y-0.5 overflow-y-auto pr-1">
           {visibleHeadings.map((h) => (
@@ -86,10 +88,39 @@ export default function TableOfContents({ content, contentHtml }: TableOfContent
             onClick={() => setShowFullOutline((value) => !value)}
             className="mt-3 min-h-10 w-full rounded-lg border border-border px-3 text-sm font-medium text-primary hover:bg-primary-light"
           >
-            {showFullOutline ? "Show less" : `Show all ${headings.length} headings`}
+            {showFullOutline ? "Show compact outline" : `Show detailed outline`}
           </button>
         )}
       </nav>
     </aside>
   );
+}
+
+function getCompactHeadings(
+  headings: ReturnType<typeof parseHeadings>,
+  activeIndex: number
+) {
+  const activeParentIndex = findParentSectionIndex(headings, activeIndex);
+  return headings.filter((heading, index) => {
+    if (heading.level === 2) return true;
+    if (activeParentIndex === -1) return index < 8;
+
+    const nextSectionIndex = headings.findIndex(
+      (candidate, candidateIndex) =>
+        candidateIndex > activeParentIndex && candidate.level === 2
+    );
+    const sectionEnd = nextSectionIndex === -1 ? headings.length : nextSectionIndex;
+    return index > activeParentIndex && index < sectionEnd;
+  });
+}
+
+function findParentSectionIndex(
+  headings: ReturnType<typeof parseHeadings>,
+  activeIndex: number
+) {
+  if (activeIndex < 0) return -1;
+  for (let index = activeIndex; index >= 0; index--) {
+    if (headings[index].level === 2) return index;
+  }
+  return -1;
 }

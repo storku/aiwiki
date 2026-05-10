@@ -4,15 +4,28 @@ export interface TocItem {
   level: number;
 }
 
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function uniqueHeadingId(baseId: string, seen: Map<string, number>): string {
+  const fallback = baseId || "section";
+  const count = seen.get(fallback) || 0;
+  seen.set(fallback, count + 1);
+  return count === 0 ? fallback : `${fallback}-${count}`;
+}
+
 /**
- * Generate a stable heading ID from text and index.
+ * Generate a stable heading ID from text.
  * Shared by all heading-related functions to ensure consistency.
  */
 export function generateHeadingId(text: string, index: number): string {
-  return `heading-${index}-${text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "")}`;
+  return slugifyHeading(text) || `section-${index}`;
 }
 
 /**
@@ -23,6 +36,7 @@ export function generateHeadingId(text: string, index: number): string {
 export function parseHeadings(content: string): TocItem[] {
   const headings: TocItem[] = [];
   const lines = content.split("\n");
+  const seen = new Map<string, number>();
   for (const line of lines) {
     const match = line.match(/^(#{2,4})\s+(.+)$/);
     if (match) {
@@ -32,12 +46,7 @@ export function parseHeadings(content: string): TocItem[] {
         .replace(/[*_`]/g, "")
         .replace(/&#\d+;/g, "")
         .trim();
-      const id = text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-")
-        .replace(/^-|-$/g, "");
+      const id = uniqueHeadingId(slugifyHeading(text), seen);
       if (text && id) {
         headings.push({ id, text, level });
       }
@@ -53,6 +62,7 @@ export function parseHeadings(content: string): TocItem[] {
 export function parseHeadingsFromHtml(html: string): TocItem[] {
   const headings: TocItem[] = [];
   let headingIndex = 0;
+  const seen = new Map<string, number>();
 
   const regex = /<(h[2-4])(\s[^>]*)?>(([\s\S]*?))<\/\1>/gi;
   let match;
@@ -66,7 +76,7 @@ export function parseHeadingsFromHtml(html: string): TocItem[] {
 
     // Use existing id attribute if present, otherwise generate one
     const idMatch = attrs.match(/\bid="([^"]*)"/);
-    const id = idMatch?.[1] || generateHeadingId(text, headingIndex);
+    const id = uniqueHeadingId(idMatch?.[1] || generateHeadingId(text, headingIndex), seen);
 
     headings.push({ id, text, level });
     headingIndex++;

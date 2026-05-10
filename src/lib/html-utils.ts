@@ -150,19 +150,17 @@ const ANCHOR_SVG =
  */
 export function addHeadingIds(html: string): string {
   let headingIndex = 0;
+  const seen = new Map<string, number>();
 
   return html.replace(
     /<(h[1-4])(\s[^>]*)?>([\s\S]*?)<\/\1>/gi,
     (match, tag, attrs = "", content) => {
-      let id: string;
-
       const idMatch = attrs.match(/\bid="([^"]*)"/);
-      if (idMatch) {
-        id = idMatch[1];
-      } else {
-        const text = content.replace(/<[^>]*>/g, "").trim();
-        id = generateHeadingId(text, headingIndex);
-      }
+      const text = content.replace(/<[^>]*>/g, "").trim();
+      const baseId = idMatch?.[1] || generateHeadingId(text, headingIndex);
+      const seenCount = seen.get(baseId) || 0;
+      const id = seenCount === 0 ? baseId : `${baseId}-${seenCount}`;
+      seen.set(baseId, seenCount + 1);
 
       headingIndex++;
 
@@ -179,7 +177,9 @@ export function addHeadingIds(html: string): string {
         newAttrs = `${newAttrs} class="group relative"`;
       }
 
-      if (!idMatch) {
+      if (idMatch) {
+        newAttrs = newAttrs.replace(/\bid="([^"]*)"/, `id="${id}"`);
+      } else {
         newAttrs = `${newAttrs} id="${id}"`;
       }
 

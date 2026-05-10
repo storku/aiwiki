@@ -72,6 +72,7 @@ export default async function HistoryPage({ params }: Props) {
               <Link
                 key={rev.id}
                 href={`/wiki/${slug}/revisions/${rev.version}`}
+                prefetch={false}
                 className="card group relative flex items-start gap-4 p-4 pl-12"
               >
                 {/* Timeline dot */}

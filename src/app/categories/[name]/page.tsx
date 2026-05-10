@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getPagesByCategory } from "@/lib/content";
+import { canonicalCategoryName } from "@/lib/categories";
 import PaginatedGrid from "@/components/PaginatedGrid";
 import type { Metadata } from "next";
 
@@ -13,7 +14,10 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { name } = await params;
-  const catName = decodeURIComponent(name);
+  const catName = canonicalCategoryName(decodeURIComponent(name));
+  const pages = await getPagesByCategory(catName);
+  if (pages.length === 0) notFound();
+
   return {
     title: catName.replace(/_/g, " "),
     description: `Browse AI Wiki articles in the ${catName.replace(/_/g, " ")} category.`,
@@ -31,7 +35,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CategoryPage({ params }: Props) {
   const { name } = await params;
-  const catName = decodeURIComponent(name);
+  const rawCatName = decodeURIComponent(name);
+  const catName = canonicalCategoryName(rawCatName);
+
+  if (catName && catName !== rawCatName) {
+    redirect(`/categories/${encodeURIComponent(catName)}`);
+  }
+
   const pages = await getPagesByCategory(catName);
 
   if (pages.length === 0) {

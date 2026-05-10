@@ -4,64 +4,109 @@ import {
   getAllCategories,
   getPagesBySlugs,
   getRecentPagesWithCount,
-  getRandomPages,
 } from "@/lib/content";
 import SearchShortcutHint from "@/components/SearchShortcutHint";
 
 export const revalidate = 86400;
 
-const FEATURED_SLUGS = ["humanoid_robots"];
+const FEATURED_SLUGS = [
+  "artificial_intelligence",
+  "large_language_model",
+  "transformer",
+  "chatgpt",
+  "humanoid_robots",
+];
 
 const TOPIC_SECTIONS = [
   {
-    title: "Core Concepts",
+    title: "Start Here",
     color: "#3b82f6",
     slugs: [
       "machine_learning",
       "deep_learning",
       "neural_network",
-      "transformer",
-      "reinforcement_learning",
       "natural_language_processing",
+      "computer_vision",
+      "reinforcement_learning",
     ],
   },
   {
-    title: "AI Products",
+    title: "Current AI Products",
     color: "#8b5cf6",
-    slugs: ["chatgpt", "dall-e", "midjourney", "claude", "stable_diffusion", "gpt-4"],
+    slugs: [
+      "chatgpt",
+      "claude",
+      "gemini",
+      "deepseek",
+      "midjourney",
+      "stable_diffusion",
+    ],
   },
   {
-    title: "AI Companies",
+    title: "Robotics & Embodied AI",
     color: "#10b981",
+    slugs: [
+      "humanoid_robots",
+      "robotics",
+      "robot",
+      "unitree",
+      "boston_dynamics",
+      "figure_ai",
+    ],
+  },
+  {
+    title: "Companies & Labs",
+    color: "#0ea5e9",
     slugs: [
       "openai",
       "anthropic",
       "google_deepmind",
       "meta_ai",
-      "stability_ai",
       "hugging_face",
+      "mistral_ai",
+    ],
+  },
+  {
+    title: "Research & Evaluation",
+    color: "#f59e0b",
+    slugs: [
+      "ai_safety",
+      "ai_alignment",
+      "benchmark",
+      "mmlu",
+      "model_collapse",
+      "data_poisoning",
+    ],
+  },
+  {
+    title: "Developer Concepts",
+    color: "#ef4444",
+    slugs: [
+      "transformer",
+      "prompt_engineering",
+      "generative_ai",
+      "llm_rankings",
+      "ai_watermarking",
+      "ai_in_education",
     ],
   },
 ];
 
 export default async function HomePage() {
-  const allSlugs = TOPIC_SECTIONS.flatMap((s) => s.slugs);
-  const [topicPages, featuredPages, allCategories, { totalPages, recentPages }, randomPages] =
+  const allSlugs = Array.from(new Set([...FEATURED_SLUGS, ...TOPIC_SECTIONS.flatMap((s) => s.slugs)]));
+  const [pagesBySlug, allCategories, { totalPages, recentPages }] =
     await Promise.all([
       getPagesBySlugs(allSlugs),
-      getPagesBySlugs(FEATURED_SLUGS),
       getAllCategories(),
       getRecentPagesWithCount(8),
-      getRandomPages(5 - FEATURED_SLUGS.length),
     ]);
 
-  const orderedFeatured = FEATURED_SLUGS
-    .map((slug) => featuredPages.find((p) => p.slug === slug))
+  const featuredItems = FEATURED_SLUGS
+    .map((slug) => pagesBySlug.find((p) => p.slug === slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
-  const featuredItems = [...orderedFeatured, ...randomPages];
 
   const categories = allCategories
-    .filter((c) => c.name !== "Plugin" && !c.name.startsWith("Not_"))
+    .filter((c) => c.name !== "Plugin")
     .slice(0, 24);
 
   const totalCategories = allCategories.length;
@@ -232,7 +277,7 @@ export default async function HomePage() {
         {/* Topic sections */}
         {TOPIC_SECTIONS.map((section) => {
           const sectionPages = section.slugs
-            .map((slug) => topicPages.find((p) => p.slug === slug))
+            .map((slug) => pagesBySlug.find((p) => p.slug === slug))
             .filter(Boolean);
           if (sectionPages.length === 0) return null;
           return (

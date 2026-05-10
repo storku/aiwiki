@@ -10,7 +10,6 @@ interface SearchItem {
   t: string; // title
   s: string; // slug
   c: string; // categories
-  e: string; // excerpt
 }
 
 // Module-level cache so the index persists across re-renders / remounts
@@ -18,7 +17,7 @@ let cachedItems: SearchItem[] | null = null;
 let fetchPromise: Promise<SearchItem[]> | null = null;
 let cachedAt = 0;
 
-const INDEX_TTL_MS = 60_000;
+const INDEX_TTL_MS = 60 * 60_000;
 
 function fetchIndex(): Promise<SearchItem[]> {
   const now = Date.now();
@@ -26,7 +25,7 @@ function fetchIndex(): Promise<SearchItem[]> {
     return Promise.resolve(cachedItems);
   }
   if (fetchPromise) return fetchPromise;
-  fetchPromise = fetch("/api/search-index", { cache: "no-store" })
+  fetchPromise = fetch("/api/search-index")
     .then((r) => r.json())
     .then((data: SearchItem[]) => {
       cachedItems = data;
@@ -39,6 +38,10 @@ function fetchIndex(): Promise<SearchItem[]> {
       return [] as SearchItem[];
     });
   return fetchPromise;
+}
+
+export function preloadSearchIndex() {
+  void fetchIndex();
 }
 
 const MAX_RESULTS = 7;
@@ -67,7 +70,7 @@ export default function SearchDropdown({
     return new Fuse(items, {
       keys: [
         { name: "t", weight: 3 },
-        { name: "e", weight: 1.5 },
+        { name: "s", weight: 1.25 },
         { name: "c", weight: 1 },
       ],
       threshold: 0.3,

@@ -1,15 +1,24 @@
 import type { NextConfig } from "next";
 
+const scriptSources = [
+  "'self'",
+  "'unsafe-inline'",
+  ...(process.env.NODE_ENV === "development" ? ["'unsafe-eval'"] : []),
+  "https://www.googletagmanager.com",
+  "https://www.google-analytics.com",
+  "https://www.google.com",
+];
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+      `script-src ${scriptSources.join(" ")}`,
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https://aiwiki.ai https://*.public.blob.vercel-storage.com https://wikimedia.org https://*.wikimedia.org https://www.google-analytics.com https://www.googletagmanager.com",
       "font-src 'self'",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://*.google-analytics.com",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://*.google-analytics.com https://www.google.com",
       "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",

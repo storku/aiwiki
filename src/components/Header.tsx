@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
-import SearchDropdown from "./SearchDropdown";
+import SearchDropdown, { preloadSearchIndex } from "./SearchDropdown";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,6 +19,22 @@ export default function Header() {
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Warm the small typeahead index after the first paint so keyboard search
+  // feels instant without blocking initial navigation.
+  useEffect(() => {
+    const win = window as Window & {
+      requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    if (win.requestIdleCallback) {
+      const idleId = win.requestIdleCallback(preloadSearchIndex, { timeout: 2500 });
+      return () => win.cancelIdleCallback?.(idleId);
+    }
+
+    const timeoutId = window.setTimeout(preloadSearchIndex, 1500);
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   // Ctrl/Cmd + K to focus search
@@ -73,6 +89,7 @@ export default function Header() {
             width={30}
             height={30}
             className="group-hover:scale-105 transition-transform"
+            priority
           />
           <Image
             src="/aiwiki_logo_words.png"

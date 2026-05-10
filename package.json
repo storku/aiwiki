@@ -7,6 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:headings": "node --env-file=.env.local scripts/check-article-headings.mjs",
+    "test:links": "node --env-file=.env.local scripts/find-broken-links.mjs",
+    "test:site": "node scripts/test-site.mjs",
+    "test:qa": "npm run lint && npm run test:headings",
     "db:schema": "node --env-file=.env.local scripts/run-schema.mjs",
     "db:migrate": "node --env-file=.env.local scripts/migrate.mjs"
   },
